@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flipkart</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./product.css" />
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- inline stylesheet -->
+    <!-- internal css -->
+    <!-- external css -->
+    <!-- id, class -->
+
+    <div id="container"></div>
+    <!-- Navbar -->
+
+    <!-- list of categories -->
+
+    <section id="products">
+      <div style="width: 25%; border: 1px solid red; height: 100vh">
+        <p>Filters</p>
+      </div>
+      <div style="width: 75%; border: 1px solid black">
+        <div style="display: flex;" id="topmenu">
+          <span> Sort By </span>
+          <span> Popularity </span>
+          <span> Price -- Low to High </span>
+          <span> Price -- High to Low </span>
+        </div>
+        <div id="collection"></div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div>
+        <li class="heading">About</li>
+        <li>About Us</li>
+        <li>Career</li>
+        <li>Flipkart Stories</li>
+        <li>Cleartrip</li>
+      </div>
+      <div>
+        <li class="heading">Help</li>
+        <li>About Us</li>
+        <li>Career</li>
+        <li>Flipkart Stories</li>
+        <li>Cleartrip</li>
+      </div>
+      <div>
+        <li class="heading">CONUSMER POLICY</li>
+        <li>About Us</li>
+        <li>Career</li>
+        <li>Flipkart Stories</li>
+        <li>Cleartrip</li>
+      </div>
+      <div>
+        <li class="heading">Social</li>
+        <li>Instagram</li>
+        <li>LinkedIn</li>
+        <li>Facebook</li>
+        <li>X</li>
+      </div>
+      <div>
+        <li class="heading">Address</li>
+        <li>About Us</li>
+        <li>Career</li>
+        <li>Flipkart Stories</li>
+        <li>Cleartrip</li>
+      </div>
+      <div>
+        <li class="heading">Contact us</li>
+        <li>About Us</li>
+        <li>Career</li>
+        <li>Flipkart Stories</li>
+        <li>Cleartrip</li>
+      </div>
+    </section>
+  </body>
+</html>
+<script>
+  $(function () {
+    $("#container").load("./Navabar.html");
+  });
+</script>
+<script src="./Product.js"></script>

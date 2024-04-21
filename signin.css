@@ -1,0 +1,84 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+#outerbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#innerbox{
+    display: flex;
+    background-color: white;
+    width: 70%;
+    height: 500px;
+}
+
+
+.leftinnerbox{
+    background-color: #2874F0;
+    color: white;
+    font-family: sans-serif;
+    width: 45%;
+}
+
+.rightinnerbox{
+    font-family: sans-serif;
+    width: 55%;
+}
+
+.para1{
+    margin-top: 35px;font-weight: bold;font-size: 25px;padding-top:40px;width:75%;margin: auto;
+}
+
+.para2{
+    margin-top: 20px;font-size: 18px;padding-top: 27px;width: 75%;margin: auto;
+}
+
+.mobile{
+    width: 70%; margin-top: 10px;height: 25px;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: gray
+}
+
+.mobile:focus {
+    outline:0;
+    border-width: 0 0 2px;
+    border-color: black
+  }
+
+  .name{
+    width: 70%; margin-top: 10px;height: 25px;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: gray
+}
+
+.name:focus {
+    outline:0;
+    border-width: 0 0 2px;
+    border-color: black
+  }
+
+  
+  .password{
+    width: 70%; margin-top: 10px;height: 25px;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: gray
+}
+
+.password:focus {
+    outline:0;
+    border-width: 0 0 2px;
+    border-color: black
+  }
+
+.textm{
+   font-size: 12px;width: 80%;
+    margin: auto;padding-top: 10px;
+}

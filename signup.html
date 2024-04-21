@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="./signup.css">
+</head>
+<body>
+  <div id="container"></div>
+   
+  <div id="outerbox">
+    <div id="innerbox">
+           <div class="leftinnerbox">
+            <p class="para1">Looks like you're new here!
+              </p>
+              <p class="para2">  Sign up with your mobile number to get started</p>
+           <div style="display: flex;flex-direction: column;align-items: center;justify-content: center;margin-top: 30px;width: 75%;">
+            <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/login_img_c4a81e.png" alt="hero_signup">
+           </div>
+            </div>
+           <div class="rightinnerbox">
+
+            <div style="display: flex;justify-content: center;margin-top: 20px;">
+
+                <input id="phone" class="mobile" type="number" placeholder="Enter Mobile Number"/>
+            </div>
+            <div style="display: flex;justify-content: center;margin-top: 20px">
+    
+                <input id="naam" class="name" type="text" placeholder="Enter your Name"/>
+            </div>
+            <div style="display: flex;justify-content: center;margin-top: 20px;">
+
+                <input id="pass" class="password" type="password" placeholder="Enter Password"/>
+            </div>
+            <div style="margin-top: 20px;">
+                <p class="textm">By continuing, you agree to Flipkart's 
+                    <span style="color: blue;"> Terms of Use</span>
+                    and <span style="color: blue;">Privacy Policy.</span></p>
+            </div>
+            <div style="margin-top: 10px;display: flex;justify-content: center;">
+                <button class="continue" style="border: none;background-color: #FB641B;color: white;font-size: 20px;width: 90%;padding: 9px;border-radius: 5px;"
+               onclick="Signup()"
+                >CONTINUE</button>
+            </div>
+            <div style="margin-top: 10px;display: flex;justify-content: center;">
+                <button style="border: none;background-color: whitesmoke;color: #2874F0;;font-size: 20px;width: 90%;padding: 9px;border-radius: 5px">Existing User? Login</button>
+            </div> 
+        </div>
+           
+    </div>
+  </div>
+</body>
+</html>
+<script>
+    $(function(){
+    $("#container").load("./Navabar.html");
+  });
+
+  </script>
+  <script src="./signup.js"></script>

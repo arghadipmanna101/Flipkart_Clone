@@ -1,0 +1,119 @@
+#para1{
+    border: 4px solid orange;
+}
+
+nav{
+    background-color: white;
+}
+
+#nav{
+    display: flex;
+ justify-content: space-around;
+ padding-top: 10px;
+ padding-bottom: 10px;
+ background-color: white;
+ width: 90%;
+ margin: auto;
+}
+
+#nav1{
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    background-color: #F1F2F4;
+}
+
+#logo_name{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-style: italic;
+    color: #2A55E5;
+    font-weight: bold;
+}
+
+#input_data{
+    border: none;
+    width: 500px;
+    height: 20px;
+   padding-left: 12px;
+   background-color: #F0F5FF;
+}
+
+.navtab{
+    display: flex;
+    align-items: center;
+}
+
+#searchbar{
+    background-color: #F0F5FF;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+option{
+    font-size: 15px; 
+    font-family: sans-serif;
+}
+
+select{
+    border: none;
+    font-size: 15px; 
+    font-family: sans-serif;
+}
+
+
+#categories{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 6px;
+    margin: 12px;
+    margin: auto;
+    width: 95%;
+    margin: auto;
+    background-color: white;
+    margin-top: 10px;
+    font-family: sans-serif;
+}
+
+
+
+
+
+#categories > div > img{
+   height: 70px;
+   width: 60px;
+   background-color: white;
+}
+
+#categories > div{
+display: flex;
+flex-direction: column;
+align-items: center;
+font-weight: bold;
+font-size: 14px;
+padding: 10px;
+}
+
+#categories > div > p{
+    padding-top: 10px;
+}
+
+
+li{
+    list-style: none;
+}
+
+#footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 18px;
+    padding-top: 18px;
+}
+
+.heading{
+    color: gray;
+}
