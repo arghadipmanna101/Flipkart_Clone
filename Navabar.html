@@ -1,98 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./index.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flipkart Clone</title>
+  <link rel="shortcut icon"
+    href="https://static-assets-web.flixcart.com/www/promos/new/20150528-140547-favicon-retina.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./navbar.css">
 </head>
+
 <body>
-    <nav>
-        <div id="nav">
-          <div id="nav1">
-           <div id="nav_logo"><img id="fli" src="flipkart_logo.png"></div>
-             <span id="logo_name"> <img id="fli_name"
-              src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
-              width="160" height="40" title="Flipkart"> </span>
-          </div>
-          <div class="navtab" id="searchbar">
-            <span>
-              <svg
-                width="24"
-                height="24"
-                class=""
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <title>Search Icon</title>
-                <path
-                  d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z"
-                  stroke="#717478"
-                  stroke-width="1.4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"></path>
-                <path
-                  d="M16 16L21 21"
-                  stroke="#717478"
-                  stroke-width="1.4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"></path>
-              </svg>
-            </span>
-            <span>
-              <input
-                id="input_data"
-                type="text"
-                placeholder="Search for Products, Brands and More" />
-            </span>
-          </div>
 
-          
-          <div class="navtab">
-          <div class="navtab" id="seller">
-            <span>
-              <img
-                src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg"
-                alt="become a seller" />
-            </span>
-            <span
-              style="font-size: 15px; font-family: sans-serif; padding-left: 12px"
-              >Become a Seller</span
-            >
-          </div>
-          <div class="navtab" id="sign">
-
-            <span>
-              <img
-                src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-815786.svg"
-                alt="Sign in" />
-            </span>
-            <span
-              style="font-size: 15px; font-family: sans-serif; padding-left: 12px"
-              >
-              <select name="forma" onchange="location = this.value;">
-                <option value="">Profile</option>
-                <option value="signup.html">Signup</option>
-                <option value="signin.html">Signin</option>
-                <option value="FPZ.html">Flipkart Plus Zone</option>
-                <option value="order.html">Orders</option>
-               </select>
-              
-              </span
-            >
-          </div>
-          <div class="navtab" id="seller">
-            <span>
-              <img
-                src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg"
-                alt="become a seller" />
-            </span>
-            <span
-              style="font-size: 15px; font-family: sans-serif; padding-left: 12px"
-              >Cart</span>
-          </div>
+  <!-- header -->
+  <header>
+    <div class="nav-container">
+      <div class="logo">
+        <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png"
+          alt="logo">
+      </div>
+      <div class="search">
+        <div class="search-container">
+          <input type="text" class="search-box" placeholder="Search for products, brands and more">
+          <button class="search-btn">
+            <svg width="20" height="20" viewBox="0 0 17 18" class="" xmlns="http://www.w3.org/2000/svg">
+              <g fill="#2874F1" fill-rule="evenodd">
+                <path class="_34RNph"
+                  d="m11.618 9.897l4.225 4.212c.092.092.101.232.02.313l-1.465 1.46c-.081.081-.221.072-.314-.02l-4.216-4.203">
+                </path>
+                <path class="_34RNph"
+                  d="m6.486 10.901c-2.42 0-4.381-1.956-4.381-4.368 0-2.413 1.961-4.369 4.381-4.369 2.42 0 4.381 1.956 4.381 4.369 0 2.413-1.961 4.368-4.381 4.368m0-10.835c-3.582 0-6.486 2.895-6.486 6.467 0 3.572 2.904 6.467 6.486 6.467 3.582 0 6.486-2.895 6.486-6.467 0-3.572-2.904-6.467-6.486-6.467">
+                </path>
+              </g>
+            </svg>
+          </button>
         </div>
-        
-      </nav>
+      </div>
+      <div class="login">
+        <button>Login</button>
+      </div>
+      <div class="become-seller">
+        Become a Seller
+      </div>
+      <div class="more">
+        More
+        <svg width="4.7" height="8" viewBox="0 0 16 27" xmlns="http://www.w3.org/2000/svg" class="zZ3yfL">
+          <path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="#fff" class="_2gTTdy"></path>
+        </svg>
+      </div>
+      <div class="cart">
+        <svg class="V3C5bO" width="14" height="14" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+          <path class="_1bS9ic"
+            d="M15.32 2.405H4.887C3 2.405 2.46.805 2.46.805L2.257.21C2.208.085 2.083 0 1.946 0H.336C.1 0-.064.24.024.46l.644 1.945L3.11 9.767c.047.137.175.23.32.23h8.418l-.493 1.958H3.768l.002.003c-.017 0-.033-.003-.05-.003-1.06 0-1.92.86-1.92 1.92s.86 1.92 1.92 1.92c.99 0 1.805-.75 1.91-1.712l5.55.076c.12.922.91 1.636 1.867 1.636 1.04 0 1.885-.844 1.885-1.885 0-.866-.584-1.593-1.38-1.814l2.423-8.832c.12-.433-.206-.86-.655-.86"
+            fill="#fff"></path>
+        </svg>
+        Cart
+      </div>
+    </div>
+  </header>
+
+  <!-- section 1 -->
+  <section class="section-1">
+    <div class="section-1-container">
+      <div class="section-1-item">
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/178cf5a874cd697a.png?q=100" alt="">
+        Top Offers
+      </div>
+      <div class="section-1-item">
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/e2268d56d09df684.png?q=100" alt="">
+        Mobiles & Tablets
+      </div>
+      <div class="section-1-item">
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/6e3e1efa83bc56c3.png?q=100" alt="">
+        Electronics
+      </div>
+      <div class="section-1-item">
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/b3e1225e6bda1c9e.png?q=100" alt="">
+        TVs & Appliances
+      </div>
+      <div class="section-1-item">
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/a11d5d13e54bf964.png?q=100" alt="">
+        Fashion
+      </div>
+      <div class="section-1-item">
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/5f09b2d254acb48a.png?q=100" alt="">
+        Beauty
+      </div>
+      <div class="section-1-item">
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/5972d5da375c81c7.png?q=100" alt="">
+        Home & Furniture
+      </div>
+      <div class="section-1-item">
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/1cfc2d91f717510a.png?q=100" alt="">
+        Flights
+      </div>
+      <div class="section-1-item">
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/d154c0b4d536c1cf.png?q=100" alt="">
+        Grocery
+      </div>
+    </div>
+  </section>
 </body>
+
 </html>
