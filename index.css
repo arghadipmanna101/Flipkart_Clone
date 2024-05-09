@@ -26,11 +26,7 @@ body{
 }
 
 #logo_name{
-    font-size: 20px;
-    font-family: sans-serif;
-    font-style: italic;
-    color: #2A55E5;
-    font-weight: bold;
+    margin-right: 20px;
 }
 
 #input_data{
@@ -154,6 +150,11 @@ a:link {
  #seller:hover:after{
     width: 100%;
     height: 3px;
+ }
+
+ #logo_name{
+    cursor: pointer;
+    color: #F0F5FF;
  }
 
 
