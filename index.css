@@ -4,13 +4,16 @@
 
 nav{
     background-color: white;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
 }
 
 #nav{
-    display: flex;
+ display: flex;
  justify-content: space-around;
  padding-top: 10px;
  padding-bottom: 10px;
+ padding-right: -10;
  background-color: white;
  width: 90%;
  margin: auto;
@@ -19,6 +22,7 @@ nav{
 #nav1{
     display: flex;
     flex-direction: column;
+    margin-right: -5;
 }
 
 body{
@@ -26,7 +30,7 @@ body{
 }
 
 #logo_name{
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 #input_data{

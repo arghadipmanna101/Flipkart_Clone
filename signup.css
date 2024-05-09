@@ -1,71 +1,101 @@
+/* Reset default padding and margin for all elements */
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
+/* Styles for the outer container */
 #outerbox {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 30px;
     margin-top: 10px;
 }
 
+/* Styles for the inner container */
 #innerbox {
     display: flex;
     background-color: white;
-    width: 45%;
+    width: 60%;
     height: 500px;
+    padding: 20px;
 }
 
+/* Styles for the left inner box */
 .leftinnerbox {
     background-color: #2874F0;
     color: white;
     font-family: sans-serif;
     width: 45%;
+    padding: 20px; /* Add padding for content spacing */
 }
 
+/* Styles for the right inner box */
 .rightinnerbox {
     font-family: sans-serif;
     width: 55%;
+    padding: 20px; /* Add padding for content spacing */
+}
+
+/* Common styles for paragraphs */
+.para1,
+.para2 {
+    width: 75%;
+    margin-top: 20px; /* Reduce margin top for better alignment */
+    margin-bottom: 20px; /* Add margin bottom for spacing between elements */
 }
 
 .para1 {
-    margin-top: 35px;
     font-weight: bold;
     font-size: 25px;
     padding-top: 40px;
-    width: 75%;
-    margin: auto;
 }
 
 .para2 {
-    margin-top: 20px;
-    font-size: 18px;
+    font-size: 20px;
     padding-top: 27px;
-    width: 75%;
-    margin: auto;
 }
 
-.mobile, .name, .password {
-    width: 70%;
+/* Common styles for input fields */
+.mobile,
+.name,
+.password {
+    width: 100%; /* Use full width of the parent container */
     margin-top: 10px;
-    height: 25px;
-    outline: 0;
-    border: 0;
-    border-bottom: 2px solid gray;
+    height: 35px; /* Increase height for better visibility and interaction */
+    padding: 8px; /* Add padding for internal spacing */
+    border: 2px solid transparent; /* Use transparent border initially */
+    border-radius: 5px;
+    transition: border-color 0.3s ease; /* Smooth transition for border color change */
 }
 
-.mobile:focus, .name:focus, .password:focus {
-    border-color: black;
+/* Styles for input fields on focus */
+.mobile:focus,
+.name:focus,
+.password:focus {
+    border-color: black; /* Change border color on focus */
+    outline: none; /* Remove default focus outline */
 }
 
+/* Styles for small text */
 .textm {
-    font-size: 12px;
+    font-size: 16px;
     width: 80%;
     margin: auto;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
-.continue:hover {
-    cursor: pointer;
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    #innerbox {
+        flex-direction: column; /* Stack inner boxes vertically on small screens */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .leftinnerbox,
+    .rightinnerbox {
+        width: 100%; /* Use full width on small screens */
+    }
 }
