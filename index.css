@@ -41,13 +41,13 @@ body{
 .navtab{
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 #searchbar{
     background-color: #F0F5FF;
-    padding: 4px;
-    border-radius: 10px;
+    padding: 8px;
+    border-radius: 15px;
 }
 
 option{
