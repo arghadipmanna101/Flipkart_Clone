@@ -7,10 +7,10 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <link rel="stylesheet" href="./signup.css">
 </head>
-<body>
-  <div id="container"></div>
+<body style="min-width: 100vh;">
+  <div id="container" style="display: flex; justify-content: center; "></div>
    
-  <div id="outerbox">
+  <div id="outerbox" style="display: flex;  min-height: 90vh;">
     <div id="innerbox">
            <div class="leftinnerbox">
             <p class="para1">Looks like you're new here!
@@ -26,23 +26,16 @@
 
                 <input id="phone" class="mobile" type="number" placeholder="Enter Mobile Number"/>
             </div>
-            <div style="display: flex;justify-content: center;margin-top: 20px">
-    
-                <input id="naam" class="name" type="text" placeholder="Enter your Name"/>
-            </div>
-            <div style="display: flex;justify-content: center;margin-top: 20px;">
-
-                <input id="pass" class="password" type="password" placeholder="Enter Password"/>
-            </div>
+           
             <div style="margin-top: 20px;">
                 <p class="textm">By continuing, you agree to Flipkart's 
                     <span style="color: blue;"> Terms of Use</span>
                     and <span style="color: blue;">Privacy Policy.</span></p>
             </div>
             <div style="margin-top: 10px;display: flex;justify-content: center;">
-                <button class="continue" style="border: none;background-color: #FB641B;color: white;font-size: 20px;width: 90%;padding: 9px;border-radius: 5px;"
+                <button class="continue " style="border: none;background-color: #FB641B;color: white;font-size: 20px;width: 90%;padding: 10px;border-radius: 5px; margin-top: 20px;"
                onclick="Signup()"
-                >CONTINUE</button>
+                >Request OTP</button>
             </div>
             <div style="margin-top: 10px;display: flex;justify-content: center;">
                 <button style="border: none;background-color: whitesmoke;color: #2874F0;;font-size: 20px;width: 90%;padding: 9px;border-radius: 5px">Existing User? Login</button>
