@@ -105,15 +105,131 @@ li{
     list-style: none;
 }
 
-#footer{
-    background-color: black;
+/* CSS */
+#footer {
+    background-color: #333;
     color: white;
+    padding: 30px 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    padding-bottom: 18px;
-    padding-top: 18px;
-}
+  }
+  
+  .footer-column {
+    width: 200px;
+  }
+  
+  .footer-heading {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  ul li {
+    margin-bottom: 8px;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+  }
+  
 
 .heading{
     color: gray;
+}
+#footer li:hover {
+    color: lightgray; 
+    cursor: pointer; 
+  }
+
+.brand-directory{
+  color: rgba(91, 88, 88, 0.867);
+  font-weight: bolder;
+  margin-left: 15px;
+  padding: 5px;
+  margin-top: 15px;
+}
+
+.paragraph{
+  color: grey;
+  font-size: smaller;
+
+  margin-left: 15px;
+}
+
+.mobile-para{
+  color: grey;
+  font-size: smaller;
+  margin-left: 15px;
+
+}
+.camera-para{
+  color: grey;
+  font-size: smaller;
+  margin-left: 15px;
+
+}
+.laptop-para{
+  color: grey;
+  font-size: smaller;
+  margin-left: 15px;
+
+}
+.tvs-para{
+  color: grey;
+  font-size: smaller;
+  margin-left: 15px;
+
+}
+.large-appliances-para{
+  color: grey;
+  font-size: smaller;
+  margin-left: 15px;
+
+}
+.clothing-para{
+  color: grey;
+  font-size: smaller;
+  margin-left: 15px;
+
+}
+.footwear-para{
+  color: grey;
+  font-size: smaller;
+  margin-left: 15px;
+
+}
+.groceries-para{
+  color: grey;
+  font-size: smaller;
+  margin-left: 15px;
+
+}
+.furniture-para{
+  color: grey;
+  font-size: smaller;
+  margin-left: 15px;
+
+}
+.bgmh-para{
+  color: grey;
+  font-size: smaller;
+  margin-left: 15px;
+
+}
+.best-seller-on-flipkart-para{
+  color: grey;
+  font-size: smaller;
+  margin-left: 15px;
+
 }
