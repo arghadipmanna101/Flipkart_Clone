@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: #ede9e9;
+        }
+        .box1{
+           
+            margin : 10px;
+            height: 350px;
+            max-width: 100rem;
+            
+            background: white;
+        }
+        .box1 .img-container {
+            display: inline-block;
+        }
+        .img-container {
+           
+            margin-left: 15px;
+           width: 200px;
+           pointer-events : cursor;
+           border-radius: 5px;
+            border: 0.5px solid rgb(161, 157, 157);
+           
+            /* extra stuff */
+            overflow: hidden;
+          }
+          .about-img{
+           
+            width: 200px;
+            height: 200px;
+            transition: all 0.1s linear;
+          }
+          .img-container:hover .about-img {
+            
+            
+            transition: all 0.2s linear;
+            transform: scale(1.1);
+          }
+          p ,h4{
+                 margin: 5px;
+                text-align: center;
+                letter-spacing: 2px;
+                font-size: 17px;
+                
+          }
+          .box1 h3{
+                font-family:sans-serif;
+                font-size: 20px;
+               padding: 10px;
+          }
+          
+    </style>
+</head>
+<body>
+    <!-- section 1 -->
+    <section class="box1">
+        <h3>Deals on Mobile Phones</h3>
+        <div class="img-container">
+            <a href="#"><img src="content-img\vivo-mobile-phone-1000x1000.webp" alt="" class="about-img"></a>
+            <p>Vivo T3X 5G
+            <h4>From $14,500*</h4></p>
+        </div>
+        <div class="img-container">
+            <a href="#"><img src="content-img\vivo-mobile-phone-1000x1000.webp" alt="" class="about-img"></a>
+            <p>Vivo T3X 5G
+            <h4>From $14,500*</h4></p>
+        </div>
+        <div class="img-container">
+            <a href="#"><img src="content-img\vivo-mobile-phone-1000x1000.webp" alt="" class="about-img"></a>
+            <p>Vivo T3X 5G
+            <h4>From $14,500*</h4></p>
+        </div>
+</body>
+</html>
