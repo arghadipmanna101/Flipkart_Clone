@@ -114,9 +114,19 @@ li{
     padding-top: 18px;
 }
 
+a:link {
+    text-decoration: none;
+    color: white; }
+   
+    a:hover {
+        color: white;
+        text-decoration: underline;
+    }
 .heading{
-    color: gray;
-}
+
+    
+}  color: gray;
+  
 #seller{
     cursor:pointer; 
     transition:all 0.3s ease-in-out;
