@@ -6,6 +6,23 @@ nav{
     background-color: white;
 }
 
+#nav_logo{
+   width: 50px;
+   height: 50px;
+}
+#fli{
+    position: absolute;
+    left: -2.5vw;
+    top: -2.75vh;
+    width: 90px;
+    height: 90px;
+}
+#fli_name{
+    position: absolute;
+    left: -2vw;
+    top: 0.80vh;
+}
+
 #nav{
     display: flex;
  justify-content: space-around;
@@ -17,9 +34,11 @@ nav{
 }
 
 #nav1{
+    position: relative;
     display: flex;
     flex-direction: column;
 }
+
 
 body{
     background-color: #F1F2F4;
