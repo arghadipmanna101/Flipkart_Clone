@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/arghadipmanna101/Flipkart_Clone#readme",
   "dependencies": {
+    "all": "^0.0.0",
+    "nodemon": "^3.1.0",
     "prettier": "^3.2.5"
-  }
+  },
+  "keywords": []
 }
