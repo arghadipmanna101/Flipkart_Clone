@@ -59,9 +59,8 @@
 
   <!-- list of categories -->
 
-  <section id="categories">
-
-  </section>
+  <section id="categories"></section>
+  <section id="content-page"></section>
 
   <section id="carousel">
     <div class="swiper mySwiper carousel-inner">
@@ -180,6 +179,10 @@
                 prevEl: ".swiper-button-prev",
             },
         });
+
+        $(function () {
+          $("#content-page").load("./content-page.html");
+      });
     </script>
 </body>
 </html>
