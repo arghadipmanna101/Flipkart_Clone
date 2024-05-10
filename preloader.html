@@ -4,7 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .loader-container {
+            height: 100dvh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: rgb(255, 255, 255);
+            z-index: 1000;
+        }
 
+        .loader-wrapper {
+            position: relative;
+        }
+
+        .loader {
+            border: 10px solid #e4e3e3;
+            border-radius: 50%;
+            border-top: 10px solid #5f7cff;
+            width: 100px;
+            height: 100px;
+            animation: spin 1.3s linear infinite;
+            background-color: transparent;
+            z-index: 1;
+        }
+
+        .logo {
+            position: absolute;
+            top: 0;
+            right: 0;
+            border: 10px solid transparent;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            z-index: -1;
+            background-image: url("./flipkart_logo.png");
+            background-position: center;
+            background-size: cover;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
     <title>Preloader</title>
 </head>
 
