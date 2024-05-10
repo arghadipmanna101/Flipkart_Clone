@@ -1,185 +1,319 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flipkart</title>
-    <link rel="icon" type="image/x-icon" href="/flipkart favicon-modified.png">
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./index.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
-
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
-        html,
-        body {
-            position: relative;
-            height: 100%;
-            background: #eee;
-            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-            font-size: 14px;
-            color: #000;
-            margin: 0;
-            padding: 0;
-        }
-        .swiper {
-            width: 100%;
-            height: 100%;
-        }
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .swiper-slide img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    </style>
-</head>
-<body>
-  <!-- inline stylesheet -->
-  <!-- internal css -->
-  <!-- external css -->
-  <!-- id, class -->
-
-  <div id="container"></div>
-  <!-- Navbar -->
-
-
-
-  <!-- list of categories -->
-
-  <section id="categories">
-
-  </section>
-
-  <section id="carousel">
-    <div class="swiper mySwiper carousel-inner">
-      <div class="swiper-wrapper carousel-item active">
-        <div class="swiper-slide carousel-item">
-          <img class="d-block w-100"
-            src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/3351c6e7bf60c6bc.png?q=20"
-            alt="First slide"
-          />
-        </div>
-        <div class="swiper-slide carousel-item">
-          <img class="d-block w-100"
-            src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/3351c6e7bf60c6bc.png?q=20"
-            alt="Second slide"
-          />
-        </div>
-        <div class="swiper-slide carousel-item">
-          <img class="d-block w-100"
-            src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/3351c6e7bf60c6bc.png?q=20"
-            alt="Third slide"
-          />
-        </div>
-      </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
-    </div>
-
-  </section>
-  
-  <!-- <section id="footer">
-    <div>
-      <li class="heading">About</li>
-      <li><a href="https://corporate.flipkart.net/corporate-home">About Us </a></li>
-      <li><a href="https://www.flipkartcareers.com/?otracker=${otracker}_navlinks">Career</a></li>
-      <li> <a href="http://stories.flipkart.com/">Stories</a></li>
-      <li><a href="https://www.cleartrip.com/">Cleartrip</a></li>
-    </div>
-    <div>
-      <li class="heading">Help</li>
-      <li><a href="https://www.flipkart.com/pages/payments">Payments </a></li>
-      <li><a href="https://www.flipkart.com/pages/shipping">Shippings</a></li>
-      <li> <a href="https://www.flipkart.com/helpcentre?catalog=55c9c8e2b0000023002c1702&view=CATALOG">FAQ</a></li>
-
-    </div>
-    <div>
-      <li class="heading">CONUSMER POLICY</li>
-      <li><a href="https://corporate.flipkart.net/corporate-home">About Us </a></li>
-      <li><a href="https://www.flipkartcareers.com/?otracker=${otracker}_navlinks">Career</a></li>
-      <li> <a href="http://stories.flipkart.com/">Stories</a></li>
-      <li><a href="https://www.cleartrip.com/">Cleartrip</a></li>
-    </div>
-    <div>
-      <li class="heading">Follow us on</li>
-      <li><a href="https://www.twitter.com/flipkart">Twitter</a></li>
-      <li><a href="https://www.youtube.com/flipkart">Youtube</a></li>
-      <li><a href="https://www.facebook.com/flipkart">Facebook</a></li>
-    </div>
-    <div>
-      <li class="heading">Address</li>
-      <P> Vaishnavi Summit, Ground Floor,</P>
-      <P> 7th Main, 80 Feet Road, 3rd Block,</P>
-      <P> Koramangala Industrial</P>
-      <P>Layout, Bangalore KA </P>
-      <P> IN 560034. </P>
-    </div>
-    <div>
-      <li class="heading">Contact us</li>
-      <li>About Us</li>
-      <li>Career</li>
-      <li>Flipkart Stories</li>
-      <li>Cleartrip</li>
-    </div>
-  </section> -->
-  <footer>
-    <div class="footer-top">
-      <div class="footer-left">
-        <div class="footer-section">
-          <h3>ABOUT</h3>
-          <ul>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Flipkart Stories</a></li>
-            <li><a href="#">Press</a></li>
-            <li><a href="#">Corporate Information</a></li>
-          </ul>
-        </div>
-        <div class="footer-bottom">
-            <!-- Content for footer-bottom goes here -->
-        </div>
-    </section>
-    <!-- End Footer Section -->
-
-    <!-- jQuery and Swiper Script -->
+   
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        $(function () {
-            $("#container").load("./Navabar.html");
-        });
+    
+    <style>
+      header{
+        height: 69px;
+        width: 1440px;
+        padding: 2px 1px 2px 1px;
+        min-height: auto;
+        max-width:1600px
+       
+      }
+      
+  
+        
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        
+      }
+      
 
-        var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 2,
-            centeredSlides: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-    </script>
-</body>
+      :root{
+        --primary-color:#f0f5ffcf;
+        --secondary-color:#f1f2f4;
+        --accent-color:#1c41d6;
+        --accent-color-dark:#0d2998;
+        --primary-text-color:#000;
+        --secondary-text-color:#878787;
+        --primary-inline-section:4px;
+      }
+
+      body{
+        font-family: "Poppins", sans-serif;
+        color: var(--primary-text-color);
+      }
+      h1{
+        font-size: 3rem;
+      }
+      h2{
+        font-size: 2rem;
+      }
+      h3{
+        font-size: 1.5rem;
+      }
+      p{
+        font-family: "Roboto", sans-serif;
+        font-size: 1rem;
+        color: var(--secondary-text-color);
+        line-height: 1.8rem;
+      }
+      li{
+        list-style: none;
+      }
+      a{
+        text-decoration: none;
+        display: inline-block;
+      }
+      .small-bold-text{
+        font-size: 1rem;
+        font-weight: 700;
+      }
+      .container{
+        max-width: 998px;
+        margin-inline: auto;
+        padding-inline: var(--primary-inline-section);
+      }
+      .flex{
+        display: flex;
+        align-items: center;
+      }
+      .hover-links{
+        color: var(--accent-color);
+      }
+      .hover-links:hover{
+        color: var(--accent-color);
+        transition: 0.3s ease-in-out;
+      }
+      .primary-button{
+        color: var(--accent-color);
+        border-radius: 10rem;
+        color: var(--primary-color) !important;
+      }
+      .primary-button:hover{
+        background-color: var(--accent-color-dark);
+        transition: 0.25 ease-in-out;
+      }
+      .bx-shadow{
+        box-shadow: 0 0 0 0.4rem rgba(0, 0, 0, 0.3);
+      }
+      nav{
+        box-shadow: 0px 10px 8px -11px rgba(0,0,0,0.1);
+      }
+      .main-nav{
+        justify-content: space-between;
+        padding: 13px 0 10px;
+      }
+      .search-container{
+        height: 45px;
+        flex-grow: 1;
+        background-color: var(--primary-color);
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: .2rem 0rem .2rem 1rem;
+        border-radius: .5rem;
+        justify-content: flex-start;
+        gap: .7rem;
+        margin: 0 0 0 3rem;
+      }
+      .search-icon-container{
+        height: 100%;
+        background-color: var(--primary-color);
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+      }
+      .input-container{
+       height: 100%;
+       width: 100%;
+       background-color: var(--primary-color);
+       border: none;
+       font-size: 1.2rem;
+      }
+     
+
+
+      .right-nav-container{
+        justify-content: space-between;
+        flex-grow: .9;
+       height: 42px;
+       width: 531.742px;
+       min-height: auto;
+       min-width: auto;
+       padding-left: 2rem;
+       gap: 1rem;
+        
+      }
+
+      .category-divx{
+        gap: .1rem;
+        height: 42px;
+        width: 111.461px;
+        border-radius: 8px 8px 8px 8px;
+        padding: 8px 8px 8px 8px;
+        cursor: pointer;
+      }
+      .category-divx:hover{
+        background-color: #2A55E5;
+        color:#f1f2f4;
+        P{
+          color: #f1f2f4;
+        }
+        #k{
+          transform: rotate(180deg);
+        }
+
+      }
+      .category-diva{
+        height: 24px;
+      width: 104.438px;
+      padding: 0 20px 0 20px;
+      cursor: pointer;
+      box-sizing: border-box;
+      outline: rgba(255, 0, 0, ) dashed 1px;
+      }
+      
+     
+
+
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  </head>
+
+  <body>
+    <!-- inline stylesheet -->
+    <!-- internal css -->
+    <!-- external css -->
+    <!-- id, class -->
+<header>
+  
+      <nav>
+        <div class="container flex main-nav">
+          <div class="lkj">
+          <a class="company-logo" href="#">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDjUe8mYevOC0km5YLTJ6JaMgddDXyDt8LVUrb-T1syQ&s" alt="logo" width="160px" height="40px">
+          </a></div>
+
+          <div class="search-container flex">
+            <div class="search-icon-container" >
+              <span class="material-symbols-outlined">
+                search
+                </span>
+              
+              </div>
+              <input type="text" placeholder="Search for product brand and More." class="input-container"></div>
+               <div class="right-nav-contain flex">
+                <div class="category-divx flex">
+                
+                 
+                  <span class="material-symbols-outlined">
+                    account_circle
+                    </span>
+                  
+                  <p>Login</p>
+                  <span class="material-symbols-outlined" id="k">
+                    expand_more
+                    </span>
+
+                
+                </div>
+                <div class="category-diva flex">
+                  <span class="material-symbols-outlined">
+                    shopping_cart
+                  </span>
+                  <p cllass="hover-links">cart</p></div>
+                  <div class="category-divc flex">
+                  <span class="material-symbols-outlined">
+                    storefront
+                  </span>
+                  <p>Become a Seller</p>
+                </div>
+                <div class="category-divw flex">
+                  <span class="material-symbols-outlined">
+                   more_vert
+                  </span>
+                  
+                </div>
+
+
+               </div></div>
+           
+      </nav>
+
+    </header>
+  
+
+
+
+    <!-- list of categories -->
+    <!--<footer>
+
+    <section class="categories"></section>
+
+    <section id="carousel">
+     
+    </section>
+
+    <section id="footer">
+      <div>
+        <li class="heading">About</li>
+       <li><a href="https://corporate.flipkart.net/corporate-home" >About Us </a></li> 
+       <li><a href="https://www.flipkartcareers.com/?otracker=${otracker}_navlinks" >Career</a></li>
+        <li> <a href="http://stories.flipkart.com/" >Stories</a></li>
+        <li><a href="https://www.cleartrip.com/" >Cleartrip</a></li>
+      </div>
+      <div>
+        <li class="heading">Help</li>
+        <li><a href="https://www.flipkart.com/pages/payments" >Payments </a></li> 
+        <li><a href="https://www.flipkart.com/pages/shipping" >Shippings</a></li>
+         <li> <a href="https://www.flipkart.com/helpcentre?catalog=55c9c8e2b0000023002c1702&view=CATALOG" >FAQ</a></li>
+        
+      </div>
+      <div>
+        <li class="heading">CONUSMER POLICY</li>
+        <li><a href="https://corporate.flipkart.net/corporate-home" >About Us </a></li> 
+        <li><a href="https://www.flipkartcareers.com/?otracker=${otracker}_navlinks" >Career</a></li>
+         <li> <a href="http://stories.flipkart.com/" >Stories</a></li>
+         <li><a href="https://www.cleartrip.com/" >Cleartrip</a></li>
+      </div>
+      <div>
+        <li class="heading">Social</li>
+       
+        <li><a href="https://www.twitter.com/flipkart">Twitter</a></li>
+        <li><a href="https://www.youtube.com/flipkart"> Youtube</a></li>
+        <li><a href="https://www.facebook.com/flipkart">Facebook</a></li> 
+      </div>
+      <div>
+        <li class="heading">Address</li>
+       <P > Vaishnavi Summit, Ground Floor,</P>
+       <P > 7th Main, 80 Feet Road, 3rd Block,</P>
+        <P > Koramangala Industrial</P>
+          <P >Layout, Bangalore KA </P>
+          <P > IN 560034. </P>
+      </div>
+      <div>
+        <li class="heading">Contact us</li>
+        <li>About Us</li>
+        <li>Career</li>
+        <li>Flipkart Stories</li>
+        <li>Cleartrip</li>
+      </div>
+    </section>
+    </footer>-->
+  </body>
 </html>
+<script>
+  $(function(){
+$("#container").load("./Navabar.html");
+});
+
+$(function(){
+$("#carousel").load("./carousel.html");
+});
+</script>
+
