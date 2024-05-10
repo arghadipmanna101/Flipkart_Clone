@@ -48,7 +48,9 @@ left:0;
   opacity:1;
 }
 
-
+#carousel{
+  height: auto;
+}
 
 .itemSection {
   max-width: 1434px;
