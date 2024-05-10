@@ -221,7 +221,7 @@ a:link {
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 15px;
+    top: 30px;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -245,7 +245,7 @@ a:link {
 content: '';
 position: absolute;
 top: 0;
-left: 35%;
+left: 25%;
 margin-left: -15px;
 margin-top: -15px;
 width: 0;
@@ -258,7 +258,9 @@ border-right: solid 15px transparent;
   .dropdown:hover .dropdown-content {
     display: block;
   }
-  
+  #sign:hover .dropdown-content {
+    display: block;
+  }
   .dropdown-content a {
     color: black;
     padding: 12px 16px;
