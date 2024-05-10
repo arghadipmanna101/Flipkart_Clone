@@ -1,62 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Flipkart</title>
   <link rel="stylesheet" href="./index.css" />
   <link rel="shortcut icon" href="favi.png" type="image/x-icon">
 
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flipkart</title>
+    <link rel="icon" type="image/x-icon" href="/flipkart favicon-modified.png">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
 
-  <style>
-    * {
-      padding: 0;
-      margin: 0;
-    }
-    html,
-      body {
-        position: relative;
-        height: 100%;
-      }
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        html,
+        body {
+            position: relative;
+            height: 100%;
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
 
-      body {
-        background: #eee;
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        color: #000;
-        margin: 0;
-        padding: 0;
-      }
-
-      .swiper {
-        width: 100%;
-        height: 100%;
-      }
-
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-  </style>
 </head>
-
 <body>
   <!-- inline stylesheet -->
   <!-- internal css -->
@@ -75,7 +69,7 @@
   </section>
 
   <section id="carousel">
-<div class="swiper mySwiper carousel-inner">
+    <div class="swiper mySwiper carousel-inner">
       <div class="swiper-wrapper carousel-item active">
         <div class="swiper-slide carousel-item">
           <img class="d-block w-100"
@@ -102,8 +96,8 @@
     </div>
 
   </section>
-
-  <section id="footer">
+  
+  <!-- <section id="footer">
     <div>
       <li class="heading">About</li>
       <li><a href="https://corporate.flipkart.net/corporate-home">About Us </a></li>
@@ -126,10 +120,9 @@
       <li><a href="https://www.cleartrip.com/">Cleartrip</a></li>
     </div>
     <div>
-      <li class="heading">Social</li>
-
+      <li class="heading">Follow us on</li>
       <li><a href="https://www.twitter.com/flipkart">Twitter</a></li>
-      <li><a href="https://www.youtube.com/flipkart"> Youtube</a></li>
+      <li><a href="https://www.youtube.com/flipkart">Youtube</a></li>
       <li><a href="https://www.facebook.com/flipkart">Facebook</a></li>
     </div>
     <div>
@@ -147,37 +140,51 @@
       <li>Flipkart Stories</li>
       <li>Cleartrip</li>
     </div>
-  </section>
-  <script>
-    $(function () {
-      $("#container").load("./Navabar.html");
-    });
-  
-    // $(function () {
-    //   $("#carousel").load("./carousel.html");
-    // });
-  </script>
-   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </section> -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-left">
+        <div class="footer-section">
+          <h3>ABOUT</h3>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Flipkart Stories</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Corporate Information</a></li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+            <!-- Content for footer-bottom goes here -->
+        </div>
+    </section>
+    <!-- End Footer Section -->
 
-   <!-- Initialize Swiper -->
-   <script>
-     var swiper = new Swiper(".mySwiper", {
-       spaceBetween: 2,
-       centeredSlides: true,
-       autoplay: {
-         delay: 2500,
-         disableOnInteraction: false,
-       },
-       pagination: {
-         el: ".swiper-pagination",
-         clickable: true,
-       },
-       navigation: {
-         nextEl: ".swiper-button-next",
-         prevEl: ".swiper-button-prev",
-       },
-     });
-   </script>
+    <!-- jQuery and Swiper Script -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        $(function () {
+            $("#container").load("./Navabar.html");
+        });
+
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 2,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
-
 </html>
