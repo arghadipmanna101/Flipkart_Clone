@@ -71,7 +71,15 @@
 
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
+    <script>
 
+        $(document).ready(function () {
+            const loader = $(".loader-container");
+            setTimeout(function () {
+                loader.css("display", "none");
+            }, 2000);
+        });
+    </script>
 </body>
 
 </html>
