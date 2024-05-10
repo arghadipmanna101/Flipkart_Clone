@@ -6,55 +6,58 @@
 
   # How to contribute in our Project 🟢
 
-If you are interested to contribute in this project how to start contribute
+If you are interested to Contribute in this Project follow the given steps:
 <!-- in detail -->
 
-1. Fork the repo.
+1. Fork the repository.
 
-2. After forking, clone the repo to your local machine.
-To clone the repo to your local machine, run the following command in your terminal:
-    
-    ```bash
-    git clone https://github.com/<your-github-username>/Flipkart_Clone
-    ```
+2. After forking, clone the repository to your local machine.
+To clone the repository to your local machine, run the following command in your terminal:
+    
+    ```bash
+    git clone https://github.com/<your-github-username>/Flipkart_Clone.git
+    ```
 
-3. Add a remote upstream to the original repo.
+3. Add a remote upstream to the original repository.
 To add a remote upstream, run the following command in your terminal:
-    
-    ```bash
-    git remote add upstream https://github.com/<your-github-username>/Flipkart_Clone/
-    ```
+    
+    ```bash
+    git remote add upstream https://github.com/<your-github-username>/Flipkart_Clone.git
+    ```
 
 4. Create a new branch.
 To create a new branch, run the following command in your terminal:
-    
-    ```bash
-    git checkout -b <your-branch-name>
-    ```
+    
+    ```bash
+    git checkout -b <your-branch-name>
+    ```
 
-5. Make changes in source code.
+5. Make changes in the source code.
 
 6. Add your changes
 To add your changes, run the following command in your terminal:
-    
-    ```bash
-    git add <File1 changed> <File2 changed> ...
-    ```
+    
+    ```bash
+    git add <File1 changed> <File2 changed> ...
+    ```
 7. Commit your changes.
 To commit your changes, run the following command in your terminal:
-    
-    ```bash
-    git commit -m "<your-commit-message>"
-    ```
+    
+    ```bash
+    git commit -m "<your-commit-message>"
+    ```
 
 8. Push your changes.
 To push your changes, run the following command in your terminal:
-    
-    ```bash
-    git push origin <your-branch-name>
-    ```
+    
+    ```bash
+    git push -u origin <your-branch-name>
+    ```
 
 9. Create a PR.
+Go to your repository on GitHub that you have forked. You will see the Compare & Pull request button. Click on that button.
+Now, click on Create Pull Request.
+That's it.
 
 __________________________________________________________________________________________________________________________________________________________________
 
@@ -64,7 +67,7 @@ ________________________________________________________________________________
 
 2. Make sure you are on the "Current Repository" view. If not, go to "File" and select "Add Local Repository" to add your repository.
 
-3. In the "Current Repository" view, ensure you are on the branch that you want to submit a pull request for. If you're not on the correct branch, use the "Branch" menu to switch to the correct branch.
+3. In the "Current Repository" view, ensure you are on the branch which you want to submit a pull request for. If you're not on the correct branch, use the "Branch" menu to switch to the correct branch.
 
 4. Once you're on the correct branch, make your changes and commit them to the branch. You can do this by clicking the "+" button in the upper-left corner of the GitHub Desktop window, making your changes, and then entering a commit message.
 
@@ -76,4 +79,4 @@ ________________________________________________________________________________
 
 8. Once you're satisfied with your pull request, click the "Create pull request" button to submit it.
 
-**Note:** In order to create a pull request, you must have a fork of the original repository in your GitHub account and you must have made the changes in that forked repository.
+**Note:** To create a pull request, you must have a fork of the original repository in your GitHub account and you must have made the changes in that forked repository.
