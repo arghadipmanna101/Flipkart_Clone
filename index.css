@@ -55,7 +55,7 @@ body{
 
 #input_data{
     border: none;
-    width: 500px;
+    width: 520px;
     height: 20px;
     padding-left: 12px;
     background-color: #F0F5FF;
@@ -184,6 +184,7 @@ a:link {
 
 
  #sign{
+    
     cursor:pointer; 
     transition:all 0.3s ease-in-out;
     justify-content: space-around;
