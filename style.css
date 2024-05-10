@@ -14,38 +14,38 @@ footer {
 
 /* Add a smooth transition effect */
 .nav-item {
-    transition: background-color 0.5s ease; 
-  }
+  transition: background-color 0.5s ease;
+}
 
 .nav-item:hover {
   background-color: grey;
   text-decoration: underline;
-  opacity:1;
+  opacity: 1;
 }
 
 /* Style for the link */
 
 .nav-link {
-  text-decoration:none;
+  text-decoration: none;
   color: #000;
   display: block;
   padding: 20px;
 }
 
 .nav-link::after {
-content:'';
-opacity: 0;
-transition: all 0.3s ease;
-height: 2px;
-width: 100%;
-background-color:color-mix(in srgb,black,grey);
-position: absolute;
-bottom: 0;
-left:0;
+  content: '';
+  opacity: 0;
+  transition: all 0.3s ease;
+  height: 2px;
+  width: 100%;
+  background-color: color-mix(in srgb, black, grey);
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
-.nav-link:hover::after{
-  opacity:1;
+.nav-link:hover::after {
+  opacity: 1;
 }
 
 
@@ -233,4 +233,8 @@ left:0;
 .payment-icons img {
   height: 24px;
   margin-left: 10px;
+}
+
+.cp {
+  text-decoration: none;
 }
