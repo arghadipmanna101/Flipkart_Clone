@@ -1,110 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Online Shopping Site for Mobiles, Electronics, Furniture, and Grocery...
-    </title>
-    <link rel="stylesheet" href="./index.css" />
-    <link rel="icon" type="image/png" href="flipkart_icon.png" />
-
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-
-    <style>
-      * {
-        padding: 0;
-        margin: 0;
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flipkart</title>
+  <link rel="stylesheet" href="./index.css" />
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    html,
+      body {
+        position: relative;
+        height: 100%;
       }
-    </style>
-  </head>
 
-  <body>
-    <!-- inline stylesheet -->
-    <!-- internal css -->
-    <!-- external css -->
-    <!-- id, class -->
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
 
-    <div id="container"></div>
-    <!-- Navbar -->
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
 
-    <!-- list of categories -->
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-    <section id="categories"></section>
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+  </style>
+</head>
 
-    <section id="carousel"></section>
+<body>
+  <!-- inline stylesheet -->
+  <!-- internal css -->
+  <!-- external css -->
+  <!-- id, class -->
 
-    <section id="footer">
-      <div>
-        <li class="heading">About</li>
-        <li>
-          <a href="https://corporate.flipkart.net/corporate-home">About Us </a>
-        </li>
-        <li>
-          <a
-            href="https://www.flipkartcareers.com/?otracker=${otracker}_navlinks"
-            >Career</a
-          >
-        </li>
-        <li><a href="http://stories.flipkart.com/">Stories</a></li>
-        <li><a href="https://www.cleartrip.com/">Cleartrip</a></li>
+  <div id="container"></div>
+  <!-- Navbar -->
+
+
+
+  <!-- list of categories -->
+
+  <section id="categories">
+
+  </section>
+
+  <section id="carousel">
+<div class="swiper mySwiper carousel-inner">
+      <div class="swiper-wrapper carousel-item active">
+        <div class="swiper-slide carousel-item">
+          <img class="d-block w-100"
+            src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/3351c6e7bf60c6bc.png?q=20"
+            alt="First slide"
+          />
+        </div>
+        <div class="swiper-slide carousel-item">
+          <img class="d-block w-100"
+            src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/3351c6e7bf60c6bc.png?q=20"
+            alt="Second slide"
+          />
+        </div>
+        <div class="swiper-slide carousel-item">
+          <img class="d-block w-100"
+            src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/3351c6e7bf60c6bc.png?q=20"
+            alt="Third slide"
+          />
+        </div>
       </div>
-      <div>
-        <li class="heading">Help</li>
-        <li><a href="https://www.flipkart.com/pages/payments">Payments </a></li>
-        <li><a href="https://www.flipkart.com/pages/shipping">Shippings</a></li>
-        <li>
-          <a
-            href="https://www.flipkart.com/helpcentre?catalog=55c9c8e2b0000023002c1702&view=CATALOG"
-            >FAQ</a
-          >
-        </li>
-      </div>
-      <div>
-        <li class="heading">CONUSMER POLICY</li>
-        <li>
-          <a href="https://corporate.flipkart.net/corporate-home">About Us </a>
-        </li>
-        <li>
-          <a
-            href="https://www.flipkartcareers.com/?otracker=${otracker}_navlinks"
-            >Career</a
-          >
-        </li>
-        <li><a href="http://stories.flipkart.com/">Stories</a></li>
-        <li><a href="https://www.cleartrip.com/">Cleartrip</a></li>
-      </div>
-      <div>
-        <li class="heading">Social</li>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
 
-        <li><a href="https://www.twitter.com/flipkart">Twitter</a></li>
-        <li><a href="https://www.youtube.com/flipkart"> Youtube</a></li>
-        <li><a href="https://www.facebook.com/flipkart">Facebook</a></li>
-      </div>
-      <div>
-        <li class="heading">Address</li>
-        <p>Vaishnavi Summit, Ground Floor,</p>
-        <p>7th Main, 80 Feet Road, 3rd Block,</p>
-        <p>Koramangala Industrial</p>
-        <p>Layout, Bangalore KA</p>
-        <p>IN 560034.</p>
-      </div>
-      <div>
-        <li class="heading">Contact us</li>
-        <li>About Us</li>
-        <li>Career</li>
-        <li>Flipkart Stories</li>
-        <li>Cleartrip</li>
-      </div>
-    </section>
-  </body>
+  </section>
+
+  <section id="footer">
+    <div>
+      <li class="heading">About</li>
+      <li><a href="https://corporate.flipkart.net/corporate-home">About Us </a></li>
+      <li><a href="https://www.flipkartcareers.com/?otracker=${otracker}_navlinks">Career</a></li>
+      <li> <a href="http://stories.flipkart.com/">Stories</a></li>
+      <li><a href="https://www.cleartrip.com/">Cleartrip</a></li>
+    </div>
+    <div>
+      <li class="heading">Help</li>
+      <li><a href="https://www.flipkart.com/pages/payments">Payments </a></li>
+      <li><a href="https://www.flipkart.com/pages/shipping">Shippings</a></li>
+      <li> <a href="https://www.flipkart.com/helpcentre?catalog=55c9c8e2b0000023002c1702&view=CATALOG">FAQ</a></li>
+
+    </div>
+    <div>
+      <li class="heading">CONUSMER POLICY</li>
+      <li><a href="https://corporate.flipkart.net/corporate-home">About Us </a></li>
+      <li><a href="https://www.flipkartcareers.com/?otracker=${otracker}_navlinks">Career</a></li>
+      <li> <a href="http://stories.flipkart.com/">Stories</a></li>
+      <li><a href="https://www.cleartrip.com/">Cleartrip</a></li>
+    </div>
+    <div>
+      <li class="heading">Follow us on</li>
+      <li><a href="https://www.twitter.com/flipkart">Twitter</a></li>
+      <li><a href="https://www.youtube.com/flipkart">Youtube</a></li>
+      <li><a href="https://www.facebook.com/flipkart">Facebook</a></li>
+    </div>
+    <div>
+      <li class="heading">Address</li>
+      <P> Vaishnavi Summit, Ground Floor,</P>
+      <P> 7th Main, 80 Feet Road, 3rd Block,</P>
+      <P> Koramangala Industrial</P>
+      <P>Layout, Bangalore KA </P>
+      <P> IN 560034. </P>
+    </div>
+    <div>
+      <li class="heading">Contact us</li>
+      <li>About Us</li>
+      <li>Career</li>
+      <li>Flipkart Stories</li>
+      <li>Cleartrip</li>
+    </div>
+  </section>
+  <script>
+    $(function () {
+      $("#container").load("./Navabar.html");
+    });
+  
+    // $(function () {
+    //   $("#carousel").load("./carousel.html");
+    // });
+  </script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+   <!-- Initialize Swiper -->
+   <script>
+     var swiper = new Swiper(".mySwiper", {
+       spaceBetween: 2,
+       centeredSlides: true,
+       autoplay: {
+         delay: 2500,
+         disableOnInteraction: false,
+       },
+       pagination: {
+         el: ".swiper-pagination",
+         clickable: true,
+       },
+       navigation: {
+         nextEl: ".swiper-button-next",
+         prevEl: ".swiper-button-prev",
+       },
+     });
+   </script>
+</body>
+
 </html>
-<script>
-  $(function () {
-    $("#container").load("./Navabar.html");
-  });
-
-  $(function () {
-    $("#carousel").load("./carousel.html");
-  });
-</script>

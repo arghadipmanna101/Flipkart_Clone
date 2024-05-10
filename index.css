@@ -3,7 +3,25 @@
 }
 
 nav{
+    width:100%;
     background-color: white;
+}
+
+#nav_logo{
+   width: 50px;
+   height: 50px;
+}
+#fli{
+    position: absolute;
+    left: -2.5vw;
+    top: -2.75vh;
+    width: 90px;
+    height: 90px;
+}
+#fli_name{
+    position: absolute;
+    left: -2vw;
+    top: 0.80vh;
 }
 
 #nav{
@@ -17,20 +35,18 @@ nav{
 }
 
 #nav1{
+    position: relative;
     display: flex;
     flex-direction: column;
 }
+
 
 body{
     background-color: #F1F2F4;
 }
 
 #logo_name{
-    font-size: 20px;
-    font-family: sans-serif;
-    font-style: italic;
-    color: #2A55E5;
-    font-weight: bold;
+    margin-right: 20px;
 }
 
 #input_data{
@@ -45,13 +61,13 @@ body{
 .navtab{
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 #searchbar{
     background-color: #F0F5FF;
-    padding: 4px;
-    border-radius: 10px;
+    padding: 8px;
+    border-radius: 15px;
 }
 
 option{
@@ -154,6 +170,11 @@ a:link {
  #seller:hover:after{
     width: 100%;
     height: 3px;
+ }
+
+ #logo_name{
+    cursor: pointer;
+    color: #F0F5FF;
  }
 
 
