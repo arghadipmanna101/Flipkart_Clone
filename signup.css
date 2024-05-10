@@ -92,7 +92,7 @@ input[type="number"]:focus, input[type="text"]:focus, input[type="password"]:foc
     color: #ffffff;
     text-decoration: none;
     transition: background-color 0.3s ease;
-} */
+ */ */
 
 .continue:hover, .login:hover {
     background-color: #1E59D9;
