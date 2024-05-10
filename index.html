@@ -1,275 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flipkart</title>
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./index.css" />
-
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
 
     <style>
-      * {
-        padding: 0;
-        margin: 0;
-      }
-      html,
-      body {
-        position: relative;
-        height: 100%;
-      }
-
-      body {
-        background: #eee;
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        color: #000;
-        margin: 0;
-        padding: 0;
-      }
-
-      .swiper {
-        width: 100%;
-        height: 100%;
-      }
-
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        html,
+        body {
+            position: relative;
+            height: 100%;
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     </style>
-  </head>
-
-  <body>
-    <!-- inline stylesheet -->
-    <!-- internal css -->
-    <!-- external css -->
-    <!-- id, class -->
-
+</head>
+<body>
     <!-- Navbar Starts-->
     <nav>
-      <div id="nav">
-        <div id="nav1">
-           <span id="logo_name"> <img
-            src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
-            width="160" height="40" title="Flipkart"> </span>
+        <div id="nav">
+            <div id="nav1">
+                <span id="logo_name">
+                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg" width="160" height="40" title="Flipkart">
+                </span>
+            </div>
+            <div class="navtab" id="searchbar">
+                <span>
+                    <svg width="24" height="24" class="" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <title>Search Icon</title>
+                        <path d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z" stroke="#717478" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M16 16L21 21" stroke="#717478" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </span>
+                <span>
+                    <input id="input_data" type="text" placeholder="Search for Products, Brands and More" />
+                </span>
+            </div>
+            <div class="navtab">
+                <div class="navtab" id="seller">
+                    <span>
+                        <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg" alt="become a seller" />
+                    </span>
+                    <span class="navtab-text">Become a Seller</span>
+                </div>
+                <div class="navtab" id="sign">
+                    <span>
+                        <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-815786.svg" alt="Sign in" />
+                    </span>
+                    <span class="navtab-text">
+                        <select name="forma" onchange="location = this.value;">
+                            <option value="">Profile</option>
+                            <option value="signup.html">Signup</option>
+                            <option value="signin.html">Signin</option>
+                            <option value="FPZ.html">Flipkart Plus Zone</option>
+                            <option value="order.html">Orders</option>
+                        </select>
+                    </span>
+                </div>
+                <div class="navtab" id="seller">
+                    <span>
+                        <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg" alt="cart" />
+                    </span>
+                    <span class="navtab-text">Cart</span>
+                </div>
+            </div>
         </div>
-        <div class="navtab" id="searchbar">
-          <span>
-            <svg
-              width="24"
-              height="24"
-              class=""
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <title>Search Icon</title>
-              <path
-                d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z"
-                stroke="#717478"
-                stroke-width="1.4"
-                stroke-linecap="round"
-                stroke-linejoin="round"></path>
-              <path
-                d="M16 16L21 21"
-                stroke="#717478"
-                stroke-width="1.4"
-                stroke-linecap="round"
-                stroke-linejoin="round"></path>
-            </svg>
-          </span>
-          <span>
-            <input
-              id="input_data"
-              type="text"
-              placeholder="Search for Products, Brands and More" />
-          </span>
-        </div>
-
-        
-        <div class="navtab">
-        <div class="navtab" id="seller">
-          <span>
-            <img
-              src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg"
-              alt="become a seller" />
-          </span>
-          <span class="navtab-text">Become a Seller</span
-          >
-        </div>
-        <div class="navtab" id="sign">
-
-          <span>
-            <img
-              src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-815786.svg"
-              alt="Sign in" />
-          </span>
-          <span class="navtab-text">
-            <select name="forma" onchange="location = this.value;">
-              <option value="">Profile</option>
-              <option value="signup.html">Signup</option>
-              <option value="signin.html">Signin</option>
-              <option value="FPZ.html">Flipkart Plus Zone</option>
-              <option value="order.html">Orders</option>
-             </select>
-            
-            </span
-          >
-        </div>
-        <div class="navtab" id="seller">
-          <span>
-            <img
-              src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg"
-              alt="cart" />
-          </span>
-          <span class="navtab-text">Cart</span>
-        </div>
-      </div>
     </nav>
-<!-- Navbar Ends -->
-
-    <!-- list of categories -->
-
-    <section id="categories"></section>
-
+    <!-- Navbar Ends -->
+    
+    <!-- Carousel Section -->
     <section id="carousel">
-      <div class="swiper mySwiper carousel-inner">
-        <div class="swiper-wrapper carousel-item active">
-          <div class="swiper-slide carousel-item">
-            <img
-              class="d-block w-100"
-              src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/3351c6e7bf60c6bc.png?q=20"
-              alt="First slide"
-            />
-          </div>
-          <div class="swiper-slide carousel-item">
-            <img
-              class="d-block w-100"
-              src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/3351c6e7bf60c6bc.png?q=20"
-              alt="Second slide"
-            />
-          </div>
-          <div class="swiper-slide carousel-item">
-            <img
-              class="d-block w-100"
-              src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/3351c6e7bf60c6bc.png?q=20"
-              alt="Third slide"
-            />
-          </div>
+        <div class="swiper mySwiper carousel-inner">
+            <div class="swiper-wrapper carousel-item active">
+                <div class="swiper-slide carousel-item">
+                    <img class="d-block w-100" src="images/add2.jpg" alt="First slide" />
+                </div>
+                <div class="swiper-slide carousel-item">
+                    <img class="d-block w-100" src="images/add3.png" alt="Second slide" />
+                </div>
+                <div class="swiper-slide carousel-item">
+                    <img class="d-block w-100" src="images/add1.jpg" alt="Third slide" />
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-      </div>
     </section>
+    <!-- End Carousel Section -->
 
+    <!-- Footer Section -->
     <section id="footer">
-      <div>
-        <li class="heading">About</li>
-        <li>
-          <a href="https://corporate.flipkart.net/corporate-home">About Us </a>
-        </li>
-        <li>
-          <a
-            href="https://www.flipkartcareers.com/?otracker=${otracker}_navlinks"
-            >Career</a
-          >
-        </li>
-        <li><a href="http://stories.flipkart.com/">Stories</a></li>
-        <li><a href="https://www.cleartrip.com/">Cleartrip</a></li>
-      </div>
-      <div>
-        <li class="heading">Help</li>
-        <li><a href="https://www.flipkart.com/pages/payments">Payments </a></li>
-        <li><a href="https://www.flipkart.com/pages/shipping">Shippings</a></li>
-        <li>
-          <a
-            href="https://www.flipkart.com/helpcentre?catalog=55c9c8e2b0000023002c1702&view=CATALOG"
-            >FAQ</a
-          >
-        </li>
-      </div>
-      <div>
-        <li class="heading">CONUSMER POLICY</li>
-        <li>
-          <a href="https://corporate.flipkart.net/corporate-home">About Us </a>
-        </li>
-        <li>
-          <a
-            href="https://www.flipkartcareers.com/?otracker=${otracker}_navlinks"
-            >Career</a
-          >
-        </li>
-        <li><a href="http://stories.flipkart.com/">Stories</a></li>
-        <li><a href="https://www.cleartrip.com/">Cleartrip</a></li>
-      </div>
-      <div>
-        <li class="heading">Social</li>
-
-        <li><a href="https://www.twitter.com/flipkart">Twitter</a></li>
-        <li><a href="https://www.youtube.com/flipkart"> Youtube</a></li>
-        <li><a href="https://www.facebook.com/flipkart">Facebook</a></li>
-      </div>
-      <div>
-        <li class="heading">Address</li>
-        <p>Vaishnavi Summit, Ground Floor,</p>
-        <p>7th Main, 80 Feet Road, 3rd Block,</p>
-        <p>Koramangala Industrial</p>
-        <p>Layout, Bangalore KA</p>
-        <p>IN 560034.</p>
-      </div>
-      <div>
-        <li class="heading">Contact us</li>
-        <li>About Us</li>
-        <li>Career</li>
-        <li>Flipkart Stories</li>
-        <li>Cleartrip</li>
-      </div>
+        <div class="footer-top">
+            <!-- Content for footer-top goes here -->
+        </div>
+        <div class="footer-bottom">
+            <!-- Content for footer-bottom goes here -->
+        </div>
     </section>
-    <script>
-      $(function () {
-        $("#container").load("./Navabar.html");
-      });
+    <!-- End Footer Section -->
 
-      // $(function () {
-      //   $("#carousel").load("./carousel.html");
-      // });
-    </script>
+    <!-- jQuery and Swiper Script -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 2,
-        centeredSlides: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
+//         $(function () {
+//             $("#container").load("./Navabar.html");
+//         });
+
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 2,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
     </script>
-  </body>
+</body>
 </html>
