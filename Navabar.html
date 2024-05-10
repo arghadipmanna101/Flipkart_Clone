@@ -65,21 +65,27 @@
                 src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-815786.svg"
                 alt="Sign in" />
             </span>
-            <span
-              style="font-size: 15px; font-family: sans-serif; padding-left: 12px"
-              >
-              <select name="forma" onchange="location = this.value;">
+            <span style="font-size: 15px; font-family: sans-serif; padding-left: 12px;">
+              <select name="forma" id="dropdownMenu" onchange="navigateDropdown(this.value);">
                 <option value="">Login</option>
                 <option value="signin.html">My Profile</option>
                 <option value="FPZ.html">Flipkart Plus Zone</option>
                 <option value="order.html">Orders</option>
+                <option value="signup.html">Sign Up</option>
                 <option value="">Wishlist</option>
                 <option value="">Rewards</option>
                 <option value="">Gift Cards</option>
-               </select>
-              
-              </span
-            >
+              </select>
+            </span>
+            
+            <script>
+              function navigateDropdown(selectedValue) {
+                if (selectedValue) {
+                  window.location.href = selectedValue;
+                }
+              }
+            </script>
+            
           </div>
           <div class="navtab" id="seller">
             <span>
