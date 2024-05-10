@@ -1,9 +1,10 @@
 <div align="center">
   <h1 style="font-size: 36px; font-weight: bold;">Flipkart_Clone</h1>
+  
 </div>
 
 <div style="text-align:center;">
-  <img src="https://cdn.dribbble.com/users/1980856/screenshots/4760116/media/5021b87fb97e90b8f153a4480ffc615e.gif" alt="Flipkart Logo Animation" width="400" height="250">
+ <img src="https://cdn.dribbble.com/users/1980856/screenshots/4760116/media/5021b87fb97e90b8f153a4480ffc615e.gif" alt="Flipkart Logo Animation" width="3800" height="450">
 </div>
 
 <!-- Tech stack -->
