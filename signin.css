@@ -38,48 +38,38 @@
 .para2{
     margin-top: 20px;font-size: 18px;padding-top: 27px;width: 75%;margin: auto;
 }
-
-.mobile{
-    width: 70%; margin-top: 10px;height: 25px;
+/* Input fields styling */
+.mobile,
+.name,
+.password {
+    width: 70%;
+    margin-top: 10px;
+    height: 25px;
     outline: 0;
     border-width: 0 0 2px;
-    border-color: gray
+    border-color: gray;
+    font-size: 20px;
 }
 
-.mobile:focus {
-    outline:0;
-    border-width: 0 0 2px;
-    border-color: black
-  }
-
-  .name{
-    width: 70%; margin-top: 10px;height: 25px;
-    outline: 0;
-    border-width: 0 0 2px;
-    border-color: gray
-}
-
-.name:focus {
-    outline:0;
-    border-width: 0 0 2px;
-    border-color: black
-  }
-
-  
-  .password{
-    width: 70%; margin-top: 10px;height: 25px;
-    outline: 0;
-    border-width: 0 0 2px;
-    border-color: gray
-}
-
+/* Input fields focus styling */
+.mobile:focus,
+.name:focus,
 .password:focus {
-    outline:0;
-    border-width: 0 0 2px;
-    border-color: black
-  }
+    border-color: black;
+}
+
+/* Additional styling for the .password field */
+.password {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 0 0 2px;/* Reduced border width for consistency */
+    font-size: 20px;
+    text-decoration:none;
+}
 
 .textm{
-   font-size: 12px;width: 80%;
+   font-size: 18px;width: 80%;
     margin: auto;padding-top: 10px;
 }
+
