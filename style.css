@@ -12,6 +12,83 @@ footer {
   padding: 40px 0;
 }
 
+
+
+.itemSection {
+  max-width: 1434px;
+  height: 314px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.item {
+  width: 232px;
+  height: 314px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.itemImg {
+  height: 200px;
+}
+
+.itemDescription {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.buyNowText {
+  color: #388e3c;
+  padding-top: 8px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.itemHeadName {
+  word-wrap: break-word;
+  font-size: 30px;
+  line-height: 1.38;
+  color: #2e2e2e;
+  text-align: center;
+
+}
+
+.viewAllSection {
+  margin-top: 24px;
+  text-align: center;
+}
+
+
+
+.viewAllButton {
+  background: #2874f0;
+  color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+  border: none;
+  height: 38px;
+  width: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.viewAllText {
+  font-size: 13px;
+
+}
+
+
+.line {
+  width: 100%;
+  border: none;
+  border-top: 8px solid rgba(213, 207, 207, 0.617);
+}
+
 .footer-top {
   display: flex;
   justify-content: space-between;
