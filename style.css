@@ -3,6 +3,9 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
 }
 
 /* Footer Styles */
@@ -10,12 +13,13 @@ footer {
   background-color: #212121;
   color: #fff;
   padding: 40px 0;
+  width: 100%;
 }
 
 /* Add a smooth transition effect */
 .nav-item {
-    transition: background-color 0.5s ease; 
-  }
+  transition: background-color 0.5s ease; 
+}
 
 .nav-item:hover {
   background-color: grey;
@@ -33,22 +37,20 @@ footer {
 }
 
 .nav-link::after {
-content:'';
-opacity: 0;
-transition: all 0.3s ease;
-height: 2px;
-width: 100%;
-background-color:color-mix(in srgb,black,grey);
-position: absolute;
-bottom: 0;
-left:0;
+  content:'';
+  opacity: 0;
+  transition: all 0.3s ease;
+  height: 2px;
+  width: 100%;
+  background-color:color-mix(in srgb,black,grey);
+  position: absolute;
+  bottom: 0;
+  left:0;
 }
 
 .nav-link:hover::after{
   opacity:1;
 }
-
-
 
 .itemSection {
   max-width: 1434px;
@@ -91,15 +93,12 @@ left:0;
   line-height: 1.38;
   color: #2e2e2e;
   text-align: center;
-
 }
 
 .viewAllSection {
   margin-top: 24px;
   text-align: center;
 }
-
-
 
 .viewAllButton {
   background: #2874f0;
@@ -115,9 +114,7 @@ left:0;
 
 .viewAllText {
   font-size: 13px;
-
 }
-
 
 .line {
   width: 100%;
