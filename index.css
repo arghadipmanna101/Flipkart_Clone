@@ -1,0 +1,287 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav{
+    width:100%;
+    background-color: white;
+}
+
+*:focus {
+    outline: none;
+}
+
+#nav_logo{
+   width: 50px;
+   height: 50px;
+}
+#fli{
+    position: absolute;
+    left: -2.5vw;
+    top: -2.75vh;
+    width: 90px;
+    height: 90px;
+}
+#fli_name{
+    position: absolute;
+    left: -2vw;
+    top: 0.80vh;
+}
+
+#nav{
+    display: flex;
+ justify-content: space-around;
+ padding-top: 10px;
+ padding-bottom: 10px;
+ background-color: white;
+ width: 90%;
+ margin: auto;
+}
+
+#nav1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    background-color: #F1F2F4;
+}
+
+#logo_name {
+  margin-right: 20px;
+}
+
+#input_data {
+  border: none;
+  width: 500px;
+  height: 20px;
+  padding-left: 12px;
+  background-color: #f0f5ff;
+  outline: none;
+}
+
+.navtab {
+  display: flex;
+  align-items: center;
+  margin-right: 25px; /* Adjust the margin between items */
+}
+
+.navtab img {
+  height: 20px; /* Adjust height as needed */
+  margin-right: 4px; /* Adjust margin as needed */
+}
+
+.navtab-text {
+  font-size: 15px;
+  font-family: sans-serif;
+  margin-left: 2px; /* Adjust margin as needed */
+}
+
+#searchbar {
+  background-color: #f0f5ff;
+  padding: 8px;
+  border-radius: 15px;
+}
+
+option {
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+select {
+  border: none;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+#categories {
+  display: flex;
+  justify-content: space-around;
+  margin: 12px auto;
+  width: 95%;
+  background-color: white;
+  margin-top: 10px;
+  font-family: sans-serif;
+}
+
+#categories > div > img {
+  height: 70px;
+  width: 60px;
+  background-color: white;
+}
+
+#categories > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px;
+}
+
+#categories > div > p {
+  padding-top: 10px;
+}
+
+li {
+  list-style: none;
+}
+
+#footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+a:link,
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.heading {
+  color: gray;
+}
+
+#seller,
+#sign {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+#seller:after,
+#sign:after {
+  content: "";
+  position: absolute;
+  background-color: rgb(148, 179, 181);
+  height: 0;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  padding: 0 10px;
+  transition: 0.3s;
+}
+
+#seller:hover,
+#sign:hover {
+  color: rgb(148, 179, 181);
+  font-weight: bolder;
+  background: var(--main-bg-color);
+}
+
+#seller:hover:after,
+#sign:hover:after {
+  width: 100%;
+  height: 3px;
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 768px) {
+  #nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #nav1 {
+    margin-bottom: 20px;
+  }
+
+  .navtab {
+    margin: 10px 0;
+    width: 100%;
+    justify-content: center;
+  }
+
+  #input_data {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  #seller,
+  #sign,
+  #cart {
+    margin-bottom: 10px;
+  }
+
+  #categories {
+    width: 100%;
+  }
+
+  #categories > div {
+    width: 45%;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #nav1 {
+    margin-bottom: 10px;
+  }
+
+  .navtab {
+    margin: 8px 0;
+  }
+
+  #input_data {
+    width: 95%;
+  }
+
+  #seller,
+  #sign,
+  #cart {
+    margin-bottom: 8px;
+  }
+
+  #categories > div {
+    width: 100%;
+  }
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 30px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 9;
+}
+
+.dropdown-content::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 25%;
+  margin-left: -15px;
+  margin-top: -15px;
+  width: 0;
+  z-index: 1;
+  height: 0;
+  border-bottom: solid 15px #FFF;
+  border-left: solid 15px transparent;
+  border-right: solid 15px transparent;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
