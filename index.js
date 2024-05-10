@@ -13,7 +13,6 @@ let arr = [
       img_src:
         "https://rukminim1.flixcart.com/fk-p-flap/128/128/image/0d75b34f7d8fbcb3.png?q=100",
       title: "Fashion",
-      href:'Product.html'
     },
     ,
     {
@@ -41,14 +40,12 @@ let arr = [
       img_src:
         "https://rukminim1.flixcart.com/flap/80/80/image/dff3f7adcf3a90c6.png?q=100",
       title: "Beauty,Toys and More",
-      href: "",
     },
     {
       img_src:
-        "https://rukminim1.flixcart.com/fk-p-flap/80/80/image/05d708653beff580.png?q=100",
-      title: "Two Wheelers",
-      href: "",
-    },
+      "https://rukminim1.flixcart.com/fk-p-flap/80/80/image/05d708653beff580.png?q=100",
+      title: "Two Wheelers"
+    }
   ];
 
 //  let arr = [1,2,3,4,5];
@@ -59,19 +56,13 @@ let arr = [
 arr.map((element)=>{
   let image = document.createElement('img');
   image.src = element.img_src;
-  
+
   let title = document.createElement("p");
   title.innerHTML = element.title;
- 
+
   let box = document.createElement('div');
-  
-  box.append(image,title);
-  
- document.getElementById("categories").append(box);
+  box.append(image, title);
+
+  document.getElementById("categories").append(box);
 
 })
-
-
-
-
-let a = document.getElementById("categories");
