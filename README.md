@@ -75,8 +75,7 @@
    git push -u origin <your-branch-name>
    ```
 
-10. **Create a Pull Request:** Go to your GitHub repository and click on the "Compare & pull request" button.
-Now, Click on "Create pull request" and that's it.
+10. **Create a Pull Request:** Go to the GitHub repository, select your branch, and click on the "New pull request" button to create a new pull request.
 
 <!-- Code of conduct -->
 <div>
