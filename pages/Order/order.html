@@ -4,70 +4,249 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flipkart Order Page</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f2f5;
+            background:linear-gradient(to bottom,#8faff3,whitesmoke);
         }
         .container {
-            max-width: 1200px;
+            background-color:black;
+            max-width: 780px;
             margin: 20px auto;
-            background-color: #fff;
             padding: 20px;
-            border-radius: 5px;
+            border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .order-summary {
-            border-bottom: 1px solid #ddd;
+            background-color:whitesmoke;
+            border-bottom: 2px solid #ddd;
             padding-bottom: 20px;
             margin-bottom: 20px;
+            margin-top: 20px;
         }
         .order-summary h2 {
-            margin-top: 0;
-            font-size: 24px;
+          color: #FB641B;
+            font-size: 30px;  
         }
+
         .order-item {
             display: flex;
             align-items: center;
             margin-bottom: 15px;
+            margin-left: 20px;
         }
+
         .order-item img {
-            width: 100px;
-            margin-right: 15px;
+            width: 200px;
+            margin-left: 15px;
         }
+
         .order-item-info {
             flex: 1;
         }
+
         .order-item-info h3 {
             margin: 0;
-            font-size: 18px;
+            font-size: 20px;
         }
         .order-item-info p {
             margin: 5px 0;
             color: #555;
         }
         .total {
-            text-align: right;
             font-size: 20px;
+            text-align: right;
+            margin-right: 20px;
+            color:#FB641B
         }
+
         button {
+            border-radius: 6px;
             padding: 10px 20px;
             font-size: 16px;
-            background-color: #ff6d00;
+            background-color:rgb(203, 203, 203);
             color: #fff;
-            border: none;
+            border:1px solid #555;
             border-radius: 5px;
             cursor: pointer;
+            transition:0.5s;
         }
+
+        button:hover{background-color:#FB641B;}
+
     </style>
 </head>
+
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
+            width="160"
+            height="40"
+            title="Flipkart"
+            alt="Flipkart"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="row w-100">
+            <div class="col-md-6">
+              <div class="navtab" id="searchbar">
+                <span>
+                  <svg
+                    width="24"
+                    height="24"
+                    class=""
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Search Icon</title>
+                    <path
+                      d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z"
+                      stroke="#717478"
+                      stroke-width="1.4"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M16 16L21 21"
+                      stroke="#717478"
+                      stroke-width="1.4"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </span>
+                <span class="flex-grow">
+                  <input
+                    id="input_data"
+                    type="text"
+                    placeholder="Search for Products, Brands and More"
+                  />
+                </span>
+              </div>
+            </div>
+            
+            <div class="col-md-6">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <img
+                      src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-815786.svg"
+                      alt="Profile"
+                    />
+                    Profile
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="profile.html">Profile</a>
+                    <a class="dropdown-item" href="signup.html">Signup</a>
+                    <a class="dropdown-item" href="signin.html">Signin</a>
+                    <a class="dropdown-item" href="FPZ.html"
+                      >Flipkart Plus Zone</a
+                    >
+                    <a class="dropdown-item" href="order.html">Orders</a>
+                    <a class="dropdown-item" href="#">Wishlist</a>
+                    <a class="dropdown-item" href="#">Rewards</a>
+                    <a class="dropdown-item" href="#">Gift Cards</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img
+                      src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg"
+                      alt="Become a Seller"
+                    />
+                    Become a Seller
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img
+                      src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg"
+                      alt="Cart"
+                    />
+                    Cart
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    id="moreLinksDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <img
+                      src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-ea7819.svg"
+                      alt="More Links"
+                    />
+                  </a>
+                  <div
+                    class="dropdown-menu dropdown-menu-right"
+                    aria-labelledby="moreLinksDropdown"
+                  >
+                    <a
+                      class="dropdown-item"
+                      href="/communication-preferences/push?t=all"
+                      >Notification Preferences</a
+                    >
+                    <a class="dropdown-item" href="/helpcentre"
+                      >24x7 Customer Care</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      href="https://advertising.flipkart.com/?otracker=ch_vn_advertise_header"
+                      >Advertise</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      href="/mobile-apps?otracker=ch_vn_mobile_apps"
+                      >Download App</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <br><br>
 
 <div class="container">
     <div class="order-summary">
-        <h2>Your Order Summary</h2>
+        <center>
+            <br>
+        <h2><b>Your Order Summary</b></h2>
+        </center>
+        <br><br>
         <div class="order-item">
             <img src="product1.jpg" alt="Product 1">
             <div class="order-item-info">
@@ -76,6 +255,7 @@
                 <p>Quantity: 2</p>
             </div>
         </div>
+        <br>
         <div class="order-item">
             <img src="product2.jpg" alt="Product 2">
             <div class="order-item-info">
@@ -84,12 +264,20 @@
                 <p>Quantity: 1</p>
             </div>
         </div>
+        <br>
+        <br>
         <div class="total">
-            <p>Total: $70</p>
+            <p><i>Total: $70</i></p>
         </div>
     </div>
+    <center>
     <button>Place Order</button>
+    </center>
 </div>
 
 </body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </html>
