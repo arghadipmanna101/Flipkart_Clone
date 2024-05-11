@@ -96,6 +96,7 @@ footer{
     color: #9b9898;
 
 }
+/* social media icon css */
 .social ul{
     display: flex;
 }
@@ -107,6 +108,20 @@ footer{
     color: white;
     font-size: 2rem;
 }
+
+.youtube:hover {
+            color: red;
+           font-size: 32.5px;
+        }
+.facebook:hover {
+            color: rgb(0, 195, 255);
+            font-size:32.5px;
+        }
+ .twitter:hover {
+            color: blue;
+            font-size:32.5px;
+
+        }            
 .foot-down{
     margin-top: 20px;
 
