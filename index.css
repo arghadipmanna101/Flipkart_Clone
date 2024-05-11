@@ -1,111 +1,174 @@
-#para1{
-    border: 4px solid orange;
-}
-
-nav{
-    background-color: white;
-}
-
-#nav{
-    display: flex;
- justify-content: space-around;
- padding-top: 10px;
- padding-bottom: 10px;
- background-color: white;
- width: 90%;
- margin: auto;
-}
-
-#nav1{
-    display: flex;
-    flex-direction: column;
-}
-
-body{
+/* General styles */
+body {
     background-color: #F1F2F4;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
 }
 
-#logo_name{
-    font-size: 20px;
-    font-family: sans-serif;
-    font-style: italic;
-    color: #2A55E5;
-    font-weight: bold;
+/* Navbar styles */
+#searchbar {
+    padding: 6px;
+    border-radius: 15px;
+    background-color: #e7eefb;
 }
 
-#input_data{
+#input_data {
+    width: 100%;
+    padding: 6px; 
     border: none;
-    width: 500px;
-    height: 20px;
-   padding-left: 12px;
-   background-color: #F0F5FF;
+    background-color: transparent;
 }
 
-.navtab{
+#input_data:focus {
+    outline: none !important;
+    border: none; 
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navtab {
     display: flex;
     align-items: center;
 }
 
-#searchbar{
-    background-color: #F0F5FF;
-    padding: 4px;
-    border-radius: 10px;
+.navbar-brand img {
+    width: 160px;
+    height: 40px;
 }
 
-option{
-    font-size: 15px; 
-    font-family: sans-serif;
+.navbar-nav .nav-link img {
+    margin-right: 8px;
 }
-
-select{
-    border: none;
-    font-size: 15px; 
-    font-family: sans-serif;
+footer{
+    background-color: rgb(29, 29, 30);
+    padding: 10px 60px;
 }
-
-
-#categories{
+.foot-top{
     display: flex;
-    justify-content: space-around;
-    margin-top: 6px;
-    margin: 12px;
-    margin: auto;
-    width: 95%;
-    margin: auto;
-    background-color: white;
-    margin-top: 10px;
-    font-family: sans-serif;
+    border-bottom: 1px solid white;
+   
 }
-
-
-
-
-
-#categories > div > img{
-   height: 70px;
-   width: 60px;
-   background-color: white;
+.foot-left{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 70px;
+    border-right: 1px solid white;
+    margin: 25px;
 }
+.foot-left h5{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #9b9898;
 
-#categories > div{
-display: flex;
-flex-direction: column;
-align-items: center;
-font-weight: bold;
-font-size: 14px;
-padding: 10px;
 }
-
-#categories > div > p{
-    padding-top: 10px;
+#policy{
+    margin: 0px 20px;
 }
-
-
-li{
+.foot-left .about{
+    margin-right: 50px;
+}
+.foot-left .about li a{
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+    
+}
+.foot-left .about li{
     list-style: none;
 }
+.foot-right{
+    display: flex;
+    margin: 25px;
+}
+.foot-right h5{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #9b9898;
 
-/* CSS */
+}
+.social ul{
+    display: flex;
+}
+.social ul li{
+    list-style: none;
+    margin: 0px 10px;
+}
+.social ul li a{
+    color: white;
+    font-size: 2rem;
+}
+.foot-down{
+    margin-top: 20px;
+
+}
+.foot-down ul{
+    display: flex;
+    justify-content: space-between;
+}
+.foot-down ul li{
+    list-style: none;
+}
+.foot-down ul li a{
+    color: white;
+}
+ Footer styles */
+footer {
+    background-color: black;
+    color: white;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.footer-top,
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    color: white;
+}
+
+.payment-icons img {
+    width: 50px;
+    margin-right: 10px;
+} 
+
+ Dropdown menu styles */
+ .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 9;
+}
+
+
 #footer {
     background-color: #333;
     color: white;
@@ -233,3 +296,14 @@ li{
   margin-left: 15px;
 
 }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+} 
