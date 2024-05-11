@@ -101,18 +101,7 @@
             height: 100%;
             object-fit: cover;
         }
-
-        #navbar-container {
-          position: fixed;
-          top: 0;right: 0;
-          width: 100%;
-          height: 10vh;
-          z-index: 500;
-        }
-        #carousal {
-          padding-top: 17vh;
-        }
-
+        
         @keyframes slideInFromLeft {
         0% {
         transform: translateX(-100%);
@@ -123,7 +112,13 @@
         opacity: 1;
         }
         }
-
+        .bi-question-circle-fill,.bi-gift-fill,.bi-briefcase-fill
+        {
+            color: #ffc600;
+        }
+        footer{
+          background: #172337;
+        }
 /* Apply the animation to the footer sections */
 .footer-section {
     animation: slideInFromLeft 0.5s ease forwards;
