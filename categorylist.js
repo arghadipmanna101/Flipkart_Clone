@@ -176,60 +176,40 @@ const categoriesData = [
     }
 ];
 
-
-
-document.addEventListener("DOMContentLoaded", function () {
-    const categoriesList = document.getElementById("categories");
+$(document).ready(function () {
+    const categoriesList = $("#categories");
 
     function createCategoryItem(categoryData) {
-        const categoryItem = document.createElement("li");
-        categoryItem.textContent = categoryData.name;
-        categoryItem.style.color = "black";
+        const categoryItem = $("<li>").text(categoryData.name);
 
-        const subcategoriesList = document.createElement("ul");
-        // subcategoriesList.classList.add("subcategories", "hidden");
+        const subcategoriesList = $("<ul>");
 
         if (!categoryData.subcategories) {
-            const singleItem = document.createElement("li");
-            singleItem.textContent = categoriesData.name
-            singleItem.style.color = 'grey';
-            subcategoriesList.appendChild(singleItem);
-        }else {
-            categoryData?.subcategories.forEach(subcategoryData => {
-                if (subcategoryData.name == undefined) {
-                    const singleItem = document.createElement("li");
-                    singleItem.textContent = subcategoryData
-                    singleItem.style.color = 'grey';
-                    subcategoriesList.appendChild(singleItem);
-                } else {
-                    // console.log(subcategoryData.name)
+            const singleItem = $("<li>").text(categoryData.name);
+            subcategoriesList.append(singleItem);
+        } else {
+            $.each(categoryData.subcategories, function(index, subcategoryData) {
+                if (subcategoryData && subcategoryData.name == undefined) {
+                    const singleItem = $("<li>").text(subcategoryData);
+                    subcategoriesList.append(singleItem);
+                } else if (subcategoryData) {
                     const subcategoryItem = createCategoryItem(subcategoryData);
-                    subcategoriesList.appendChild(subcategoryItem);
+                    subcategoriesList.append(subcategoryItem);
                 }
-    
             });
         }
 
-        
-
-        categoryItem.appendChild(subcategoriesList);
-        console.log(categoryItem)
-
-
-        // categoryItem.addEventListener("mouseover", function () {
-        //     subcategoriesList.classList.remove("hidden");
-        // });
-
-        // categoryItem.addEventListener("mouseout", function () {
-        //     subcategoriesList.classList.add("hidden");
-        // });
+        categoryItem.append(subcategoriesList);
+        console.log(categoryItem);
 
         return categoryItem;
     }
 
-    categoriesData.forEach(categoryData => {
+    categoriesData.forEach(function(categoryData) {
         const categoryItem = createCategoryItem(categoryData);
-        categoriesList.appendChild(categoryItem);
+        categoriesList.append(categoryItem);
     });
 });
+
+
 
