@@ -215,12 +215,16 @@ li{
   font-size: 15px;
   margin-left: 15px;
 }
-.facebook-link a{
+.facebook-link a,
+.twitter-link a,
+.youtube-link a {
   color: white;
+  text-decoration: none; 
+  transition: color 0.1s;
 }
-.twitter-link a{
-  color: white;
-}
-.youtube-link a{
-  color:white;
+.facebook-link a:hover,
+.twitter-link a:hover,
+.youtube-link a:hover {
+  text-decoration: none; 
+  color: lightgray;
 }
