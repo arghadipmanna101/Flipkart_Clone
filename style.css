@@ -22,9 +22,12 @@ footer {
 }
 
 .nav-item:hover {
-  background-color: grey;
-  text-decoration: underline;
-  opacity:1;
+  background-color: rgb(182, 181, 181);
+  text-decoration: none;
+  opacity: 0.85;
+  transition: all 0.2s ease-in;
+  transform:scale(1.1);
+  z-index: 1;
 }
 
 /* Style for the link */
@@ -40,9 +43,10 @@ footer {
   content:'';
   opacity: 0;
   transition: all 0.3s ease;
+ 
   height: 2px;
   width: 100%;
-  background-color:color-mix(in srgb,black,grey);
+  background-color:color-mix(in srgb,rgb(54, 51, 51),grey);
   position: absolute;
   bottom: 0;
   left:0;
