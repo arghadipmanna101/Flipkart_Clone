@@ -47,8 +47,6 @@
     }
 
     .img-container:hover .about-img {
-
-
       transition: all 0.2s linear;
       transform: scale(1.1);
     }
@@ -176,6 +174,39 @@
       color: gray;
       font-size: 13px;
     }
+    /* Media query for smaller screens */
+@media (max-width: 768px) {
+  .img-container {
+    width: 100%; /* Full width for smaller screens */
+  }
+
+  .box1, .box2 {
+    padding: 10px;
+  }
+}
+
+/* Media query for even smaller screens (e.g., mobile devices) */
+@media (max-width: 480px) {
+  .box1, .box2 {
+    padding: 5px;
+  }
+
+  .img-container {
+    width: 100%; /* Full width for smaller screens */
+  }
+  
+  .part2 .icon {
+    margin-left: 20px; /* Adjust icon margin for smaller screens */
+  }
+  
+  .part2 .btn1 {
+    margin-top: 20px; /* Adjust button margin for smaller screens */
+    margin-left: 50px;
+  }
+}
+
+
+
   </style>
 </head>
 
