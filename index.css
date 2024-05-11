@@ -75,6 +75,38 @@ footer {
 
 .footer-section ul {
     list-style-type: none;
+    
+}
+
+
+@media (max-width: 768px) {
+    footer {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .footer-top,
+    .footer-bottom {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .footer-section {
+        margin-bottom: 12px;
+    }
+
+    .footer-section h3 {
+        margin-bottom: 8px;
+    }
+    .footer-section ul {
+        list-style-type: none;
+        
+    }
+    .footer-section .social-icons{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .social-icons a {
