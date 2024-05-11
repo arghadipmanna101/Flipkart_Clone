@@ -131,7 +131,7 @@
 
 
 
-// Fetch product data from JSON file
+// Fetch product data from product.JSON file
 fetch('product.json')
   .then(response => response.json())
   .then(data => {
