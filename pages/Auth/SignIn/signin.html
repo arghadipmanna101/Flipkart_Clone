@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-In</title>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <link rel="stylesheet" href="./signup.css">
+    <link rel="stylesheet" href="./signin.css">
 </head>
 <body>
   <div id="container"></div>
@@ -24,7 +24,7 @@
 
             <div style="display: flex;justify-content: center;margin-top: 20px;">
 
-                <input id="mobile" class="mobile" type="text" placeholder="Enter Mobile Number"/>
+                <input id="mobile" class="mobile" type="number" placeholder="Enter Mobile Number"/>
             </div>
             
             <div style="display: flex;justify-content: center;margin-top: 20px;">
@@ -37,7 +37,8 @@
                     and <span style="color: blue;">Privacy Policy.</span></p>
             </div>
             <div style="margin-top: 10px;display: flex;justify-content: center;">
-                <button onclick="Signin()" style="cursor: pointer;;border: none;background-color: #FB641B;color: white;font-size: 20px;width: 90%;padding: 9px;border-radius: 5px;">Login</button>
+            
+                <button onclick="Signin()" style="cursor: pointer;;border: none;background-color: #FB641B;color: white;font-size: 18px;width: 90%;padding: 9px;border-radius: 5px; margin:15px;">Login</button>
             </div>
             <div style="margin-top: 10px;display: flex;justify-content: center;">
                 <button 
@@ -51,7 +52,7 @@
 </html>
 <script>
     $(function(){
-    $("#container").load("./Navabar.html");
-  });
-  </script>
-  <script src="./Signin.js"></script>
+        $("#container").load("./Navbar.html");
+        $.getScript("./Signin.js");
+    });
+</script>
