@@ -74,4 +74,4 @@ arr.map((element)=>{
 
 
 
-let a = document.getElementById("categories");
+// let a = document.getElementById("categories");
