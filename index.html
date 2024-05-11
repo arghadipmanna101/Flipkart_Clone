@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
- footer
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Flipkart</title>
-  <link rel="icon" type="image/png" href="./flipkart_icon.png">
+  <link rel="icon" type="image/x-icon" href="flipkart favicon-modified.png">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="./index.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -14,7 +9,6 @@
     integrity="sha512-..." crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
 
   <style>
@@ -55,55 +49,35 @@
       height: 100%;
       object-fit: cover;
     }
+
+    #navbar-container {
+      width: 100%;
+    }
+
+    .container_list {
+      display: flex;
+      white-space: normal;
+      padding-top: 40px;
+      padding-bottom: 10px;
+      list-style-type: none; 
+    }
+
+    .item {
+      display: inline-block;
+      margin-right: 16px;
+      width: 100px;
+      height: 140px;
+    }
+
+    .item img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .item span {
+      display: block;
+    }
   </style>
-
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flipkart</title>
-    <link rel="icon" type="image/x-icon" href="flipkart favicon-modified.png">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="./index.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
-        html,
-        body {
-            position: relative;
-            height: 100%;
-            background: #eee;
-            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-            font-size: 14px;
-            color: #000;
-            margin: 0;
-            padding: 0;
-        }
-        .swiper {
-            width: 100%;
-            height: 100%;
-        }
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .swiper-slide img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    </style>
- main
 </head>
 
 <body>
@@ -118,8 +92,93 @@
 
 
   <!-- list of categories -->
+  <div class="container_list">
+    <li class="nav-item dropdown">
+      <div class="item">
+        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false" aria-label="Grocery">
+          <img src="https://rukminim2.flixcart.com/flap/80/80/image/29327f40e9c4d26b.png?q=100" alt="Grocery">
+          <figcaption>Grocery</figcaption>
+        </a>
+      </div>
+    </li>
 
 
+    <li class="nav-item dropdown">
+      <div class="item">
+        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false" aria-label="Mobiles">
+          <img src="https://rukminim2.flixcart.com/flap/80/80/image/22fddf3c7da4c4f4.png?q=100" alt="Mobiles">
+          <span>Mobiles</span>
+        </a>
+      </div>
+    </li>
+
+    <li class="nav-item dropdown">
+      <div class="item" aria-label="Fashion">
+        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false"><img
+            src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/0d75b34f7d8fbcb3.png?q=100" alt="Fashion">
+          <span>Fashion</span>
+        </a>
+      </div>
+    </li>
+
+    <li class="nav-item dropdown">
+      <div class="item" aria-label="Electronics">
+        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          <img src="https://rukminim2.flixcart.com/flap/80/80/image/69c6589653afdb9a.png?q=100" alt="Electronics">
+          <span>Electronics</span>
+        </a>
+      </div>
+    </li>
+
+    <li class="nav-item dropdown">
+      <div class="item" aria-label="Home &amp; Furniture">
+        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          <img src="https://rukminim2.flixcart.com/flap/80/80/image/ab7e2b022a4587dd.jpg?q=100"
+            alt="Home &amp; Furniture">
+          <span>Home &amp; Furniture</span>
+        </a>
+      </div>
+    </li>
+
+    <li class="nav-item dropdown">
+      <div class="item">
+        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false" aria-label="Appliances">
+          <img src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/0139228b2f7eb413.jpg?q=100" alt="Appliances">
+          <span>Appliances</span>
+        </a>
+      </div>
+    </li>
+
+    <li class="nav-item dropdown">
+      <div class="item">
+        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false" aria-label="Travel">
+          <img src="https://rukminim2.flixcart.com/flap/80/80/image/71050627a56b4693.png?q=100" alt="Travel">
+          <span>Travel</span>
+        </a>
+      </div>
+    </li>
+
+    <li class="nav-item dropdown">
+      <div class="item" aria-label="Beauty, Toys &amp; More">
+        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          <img src="https://rukminim2.flixcart.com/flap/80/80/image/dff3f7adcf3a90c6.png?q=100"
+            alt="Beauty, Toys &amp; More">
+          <span>Beauty,Toys &amp; More</span>
+        </a>
+      </div>
+    </li>
+  </div>
+
+
+  <!--Carousal-->
   <section id="carousal">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -339,9 +398,9 @@
 
 
 </body>
- footer
+footer
 
 </html>
 
-</html>    
- main
+</html>
+main
