@@ -152,84 +152,75 @@ li{
     cursor: pointer; 
   }
 
-.brand-directory{
-  color: rgba(91, 88, 88, 0.867);
-  font-weight: bolder;
-  margin-left: 15px;
-  padding: 5px;
-  margin-top: 15px;
-}
+  .brand-directory {
+    color: rgba(91, 88, 88, 0.867);
+    font-weight: bolder;
+    font-size: 15px;;
+    margin-left: 13px;
+    padding: 5px;
+    margin-top: 15px;
+  }
 
 .paragraph{
   color: grey;
   font-size: smaller;
-
   margin-left: 15px;
 }
 
-.mobile-para{
+.mobile p,
+.camera p,
+.laptops p,
+.tvs p,
+.large-appliances p,
+.clothing p,
+.footwear p,
+.groceries p,
+.best-seller-on-flipkart p,
+.furniture p,
+.bgmh p,
+.flipkart-shopping p,
+.flipkart-plus p,
+.no-cost-emi p,
+.emi-on-debit-cards p,
+.mobile-exchange-offers p,
+.mobile-phones p,
+.electronic-device p,
+.large-appl p,
+.small-home-appliances p,
+.lifestyles p,
+.home-and-furniture p,
+.baby-and-kids p,
+.books-and-more p,
+.groceries-and-supermart p {
   color: grey;
-  font-size: smaller;
+  font-size: 11px;
   margin-left: 15px;
-
 }
-.camera-para{
+.flipkart-shopping h5,
+.flipkart-plus h5,
+.no-cost-emi h5,
+.emi-on-debit-cards h5,
+.mobile-exchange-offers h5,
+.mobile-phones h5,
+.question h5,
+.electronic-device h5,
+.large-appl h5,
+.small-home-appliances h5,
+.lifestyles h5,
+.home-and-furniture h5,
+.baby-and-kids h5,
+.books-and-more h5,
+.groceries-and-supermart h5 {
   color: grey;
-  font-size: smaller;
+  font-size: 15px;
   margin-left: 15px;
-
 }
-.laptop-para{
-  color: grey;
-  font-size: smaller;
-  margin-left: 15px;
-
+.facebook-link a{
+  color: white;
 }
-.tvs-para{
-  color: grey;
-  font-size: smaller;
-  margin-left: 15px;
-
+.twitter-link a{
+  color: white;
 }
-.large-appliances-para{
-  color: grey;
-  font-size: smaller;
-  margin-left: 15px;
-
-}
-.clothing-para{
-  color: grey;
-  font-size: smaller;
-  margin-left: 15px;
-
-}
-.footwear-para{
-  color: grey;
-  font-size: smaller;
-  margin-left: 15px;
-
-}
-.groceries-para{
-  color: grey;
-  font-size: smaller;
-  margin-left: 15px;
-
-}
-.furniture-para{
-  color: grey;
-  font-size: smaller;
-  margin-left: 15px;
-
-}
-.bgmh-para{
-  color: grey;
-  font-size: smaller;
-  margin-left: 15px;
-
-}
-.best-seller-on-flipkart-para{
-  color: grey;
-  font-size: smaller;
-  margin-left: 15px;
-
+.youtube-link a{
+  color:white;
 }
