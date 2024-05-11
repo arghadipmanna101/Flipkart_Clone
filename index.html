@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Flipkart</title>
-  <link rel="icon" type="image/png" href="./flipkart_icon.png">
+  <link rel="icon" href="./flipkart_icon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="./index.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -68,7 +68,7 @@
 
 
     <style>
-        * {
+        *{
             padding: 0;
             margin: 0;
         }
@@ -87,7 +87,7 @@
             width: 100%;
             height: 100%;
         }
-        .swiper-slide {
+        .swiper-slide{
             text-align: center;
             font-size: 18px;
             background: #fff;
@@ -101,6 +101,7 @@
             height: 100%;
             object-fit: cover;
         }
+
         #navbar-container {
           position: fixed;
           top: 0;right: 0;
@@ -111,6 +112,23 @@
         #carousal {
           padding-top: 17vh;
         }
+
+        @keyframes slideInFromLeft {
+        0% {
+        transform: translateX(-100%);
+        opacity: 0;
+        }
+        100% {
+        transform: translateX(0);
+        opacity: 1;
+        }
+        }
+
+/* Apply the animation to the footer sections */
+.footer-section {
+    animation: slideInFromLeft 0.5s ease forwards;
+}
+
     </style>
 </head>
 
@@ -180,6 +198,7 @@
             <li><a href="">Flipkart Stories</a></li>
             <li><a href="">Press</a></li>
             <li><a href="">Corporate Information</a></li>
+           <li><i><a href="">Explore Plus</a></i></li>
           </ul>
         </div>
         <div class="about">
