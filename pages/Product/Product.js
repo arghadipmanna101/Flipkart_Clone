@@ -100,27 +100,35 @@ let collection = JSON.parse(localStorage.getItem("productsdata")) || [];
 
 Product();
 
-function Product(){
-
-    collection.map((element)=>{
-        
+function Product() {
+    collection.map((element) => {
         let box = document.createElement("div");
+        box.className = "product-card";
 
-        let innerbox = document.createElement("div")
-    let price1 = document.createElement("span");
-     price1.innerHTML = element.price
-    let price2 = document.createElement("span");
-    price2.innerHTML = element.actualprice
+        let avatar = document.createElement("img");
+        avatar.src = element.img_src;
+        avatar.className = "avatar";
 
-    innerbox.append(price1, price2);
-    innerbox.className = "innerbox"
-  let avatar = document.createElement("img");
-  avatar.src = element.img_src;
-  avatar.className = "avatar"
-  let brand = document.createElement("p");
-  brand.innerHTML = element.Brand;
-   box.append(avatar,brand,innerbox);
-   document.getElementById("collection").append(box);
+        let brand = document.createElement("p");
+        brand.innerHTML = element.Brand;
 
-    })
+        let name = document.createElement("p");
+        name.innerHTML = element.names;
+
+        let priceWrapper = document.createElement("div");
+        priceWrapper.className = "price-wrapper";
+
+        let price1 = document.createElement("span");
+        price1.className = "price";
+        price1.innerHTML = "₹" + element.price;
+
+        let price2 = document.createElement("span");
+        price2.className = "actual-price";
+        price2.innerHTML = "₹" + element.actualprice;
+
+        priceWrapper.append(price1, price2);
+
+        box.append(avatar, brand, name, priceWrapper);
+        document.getElementById("collection").append(box);
+    });
 }
