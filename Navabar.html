@@ -1,218 +1,117 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- <link rel="stylesheet" href="./index.css"> -->
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-        <img
-          src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
-          width="160"
-          height="40"
-          title="Flipkart"
-          alt="Flipkart"
-        />
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <div class="row w-100">
-          <div class="col-md-6">
-            <div class="navtab" id="searchbar">
-              <span>
-                <svg
-                  width="24"
-                  height="24"
-                  class=""
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>Search Icon</title>
-                  <path
-                    d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z"
-                    stroke="#717478"
-                    stroke-width="1.4"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M16 16L21 21"
-                    stroke="#717478"
-                    stroke-width="1.4"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                </svg>
-              </span>
-              <span class="flex-grow">
-                <input
-                  id="input_data"
-                  type="text"
-                  placeholder="Search for Products, Brands and More"
-                />
-              </span>
-            </div>
-          </div>
-          
-          <div class="col-md-6">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  <img
-                    src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-815786.svg"
-                    alt="Profile"
-                  />
-                  Profile
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="profile.html">Profile</a>
-                  <a class="dropdown-item" href="signup.html">Signup</a>
-                  <a class="dropdown-item" href="signin.html">Signin</a>
-                  <a class="dropdown-item" href="FPZ.html"
-                    >Flipkart Plus Zone</a
-                  >
-                  <a class="dropdown-item" href="order.html">Orders</a>
-                  <a class="dropdown-item" href="#">Wishlist</a>
-                  <a class="dropdown-item" href="#">Rewards</a>
-                  <a class="dropdown-item" href="#">Gift Cards</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <img
-                    src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg"
-                    alt="Become a Seller"
-                  />
-                  Become a Seller
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <img
-                    src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg"
-                    alt="Cart"
-                  />
-                  Cart
-                </a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link"
-                  href="#"
-                  id="moreLinksDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  <img
-                    src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-ea7819.svg"
-                    alt="More Links"
-                  />
-                </a>
-                <div
-                  class="dropdown-menu dropdown-menu-right"
-                  aria-labelledby="moreLinksDropdown"
-                >
-                  <a
-                    class="dropdown-item"
-                    href="/communication-preferences/push?t=all"
-                    >Notification Preferences</a
-                  >
-                  <a class="dropdown-item" href="/helpcentre"
-                    >24x7 Customer Care</a
-                  >
-                  <a
-                    class="dropdown-item"
-                    href="https://advertising.flipkart.com/?otracker=ch_vn_advertise_header"
-                    >Advertise</a
-                  >
-                  <a
-                    class="dropdown-item"
-                    href="/mobile-apps?otracker=ch_vn_mobile_apps"
-                    >Download App</a
-                  >
-                </div>
-              </li>
-            </ul>
-          
-              <div class="col-md-6">
-                  <ul class="navbar-nav ml-auto">
-                      <li class="nav-item dropdown">
-                          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-815786.svg" alt="Profile">
-                              User Profile
-                          </a>
-                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <a class="dropdown-item" href="profile.html">Profile</a>
-                              <a class="dropdown-item" href="signup.html">Signup</a>
-                              <a class="dropdown-item" href="signin.html">Signin</a>
-                              <a class="dropdown-item" href="FPZ.html">Flipkart Plus Zone</a>
-                              <a class="dropdown-item" href="order.html">Orders</a>
-                              <a class="dropdown-item" href="#">Wishlist</a>
-                              <a class="dropdown-item" href="#">Rewards</a>
-                              <a class="dropdown-item" href="#">Gift Cards</a>
-                          </div>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">
-                              <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg" alt="Become a Seller">
-                              Become a Seller
-                          </a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">
-                              <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg" alt="Cart">
-                              Cart
-                          </a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="moreLinksDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-ea7819.svg" alt="More Links">
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="moreLinksDropdown">
-                            <a class="dropdown-item" href="/communication-preferences/push?t=all">Notification Preferences</a>
-                            <a class="dropdown-item" href="/helpcentre">24x7 Customer Care</a>
-                            <a class="dropdown-item" href="https://advertising.flipkart.com/?otracker=ch_vn_advertise_header">Advertise</a>
-                            <a class="dropdown-item" href="/mobile-apps?otracker=ch_vn_mobile_apps">Download App</a>
-                        </div>
-                      </li>
-                    </ul>
-              </div>
-          </div>
+<div class="container-fluid bg-primary Header fixed-top">
+    <div class="row py-2 d-flex">
+        <!-- Logo -->
+        <div class="col logo offset-lg-1">
+            <a href="#">
+                <img width="75" src="//img1a.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png"
+                    alt="Flipkart" title="Flipkart">
+            </a>
+            <a href="#">Explore <span>Plus</span>
+                <img width="10" src="//img1a.flixcart.com/www/linchpin/fk-cp-zion/img/plus_aef861.png">
+            </a>
         </div>
-      </div>
-    </nav>
 
-    <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </body>
-</html>
+        <!-- Search -->
+        <div class="col col-md-4  search d-flex dropdown bg-white">
+            <input class="form-control dropdown-toggle" type="search"
+                placeholder="Search for products, brands and more" aria-label="Search" id="navbarDropdown"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-search mt-2 ml-sm-1 text-primary"></i>
+            <div class="dropdown-menu col-12 search-item" aria-labelledby="navbarDropdown">
+                <h6 class="ml-4">Discover More</h6>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item py-2" href=""><i class="fa fa-search text-secondary mr-3"></i>mobiles</a>
+                <a class="dropdown-item py-2" href=""><i class="fa fa-search text-secondary mr-3"></i>t-shirts</a>
+                <a class="dropdown-item py-2" href=""><i class="fa fa-search text-secondary mr-3"></i>shoes</a>
+                <a class="dropdown-item py-2" href=""><i class="fa fa-search text-secondary mr-3"></i>laptop</a>
+                <a class="dropdown-item py-2" href=""><i class="fa fa-search text-secondary mr-3"></i>tv</a>
+                <a class="dropdown-item py-2" href=""><i class="fa fa-search text-secondary mr-3"></i>sarees</a>
+            </div>
+        </div>
+
+       
+        <div class="col dropdown login">
+            <button class="btn bg-white text-primary" type="button" id="loginMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="true">
+                Login
+            </button>
+            <div class="dropdown-menu login-list col-12 aria-labelledby=" loginMenuButton">
+                <div class="d-flex">
+                    <h6 class="ml-md-1">New Customer?</h6>
+                    <a href="#" class="ml-auto mr-2" id="signUp">Sign Up</a>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="d-flex">
+                    <i class="fa fa-user-circle text-primary mt-2 ml-2" aria-hidden="true"></i>
+                    <a class="dropdown-item" href="">My Profile</a>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="d-flex">
+                    <i class="fa fa-plus text-primary mt-2 ml-2" aria-hidden="true"></i>
+                    <a class="dropdown-item" href="">Flipkart Plus Zone</a>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="d-flex">
+                    <i class="fa fa-book text-primary mt-2 ml-2" aria-hidden="true"></i>
+                    <a class="dropdown-item" href="">Orders</a>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="d-flex">
+                    <i class="fa fa-heart text-primary mt-2 ml-2" aria-hidden="true"></i>
+                    <a class="dropdown-item" href="">Wishlist</a>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="d-flex">
+                    <i class="fa fa-chess-bishop text-primary mt-2 ml-2" aria-hidden="true"></i>
+                    <a class="dropdown-item" href="">Rewards</a>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="d-flex">
+                    <i class="fa fa-gift text-primary mt-2 ml-2" aria-hidden="true"></i>
+                    <a class="dropdown-item" href="">Gift Cards</a>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="col dropdown more">
+            <a class="btn dropdown-toggle text-white ml-lg-2 ml-sm-0" href="#" role="button" id="moreMenuLink"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                More
+            </a>
+
+            <div class="dropdown-menu more-list" aria-labelledby="moreMenuLink">
+                <div class="d-flex">
+                    <i class="fa fa-bell text-primary ml-md-3 mt-2" aria-hidden="true"></i>
+                    <a class="dropdown-item" href="#">Notification Preferences</a>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="d-flex">
+                    <i class="fa fa-archive text-primary ml-md-3 mt-2" aria-hidden="true"></i>
+                    <a class="dropdown-item" href="#">Sell On Flipkart</a>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="d-flex">
+                    <i class="fa fa-question-circle text-primary ml-md-3 mt-2" aria-hidden="true"></i>
+                    <a class="dropdown-item" href="#">24x7 Customer Care</a>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="d-flex">
+                    <i class="fa fa-chart-line text-primary ml-md-3 mt-2" aria-hidden="true"></i>
+                    <a class="dropdown-item" href="#">Advertise</a>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="d-flex">
+                    <i class="fa fa-download text-primary ml-md-3 mt-2" aria-hidden="true"></i>
+                    <a class="dropdown-item" href="#">Download App</a>
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="col col-md-1 d-flex justify-content-center">
+            <i class="fa fa-shopping-cart text-white mt-2" aria-hidden="true"></i>
+            <a href="" class="btn text-white">Cart</a>
+        </div>
+    </div>
+</div>
