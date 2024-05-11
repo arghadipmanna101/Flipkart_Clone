@@ -1,9 +1,4 @@
-/* General styles */
-body {
-    background-color: #F1F2F4;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
+body{
     margin: 0;
     padding: 0;
 }
@@ -63,11 +58,11 @@ footer{
     justify-content: space-between;
     margin-right: 70px;
     border-right: 1px solid white;
-    margin: 25px;
+    margin: 21px 0px;
 }
 .foot-left h5{
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: 11px;
+    font-weight: 500;
     color: #9b9898;
 
 }
@@ -75,24 +70,25 @@ footer{
     margin: 0px 20px;
 }
 .foot-left .about{
-    margin-right: 50px;
+    margin-right: 80px;
 }
 .foot-left .about li a{
     color: white;
-    font-size: 0.9rem;
-    font-weight: 600;
+    font-size: 11px;
+    font-weight: 400;
     
 }
 .foot-left .about li{
     list-style: none;
 }
 .foot-right{
+    font-size: 12px;
     display: flex;
     margin: 25px;
 }
 .foot-right h5{
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: 11px;
+    font-weight: 500;
     color: #9b9898;
 
 }

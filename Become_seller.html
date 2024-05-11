@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Become a Seller - Flipkart</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+ <style>
+    .row {
+    /* display: -webkit-box; */
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 284px;
+    margin-left: 186px;
+}
+.col-12 {
+    margin-top: 22px;
+    /* margin: 12px 0; */
+    -webkit-box-flex: 0;
+    /* -ms-flex: 0 0 100%; */
+    /* flex: 0 0 100%; */
+    max-width: 100%;
+}
+.form-control {
+    padding: 8px 6px;
+    font-size: 14px;
+}
+label {
+    font-size: 17px;
+}
+.col-md-6 {
+    margin-top: 22px;
+}
+.col-md-2 {
+    margin-top: 22px;
+}
+.col-md-4{
+    margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+    max-width: 298px;
+}
+#inputState{
+    font-size: 14px;
+    padding: 8px 6px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+.btn{
+    padding: 8px 15px;
+    font-size: 17px;
+}
+h3{
+    text-align: center;
+    margin: 50px 12px;
+}
+
+ </style>
+</head>
+<body>
+
+<!-- Your "Become a Seller" content goes here -->
+<h3>Become a Seller</h3>
+<form class="row g-3">
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label">Email</label>
+      <input type="email" class="form-control" id="inputEmail4">
+    </div>
+    <div class="col-md-6">
+      <label for="inputPassword4" class="form-label">Password</label>
+      <input type="password" class="form-control" id="inputPassword4">
+    </div>
+    <div class="col-12">
+      <label for="inputAddress" class="form-label">Address</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+    </div>
+    <div class="col-12">
+      <label for="inputAddress2" class="form-label">Address 2</label>
+      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+    </div>
+    <div class="col-md-6">
+      <label for="inputCity" class="form-label">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="col-md-4">
+      <label for="inputState" class="form-label">State</label>
+      <select id="inputState" class="form-select">
+        <option selected>Choose...</option>
+        <option>Uttar Pradesh</option>
+        <option>Uttarakhand</option>
+        <option>Madhya Pradesh</option>
+        <option>Punjab</option>
+        <option>Jammu & Kashmir</option>
+        <option>Rajasthan</option>
+        <option>Maharastra</option>
+        <option>other</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <label for="inputZip" class="form-label">Pin Code</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+          Check me out
+        </label>
+      </div>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+
+</body>
+</html>
