@@ -1,6 +1,7 @@
 #products{
     display: flex;
     margin-bottom: 20px ;
+    flex-wrap: wrap;    
 }
 
 #topmenu >span{
@@ -9,32 +10,11 @@
     font-family: sans-serif;
 }
 
-#collection{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap: 20px;
-}
-
-#collection >div{
- 
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; 
-  margin:10px;
-  padding:5px; 
-  border-radius: 8px;  
-}
-
 .avatar{
     height: 300px;
     width: 150px;
 }
 
-.innerbox{
-    display: flex;
-    justify-content:space-between;
-}
-#collection >div> img{
-    width: 100%;
-}
 
 
 
@@ -103,9 +83,3 @@
   .btn:hover {
     background-color: #0056b3;
   }
-  
-  .loader {
-  text-align: center;
-  padding: 20px 0;
-  display: none;
-}

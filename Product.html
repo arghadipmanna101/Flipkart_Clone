@@ -33,14 +33,12 @@
         <p>Filters</p>
       </div>
       <div style="width: 75%; border: 1px solid black">
-        <div style="display: flex; border:1px solid black; border-radius:5px; margin:2px" id="topmenu">
+        <div style="display: flex; gap: 5px; border:1px solid black; border-radius:5px; margin:2px" id="topmenu">
           <span> Sort By </span>
-          <span> Popularity </span>
-          <span> Price -- Low to High </span>
-          <span> Price -- High to Low </span>
+          <button style="border: none; cursor: pointer;" onmouseover="this.style.color='blue'"><span> Popularity </span></button>
+          <button style="border: none; cursor: pointer;"><span> Price -- Low to High </span></button>
+          <button style="border: none; cursor: pointer;"><span> Price -- High to Low </span></button>
         </div>
-        <!-- <div id="collection"></div> -->
-        <div id="product-container" class="card-container"></div>
         <div id="product-container" class="card-container"></div>
       </div>
     </section>
