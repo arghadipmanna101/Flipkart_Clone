@@ -4,154 +4,143 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flipkart - Online Shopping Site for Mobiles, Electronics, Fashion, and More</title>
-    <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- <link rel="stylesheet" href="./index.css"> -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
     <style>
       .search-bar {
         position: relative;
-        width: 85%; 
-        max-width: 700px; 
-        }
-
-        .search-bar input[type="text"] {
-            width: calc(100% - 70px);
-            padding: 15px 15px 15px 50px;
-            border: 1px solid #ccc;
-            border-radius: 10px; 
-            background-color: #e6f2ff;
-            background-image: url('https://image.flaticon.com/icons/png/512/49/49116.png');
-            background-size: 20px;
-            background-repeat: no-repeat;
-            background-position: 90% center;
-            outline: none;
-        }
-
-
-        .search-icon-container {
-            cursor: pointer;
-            position: absolute;
-            left: 15px; /* Adjusted position */
-            top: 50%;
-            transform: translateY(-50%);
-        }
-
-        
-            
-      .search-icon-container:hover {
-        opacity: 0.7; 
+        width: 85%;
+        max-width: 700px;
       }
+
+      .search-bar input[type="text"] {
+        width: calc(100% - 70px);
+        padding: 15px 15px 15px 50px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #e6f2ff;
+        background-image: url('https://image.flaticon.com/icons/png/512/49/49116.png');
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position: 90% center;
+        outline: none;
+      }
+
+      .search-icon-container {
+        cursor: pointer;
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .search-icon-container:hover {
+        opacity: 0.7;
+      }
+
       .navbar-nav {
         display: flex;
         align-items: center;
-    }
+      }
 
-    .navbar-nav .nav-item {
+      .navbar-nav .nav-item {
         margin-right: 15px;
-    }
+      }
 
-    .navbar-nav .nav-link img {
+      .navbar-nav .nav-link img {
         vertical-align: middle;
-    }
+      }
 
-        .navbar-nav.ml-auto {
-            margin-left: auto;
-        }
+      .navbar-nav.ml-auto {
+        margin-left: auto;
+      }
 
-        #loginLink {
-            display: flex;
-            align-items: center;
-            padding: 10px;
-        }
+      #loginLink {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+      }
 
-        #loginLink:hover {
-            background-color: blue;
-            color: white;
-        }
+      #loginLink:hover {
+        background-color: blue;
+        color: white;
+      }
 
-        #loginLink:hover img {
-            filter: invert(1); 
-        }
+      #loginLink:hover img {
+        filter: invert(1);
+      }
 
-        #loginLink {
-            display: flex;
-            align-items: center;
-        }
-        #loginLink img:last-child {
-            margin-left: 5px; 
-            transition: transform 0.3s ease; 
-        }
+      #loginLink img:last-child {
+        margin-left: 5px;
+        transition: transform 0.3s ease;
+      }
 
-        #loginLink:hover img:last-child {
-            transform: rotate(180deg); 
-        }
+      #loginLink:hover img:last-child {
+        transform: rotate(180deg);
+      }
 
-        
+      .nav-link {
+        display: flex;
+        align-items: center;
+      }
 
-        .nav-link {
-            display: flex;
-            align-items: center;
-        }
+      #loginLink span {
+        margin-right: 5px;
+      }
 
-        #loginLink span {
-            margin-right: 5px; 
-        }
+      .nav-link img:last-child {
+        margin-left: 5px;
+      }
 
-        .nav-link img:last-child {
-            margin-left: 5px; 
-        }
+      .dropdown:hover .dropdown-menu {
+        display: block;
+      }
 
-        .dropdown:hover .dropdown-menu {
-            display: block;
-        }
-        #pointer {
-            position: absolute;
-            width: 30px;
-            height: 30px;
-            background-color: #ffeb3b; 
-            clip-path: polygon(50% 0%, 0% 100%, 100% 100%); 
-            animation: pointerAnimation 1.5s infinite alternate; 
-        }
+      #pointer {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-color: #ffeb3b;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        animation: pointerAnimation 1.5s infinite alternate;
+      }
 
-        @keyframes pointerAnimation {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(10px);
-            }
+      @keyframes pointerAnimation {
+        0% {
+          transform: translateX(0);
         }
+        100% {
+          transform: translateX(10px);
+        }
+      }
 
-        #pointer {
-            position: absolute;
-            top: 50px; 
-            left: 10px;
-            z-index: 9999; 
-        }
+      #pointer {
+        position: absolute;
+        top: 50px;
+        left: 10px;
+        z-index: 9999;
+      }
 
-        .dropdown-menu {
-            top: 40px; 
-            min-width: 200px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border: none;
-            border-radius: 8px;
-            background-color: #fff;
-            padding: 10px 0;
-        }
+      .dropdown-menu {
+        top: 40px;
+        min-width: 200px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border: none;
+        border-radius: 8px;
+        background-color: #fff;
+        padding: 10px 0;
+      }
 
-        .dropdown-menu a {
-            color: #212121;
-            font-size: 14px;
-            padding: 10px 20px;
-            display: block;
-            transition: background-color 0.3s;
-        }
+      .dropdown-menu a {
+        color: #212121;
+        font-size: 14px;
+        padding: 10px 20px;
+        display: block;
+        transition: background-color 0.3s;
+      }
 
-        .dropdown-menu a:hover {
-            background-color: #f5f5f5;
-        }
+      .dropdown-menu a:hover {
+        background-color: #f5f5f5;
+      }
     </style>
 </head>
 <body>
@@ -190,7 +179,6 @@
                             <a class="dropdown-item" href="signup.html">Sign Up</a>
                             <a class="dropdown-item" href="login.html">Login</a>
                         </div>
-                        
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
@@ -220,42 +208,8 @@
         </div>
     </nav>
 
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <script>
-        const isLoggedIn = true; 
-        const dropdownMenu = document.querySelector('.dropdown-menu');
-
-        function updateDropdownMenu() {
-            if (isLoggedIn) {
-                dropdownMenu.innerHTML = `
-                    <a class="dropdown-item" href="profile.html">My Profile</a>
-                    <a class="dropdown-item" href="FPZ.html">Flipkart Plus Zone</a>
-                    <a class="dropdown-item" href="order.html">My Orders</a>
-                    <a class="dropdown-item" href="#">Wishlist</a>
-                    <a class="dropdown-item" href="#">Rewards</a>
-                    <a class="dropdown-item" href="#">Gift Cards</a>
-                `;
-            } else {
-                dropdownMenu.innerHTML = `
-                    <div class="dropdown-item d-flex justify-content-between align-items-center">
-                        <span>New Customer?</span>
-                        <a href="signup.html" class="text-primary">Sign Up</a>
-                    </div>
-                    <a class="dropdown-item" href="profile.html">My Profile</a>
-                    <a class="dropdown-item" href="FPZ.html">Flipkart Plus Zone</a>
-                    <a class="dropdown-item" href="order.html">My Orders</a>
-                    <a class="dropdown-item" href="#">Wishlist</a>
-                    <a class="dropdown-item" href="#">Rewards</a>
-                    <a class="dropdown-item" href="#">Gift Cards</a>
-                `;
-            }
-        }
-
-        updateDropdownMenu();
-    </script>
 </body>
 </html>
