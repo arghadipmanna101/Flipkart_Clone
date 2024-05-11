@@ -1,5 +1,6 @@
 #products{
     display: flex;
+    margin-bottom: 20px ;
 }
 
 #topmenu >span{
@@ -33,4 +34,78 @@
 }
 #collection >div> img{
     width: 100%;
+}
+
+
+
+
+
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  .card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  .brand{
+    color: gray;
+  }
+  
+  .image img {
+    width: 250px;
+    height: 300px;
+  }
+  
+  .details {
+    padding: 10px;
+  }
+  
+  .title {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .price {
+    font-size: 16px;
+    color: black;
+  }
+  
+  .actualprice{
+    margin-bottom: 10px;
+  }
+  .btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .loader {
+  text-align: center;
+  padding: 20px 0;
+  display: none;
 }
