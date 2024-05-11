@@ -56,26 +56,22 @@ footer{
 .foot-top{
     display: flex;
     border-bottom: 1px solid white;
-   
+   flex-wrap: wrap;
 }
 .foot-left{
     display: flex;
     justify-content: space-between;
     margin-right: 70px;
-    border-right: 1px solid white;
+    /* border-right: 1px solid white; */
     margin: 25px;
+    flex: 1 1 500px;
+    flex-wrap: wrap;
 }
 .foot-left h5{
     font-size: 1rem;
     font-weight: 400;
     color: #9b9898;
 
-}
-#policy{
-    margin: 0px 20px;
-}
-.foot-left .about{
-    margin-right: 50px;
 }
 .foot-left .about li a{
     color: white;
@@ -89,6 +85,7 @@ footer{
 .foot-right{
     display: flex;
     margin: 25px;
+    flex: 1 1 500px;
 }
 .foot-right h5{
     font-size: 1rem;
