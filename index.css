@@ -3,7 +3,7 @@ body {
     background-color: #F1F2F4;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
-    color: #000;
+    color: #3c3c3c;
     margin: 0;
     padding: 0;
 }
@@ -12,20 +12,23 @@ body {
 #searchbar {
     padding: 6px;
     border-radius: 15px;
-    background-color: #e7eefb;
+    background-color: #ffffff;
 }
 
-#input_data {
+.about {
     width: 100%;
     padding: 6px; 
     border: none;
     background-color: transparent;
 }
 
-#input_data:focus {
+
+.input_data:focus {
     outline: none !important;
     border: none; 
 }
+
+
 
 .flex-grow {
     flex-grow: 1;
@@ -39,6 +42,9 @@ body {
 .navtab {
     display: flex;
     align-items: center;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 20px ;
 }
 
 .navbar-brand img {
@@ -91,36 +97,60 @@ footer{
     margin: 25px;
 }
 .foot-right h5{
-    font-size: 1rem;
+    font-size: 18px;
     font-weight: 400;
     color: #9b9898;
 
 }
-.social ul{
+.social ul {
     display: flex;
-}
-.social ul li{
+  }
+  
+  .social ul li {
     list-style: none;
     margin: 0px 10px;
-}
-.social ul li a{
+  }
+  
+  .social ul li a {
     color: white;
     font-size: 2rem;
-}
-.foot-down{
+    transition: color 0.3s ease; /* Add transition for smooth color change */
+  }
+  
+  /* Hover effect */
+  .social ul li a:hover {
+    color: rgb(199, 199, 248); /* Change color on hover */
+  }
+  
+  .foot-down {
     margin-top: 20px;
-
-}
-.foot-down ul{
+  }
+  
+  .foot-down ul {
     display: flex;
     justify-content: space-between;
-}
-.foot-down ul li{
+  }
+  
+  .foot-down ul li {
     list-style: none;
-}
-.foot-down ul li a{
+  }
+  
+  .foot-down ul li a {
     color: white;
-}
+    transition: color 0.2s ease; /* Add transition for smooth color change */
+  }
+  
+  /* Hover effect */
+  .foot-down ul li a:hover {
+    color: rgb(164, 164, 241); /* Change color on hover */
+  }
+  
+
+
+
+
+
+
 /* Footer styles */
 /* footer {
     background-color: black;
