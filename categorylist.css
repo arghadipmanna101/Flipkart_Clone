@@ -36,7 +36,7 @@ body {
 }
 .categories > li > ul {
     display: none;
-    position: fixed;
+    position: absolute;
     background-color: rgb(236, 236, 255);
     padding: 15px;
     gap: 15px 5px;
@@ -45,11 +45,11 @@ body {
     height: max-content;
     max-height: 100dvh;
     padding: 0 10%;
-    top: 16vh;
+    /* top: 16vh; */
     left: 0;
     font-size: 14px;
     overflow: hidden;
-    z-index: 500;
+    z-index: 500 !important;
 }
 .categories > li:hover > ul {
     display: flex;
