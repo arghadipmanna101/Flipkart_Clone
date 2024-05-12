@@ -265,8 +265,12 @@
         <li><a href=""><i class="bi bi-briefcase-fill"></i>Become a seller</a></li>
         <li><a href=""><i class="bi bi-gift-fill"></i>Gift Cards</a></li>
         <li><a href=""><i class="bi bi-question-circle-fill"></i>Help Center</a></li>
-        <li>&copy; 2024 Flipkart.com</li>
+        <div>
+          <li>&copy;<span class="update_Cyear"></span> Flipkart.com</li>
+        </div>
+        
       </ul>
+      
     </div>
     <div class="payment-icons">
       <img src="visa.jpeg" alt="Visa">
@@ -375,6 +379,19 @@
         document.getElementById('navbar-container').innerHTML = data;
       })
       .catch(error => console.error('Error fetching navbar:', error));
+
+
+  </script>
+
+  <script>
+    // Get the current year
+    var currentYear = new Date().getFullYear();
+
+    // Update the content of elements with class 'update_Cyear'
+    var updateElements = document.getElementsByClassName("update_Cyear");
+      for (var i = 0; i < updateElements.length; i++) {
+        updateElements[i].innerText = currentYear;
+}
   </script>
 
 
