@@ -78,29 +78,31 @@ body {
 
 
 footer{
-    background-color: rgb(29, 29, 30);
-    padding: 10px 60px;
+    background-color: rgb(28, 27, 27);
+    padding: 15px 35px;
 }
 .foot-top{
     display: flex;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgb(85, 78, 78);
    flex-wrap: wrap;
 }
 .foot-left{
     display: flex;
     justify-content: space-between;
     margin-right: 70px;
-    gap: 7px;
+    gap: 30px;
     margin: 25px;
     flex: 1 1 500px;
     flex-wrap: wrap;
 }
 .foot-left h5{
-    font-weight: 400;
+    font-size: 11px;
+    font-weight: 600;
     color: #9b9898;
 
 }
 .foot-left .about li a{
+    font-size: 11px;
     color: white;
     font-weight: 600;
     
@@ -113,9 +115,14 @@ footer{
     margin: 25px;
     flex: 1 1 500px;
     flex-wrap: wrap;gap: 7px;
+    border-left: 1px solid rgb(85, 78, 78);
+    padding-left: 30px;
+    
 }
 .foot-right h5{
     color: #9b9898;
+    font-size: 12px;
+    font-weight: 600;
 
 }
 .foot-right .part,
@@ -131,14 +138,20 @@ footer{
 }
 .social ul li a{
     color: white;
+    
 }
 .foot-down{
+    padding: 10px 40px;
+    display: flex;
     margin-top: 20px;
-
+    font-size: 11px;
+    justify-content: space-between;
+    font-weight: 600;
 }
 .foot-down ul{
-    display: flex;
+   display: flex;
     justify-content: space-between;
+    gap: 200px;
 }
 .foot-down ul li{
     list-style: none;
@@ -149,7 +162,11 @@ footer{
 .foot-left * , .foot-right *{
     font-size: 12px;
 }
-/* Footer styles */
+.payment-icons img{
+    padding: auto;
+    height: 15px;
+}
+/* Footer styles
 /* footer {
     background-color: black;
     color: white;
@@ -208,3 +225,34 @@ footer{
     text-decoration: none;
     display: block;
 }
+
+
+@media (max-width: 768px) {
+    footer {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .footer-top,
+    .footer-bottom {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .footer-section {
+        margin-bottom: 12px;
+    }
+
+    .footer-section h3 {
+        margin-bottom: 8px;
+    }
+    .footer-section ul {
+        list-style-type: none;
+        
+    }
+    .footer-section .social-icons{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+    }
+} */
