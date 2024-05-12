@@ -138,13 +138,19 @@ footer{
 }
 .social ul li a{
     color: white;
-    
+    transition: all .2s;
+}
+.social ul li a:hover {
+    color: #F8E831;
+}
+.social ul li a i {
+    font-size: 20px;
 }
 .foot-down{
     padding: 10px 40px;
     display: flex;
     margin-top: 20px;
-    font-size: 11px;
+    font-size: 9px;
     justify-content: space-between;
     font-weight: 600;
 }
