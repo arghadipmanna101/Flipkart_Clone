@@ -34,6 +34,17 @@ footer {
   }
 }
 
+.nav-item:hover {
+  background-color: rgb(182, 181, 181);
+  text-decoration: none;
+  opacity: 0.85;
+  transition: all 0.2s ease-in;
+  transform:scale(1.1);
+  z-index: 1;
+}
+
+/* Style for the link */
+
 .nav-link {
   text-decoration: none;
   color: #000;
@@ -50,6 +61,11 @@ footer {
   height: 2px;
   width: 0;
   background-color: #4187d7;
+  transition: all 0.3s ease;
+ 
+  height: 2px;
+  width: 100%;
+  background-color:color-mix(in srgb,rgb(54, 51, 51),grey);
   position: absolute;
   bottom: -5px;
   left: 50%;
