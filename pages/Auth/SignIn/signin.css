@@ -1,44 +1,66 @@
 *{
+    box-sizing: border-box;
     padding: 0%;
     margin: 0%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background:linear-gradient(to right,whitesmoke,#8faff3);
 }
 
 #outerbox{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 20px;
    
 }
 
 #innerbox{
     display: flex;
-    background-color: white;
-    width: 60%;
-    height: 500px;
+    background-color: #ffffff;
+    width: 70%;
+    max-width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 
 .leftinnerbox{
-    background-color: #2874F0;
-    color: white;
-    font-family: sans-serif;
-    width: 45%;
+    background-color: black;
+    color: #ffffff;
+    width: 40%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .rightinnerbox{
-    font-family: sans-serif;
-    width: 55%;
+    width: 50%;
+    padding: 40px;
+    text-align: center;
 }
 
 .para1{
-    margin-top: 35px;font-weight: bold;font-size: 25px;padding-top:40px;width:75%;margin: auto;
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 20px;
 }
 
 .para2{
-    margin-top: 20px;font-size: 18px;padding-top: 27px;width: 75%;margin: auto;
+    font-size: 14px;
+    margin-bottom: 30px;
 }
 /* Input fields styling */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
 .mobile,
 .name,
 .password {
@@ -72,4 +94,19 @@
    font-size: 18px;width: 80%;
     margin: auto;padding-top: 10px;
 }
+
+button {
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color:rgb(203, 203, 203);
+    color: #fff;
+    border:1px solid #555;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:0.5s;
+}
+
+button:hover{background-color:#FB641B;}
+
 
