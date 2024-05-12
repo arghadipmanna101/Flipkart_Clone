@@ -49,6 +49,34 @@ body {
 .navbar-nav .nav-link img {
     margin-right: 8px;
 }
+
+
+
+
+#category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .category {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+  
+  .category h3 {
+    font-size: 18px; 
+    color: #333333; 
+  }
+
+
 footer{
     background-color: rgb(28, 27, 27);
     padding: 15px 35px;
