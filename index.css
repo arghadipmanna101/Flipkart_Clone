@@ -14,23 +14,7 @@ body {
     border-radius: 15px;
     background-color: #e7eefb;
 }
-.details .info{
-    line-height: 16px;
-    font-size: 12px;
-}
-.details .info h1{
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-.details .info h2{
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-.details{
-    padding: 30px;
-    color: #878787;
-    background-color: #f5f5f5;
-}
+
 #input_data {
     width: 100%;
     padding: 6px; 
@@ -91,6 +75,24 @@ body {
     font-size: 18px; 
     color: #333333; 
   }
+
+  .details .info{
+    line-height: 16px;
+    font-size: 12px;
+}
+.details .info h1{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.details .info h2{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.details{
+    padding: 30px;
+    color: #878787;
+    background-color: #f5f5f5;
+}
 
 
 footer{
