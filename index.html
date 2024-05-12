@@ -157,6 +157,7 @@
 
   <!-- category list -->
   <div id="category-list"></div>
+  
 
   <!-- carousel -->
   <section id="carousal">
@@ -208,6 +209,7 @@
     
   </section>
 
+  <div id="content"></div>
   <footer>
     <div class="foot-top">
       <div class="foot-left">
@@ -399,6 +401,8 @@
       $("#loader").load("./preloader.html");
       $("#category-list").load("./categorylist.html");
       $("#top-deals").load("./topdeals.html");
+      $("#content").load("./content-page.html");
+      
      });
     fetch('./Navabar.html')
       .then(response => response.text())
