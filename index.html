@@ -6,7 +6,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Flipkart</title>
-  <link rel="icon" href="./flipkart_icon.ico" type="image/x-icon">
+  <link rel="icon" type="image/x-icon" href="flipkart favicon-modified.png">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="./index.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -14,7 +14,7 @@
     integrity="sha512-..." crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
 
   <style>
@@ -60,7 +60,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flipkart</title>
-    <link rel="icon" type="image/x-icon" href="flipkart favicon-modified.png">
+    <link rel="icon" type="image/x-icon" href="/flipkart favicon-modified.png">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
@@ -101,19 +101,24 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-        }
+      }
 
         #navbar-container {
           position: fixed;
           top: 0;right: 0;
           width: 100%;
           height: 10vh;
-          z-index: 500;
+          z-index: 600;
         }
         #carousal {
-          padding-top: 17vh;
+          padding: 18vh 2% 15px;
+          width: 100%;
         }
-
+        #top-deals {
+          width: 100%;
+          height: max-content;
+        }
+      
         @keyframes slideInFromLeft {
         0% {
         transform: translateX(-100%);
@@ -124,7 +129,13 @@
         opacity: 1;
         }
         }
-
+        .bi-question-circle-fill,.bi-gift-fill,.bi-briefcase-fill
+        {
+            color: #ffc600;
+        }
+        footer{
+          background: #172337;
+        }
 /* Apply the animation to the footer sections */
 .footer-section {
     animation: slideInFromLeft 0.5s ease forwards;
@@ -139,19 +150,16 @@
   <!-- external css -->
   <!-- id, class -->
 
+  <!-- navbar -->
   <div id="navbar-container"></div>
-  <!-- Navbar -->
 
+  <!-- preloader -->
   <div id="loader"></div>
-  <!-- Navbar -->
 
+  <!-- category list -->
   <div id="category-list"></div>
 
-
-
-  <!-- list of categories -->
-
-
+  <!-- carousel -->
   <section id="carousal">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -180,13 +188,10 @@
       </a>
     </div>
   </section>
-  </div>
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-pagination"></div>
-  </div>
 
-  </section>
+  <!-- top deals -->
+  <div id="top-deals"></div>
+
   <footer>
     <div class="foot-top">
       <div class="foot-left">
@@ -267,12 +272,30 @@
       </div>
     </div>
     <div class="foot-down">
-      <ul>
         <li><a href="./footerPage.html"><i class="bi bi-briefcase-fill"></i>Become a seller</a></li>
         <li><a href="./footerPage.html"><i class="bi bi-gift-fill"></i>Gift Cards</a></li>
         <li><a href="./footerPage.html"><i class="bi bi-question-circle-fill"></i>Help Center</a></li>
-        <li>&copy; 2024 Flipkart.com</li>
+        <div>
+          <li>&copy;<span class="update_Cyear"></span> Flipkart.com</li>
+        </div>
+
+        <li><a href=""><i class="bi bi-briefcase-fill"></i>Become a seller</a></li>
+        <li><a href=""><i class="bi bi-gift-fill"></i>Gift Cards</a></li>
+        <li><a href=""><i class="bi bi-question-circle-fill"></i>Help Center</a></li>
+        <div>
+          <li>&copy;<span class="update_Cyear"></span> Flipkart.com</li>
+        </div>
       </ul>
+      
+    </div>
+    <div class="payment-icons">
+      <img src="visa.jpeg" alt="Visa">
+      <img src="mastercard.jpeg" alt="Mastercard">
+      <img src="rupay.png" alt="rupay">
+      <img src="discover.png" alt="discover">
+      <img src="emi.png" alt="emi">
+      <img src="net banking.png" alt="net banking">
+      <img src="cash on delivery.png" alt="cash on delivery">
     </div>
   </footer>
 
@@ -364,6 +387,7 @@
      $(function () {
       $("#loader").load("./preloader.html");
       $("#category-list").load("./categorylist.html");
+      $("#top-deals").load("./topdeals.html");
      });
     fetch('./Navabar.html')
       .then(response => response.text())
@@ -372,6 +396,19 @@
         document.getElementById('navbar-container').innerHTML = data;
       })
       .catch(error => console.error('Error fetching navbar:', error));
+
+
+  </script>
+
+  <script>
+    // Get the current year
+    var currentYear = new Date().getFullYear();
+
+    // Update the content of elements with class 'update_Cyear'
+    var updateElements = document.getElementsByClassName("update_Cyear");
+      for (var i = 0; i < updateElements.length; i++) {
+        updateElements[i].innerText = currentYear;
+}
   </script>
 
 
