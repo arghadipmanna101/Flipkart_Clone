@@ -276,7 +276,7 @@
         <li><a href=""><i class="bi bi-gift-fill"></i>Gift Cards</a></li>
         <li><a href=""><i class="bi bi-question-circle-fill"></i>Help Center</a></li>
         <div>
-          <li>&copy;<span class="update_Cyear"></span> Flipkart.com</li>
+          <li>&copy;<span id="year"></span></span> Flipkart.com</li>
         </div>
         
       </ul>
@@ -403,6 +403,10 @@
       for (var i = 0; i < updateElements.length; i++) {
         updateElements[i].innerText = currentYear;
 }
+  </script>
+
+  <script>
+  document.getElementById("year").innerHTML = new Date().getFullYear();
   </script>
 
 
