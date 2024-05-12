@@ -421,6 +421,7 @@ bottom: 45px;}
   <!-- top deals -->
   <div id="top-deals"></div>
 
+
 <!-- sections added -->
 
 <main>
@@ -650,6 +651,24 @@ bottom: 45px;}
 
 
 
+  <!-- -grid for deals -->
+  
+  <section id="category-grid">
+    <img class="category" src="./images/deal5.png" alt="deal1">
+    <img class="category" src="./images/deal6.png" alt="deal1">
+    <img class="category" src="./images/deal1.png" alt="deal1">
+    <img class="category" src="./images/deal7.png" alt="deal1">
+    <img class="category" src="./images/deal8.png" alt="deal1">
+    <img class="category" src="./images/deal9.png" alt="deal1">
+    <img class="category" src="./images/deal10.png" alt="deal1">
+    <img class="category" src="./images/deal11.png" alt="deal1">
+    <img class="category" src="./images/deal12.png" alt="deal1">
+
+
+    
+  </section>
+
+
   <footer>
     <div class="foot-top">
       <div class="foot-left">
@@ -735,7 +754,7 @@ bottom: 45px;}
         <li><a href=""><i class="bi bi-gift-fill"></i>Gift Cards</a></li>
         <li><a href=""><i class="bi bi-question-circle-fill"></i>Help Center</a></li>
         <div>
-          <li>&copy;<span class="update_Cyear"></span> Flipkart.com</li>
+          <li>&copy;<span id="year"></span></span> Flipkart.com</li>
         </div>
         
       </ul>
@@ -860,6 +879,10 @@ bottom: 45px;}
       for (var i = 0; i < updateElements.length; i++) {
         updateElements[i].innerText = currentYear;
 }
+  </script>
+
+  <script>
+  document.getElementById("year").innerHTML = new Date().getFullYear();
   </script>
 
 
