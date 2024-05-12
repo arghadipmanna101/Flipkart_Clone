@@ -79,9 +79,7 @@
 
  <!-- screenshots -->
   <div>
-    <h2> <img src ="![Screenshot (425)](https://github.com/anushreemehta6/Flipkart_Clone/assets/104919688/bfe1eb72-af0d-4597-abb0-3a747a224c73)
-"> <img src="![Screenshot (424)](https://github.com/anushreemehta6/Flipkart_Clone/assets/104919688/081f919b-06fe-41be-9176-0b8b4d61bba5)
-">Screenshot</h2>
+    <h2> <img src =C:\Users\Lenovo\OneDrive\Pictures\Screenshots\Screenshot (425).png> <img src="C:\Users\Lenovo\OneDrive\Pictures\Screenshots\Screenshot (424).png>Screenshot</h2>
   </div>
 
 <!-- Code of conduct -->
