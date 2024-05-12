@@ -141,17 +141,20 @@ footer{
     
 }
 .foot-down{
-    padding: 10px 40px;
+    padding: 10px 10px;
     display: flex;
     margin-top: 20px;
     font-size: 11px;
     justify-content: space-between;
     font-weight: 600;
+    flex-wrap: wrap;
+}
+.foot-down > div{
+    flex: 1 1 300px;
 }
 .foot-down ul{
    display: flex;
     justify-content: space-between;
-    gap: 200px;
 }
 .foot-down ul li{
     list-style: none;
