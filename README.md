@@ -79,7 +79,7 @@
 
  <!-- screenshots -->
   <div>
-    <h2> <img src ="Screenshot 1.png"> <img src="Screenshot (425).png">Screenshot</h2>
+    <h2>Screenshot <img src ="Screenshot 1.png"> <img src="Screenshot (425).png"></h2>
   </div>
 
 <!-- Code of conduct -->
