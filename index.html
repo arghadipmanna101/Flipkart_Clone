@@ -107,10 +107,15 @@
           top: 0;right: 0;
           width: 100%;
           height: 10vh;
-          z-index: 500;
+          z-index: 600;
         }
         #carousal {
-          padding-top: 17vh;
+          padding: 18vh 2% 15px;
+          width: 100%;
+        }
+        #top-deals {
+          width: 100%;
+          height: max-content;
         }
 
         @keyframes slideInFromLeft {
@@ -138,19 +143,16 @@
   <!-- external css -->
   <!-- id, class -->
 
+  <!-- navbar -->
   <div id="navbar-container"></div>
-  <!-- Navbar -->
 
+  <!-- preloader -->
   <div id="loader"></div>
-  <!-- Navbar -->
 
+  <!-- category list -->
   <div id="category-list"></div>
 
-
-
-  <!-- list of categories -->
-
-
+  <!-- carousel -->
   <section id="carousal">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -179,13 +181,10 @@
       </a>
     </div>
   </section>
-  </div>
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-pagination"></div>
-  </div>
 
-  </section>
+  <!-- top deals -->
+  <div id="top-deals"></div>
+
   <footer>
     <div class="foot-top">
       <div class="foot-left">
@@ -363,6 +362,7 @@
      $(function () {
       $("#loader").load("./preloader.html");
       $("#category-list").load("./categorylist.html");
+      $("#top-deals").load("./topdeals.html");
      });
     fetch('./Navabar.html')
       .then(response => response.text())

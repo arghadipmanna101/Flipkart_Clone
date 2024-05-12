@@ -62,20 +62,18 @@ footer{
     display: flex;
     justify-content: space-between;
     margin-right: 70px;
-    /* border-right: 1px solid white; */
+    gap: 7px;
     margin: 25px;
     flex: 1 1 500px;
     flex-wrap: wrap;
 }
 .foot-left h5{
-    font-size: 1rem;
     font-weight: 400;
     color: #9b9898;
 
 }
 .foot-left .about li a{
     color: white;
-    font-size: 0.9rem;
     font-weight: 600;
     
 }
@@ -86,12 +84,15 @@ footer{
     display: flex;
     margin: 25px;
     flex: 1 1 500px;
+    flex-wrap: wrap;gap: 7px;
 }
 .foot-right h5{
-    font-size: 1rem;
-    font-weight: 400;
     color: #9b9898;
 
+}
+.foot-right .part,
+.foot-right .office {
+    flex: 1 1 300px;
 }
 .social ul{
     display: flex;
@@ -102,7 +103,6 @@ footer{
 }
 .social ul li a{
     color: white;
-    font-size: 2rem;
 }
 .foot-down{
     margin-top: 20px;
@@ -117,6 +117,9 @@ footer{
 }
 .foot-down ul li a{
     color: white;
+}
+.foot-left * , .foot-right *{
+    font-size: 12px;
 }
 /* Footer styles */
 /* footer {
