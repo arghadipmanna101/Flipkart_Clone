@@ -15,43 +15,60 @@ footer {
   padding: 40px 0;
   width: 100%;
 }
-
-/* Add a smooth transition effect */
+/*Navbar items styling */
 .nav-item {
-  transition: background-color 0.5s ease; 
+  transition: background-color 0.3s ease;
 }
 
 .nav-item:hover {
-  background-color: grey;
-  text-decoration: underline;
-  opacity:1;
+  background-color: #f0f0f0;
+  animation: pulseBackground 1s infinite alternate;
 }
 
-/* Style for the link */
+@keyframes pulseBackground {
+  0% {
+    background-color: #f0f0f0;
+  }
+  100% {
+    background-color: #e0e0e0;
+  }
+}
 
 .nav-link {
-  text-decoration:none;
+  text-decoration: none;
   color: #000;
-  display: block;
+  display: inline-block;
   padding: 20px;
+  position: relative;
+  transition: transform 0.5s ease;
 }
 
 .nav-link::after {
-  content:'';
+  content: '';
   opacity: 0;
-  transition: all 0.3s ease;
+  transition: opacity 0.3s ease, width 0.3s ease, box-shadow 0.3s ease;
   height: 2px;
-  width: 100%;
-  background-color:color-mix(in srgb,black,grey);
+  width: 0;
+  background-color: #4187d7;
   position: absolute;
-  bottom: 0;
-  left:0;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.nav-link:hover::after{
-  opacity:1;
+.nav-link:hover::after {
+  opacity: 1;
+  width: calc(100% + 8px);
 }
 
+.nav-link:hover {
+  color: #4187d7;
+  background-color: #f0f8ff;
+  transform: scale(1.05);
+}
+
+/*Items styling*/
 .itemSection {
   max-width: 1434px;
   height: 314px;
