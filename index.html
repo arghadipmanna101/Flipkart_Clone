@@ -100,8 +100,24 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+      }
+
+        #navbar-container {
+          position: fixed;
+          top: 0;right: 0;
+          width: 100%;
+          height: 10vh;
+          z-index: 600;
         }
-        
+        #carousal {
+          padding: 18vh 2% 15px;
+          width: 100%;
+        }
+        #top-deals {
+          width: 100%;
+          height: max-content;
+        }
+      
         @keyframes slideInFromLeft {
         0% {
         transform: translateX(-100%);
@@ -133,19 +149,16 @@
   <!-- external css -->
   <!-- id, class -->
 
+  <!-- navbar -->
   <div id="navbar-container"></div>
-  <!-- Navbar -->
 
+  <!-- preloader -->
   <div id="loader"></div>
-  <!-- Navbar -->
 
+  <!-- category list -->
   <div id="category-list"></div>
 
-
-
-  <!-- list of categories -->
-
-
+  <!-- carousel -->
   <section id="carousal">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -174,13 +187,27 @@
       </a>
     </div>
   </section>
-  </div>
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-pagination"></div>
-  </div>
 
+  <!-- top deals -->
+  <div id="top-deals"></div>
+
+  <!-- -grid for deals -->
+  
+  <section id="category-grid">
+    <img class="category" src="./images/deal5.png" alt="deal1">
+    <img class="category" src="./images/deal6.png" alt="deal1">
+    <img class="category" src="./images/deal1.png" alt="deal1">
+    <img class="category" src="./images/deal7.png" alt="deal1">
+    <img class="category" src="./images/deal8.png" alt="deal1">
+    <img class="category" src="./images/deal9.png" alt="deal1">
+    <img class="category" src="./images/deal10.png" alt="deal1">
+    <img class="category" src="./images/deal11.png" alt="deal1">
+    <img class="category" src="./images/deal12.png" alt="deal1">
+
+
+    
   </section>
+
   <footer>
     <div class="foot-top">
       <div class="foot-left">
@@ -261,16 +288,21 @@
       </div>
     </div>
     <div class="foot-down">
-      <ul>
-        <li><a href=""><i class="bi bi-briefcase-fill"></i>Become a seller</a></li>
-        <li><a href=""><i class="bi bi-gift-fill"></i>Gift Cards</a></li>
-        <li><a href=""><i class="bi bi-question-circle-fill"></i>Help Center</a></li>
-        <div>
-          <li>&copy;<span class="update_Cyear"></span> Flipkart.com</li>
-        </div>
-        
-      </ul>
+
+      <div>
+
+        <ul>
+          <li><a href=""><i class="bi bi-briefcase-fill"></i> Become a seller</a></li>
+          <li><a href=""><i class="bi bi-gift-fill"></i> Gift Cards</a></li>
+          <li><a href=""><i class="bi bi-question-circle-fill"></i> Help Center</a></li>
+          <div>
+            <li>&copy;<span class="update_Cyear"></span> Flipkart.com</li>
+          </div>
+         </ul>
+      </div>
+
       
+
     </div>
     <div class="payment-icons">
       <img src="visa.jpeg" alt="Visa">
@@ -280,6 +312,8 @@
       <img src="payment_images/EMI_img.webp" alt="emi">
       <img src="payment_images/netbanking_img.svg" alt="net banking">
       <img src="payment_images/COD_img.png" alt="cash on delivery">
+
+
     </div>
   </footer>
 
@@ -371,6 +405,7 @@
      $(function () {
       $("#loader").load("./preloader.html");
       $("#category-list").load("./categorylist.html");
+      $("#top-deals").load("./topdeals.html");
      });
     fetch('./Navabar.html')
       .then(response => response.text())
@@ -392,6 +427,10 @@
       for (var i = 0; i < updateElements.length; i++) {
         updateElements[i].innerText = currentYear;
 }
+  </script>
+
+  <script>
+  document.getElementById("year").innerHTML = new Date().getFullYear();
   </script>
 
 
