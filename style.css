@@ -29,6 +29,17 @@ footer {
 
 /* Style for the link */
 
+.nav-item:hover {
+  background-color: rgb(182, 181, 181);
+  text-decoration: none;
+  opacity: 0.85;
+  transition: all 0.2s ease-in;
+  transform:scale(1.1);
+  z-index: 1;
+}
+
+/* Style for the link */
+
 .nav-link {
   text-decoration:none;
   color: #000;
@@ -40,9 +51,10 @@ footer {
   content:'';
   opacity: 0;
   transition: all 0.3s ease;
+ 
   height: 2px;
   width: 100%;
-  background-color:color-mix(in srgb,black,grey);
+  background-color:color-mix(in srgb,rgb(54, 51, 51),grey);
   position: absolute;
   bottom: 0;
   left:0;
@@ -53,9 +65,11 @@ footer {
 }
 
 
+
 #carousel{
   height: auto;
 }
+
 
 .itemSection {
   max-width: 1434px;

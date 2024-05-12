@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Flipkart</title>
-  <link rel="icon" href="./flipkart_icon.ico" type="image/x-icon">
+  <link rel="icon" type="image/x-icon" href="flipkart favicon-modified.png">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="./index.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -13,7 +13,7 @@
     integrity="sha512-..." crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
 
   <style>
@@ -59,7 +59,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flipkart</title>
-    <link rel="icon" type="image/x-icon" href="flipkart favicon-modified.png">
+    <link rel="icon" type="image/x-icon" href="/flipkart favicon-modified.png">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -99,19 +99,24 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-        }
+      }
 
         #navbar-container {
           position: fixed;
           top: 0;right: 0;
           width: 100%;
           height: 10vh;
-          z-index: 500;
+          z-index: 600;
         }
         #carousal {
-          padding-top: 17vh;
+          padding: 18vh 2% 15px;
+          width: 100%;
         }
-
+        #top-deals {
+          width: 100%;
+          height: max-content;
+        }
+      
         @keyframes slideInFromLeft {
         0% {
         transform: translateX(-100%);
@@ -122,7 +127,13 @@
         opacity: 1;
         }
         }
-
+        .bi-question-circle-fill,.bi-gift-fill,.bi-briefcase-fill
+        {
+            color: #ffc600;
+        }
+        footer{
+          background: #172337;
+        }
 /* Apply the animation to the footer sections */
 .footer-section {
     animation: slideInFromLeft 0.5s ease forwards;
@@ -137,13 +148,17 @@
   <!-- external css -->
   <!-- id, class -->
 
+
   <div id="container"></div>
   <!-- Navbar -->
 
-  <div id="loader"></div>
-  <!-- Navbar -->
 
+  <!-- preloader -->
+  <div id="loader"></div>
+
+  <!-- category list -->
   <div id="category-list"></div>
+
 
 
 
@@ -161,6 +176,7 @@
             src="./images/add1.jpg"
             alt="First slide"
           />
+
         </div>
         <div class="swiper-slide carousel-item">
           <img class="d-block w-100"
@@ -210,13 +226,27 @@
       </a>
     </div>
   </section>
-  </div>
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-pagination"></div>
-  </div>
 
+  <!-- top deals -->
+  <div id="top-deals"></div>
+
+  <!-- -grid for deals -->
+  
+  <section id="category-grid">
+    <img class="category" src="./images/deal5.png" alt="deal1">
+    <img class="category" src="./images/deal6.png" alt="deal1">
+    <img class="category" src="./images/deal1.png" alt="deal1">
+    <img class="category" src="./images/deal7.png" alt="deal1">
+    <img class="category" src="./images/deal8.png" alt="deal1">
+    <img class="category" src="./images/deal9.png" alt="deal1">
+    <img class="category" src="./images/deal10.png" alt="deal1">
+    <img class="category" src="./images/deal11.png" alt="deal1">
+    <img class="category" src="./images/deal12.png" alt="deal1">
+
+
+    
   </section>
+
   <footer>
     <div class="foot-top">
       <div class="foot-left">
@@ -297,12 +327,29 @@
       </div>
     </div>
     <div class="foot-down">
-      <ul>
-        <li><a href=""><i class="bi bi-briefcase-fill"></i>Become a seller</a></li>
-        <li><a href=""><i class="bi bi-gift-fill"></i>Gift Cards</a></li>
-        <li><a href=""><i class="bi bi-question-circle-fill"></i>Help Center</a></li>
-        <li>&copy; 2024 Flipkart.com</li>
-      </ul>
+
+      <div>
+
+        <ul>
+          <li><a href=""><i class="bi bi-briefcase-fill"></i> Become a seller</a></li>
+          <li><a href=""><i class="bi bi-gift-fill"></i> Gift Cards</a></li>
+          <li><a href=""><i class="bi bi-question-circle-fill"></i> Help Center</a></li>
+          <div>
+            <li>&copy;<span class="update_Cyear"></span> Flipkart.com</li>
+          </div>
+         </ul>
+      </div>
+
+      
+      <div class="payment-icons">
+        <img src="visa.jpeg" alt="Visa">
+        <img src="mastercard.jpeg" alt="Mastercard">
+        <img src="images/rupay.png" alt="rupay">
+        <img src="images/discover.png" alt="discover">
+        <img src="images/emi.png" alt="emi">
+        <img src="images/net_banking.png" alt="net banking">
+        <img src="images/cod.png" alt="cash on delivery">
+      </div>
     </div>
   </footer>
 
@@ -342,6 +389,89 @@
       <P>Layout, Bangalore KA </P>
       <P> IN 560034. </P>
     </div>
+
+    <div>
+      <li class="heading">Contact us</li>
+      <li>About Us</li>
+      <li>Career</li>
+      <li>Flipkart Stories</li>
+      <li>Cleartrip</li>
+    </div>
+  </section> -->
+  <!-- <footer>
+    <div class="footer-top">
+        <div class="footer-section">
+          <h3>ABOUT</h3>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Flipkart Stories</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Corporate Information</a></li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+             Content for footer-bottom goes here -->
+  <!-- </div> -->
+  <!-- </section>  -->
+  <!-- End Footer Section -->
+
+  <!-- jQuery and Swiper Script -->
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    // $(function () {
+    //   $("#navbar-container").load("./Navabar.html");
+    // });
+   
+  </script>
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!-- <script src="./index.js"> -->
+  </script>
+
+  <script>
+     $(function () {
+      $("#loader").load("./preloader.html");
+      $("#category-list").load("./categorylist.html");
+      $("#top-deals").load("./topdeals.html");
+     });
+    fetch('./Navabar.html')
+      .then(response => response.text())
+      .then(data => {
+        // Insert the retrieved HTML content into the navbar-container
+        document.getElementById('navbar-container').innerHTML = data;
+      })
+      .catch(error => console.error('Error fetching navbar:', error));
+
+
+  </script>
+
+  <script>
+    // Get the current year
+    var currentYear = new Date().getFullYear();
+
+    // Update the content of elements with class 'update_Cyear'
+    var updateElements = document.getElementsByClassName("update_Cyear");
+      for (var i = 0; i < updateElements.length; i++) {
+        updateElements[i].innerText = currentYear;
+}
+  </script>
+
+  <script>
+  document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
+
+
+
 
   
     <!-- End Footer Section -->
