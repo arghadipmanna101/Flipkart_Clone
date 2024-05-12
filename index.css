@@ -160,7 +160,9 @@ footer{
 
 .footer-section ul {
     list-style-type: none;
+    
 }
+
 
 .social-icons a {
     margin-right: 10px;
@@ -192,3 +194,5 @@ footer{
     text-decoration: none;
     display: block;
 }
+
+

@@ -23,9 +23,9 @@
 <h2><img src = "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" width="35" height="35"> Let's Get Started</h2>
 </div>
 
-<p>Welcome to Flipkart_Clone! If you're interested in contributing, here's how you can get started:</p>
+<p>Welcome to the Flipkart_Clone! If you're interested in contributing, here's how you can get started:</p>
 
-1. **Fork the repository:** Click on the "Fork" button at the top-right corner of the repository's page on GitHub to create your own copy of the project.
+1. **Fork the repository:** Click on the "Fork" button at the top-right corner of this page. This will create a copy of this repository in your account.
 
 2. **Clone the repository:** After forking, clone the repository to your local machine using the following command in your terminal:
 
@@ -33,39 +33,49 @@
    git clone https://github.com/<your-github-username>/Flipkart_Clone.git
    ```
 
-3. **Add a remote upstream:** Set up a remote upstream to the original repository by running the following command in your terminal:
+3. **Change the directory:** Change to the repository directory on your computer (if you are not already there):
+```bash
+   cd .\Flipkart_Clone\
+   ```
+   
+4. **Add a remote upstream:** Set up a remote upstream to the original repository by running the following command in your terminal:
 
    ```bash
    git remote add upstream https://github.com/<original-owner>/Flipkart_Clone/
    ```
 
-4. **Create a new branch:** Switch to a new branch for your contributions:
+5. **Create a new branch:** Switch to a new branch for your contributions:
 
    ```bash
-   git checkout -b <your-branch-name>
+   git switch -c <your-branch-name>
    ```
 
-5. **Make changes:** Start making your changes to the source code.
+6. **Make changes:** Start making your changes to the source code.
 
-6. **Add your changes:** Stage your changes for commit:
+7. **Add your changes:** Stage your changes for commit:
 
    ```bash
    git add <changed-file1> <changed-file2> ...
    ```
+   or simply run
+      ```bash
+   git add .
+   ```
 
-7. **Commit your changes:** Commit your changes with a descriptive message:
+
+8. **Commit your changes:** Commit your changes with a descriptive message:
 
    ```bash
    git commit -m "<your-commit-message>"
    ```
 
-8. **Push your changes:** Push your changes to your forked repository:
+9. **Push your changes:** Push your changes to the forked repository:
 
    ```bash
-   git push origin <your-branch-name>
+   git push -u origin <your-branch-name>
    ```
 
-9. **Create a Pull Request:** Go to the GitHub repository, select your branch, and click on the "New pull request" button to create a new pull request.
+10. **Create a Pull Request:** Go to the GitHub repository, select your branch, and click on the "New pull request" button to create a new pull request.
 
 <!-- Code of conduct -->
 <div>

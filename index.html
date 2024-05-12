@@ -2,11 +2,10 @@
 <html lang="en">
 
 <head>
- footer
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Flipkart</title>
-  <link rel="icon" type="image/png" href="./flipkart_icon.png">
+  <link rel="icon" type="image/x-icon" href="flipkart favicon-modified.png">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="./index.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -14,7 +13,7 @@
     integrity="sha512-..." crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
 
   <style>
@@ -60,7 +59,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flipkart</title>
-    <link rel="icon" type="image/x-icon" href="flipkart favicon-modified.png">
+    <link rel="icon" type="image/x-icon" href="/flipkart favicon-modified.png">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
@@ -69,7 +68,7 @@
 
 
     <style>
-        * {
+        *{
             padding: 0;
             margin: 0;
         }
@@ -88,7 +87,7 @@
             width: 100%;
             height: 100%;
         }
-        .swiper-slide {
+        .swiper-slide{
             text-align: center;
             font-size: 18px;
             background: #fff;
@@ -102,8 +101,30 @@
             height: 100%;
             object-fit: cover;
         }
+        
+        @keyframes slideInFromLeft {
+        0% {
+        transform: translateX(-100%);
+        opacity: 0;
+        }
+        100% {
+        transform: translateX(0);
+        opacity: 1;
+        }
+        }
+        .bi-question-circle-fill,.bi-gift-fill,.bi-briefcase-fill
+        {
+            color: #ffc600;
+        }
+        footer{
+          background: #172337;
+        }
+/* Apply the animation to the footer sections */
+.footer-section {
+    animation: slideInFromLeft 0.5s ease forwards;
+}
+
     </style>
- main
 </head>
 
 <body>
@@ -114,6 +135,11 @@
 
   <div id="navbar-container"></div>
   <!-- Navbar -->
+
+  <div id="loader"></div>
+  <!-- Navbar -->
+
+  <div id="category-list"></div>
 
 
 
@@ -155,7 +181,7 @@
   </div>
 
   </section>
-  <!-- <footer>
+ 
     <div class="foot-top">
       <div class="foot-left">
         <div class="about">
@@ -243,7 +269,6 @@
       </ul>
     </div>
   </footer> -->
-  <footer>
     <section id="footer">
       <div class="wrap1">
         <div>
@@ -291,30 +316,35 @@
         </div>
       </div>
     </section> 
-  </footer>
+  </footer> -->
 
   <!-- jQuery and Swiper Script -->
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
-    $(function () {
-      $("#navbar-container").load("./Navabar.html");
-    });
+    // $(function () {
+    //   $("#navbar-container").load("./Navabar.html");
+    // });
+   
   </script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-  <script src="./index.js">
+  <!-- <script src="./index.js"> -->
   </script>
 
   <script>
-    fetch('./navabar.html')
+     $(function () {
+      $("#loader").load("./preloader.html");
+      $("#category-list").load("./categorylist.html");
+     });
+    fetch('./Navabar.html')
       .then(response => response.text())
       .then(data => {
         // Insert the retrieved HTML content into the navbar-container
@@ -326,9 +356,7 @@
 
 
 </body>
- footer
 
 </html>
 
 </html>    
- main
