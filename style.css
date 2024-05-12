@@ -55,7 +55,6 @@ footer {
 .nav-link:hover::after{
   opacity:1;
 }
-
 .itemSection {
   max-width: 1434px;
   height: 314px;
