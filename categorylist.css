@@ -8,10 +8,11 @@ body {
     background-color: rgb(255, 255, 255);
 }
 .categorylist-wrapper {
+    
     width: 100%;
     overflow-x: scroll;
     position: fixed;
-    top: 8vh;
+    top: 9vh;
     right: 0;
     z-index: 500;
 }
