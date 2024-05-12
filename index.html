@@ -141,6 +141,236 @@
 }
 
     </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap");
+:root {
+  --main-bg-color: #2874f0;
+}
+* {
+  padding: 0%;
+  margin: 0%;
+}
+/* footer {
+  background: var(--main-bg-color);
+  color: aliceblue;
+  height: 12vh;
+  font-family: "Roboto", sans-serif;
+} */
+header {
+  background: var(--main-bg-color);
+}
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 9vh;
+}
+nav {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+  padding: 0 15px;
+  font-size: 25px;
+}
+
+nav ul li a {
+  color: aliceblue;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+nav ul li a:hover {
+  color: #7ea0d7;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 100px;
+  padding: 0 20px 0px;
+}
+.more {
+  display: flex;
+  position: relative;
+  bottom: 45px;
+
+  margin-left: 95vw;
+  background: #2874f0;
+  color: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 2px;
+  padding: 5px 10px;
+  font-size: 13px;
+  font-weight: 500;
+  vertical-align: super;
+  cursor: pointer;
+  outline: none;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+.search button {
+  font-family: "Roboto", sans-serif;
+}
+.search input {
+  height: 3vh;
+  width: 30vw;
+  border-radius: 4px;
+  margin: 0 11px 0 45px;
+  padding: 5px 12px;
+}
+.btn {
+  padding: 1px 10px;
+  margin: 6px;
+  border-radius: 5px;
+  border: solid wheat;
+  color: antiquewhite;
+  background-color: var(--main-bg-color);
+  cursor: pointer;
+  width: 60px;
+}
+.image {
+  width: 70px;
+}
+.slider {
+  margin: 5px 0 10px 15vw;
+  width: 80vw;
+  display: flex;
+  overflow: hidden;
+}
+.card {
+  max-width: 91vw;
+  margin: 22px auto;
+  overflow: hidden;
+  display: flow-root;
+}
+
+.card-item {
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 12px;
+}
+
+.text-center {
+  text-align: center;
+  justify-content: center;
+}
+.cards {
+  display: flex;
+  overflow: scroll;
+  margin: 0 15px 0 55px;
+  scroll-behavior: smooth;
+}
+h3:hover {
+  color: var(--main-bg-color);
+}
+
+h3 {
+  background-color: #e5e5e5;
+  display: flex;
+}
+
+.lines:hover {
+  color: var(--main-bg-color);
+  text-decoration: underline;
+}
+.Explore {
+  position: relative;
+  top: 20px;
+  right: 120px;
+  font-size: 16px;
+  font-family: sans-serif;
+  color: rgb(255, 255, 255);
+}
+.Explore1 {
+  position: relative;
+  top: 20px;
+  right: 118px;
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #ffe500;
+}
+.Explore2:hover {
+  text-decoration: underline;
+}
+/* .Explore1:hover { */
+  /* text-decoration: underline; */
+/* } */
+.plus-img {
+  position: relative;
+  top: 47px;
+  right: 115px;
+   width: 11px;
+  height: 10px;
+}
+.container {
+  /* height: calc(100vh - 30vh - 12vh); */
+}
+.all-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.my1{
+    padding
+    : 15px 10px 15px  10px;
+    
+}
+@media screen and (max-width:1000px){
+   
+   
+   
+
+    nav{
+        flex-direction: column;
+    }
+    .logo{
+        justify-content: center;
+        margin:  12px 0px ;
+      
+    }
+    .logo img {
+        width: 100px;
+        
+      }
+    nav ul{
+        justify-content: center;
+    }
+    .search input{
+        height: 20px;
+              
+    }
+    .search{
+        justify-content: center;
+        margin: 0%;
+    }
+    
+    .search input {
+
+        margin:  12px 16px;
+    }
+    .slider{
+        height: 20vh;
+    }
+   .cards {
+  display: flex;
+  overflow: scroll ;
+  margin: 0 15px 0 20px;}
+
+
+  .more{
+    margin-left: 88vw; 
+display: flex; 
+position:relative ;
+bottom: 45px;}
+    }
+    </style>
 </head>
 
 <body>
@@ -190,6 +420,235 @@
 
   <!-- top deals -->
   <div id="top-deals"></div>
+
+<!-- sections added -->
+
+<main>
+  <div class="container">
+    <!-- <div class="slider">
+      <img src="https://source.unsplash.com/790x220/?flipkart, product" alt="ddd" />
+    </div> -->
+    <!-- <h3 class="my1">shoping </h3> -->
+    <div class="more">VIEW ALL</div>
+
+    <div class="cards">
+
+      <div class="card-item">
+        <img src="https://source.unsplash.com/250x250/?phone, product" alt="" />
+
+        <div class="lines">
+          <p class="text-center">verified </p>
+          <p class="text-center">product</p>
+          <p class="text-center">min 80% off</p>
+        </div>
+      </div>
+      <div class="card-item">
+        <img src="https://source.unsplash.com/250x250/?phone,1, product" alt="" />
+        <div class="lines">
+          <p class="text-center">verified </p>
+          <p class="text-center">product</p>
+          <p class="text-center">min 20% off</p>
+        </div>
+      </div>
+      <div class="card-item">
+        <img src="https://source.unsplash.com/250x250/?i-phine, product" alt="" />
+        <div class="lines">
+          <p class="text-center">verified </p>
+          <p class="text-center">product</p>
+          <p class="text-center">min 65% off</p>
+        </div>
+      </div>
+      <div class="card-item">
+        <img src="https://source.unsplash.com/250x250/?camera, product" alt="" />
+        <div class="lines">
+          <p class="text-center">verified </p>
+          <p class="text-center">product</p>
+          <p class="text-center">min 75% off</p>
+        </div>
+      </div>
+      <div class="card-item">
+        <img src="https://source.unsplash.com/250x250/?laptop, product" alt="" />
+        <div class="lines">
+          <p class="text-center">verified </p>
+          <p class="text-center">product</p>
+          <p class="text-center">min 62% off</p>
+        </div>
+      </div>
+      <div class="card-item">
+        <img src="https://source.unsplash.com/250x250/?jjds, product" alt="" />
+        <div class="lines">
+          <p class="text-center">verified </p>
+          <p class="text-center">product</p>
+          <p class="text-center">min 64% off</p>
+        </div>
+      </div>
+    </div>
+    <h3 class="my1">20%-40% off</h3>
+    <div class="more">VIEW ALL</div>
+    <div class="cards">
+
+      <div class="card-item">
+        <img src="https://source.unsplash.com/250x250/?i-pods, product" alt="" />
+        <div class="lines">
+          <p class="text-center">verified </p>
+          <p class="text-center">product</p>
+          <p class="text-center">min 85% off</p>
+        </div>
+      </div>
+      <div class="card-item">
+        <img src="https://source.unsplash.com/250x250/?i-wach, product" alt="" />
+        <div class="lines">
+          <p class="text-center">verified </p>
+          <p class="text-center">product</p>
+          <p class="text-center">min 20% off</p>
+        </div>
+      </div>
+      <div class="card-item">
+        <img src="https://source.unsplash.com/250x250/?i-phinehdh, product" alt="" />
+        <div class="lines">
+          <p class="text-center">verified </p>
+          <p class="text-center">product</p>
+          <p class="text-center">min 55% off</p>
+        </div>
+      </div>
+      <div class="card-item">
+        <img src="https://source.unsplash.com/250x250/?cameraphone, product" alt="" />
+        <div class="lines">
+          <p class="text-center">verified </p>
+          <p class="text-center">product</p>
+          <p class="text-center">min 15% off</p>
+        </div>
+      </div>
+      <div class="card-item">
+        <img src="https://source.unsplash.com/250x250/?laptop,cameera, product" alt="" />
+        <div class="lines">
+          <p class="text-center">verified </p>
+          <p class="text-center">product</p>
+          <p class="text-center">min 10% off</p>
+        </div>
+      </div>
+      <div class="card-item">
+        <img src="https://source.unsplash.com/250x250/?podsvlc, product" alt="" />
+        <div class="lines">
+          <p class="text-center">verified </p>
+          <p class="text-center">product</p>
+          <p class="text-center">min 90% off</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="my1">80%-90% off</h3>
+    <div class="more">VIEW ALL</div>
+    <div class="cards">
+
+      <div class="card-item">
+        <img src="https://source.unsplash.com/250x250/?pods, product" alt="" />
+        <div class="lines">
+          <p class="text-center">verified </p>
+          <p class="text-center">product</p>
+          <p class="text-center">min 20% off</p>
+        </div>
+      </div>
+      <div class="card-item">
+        <img src="https://source.unsplash.com/250x250/?pods-pro, product" alt="" />
+        <div class="lines">
+          <p class="text-center">verified </p>
+          <p class="text-center">product</p>
+          <p class="text-center">min 35% off</p>
+        </div>
+      </div>
+      <div class="card-item">
+        <img src="https://source.unsplash.com/250x250/?iwach, product" alt="" />
+        <div class="lines">
+          <p class="text-center">verified </p>
+          <p class="text-center">product</p>
+          <p class="text-center">min 80% off</p>
+        </div>
+      </div>
+      <div class="card-item">
+        <img src="https://source.unsplash.com/250x250/?pro+, product" alt="" />
+        <div class="lines">
+          <p class="text-center">verified </p>
+          <p class="text-center">product</p>
+          <p class="text-center">min 20% off</p>
+        </div>
+      </div>
+      <div class="card-item">
+        <img src="https://source.unsplash.com/250x250/?aphones, product" alt="" />
+        <div class="lines">
+          <p class="text-center">verified </p>
+          <p class="text-center">product</p>
+          <p class="text-center">min 60% off</p>
+        </div>
+      </div>
+      <div class="card-item">
+        <img src="https://source.unsplash.com/250x250/?laptop,camera, product" alt="" />
+        <div class="lines">
+          <p class="text-center">verified </p>
+          <p class="text-center">product</p>
+          <p class="text-center">min 45% off</p>
+        </div>
+      </div>
+
+    </div>
+    <h3 class="my1">77%-90% off</h3>
+    <div class="more">VIEW ALL</div>
+    <div class="cards">
+      <div class="card-item">
+        <img src="https://source.unsplash.com/250x250/?podsyad, product" alt="" />
+        <div class="lines">
+          <p class="text-center">verified </p>
+          <p class="text-center">product</p>
+          <p class="text-center">min 20% off</p>
+        </div>
+      </div>
+      <div class="card-item">
+        <img src="https://source.unsplash.com/250x250/?pods-proman, product" alt="" />
+        <div class="lines">
+          <p class="text-center">verified </p>
+          <p class="text-center">product</p>
+          <p class="text-center">min 35% off</p>
+        </div>
+      </div>
+      <div class="card-item">
+        <img src="https://source.unsplash.com/250x250/?iwacdeeh, product" alt="" />
+        <div class="lines">
+          <p class="text-center">verified </p>
+          <p class="text-center">product</p>
+          <p class="text-center">min 80% off</p>
+        </div>
+      </div>
+      <div class="card-item">
+        <img src="https://source.unsplash.com/250x250/?pro+11, product" alt="" />
+        <div class="lines">
+          <p class="text-center">verified </p>
+          <p class="text-center">product</p>
+          <p class="text-center">min 20% off</p>
+        </div>
+      </div>
+      <div class="card-item">
+        <img src="https://source.unsplash.com/250x250/?aphones21, product" alt="" />
+        <div class="lines">
+          <p class="text-center">verified </p>
+          <p class="text-center">product</p>
+          <p class="text-center">min 60% off</p>
+        </div>
+      </div>
+      <div class="card-item">
+        <img src="https://source.unsplash.com/250x250/?,camercameraa, product" alt="" />
+        <div class="lines">
+          <p class="text-center">verified </p>
+          <p class="text-center">product</p>
+          <p class="text-center">min 45% off</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+
+
 
   <footer>
     <div class="foot-top">
@@ -281,15 +740,13 @@
         
       </ul>
       
+
     </div>
     <div class="payment-icons">
-      <img src="visa.jpeg" alt="Visa">
-      <img src="mastercard.jpeg" alt="Mastercard">
-      <img src="rupay.png" alt="rupay">
-      <img src="discover.png" alt="discover">
-      <img src="emi.png" alt="emi">
-      <img src="net banking.png" alt="net banking">
-      <img src="cash on delivery.png" alt="cash on delivery">
+      <img src="./visa.jpeg" alt="Visa">
+      <img src="./mastercard.jpeg" alt="Mastercard">
+      <img src="./flipkart_logo.png" alt="Flipkart">
+      
     </div>
   </footer>
 
@@ -378,11 +835,11 @@
   </script>
 
   <script>
-     $(function () {
-      $("#loader").load("./preloader.html");
-      $("#category-list").load("./categorylist.html");
-      $("#top-deals").load("./topdeals.html");
-     });
+    //  $(function () {
+    //   $("#loader").load("./preloader.html");
+    //   $("#category-list").load("./categorylist.html");
+    //   $("#top-deals").load(".");
+    //  });
     fetch('./Navabar.html')
       .then(response => response.text())
       .then(data => {
