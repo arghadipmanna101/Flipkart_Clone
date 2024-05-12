@@ -179,7 +179,6 @@ footer{
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-<<<<<<< HEAD
 }
 
 
@@ -212,9 +211,7 @@ footer{
         flex-direction: column;
     }
 }
-=======
 } */
->>>>>>> 0acdfa632cf495b46c53b956292fb1bd83d6433d
 
 #phones {
     display: flex;
