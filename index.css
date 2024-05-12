@@ -252,4 +252,12 @@ footer{
   }
   
   /* new phone section ended */
-  
+
+  #img-box{
+    display: flex;
+    height: 175;
+    padding: 20px;
+    margin: 15px;
+    gap: 49px;
+    
+}
