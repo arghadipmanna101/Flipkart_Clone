@@ -49,6 +49,34 @@ body {
 .navbar-nav .nav-link img {
     margin-right: 8px;
 }
+
+
+
+
+#category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .category {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+  
+  .category h3 {
+    font-size: 18px; 
+    color: #333333; 
+  }
+
+
 footer{
     background-color: rgb(29, 29, 30);
     padding: 10px 60px;
@@ -56,30 +84,24 @@ footer{
 .foot-top{
     display: flex;
     border-bottom: 1px solid white;
-   
+   flex-wrap: wrap;
 }
 .foot-left{
     display: flex;
     justify-content: space-between;
     margin-right: 70px;
-    border-right: 1px solid white;
+    gap: 7px;
     margin: 25px;
+    flex: 1 1 500px;
+    flex-wrap: wrap;
 }
 .foot-left h5{
-    font-size: 1rem;
     font-weight: 400;
     color: #9b9898;
 
 }
-#policy{
-    margin: 0px 20px;
-}
-.foot-left .about{
-    margin-right: 50px;
-}
 .foot-left .about li a{
     color: white;
-    font-size: 0.9rem;
     font-weight: 600;
     
 }
@@ -89,12 +111,16 @@ footer{
 .foot-right{
     display: flex;
     margin: 25px;
+    flex: 1 1 500px;
+    flex-wrap: wrap;gap: 7px;
 }
 .foot-right h5{
-    font-size: 1rem;
-    font-weight: 400;
     color: #9b9898;
 
+}
+.foot-right .part,
+.foot-right .office {
+    flex: 1 1 300px;
 }
 .social ul{
     display: flex;
@@ -105,7 +131,6 @@ footer{
 }
 .social ul li a{
     color: white;
-    font-size: 2rem;
 }
 .foot-down{
     margin-top: 20px;
@@ -120,6 +145,9 @@ footer{
 }
 .foot-down ul li a{
     color: white;
+}
+.foot-left * , .foot-right *{
+    font-size: 12px;
 }
 /* Footer styles */
 /* footer {
@@ -180,6 +208,7 @@ footer{
     text-decoration: none;
     display: block;
 }
+ 
 
 
 @media (max-width: 768px) {
@@ -258,3 +287,4 @@ footer{
     gap: 49px;
     
 }
+
