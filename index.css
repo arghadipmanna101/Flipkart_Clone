@@ -3,6 +3,7 @@
 }
 
 nav{
+   
     width:100%;
     background-color: white;
 }
@@ -12,7 +13,7 @@ nav{
 }
 
 #nav_logo{
-   width: 50px;
+   width:50px;
    height: 50px;
 }
 #fli{
@@ -34,29 +35,46 @@ nav{
  padding-top: 10px;
  padding-bottom: 10px;
  background-color: white;
- width: 90%;
- margin: auto;
+ 
+
 }
 
 #nav1{
     position: relative;
     display: flex;
+    margin-top:-5px;
+    
     flex-direction: column;
+}
+#nav1 span{
+    display:flex;
+    
+    margin-top:16px;
+    align-items:center;
 }
 
 
 body{
+    margin:0;
+    padding:0;
     background-color: #F1F2F4;
 }
 
 #logo_name{
-    margin-right: 20px;
+    font-size:20px;
+    font-family:sans-serif;
+    font-style:italic;
+    color:#2A55E5;
+    font-weight:bold;
+
+   
 }
 
 #input_data{
     border: none;
-    width: 520px;
+    width: 620px;
     height: 20px;
+    
     padding-left: 12px;
     background-color: #F0F5FF;
     outline: none;
@@ -64,14 +82,18 @@ body{
 
 .navtab{
     display: flex;
-    align-items: center;
-    gap: 2rem;
+    align-items:center;
+    gap:2rem;
+   
+    
 }
+  
 
 #searchbar{
     background-color: #F0F5FF;
-    padding: 8px;
-    border-radius: 15px;
+    
+    padding: 4px;
+    border-radius: 20px;
 }
 
 option{
@@ -181,15 +203,22 @@ a:link {
     color: #F0F5FF;
  }
 
+ #sign img {
+    width: 24px; /* Adjust the width of the image */
+    height: 24px; /* Adjust the height of the image */
+}
 
 
  #sign{
-    
+    display: flex;
+    align-items: center; /* Center items vertically */
+     
     cursor:pointer; 
     transition:all 0.3s ease-in-out;
     justify-content: space-around;
     position: relative;
- }
+ }/* Adjust the gap between child elements */
+
  #sign:after{
     content: "";
     position: absolute;
@@ -263,9 +292,45 @@ border-right: solid 15px transparent;
   #sign:hover .dropdown-content {
     display: block;
   }
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
+  ul {
+    list-style-type: none;
+   
+    
+    
+    color: grey;
+}
+ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+ul li:hover {
+    background-color: grey;
+    color:grey;
+}
+.dropdown{
+    display:none;
+    z-index: 9999; 
+}
+
+
+
+ul li:hover  .dropdown{
+    display:block;
+    position:absolute;
+    margin-left:-0.8cm;
+    margin-top:0.27cm;
+    z-index: 9999; 
+
+
+
+}
+
+.dropdown ul{
+    margin:0;
+    padding:0;
+
+}
+.dropdown ul li{
+    display:block;
+}
