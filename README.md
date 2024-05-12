@@ -1,5 +1,5 @@
 <div align="center">
-  <h1 style="font-size: 36px; font-weight: bold;">Flipkart_Clone</h1>
+  <h1 style="font-size: 37px; font-weight: bold;">Flipkart_Clone</h1>
   
 </div>
 
