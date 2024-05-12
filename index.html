@@ -100,8 +100,19 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+      }
+
+        #navbar-container {
+          position: fixed;
+          top: 0;right: 0;
+          width: 100%;
+          height: 10vh;
+          z-index: 600;
         }
-        
+        #carousal {
+          padding-top: 17vh;
+        }
+      
         @keyframes slideInFromLeft {
         0% {
         transform: translateX(-100%);
@@ -265,8 +276,12 @@
         <li><a href=""><i class="bi bi-briefcase-fill"></i>Become a seller</a></li>
         <li><a href=""><i class="bi bi-gift-fill"></i>Gift Cards</a></li>
         <li><a href=""><i class="bi bi-question-circle-fill"></i>Help Center</a></li>
-        <li>&copy; 2024 Flipkart.com</li>
+        <div>
+          <li>&copy;<span class="update_Cyear"></span> Flipkart.com</li>
+        </div>
+        
       </ul>
+      
     </div>
   </footer> -->
     <section id="footer">
@@ -351,6 +366,19 @@
         document.getElementById('navbar-container').innerHTML = data;
       })
       .catch(error => console.error('Error fetching navbar:', error));
+
+
+  </script>
+
+  <script>
+    // Get the current year
+    var currentYear = new Date().getFullYear();
+
+    // Update the content of elements with class 'update_Cyear'
+    var updateElements = document.getElementsByClassName("update_Cyear");
+      for (var i = 0; i < updateElements.length; i++) {
+        updateElements[i].innerText = currentYear;
+}
   </script>
 
 
