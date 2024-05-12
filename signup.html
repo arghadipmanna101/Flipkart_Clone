@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="./signup.css">
+</head>
+<body>
+    <header id="container">
+   
+    <div id="outerbox">
+        <div id="innerbox">
+            <div class="leftinnerbox">
+                <p class="para1">Looks like you're new here!</p>
+                <p class="para2">Sign up with your mobile number to get started</p>
+                <div class="image-container">
+                    <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/login_img_c4a81e.png" alt="hero_signup">
+                </div>
+            </div>
+            <div class="rightinnerbox">
+                <div class="form-group">
+                    <input id="phone" class="mobile" type="number" placeholder="Enter Mobile Number"/>
+                </div>
+                <div>
+                    <p class="textm">By continuing, you agree to Flipkart's 
+                        <span style="color: blue;"> Terms of Use</span>
+                        and <span style="color: blue;">Privacy Policy.</span>
+                    </p>
+                </div>
+                <!-- <div class="button-container">
+                    <button class="continue" onclick="Signup()">Request OTP</button>
+                </div>
+                <div class="button-container">
+                    <button onclick="window.location.href='signin.html'" class="login">Existing User? Sign-In</button>
+                </div>  -->
+               <div>
+                <button class="button primary-btn">Request OTP</button>
+                </div>
+                <div>
+                    <button class="button secondary-btn" onclick="window.location.href='signin.html'">Existing User? Sign-In</button>
+               </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    <footer>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="./signup.js" defer></script>
+    </footer>
+</body>
+</html>
