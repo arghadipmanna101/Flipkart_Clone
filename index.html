@@ -57,94 +57,192 @@
     }
   </style>
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flipkart</title>
-    <link rel="icon" type="image/x-icon" href="/flipkart favicon-modified.png">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="./index.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flipkart</title>
+  <link rel="icon" type="image/x-icon" href="/flipkart favicon-modified.png">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 
-    <style>
-        *{
-            padding: 0;
-            margin: 0;
-        }
-        html,
-        body {
-            position: relative;
-            height: 100%;
-            background: white;
-            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-            font-size: 14px;
-            color: #000;
-            margin: 0;
-            padding: 0;
-        }
-        .swiper {
-            width: 100%;
-            height: 100%;
-        }
-        .swiper-slide{
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .swiper-slide img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-      }
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
 
-        #navbar-container {
-          position: fixed;
-          top: 0;right: 0;
-          width: 100%;
-          height: 10vh;
-          z-index: 600;
-        }
-        #carousal {
-          padding: 18vh 2% 15px;
-          width: 100%;
-        }
-        #top-deals {
-          width: 100%;
-          height: max-content;
-        }
-      
-        @keyframes slideInFromLeft {
-        0% {
+    html,
+    body {
+      position: relative;
+      height: 100%;
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flipkart</title>
+  <link rel="icon" type="image/x-icon" href="/flipkart favicon-modified.png">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    html,
+    body {
+      position: relative;
+      height: 100%;
+      background: white;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    #navbar-container {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 10vh;
+      z-index: 600;
+    }
+
+    #carousal {
+      padding: 18vh 0.5% 15px;
+      width: 100%;
+    }
+
+    .carousel-indicators {
+      margin-bottom: 0;
+    }
+
+    #top-deals {
+      width: 100%;
+      height: max-content;
+    }
+
+    .carousel-control-n,
+    .carousel-control-p {
+      display: flex;
+      position: absolute;
+      width: 40px;
+      background-color: #fff;
+      height: 88px;
+      top: 0;
+      bottom: 0;
+      border: none;
+      margin: auto 0;
+      outline: none;
+      cursor: pointer;
+    }
+
+    button.carousel-control-n,
+    .carousel-control-p:focus {
+      outline: none;
+    }
+
+
+    .carousel-control-n {
+      right: 0;
+      border-radius: 5px 0 0 5px;
+    }
+
+    .carousel-control-p {
+      left: 0;
+      border-radius: 0 5px 5px 0;
+    }
+
+    .crousel-ctrl-icon-p {
+      content: "";
+      position: relative;
+      border-color: #8f8f8f;
+      border-style: solid;
+      border-width: 2px 2px 0 0;
+      display: inline-block;
+      height: 10px;
+      width: 10px;
+      transform: rotate(45deg);
+      transform: rotate(225deg);
+      margin: auto;
+
+
+    }
+
+    .crousel-ctrl-icon-n {
+      content: "";
+      position: relative;
+      border-color: #8f8f8f;
+      border-style: solid;
+      border-width: 2px 2px 0 0;
+      display: inline-block;
+      height: 10px;
+      width: 10px;
+      transform: rotate(45deg);
+      margin: auto;
+
+    }
+
+    .carousel-indicators li {
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+      cursor: pointer;
+    }
+
+    @keyframes slideInFromLeft {
+      0% {
         transform: translateX(-100%);
         opacity: 0;
-        }
-        100% {
+      }
+
+      100% {
         transform: translateX(0);
         opacity: 1;
-        }
-        }
-        .bi-question-circle-fill,.bi-gift-fill,.bi-briefcase-fill
-        {
-            color: #ffc600;
-        }
-        footer{
-          background: #000000;
-        }
-/* Apply the animation to the footer sections */
-.footer-section {
-    animation: slideInFromLeft 0.5s ease forwards;
-}
-#carouselExampleIndicators{
-  padding: 60px;
-}
+      }
+    }
 
-    </style>
+    .bi-question-circle-fill,
+    .bi-gift-fill,
+    .bi-briefcase-fill {
+      color: #ffc600;
+    }
+
+    footer {
+      background: #000000;
+    }
+
+    /* Apply the animation to the footer sections */
+    .footer-section {
+      animation: slideInFromLeft 0.5s ease forwards;
+    }
+
+    #carouselExampleIndicators {
+      padding: 0px;
+    }
+  </style>
 </head>
 
 <body>
@@ -172,91 +270,86 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="./images/add1.jpg" alt="First slide">
+          <img class="d-block w-100" src="./images/banner1.webp" alt="First slide">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="./images/add2.jpg" alt="Second slide">
+          <img class="d-block w-100" src="./images/banner2.webp" alt="Second slide">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="./images/add3.png" alt="Third slide">
+          <img class="d-block w-100" src="./images/banner3.webp" alt="Third slide">
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <button class="carousel-control-p" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="crousel-ctrl-icon-p" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-n" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="crousel-ctrl-icon-n" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
-      </a>
+      </button>
     </div>
   </section>
 
-  </div>
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-pagination"></div>
-  </div>
-  </section>
-  
   <section id="phones">
-    <div><h3>Best Deals On Smartphones..</h3></div>
+    <div>
+      <h3>Best Deals On Smartphones..</h3>
+    </div>
     <div id="box">
       <div class="box-1">
-        <a href=""><img src="phone-6.webp" alt="" width="143" height="146"/></a>
+        <a href=""><img src="phone-6.webp" alt="" width="143" height="146" /></a>
         poco m6 pro
       </div>
       <div class="box-2">
-        <a href=""><img src="phone-2.webp" alt="" width="143" height="146"/></a>
+        <a href=""><img src="phone-2.webp" alt="" width="143" height="146" /></a>
         moto edge 40 neo
       </div>
       <div class="box-3">
-        <a href=""><img src="phone-3.webp" alt=""width="143" height="146" /></a>
+        <a href=""><img src="phone-3.webp" alt="" width="143" height="146" /></a>
         vivo t2 pro 5g
       </div>
       <div class="box-4">
-        <a href=""><img src="phon-4.webp" alt=""width="143" height="146" /></a>
+        <a href=""><img src="phon-4.webp" alt="" width="143" height="146" /></a>
         redmi 12 5g
       </div>
       <div class="box-5">
-        <a href=""><img src="phone-5.webp" alt=""width="143" height="146" /></a>
+        <a href=""><img src="phone-5.webp" alt="" width="143" height="146" /></a>
         poco x6 5g
       </div>
       <div class="box-6">
-        <a href=""><img src="phone-2.webp" alt=""width="143" height="146" /></a>
+        <a href=""><img src="phone-2.webp" alt="" width="143" height="146" /></a>
         poco m6 5g
       </div>
       <div class="box-7">
-        <a href=""><img src="phone-3.webp" alt=""width="143" height="146" /></a>
+        <a href=""><img src="phone-3.webp" alt="" width="143" height="146" /></a>
         poco x6 neo 5g
       </div>
-      
+
     </div>
   </section>
   <!-- newsection for grid items  -->
   <section id="img-box">
-    <a href=""
-      ><div class="img"><img src="grid-1.webp" alt="" /></div
-    ></a>
-    <a href=""
-      ><div class="img"><img src="grid-2.jpg" alt="" /></div
-    ></a>
     <a href="">
-      <div class="img"><img src="grid-3.jpg" alt="" /></div
-    ></a>
-    <a href=""
-      ><div class="img"><img src="grid-1.webp" alt="" /></div
-    ></a>
+      <div class="img"><img src="grid-1.webp" alt="" /></div>
+    </a>
+    <a href="">
+      <div class="img"><img src="grid-2.jpg" alt="" /></div>
+    </a>
+    <a href="">
+      <div class="img"><img src="grid-3.jpg" alt="" /></div>
+    </a>
+    <a href="">
+      <div class="img"><img src="grid-1.webp" alt="" /></div>
+    </a>
   </section>
 
-  
+
 
 
   <!-- top deals -->
   <div id="top-deals"></div>
 
   <!-- -grid for deals -->
-  
+
   <section id="category-grid">
     <img class="category" src="./images/deal5.png" alt="deal1">
     <img class="category" src="./images/deal6.png" alt="deal1">
@@ -269,21 +362,37 @@
     <img class="category" src="./images/deal12.png" alt="deal1">
 
 
-    
+
   </section>
- 
+
 
   <section>
     <div class="details">
       <div class="info">
         <div>
           <h1>Flipkart: The One-stop Shopping Destination</h1>
-          E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store to another in search of the latest phone when you can find it on the Internet in a single click? Not only mobiles. Flipkart houses everything you can possibly imagine, from trending electronics like laptops, tablets, smartphones, and mobile accessories to in-vogue fashion staples like shoes, clothing and lifestyle accessories; from modern furniture like sofa sets, dining tables, and wardrobes to appliances that make your life easy like washing machines, TVs, ACs, mixer grinder juicers and other time-saving kitchen and small appliances; from home furnishings like cushion covers, mattresses and bedsheets to toys and musical instruments, we got them all covered. You name it, and you can stay assured about finding them all here. For those of you with erratic working hours, Flipkart is your best bet. Shop in your PJs, at night or in the wee hours of the morning. This e-commerce never shuts down. 
+          E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store to another
+          in search of the latest phone when you can find it on the Internet in a single click? Not only mobiles.
+          Flipkart houses everything you can possibly imagine, from trending electronics like laptops, tablets,
+          smartphones, and mobile accessories to in-vogue fashion staples like shoes, clothing and lifestyle
+          accessories; from modern furniture like sofa sets, dining tables, and wardrobes to appliances that make your
+          life easy like washing machines, TVs, ACs, mixer grinder juicers and other time-saving kitchen and small
+          appliances; from home furnishings like cushion covers, mattresses and bedsheets to toys and musical
+          instruments, we got them all covered. You name it, and you can stay assured about finding them all here. For
+          those of you with erratic working hours, Flipkart is your best bet. Shop in your PJs, at night or in the wee
+          hours of the morning. This e-commerce never shuts down.
           <br><br>
-          What's more, with our year-round shopping festivals and events, our prices are irresistible. We're sure you'll find yourself picking up more than what you had in mind. If you are wondering why you should shop from Flipkart when there are multiple options available to you, well, the below will answer your question. 
+          What's more, with our year-round shopping festivals and events, our prices are irresistible. We're sure you'll
+          find yourself picking up more than what you had in mind. If you are wondering why you should shop from
+          Flipkart when there are multiple options available to you, well, the below will answer your question.
           <br><br>
           <h2>Flipkart Plus</h2>
-          A world of limitless possibilities awaits you - Flipkart Plus was kickstarted as a loyalty reward programme for all its regular customers at zero subscription fee. All you need is 500 supercoins to be a part of this service. For every 100 rupees spent on Flipkart order, Plus members earns 4 supercoins &amp; non-plus members earn 2 supercoins. Free delivery, early access during sales and shopping festivals, exchange offers and priority customer service are the top benefits to a Flipkart Plus member. In short, earn more when you shop more! 
+          A world of limitless possibilities awaits you - Flipkart Plus was kickstarted as a loyalty reward programme
+          for all its regular customers at zero subscription fee. All you need is 500 supercoins to be a part of this
+          service. For every 100 rupees spent on Flipkart order, Plus members earns 4 supercoins &amp; non-plus members
+          earn 2 supercoins. Free delivery, early access during sales and shopping festivals, exchange offers and
+          priority customer service are the top benefits to a Flipkart Plus member. In short, earn more when you shop
+          more!
           <br><br>
           What's more, you can even use the Flipkart supercoins for a number of exciting services, like:
           <br>
@@ -298,72 +407,136 @@
           Check out https://www.flipkart.com/plus/all-offers for the entire list. Terms and conditions apply.
           <br><br>
           <h2>No Cost EMI</h2>
-          In an attempt to make high-end products accessible to all, our No Cost EMI plan enables you to shop with us under EMI, without shelling out any processing fee. Applicable on select mobiles, laptops, large and small appliances, furniture, electronics and watches, you can now shop without burning a hole in your pocket. If you've been eyeing a product for a long time, chances are it may be up for a no cost EMI. Take a look ASAP! Terms and conditions apply.
+          In an attempt to make high-end products accessible to all, our No Cost EMI plan enables you to shop with us
+          under EMI, without shelling out any processing fee. Applicable on select mobiles, laptops, large and small
+          appliances, furniture, electronics and watches, you can now shop without burning a hole in your pocket. If
+          you've been eyeing a product for a long time, chances are it may be up for a no cost EMI. Take a look ASAP!
+          Terms and conditions apply.
           <br><br>
           <h2>EMI on Debit Cards</h2>
-          Did you know debit card holders account for 79.38 crore in the country, while there are only 3.14 crore credit card holders? After enabling EMI on Credit Cards, in another attempt to make online shopping accessible to everyone, Flipkart introduces EMI on Debit Cards, empowering you to shop confidently with us without having to worry about pauses in monthly cash flow. At present, we have partnered with Axis Bank, HDFC Bank, State Bank of India and ICICI Bank for this facility. More power to all our shoppers! Terms and conditions apply. 
+          Did you know debit card holders account for 79.38 crore in the country, while there are only 3.14 crore credit
+          card holders? After enabling EMI on Credit Cards, in another attempt to make online shopping accessible to
+          everyone, Flipkart introduces EMI on Debit Cards, empowering you to shop confidently with us without having to
+          worry about pauses in monthly cash flow. At present, we have partnered with Axis Bank, HDFC Bank, State Bank
+          of India and ICICI Bank for this facility. More power to all our shoppers! Terms and conditions apply.
           <br><br>
           <h2>Mobile Exchange Offers</h2>
-          Get an instant discount on the phone that you have been eyeing on. Exchange your old mobile for a new one after the Flipkart experts calculate the value of your old phone, provided it is in a working condition without damage to the screen. If a phone is applicable for an exchange offer, you will see the 'Buy with Exchange' option on the product description of the phone. So, be smart, always opt for an exchange wherever possible. Terms and conditions apply. 
+          Get an instant discount on the phone that you have been eyeing on. Exchange your old mobile for a new one
+          after the Flipkart experts calculate the value of your old phone, provided it is in a working condition
+          without damage to the screen. If a phone is applicable for an exchange offer, you will see the 'Buy with
+          Exchange' option on the product description of the phone. So, be smart, always opt for an exchange wherever
+          possible. Terms and conditions apply.
           <br><br>
           <h2>What Can You Buy From Flipkart?</h2>
           <h2>Mobile Phones</h2>
-          From budget phones to state-of-the-art smartphones, we have a mobile for everybody out there. Whether you're looking for larger, fuller screens, power-packed batteries, blazing-fast processors, beautification apps, high-tech selfie cameras or just large internal space, we take care of all the essentials. Shop from top brands in the country like Samsung, Apple, Oppo, Xiaomi, Realme, Vivo, and Honor to name a few. Rest assured, you're buying from only the most reliable names in the market. What's more, with Flipkart's Complete Mobile Protection Plan, you will never again find the need to run around service centres. This plan entails you to a number of post-purchase solutions, starting at as low as Rupees 99 only! Broken screens, liquid damage to phone, hardware and software glitches, and replacements - 
+          From budget phones to state-of-the-art smartphones, we have a mobile for everybody out there. Whether you're
+          looking for larger, fuller screens, power-packed batteries, blazing-fast processors, beautification apps,
+          high-tech selfie cameras or just large internal space, we take care of all the essentials. Shop from top
+          brands in the country like Samsung, Apple, Oppo, Xiaomi, Realme, Vivo, and Honor to name a few. Rest assured,
+          you're buying from only the most reliable names in the market. What's more, with Flipkart's Complete Mobile
+          Protection Plan, you will never again find the need to run around service centres. This plan entails you to a
+          number of post-purchase solutions, starting at as low as Rupees 99 only! Broken screens, liquid damage to
+          phone, hardware and software glitches, and replacements -
           <b>the Flipkart Complete Mobile Protection</b>
-          covers a comprehensive range of post-purchase problems, with door-to-door services. 
+          covers a comprehensive range of post-purchase problems, with door-to-door services.
           <br><br>
           <h2>Electronic Devices and Accessories</h2>
-          When it comes to laptops, we are not far behind. Filter among dozens of super-fast operating systems, hard disk capacity, RAM, lifestyle, screen size and many other criterias for personalized results in a flash. All you students out there, confused about what laptop to get? Our 
+          When it comes to laptops, we are not far behind. Filter among dozens of super-fast operating systems, hard
+          disk capacity, RAM, lifestyle, screen size and many other criterias for personalized results in a flash. All
+          you students out there, confused about what laptop to get? Our
           <b>Back To College Store</b>
-          segregates laptops purpose wise (gaming, browsing and research, project work, entertainment, design, multitasking) with recommendations from top brands and industry experts, facilitating a shopping experience that is quicker and simpler.
+          segregates laptops purpose wise (gaming, browsing and research, project work, entertainment, design,
+          multitasking) with recommendations from top brands and industry experts, facilitating a shopping experience
+          that is quicker and simpler.
           <br><br>
-          Photography lovers, you couldn't land at a better page than ours. Cutting-edge DSLR cameras, ever reliable point-and-shoot cameras, millennial favourite instant cameras or action cameras for adventure junkies: our range of cameras is as much for beginners as it is for professionals. Canon, Nikon, GoPro, Sony, and Fujifilm are some big names you'll find in our store. Photography lovers, you couldn't land at a better page than ours. Cutting-edge DSLR cameras, ever reliable point-and-shoot cameras, millennial favourite instant cameras or action cameras for adventure junkies: our range of cameras is as much for beginners as it is for professionals. Canon, Nikon, GoPro, Sony, and Fujifilm are some big names you'll find in our store. 
+          Photography lovers, you couldn't land at a better page than ours. Cutting-edge DSLR cameras, ever reliable
+          point-and-shoot cameras, millennial favourite instant cameras or action cameras for adventure junkies: our
+          range of cameras is as much for beginners as it is for professionals. Canon, Nikon, GoPro, Sony, and Fujifilm
+          are some big names you'll find in our store. Photography lovers, you couldn't land at a better page than ours.
+          Cutting-edge DSLR cameras, ever reliable point-and-shoot cameras, millennial favourite instant cameras or
+          action cameras for adventure junkies: our range of cameras is as much for beginners as it is for
+          professionals. Canon, Nikon, GoPro, Sony, and Fujifilm are some big names you'll find in our store.
           <br><br>
-          Turn your home into a theatre with a stunning surround sound system. Choose from our elaborate range of Sony home theatres, JBL soundbars and Philips tower speakers for an experience to remember.
+          Turn your home into a theatre with a stunning surround sound system. Choose from our elaborate range of Sony
+          home theatres, JBL soundbars and Philips tower speakers for an experience to remember.
           <br><br>
-          How about jazzing up your phone with our quirky designer cases and covers? Our wide-ranging mobile accessories starting from headphones, power banks, memory cards, mobile chargers, to selfie sticks can prove to be ideal travel companions for you and your phone; never again worry about running out of charge or memory on your next vacation.
+          How about jazzing up your phone with our quirky designer cases and covers? Our wide-ranging mobile accessories
+          starting from headphones, power banks, memory cards, mobile chargers, to selfie sticks can prove to be ideal
+          travel companions for you and your phone; never again worry about running out of charge or memory on your next
+          vacation.
           <br><br>
           <h2>Large Appliances</h2>
-          Sleek TVs, power-saving refrigerators, rapid-cooling ACs, resourceful washing machines - discover everything you need to run a house under one roof. Our 
+          Sleek TVs, power-saving refrigerators, rapid-cooling ACs, resourceful washing machines - discover everything
+          you need to run a house under one roof. Our
           <b>Dependable TV and Appliance Store</b>
-          ensures zero transit damage, with a replacement guarantee if anything goes wrong; delivery and installation as per your convenience and a double warranty (Official Brand Warranty along with an extended Flipkart Warranty) - rest assured, value for money is what is promised and delivered. Shop from market leaders in the country like Samsung, LG, Whirlpool, Midea, Mi, Vu, Panasonic, Godrej, Sony, Daikin, and Hitachi among many others.
+          ensures zero transit damage, with a replacement guarantee if anything goes wrong; delivery and installation as
+          per your convenience and a double warranty (Official Brand Warranty along with an extended Flipkart Warranty)
+          - rest assured, value for money is what is promised and delivered. Shop from market leaders in the country
+          like Samsung, LG, Whirlpool, Midea, Mi, Vu, Panasonic, Godrej, Sony, Daikin, and Hitachi among many others.
           <br><br>
-          For certain product categories, Customers meeting the eligibility criteria will have the option to buy larger quantities. To know more on the eligibility criteria and terms and conditions, please reach out to 
-          <a href="mailto:Purchases.oni@flipkart.com">Purchases.oni@flipkart.com</a>. 
+          For certain product categories, Customers meeting the eligibility criteria will have the option to buy larger
+          quantities. To know more on the eligibility criteria and terms and conditions, please reach out to
+          <a href="mailto:Purchases.oni@flipkart.com">Purchases.oni@flipkart.com</a>.
           <br><br>
           <h2>Small Home Appliances</h2>
-          Find handy and practical home appliances designed to make your life simpler: electric kettles, OTGs, microwave ovens, sandwich makers, hand blenders, coffee makers, and many more other time-saving appliances that are truly crafted for a quicker lifestyle. Live life king size with these appliances at home.
+          Find handy and practical home appliances designed to make your life simpler: electric kettles, OTGs, microwave
+          ovens, sandwich makers, hand blenders, coffee makers, and many more other time-saving appliances that are
+          truly crafted for a quicker lifestyle. Live life king size with these appliances at home.
           <br><br>
           <h2>Lifestyle</h2>
-          Flipkart, 
+          Flipkart,
           <b>'India ka Fashion Capital'</b>
-          , is your one-stop fashion destination for anything and everything you need to look good. Our exhaustive range of Western and Indian wear, summer and winter clothing, formal and casual footwear, bridal and artificial jewellery, long-lasting make-up, grooming tools and accessories are sure to sweep you off your feet. Shop from crowd favourites like Vero Moda, Forever 21, Only, Arrow, Woodland, Nike, Puma, Revlon, Mac, and Sephora among dozens of other top-of-the-ladder names. From summer staple maxi dresses, no-nonsense cigarette pants, traditional Bandhani kurtis to street-smart biker jackets, you can rely on us for a wardrobe that is up to date. Explore our in-house brands like Metronaut, Anmi, and Denizen, to name a few, for carefully curated designs that are the talk of the town. Get ready to be spoiled for choice.Festivals, office get-togethers, weddings, brunches, or nightwear - Flipkart will have your back each time.
+          , is your one-stop fashion destination for anything and everything you need to look good. Our exhaustive range
+          of Western and Indian wear, summer and winter clothing, formal and casual footwear, bridal and artificial
+          jewellery, long-lasting make-up, grooming tools and accessories are sure to sweep you off your feet. Shop from
+          crowd favourites like Vero Moda, Forever 21, Only, Arrow, Woodland, Nike, Puma, Revlon, Mac, and Sephora among
+          dozens of other top-of-the-ladder names. From summer staple maxi dresses, no-nonsense cigarette pants,
+          traditional Bandhani kurtis to street-smart biker jackets, you can rely on us for a wardrobe that is up to
+          date. Explore our in-house brands like Metronaut, Anmi, and Denizen, to name a few, for carefully curated
+          designs that are the talk of the town. Get ready to be spoiled for choice.Festivals, office get-togethers,
+          weddings, brunches, or nightwear - Flipkart will have your back each time.
           <br><br>
           <h2>Home and Furniture</h2>
-          Moving to a new place is never easy, especially if you're buying new furniture. Beds, sofa sets, dining tables, wardrobes, and TV units - it's not easy to set up everything again. With the hundreds of options thrown at you, the ride could be overwhelming. What place is reliable, what furniture will stand the test of time? These are questions you must ask before you choose a store. Well, our 
+          Moving to a new place is never easy, especially if you're buying new furniture. Beds, sofa sets, dining
+          tables, wardrobes, and TV units - it's not easy to set up everything again. With the hundreds of options
+          thrown at you, the ride could be overwhelming. What place is reliable, what furniture will stand the test of
+          time? These are questions you must ask before you choose a store. Well, our
           <b>Durability Certified Furniture Store</b>
-          has not only curated a range of furniture keeping in mind the modern Indian consumer but furniture that comes with a lab certification, ensuring they last you for up to 10 years. Yes, all our furniture has gone through 35 stability and load tests so that you receive only the best-quality furniture. 
+          has not only curated a range of furniture keeping in mind the modern Indian consumer but furniture that comes
+          with a lab certification, ensuring they last you for up to 10 years. Yes, all our furniture has gone through
+          35 stability and load tests so that you receive only the best-quality furniture.
           <b>Be FurniSure</b>
-          , always. Names to look out for are Nilkamal, Godrej Interio, Urban Ladder, HomeTown, Durian and Perfect Homes. 
+          , always. Names to look out for are Nilkamal, Godrej Interio, Urban Ladder, HomeTown, Durian and Perfect
+          Homes.
           <br><br>
-          You may have your furniture all set up, but they could end up looking flat and incomplete without complementary decor. Curtains, cushion covers, bed sheets, wall shelves, paintings, floor lamps - find everything that turns a house to an inviting home under one roof at Flipkart. 
+          You may have your furniture all set up, but they could end up looking flat and incomplete without
+          complementary decor. Curtains, cushion covers, bed sheets, wall shelves, paintings, floor lamps - find
+          everything that turns a house to an inviting home under one roof at Flipkart.
           <br><br>
           <h2>Baby and Kids</h2>
-          Your kids deserve only the best. From bodysuits, booties, diapers to strollers, if you're an expecting mother or a new mother, you will find everything you need to set sail on a smooth parenting journey with the help of our baby care collection. When it comes to safety, hygiene and comfort, you can rely on us without a second thought. Huggies, Pampers, MamyPoko, and Johnson &amp; Johnson: we host only the most-trusted names in the business for your baby.
+          Your kids deserve only the best. From bodysuits, booties, diapers to strollers, if you're an expecting mother
+          or a new mother, you will find everything you need to set sail on a smooth parenting journey with the help of
+          our baby care collection. When it comes to safety, hygiene and comfort, you can rely on us without a second
+          thought. Huggies, Pampers, MamyPoko, and Johnson &amp; Johnson: we host only the most-trusted names in the
+          business for your baby.
           <br><br>
           <h2>Books, Sports and Games</h2>
-          Work hard and no play? We don't believe in that. Get access to best-selling fiction and non-fiction books by your favourite authors, thrilling English and Indian blockbusters, most-wanted gaming consoles, and a tempting range of fitness and sports gadgets and equipment bound to inspire you to get moving. 
+          Work hard and no play? We don't believe in that. Get access to best-selling fiction and non-fiction books by
+          your favourite authors, thrilling English and Indian blockbusters, most-wanted gaming consoles, and a tempting
+          range of fitness and sports gadgets and equipment bound to inspire you to get moving.
           <br><br>
           <h2>Grocery/Supermart</h2>
-          Launching into the grocery vertical, Flipkart introduces 
+          Launching into the grocery vertical, Flipkart introduces
           <b>Supermart</b>
-          that is out to bring everyday essentials close to you. From pulses, spices, dairy, personal and sanitary care, breakfast essentials, health drinks, spreads, ready to cook, grooming to cleaning agents, we are happy to present everything you need to run a house. Now buy Grocery products for as low as 1 Rupee only - our 
+          that is out to bring everyday essentials close to you. From pulses, spices, dairy, personal and sanitary care,
+          breakfast essentials, health drinks, spreads, ready to cook, grooming to cleaning agents, we are happy to
+          present everything you need to run a house. Now buy Grocery products for as low as 1 Rupee only - our
           <b>1 Rupee Store</b>
           presents new products every day for a nominal price of 1 Rupee only. Terms and conditions apply.
         </div>
       </div>
     </div>
-  
+
   </section>
 
   <footer>
@@ -378,7 +551,7 @@
             <li><a href="">Flipkart Stories</a></li>
             <li><a href="">Press</a></li>
             <li><a href="">Corporate Information</a></li>
-           <li><i><a href="">Explore Plus</a></i></li>
+            <li><i><a href="">Explore Plus</a></i></li>
           </ul>
         </div>
         <div class="about">
@@ -456,10 +629,10 @@
           <div>
             <li>&copy;<span class="update_Cyear"></span> Flipkart.com</li>
           </div>
-         </ul>
+        </ul>
       </div>
 
-      
+
       <div class="payment-icons">
         <img src="visa.jpeg" alt="Visa">
         <img src="mastercard.jpeg" alt="Mastercard">
@@ -542,7 +715,7 @@
     // $(function () {
     //   $("#navbar-container").load("./Navabar.html");
     // });
-   
+
   </script>
   <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -557,11 +730,11 @@
   </script>
 
   <script>
-     $(function () {
+    $(function () {
       $("#loader").load("./preloader.html");
       $("#category-list").load("./categorylist.html");
       $("#top-deals").load("./topdeals.html");
-     });
+    });
     fetch('./Navabar.html')
       .then(response => response.text())
       .then(data => {
@@ -579,21 +752,21 @@
 
     // Update the content of elements with class 'update_Cyear'
     var updateElements = document.getElementsByClassName("update_Cyear");
-      for (var i = 0; i < updateElements.length; i++) {
-        updateElements[i].innerText = currentYear;
-}
+    for (var i = 0; i < updateElements.length; i++) {
+      updateElements[i].innerText = currentYear;
+    }
   </script>
 
-<script type="module" src="https://cdn.jsdelivr.net/npm/@bufferhead/nightowl@0.0.12/dist/nightowl.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@bufferhead/nightowl@0.0.12/dist/nightowl.js"></script>
 
   <script>
-  document.getElementById("year").innerHTML = new Date().getFullYear();
+    document.getElementById("year").innerHTML = new Date().getFullYear();
   </script>
 
-<script>
-  if('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js', { scope: '/' });
-  }
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js', { scope: '/' });
+    }
   </script>
 
 
@@ -601,4 +774,4 @@
 
 </html>
 
-</html>    
+</html>
