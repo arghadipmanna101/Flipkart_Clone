@@ -7,8 +7,99 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <link rel="stylesheet" href="./signup.css">
 </head>
+<style>
+    footer{
+        background-color: rgb(28, 27, 27);
+        padding: 15px 35px;
+    }
+    .foot-top{
+        display: flex;
+        border-bottom: 1px solid rgb(85, 78, 78);
+       flex-wrap: wrap;
+    }
+    .foot-left{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 70px;
+        gap: 30px;
+        margin: 25px;
+        flex: 1 1 500px;
+        flex-wrap: wrap;
+    }
+    .foot-left h5{
+        font-size: 11px;
+        font-weight: 600;
+        color: #9b9898;
+    
+    }
+    .foot-left .about li a{
+        font-size: 11px;
+        color: white;
+        font-weight: 600;
+        
+    }
+    .foot-left .about li{
+        list-style: none;
+    }
+    .foot-right{
+        display: flex;
+        margin: 25px;
+        flex: 1 1 500px;
+        flex-wrap: wrap;gap: 7px;
+        border-left: 1px solid rgb(85, 78, 78);
+        padding-left: 30px;
+        
+    }
+    .foot-right h5{
+        color: #9b9898;
+        font-size: 12px;
+        font-weight: 600;
+    
+    }
+    .foot-right .part,
+    .foot-right .office {
+        flex: 1 1 300px;
+    }
+    .social ul{
+        display: flex;
+    }
+    .social ul li{
+        list-style: none;
+        margin: 0px 10px;
+    }
+    .social ul li a{
+        color: white;
+        
+    }
+    .foot-down{
+        padding: 10px 40px;
+        display: flex;
+        margin-top: 20px;
+        font-size: 11px;
+        justify-content: space-between;
+        font-weight: 600;
+    }
+    .foot-down ul{
+       display: flex;
+        justify-content: space-between;
+        gap: 200px;
+    }
+    .foot-down ul li{
+        list-style: none;
+    }
+    .foot-down ul li a{
+        color: white;
+    }
+    .foot-left * , .foot-right *{
+        font-size: 12px;
+    }
+    .payment-icons img{
+        padding: auto;
+        height: 15px;
+    }</style>
+    
 <body style="min-width: 100vh;">
-  <div id="container" style="display: flex; justify-content: center; "></div>
+  <div id="container" style="display: flex; justify-content: center; padding-top: 0%; "></div>
    
   <div id="outerbox" style="display: flex;  min-height: 90vh;">
     <div id="innerbox">
@@ -45,6 +136,111 @@
            
     </div>
   </div>
+  <footer>
+    <div class="foot-top">
+      <div class="foot-left">
+        <div class="about">
+          <h5>ABOUT</h5>
+          <ul>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Flipkart Stories</a></li>
+            <li><a href="">Press</a></li>
+            <li><a href="">Corporate Information</a></li>
+           <li><i><a href="">Explore Plus</a></i></li>
+          </ul>
+        </div>
+        <div class="about">
+          <h5>GROUP COMPANIES</h5>
+          <ul>
+            <li><a href="">Myntra</a></li>
+            <li><a href="">Flipkart Wholesale</a></li>
+            <li><a href="">Cleartrip</a></li>
+            <li><a href="">Shopsy</a></li>
+          </ul>
+        </div>
+        <div class="about">
+          <h5>HELP</h5>
+          <ul>
+            <li><a href="">Payments</a></li>
+            <li><a href="">Shipping</a></li>
+            <li><a href="">Cancellation & Returns</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Report Infringement</a></li>
+          </ul>
+        </div>
+        <div class="about">
+          <div id="policy">
+            <h5>CONSUMER POLICY</h5>
+            <ul>
+              <li><a href="">Cancellation & Returns</a></li>
+              <li><a href="">Terms Of Use</a></li>
+              <li><a href="">Security</a></li>
+              <li><a href="">Privacy</a></li>
+              <li><a href="">Sitemap</a></li>
+              <li><a href="">Grievance Redressal</a></li>
+              <li><a href="">EPR Compilance</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="foot-right">
+        <div class="part">
+          <div class="mail">
+            <h5>Mail Us:</h5>
+            <p>
+              Flipkart Internet Private Limited,
+              Buildings Alyssa, Begonia & Clove Embassy Tech Village,
+              Outer Ring Road, Devarabeesanahalli Village, Bengaluru, 560103, Karnataka, India
+            </p>
+          </div>
+          <div class="social">
+            <h5>Social</h5>
+            <ul>
+              <li><a href=""><i class="bi bi-facebook"></i></a></li>
+              <li><a href=""><i class="bi bi-twitter"></i></a></li>
+              <li><a href=""><i class="bi bi-youtube"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="office">
+          <h5>Registered Office Address:</h5>
+          <p>Flipkart Internet Private Limited,
+            Buildings Alyssa, Begonia & Clove Embassy Tech Village,
+            Outer Ring Road, Devarabeesanahalli Village, Bengaluru, 560103, Karnataka, India</p>
+          <p>CIN : U51109KA2012PTC066107</p>
+          <P>Telephone: <a href="">044-45614700</a></P>
+        </div>
+      </div>
+    </div>
+    <div class="foot-down">
+
+      <div>
+
+        <ul>
+          <li><a href=""><i class="bi bi-briefcase-fill"></i> Become a seller</a></li>
+          <li><a href=""><i class="bi bi-gift-fill"></i> Gift Cards</a></li>
+          <li><a href=""><i class="bi bi-question-circle-fill"></i> Help Center</a></li>
+          <div>
+            <li>&copy;<span class="update_Cyear"></span> Flipkart.com</li>
+          </div>
+         </ul>
+      </div>
+
+      
+      <div class="payment-icons">
+        <img src="visa.jpeg" alt="Visa">
+        <img src="mastercard.jpeg" alt="Mastercard">
+        <img src="images/rupay.png" alt="rupay">
+        <img src="images/discover.png" alt="discover">
+        <img src="images/emi.png" alt="emi">
+        <img src="images/net_banking.png" alt="net banking">
+        <img src="images/cod.png" alt="cash on delivery">
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
 <script>
