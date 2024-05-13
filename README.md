@@ -78,6 +78,13 @@
 10. **Create a Pull Request:** Go to the GitHub repository, select your branch, and click on the "New pull request" button to create a new pull request.
 
 
+ <!-- screenshots -->
+  <div>
+    <h2>Screenshot <img src ="Screenshot 1.png"> <img src="Screenshot (425).png"></h2>
+  </div>
+
+
+
 <!-- Screenshots -->
   <div>
     <h2><img src = "https://github.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/blob/master/Emojis/Objects/Camera.png?raw=true" width="35" height ="35"> Snapshots</h2>

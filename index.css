@@ -245,6 +245,7 @@ footer{
 }
 
 
+
 @media (max-width: 768px) {
     footer {
         padding-top: 12px;
@@ -272,5 +273,54 @@ footer{
         list-style-type: none;
         display: flex;
         flex-direction: column;
-    }
+ 
+}
 } */
+
+#phones {
+    display: flex;
+    flex-direction: column;
+    height: 996;
+    width: 300;
+    padding: 4px;
+    margin: 8px;
+  }
+  #box {
+    display: flex;
+    gap: 55px;
+    margin: 20px;
+  }
+  #box img{
+      height: 143;
+      width: 143;
+  }
+  .box-1,
+  .box-2,
+  .box-3,
+  .box-4,
+  .box-5,
+  .box-6,
+  .box-7 ,.box-8{
+    display: flex;
+    flex-direction: column;
+    height: 168;
+    width: 220;
+    margin: 26px 0px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid black;
+    gap: 10px;
+  }
+  
+  /* new phone section ended */
+
+  #img-box{
+    display: flex;
+    height: 175;
+    padding: 20px;
+    margin: 15px;
+    gap: 49px;
+    
+}
+
+
