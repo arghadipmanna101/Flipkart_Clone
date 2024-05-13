@@ -9,12 +9,12 @@ body {
 }
 
 /* Footer Styles */
-footer {
+/* footer {
   background-color: #212121;
   color: #fff;
   padding: 40px 0;
   width: 100%;
-}
+} */
 
 /* Add a smooth transition effect */
 .nav-item {
@@ -133,7 +133,7 @@ footer {
   border-top: 8px solid rgba(213, 207, 207, 0.617);
 }
 
-.footer-top {
+/* .footer-top {
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
@@ -241,4 +241,4 @@ footer {
 .payment-icons img {
   height: 24px;
   margin-left: 10px;
-}
+} */

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#footer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left:40px;
+    padding-right:40px;
+    padding-bottom: 10px;
+    gap: 30px;
+}
+.foot-top{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.footer-left-side{
+    display: flex;
+    flex-wrap: wrap;
+    gap:90px;
+}
+.about,.group-companies,.help,.consumer-policy{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.foot-heading{
+    margin-bottom: 8px;
+    color:#9b9898;
+    font-family: "Roboto", sans-serif;
+    font-weight:400;
+    font-size: 12px;
+}
+.about a,.group-companies a,.help a,.consumer-policy a{
+    color:white;
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+.footer-left-side a:hover{
+    color: white;
+}
+
+.footer-right-side{
+    padding-left: 20px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-left:1px solid rgb(85, 78, 78);
+    gap: 30px;
+}
+.mail-us div,.registered div,span{
+    font-size: 13px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+
+}
+.footer-right-side .foot-heading{
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+}
+.footer-right-side>.mail-us a{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    margin-right: 15px;
+}
+.footer-right-side>.mail-us a:hover{
+    text-decoration: none;
+}
+.foot-heading-content{
+    margin-top: 10px;
+    color: #9b9898;
+}
+.foot-bottom{
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid rgb(85, 78, 78);
+    justify-content: space-between;
+    align-items: center;
+}
+.foot-bottom>.multi-icons{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    width:25%;
+    padding: 20px 40px;
+}
+.foot-bottom i{
+    font-size: 20px;
+   color: #ff9f00;
+}
+.copyright-icon i{
+    color: white;
+    font-size: 16px;
+  
+}
+.copyright-icon{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seller-icon,.gift-icon,.help-icon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    gap:5px;
+
+}
+.seller-icon a,.gift-icon a,.help-icon a{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+.foot-bottom a:hover{
+    color: white;
+    text-decoration: none;
+}
+.multi-icons>img{
+ width: 100%;
+ background-color: white;
+}
+
+
+
+
+
+
