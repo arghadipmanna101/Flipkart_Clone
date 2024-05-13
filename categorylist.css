@@ -11,9 +11,11 @@ body {
     width: 100%;
     overflow-x: scroll;
     position: fixed;
-    top: 8vh;
+    top: 11vh;
     right: 0;
     z-index: 500;
+    
+    
 }
 .categorylist-wrapper::-webkit-scrollbar {
     display: none;
@@ -46,11 +48,11 @@ body {
     height: max-content;
     max-height: 100dvh;
     padding: 0 10%;
-    top: 16vh;
+    top: 19vh;
     left: 0;
     font-size: 14px;
     overflow: hidden;
-    z-index: 500;
+    z-index: 500;   
 }
 .categories > li:hover > ul {
     display: flex;

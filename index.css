@@ -14,7 +14,10 @@ body {
     border-radius: 15px;
     background-color: #e7eefb;
 }
-
+#searchbar:hover{
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+cursor:pointer;
+}
 #input_data {
     width: 100%;
     padding: 6px; 
