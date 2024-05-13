@@ -5,7 +5,7 @@
 .categorylist-wrapper {
     width: 100%;
     overflow-x: scroll;
-    position: fixed;
+    position: absolute;
     top: 8vh;
     right: 0;
     z-index: 500;
