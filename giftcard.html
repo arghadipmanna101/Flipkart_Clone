@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Card Store</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <script defer src="script.js"></script>
+    <style>
+        /* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #2874F1;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header #container > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header .search-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+header .logo {
+    margin-right: 20px;
+}
+
+section {
+    padding: 20px 0;
+}
+
+section h1 {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #f2f2f2;
+    padding: 20px 0;
+    color: #333;
+}
+
+footer div > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer span {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+footer span:last-child {
+    margin-right: 0;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div id="container">
+            <div>
+                <div>
+                    <div>
+                        <div>
+                            <a href="/">
+                                <img width="75" src="//static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png" alt="Flipkart" title="Flipkart" class="logo">
+                            </a>
+                            <a class="explore-plus" href="/plus">Explore <span class="plus-text">Plus</span><img width="10" src="//static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png"></a>
+                        </div>
+                    </div>
+                    <div>
+                        <form action="/search" method="GET" class="header-form-search">
+                            <div>
+                                <div>
+                                    <input type="text" name="q" autocomplete="off" placeholder="Search for products, brands and more" value="">
+                                </div>
+                                <button type="submit" class="search-btn">
+                                    <svg width="20" height="20" viewBox="0 0 17 18" xmlns="http://www.w3.org/2000/svg">
+                                        <g fill="#2874F1" fill-rule="evenodd">
+                                            <path d="m11.618 9.897l4.225 4.212c.092.092.101.232.02.313l-1.465 1.46c-.081.081-.221.072-.314-.02l-4.216-4.203"></path>
+                                            <path d="m6.486 10.901c-2.42 0-4.381-1.956-4.381-4.368 0-2.413 1.961-4.369 4.381-4.369 2.42 0 4.381 1.956 4.381 4.369 0 2.413-1.961 4.368-4.381 4.368m0-10.835c-3.582 0-6.486 2.895-6.486 6.467 0 3.572 2.904 6.467 6.486 6.467 3.582 0 6.486-2.895 6.486-6.467 0-3.572-2.904-6.467-6.486-6.467"></path>
+                                        </g>
+                                    </svg>
+                                </button>
+                                <input type="hidden" name="otracker" value="search">
+                                <input type="hidden" name="otracker1" value="search">
+                                <input type="hidden" name="marketplace" value="FLIPKART">
+                                <input type="hidden" name="as-show" value="off">
+                                <input type="hidden" name="as" value="off">
+                            </div>
+                        </form>
+                    </div>
+                    <div>
+                        <div>
+                            <div>My Account</div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="https://seller.flipkart.com/sell-online/?utm_source=fkwebsite&amp;utm_medium=websitedirect">
+                            <span>Become a Seller</span>
+                        </a>
+                    </div>
+                    <div>
+                        <div>
+                            <div> More </div>
+                        </div>
+                        <svg width="4.7" height="8" viewBox="0 0 16 27" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="#fff"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <div>
+                            <a href="/viewcart?exploreMode=true&amp;preference=FLIPKART">
+                                <svg class="cart-icon" width="14" height="14" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#fff" d="M15.32 2.405H4.246C3.153 2.405 2.26 3.298 2.26 4.391L2.077 16h13.926l-.184-11.609zM4.6 14.514a1.217 1.217 0 1 1-2.435 0 1.217 1.217 0 0 1 2.435 0zm9.957 0a1.217 1.217 0 1 1-2.434 0 1.217 1.217 0 0 1 2.434 0zM14.15 5.044H5.683l.784 5.256h6.743l.94-5.256zM3.225 3.96h10.557v.784H3.225z"></path>
+                                </svg>
+                                <span>Cart</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="gift-card-store-container">
+        <div class="header-section">
+            <h1 class="page-title">Gift Card Store</h1>
+            <div class="description">
+                <p>
+                    <span>Special occasions call for special gifts. Whether it’s a birthday or an anniversary, finding the right gift for your loved ones is always a difficult task. And after you get a gift, you have to hope that they like what you got. Well, there’s a simple solution to this conundrum - Flipkart Gift Cards Store. You can give Flipkart gift cards and Vouchers across multiple occasions to your friends or family and give them the chance to shop for whatever their heart desires. So, what are you waiting for? Get gift vouchers online on Flipkart, gift or redeem them and do more with this feature. Flipkart Gift Card Store also has a wide range of Gift Cards from categories such as travel, jewellery, fashion, grocery, and apps &amp; more. You can choose from a diverse range of denominations available or enter any preferred amount between Rs 25 to Rs 10,000. Bid adieu to gifting troubles, send online gift cards to your friends and family, bring a smile to their faces and make special moments even more special!. The information you are reading has been last updated on 13-May-24.</span>
+                    <br>
+                </p>
+                <p></p>
+            </div>
+        </div>
+        <div class="image-section">
+            <div class="gift-card-image-container" data-tkid="gift_card_1">
+                <div class="image-wrapper" style="padding-top: 28.76%; width: 100%;">
+                    <span class="image-overlay">
+                        <div class="image-container" style="padding-top: 28.76%; width: 100%;">
+                            <img class="gift-card-image" alt="New Gift Card" srcset="https://rukminim2.flixcart.com/flap/3600/3600/image/81ebdc5d337e7190.jpg?q=80 2x, https://rukminim2.flixcart.com/flap/1800/1800/image/81ebdc5d337e7190.jpg?q=80 1x" src="https://rukminim2.flixcart.com/flap/1800/1800/image/81ebdc5d337e7190.jpg?q=80" data-tkid="gift_card_1.AVJEKXAB9GVP">
+                            <img class="image-overlay-icon" src="https://rukminim2.flixcart.com/flap/50/50/image/81ebdc5d337e7190.jpg?q=50" alt="New Gift Card">
+                        </div>
+                    </span>
+                </div>
+                <div class="image-caption"></div>
+            </div>
+        </div>
+        <div class="link-section">
+            <div class="gift-card-link" data-tkid="gift_card_link_1">
+                <a href="http://www.flipkart.com/account/giftcard?param=1434" class="link-wrapper">
+                    <div class="link-image-container" style="padding-top: 14.39%;">
+                        <div class="link-image-wrapper" style="padding-top: 14.39%;">
+                            <img class="link-image" alt="Gift Card" src="https://rukminim2.flixcart.com/fk-p-flap/2000/2000/image/93881a4d42932961.jpg?q=50" data-tkid="gift_card_link_1.I9DNNTN2V7Y7">
+                            <img class="link-image-overlay-icon" src="https://rukminim2.flixcart.com/fk-p-flap/100/100/image/93881a4d42932961.jpg?q=50" alt="Gift Card">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- More sections -->
+    </div>
+    
+    <footer>
+        <div id="container">
+            <div>
+                <div>
+                    <div>
+                        <div>
+                            <span>Gift Cards</span>
+                            <span>Contact Us</span>
+                            <span>FAQs</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <span>Return Policy</span>
+                            <span>Terms of Use</span>
+                            <span>Privacy Policy</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <span>About Us</span>
+                            <span>Flipkart Stories</span>
+                            <span>Press</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <span>Facebook</span>
+                            <span>Twitter</span>
+                            <span>YouTube</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
