@@ -4,293 +4,250 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-  <title>Document</title>
+  <title>Contents</title>
   <style>
+    
     body {
       background: #ede9e9;
       display: flex;
       flex-direction: column;
       align-items: center;
-    }
-    .box1 {
-
-      margin: 10px;
-      height: 400px;
-      max-width: 100rem;
-
-      background: white;
+      padding: 20px; 
     }
 
-
-    .box1 .img-container {
-      display: inline-block;
-    }
-
-    .img-container {
-      display: inline-block;
-      margin-left: 40px;
-      width: 200px;
-      pointer-events: cursor;
-      border-radius: 5px;
-      border: 0.5px solid rgb(161, 157, 157);
-
-      /* extra stuff */
-      overflow: hidden;
-    }
-
-    .about-img {
-      margin-top: 10px;
-      margin-left: 20px;
-      width: 160px;
-      height: 200px;
-      transition: all 0.1s linear;
-    }
-
-    .img-container:hover .about-img {
-
-
-      transition: all 0.2s linear;
-      transform: scale(1.1);
-    }
-
-    .box1 p,
-    h4 {
-      margin: 5px;
-      text-align: center;
-      letter-spacing: 1px;
-      font-size: 17px;
-
-    }
-
-    .box1 h3 {
-      font-family: sans-serif;
-      font-size: 20px;
-      padding: 10px;
-
-    }
-
-
-
-    /* section 3 */
-    .box2 h3 {
-      font-family: sans-serif;
-      font-size: 20px;
-      padding: 10px;
-
-    }
-
-    .box2 {
-      display: flex;
-      height: 400px;
-
-    }
-
-    .part1 {
-
-      margin: 10px;
-      height: 740px;
-      width: 550px;
-
-      background: white;
-    }
-
-    .part2 {
-      background:
-        url("content-img/f91329d65e0c0558e4b1964cc5d080dd.jpg") no-repeat center center/cover;
-      /*transform: translate(40%, -105%); */
-      margin: 10px;
-      height: 740px;
-      right: 20px;
-      width: 650px;
-
-
-    }
-
-    .part1 .img-container {
-      margin-bottom: 10px;
-    }
-
-    .part2 .icon {
-      margin-top: 100px;
-      margin-left: 400px;
-      width: 100px;
-      height: 100px;
-    }
-
-    .part2 .heading {
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      margin-left: 40px;
-      font-size: 50px;
-      font-weight: bold;
-      padding: 10px;
+    a {
+      text-decoration: none;
       color: black;
     }
 
-    .part2 .heading2 {
-      font-family: monospace;
-      margin-left: 60px;
-      font-size: 20px;
-      font-weight: 200;
-
-
-      color: gray;
+    a:hover {
+      color: #2888f5;
+    }
+    
+    .box {
+      margin: 10px;
+      max-width: 100%;
+      background: white;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
     }
 
-    .part2 .btn1 {
-      margin-top: 150px;
-      margin-left: 100px;
+    .img-container {
+      margin: 10px;
+      width: 200px;
+      border-radius: 5px;
+      border: 1px solid rgb(161, 157, 157);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+
+    .img-container:hover {
+      transform: scale(1.1);
+    }
+
+    .box h3 {
+      font-family: sans-serif;
+      font-size: 20px;
+      padding: 10px;
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+
+    .box p, .box h4 {
+      margin: 5px;
+      text-align: center;
+      font-size: 17px;
+    }
+
+    .box img {
+      width: 100%;
+      height: auto;
+    }
+
+    .box button {
+      margin-top: 20px;
       padding: 10px;
       font-size: 20px;
       font-weight: bold;
       background: white;
-      border: 1px solid;
-      border-color: gray;
+      border: 1px solid gray;
       color: #111;
       cursor: pointer;
       border-radius: 3px;
     }
 
-    .part1 p {
+    .icon {
+      width: 100px;
+      height: 100px;
+      display: block;
+      margin: 0 auto;
+    }
 
+    .heading {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 30px;
+      font-weight: bold;
+      padding: 10px;
+      text-align: center;
+      color: black;
+    }
+
+    .heading2 {
+      font-family: monospace;
+      font-size: 20px;
+      font-weight: 200;
+      color: gray;
       text-align: center;
     }
 
-    .part2 .btn1 i {
-      width: 20px;
-      height: 10px;
+    @media (max-width: 768px) {
+      .img-container {
+        width: 100%;
+      }
     }
 
-    .part1 .img-container:hover .about-img {
 
 
-      transition: all 0.1s linear;
-      transform: scale(1.04);
-    }
-
-    .part1 i {
-      font-size: 15px;
-
-    }
-
-    .part1 span {
-      color: gray;
-      font-size: 13px;
-    }
   </style>
 </head>
 
 <body>
   <!-- section 1 -->
-  <section class="box1">
-    <h3>Deals on Mobile Phones</h3>
-    <div class="img-container">
-      <a href="#"><img src="content-img\vivo-mobile-phone-1000x1000.webp" alt="" class="about-img"></a>
+  <section class="box">
+    <h3 >Deals on Mobile Phones</h3>
+    <a href="#"><div class="img-container">
+      <img src="content-img\vivo-mobile-phone-1000x1000.webp" alt="" class="about-img">
       <p>Vivo T3X 5G
       <h4>From <i class="fa-solid fa-indian-rupee-sign"></i>14,500*</h4>
       </p>
     </div>
+  </a>
+  <a href="#">
     <div class="img-container">
-      <a href="#"><img src="content-img/vivo-y16-mobile-phone-250x250.webp" alt="" class="about-img"></a>
+      <img src="content-img/vivo-y16-mobile-phone-250x250.webp" alt="" class="about-img">
       <p>Vivo Y16 5G
       <h4>From <i class="fa-solid fa-indian-rupee-sign"></i>17,500*</h4>
       </p>
     </div>
+  </a>
+  <a href="#">
     <div class="img-container">
-      <a href="#"><img src="content-img/vivo-y17s-forest-green-4gb-ram-128gb-storage-250x250.webp" alt=""
-          class="about-img"></a>
+      <img src="content-img/vivo-y17s-forest-green-4gb-ram-128gb-storage-250x250.webp" alt=""
+          class="about-img">
       <p>Vivo Y17 pro
       <h4>From <i class="fa-solid fa-indian-rupee-sign"></i>20,500*</h4>
       </p>
     </div>
+  </a>
+  <a href="#">
     <div class="img-container">
-      <a href="#"><img src="content-img/oneplus-nord-n20-5g-gn2200-128gb-black-refurbished-triveni-world_1024x.webp"
-          alt="" class="about-img"></a>
+      <img src="content-img/oneplus-nord-n20-5g-gn2200-128gb-black-refurbished-triveni-world_1024x.webp"
+          alt="" class="about-img">
       <p>OneplusNord N20 5G
       <h4>From <i class="fa-solid fa-indian-rupee-sign"></i>29,500*</h4>
       </p>
     </div>
+  </a>
+  <a href="#">
     <div class="img-container">
-      <a href="#"><img src="content-img/y35-250x250.webp" alt="" class="about-img"></a>
+      <img src="content-img/y35-250x250.webp" alt="" class="about-img">
       <p>Vivo Y35 5G
       <h4>From <i class="fa-solid fa-indian-rupee-sign"></i>22,500*</h4>
       </p>
     </div>
-
+  </a>
   </section>
 
   <!-- section 2 -->
-  <section class="box1">
+  <section class="box">
     <h3>Best of Electronics</h3>
+    <a href="#">
     <div class="img-container">
-      <a href="#"><img src="content-img/z-24-200mm-z5-nikon-original-imag2zuekuxgxsgg.webp" alt="camera"
-          class="about-img"></a>
+      <img src="content-img/z-24-200mm-z5-nikon-original-imag2zuekuxgxsgg.webp" alt="camera"
+          class="about-img">
       <p>Mirrorless Cameras
       <h4>Shop Now!</h4>
       </p>
     </div>
+  </a>
+  <a href="#">
     <div class="img-container">
-      <a href="#"><img src="content-img/earphon3.jpg" alt="earphones" class="about-img"></a>
+      <img src="content-img/earphon3.jpg" alt="earphones" class="about-img">
       <p>Best wireless Ear...
       <h4>Grab Now</h4>
       </p>
     </div>
+  </a>
+  <a href="#">
     <div class="img-container">
-      <a href="#"><img src="content-img/Picture.png" alt="shaver" class="about-img"></a>
+      <img src="content-img/Picture.png" alt="shaver" class="about-img">
       <p>Best of Shavers
       <h4>From <i class="fa-solid fa-indian-rupee-sign"></i>1,500*</h4>
       </p>
     </div>
+  </a>
+  <a href="#">
     <div class="img-container">
-      <a href="#"><img src="content-img/earphone2.jpg" alt="Headsets" class="about-img"></a>
+      <img src="content-img/earphone2.jpg" alt="Headsets" class="about-img">
       <p>Headsets
       <h4>From <i class="fa-solid fa-indian-rupee-sign"></i>3,500*</h4>
       </p>
     </div>
+    </a>
+    <a href="#">
     <div class="img-container">
-      <a href="#"><img src="content-img/projector.png" alt="projector" class="about-img"></a>
+      <img src="content-img/projector.png" alt="projector" class="about-img">
       <p>Projector
       <h4>From <i class="fa-solid fa-indian-rupee-sign"></i>9,500*</h4>
       </p>
     </div>
+  </a>
 
   </section>
 
   <!-- section 3 -->
 
-  <section class="box2">
-    <div class="part1">
-
-      <h3 class="heading">Dresses</h3>
+  <section class="box">
+  <h3>Dresses</h3>
+  <a href="#">
       <div class="img-container">
-        <a href="#"><img src="content-img/cloth1.webp" alt="cloth" class="about-img"></a>
+        <img src="content-img/cloth1.webp" alt="cloth" class="about-img">
         <p><span>Tokiyo Talkies</span><br>Women Bodycon Bl..
         <h4>From <i class="fa-solid fa-indian-rupee-sign">379</i></h4>
         </p>
       </div>
+    </a>
+    <a href="#">
       <div class="img-container">
-        <a href="#"><img src="content-img/cloth2.webp" alt="cloth" class="about-img"></a>
+        <img src="content-img/cloth2.webp" alt="cloth" class="about-img">
         <p><span>Tokiyo Talkies</span><br>Women A-line Multi...
         <h4>From <i class="fa-solid fa-indian-rupee-sign">600</i></h4>
         </p>
       </div>
+    </a>
+    <a href="#">
       <div class="img-container">
-        <a href="#"><img src="content-img/cloth3.webp" alt="cloth" class="about-img"></a>
+        <img src="content-img/cloth3.webp" alt="cloth" class="about-img">
         <p><span>Tokiyo Talkies</span><br>Women Ribbed Pink...
         <h4>From <i class="fa-solid fa-indian-rupee-sign">599</i></h4>
         </p>
       </div>
+    </a>
+    <a href="#">
       <div class="img-container">
-        <a href="#"><img src="content-img/cloth4.webp" alt="cloth" class="about-img"></a>
+        <img src="content-img/cloth4.webp" alt="cloth" class="about-img">
         <p><span>Tokiyo Talkies</span><br>Women Ribbed Pink...
         <h4>From <i class="fa-solid fa-indian-rupee-sign">299</i></h4>
         </p>
       </div>
-
-
+    </a>
     </div>
-    <div class="part2">
-
-      <img src="content-img/unnamed.webp" alt="icon" class="icon">
+    <div class="box" >
+      <img src="content-img/Oppo_Reno_10_5g_Cover.avif" alt="icon" class="icon">
       <h3 class="heading">Top selling Smartphones</h3>
       <p class="heading2">Latest Technology , Best Brands!</p>
       <button class="btn1">Explore <i class="fa-solid fa-chevron-right"></i></button>
