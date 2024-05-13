@@ -50,9 +50,6 @@ body {
     margin-right: 8px;
 }
 
-
-
-
 #category-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
@@ -61,50 +58,53 @@ body {
     margin-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px;
-  }
-  
-  .category {
+}
+
+.category {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  
-  
-  
-  .category h3 {
+}
+
+.category h3 {
     font-size: 18px; 
     color: #333333; 
-  }
+}
 
-  .details .info{
+.details .info {
     line-height: 16px;
     font-size: 12px;
 }
-.details .info h1{
+
+.details .info h1 {
     font-size: 16px;
     margin-bottom: 10px;
 }
-.details .info h2{
+
+.details .info h2 {
     font-size: 14px;
     margin-bottom: 10px;
 }
-.details{
+
+.details {
     padding: 30px;
     color: #878787;
     background-color: #f5f5f5;
 }
 
-
-footer{
+/* Footer styles */
+footer {
     background-color: rgb(28, 27, 27);
     padding: 15px 35px;
 }
-.foot-top{
+
+.foot-top {
     display: flex;
     border-bottom: 1px solid rgb(85, 78, 78);
-   flex-wrap: wrap;
+    flex-wrap: wrap;
 }
-.foot-left{
+
+.foot-left {
     display: flex;
     justify-content: space-between;
     margin-right: 70px;
@@ -113,52 +113,59 @@ footer{
     flex: 1 1 500px;
     flex-wrap: wrap;
 }
-.foot-left h5{
+
+.foot-left h5 {
     font-size: 11px;
     font-weight: 600;
     color: #9b9898;
-
 }
-.foot-left .about li a{
+
+.foot-left .about li a {
     font-size: 11px;
     color: white;
     font-weight: 600;
-    
 }
-.foot-left .about li{
+
+.foot-left .about li {
     list-style: none;
 }
-.foot-right{
+
+.foot-right {
+    font-size: 12px;
     display: flex;
     margin: 25px;
     flex: 1 1 500px;
-    flex-wrap: wrap;gap: 7px;
+    flex-wrap: wrap;
+    gap: 7px;
     border-left: 1px solid rgb(85, 78, 78);
     padding-left: 30px;
-    
 }
-.foot-right h5{
+
+.foot-right h5 {
     color: #9b9898;
     font-size: 12px;
     font-weight: 600;
-
 }
+
 .foot-right .part,
 .foot-right .office {
     flex: 1 1 300px;
 }
-.social ul{
+
+.social ul {
     display: flex;
 }
-.social ul li{
+
+.social ul li {
     list-style: none;
     margin: 0px 10px;
 }
-.social ul li a{
+
+.social ul li a {
     color: white;
-    
 }
-.foot-down{
+
+.foot-down {
     padding: 10px 40px;
     display: flex;
     margin-top: 20px;
@@ -166,161 +173,27 @@ footer{
     justify-content: space-between;
     font-weight: 600;
 }
-.foot-down ul{
-   display: flex;
+
+.foot-down ul {
+    display: flex;
     justify-content: space-between;
     gap: 200px;
 }
-.foot-down ul li{
+
+.foot-down ul li {
     list-style: none;
 }
-.foot-down ul li a{
+
+.foot-down ul li a {
     color: white;
 }
-.foot-left * , .foot-right *{
+
+.foot-left *,
+.foot-right * {
     font-size: 12px;
-}
-.payment-icons img{
-    padding: auto;
-    height: 15px;
-}
-/* Footer styles
-/* footer {
-    background-color: black;
-    color: white;
-    padding-top: 18px;
-    padding-bottom: 18px;
-}
-
-.footer-top,
-.footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-section {
-    margin-bottom: 20px;
-}
-
-.footer-section h3 {
-    margin-bottom: 10px;
-}
-
-.footer-section ul {
-    list-style-type: none;
-    
-}
-
-
-.social-icons a {
-    margin-right: 10px;
-    color: white;
 }
 
 .payment-icons img {
-    width: 50px;
-    margin-right: 10px;
-} */
-
-/* Dropdown menu styles */
-/* .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 9;
+    padding: auto;
+    height: 15px;
 }
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-
-
-@media (max-width: 768px) {
-    footer {
-        padding-top: 12px;
-        padding-bottom: 12px;
-    }
-
-    .footer-top,
-    .footer-bottom {
-        flex-direction: row;
-        align-items: flex-start;
-    }
-
-    .footer-section {
-        margin-bottom: 12px;
-    }
-
-    .footer-section h3 {
-        margin-bottom: 8px;
-    }
-    .footer-section ul {
-        list-style-type: none;
-        
-    }
-    .footer-section .social-icons{
-        list-style-type: none;
-        display: flex;
-        flex-direction: column;
- 
-}
-} */
-
-#phones {
-    display: flex;
-    flex-direction: column;
-    height: 996;
-    width: 300;
-    padding: 4px;
-    margin: 8px;
-  }
-  #box {
-    display: flex;
-    gap: 55px;
-    margin: 20px;
-  }
-  #box img{
-      height: 143;
-      width: 143;
-  }
-  .box-1,
-  .box-2,
-  .box-3,
-  .box-4,
-  .box-5,
-  .box-6,
-  .box-7 ,.box-8{
-    display: flex;
-    flex-direction: column;
-    height: 168;
-    width: 220;
-    margin: 26px 0px;
-    padding: 8px;
-    border-radius: 4px;
-    border: 1px solid black;
-    gap: 10px;
-  }
-  
-  /* new phone section ended */
-
-  #img-box{
-    display: flex;
-    height: 175;
-    padding: 20px;
-    margin: 15px;
-    gap: 49px;
-    
-}
-
-

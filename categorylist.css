@@ -1,11 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-body {
-    background-color: rgb(255, 255, 255);
 }
 .categorylist-wrapper {
     width: 100%;
@@ -19,16 +14,16 @@ body {
     display: none;
 }
 .categories {
+    margin-top: 12px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    background-color: rgb(255, 253, 253);
-    position: relative;
-    padding: 0;
+    background-color: rgb(252 252 252);
+   
     padding: 0 4%;
     width: 100%;
     min-width:1000px;
-    box-shadow: 0 0 10px rgb(206, 206, 206);
+    
 }
 .categories > li {
     display: inline-block;
