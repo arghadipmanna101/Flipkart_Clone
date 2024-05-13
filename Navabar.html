@@ -8,7 +8,7 @@
 </head>
 <body>
     <nav>
-        <div id="nav">
+        <div id="nav" class="nav-container">
           <div id="nav1">
            <div id="nav_logo"><img id="fli" src="flipkart_logo.png"></div>
              <span id="logo_name"> <img id="fli_name"
@@ -49,17 +49,6 @@
 
           
           <div class="navtab">
-          <div class="navtab" id="seller">
-            <span>
-              <img
-                src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg"
-                alt="become a seller" />
-            </span>
-            <span
-              style="font-size: 15px; font-family: sans-serif; padding-left: 12px"
-              >Become a Seller</span
-            >
-          </div>
           <div class="navtab" id="sign">
 
             <span>
@@ -68,17 +57,29 @@
                 alt="Sign in" />
             </span>
             <span
-              style="font-size: 15px; font-family: sans-serif; padding-left: 12px"
+              style="font-size: 15px; font-family: sans-serif"
               >
               <select name="forma" onchange="location = this.value;">
                 <option value="">Profile</option>
-                <option value="signup.html">Signup</option>
-                <option value="signin.html">Signin</option>
+                <option value="signup.html">New Customer? &#160 &#160 Signup</option>
+                <option value="signin.html">Login</option>
                 <option value="FPZ.html">Flipkart Plus Zone</option>
-                <option value="order.html">Orders</option>
+                <option value="order.html">My Orders</option>
+                <option value="wishlist.html">Wishlists</option>
                </select>
               
               </span
+            >
+          </div>
+          <div class="navtab" id="seller">
+            <span>
+              <img
+                src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg"
+                alt="become a seller" />
+            </span>
+            <span
+              style="font-size: 15px; font-family: sans-serif; padding-left: 12px; padding-right: 16px; min-width: 116px;"
+              >Become a Seller</span
             >
           </div>
           <div class="navtab" id="seller">
@@ -88,11 +89,22 @@
                 alt="become a seller" />
             </span>
             <span
-              style="font-size: 15px; font-family: sans-serif; padding-left: 12px"
+              style="font-size: 15px; font-family: sans-serif; padding-left: 12px; margin-left: 16px;"
               >Cart</span>
           </div>
-        </div>
-        
+          <div class="navtab utility-menu">
+            <div class="menu-trigger">
+              <img id="threedots" src="vertical3dots.png" alt="More" />
+            </div>
+            <select name="utility_options" class="dropdown-menu">
+              <option value="more">More</option>
+              <option value="notification_preferences">Notification preferences</option>
+              <option value="customer_care">24x7 customer care</option>
+              <option value="advertise">Advertise</option>
+              <option value="download_app">Download App</option>
+            </select>
+          </div>
+        </div>  
       </nav>
 </body>
 </html>

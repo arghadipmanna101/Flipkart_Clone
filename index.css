@@ -3,6 +3,7 @@
 }
 
 nav{
+   position: relative;
     background-color: white;
 }
 
@@ -11,18 +12,23 @@ nav{
    height: 50px;
 }
 #fli{
-    position: absolute;
-    left: -2.5vw;
+   position: absolute;
+    left: -8vw;
     top: -2.75vh;
     width: 90px;
     height: 90px;
 }
 #fli_name{
     position: absolute;
-    left: -2vw;
+    left: -7.5vw;
     top: 0.80vh;
+   
 }
 
+.nav-container{
+    display: flex;
+  align-items: center;
+}
 #nav{
     display: flex;
  justify-content: space-around;
@@ -61,12 +67,19 @@ body{
     display: flex;
     align-items: center;
     gap: 1rem;
+    margin-left: auto;
+    margin-right: 10px;
 }
 
+#input_data {
+    flex: 1;
+  }
 #searchbar{
     background-color: #F0F5FF;
     padding: 4px;
     border-radius: 10px;
+    display: flex;
+  align-items: center;
 }
 
 option{
@@ -80,6 +93,51 @@ select{
     font-family: sans-serif;
 }
 
+.utility-menu {
+    position: relative; 
+  }
+  
+#threedots{
+    width: 25px;
+    height: 25px;
+    border-radius: 20%;
+}
+
+.menu-trigger {
+    cursor: pointer; 
+}
+
+  .dropdown-menu {
+    position: absolute;  
+    top: 100%;  
+    left: 0;  
+    background-color: #fff;  
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);  
+    padding: 10px;  
+    min-width: 150px; 
+    display: none; 
+    list-style: none;  
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+  }
+
+  .dropdown-menu li {
+    margin-bottom: 5px;  
+  }
+
+  .utility-menu:hover .dropdown-menu,
+.dropdown-menu:hover {
+  display: block; 
+  opacity: 1; 
+}
+
+.utility-menu.active .dropdown-menu {
+    opacity: 1;
+  }
+
+.utility-menu:hover::after .dropdown-menu:hover {
+    transition-delay: 2s; 
+  }
 
 #categories{
     display: flex;
@@ -93,10 +151,6 @@ select{
     margin-top: 10px;
     font-family: sans-serif;
 }
-
-
-
-
 
 #categories > div > img{
    height: 70px;
@@ -162,7 +216,8 @@ a:link {
 
  }
  #seller:hover{
-     color:rgb(148, 179, 181) ;
+     color:rgb(40, 50, 50) ;
+     transition: all;
      font-weight: bolder;
      background: var(--main-bg-color);
  }
@@ -205,3 +260,39 @@ a:link {
     width: 100%;
     height: 3px;
  }
+
+ @media screen and (min-width: 768px) {
+    /* Styles for large screens */
+    #nav {
+      width: 70%;
+    }
+
+  }
+
+  @media screen and (max-width: 1400px) {  
+    .nav-container {
+      flex-wrap: wrap;    
+    }
+
+   #fli{
+    width: 90px;
+    height: 90px;
+   }
+
+#nav1 {
+    order: 0;             
+  }
+  .searchbar {
+    order: 1;             
+    margin-left: 0;      
+  }
+
+  .navtab {
+    order: 2;             
+    width: 100%;        
+    justify-content: space-between; 
+    margin-left: 0;       
+    margin-top: 1rem;
+  }
+
+}
