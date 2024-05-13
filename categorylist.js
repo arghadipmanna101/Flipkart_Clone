@@ -2,6 +2,7 @@ const categoriesData = [
     {
         "id": "grocery",
         "name": "Grocery",
+        "image": "grocery.png",
         "subcategories": [
             {
                 "id": "fruits-vegetables",
@@ -31,8 +32,36 @@ const categoriesData = [
         ]
     },
     {
+        "id": "mobiles",
+        "name": "Mobiles",
+        "image": "mobile.png",
+    },
+    {
+        "id": "fashion",
+        "name": "fashion",
+        "image":"fashion.png",
+        "subcategories": [
+            {
+                "id": "mens-fashion",
+                "name": "Men's fashion",
+                "subcategories": ["Shirts", "Pants", "Jackets"]
+            },
+            {
+                "id": "womens-fashion",
+                "name": "Women's fashion",
+                "subcategories": ["Dresses", "Skirts", "Tops"]
+            },
+            {
+                "id": "kids-fashion",
+                "name": "Kids' fashion",
+                "subcategories": ["T-shirts", "Jeans", "Dresses"]
+            }
+        ]
+    },
+    {
         "id": "electronics",
         "name": "Electronics",
+        "image": "electronics.png",
         "subcategories": [
             {
                 "id": "mobile-phones",
@@ -52,29 +81,9 @@ const categoriesData = [
         ]
     },
     {
-        "id": "clothing",
-        "name": "Clothing",
-        "subcategories": [
-            {
-                "id": "mens-clothing",
-                "name": "Men's Clothing",
-                "subcategories": ["Shirts", "Pants", "Jackets"]
-            },
-            {
-                "id": "womens-clothing",
-                "name": "Women's Clothing",
-                "subcategories": ["Dresses", "Skirts", "Tops"]
-            },
-            {
-                "id": "kids-clothing",
-                "name": "Kids' Clothing",
-                "subcategories": ["T-shirts", "Jeans", "Dresses"]
-            }
-        ]
-    },
-    {
         "id": "home-furniture",
         "name": "Home & Furniture",
+        "image":"home&furniture.png",
         "subcategories": [
             {
                 "id": "Kitchen-appliances",
@@ -100,29 +109,14 @@ const categoriesData = [
         ]
     },
     {
-        "id": "beauty",
-        "name": "Beauty",
-        "subcategories": [
-            {
-                "id": "face",
-                "name": "Face",
-                "subcategories": ["Foundation", "Concealer", "Powder"]
-            },
-            {
-                "id": "eyes",
-                "name": "Eyes",
-                "subcategories": ["Eyeshadow", "Mascara", "Eyeliner"]
-            },
-            {
-                "id": "lips",
-                "name": "Lips",
-                "subcategories": ["Lipstick", "Lip Gloss", "Lip Liner"]
-            }
-        ]
+        "id": "appliances",
+        "name": "Appliances",
+        "image":"appliances.png",
     },
     {
         "id": "travel",
         "name": "Travel",
+        "image":"travel.png",
         "subcategories": [
             {
                 "id": "luggage",
@@ -142,8 +136,32 @@ const categoriesData = [
         ]
     },
     {
-        "id": "sports-stationary",
-        "name": "Sports & Stationary",
+        "id": "beauty",
+        "name": "Beauty, Toys&more",
+        "image":"beauty&toys.png",
+        "subcategories": [
+            {
+                "id": "face",
+                "name": "Face",
+                "subcategories": ["Foundation", "Concealer", "Powder"]
+            },
+            {
+                "id": "eyes",
+                "name": "Eyes",
+                "subcategories": ["Eyeshadow", "Mascara", "Eyeliner"]
+            },
+            {
+                "id": "lips",
+                "name": "Lips",
+                "subcategories": ["Lipstick", "Lip Gloss", "Lip Liner"]
+            }
+        ]
+    },
+  
+    {
+        "id": "two-wheelers",
+        "name": "Two Wheelers",
+        "image":"two-wheeler.png",
         "subcategories": [
             {
                 "id": "fitness-equipment",
@@ -151,8 +169,8 @@ const categoriesData = [
                 "subcategories": ["Dumbbells", "Resistance Bands", "Yoga Mats"]
             },
             {
-                "id": "sports-clothing",
-                "name": "Clothing",
+                "id": "sports-fashion",
+                "name": "fashion",
                 "subcategories": ["Athletic Wear", "Running Shoes", "Sports Bras"]
             },
             {
@@ -180,8 +198,8 @@ $(document).ready(function () {
     const categoriesList = $("#categories");
 
     function createCategoryItem(categoryData) {
-        const categoryItem = $("<li>").text(categoryData.name);
-
+        let categoryItem = $("<li>").append(`<p class="category">${categoryData.name}<p>`);
+        categoryItem.append(`<img class='catecoryImg' src='images/categories/${categoryData.image}' alt='img' />`);
         const subcategoriesList = $("<ul>");
 
         if (!categoryData.subcategories) {

@@ -30,10 +30,13 @@ body {
     min-width:1000px;
     box-shadow: 0 0 10px rgb(206, 206, 206);
 }
-.categories > li {
+.categories > li {    align-items: center;
+
     display: inline-block;
     padding: 20px 15px;
     cursor: pointer;
+    display: flex;
+    flex-direction: column-reverse;
 }
 .categories > li > ul {
     display: none;
@@ -72,4 +75,15 @@ body {
 }
 .categories > li:hover > ul  li li:hover {
     color: blue;
+}
+
+.categories li img{
+    height: 64px;
+    width: 64px;
+    object-fit: contain;
+}
+
+.categories li p{
+    font-size: 14px;
+    font-weight: 600;
 }
