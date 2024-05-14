@@ -24,7 +24,10 @@ body {
     justify-content: space-between;
     background-color: rgb(255, 253, 253);
     position: relative;
-    padding: 0;
+    top:1.2rem;
+    height: 5.5rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
     padding: 0 4%;
     width: 100%;
     min-width:1000px;
