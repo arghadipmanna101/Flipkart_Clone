@@ -298,18 +298,31 @@ footer {
     flex-direction: column;
     height: 996;
     width: 300;
-    padding: 4px;
-    margin: 8px;
+    background-color: white;
+    /* padding: 4px; */
+    /* margin: 8px; */
+    /* margin-top: 50px; */
+
   }
   #box {
     display: flex;
-    gap: 55px;
-    margin: 20px;
+    gap: 20px;
+    /* margin: 20px; */
+    flex-wrap: wrap;
   }
   #box img{
-      height: 143;
-      width: 143;
+      height: 240px;
+      width: 170px;
+      transition: transform .2s;
+
   }
+  #box img:hover{
+    transform: scale(1.1);   }
+
+    .para{
+        margin-top: 70px;
+    }
+
   .box-1,
   .box-2,
   .box-3,
@@ -319,13 +332,16 @@ footer {
   .box-7 ,.box-8{
     display: flex;
     flex-direction: column;
-    height: 168;
-    width: 220;
+    height: 320px;
+    width: 250px;
     margin: 26px 0px;
     padding: 8px;
     border-radius: 4px;
-    border: 1px solid black;
+    border: 1px solid rgba(174, 171, 171, 0.507);
     gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
   }
   
   /* new phone section ended */
