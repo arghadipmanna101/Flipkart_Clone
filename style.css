@@ -22,8 +22,8 @@ footer {
 }
 
 .nav-item:hover {
-  background-color: grey;
-  text-decoration: underline;
+  /* background-color: grey; */
+  /* text-decoration: underline; */
   opacity:1;
 }
 
