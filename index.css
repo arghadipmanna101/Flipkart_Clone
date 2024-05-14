@@ -94,7 +94,6 @@ body {
     background-color: #f5f5f5;
 }
 
-
 footer {
     background-color: rgb(28, 27, 27);
     padding: 15px 35px;
@@ -150,6 +149,7 @@ footer {
     display: flex;
     gap: 200px;
 }
+
 .payment-icons img {
     height: 15px;
 }
