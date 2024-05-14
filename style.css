@@ -16,52 +16,15 @@ footer {
   width: 100%;
 }
 
-/* Add a smooth transition effect */
-.nav-item {
-  transition: background-color 0.5s ease; 
-}
-
-.nav-item:hover {
-  background-color: grey;
-  text-decoration: underline;
-  opacity:1;
+.nav-link:hover {
+  background-color: #80aaed35;
+  border-radius: 15px;
 }
 
 /* Style for the link */
-
 .nav-item:hover {
-  background-color: rgb(182, 181, 181);
-  text-decoration: none;
-  opacity: 0.85;
-  transition: all 0.2s ease-in;
-  transform:scale(1.1);
-  z-index: 1;
-}
-
-/* Style for the link */
-
-.nav-link {
-  text-decoration:none;
-  color: #000;
-  display: block;
-  padding: 20px;
-}
-
-.nav-link::after {
-  content:'';
-  opacity: 0;
-  transition: all 0.3s ease;
- 
-  height: 2px;
-  width: 100%;
-  background-color:color-mix(in srgb,rgb(54, 51, 51),grey);
-  position: absolute;
-  bottom: 0;
-  left:0;
-}
-
-.nav-link:hover::after{
-  opacity:1;
+  background-color: #e7eefb;
+  border-radius: 20px;
 }
 
 .itemSection {
@@ -115,7 +78,7 @@ footer {
 .viewAllButton {
   background: #2874f0;
   color: #fff;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   border: none;
   height: 38px;
   width: 96px;
