@@ -71,14 +71,4 @@ arr.map((element)=>{
 
 })
 
-// Added new js
-document.addEventListener("DOMContentLoaded", function() {
-  const profileBtn = document.getElementById("profile-btn");
 
-  if (profileBtn) {
-      profileBtn.addEventListener("click", function() {
-          // Redirect the user to the profile page when the profile button clicked
-          window.location.href = "profile.html";
-      });
-  }
-});
