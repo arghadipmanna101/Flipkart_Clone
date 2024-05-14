@@ -14,37 +14,48 @@
       
     }
 
+    .navtab:hover {
+      transform: scale(1.03);
+      transition: all 0.3s ease;
+    }
+
+    .navbar-nav{
+      padding-left: 20px;
+    }
+
     /* Adjusting the width of the search input */
     #input_data {
       width: 400px; /* Adjust the width as needed */
     }
   
     .nav-item {
-      transition: background-color 0.5s ease; 
+      transition: background-color 0.05s ease; 
+      padding: 0px 23px;
     }
 
     .nav-item:hover {
-      background-color: grey;
+      background-color: rgb(173, 173, 173);
       text-decoration: underline;
-      opacity:1;
+      opacity:0.75;
     }
     .nav-item:hover {
       background-color: rgb(182, 181, 181);
       text-decoration: none;
       opacity: 0.85;
-      transition: all 0.2s ease-in;
-      transform:scale(1.1);
+      transition: all 0.3s ease-in;
+      transform:scale(1.05);
       z-index: 1;
     }
   
     .nav-link {
-    text-decoration:none;
-    color: #000;
-    display: block;
-    padding: 20px;
+      font-size: 16px;
+      text-decoration:none;
+      color: #000;
+      display: block;
+      padding: 20px;
     }
 
-    .nav-link::after {
+    .nav-item::after {
     content:'';
     opacity: 0;
     transition: all 0.3s ease;
@@ -58,6 +69,10 @@
 
     .nav-link:hover::after{
     opacity:1;
+    }
+
+    .dropdown {
+      margin-left: 40px;
     }
   </style>
 </head>
@@ -85,7 +100,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
+        <li>
           <div class="navtab" id="searchbar">
             <span>
               <svg
@@ -169,7 +184,7 @@
             Cart
           </a>
         </li>
-        <li class="nav-item dropdown">
+        <li class="dropdown">
           <a
             class="nav-link"
             href="#"
