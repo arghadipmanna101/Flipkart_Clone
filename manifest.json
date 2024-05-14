@@ -1,0 +1,22 @@
+{
+    "background_color": "#ffffff",
+    "dir": "ltr",
+    "display": "standalone",
+    "name": "Flipkart Clone",
+    "orientation": "any",
+    "scope": "/",
+    "short_name": "Flipkart Clone",
+    "start_url": "/",
+    "theme_color": "#ffffff",
+    "icons": [
+      {
+        "src": "flipkart_icon.png",
+        "type": "image/png",
+        "sizes": "384x384"
+      },
+      {
+        "src": "flipkart_icon.ico",
+        "type": "image/x-icon"
+      }
+    ]
+}
