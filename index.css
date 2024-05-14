@@ -12,9 +12,10 @@ body {
 
 /* Navbar styles */
 #searchbar {
-    padding: 6px;
+    padding: 4px;
     border-radius: 15px;
     background-color: #e7eefb;
+    margin-left: 15px;
 }
 
 #input_data {
@@ -42,9 +43,7 @@ body {
 .navbar-nav {
     display: flex;
     justify-content: space-between;
-   
-  
-}
+
 
 .navtab {
     display: flex;
@@ -161,7 +160,6 @@ img:hover{
     background-color: #f5f5f5;
 }
 
-
 footer {
     background-color: rgb(28, 27, 27);
     padding: 15px 35px;
@@ -208,11 +206,16 @@ footer {
     font-size: 12px;
     justify-content: space-between;
     font-weight: 600;
+    flex-wrap: wrap;
+}
+.foot-down > div{
+    flex: 1 1 300px;
 }
 .foot-down ul {
     display: flex;
     gap: 200px;
 }
+
 .payment-icons img {
     height: 15px;
 }
