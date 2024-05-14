@@ -22,7 +22,7 @@ footer {
 }
 
 .nav-item:hover {
-  background-color: grey;
+  /* background-color: grey; */
   text-decoration: underline;
   opacity:1;
 }
@@ -30,7 +30,7 @@ footer {
 /* Style for the link */
 
 .nav-item:hover {
-  background-color: rgb(182, 181, 181);
+  /* background-color: rgb(182, 181, 181); */
   text-decoration: none;
   opacity: 0.85;
   transition: all 0.2s ease-in;
