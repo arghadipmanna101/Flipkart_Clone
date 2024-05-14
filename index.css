@@ -10,9 +10,10 @@ body {
 
 /* Navbar styles */
 #searchbar {
-    padding: 6px;
+    padding: 4px;
     border-radius: 15px;
     background-color: #e7eefb;
+    margin-left: 15px;
 }
 
 #input_data {
@@ -34,6 +35,8 @@ body {
 .navbar-nav {
     display: flex;
     justify-content: space-between;
+    margin-right: 50px;
+    gap: 30px;
 }
 
 .navtab {
