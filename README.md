@@ -77,6 +77,35 @@
 
 10. **Create a Pull Request:** Go to the GitHub repository, select your branch, and click on the "New pull request" button to create a new pull request.
 
+
+ <!-- screenshots -->
+  <div>
+    <h2>Screenshot <img src ="Screenshot 1.png"> <img src="Screenshot (425).png"></h2>
+  </div>
+
+
+
+<!-- Screenshots -->
+  <div>
+    <h2><img src = "https://github.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/blob/master/Emojis/Objects/Camera.png?raw=true" width="35" height ="35"> Snapshots</h2>
+  </div>
+
+  These are some of the Snapshots of the project.
+  
+  ![ss1](https://github.com/d1vyadharsh1n1/Flipkart_Clone/assets/146218077/435d0824-33a0-4855-8488-4721e869e0d6)
+  ![ss2](https://github.com/d1vyadharsh1n1/Flipkart_Clone/assets/146218077/c8bd1868-1bfa-4d17-b59b-0f3e57c98303)
+  ![ss3](https://github.com/d1vyadharsh1n1/Flipkart_Clone/assets/146218077/0953a81a-9a2d-46ed-950a-559e672878c1)
+  ![ss4](https://github.com/d1vyadharsh1n1/Flipkart_Clone/assets/146218077/440ae33d-0dcf-4e31-bff4-1af29187ebf2)
+
+<!-- Open Source Programs -->
+  <div>
+    <h2><img src="https://github.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/blob/master/Emojis/Hand%20gestures/Flexed%20Biceps.png?raw=true" width="35" height="35" >Open Source Programs</h2>
+  </div>
+
+  This project is a part of GirlScript Summer of code. We welcome contibutions from the community to help improve the project Flipkart_Clone.
+  
+![gssoc](https://github.com/d1vyadharsh1n1/Flipkart_Clone/assets/146218077/dd4ffa29-2d52-47ad-9967-d0d6f8aff717)
+
 <!-- Code of conduct -->
 <div>
 <h2><img src = "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Handshake.png" width="35" height="35"> Code of Conduct</h2>
@@ -93,7 +122,8 @@ Please note that this project is released with a [Contributor Code of Conduct](.
 
 This project is licensed under the [MIT License](./LICENSE).
 
-<!-- Cotributors -->
+
+  <!-- Cotributors -->
 <div>
   <h2><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Red%20Heart.png" width="35" height="35"> Contributors</h2>
 </div>
