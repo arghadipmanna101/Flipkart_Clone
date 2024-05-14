@@ -16,16 +16,11 @@ footer {
   width: 100%;
 }
 
-/* Add a smooth transition effect */
-.nav-item {
-  /* transition: background-color 0.5s ease;  */
+.nav-link:hover{
+  background-color: #80aaed35;
+  border-radius: 15px;
 }
 
-.nav-item:hover {
-  /* background-color: grey; */
-  /* text-decoration: underline; */
-  /* opacity:1; */
-}
 
 /* Style for the link */
 
