@@ -1,0 +1,58 @@
+REQUIREMENTS:
+
+# Python Dependencies
+Flask==2.0.1               # Web framework for backend development
+requests==2.26.0           # HTTP library for making requests
+
+
+
+# Frontend Dependencies
+Bootstrap==5.3.0           # Frontend framework for responsive design
+jQuery==3.6.0              # JavaScript library for DOM manipulation
+React==17.0.2               # JavaScript library for building user interfaces
+
+
+
+
+Based on the provided information, the Flipkart_Clone project utilizes HTML, CSS, and JavaScript for frontend development. Here's a breakdown of the project's files and their roles:
+
+### HTML Files:
+1. **FPZ.html**: New page added.
+2. **Navabar.html**: Updated navbar.
+3. **carousel.html**: New changes related to carousel.
+4. **categorylist.html**: Added category-list and corrected navbar.
+5. **content-page.html**: Added a media query to make it responsive, added anchor tag.
+6. **index.html**: Updated footer.
+
+### CSS Files:
+1. **categorylist.css**: New changes related to category list.
+2. **index.css**: Hovering effect on navbar.
+3. **signup.css**: New CSS file for signup page.
+4. **style.css**: CSS styles for general styling.
+
+### JavaScript Files:
+1. **categorylist.js**: Added category-list functionality and corrected navbar.
+2. **index.js**: Added category-list functionality and corrected navbar.
+3. **topdeals.js**: Added top deals section.
+
+### Other Files:
+1. **data.js**: Contains data.
+2. **flipkart_icon.ico**: Favicon for the main page.
+3. **flipkart_icon.png**: Flipkart icon added, title name adjusted.
+4. **grid-1.webp, grid-2.jpg, grid-3.jpg**: New assets.
+5. **mastercard.jpeg, phone-1.png, phone-2.webp, phone-3.webp, phone-4.webp, phone-5.webp, phone-6.webp, visa.jpeg**: New assets.
+6. **Screenshot (425).png, Screenshot 1.png**: New assets.
+7. **manifest.json, sw.js**: Added Progressive Web App (PWA) support.
+
+### Configuration and Miscellaneous Files:
+1. **.gitignore**: Ignored files for Git version control.
+2. **CODE_OF_CONDUCT.md**: Contributor Code of Conduct.
+3. **LICENSE**: Project license (MIT License).
+4. **README.md**: Project README.
+5. **package-lock.json, package.json**: Package management for Node.js dependencies.
+6. **.preloader.html, signin.html, signup.html**: New HTML files.
+7. **.vscode**: Visual Studio Code settings.
+8. **content-img, images**: Image assets.
+9. **.github/ISSUE_TEMPLATE**: Issue templates for GitHub issues.
+
+This breakdown provides an overview of the project structure and the files involved. If you need specific information about dependencies and their versions, you may have to inspect the project's source code or documentation further.
