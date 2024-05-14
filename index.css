@@ -98,8 +98,10 @@ body {
 }
 
 footer {
-    background-color: rgb(28, 27, 27);
+    background-color: rgb(35, 35, 35);
     padding: 15px 35px;
+    display: flex;
+    justify-content: space-between;
 }
 .foot-top {
     display: flex;
@@ -137,11 +139,12 @@ footer {
     padding-left: 30px;
 }
 .foot-down {
-    padding: 10px 40px;
+    width: 100%;
+    padding: 2px 40px;
     display: flex;
     margin-top: 20px;
     font-size: 12px;
-    justify-content: space-between;
+    justify-content: space-around;
     font-weight: 600;
     flex-wrap: wrap;
 }
@@ -149,12 +152,28 @@ footer {
     flex: 1 1 300px;
 }
 .foot-down ul {
+    margin-top: 1rem;
     display: flex;
-    gap: 200px;
+    gap: 80px;
 }
 
 .payment-icons img {
-    height: 15px;
+    margin-top: 1rem;
+    width: 24px;
+    height: 16px;
+}
+.scroll-bottom-up {
+    margin-left: 2rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+.scroll-bottom-up i {
+    color: white;
+}
+.scroll-bottom-up i:hover {
+    color: #f5f5f5;
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in;
 }
 /* Tablets and below */
 @media (max-width: 768px) {
@@ -183,6 +202,10 @@ footer {
         gap: 10px;
     }
     .payment-icons {
+        display: flex;
+        justify-content :flex-end;
+    }
+    .scroll-bottom-up{
         display: flex;
         justify-content: center;
     }
