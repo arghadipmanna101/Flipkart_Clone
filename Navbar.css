@@ -14,20 +14,32 @@
   display: block;
   padding: 20px;
 }
+.navbar{
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
 .navtab{
   margin-left: 10px;
   padding-left: 10px;
   background-color: #e6eeff;
   border-radius: 10px;
+  left:90vw;
 }
+@media (min-width:320px) and (max-width:641px){
+  .navtab{
+    width:70%;
+    left:90vw
 
+  }
+}
 .navbar-nav{
   margin-right: auto;
 }
 
 #input_data{
-  width: 500px;
+  /* width: 500px; */
   border: none;
   background-color: transparent;
   padding: 5px;
