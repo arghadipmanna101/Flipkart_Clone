@@ -13,6 +13,11 @@ body {
     padding: 6px;
     border-radius: 15px;
     background-color: #e7eefb;
+    font-size: 17px;
+    height: 40px;
+    width: 100%;
+    box-shadow: none;
+    resize: none;
 }
 
 #input_data {
