@@ -1,10 +1,77 @@
-<footer>
-    <div class="footer-container">
-        <ul class="footer-icons">
-            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            <!-- Add more icons as needed -->
-        </ul>
-    </div>
-</footer>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Icon Alignment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        footer {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer-icons {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-icons li {
+            margin: 0 10px;
+        }
+
+        .footer-icons a {
+            color: #fff;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            .footer-icons {
+                flex-direction: column;
+            }
+
+            .footer-icons li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <main>
+        <!-- Main content of the page -->
+    </main>
+    <footer>
+        <div class="footer-container">
+            <ul class="footer-icons">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <!-- Add more icons as needed -->
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
