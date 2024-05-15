@@ -9,72 +9,85 @@
 </head>
 <body>
     <!-- navbar -->
-  <div id="navbar-container"></div>
+    <div id="navbar-container"></div>
 
-  <!-- preloader -->
-  <div id="loader"></div>
+    <!-- preloader -->
+    <div id="loader"></div>
 
-  <!-- category list -->
-  <div id="category-list"></div>
-  <br>
-  <br>
-  <br>
-  <div class="containers">
-    <div id="filtersBox">
-        <div class="filtersTitle">
-            <span>Filters</span>
+    <!-- category list -->
+    <div id="category-list"></div>
+
+    <div class="containers">
+        <div id="filtersBox">
+            <div class="filtersTitle">
+                <span>Filters</span>
+            </div>
+            <div class="orderStatus">
+                <div id="info">ORDER STATUS</div>
+                <div class="opt">
+                    <input type="checkbox"><span>On the Way</span>
+                </div>
+                <div class="opt">
+                    <input type="checkbox"><span>Delivered</span>
+                </div>
+                <div class="opt">
+                    <input type="checkbox"><span>Cancelled</span>
+                </div>
+                <div class="opt">
+                    <input type="checkbox"><span>Returned</span>
+                </div>
+            </div>
+            <div class="orderTime">
+                <div id="info">ORDER TIME</div>
+                <div class="opt">
+                    <input type="checkbox"><span>Last 30 days</span>
+                </div>
+                <div class="opt">
+                    <input type="checkbox"><span>2023</span>
+                </div>
+                <div class="opt">
+                    <input type="checkbox"><span>2022</span>
+                </div>
+                <div class="opt">
+                    <input type="checkbox"><span>2021</span>
+                </div>
+                <div class="opt">
+                    <input type="checkbox"><span>2020</span>
+                </div>
+                <div class="opt">
+                    <input type="checkbox"><span>Older</span>
+                </div>
+            </div>
         </div>
-        <div class="orderStatus">
-            <div id="info">ORDER STATUS</div>
-            <div id="opt">
-                <input type="checkbox"><span>On the Way</span>
+        <div class="column orders">
+            <div class="search">
+                <div class="search-bar">
+                    <input type="text" class="search-input" placeholder="Search your orders here">
+                </div>
+                <button class="search-button">
+                    <div class="search-icon">
+                        <svg width="16" height="16" viewBox="0 0 17 18" class="icon" xmlns="http://www.w3.org/2000/svg"><g fill="#fff" fill-rule="evenodd"><path class="" d="m11.618 9.897l4.225 4.212c.092.092.101.232.02.313l-1.465 1.46c-.081.081-.221.072-.314-.02l-4.216-4.203"></path><path class="" d="m6.486 10.901c-2.42 0-4.381-1.956-4.381-4.368 0-2.413 1.961-4.369 4.381-4.369 2.42 0 4.381 1.956 4.381 4.369 0 2.413-1.961 4.368-4.381 4.368m0-10.835c-3.582 0-6.486 2.895-6.486 6.467 0 3.572 2.904 6.467 6.486 6.467 3.582 0 6.486-2.895 6.486-6.467 0-3.572-2.904-6.467-6.486-6.467"></path></g></svg>
+                        <span>Search Orders</span>
+                    </div>
+                </button>
             </div>
-            <div id="opt">
-                <input type="checkbox"><span>Delivered</span>
-            </div>
-            <div id="opt">
-                <input type="checkbox"><span>Cancelled</span>
-            </div>
-            <div id="opt">
-                <input type="checkbox"><span>Returned</span>
-            </div>
-        </div>
-        <div class="orderTime">
-            <div id="info">ORDER TIME</div>
-            <div id="opt">
-                <input type="checkbox"><span>Last 30 days</span>
-            </div>
-            <div id="opt">
-                <input type="checkbox"><span>2023</span>
-            </div>
-            <div id="opt">
-                <input type="checkbox"><span>2022</span>
-            </div>
-            <div id="opt">
-                <input type="checkbox"><span>2021</span>
-            </div>
-            <div id="opt">
-                <input type="checkbox"><span>2020</span>
-            </div>
-            <div id="opt">
-                <input type="checkbox"><span>Older</span>
-            </div>
+        </div>    
     </div>
-  </div>
-    
+
+    <script>
+        $(function () {
+            $("#loader").load("./preloader.html");
+            $("#category-list").load("./categorylist.html");
+            $("#top-deals").load("./topdeals.html");
+        });
+
+        fetch('./Navabar.html')
+            .then(response => response.text())
+            .then(data => {
+                // Insert the retrieved HTML content into the navbar-container
+                document.getElementById('navbar-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error fetching navbar:', error));
+    </script>
 </body>
-<script>
-    $(function () {
-     $("#loader").load("./preloader.html");
-     $("#category-list").load("./categorylist.html");
-     $("#top-deals").load("./topdeals.html");
-    });
-   fetch('./Navabar.html')
-     .then(response => response.text())
-     .then(data => {
-       // Insert the retrieved HTML content into the navbar-container
-       document.getElementById('navbar-container').innerHTML = data;
-     })
-     .catch(error => console.error('Error fetching navbar:', error));
- </script>
 </html>
