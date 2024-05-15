@@ -4,15 +4,8 @@
   /* Adjust the width as needed */
 }
 
-.nav-item {
-  transition: background-color 0.5s ease;
-}
-
 .nav-link {
-  text-decoration: none;
-  color: #000;
-  display: block;
-  padding: 20px;
+  white-space: nowrap;
 }
 
 .navtab{
@@ -43,4 +36,7 @@
   transform: none;
   background-color: transparent;
 }
-
+.collapse{
+  display: flex;
+  flex-direction: row;
+}
