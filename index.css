@@ -116,7 +116,8 @@ body {
 } */
 
 footer {
-    background-color: rgb(28, 27, 27);
+    background-color: white;
+    color: #000;
     padding: 15px 35px;
 }
 .foot-top {
@@ -142,7 +143,7 @@ footer {
 }
 .foot-left .about li a, .social ul li a, .foot-down ul li a {
     font-size: 12px;
-    color: white;
+    color: black;
     font-weight: 600;
     text-decoration: none;
 }
