@@ -30,9 +30,11 @@ body {
     justify-content: space-between;
     background-color: rgb(255, 253, 253);
     position: relative;
+
     padding:0 1rem;
     width: 100%;    
     min-width: 1000px;
+
     box-shadow: 0 0 10px rgb(87, 110, 172);
 }
 .categories > li {
@@ -43,7 +45,7 @@ body {
 .categories > li > ul {
     display: none;
     position: fixed;
-    background-color: rgb(236, 236, 255)!important;
+    background-color:rgb(201, 224, 252)!important;
     padding: 15px;
     gap: 10px 5px;
     flex-wrap: wrap;
@@ -78,7 +80,9 @@ body {
     flex-direction: column;
     width: 100%;
     list-style-type: none;
-    margin: 15px 10px;
+
+    margin: 15px 0;
+
     color: rgb(88, 116, 194);
 }
 .categories > li:hover > ul  li li:hover {
