@@ -9,11 +9,17 @@ body {
 }
 .categorylist-wrapper {
     width: 100%;
-    overflow-x: scroll;
+    
+    
     position: absolute;
-    top: 8vh;
-    right: 0;
+    top: 9vh;
+    left: 0;
     z-index: 500;
+}
+.categorylist-wrapper ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .categorylist-wrapper::-webkit-scrollbar {
     display: none;
@@ -24,15 +30,13 @@ body {
     justify-content: space-between;
     background-color: rgb(255, 253, 253);
     position: relative;
-    padding: 0;
-    padding: 0 4%;
-    width: 100%;
-    min-width:1000px;
+    padding:0 1rem;
+    width: 100%;    
     box-shadow: 0 0 10px rgb(206, 206, 206);
 }
 .categories > li {
     display: inline-block;
-    padding: 20px 15px;
+    padding: 1rem 1rem;
     cursor: pointer;
 }
 .categories > li > ul {
@@ -40,13 +44,12 @@ body {
     position: fixed;
     background-color: rgb(236, 236, 255);
     padding: 15px;
-    gap: 15px 5px;
+    gap: 10px 5px;
     flex-wrap: wrap;
-    width: 100vw;
+    width: 100%;
     height: max-content;
-    max-height: 100dvh;
+    max-height: 100vh;
     padding: 0 10%;
-    top: 16vh;
     left: 0;
     font-size: 14px;
     overflow: hidden;

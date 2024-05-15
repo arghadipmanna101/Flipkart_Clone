@@ -36,7 +36,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin-right: 50px;
-    gap: 30px;
+    gap: 50px;
 }
 
 .navtab {
@@ -156,10 +156,11 @@ footer {
 .payment-icons img {
     height: 15px;
 }
-/* Tablets and below */
+/* Tablets and below */ 
 @media (max-width: 768px) {
+    
     footer {
-        padding: 15px;
+        padding: 2rem;
     }
     .foot-top {
         flex-direction: column;
@@ -294,22 +295,24 @@ footer {
 } */
 
 #phones {
+    width: 99vw;
+    padding: 1rem;
     display: flex;
-    flex-direction: column;
-    height: 996;
-    width: 300;
-    padding: 4px;
-    margin: 8px;
+    flex-direction: column;     
+  }
+  .best{    
+    padding-left: 2rem;
   }
   #box {
     display: flex;
-    gap: 55px;
-    margin: 20px;
+    flex-wrap: wrap;
+    width: 98vw;
+    height: fit-content;
+    justify-content: space-evenly;
+    padding:1rem;
+    gap: 1rem;
   }
-  #box img{
-      height: 143;
-      width: 143;
-  }
+  
   .box-1,
   .box-2,
   .box-3,
@@ -317,15 +320,22 @@ footer {
   .box-5,
   .box-6,
   .box-7 ,.box-8{
+    flex: 1 1 1;
     display: flex;
-    flex-direction: column;
-    height: 168;
-    width: 220;
-    margin: 26px 0px;
+    flex-direction: column;    
+    margin: 10px;
     padding: 8px;
     border-radius: 4px;
     border: 1px solid black;
-    gap: 10px;
+   
+  }
+  #offers{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 1rem; 
+    margin:1rem;
+    justify-content: space-around;
   }
   
   /* new phone section ended */
@@ -335,7 +345,7 @@ footer {
     height: 175;
     padding: 20px;
     margin: 15px;
-    gap: 49px;
+    gap: 1rem;
     
 }
 

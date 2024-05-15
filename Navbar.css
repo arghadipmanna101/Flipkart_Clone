@@ -23,7 +23,13 @@
 }
 
 .navbar-nav{
-  margin-right: auto;
+  margin-right: 1rem;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  
 }
 
 #input_data{
@@ -42,5 +48,12 @@
   border: none;
   transform: none;
   background-color: transparent;
+}
+@media (max-width:1200px) {
+  .navbar-nav{
+    gap:0;
+    
+  }
+  
 }
 
