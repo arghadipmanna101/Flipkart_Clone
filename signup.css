@@ -1,6 +1,11 @@
 *{
     padding: 0%;
     margin: 0%;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
 }
 
 #outerbox{
@@ -8,81 +13,96 @@
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+    height: 100%;
 }
 
 #innerbox{
     display: flex;
     background-color: white;
-    width: 45%;
-    height: 500px;
+    width: 90%;
+    max-width: 800px;
+    height: auto;
+    margin: 20px;
 }
-
 
 .leftinnerbox{
     background-color: #2874F0;
     color: white;
     font-family: sans-serif;
-    width: 45%;
+    width: 50%;
+    padding: 20px;
 }
 
 .rightinnerbox{
     font-family: sans-serif;
-    width: 55%;
+    width: 50%;
+    padding: 20px;
 }
 
-.para1{
-    margin-top: 35px;font-weight: bold;font-size: 25px;padding-top:40px;width:75%;margin: auto;
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
 }
 
-.para2{
-    margin-top: 20px;font-size: 18px;padding-top: 27px;width: 75%;margin: auto;
+.image-container img {
+    max-width: 100%;
+    height: auto;
 }
 
-.mobile{
-    width: 70%; margin-top: 10px;height: 25px;
-    outline: 0;
-    border-width: 0 0 2px;
-    border-color: gray
+.input-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-.mobile:focus {
-    outline:0;
-    border-width: 0 0 2px;
-    border-color: black
-  }
-
-  .name{
-    width: 70%; margin-top: 10px;height: 25px;
-    outline: 0;
-    border-width: 0 0 2px;
-    border-color: gray
+input[type="text"], input[type="password"] {
+    width: 100%;
+    max-width: 300px;
+    height: 40px;
+    padding: 5px;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
-.name:focus {
-    outline:0;
-    border-width: 0 0 2px;
-    border-color: black
-  }
-
-  
-  .password{
-    width: 70%; margin-top: 10px;height: 25px;
-    outline: 0;
-    border-width: 0 0 2px;
-    border-color: gray
+.terms {
+    margin-top: 20px;
+    text-align: center;
 }
-
-.password:focus {
-    outline:0;
-    border-width: 0 0 2px;
-    border-color: black
-  }
 
 .textm{
-   font-size: 12px;width: 80%;
-    margin: auto;padding-top: 10px;
+    font-size: 12px;
+    width: 80%;
+    margin: auto;
+    padding-top: 10px;
 }
 
-.continue:hover{
+.button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
     cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+.login-button {
+    background-color: #FB641B;
+    color: white;
+    width: 100%;
+    max-width: 300px;
+}
+
+.signup-button {
+    background-color: whitesmoke;
+    color: #2874F0;
+    width: 100%;
+    max-width: 300px;
 }
