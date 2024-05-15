@@ -310,13 +310,7 @@ footer {
       height: 143;
       width: 143;
   }
-  .box-1,
-  .box-2,
-  .box-3,
-  .box-4,
-  .box-5,
-  .box-6,
-  .box-7 ,.box-8{
+  .box-i{
     display: flex;
     flex-direction: column;
     height: 168;
@@ -327,6 +321,11 @@ footer {
     border: 1px solid black;
     gap: 10px;
   }
+
+    .box-i img{
+        object-fit: fill;
+        margin: 1px;
+    }
   
   /* new phone section ended */
 
