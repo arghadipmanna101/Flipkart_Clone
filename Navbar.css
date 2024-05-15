@@ -10,7 +10,7 @@
 
 .nav-link {
   text-decoration: none;
-  color: #000;
+  color: var(--black);
   display: block;
   padding: 20px;
 }
@@ -18,7 +18,7 @@
 .navtab{
   margin-left: 10px;
   padding-left: 10px;
-  background-color: #e6eeff;
+  background-color: var(--white);
   border-radius: 10px;
 }
 
@@ -44,3 +44,12 @@
   background-color: transparent;
 }
 
+
+:root {
+  /**
+   * colors
+   */
+
+  --white: #F1F2F4;
+  --black: #000;
+}  

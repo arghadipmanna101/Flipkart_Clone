@@ -24,19 +24,6 @@
       padding: 0;
       margin: 0;
     }
-
-    html,
-    body {
-      position: relative;
-      height: 100%;
-      background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color: #000;
-      margin: 0;
-      padding: 0;
-    }
-
     .swiper {
       width: 100%;
       height: 100%;
@@ -73,17 +60,6 @@
         *{
             padding: 0;
             margin: 0;
-        }
-        html,
-        body {
-            position: relative;
-            height: 100%;
-            background: white;
-            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-            font-size: 14px;
-            color: #000;
-            margin: 0;
-            padding: 0;
         }
         .swiper {
             width: 100%;
@@ -133,9 +109,6 @@
         .bi-question-circle-fill,.bi-gift-fill,.bi-briefcase-fill
         {
             color: #ffc600;
-        }
-        footer{
-          background: #000000;
         }
 /* Apply the animation to the footer sections */
 .footer-section {
@@ -586,7 +559,6 @@
 }
   </script>
 
-<script type="module" src="https://cdn.jsdelivr.net/npm/@bufferhead/nightowl@0.0.12/dist/nightowl.js"></script>
 
   <script>
   document.getElementById("year").innerHTML = new Date().getFullYear();
@@ -601,6 +573,57 @@
 <a href="#" class="back-to-top">
   <span class="material-icons">arrow_upward</span>
 </a>
+
+<div id="themeToggle">
+  <img src="images/moon.png" id="theme-icon">
+</div>
+
+
+ <!--Dark Mode-->
+
+ <script>
+
+  // Function to toggle dark mode
+  function toggleDarkMode() {
+      const isDarkMode = isDarkModePreferred();
+      setDarkModePreference(!isDarkMode);
+      applyDarkModePreference();
+  }
+
+  // Function to apply dark mode preference
+  function applyDarkModePreference() {
+      const isDarkMode = isDarkModePreferred();
+      if (isDarkMode) {
+          document.body.classList.add('dark-mode');
+          document.getElementById('theme-icon').src = 'images/sun.png';
+      } else {
+          document.body.classList.remove('dark-mode');
+          document.getElementById('theme-icon').src = 'images/moon.png';
+      }
+  }
+
+  // Function to set dark mode preference
+  function setDarkModePreference(isDarkMode) {
+      localStorage.setItem('darkMode', isDarkMode);
+  }
+
+  // Function to check if dark mode preference exists
+  function isDarkModePreferred() {
+      return JSON.parse(localStorage.getItem('darkMode'));
+  }
+
+  // Call the function when the page loads
+  document.addEventListener('DOMContentLoaded', function() {
+      applyDarkModePreference();
+  });
+
+  // Add event listener to toggle dark mode when the image is clicked
+  document.getElementById('theme-icon').addEventListener('click', toggleDarkMode);
+
+ </script>
+
+
+
 
 </body>
 
