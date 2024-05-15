@@ -1,0 +1,43 @@
+.containers{
+    position: absolute;
+    left: 10px;
+    background-color:  #e6eeff;
+    height: fit-content;
+    width: 250px;
+    padding: 20px;
+    margin: 10px;
+}
+
+span{
+    padding-left: 5px;
+}
+
+.filtersTitle{
+    padding: 8px 16px;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.orderStatus{
+    padding: 0 16px;
+    border-top: 1px solid #f8f8f8;
+}
+
+.orderTime{
+    padding: 0 16px;
+    border-top: 1px solid #f8f8f8;
+}
+
+
+#opt{
+    display: flex;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+#info{
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 8px 0;
+}

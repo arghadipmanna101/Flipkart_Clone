@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Orders</title>
+    <link rel="stylesheet" href="orders.css">
+</head>
+<body>
+    <!-- navbar -->
+  <div id="navbar-container"></div>
+
+  <!-- preloader -->
+  <div id="loader"></div>
+
+  <!-- category list -->
+  <div id="category-list"></div>
+  <br>
+  <br>
+  <br>
+  <div class="containers">
+    <div id="filtersBox">
+        <div class="filtersTitle">
+            <span>Filters</span>
+        </div>
+        <div class="orderStatus">
+            <div id="info">ORDER STATUS</div>
+            <div id="opt">
+                <input type="checkbox"><span>On the Way</span>
+            </div>
+            <div id="opt">
+                <input type="checkbox"><span>Delivered</span>
+            </div>
+            <div id="opt">
+                <input type="checkbox"><span>Cancelled</span>
+            </div>
+            <div id="opt">
+                <input type="checkbox"><span>Returned</span>
+            </div>
+        </div>
+        <div class="orderTime">
+            <div id="info">ORDER TIME</div>
+            <div id="opt">
+                <input type="checkbox"><span>Last 30 days</span>
+            </div>
+            <div id="opt">
+                <input type="checkbox"><span>2023</span>
+            </div>
+            <div id="opt">
+                <input type="checkbox"><span>2022</span>
+            </div>
+            <div id="opt">
+                <input type="checkbox"><span>2021</span>
+            </div>
+            <div id="opt">
+                <input type="checkbox"><span>2020</span>
+            </div>
+            <div id="opt">
+                <input type="checkbox"><span>Older</span>
+            </div>
+    </div>
+  </div>
+    
+</body>
+<script>
+    $(function () {
+     $("#loader").load("./preloader.html");
+     $("#category-list").load("./categorylist.html");
+     $("#top-deals").load("./topdeals.html");
+    });
+   fetch('./Navabar.html')
+     .then(response => response.text())
+     .then(data => {
+       // Insert the retrieved HTML content into the navbar-container
+       document.getElementById('navbar-container').innerHTML = data;
+     })
+     .catch(error => console.error('Error fetching navbar:', error));
+ </script>
+</html>
