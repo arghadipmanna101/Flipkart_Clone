@@ -305,6 +305,8 @@ footer {
     #box{
         flex-wrap: wrap;
         justify-content: center;
+        overflow-y:auto ;
+        height: 500px;
     }
     .swiper-button-prev{
         display: none !important;
@@ -318,6 +320,7 @@ footer {
     #img-box{
         flex-wrap: wrap;
         justify-content: center;
+       
     }
   }
   
@@ -358,6 +361,9 @@ footer {
     margin: 15px;
     gap: 49px;
     
+}
+.img{
+    margin-bottom: 2%;
 }
 
 
