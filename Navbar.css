@@ -1,4 +1,3 @@
-
 #input_data {
   width: 400px;
   /* Adjust the width as needed */
@@ -45,7 +44,7 @@
   border-bottom: none;
 }
 .nav-item::before:hover{
-  border: none;
+  border: #fff;
   transform: none;
   background-color: transparent;
 }
@@ -55,5 +54,36 @@
     
   }
   
+}
+
+.nav-item-divider::before {
+  content: '';
+  display: inline-block;
+  width: 1px; 
+  height: 30px; 
+  background-color: #ccc; 
+  margin: 0 10px; 
+  transition: all 0.4s;
+}
+
+.nav-item-divider:last-child::before {
+  display: none; 
+}
+
+.nav-item:hover .nav-item-divider::before {
+  background-color: #000; 
+}
+
+.nav-item-divider::after {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 30px; 
+  background-color: #ccc; 
+  margin: 0 10px;
+}
+
+.nav-item-divider:last-child::after {
+  display: none; 
 }
 
