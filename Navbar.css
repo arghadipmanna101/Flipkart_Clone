@@ -49,7 +49,7 @@
   transform: none;
   background-color: transparent;
 }
-@media (max-width:1200px) {
+@media (max-width:1000px) {
   .navbar-nav{
     gap:0;
     

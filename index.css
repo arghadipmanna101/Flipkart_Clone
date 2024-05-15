@@ -156,6 +156,13 @@ footer {
 .payment-icons img {
     height: 15px;
 }
+#phones img {
+    transition: transform 0.3s ease;
+  }
+  
+  #phones img:hover {
+    transform: scale(1.1); /* Increase the scale factor as needed */
+  }
 /* Tablets and below */ 
 @media (max-width: 768px) {
     
@@ -328,6 +335,15 @@ footer {
     border-radius: 4px;
     border: 1px solid black;
    
+  }
+  .box-i{
+    flex: 1 1 1;
+    display: flex;
+    flex-direction: column;    
+    margin: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid black;
   }
   #offers{
     margin-top: 2rem;

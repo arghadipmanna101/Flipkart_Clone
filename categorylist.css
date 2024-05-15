@@ -8,18 +8,17 @@ body {
     background-color: rgb(255, 255, 255);
 }
 .categorylist-wrapper {
-    width: 100%;
-    
-    
+    width: 100%;    
     position: absolute;
     top: 9vh;
     left: 0;
-    z-index: 500;
+    z-index: 500;    
 }
 .categorylist-wrapper ul{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    
 }
 .categorylist-wrapper::-webkit-scrollbar {
     display: none;
@@ -27,52 +26,61 @@ body {
 .categories {
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
     justify-content: space-between;
     background-color: rgb(255, 253, 253);
     position: relative;
     padding:0 1rem;
     width: 100%;    
-    box-shadow: 0 0 10px rgb(206, 206, 206);
+    min-width: 1000px;
+    box-shadow: 0 0 10px rgb(87, 110, 172);
 }
 .categories > li {
     display: inline-block;
-    padding: 1rem 1rem;
+    padding: 20px 15px;
     cursor: pointer;
 }
 .categories > li > ul {
     display: none;
     position: fixed;
-    background-color: rgb(236, 236, 255);
+    background-color: rgb(236, 236, 255)!important;
     padding: 15px;
     gap: 10px 5px;
     flex-wrap: wrap;
     width: 100%;
     height: max-content;
     max-height: 100vh;
-    padding: 0 10%;
     left: 0;
     font-size: 14px;
     overflow: hidden;
     z-index: 500;
 }
 .categories > li:hover > ul {
-    display: flex;
-    justify-content: left;
-    align-items: stretch;
+    display: flex;    
+    justify-content: space-between;
+    align-items: start;
 }
+
 .categories > li:hover {
-    background-color: rgb(236, 236, 255);
+    background-color: #bac8f6;
+    transition: all 0.5s;
+    border-radius: 20px;
 }
 .categories > li:hover > ul > li{
-    margin: 15px 0;
-    flex: 1 1 200px;
-    list-style-type: none;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    
 }
 .categories > li:hover > ul > li li{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     list-style-type: none;
-    margin: 15px 0;
-    color: rgb(113, 113, 113);
+    margin: 15px 10px;
+    color: rgb(88, 116, 194);
 }
 .categories > li:hover > ul  li li:hover {
-    color: blue;
+    color: rgb(112, 112, 166);
 }
