@@ -156,6 +156,14 @@ footer {
 .payment-icons img {
     height: 15px;
 }
+
+#phones img {
+    transition: transform 0.3s ease;
+  }
+  
+  #phones img:hover {
+    transform: scale(1.1); /* Increase the scale factor as needed */
+  }
 /* Tablets and below */
 @media (max-width: 768px) {
     footer {
