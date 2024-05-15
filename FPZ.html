@@ -6,10 +6,131 @@
     <title>Flipkart Plus Zone</title>
     <link rel="stylesheet" href="./index.css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f1f3f6;
+      }
+      .header {
+        background-color: #2874f0;
+        color: white;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .header .logo {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .header .search-bar {
+        flex: 1;
+        margin: 0 20px;
+      }
+      .header .search-bar input {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+      }
+      .header .options {
+        display: flex;
+        gap: 20px;
+      }
+      .banner {
+        background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtZ5ediPrmW2u1hdiQi8hvbeEjVKXu1e0PXCFd-N1m9g&s');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 36px;
+        font-weight: bold;
+      }
+      .container {
+        padding: 20px;
+      }
+      .product-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .product {
+        background-color: white;
+        padding: 20px;
+        border-radius: 4px;
+        width: calc(25% - 20px);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+      .product img {
+        width: 100%;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 15px;
+      }
+      .product .name {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 10px 0;
+      }
+      .product .price {
+        color: #2874f0;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .footer {
+        background-color: #2874f0;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 20px;
+      }
+    </style>
   </head>
   <body>
-
-<p style="font-size: 25px; font-family: serif; color: red;">page is under construction</p>
+    <div class="header">
+      <div class="logo">Flipkart Plus</div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search for products, brands and more" />
+      </div>
+      <div class="options">
+        <div>Login</div>
+        <div>More</div>
+        <div>Cart</div>
+      </div>
+    </div>
+    <div class="banner">
+      Welcome to Flipkart Plus Zone
+    </div>
+    <div class="container">
+      <div class="product-list">
+        <div class="product">
+          <img src="phone-6.webp" alt="Product Image" />
+          <div class="name">Moto G</div>
+          <div class="price">₹9999</div>
+        </div>
+        <div class="product">
+          <img src="phone-2.webp" alt="Product Image" />
+          <div class="name">Poco M6 </div>
+          <div class="price">₹11,999</div>
+        </div>
+        <div class="product">
+          <img src="phone-3.webp" alt="Product Image" />
+          <div class="name">Poco C65</div>
+          <div class="price">₹21,999</div>
+        </div>
+        <div class="product">
+          <img src="phone-5.webp" alt="Product Image" />
+          <div class="name">Moto A14</div>
+          <div class="price">₹19,999</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      &copy; 2024 Flipkart Plus. All rights reserved.
+    </div>
   </body>
 </html>
