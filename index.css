@@ -3,21 +3,22 @@ body {
     background-color: #F1F2F4;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
-    color: #000;
+    /* color: #000; */
+    color: ivory;
     margin: 0;
     padding: 0;
 }
 
 /* Navbar styles */
 #searchbar {
-    padding: 6px;
+    padding: 4px;
     border-radius: 15px;
-    background-color: #e7eefb;
+    background-color: rgba(194, 198, 227, 0.303);
 }
 
 #input_data {
     width: 100%;
-    padding: 6px; 
+    padding: 3px; 
     border: none;
     background-color: transparent;
 }
@@ -30,6 +31,7 @@ body {
 .flex-grow {
     flex-grow: 1;
 }
+
 
 .navbar-nav {
     display: flex;
@@ -44,13 +46,12 @@ body {
 .navbar-brand img {
     width: 160px;
     height: 40px;
+    margin-right: 20px;
 }
 
 .navbar-nav .nav-link img {
     margin-right: 8px;
 }
-
-
 
 
 #category-grid {
@@ -64,6 +65,7 @@ body {
   }
   
   .category {
+    
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -166,6 +168,14 @@ footer{
     padding: auto;
     height: 15px;
 }
+
+
+
+
+
+
+
+
 /* Footer styles
 /* footer {
     background-color: black;

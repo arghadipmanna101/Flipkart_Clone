@@ -10,55 +10,60 @@
   />
   <style>
     .navbar-nav .nav-link:hover {
-      border-bottom: 2px solid #007bff; /* Change the color as desired */
-      
+      border-bottom: 2px solid #007bff1a;
     }
 
     /* Adjusting the width of the search input */
+    
     #input_data {
       width: 400px; /* Adjust the width as needed */
+      display: flex;
+      justify-content: center;
+      margin-right: 200px;
     }
   
     .nav-item {
+      color: #000;
       transition: background-color 0.5s ease; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 8px;
+      /* text-shadow: 0 5px 15px rgba(0, 0, 0, 0.449); */
+      font-size: 16px;
     }
 
     .nav-item:hover {
-      background-color: grey;
-      text-decoration: underline;
-      opacity:1;
-    }
-    .nav-item:hover {
-      background-color: rgb(182, 181, 181);
+      text-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+      font-size: 15px;
       text-decoration: none;
       opacity: 0.85;
       transition: all 0.2s ease-in;
       transform:scale(1.1);
-      z-index: 1;
+      z-index: 99;
     }
   
     .nav-link {
     text-decoration:none;
     color: #000;
     display: block;
-    padding: 20px;
+    padding: 2px;
     }
 
     .nav-link::after {
-    content:'';
-    opacity: 0;
-    transition: all 0.3s ease;
+    content: "";
+    width: 0%;
     height: 2px;
-    width: 100%;
-    background-color:color-mix(in srgb,black,grey);
+    background-color: black;
     position: absolute;
-    bottom: 0;
-    left:0;
+    bottom: -5px;
+    left: 45px;
     }
 
     .nav-link:hover::after{
     opacity:1;
     }
+
   </style>
 </head>
 <body>
@@ -123,34 +128,16 @@
           </div>
         </li>
       </ul>
+      
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link"
-            href="#"
-            id="navbarDropdown"
-            role="button"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            <img
-              src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-815786.svg"
-              alt="Profile"
-            />
-            Profile
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="profile.html">Profile</a>
-            <a class="dropdown-item" href="signup.html">Signup</a>
-            <a class="dropdown-item" href="signin.html">Signin</a>
-            <a class="dropdown-item" href="FPZ.html">Flipkart Plus Zone</a>
-            <a class="dropdown-item" href="order.html">Orders</a>
-            <a class="dropdown-item" href="#">Wishlist</a>
-            <a class="dropdown-item" href="#">Rewards</a>
-            <a class="dropdown-item" href="#">Gift Cards</a>
-          </div>
-        </li>
+        <!-- <li class="nav-item dropdown"> -->
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <img
+                  <img src="home.png" alt="Home" width="20" height="18">
+                  Home
+            </a>
+        
         <li class="nav-item">
           <a class="nav-link" href="#">
             <img
@@ -169,6 +156,34 @@
             Cart
           </a>
         </li>
+        <a
+            class="nav-link"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+          <li class="nav-item dropdown">
+            <img
+              src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-815786.svg"
+              alt="Profile"
+            />
+            Profile
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="profile.html">Profile</a>
+            <a class="dropdown-item" href="signup.html">Signup</a>
+            <a class="dropdown-item" href="signin.html">Signin</a>
+            <a class="dropdown-item" href="FPZ.html">Flipkart Plus Zone</a>
+            <a class="dropdown-item" href="order.html">Orders</a>
+            <a class="dropdown-item" href="#">Wishlist</a>
+            <a class="dropdown-item" href="#">Rewards</a>
+            <a class="dropdown-item" href="#">Gift Cards</a>
+          </div>
+        </li>
+      </li>
         <li class="nav-item dropdown">
           <a
             class="nav-link"
@@ -242,6 +257,9 @@
                     alt="Become a Seller"
                   />
                   Become a Seller
+                </a>
+                <a class="nav-link" href="index.html">
+                  Home
                 </a>
               </li>
               <li class="nav-item">
