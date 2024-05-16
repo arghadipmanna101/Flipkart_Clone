@@ -202,6 +202,8 @@
   
   <section id="phones">
     <div><h3>Best Deals On Smartphones..</h3></div>
+    <div class="Scrollable-div">
+    <button class="prev" onclick="slide(-1)">&#10094;</button>
     <div id="box">
       <div class="box-1">
         <a href=""><img src="phone-6.webp" alt="" width="143" height="146"/></a>
@@ -232,6 +234,8 @@
         poco x6 neo 5g
       </div>
       
+    </div>
+    <button class="next" onclick="slide(1)">&#10095;</button>
     </div>
   </section>
 
@@ -536,6 +540,28 @@
   <!-- </div> -->
   <!-- </section>  -->
   <!-- End Footer Section -->
+  <script>
+
+let currentIndex = 0;
+
+function slide(direction) {
+    const box = document.getElementById('box');
+    const boxWidth = box.clientWidth; // Get the visible width of the box
+    const scrollAmount = boxWidth; // Amount to scroll (width of visible area)
+
+    // Calculate new scroll position
+    let newScrollPosition = box.scrollLeft + (scrollAmount * direction);
+
+    // Ensure new scroll position is within bounds
+    newScrollPosition = Math.max(0, newScrollPosition);
+    newScrollPosition = Math.min(box.scrollWidth - boxWidth, newScrollPosition);
+
+    // Scroll to the new position
+    box.scrollLeft = newScrollPosition;
+}
+
+
+  </script>
 
   <!-- jQuery and Swiper Script -->
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>

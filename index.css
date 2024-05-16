@@ -296,19 +296,46 @@ footer {
 #phones {
     display: flex;
     flex-direction: column;
-    height: 996;
-    width: 300;
+    /* background-color: red; */
+    /* height: 996; */
+    /* width: 300; */
+    width: 100%;
     padding: 4px;
     margin: 8px;
+  }
+  .Scrollable-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  button.prev, button.next{
+    background-color: white;
+    color: blue;
+    border: 2px solid black;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
   }
   #box {
     display: flex;
     gap: 55px;
+    height: 100%;
+     overflow-x: scroll; 
+     scroll-behavior: smooth; 
     margin: 20px;
   }
+  #box::-webkit-scrollbar {
+    display: none; 
+}
+  #box img:hover{
+    transform: scale(1.1);
+  }
   #box img{
-      height: 143;
-      width: 143;
+      height: 90%;
+      margin: 0 auto;
+      transition: transform 0.3s ease; 
   }
   .box-1,
   .box-2,
@@ -319,7 +346,8 @@ footer {
   .box-7 ,.box-8{
     display: flex;
     flex-direction: column;
-    height: 168;
+    width: 900px;
+    /* height: 168; */
     width: 220;
     margin: 26px 0px;
     padding: 8px;
