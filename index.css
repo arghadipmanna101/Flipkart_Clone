@@ -424,6 +424,7 @@ html {
 
 .back-to-top:hover {
 	background-color: rgba(255, 200, 0, 0.7); /* Slightly darker shade of orange with low opacity */
+	border-radius:2px 2px 5px black;
 }
 
 .back-to-top:hover span {
