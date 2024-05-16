@@ -1,0 +1,48 @@
+/* Custom CSS for FAQ section */
+.container {
+    background-color: #ffe24f;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 20px;
+}
+
+.card-body {
+    background-color: #f9f9f9;
+    border-radius: 0 0 10px 10px;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.card-body p {
+    margin-bottom: 0;
+}
+
+.btn-link {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.btn-link:hover {
+    text-decoration: none;
+    color: #007bff;
+}
+
+/* Reduced font weight for answers */
+.card-body {
+    font-weight: 400;
+}
