@@ -72,6 +72,3 @@ arr.map((element)=>{
 })
 
 
-
-
-// let a = document.getElementById("categories");
