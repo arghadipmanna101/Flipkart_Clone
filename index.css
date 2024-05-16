@@ -10,9 +10,10 @@ body {
 
 /* Navbar styles */
 #searchbar {
-    padding: 6px;
+    padding: 4px;
     border-radius: 15px;
     background-color: #e7eefb;
+    margin-left: 15px;
 }
 
 #input_data {
@@ -34,6 +35,8 @@ body {
 .navbar-nav {
     display: flex;
     justify-content: space-between;
+    margin-right: 50px;
+    gap: 30px;
 }
 
 .navtab {
@@ -50,6 +53,24 @@ body {
     margin-right: 8px;
 }
 
+.main{
+    font-size:2.5rem;
+    color:#000;
+    margin: 10px  0;
+    font-weight: 500;
+    
+}
+
+ .heading{
+    font-size:1.5rem;
+    /* color:#000099; */
+    color: #000066;
+   margin-bottom: 0.5rem;
+   font-weight:500;
+ }
+ .details{
+    padding:2rem;
+ }
 
 
 
@@ -76,7 +97,7 @@ body {
     color: #333333; 
   }
 
-  .details .info{
+  /* .details .info{
     line-height: 16px;
     font-size: 12px;
 }
@@ -92,13 +113,13 @@ body {
     padding: 30px;
     color: #878787;
     background-color: #f5f5f5;
-}
-
+} */
 
 footer{
     background-color: #212121;
 footer {
-    background-color: rgb(28, 27, 27);
+    background-color: white;
+    color: #000;
     padding: 15px 35px;
 }
 .foot-top {
@@ -151,7 +172,7 @@ footer {
     color: #9b9898;
 .foot-left .about li a, .social ul li a, .foot-down ul li a {
     font-size: 12px;
-    color: white;
+    color: black;
     font-weight: 600;
     text-decoration: none;
 }
@@ -173,7 +194,15 @@ footer {
     margin-top: 20px;
     font-size: 12px;
     justify-content: space-between;
+
     font-weight: 500;
+
+    font-weight: 600;
+    flex-wrap: wrap;
+}
+.foot-down > div{
+    flex: 1 1 300px;
+
 }
 .foot-down ul{
    display: flex;
@@ -185,9 +214,18 @@ footer {
     gap: 200px;
 
 }
+
 .payment-icons img {
     height: 15px;
 }
+
+#phones img {
+    transition: transform 0.3s ease;
+  }
+  
+  #phones img:hover {
+    transform: scale(1.1); /* Increase the scale factor as needed */
+  }
 /* Tablets and below */
 @media (max-width: 768px) {
     footer {
@@ -392,13 +430,7 @@ footer {
       height: 143;
       width: 143;
   }
-  .box-1,
-  .box-2,
-  .box-3,
-  .box-4,
-  .box-5,
-  .box-6,
-  .box-7 ,.box-8{
+  .box-i{
     display: flex;
     flex-direction: column;
     height: 168;
@@ -409,6 +441,11 @@ footer {
     border: 1px solid black;
     gap: 10px;
   }
+
+    .box-i img{
+        object-fit: fill;
+        margin: 1px;
+    }
   
   /* new phone section ended */
 
@@ -422,3 +459,38 @@ footer {
 }
 
 
+
+/* BACK TO TOP */
+
+html {
+	scroll-behavior: smooth;
+}
+
+.back-to-top {
+	position: sticky;
+	bottom: 2rem;
+	right: 2rem;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(255, 180, 0, 0.5); /* Orange with low opacity */
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	text-decoration: none;
+	transition: 0.2s ease-out;
+}
+
+.back-to-top span {
+	color: #fff;
+	font-size: 3rem;
+	transition: 0.2s ease-out;
+}
+
+.back-to-top:hover {
+	background-color: rgba(255, 200, 0, 0.7); /* Slightly darker shade of orange with low opacity */
+	border-radius:2px 2px 5px black;
+}
+
+.back-to-top:hover span {
+	transform: translateY(-4px);
+}
