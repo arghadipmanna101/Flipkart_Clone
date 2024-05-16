@@ -58,7 +58,7 @@ body {
     align-items: stretch;
 }
 .categories > li:hover {
-    background-color: rgb(236, 236, 255);
+    color:blue;
 }
 .categories > li:hover > ul > li{
     margin: 15px 0;
@@ -70,6 +70,20 @@ body {
     margin: 15px 0;
     color: rgb(113, 113, 113);
 }
-.categories > li:hover > ul  li li:hover {
+
+.text li:hover{
     color: blue;
+    cursor: pointer;
+}
+.fa-angle-down {
+    font-size: 16px;
+    color:black;
+    margin-left: 10px; /* Add space between the text and the angle icon */
+}
+
+li.open > ul {
+    display: block;
+}
+.categories span  i:hover{
+    color:blue;
 }

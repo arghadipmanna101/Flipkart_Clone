@@ -2,58 +2,16 @@ const categoriesData = [
     {
         "id": "grocery",
         "name": "Grocery",
-        "subcategories": [
-            {
-                "id": "fruits-vegetables",
-                "name": "Fruits & Vegetables",
-                "subcategories": ["Fresh Fruits", "Fresh Vegetables"]
-            },
-            {
-                "id": "dairy-eggs",
-                "name": "Dairy & Eggs",
-                "subcategories": ["Milk", "Cheese", "Eggs"]
-            },
-            {
-                "id": "bakery",
-                "name": "Bakery",
-                "subcategories": ["Bread", "Pastries", "Cakes"]
-            },
-            {
-                "id": "canned-packaged",
-                "name": "Canned & Packaged",
-                "subcategories": ["Canned Food", "Pasta", "Rice", "Snacks"]
-            },
-            {
-                "id": "desserts",
-                "name": "Desserts",
-                "subcategories": null
-            }
-        ]
+        "subcategories": false
     },
     {
-        "id": "electronics",
-        "name": "Electronics",
-        "subcategories": [
-            {
-                "id": "mobile-phones",
-                "name": "Mobile Phones",
-                "subcategories": ["Smartphones", "Feature Phones"]
-            },
-            {
-                "id": "computers",
-                "name": "Computers",
-                "subcategories": ["Laptops", "Desktops", "Tablets"]
-            },
-            {
-                "id": "accessories",
-                "name": "Accessories",
-                "subcategories": ["Headphones", "Chargers", "Cases"]
-            }
-        ]
+        "id": "mobile",
+        "name": "Mobile",
+        "subcategories": false
     },
     {
         "id": "clothing",
-        "name": "Clothing",
+        "name": "Fashion",
         "subcategories": [
             {
                 "id": "mens-clothing",
@@ -73,13 +31,18 @@ const categoriesData = [
         ]
     },
     {
+        "id": "electronics",
+        "name": "Electronics",
+        "subcategories": false
+    },
+    {
         "id": "home-furniture",
         "name": "Home & Furniture",
         "subcategories": [
             {
-                "id": "Kitchen-appliances",
-                "name": "kitchen Appliances",
-                "subcategories": ["Blenders", "Microwaves", "Coffee Makers", "Pressure cookers", "Pans"]
+                "id": "kitchen-appliances",
+                "name": "Kitchen Appliances",
+                "subcategories": ["Blenders", "Microwaves", "Coffee Makers", "Pressure Cookers", "Pans"]
             },
             {
                 "id": "furniture",
@@ -91,17 +54,16 @@ const categoriesData = [
                 "name": "Home Decor",
                 "subcategories": ["Rugs", "Lamps", "Mirrors", "Clocks"]
             },
-            ,
             {
                 "id": "pet",
-                "name": "Pet supplies",
+                "name": "Pet Supplies",
                 "subcategories": ["Dogs", "Cats", "Fish and Aquatics"]
             }
         ]
     },
     {
         "id": "beauty",
-        "name": "Beauty",
+        "name": "Beauty, Toys & More",
         "subcategories": [
             {
                 "id": "face",
@@ -121,95 +83,61 @@ const categoriesData = [
         ]
     },
     {
-        "id": "travel",
-        "name": "Travel",
+        "id": "Vehicle",
+        "name": "Two Wheelers",
         "subcategories": [
             {
-                "id": "luggage",
-                "name": "Luggage",
-                "subcategories": ["Suitcases", "Backpacks", "Duffel Bags"]
+                "id": "vehicle1",
+                "name": "Petrol Vehicles",
+                "subcategories": false
             },
             {
-                "id": "travel-accessories",
-                "name": "Accessories",
-                "subcategories": ["Travel Pillows", "Travel Adapters", "Luggage Tags"]
-            },
-            {
-                "id": "travel-essentials",
-                "name": "Travel Essentials",
-                "subcategories": ["Passport Holders", "Toiletry Bags", "Travel Bottles"]
+                "id": "vehicle2",
+                "name": "Electrical Vehicles",
+                "subcategories": false
             }
-        ]
-    },
-    {
-        "id": "sports-stationary",
-        "name": "Sports & Stationary",
-        "subcategories": [
-            {
-                "id": "fitness-equipment",
-                "name": "Fitness Equipment",
-                "subcategories": ["Dumbbells", "Resistance Bands", "Yoga Mats"]
-            },
-            {
-                "id": "sports-clothing",
-                "name": "Clothing",
-                "subcategories": ["Athletic Wear", "Running Shoes", "Sports Bras"]
-            },
-            {
-                "id": "sports-accessories",
-                "name": "Accessories",
-                "subcategories": ["Water Bottles", "Gym Bags", "Fitness Trackers"]
-            },
-            {
-                "id": "toys",
-                "name": "Toys",
-                "subcategories": null
-            },
-            ,
-            {
-                "id": "stationary",
-                "name": "Stationary",
-                "subcategories": null
-            }
-
         ]
     }
 ];
-
 $(document).ready(function () {
     const categoriesList = $("#categories");
 
-    function createCategoryItem(categoryData) {
-        const categoryItem = $("<li>").text(categoryData.name);
-
+    function createSubcategories(subcategories) {
         const subcategoriesList = $("<ul>");
 
-        if (!categoryData.subcategories) {
-            const singleItem = $("<li>").text(categoryData.name);
-            subcategoriesList.append(singleItem);
-        } else {
-            $.each(categoryData.subcategories, function(index, subcategoryData) {
-                if (subcategoryData && subcategoryData.name == undefined) {
-                    const singleItem = $("<li>").text(subcategoryData);
-                    subcategoriesList.append(singleItem);
-                } else if (subcategoryData) {
-                    const subcategoryItem = createCategoryItem(subcategoryData);
-                    subcategoriesList.append(subcategoryItem);
+        subcategories.forEach(subcategory => {
+            if (typeof subcategory === "string") {
+                subcategoriesList.append($("<li>").text(subcategory));
+            } else if (subcategory && subcategory.name) {
+                const subcategoryItem = $("<li>").text(subcategory.name);
+                if (subcategory.subcategories && subcategory.subcategories.length) {
+                    subcategoryItem.append(createSubcategories(subcategory.subcategories));
+                    subcategoryItem.on('click', function (e) {
+                        e.stopPropagation();
+                        $(this).toggleClass('open');
+                    });
                 }
+                subcategoriesList.append(subcategoryItem);
+            }
+        });
+
+        return subcategoriesList;
+    }
+
+    function createCategoryItem(categoryData) {
+        const categoryItem = $("<li>").text(categoryData.name);
+        if (categoryData.subcategories && categoryData.subcategories.length) {
+            categoryItem.append($("<span><i class='fa fa-angle-down'></i></span>"));
+            categoryItem.append(createSubcategories(categoryData.subcategories));
+            categoryItem.on('click', function (e) {
+                e.stopPropagation();
+                $(this).toggleClass('open');
             });
         }
-
-        categoryItem.append(subcategoriesList);
-        console.log(categoryItem);
-
         return categoryItem;
     }
 
-    categoriesData.forEach(function(categoryData) {
-        const categoryItem = createCategoryItem(categoryData);
-        categoriesList.append(categoryItem);
+    categoriesData.forEach(categoryData => {
+        categoriesList.append(createCategoryItem(categoryData));
     });
 });
-
-
-
