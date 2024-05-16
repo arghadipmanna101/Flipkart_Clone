@@ -88,9 +88,13 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.3s ease 0.1s, width 2s, height 2.5s;
+
   }
   
-  
+.category:hover {
+    transform: scale(1.1025); 
+} 
   
   .category h3 {
     font-size: 18px; 
@@ -363,6 +367,14 @@ footer {
     margin: 15px;
     gap: 49px;
     
+    
+}
+.img{
+    transition: transform 0.3s ease 0.1s, width 2s, height 2.5s;
+
+}
+.img:hover{
+    transform: scale(1.1);
 }
 
 
