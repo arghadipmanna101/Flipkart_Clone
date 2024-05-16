@@ -81,6 +81,4 @@ body {
 li.open > ul {
     display: block;
 }
-.categories span  i:hover{
-    color:blue;
-}
+
