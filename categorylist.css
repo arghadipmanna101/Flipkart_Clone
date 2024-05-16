@@ -29,7 +29,9 @@ body {
     width: 100%;
     min-width:1000px;
     box-shadow: 0 0 10px rgb(87, 110, 172);
+    
 }
+
 .categories > li {
     display: inline-block;
     padding: 20px 15px;
