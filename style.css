@@ -16,7 +16,6 @@ footer {
   padding: 40px 0;
   width: 100%;
 }
-
 /* Add a smooth transition effect */
 
 .nav-item {
@@ -30,6 +29,12 @@ footer {
   text-decoration: underline;
   opacity:1;
 }
+
+.nav-link:hover{
+  background-color: #80aaed35;
+  border-radius: 15px;
+}
+
 
 /* Style for the link */
 
@@ -68,6 +73,8 @@ footer {
 .nav-link:hover::after{
   opacity:1;
 }
+
+
 .itemSection {
   max-width: 1434px;
   height: 314px;
@@ -87,6 +94,11 @@ footer {
 
 .itemImg {
   height: 100px;
+}
+
+.nav-item:hover{
+  background-color: #e7eefb;
+  border-radius: 20px;
 }
 
 .itemDescription {
