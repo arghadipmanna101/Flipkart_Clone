@@ -53,6 +53,24 @@ body {
     margin-right: 8px;
 }
 
+.main{
+    font-size:2.5rem;
+    color:#000;
+    margin: 10px  0;
+    font-weight: 500;
+    
+}
+
+ .heading{
+    font-size:1.5rem;
+    /* color:#000099; */
+    color: #000066;
+   margin-bottom: 0.5rem;
+   font-weight:500;
+ }
+ .details{
+    padding:2rem;
+ }
 
 
 
@@ -79,7 +97,7 @@ body {
     color: #333333; 
   }
 
-  .details .info{
+  /* .details .info{
     line-height: 16px;
     font-size: 12px;
 }
@@ -95,10 +113,11 @@ body {
     padding: 30px;
     color: #878787;
     background-color: #f5f5f5;
-}
+} */
 
 footer {
-    background-color: rgb(28, 27, 27);
+    background-color: white;
+    color: #000;
     padding: 15px 35px;
 }
 .foot-top {
@@ -124,7 +143,7 @@ footer {
 }
 .foot-left .about li a, .social ul li a, .foot-down ul li a {
     font-size: 12px;
-    color: white;
+    color: black;
     font-weight: 600;
     text-decoration: none;
 }
@@ -156,6 +175,14 @@ footer {
 .payment-icons img {
     height: 15px;
 }
+
+#phones img {
+    transition: transform 0.3s ease;
+  }
+  
+  #phones img:hover {
+    transform: scale(1.1); /* Increase the scale factor as needed */
+  }
 /* Tablets and below */
 @media (max-width: 768px) {
     footer {
@@ -310,13 +337,7 @@ footer {
       height: 143;
       width: 143;
   }
-  .box-1,
-  .box-2,
-  .box-3,
-  .box-4,
-  .box-5,
-  .box-6,
-  .box-7 ,.box-8{
+  .box-i{
     display: flex;
     flex-direction: column;
     height: 168;
@@ -327,6 +348,11 @@ footer {
     border: 1px solid black;
     gap: 10px;
   }
+
+    .box-i img{
+        object-fit: fill;
+        margin: 1px;
+    }
   
   /* new phone section ended */
 
@@ -369,6 +395,7 @@ html {
 
 .back-to-top:hover {
 	background-color: rgba(255, 200, 0, 0.7); /* Slightly darker shade of orange with low opacity */
+	border-radius:2px 2px 5px black;
 }
 
 .back-to-top:hover span {
