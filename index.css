@@ -161,7 +161,6 @@ footer {
 .payment-icons img {
     height: 15px;
 }
-
 /* Tablets and below */
 @media (max-width: 768px) {
     footer {
