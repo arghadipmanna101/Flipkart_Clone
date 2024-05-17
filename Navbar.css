@@ -10,8 +10,8 @@
 .nav-link {
   text-decoration: none;
   color: #000;
-  display: block;
-  padding: 20px;
+  display: flex;
+  padding:10px;
 }
 
 .navtab{
@@ -37,6 +37,7 @@
   transform: none;
   border-bottom: none;
 }
+
 .nav-item::before:hover{
   border: #fff;
   transform: none;
