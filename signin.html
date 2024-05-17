@@ -12,26 +12,25 @@
    
   <div id="outerbox">
     <div id="innerbox">
-           <div class="leftinnerbox">
+        <div class="leftinnerbox">
             <p class="para1">Login</p>
-            <p class="para2">Get access to your Orders, Wishlist and Recommendations</p>
+            <p class="para2">Get access to your Orders, Wishlist, and Recommendations</p>
             <div class="image-container">
                 <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/login_img_c4a81e.png" alt="hero_signup">
             </div>
-          </div>
-          <div class="rightinnerbox">
-
+        </div>
+        <div class="rightinnerbox">
             <div class="input-group">
-                <input id="mobile" class="mobile" type="text" placeholder="Enter Mobile Number"/>
+                <input id="mobile" class="mobile" type="text" placeholder="Enter Mobile Number" aria-label="Enter Mobile Number"/>
             </div>
             
             <div class="input-group">
-                <input id="pass" class="password" type="password" placeholder="Enter Password"/>
+                <input id="pass" class="password" type="password" placeholder="Enter Password" aria-label="Enter Password"/>
             </div>
             <div class="terms">
                 <p class="textm">By continuing, you agree to Flipkart's 
-                    <span style="color: blue;"> Terms of Use</span>
-                    and <span style="color: blue;">Privacy Policy.</span></p>
+                    <a href="#" style="color: blue;">Terms of Use</a>
+                    and <a href="#" style="color: blue;">Privacy Policy.</a></p>
             </div>
             <div class="button-group">
                 <button onclick="Signin()" class="login-button">Login</button>
@@ -40,14 +39,13 @@
                 <button onclick="window.location.href='signup.html'" class="signup-button">Not an Existing User? Signup</button>
             </div> 
         </div>
-           
     </div>
   </div>
 </body>
 </html>
 <script>
     $(function(){
-    $("#container").load("./Navabar.html");
-  });
+        $("#container").load("./Navbar.html");
+    });
 </script>
 <script src="./Signin.js"></script>
