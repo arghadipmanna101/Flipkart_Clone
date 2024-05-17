@@ -1,42 +1,42 @@
 const topdeals = [
     {
-        "name": "Top deal",
-        "description": "Top deal description",
+        "name": "Classical Violins",
+        "description": "Up to 75% off",
         "imageUrl": "topDeal1.webp"
     },
     {
-        "name": "Top deal",
-        "description": "Top deal description",
+        "name": "Smart Accessories",
+        "description": "Starting from &#8377; 250",
         "imageUrl": "topDeal2.webp"
     },
     {
-        "name": "Top deal",
-        "description": "Top deal description",
+        "name": "Travel Umbrellas",
+        "description": "Get free umbrella case",
         "imageUrl": "topDeal3.webp"
     },
     {
-        "name": "Top deal",
-        "description": "Top deal description",
+        "name": "Baby-Soft Teddy Bears",
+        "description": "Under &#8377;300",
         "imageUrl": "topDeal4.webp"
     },
     {
-        "name": "Top deal",
-        "description": "Top deal description",
+        "name": "Branded Sneakers",
+        "description": "Affordable, Under &#8377;1000",
         "imageUrl": "topDeal5.webp"
     },
     {
-        "name": "Top deal",
-        "description": "Top deal description",
+        "name": "Kurtas, Sets & more",
+        "description": "Starting from &#8377;249",
         "imageUrl": "topDeal6.webp"
     },
     {
-        "name": "Top deal",
-        "description": "Top deal description",
+        "name": "Formal T-Shirts",
+        "description": "Under &#8377;349",
         "imageUrl": "topDeal7.webp"
     },
     {
-        "name": "Top deal",
-        "description": "Top deal description",
+        "name": "Vivo T2 Pro 5G ",
+        "description": "Up to 35% off",
         "imageUrl": "topDeal8.webp"
     }
 ]
