@@ -144,18 +144,24 @@ footer {
     justify-content: space-between;
     font-weight: 600;
     flex-wrap: wrap;
+    align-items: center;
 }
-.foot-down > div{
-    flex: 1 1 300px;
+.foot-down > div {
+    flex: 1 1 auto;
+    min-width: 200px;
+    margin: 10px;
 }
 .foot-down ul {
     display: flex;
-    gap: 200px;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
-
 .payment-icons img {
     height: 15px;
 }
+
 /* Tablets and below */
 @media (max-width: 768px) {
     footer {
@@ -348,7 +354,7 @@ html {
 }
 
 .back-to-top {
-	position: sticky;
+	 
 	bottom: 2rem;
 	right: 2rem;
 	display: inline-flex;
