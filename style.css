@@ -8,6 +8,41 @@ body {
   align-items: center; /* Center horizontally */
 }
 
+/* making changes in ui of mobile deals section */
+#phones h3 {
+  align-self: flex-start;
+  padding-top: 30px;
+  padding-left: 20px;
+  font-weight: 800;
+}
+#phones {
+  align-items: center;
+  width: 100%;
+  background-color: white;
+}
+#card {
+  border-radius: 20px;
+  padding-top: 20px;
+  width: 170px;
+  border: 5px solid black;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid black;
+  border-radius: 8px;
+}
+#card img {
+  padding: 5px 10px;
+  width: 100%;
+  height: auto;
+}
+.card-content {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px 0;
+  font-weight: 700;
+}
+/*changes done*/
+
 /* Footer Styles */
 footer {
   background-color: #212121;
