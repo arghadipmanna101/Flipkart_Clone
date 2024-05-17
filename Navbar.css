@@ -74,3 +74,8 @@
   display: none; 
 }
 
+.dropdown-item:hover{
+  background-color: #ccc;
+  color:black;
+}
+
