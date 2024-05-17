@@ -7,7 +7,9 @@ body {
     margin: 0;
     padding: 0;
 }
-
+.info > div {
+    text-align: justify;
+}
 /* Navbar styles */
 #searchbar {
     padding: 4px;
