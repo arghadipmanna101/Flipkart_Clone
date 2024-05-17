@@ -54,9 +54,9 @@ body {
 }
 
 .main{
-    font-size:2.5rem;
-    color:#000;
-    margin: 10px  0;
+    font-size:1.1rem;
+    color:#878787;
+    margin-bottom: 0.8rem;
     font-weight: 500;
     
 }
@@ -70,6 +70,12 @@ body {
  }
  .details{
     padding:2rem;
+    background-color: #f5f5f5;
+    line-height: 1.2rem;
+    font-size: 0.9rem;
+    color: #878787;
+    font-family: inter_regular,fallback-inter_regular,Arial,sans-serif;
+    letter-spacing: 0;
  }
 
 
