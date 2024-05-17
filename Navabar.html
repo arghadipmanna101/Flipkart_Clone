@@ -17,7 +17,8 @@
       
     }
     .nav-link{
-      margin-right: 50px;
+      /* margin-right: 40px; */
+      
     }
 
     /* .navbar-nav .nav-link:hover {
@@ -33,7 +34,9 @@
   
 
     .nav-item {
-      transition: background-color 0.5s ease; 
+      transition: background-color 0.5s ease;
+     
+      
     }
 
     .nav-item:hover {
@@ -49,18 +52,17 @@
       transform:scale(1.1);
       z-index: 1;
     }
-
-   
-   
-
   
     .nav-link {
     text-decoration:none;
     color: #000;
     display: block;
-    padding: 20px;
+
+
+    }    
 
     }
+
 
 
     .nav-link::after {
@@ -119,7 +121,8 @@
           </div>
         </li>
       </ul>
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav ml-4 pt-6">
+        
         <li class="nav-item dropdown">
           <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
@@ -142,7 +145,7 @@
           <a class="nav-link" href="#">
             <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg"
               alt="Become a Seller" />
-            Become a Seller
+           <span> Become a Seller</span>
           </a>
         </li>
         <li class="nav-item">
@@ -150,10 +153,7 @@
             <img
               src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg"
 
-            />
-
-              
-
+            />   
             Cart
           </a>
         </li>
@@ -176,18 +176,28 @@
             <a
               class="dropdown-item"
               href="/mobile-apps?otracker=ch_vn_mobile_apps"
-              >Download App</a
-            >
-              </li>
-            </ul>
-          </div>
 
-            <a class="dropdown-item"
-              href="https://advertising.flipkart.com/?otracker=ch_vn_advertise_header">Advertise</a>
-            <a class="dropdown-item" href="http://play.google.com/store/search?q=flipkart&c=apps" target="_blank"
-              rel="external">Download App</a>
+              >Download App</a>
+
+
+          
+
+            
+      
+
+         
+       
+
 
         </li>
+        <li class="nav-item">
+          <a class="nav-link"
+                href="https://advertising.flipkart.com/?otracker=ch_vn_advertise_header">Advertise</a>
+        </li>
+        <li class="nav-item">
+           <a class="nav-link" href="http://play.google.com/store/search?q=flipkart&c=apps" target="_blank"
+              rel="external">Download App</a>
+        </li>            
       </ul>
     </div>
   </nav>

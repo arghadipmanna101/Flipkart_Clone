@@ -18,64 +18,16 @@
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-
-  <style>
-    * {
-      padding: 0;
-      margin: 0;
-    }
-
-    html,
-    body {
-      position: relative;
-      height: 100%;
-      background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color: #000;
-      margin: 0;
-      padding: 0;
-    }
-
-    .swiper {
-      width: 100%;
-      height: 100%;
-    }
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  </style>
-
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flipkart</title>
-    <link rel="icon" type="image/x-icon" href="/flipkart favicon-modified.png">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="./index.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-
+    
     <style>
-        *{
-            padding: 0;
-            margin: 0;
-        }
+      * {
+        padding: 0;
+        margin: 0;
+      }
+       
         html,
         body {
+          overflow-x: hidden;
             position: relative;
             height: 100%;
             background: white;
@@ -111,10 +63,14 @@
 
         #navbar-container {
           position: fixed;
-          top: 0;right: 0;
+          top: 0;
+          right: 0;
           width: 100%;
           height: 10vh;
           z-index: 600;
+        }
+        #category-list{
+          background-color: #ffc600;
         }
         #carousal {
           padding: 18vh 2% 15px;
@@ -134,10 +90,16 @@
         transform: translateX(0);
         opacity: 1;
         }
+
         }
         .bi-question-circle-fill,.bi-gift-fill,.bi-briefcase-fill
         {
             color: #ffc600;
+        }
+
+     
+        footer{
+          background: #000000;
         }
 /* Apply the animation to the footer sections */
 
@@ -256,8 +218,8 @@
 
   </section>
   
-  <section id="phones">
-    <div><h3>Best Deals On Smartphones..</h3></div>
+  <section id="phones ">
+    <div class="best"><h3>Best Deals On Smartphones..</h3></div>
     <div id="box">
       <div class="box-i">
         <a href=""><img src="phone-6.webp" alt="" width="143" height="146"/></a>
@@ -335,7 +297,7 @@
 </section>
   
   <!-- newsection for grid items  -->
-  <section id="img-box">
+  <section id="offers">
     <a href=""
       ><div class="img"><img src="grid-1.webp" alt="" /></div
     ></a>

@@ -8,12 +8,17 @@ body {
     background-color: rgb(255, 255, 255);
 }
 .categorylist-wrapper {
-    width: 100%;
-    overflow-x: scroll;
+    width: 100%;    
     position: absolute;
-    top: 8vh;
-    right: 0;
-    z-index: 500;
+    top: 9vh;
+    left: 0;
+    z-index: 500;    
+}
+.categorylist-wrapper ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
 }
 .categorylist-wrapper::-webkit-scrollbar {
     display: none;
@@ -21,13 +26,15 @@ body {
 .categories {
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
     justify-content: space-between;
     background-color: rgb(255, 253, 253);
     position: relative;
-    padding: 0;
-    padding: 0 4%;
-    width: 100%;
-    min-width:1000px;
+
+    padding:0 1rem;
+    width: 100%;    
+    min-width: 1000px;
+
     box-shadow: 0 0 10px rgb(87, 110, 172);
     
 }
@@ -42,36 +49,42 @@ body {
     position: fixed;
     background-color:rgb(201, 224, 252)!important;
     padding: 15px;
-    gap: 15px 5px;
+    gap: 10px 5px;
     flex-wrap: wrap;
-    width: 100vw;
+    width: 100%;
     height: max-content;
-    max-height: 100dvh;
-    padding: 0 10%;
-    top: 16vh;
+    max-height: 100vh;
     left: 0;
     font-size: 14px;
     overflow: hidden;
     z-index: 500;
 }
 .categories > li:hover > ul {
-    display: flex;
-    justify-content: left;
-    align-items: stretch;
+    display: flex;    
+    justify-content: space-between;
+    align-items: start;
 }
+
 .categories > li:hover {
     background-color: #bac8f6;
     transition: all 0.5s;
     border-radius: 20px;
 }
 .categories > li:hover > ul > li{
-    margin: 15px 0;
-    flex: 1 1 200px;
-    list-style-type: none;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    
 }
 .categories > li:hover > ul > li li{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     list-style-type: none;
+
     margin: 15px 0;
+
     color: rgb(88, 116, 194);
 }
 .categories > li:hover > ul  li li:hover {
