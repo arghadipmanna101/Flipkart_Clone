@@ -328,10 +328,13 @@ footer {
     padding: 4px;
     margin: 8px;
   }
+  #phones h3{
+    padding: 5px;
+    margin-left: 12px;
+  }
   #box {
     display: flex;
-    gap: 55px;
-    margin: 20px;
+    width: 100%;
   }
   #box img{
       height: 143;
@@ -342,11 +345,11 @@ footer {
     flex-direction: column;
     height: 168;
     width: 220;
-    margin: 26px 0px;
+    margin: 26px 16px;
     padding: 8px;
     border-radius: 4px;
     border: 1px solid black;
-    gap: 10px;
+    gap: 9px;
   }
 
     .box-i img{
@@ -371,6 +374,7 @@ footer {
 
 html {
 	scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .back-to-top {
