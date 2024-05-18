@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.heading{
+    color: #2032da;
+}
+
+header {
+    background: linear-gradient(to right, #f4f471, #4f9ee4);
+}
+
+section {
+    padding: 60px 0;
+}
+
+footer {
+    background: #343a40;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}
+
+.list-group-item {
+    cursor: pointer;
+}
+
+.btn-link {
+    color: #000000;
+}
+
+.btn-link:hover {
+    text-decoration: none;
+    color: #0056b3;
+}
+
+.card-header {
+    background-color: #f8f9fa;
+}
+
+.card-header h5 {
+    margin: 0;
+}
+
+.flipkart-logo {
+    display: block;
+    margin: -24px auto;
+    max-width: 391px;
+    padding-right: 100px;
+}
