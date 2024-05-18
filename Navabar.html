@@ -10,6 +10,7 @@
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     rel="stylesheet"
   />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <style>
 
     .navbar-nav .nav-link:hover {
@@ -77,6 +78,10 @@
     .nav-link:hover::after{
     opacity:1;
     }
+    .nav-prof:hover .pro-arrow>i{
+        transform : rotate(180deg);
+        transition: all 0.2s;
+    }
   </style>
 
 
@@ -121,6 +126,20 @@
       </ul>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown">
+          <a
+            class="nav-link nav-prof"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <img
+              src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-815786.svg"
+              alt="Profile"
+            />
+            Profile <span class="pro-arrow"><i class="fa-solid fa-angle-down"></i></span>
           <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
             <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-815786.svg"
