@@ -60,7 +60,6 @@ body {
     color:#000;
     margin: 10px  0;
     font-weight: 500;
-    
 }
 
  .heading{
@@ -73,7 +72,6 @@ body {
  .details{
     padding:2rem;
  }
-
 
 
 #category-grid {
@@ -378,27 +376,28 @@ footer {
     padding: 20px;
     margin: 15px;
     gap: 49px;
-    
-    
 }
+
 .img{
     transition: transform 0.3s ease 0.1s, width 2s, height 2.5s;
 
 }
+
 .img:hover{
     transform: scale(1.1);
 }
+
 /* adding Transition property to the images of the img-box section */
- #img-box img{
-    width: 100%; 
+#img-box img{
+  width: 100%; 
   height: auto; 
   transition: transform 0.3s ease-in-out;
- }
-  #img-box img:hover{
-    transform: scale(1.2);
-    opacity: 0.82;
-  }
+}
 
+#img-box img:hover{
+    transform: scale(1.0);
+    opacity: 0.75;
+}
 
 
 /* BACK TO TOP */
@@ -434,4 +433,9 @@ html {
 
 .back-to-top:hover span {
 	transform: translateY(-4px);
+}
+
+#carousal:hover{
+    transform: scale(0.98);
+    opacity: 0.9;
 }
