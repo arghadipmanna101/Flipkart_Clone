@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      body{
+        background-color: azure;
+      }
+      .head{
+        background-color: white;
+        height: 80px;
+        img{
+          position: relative;
+          height:50px;
+        width: 140px;
+        margin-left: 10%; 
+        margin-top: 1%; 
+      
+        }
+        input{
+          text-align: center;
+          width: 50%;
+          background-color: aliceblue;
+        }
+      .login{
+        button{
+          position: relative;
+          left: 76%;
+          bottom: 52px;
+      flex-direction: inherit;
+      
+        }
+      }
+      #cart{
+        position: relative;
+        left: 82%;
+          bottom: 89px;
+      }
+      #seller{
+        position: absolute;
+        left: 86%;
+    top: 2%;
+  
+      }
+      #doted{
+        position: absolute;
+        left: 95%;
+    top: 2%;
+      }
+    }
+    .one{
+      background-color: white;
+      margin-top: 10px;
+      width: 98%;
+      margin-left: 15px;
+      button{
+        margin-left: 40px;
+      }
+    }
+    .two{
+      height: 300px;
+      width: 96%;
+      margin-left: 30px;
+      margin-top: 10px;
+      border: 0.3px solid olivedrab;
+    }
+    .three{
+      height: 300px;
+      width: 96%;
+      
+      margin-top: 10px;
+      border: 0.3px solid olivedrab;
+      background-color: white;
+    
+      button{
+        margin-left:1px;
+      }
+      
+    }
+      .four{
+        margin-left: 30px;
+        margin-top: 14px;
+        
+        img{
+            width: 483px;
+          
+        }
+      }
+      .five{
+        border: 1px solid black;
+        height: 270px;
+      width: 96%;
+  margin-left:27px;
+      margin-top: 10px;
+      background-color: white;
+      img{
+        margin-left: 5%;
+      }
+     
+    }
+    .six{
+      margin-left: 27px;
+        margin-top: 14px;
+        img{
+          width: 485px;
+        }
+    }
+    .btn-link{
+      margin-left: 1%;
+    }
+    .seven{
+      border: 1px solid black;
+        height: 300px;
+      width: 96%;
+  margin-left:27px;
+      margin-top: 10px;
+      background-color: white;
+
+    }
+    .eight{
+      border: 1px solid black;
+        height: 310px;
+      width: 96%;
+  margin-left:27px;
+      margin-top: 10px;
+      background-color: white;
+
+    }
+  
+      
+    
+    </style>
+  </head>
+  <body>
+      <div class="head">
+
+        <img src="flipkart.png">
+
+        <input type="search" placeholder="search for products, brands and more">
+
+        <div class="login">
+
+        <button class="btn btn-outline-link dropdown-toggle" type="button" data-toggle="dropdown">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+        </svg>
+        login
+      </button>
+        <ul class="dropdown-menu">
+          <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+          </svg>My profile</a></li>
+          <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+            <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+          </svg>Flipkart pluz zone</a></li>
+          <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-seam" viewBox="0 0 16 16">
+            <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2zm3.564 1.426L5.596 5 8 5.961 14.154 3.5zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
+          </svg>Orders</a></li>
+          <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-balloon-heart" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398"/>
+          </svg>Wishlist</a></li>
+          <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gift" viewBox="0 0 16 16">
+            <path d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A3 3 0 0 1 3 2.506zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43zM9 3h2.932l.023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0zM1 4v2h6V4zm8 0v2h6V4zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5z"/>
+          </svg>Reaward</a></li>
+          <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card-2-back" viewBox="0 0 16 16">
+            <path d="M11 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5z"/>
+            <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm13 2v5H1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1m-1 9H2a1 1 0 0 1-1-1v-1h14v1a1 1 0 0 1-1 1"/>
+          </svg>Gift Cards</a></li>
+        
+        </ul>
+        
+      </div>
+        <button class="btn btn-outline-link" id="cart"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+          <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+        </svg>cart</button>
+        <button class="btn btn -outline-link" id="seller"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16">
+          <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.37 2.37 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0M1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5M4 15h3v-5H4zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm3 0h-2v3h2z"/>
+        </svg>Become a seller</button>
+        <button class="btn btn-outlinr-link" id="doted"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+          <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+        </svg></button>
+        </div>
+      <div class="one">
+        <button class="btn btn-link">
+          <a href="">
+            <img src="grocry.webp">
+            <p>Grocery</p>
+          </a>
+        </button>
+        <button class="btn btn-link">
+          <a href="">
+            <img src="mobile.webp">
+            <p>Mobile</p>
+          </a>
+        </button>
+        <button class="btn btn-link">
+          <a href="">
+            <img src="fashionnn.webp" height="75px">
+            <p>Fashion</p>
+          </a>
+        </button>
+        <button class="btn btn-link" height="75px">
+          <a href="">
+            <img src="laptop.webp" height="75px">
+            <p>laptop</p>
+          </a>
+        </button>
+        <button class="btn btn-link" >
+          <a href="">
+            <img src="home.webp" height="75px">
+            <p>Home & Furniture</p>
+          </a>
+        </button>
+        <button class="btn btn-link" >
+          <a href="">
+            <img src="appliance.webp" height="75px">
+            <p>appliance</p>
+          </a>
+        </button>
+        <button class="btn btn-link">
+          <a href="">
+            <img src="travel.webp" height="75px">
+            <p>Travel</p>
+          </a>
+        </button>
+        <button class="btn btn-link">
+          <a href="">
+            <img src="beauty toys more.webp" height="75px">
+            <p>Beayty, toys more</p>
+          </a>
+        </button>
+        <button class="btn btn-link">
+          <a href="">
+            <img src="two wheelers.webp" height="75px">
+            <p>Two wheelers</p>
+          </a>
+        </button>
+       </div>
+       <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000"> <!-- Adjust interval as needed -->
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+    
+     
+        <div class="carousel-inner">
+    
+          <div class="item active">
+            <img src="tasktask.webp" alt="Los Angeles" style="width:100%;">
+            <div class="carousel-caption">
+      
+            
+            </div>
+          </div>
+    
+          <div class="item">
+            <img src="slide22.webp" alt="Chicago" style="width:100%;">
+            <div class="carousel-caption">
+            
+            </div>
+          </div>
+        
+          <div class="item">
+            <img src="tasktask.webp" alt="New York" style="width:100%;">
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div>
+  <br>
+<div class="three">
+  <h3>Best Deals Smartphones</h3>
+  <button class="btn btn-link">
+    <a  href="">
+      <img src="i phone16.webp" height="190px">
+      <p>i phone incl of offers</p>
+    </a>
+  </button>
+  <button class="btn btn-link">
+    <a href="">
+      <img src="readmi 5gb.webp" height="190px">
+      <p>i phone incl of offers</p>
+    </a>
+    </button>
+    <button class="btn btn-link">
+      <a href="">
+        <img src="i phone1444.webp" height="190px">
+        <p>i phone incl of offers</p>
+      </a>
+      </button>
+      <button class="btn btn-link">
+        <a href="">
+          <img src="vivo pro.webp" height="190px">
+          <p>i phone incl of offers</p>
+        </a>
+        </button>
+        <button class="btn btn-link">
+          <a href="">
+            <img src="moto edge.webp" height="190px">
+            <p>i phone incl of offers</p>
+          </a> 
+          </button>
+          <button class="btn btn-link">
+            <a href="">
+              <img src="pocox7.webp" height="190px">
+              <p>i phone incl of offers</p>
+            </a>
+            </button>
+            <button class="zero" >
+              <a href="https://www.goindigo.in/member/my-booking.html">
+                <img src="indigo.webp" height="290px" width="99%" >
+            </div>
+            <div class="four">
+            <a href="">
+              <img src="led bulb.webp">
+            </a>
+            <a href="">
+              <img src="derma more.webp">
+            </a>
+            <a href="">
+              <img src="clothing.webp">
+            </a>
+            </div>
+            <div class="five">
+              <h2>Fashion Best Sellers</h2>
+              <button class="btn btn-link">
+                <a href="">
+                  <img src="by HRX by.jpeg" height="170px">
+                  <p>i phone incl of offers</p>
+                </a>
+                </button>
+                <button class="btn btn-link">
+                  <a href="">
+                    <img src="adidas.webp"  height="170px" width="80%">
+                    <p>i phone incl of offers</p>
+                  </a>
+                  </button>
+                  <button class="btn btn-link">
+                    <a href="">
+                      <img src="peter england.jpeg"height="170px">
+                      <p>i phone incl of offers</p>
+                    </a>
+                    </button>
+                    <button class="btn btn-link">
+                      <a href="">
+                        <img src="best ray ban.jpeg" height="170px">
+                        <p>i phone incl of offers</p>
+                      </a>
+                      </button>
+                      <button class="btn btn-link">
+                        <a href="">
+                          <img src="tokey.jpeg" height="170px">
+                          <p>i phone incl of offers</p>
+                        </a>
+                        </button>
+                        <button class="btn btn-link">
+                          <a href="">
+                            <img src="boat.webp" height="170px">
+                            <p>i phone incl of offers</p>
+                          </a>
+                          </button>
+                          <button class="btn btn-link">
+                            <a href="">
+                              <img src="rolex.jpeg" height="170px" width="80%">
+                              <p>i phone incl of offers</p>
+                            </a>
+                            </butto>           
+            </div>
+            <div class="six">
+            <a href="">
+            <img src="part1.webp">
+            </a>
+             <a href="">
+            <img src="part2.webp">
+            </a>
+             <a href="">
+            <img src="part3.webp">
+            </a>
+             <a href="">
+            <img src="part4.webp">
+            </a>
+             <a href="">
+            <img src="part5.webp">
+            </a>
+             <a href="">
+            <img src="part6.webp">
+            </a>
+            </div>
+            <div class="seven">
+              <h3>Fashion Best Sellers</h3>
+              <button class="btn btn-link">
+                <a href="">
+                  <img src="asian shose.webp" height="195px" width="90%">
+                </a>
+              </button>
+              <button class="btn btn-link">
+                <a href="">
+                  <img src="ducati.jpeg" height="195px">
+                </a>
+              </button>
+              <button class="btn btn-link">
+                <a href="">
+                  <img src="hardik.jpeg" height="195px">
+                </a>
+              </button>
+              <button class="btn btn-link">
+                <a href="">
+                  <img src="kurta.jpeg" height="195px">
+                </a>
+              </button>
+              <button class="btn btn-link">
+                <a href="">
+                  <img src="sarri.jpeg" eight="195phx" width="75%">
+                </a>
+              </button>
+              <button class="btn btn-link">
+                <a href="">
+                  <img src="kutra man.jpeg" height="198px">
+                </a>
+              </button>
+              <button class="btn btn-link">
+                <a href="">
+                  <img src="luggaage.jpeg"height="198px" width="90%">
+                </a>
+             </button>
+            </div>
+            <div class="eight">
+              <h4>Home & Kitchen Essentails</h4>
+            <button class="btn btn-link">
+              <a href="">
+                <img src="wall.jpeg">
+              </a>
+              <p> Well Decor items</p>
+           </button>
+           <button class="btn btn-link">
+            <a href="">
+              <img src="plant.jpeg">
+            </a>
+            <p>Artificial plant</p>
+         </button>
+         <button class="btn btn-link">
+          <a href="">
+            <img src="Clockss.jpeg">
+          </a>
+          <p>Clocks</p>
+       </button>
+       <button class="btn btn-link">
+        <a href="">
+          <img src="showpices.jpeg">
+        </a>
+        <p>Showpices</p>
+     </button>
+     <button class="btn btn-link">
+      <a href="">
+        <img src="decor light.jpeg">
+      </a>
+      <p>Decor lght</p>
+   </button>
+  </div>
+
+    
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

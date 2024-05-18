@@ -145,8 +145,64 @@
 #carouselExampleIndicators{
   padding: 60px;
 }
+.categorylist{
+      background-color: white;
+      margin-top: 10px;
+      max-width: 98%;
+      margin-left: 50px;
+      margin-right: 50px;
+      button{
+        margin-left: 40px;
+      }
+      padding-top: 15px;
+      justify-content: space-between;
+      margin-bottom: -45px;
+      margin-top: 30px;
+    }
+    .categorylist {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 10px 10px;
+    left: 10px; /* Optional: add padding to the top and bottom */
+}
 
-    </style>
+.categorylist .btn {
+    flex: 0 0 auto;
+    margin: 0 10px; /* Adjust margin for spacing between buttons */
+    padding: 0;
+    border: none;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.categorylist .btn a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.categorylist .btn img {
+    height: 75px; /* Consistent image height */
+    display: block;
+    margin: 0 auto;
+}
+
+.categorylist .btn p {
+    margin: 5px 0 0 0; /* Ensure top margin only */
+    font-size: 14px; /* Adjust font size as needed */
+    color: #000; /* Adjust color as needed */
+    text-align: center;
+}
+
+
+
+  </style>
 </head>
 
 <body>
@@ -166,12 +222,69 @@
 
   <!-- carousel -->
   <section id="carousal">
+    <div class="categorylist" >
+      <button class="btn btn-link">
+        <a href="">
+          <img src="grocry.jpg">
+          <p>Grocery</p>
+        </a>
+      </button>
+      <button class="btn btn-link">
+        <a href="">
+          <img src="mobile.webp">
+          <p>Mobile</p>
+        </a>
+      </button>
+      <button class="btn btn-link">
+        <a href="">
+          <img src="fashionnn.jpg" height="75px">
+          <p>Fashion</p>
+        </a>
+      </button>
+      <button class="btn btn-link" height="75px">
+        <a href="">
+          <img src="laptop.jpg" height="75px">
+          <p>Electronics</p>
+        </a>
+      </button>
+      <button class="btn btn-link" >
+        <a href="">
+          <img src="home.jpg" height="75px">
+          <p>Home & Furniture</p>
+        </a>
+      </button>
+      <button class="btn btn-link" >
+        <a href="">
+          <img src="appliance.webp" height="75px">
+          <p>Appliances</p>
+        </a>
+      </button>
+      <button class="btn btn-link">
+        <a href="">
+          <img src="travel.webp" height="75px">
+          <p>Travel</p>
+        </a>
+      </button>
+      <button class="btn btn-link">
+        <a href="">
+          <img src="beauty toys more.jpg" height="75px">
+          <p>Beauty,toys & more</p>
+        </a>
+      </button>
+      <button class="btn btn-link">
+        <a href="">
+          <img src="two wheelers.jpg" height="75px">
+          <p>Two wheelers</p>
+        </a>
+      </button>
+     </div>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
+      
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img class="d-block w-100" src="./images/add1.jpg" style="width: 100vw;" alt="First slide">
@@ -192,6 +305,7 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+
   </section>
 
  
