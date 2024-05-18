@@ -8,12 +8,13 @@
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+   
 }
 
 #innerbox{
     display: flex;
     background-color: white;
-    width: 70%;
+    width: 60%;
     height: 500px;
 }
 

@@ -1,79 +1,174 @@
-# Flipkart_Clone
+<div align="center">
+  <h1 style="font-size: 36px; font-weight: bold;">Flipkart_Clone</h1>
+  
+</div>
 
-![](https://github.com/Meetjain1/Flipkart_Clone/assets/133582566/9173f02a-4f83-4ea7-af46-0e6af568d317)![](https://github.com/Meetjain1/Flipkart_Clone/assets/133582566/2870a352-b511-4d71-9288-c61485f22344)
-![](https://github.com/Meetjain1/Flipkart_Clone/assets/133582566/a38c60a4-55f8-4485-910f-dd79366407e2)
+<div style="text-align:center;">
+ <img src="https://cdn.dribbble.com/users/1980856/screenshots/4760116/media/5021b87fb97e90b8f153a4480ffc615e.gif" alt="Flipkart Logo Animation" width="3800" height="450">
+</div>
+
+<!-- Tech stack -->
+<div>
+<h2><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/High%20Voltage.png" alt="High Voltage" width="35" height="35" />Tech Stack</h2>
+</div>
+
+<div>
+<a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML"><img src="https://img.shields.io/badge/HTML-E34F26.svg?style=for-the-badge&logo=HTML&logoColor=white"></a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="https://img.shields.io/badge/CSS-1572B6.svg?style=for-the-badge&logo=CSS&logoColor=black"></a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=JavaScript&logoColor=black"></a>
+</div>
+
+<!-- Lets get started -->
+<div>
+<h2><img src = "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" width="35" height="35"> Let's Get Started</h2>
+</div>
+
+<p>Welcome to the Flipkart_Clone! If you're interested in contributing, here's how you can get started:</p>
+
+1. **Fork the repository:** Click on the "Fork" button at the top-right corner of this page. This will create a copy of this repository in your account.
+
+2. **Clone the repository:** After forking, clone the repository to your local machine using the following command in your terminal:
+
+   ```bash
+   git clone https://github.com/<your-github-username>/Flipkart_Clone.git
+   ```
+
+3. **Change the directory:** Change to the repository directory on your computer (if you are not already there):
+```bash
+   cd .\Flipkart_Clone\
+   ```
+   
+4. **Add a remote upstream:** Set up a remote upstream to the original repository by running the following command in your terminal:
+
+   ```bash
+   git remote add upstream https://github.com/<original-owner>/Flipkart_Clone/
+   ```
+
+5. **Create a new branch:** Switch to a new branch for your contributions:
+
+   ```bash
+   git switch -c <your-branch-name>
+   ```
+
+6. **Make changes:** Start making your changes to the source code.
+
+7. **Add your changes:** Stage your changes for commit:
+
+   ```bash
+   git add <changed-file1> <changed-file2> ...
+   ```
+   or simply run
+      ```bash
+   git add .
+   ```
 
 
-  # How to contribute in our Project 🟢
+8. **Commit your changes:** Commit your changes with a descriptive message:
 
-If you are interested to contribute in this project how to start contribute
-<!-- in detail -->
+   ```bash
+   git commit -m "<your-commit-message>"
+   ```
 
-1. Fork the repo.
+9. **Push your changes:** Push your changes to the forked repository:
 
-2. After forking, clone the repo to your local machine.
-To clone the repo to your local machine, run the following command in your terminal:
-    
-    ```bash
-    git clone https://github.com/<your-github-username>/Flipkart_Clone
-    ```
+   ```bash
+   git push -u origin <your-branch-name>
+   ```
 
-3. Add a remote upstream to the original repo.
-To add a remote upstream, run the following command in your terminal:
-    
-    ```bash
-    git remote add upstream https://github.com/<your-github-username>/Flipkart_Clone/
-    ```
+10. **Create a Pull Request:** Go to the GitHub repository, select your branch, and click on the "New pull request" button to create a new pull request.
 
-4. Create a new branch.
-To create a new branch, run the following command in your terminal:
-    
-    ```bash
-    git checkout -b <your-branch-name>
-    ```
+### Alternatively contribute using GitHub Desktop
 
-5. Make changes in source code.
+1. **Open GitHub Desktop:**
+   Launch GitHub Desktop and log in to your GitHub account if you haven't already.
 
-6. Add your changes
-To add your changes, run the following command in your terminal:
-    
-    ```bash
-    git add <File1 changed> <File2 changed> ...
-    ```
-7. Commit your changes.
-To commit your changes, run the following command in your terminal:
-    
-    ```bash
-    git commit -m "<your-commit-message>"
-    ```
+2. **Clone the Repository:**
+   - If you haven't cloned the Flipkart_Clone repository yet, you can do so by clicking on the "File" menu and selecting "Clone Repository."
+   - Choose the Flipkart_Clone repository from the list of repositories on GitHub and clone it to your local machine.
 
-8. Push your changes.
-To push your changes, run the following command in your terminal:
-    
-    ```bash
-    git push origin <your-branch-name>
-    ```
+3. **Switch to the Correct Branch:**
+   - Ensure you are on the branch that you want to submit a pull request for.
+   - If you need to switch branches, you can do so by clicking on the "Current Branch" dropdown menu and selecting the desired branch.
 
-9. Create a PR.
+4. **Make Changes:**
+   Make your changes to the code or files in the repository using your preferred code editor.
 
-__________________________________________________________________________________________________________________________________________________________________
+5. **Commit Changes:**
+   - In GitHub Desktop, you'll see a list of the files you've changed. Check the box next to each file you want to include in the commit.
+   - Enter a summary and description for your changes in the "Summary" and "Description" fields, respectively. Click the "Commit to <branch-name>" button to commit your changes to the local branch.
 
-## Alternatively Using GitHub Desktop
+6. **Push Changes to GitHub:**
+   After committing your changes, click the "Push origin" button in the top right corner of GitHub Desktop to push your changes to your forked repository on GitHub.
 
-1. Open GitHub Desktop and log in to your GitHub account.
+7. **Create a Pull Request:**
+  - Go to the GitHub website and navigate to your fork of the Flipkart_Clone repository.
+  - You should see a button to "Compare & pull request" between your fork and the original repository. Click on it.
 
-2. Make sure you are on the "Current Repository" view. If not, go to "File" and select "Add Local Repository" to add your repository.
+8. **Review and Submit:**
+   - On the pull request page, review your changes and add any additional information, such as a title and description, that you want to include with your pull request.
+   - Once you're satisfied, click the "Create pull request" button to submit your pull request.
 
-3. In the "Current Repository" view, ensure you are on the branch that you want to submit a pull request for. If you're not on the correct branch, use the "Branch" menu to switch to the correct branch.
+9. **Wait for Review:**
+    Your pull request will now be available for review by the project maintainers. They may provide feedback or ask for changes before merging your pull request into the main branch of the Flipkart_Clone repository.
 
-4. Once you're on the correct branch, make your changes and commit them to the branch. You can do this by clicking the "+" button in the upper-left corner of the GitHub Desktop window, making your changes, and then entering a commit message.
+⭐️ Support the Project
+If you find this project helpful, please consider giving it a star on GitHub! Your support helps to grow the project and reach more contributors.
 
-5. After you've made your changes and committed them, click the "Push origin" button in the top-right corner of the GitHub Desktop window. This will push your changes to the remote repository on GitHub.
 
-6. Now, go to the GitHub website, navigate to your fork of the repository, and you should see a button to "Compare & pull request" between your fork and the original repository, click on it.
+ <!-- screenshots -->
+  <div>
+    <h2>Screenshot <img src ="Screenshot 1.png"> <img src="Screenshot (425).png"></h2>
+  </div>
 
-7. On the pull request page, you can review your changes and add any additional information, such as a title and a description, that you want to include with your pull request.
 
-8. Once you're satisfied with your pull request, click the "Create pull request" button to submit it.
 
-**Note:** In order to create a pull request, you must have a fork of the original repository in your GitHub account and you must have made the changes in that forked repository.
+<!-- Screenshots -->
+  <div>
+    <h2><img src = "https://github.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/blob/master/Emojis/Objects/Camera.png?raw=true" width="35" height ="35"> Snapshots</h2>
+  </div>
+
+  These are some of the Snapshots of the project.
+  
+  ![ss1](https://github.com/d1vyadharsh1n1/Flipkart_Clone/assets/146218077/435d0824-33a0-4855-8488-4721e869e0d6)
+  ![ss2](https://github.com/d1vyadharsh1n1/Flipkart_Clone/assets/146218077/c8bd1868-1bfa-4d17-b59b-0f3e57c98303)
+  ![ss3](https://github.com/d1vyadharsh1n1/Flipkart_Clone/assets/146218077/0953a81a-9a2d-46ed-950a-559e672878c1)
+  ![ss4](https://github.com/d1vyadharsh1n1/Flipkart_Clone/assets/146218077/440ae33d-0dcf-4e31-bff4-1af29187ebf2)
+
+<!-- Open Source Programs -->
+  <div>
+    <h2><img src="https://github.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/blob/master/Emojis/Hand%20gestures/Flexed%20Biceps.png?raw=true" width="35" height="35" >Open Source Programs</h2>
+  </div>
+
+  This project is a part of GirlScript Summer of code. We welcome contibutions from the community to help improve the project Flipkart_Clone.
+  
+![gssoc](https://github.com/d1vyadharsh1n1/Flipkart_Clone/assets/146218077/dd4ffa29-2d52-47ad-9967-d0d6f8aff717)
+
+<!-- Code of conduct -->
+<div>
+<h2><img src = "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Handshake.png" width="35" height="35"> Code of Conduct</h2>
+</div>
+
+Please note that this project is released with a [Contributor Code of Conduct](./CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
+
+<!-- License -->
+<div>
+<h2><img src = "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Page%20with%20Curl.png" width="35" height="35"> License</h2>
+</div>
+
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+This project is licensed under the [MIT License](./LICENSE).
+
+
+  <!-- Cotributors -->
+<div>
+  <h2><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Red%20Heart.png" width="35" height="35"> Contributors</h2>
+</div>
+
+Thank you for contributing to our project! We appreciate your help in making Flipkart_Clone even better.😃
+
+<center>
+<a href="https://github.com/arghadipmanna101/Flipkart_Clone/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=arghadipmanna101/Flipkart_Clone" />
+</a>
+</center>
