@@ -7,7 +7,9 @@ body {
     margin: 0;
     padding: 0;
 }
-
+.info > div {
+    text-align: justify;
+}
 /* Navbar styles */
 #searchbar {
     padding: 4px;
@@ -77,7 +79,7 @@ body {
 #category-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
-    gap: 20px; 
+    gap: 40px; 
     margin-top: 20px; 
     margin-bottom: 20px;
     margin-left: 20px;
@@ -88,14 +90,27 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.3s ease 0.1s, width 2s, height 2.5s;
+
   }
   
-  
+.category:hover {
+    transform: scale(1.1025); 
+} 
   
   .category h3 {
     font-size: 18px; 
     color: #333333; 
   }
+
+  /*adding transition property to the images of the cateogory-grid section*/
+   #category-grid img {
+    transition: transform 0.3s ease-in-out;
+   }
+   #category-grid img:hover{
+    transform: scale(1.1);
+    opacity: 0.82;
+   }
 
   /* .details .info{
     line-height: 16px;
@@ -177,11 +192,12 @@ footer {
 }
 
 #phones img {
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease-in-out;
   }
   
   #phones img:hover {
     transform: scale(1.1); /* Increase the scale factor as needed */
+    opacity: 0.9;
   }
 /* Tablets and below */
 @media (max-width: 768px) {
@@ -330,12 +346,12 @@ footer {
   }
   #box {
     display: flex;
-    gap: 55px;
+    gap: 50px;
     margin: 20px;
   }
   #box img{
-      height: 143;
-      width: 143;
+      height:140px;
+      width: 140px;
   }
   .box-i{
     display: flex;
@@ -363,7 +379,25 @@ footer {
     margin: 15px;
     gap: 49px;
     
+    
 }
+.img{
+    transition: transform 0.3s ease 0.1s, width 2s, height 2.5s;
+
+}
+.img:hover{
+    transform: scale(1.1);
+}
+/* adding Transition property to the images of the img-box section */
+ #img-box img{
+    width: 100%; 
+  height: auto; 
+  transition: transform 0.3s ease-in-out;
+ }
+  #img-box img:hover{
+    transform: scale(1.2);
+    opacity: 0.82;
+  }
 
 
 
