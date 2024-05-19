@@ -439,3 +439,10 @@ html {
     transform: scale(0.98);
     opacity: 0.9;
 }
+
+@media screen and (max-width: 768px) {    
+    #category-grid{
+        display: flex;
+        flex-direction: column;
+    }
+}
