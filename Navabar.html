@@ -154,6 +154,14 @@
     .nav-link:hover::after{
     opacity:1;
     }
+    #dotImage {
+    filter: invert(0%); /* Invert the colors to make it white */
+}
+
+/* Dark mode */
+.dark-mode #dotImage {
+    filter: invert(100%); /* Invert the colors to make it black */
+}
     
 
   </style>
@@ -238,8 +246,9 @@
         </li>
         <li class="nav-item dropdown" style="margin-right: 50px; margin-top: 5px;">
           <a class="nav-link" href="#" id="moreLinksDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <img id="dotImage" src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-ea7819.svg" alt="More Links" />
-        </a>
+              <img id="dotImage" src="dots-light.png" style="height: auto; width: 30px;" alt="More Links" />
+          </a>
+      
         
         </a>
         
@@ -262,21 +271,14 @@
       </ul>
     </div>
   </nav>
-  <script>
- const darkModeToggle = document.getElementById('darkModeToggle');
-const body = document.body;
-const dotImage = document.getElementById('dotImage');
+  <Script>
+    const body = document.body;
 
-darkModeToggle.addEventListener('click', () => {
-    body.classList.toggle('dark-mode'); // Toggle dark mode class on body
-    if (body.classList.contains('dark-mode')) {
-        dotImage.src = 'dots.png'; // Change image source to white dot image
-    } else {
-        dotImage.src = 'https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-ea7819.svg'; // Change back to original image source
-    }
-});
-  </script>
-
+function toggleDarkMode() {
+    body.classList.toggle('dark-mode');
+}
+  </Script>
+  
 
   <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
