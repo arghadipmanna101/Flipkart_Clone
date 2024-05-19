@@ -435,3 +435,7 @@ html {
 .back-to-top:hover span {
 	transform: translateY(-4px);
 }
+
+.deal-item img{
+    margin-bottom: 1rem;
+}
