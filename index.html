@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="manifest" href="manifest.json" />
   <link rel="stylesheet" href="./index.css" />
+  
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     integrity="sha512-..." crossorigin="anonymous" />
@@ -37,6 +38,57 @@
       margin: 0;
       padding: 0;
     }
+
+    /* bags section start*/
+    .bestSeller{
+          display: flex;
+          flex-direction: column;
+          padding: 15px;
+         
+        }
+        .best-seller{
+          display: flex;
+          gap: 25px;
+          margin-top: 10px;
+
+       
+        }
+        .bag{
+          display: flex;
+          flex-direction:column;
+
+          padding: 10px;
+          /* margin: 10px; */
+          border: 2px solid rgba(219, 216, 216, 0.452);
+          width: 270px;
+          height: 440px;
+          justify-content: space-evenly;
+          align-items: center;
+
+        }
+        .bag img{
+          width: 230px;
+          height: 310px;
+          transition: transform 0.2s ease-out;
+          margin-bottom: 10px;
+
+        }
+        .p1{ 
+          font-size: larger;
+          color: rgb(103, 102, 102)!important;
+          /* margin-top: 10px; */
+        }
+      
+        .p2{
+          font-size: 500;
+          font-weight: bolder;
+        }
+        .bag img:hover{
+          transform: scale(1.1);
+        }
+        
+
+    /* bags section end */
 
     .swiper {
       width: 100%;
@@ -342,6 +394,56 @@
     </div>
 </div>
 </section>
+
+
+<div class="bestSeller">
+  <div>
+    <h1>Top deals on bags</h1>
+  </div>
+  <div class="best-seller">
+    <div class="bag">
+      <img src="bags/bag10.webp" alt="">
+      <div class="best-para">
+        <p class="p1">PU structured bag</p>
+        <p class="p2">Upto 60% Off</p>  
+      </div>
+    </div>
+
+    <div class="bag">
+      <img src="bags/bag7.webp" alt="">
+      <div class="best-para">
+        <p class="p1">Women shoulder bag</p>
+        <p class="p2">Upto 30% Off</p>  
+      </div>
+    </div>
+
+    <div class="bag">
+      <img src="bags/bag9.webp" alt="">
+      <div class="best-para">
+        <p class="p1">Women handheld bag</p>
+        <p class="p2">Upto 30% Off</p>  
+      </div>
+    </div>
+
+    <div class="bag">
+      <img src="bags/bag4.webp" alt="">
+      <div class="best-para">
+        <p class="p1">Structured handheld bag</p>
+        <p class="p2">Upto 70% Off</p>
+      </div>
+    </div>
+
+    <div class="bag">
+      <img src="bags/bag6.webp" alt="">
+      <div class="best-para">
+        <p class="p1">Structured handheld bag</p>
+        <p class="p2">Upto 70% Off</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
   
   <!-- newsection for grid items  -->
   <section id="img-box">
