@@ -171,7 +171,7 @@ footer {
     padding-left: 30px;
 }
 .foot-down {
-    padding: 10px 40px;
+    padding: 10px 25px;
     display: flex;
     margin-top: 20px;
     font-size: 12px;
@@ -179,17 +179,21 @@ footer {
     font-weight: 600;
     flex-wrap: wrap;
 }
-.foot-down > div{
-    flex: 1 1 300px;
+
+.foot-down > div {
+    flex: 1 1 auto;  
 }
+
 .foot-down ul {
     display: flex;
-    gap: 200px;
+    gap: 20px;
 }
 
 .payment-icons img {
     height: 15px;
 }
+
+
 
 #phones img {
     transition: transform 0.3s ease-in-out;
@@ -408,7 +412,6 @@ html {
 }
 
 .back-to-top {
-	position: sticky;
 	bottom: 2rem;
 	right: 2rem;
 	display: inline-flex;
