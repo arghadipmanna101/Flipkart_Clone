@@ -24,8 +24,8 @@ body {
     justify-content: space-between;
     background-color: rgb(255, 253, 253);
     position: relative;
-    padding: 0;
     padding: 0 4%;
+    padding-top: 20px;
     width: 100%;
     min-width:1000px;
     box-shadow: 0 0 10px rgb(87, 110, 172);
@@ -55,6 +55,7 @@ body {
     z-index: 500;
 }
 .categories > li:hover > ul {
+    margin-top: 10px;
     display: flex;
     justify-content: left;
     align-items: stretch;
