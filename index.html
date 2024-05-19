@@ -20,7 +20,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
-  <style>
+  <!-- <style>
     * {
       padding: 0;
       margin: 0;
@@ -28,7 +28,7 @@
 
     html,
     body {
-      position: relative;
+     
       height: 100%;
       background: #eee;
       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -57,7 +57,7 @@
       height: 100%;
       object-fit: cover;
     }
-  </style>
+  </style> -->
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -120,7 +120,7 @@
           z-index: 600;
         }
         #carousal {
-          padding: 18vh 2% 15px;
+         padding-top: 100px;
           width: 100%;
         }
         #top-deals {
@@ -140,14 +140,14 @@
         }
         .bi-question-circle-fill,.bi-gift-fill,.bi-briefcase-fill
         {
-            color: #ffc600;
+            color: rgb(143, 143, 143);
         }
 /* Apply the animation to the footer sections */
 
 .foot-left .about li a:hover, 
 .social ul li a:hover, 
 .foot-down ul li a:hover {
-    color: #ffc600; /* Change to your desired hover color */
+    color: #427eff; /* Change to your desired hover color */
 }
 
 .social ul li a i {
@@ -158,8 +158,11 @@
     animation: slideInFromLeft 0.5s ease forwards;
 }
 #carouselExampleIndicators{
-  padding: 60px;
-}.container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 2rem 1rem;
@@ -265,7 +268,7 @@
 
   
   
-  <section id="phones">
+  <!-- <section id="phones">
     <div><h3>Best Deals On Smartphones..</h3></div>
     <div id="box">
       <div class="box-i">
@@ -298,7 +301,7 @@
       </div>
       
     </div>
-  </section>
+  </section> -->
 
 <section id="phones">
   <div class="box">
@@ -382,7 +385,8 @@
     
   </section>
  
-
+  <div id="content-page"></div>
+<!-- 
   <section>
     <div class="details">
       <div class="info">
@@ -474,7 +478,7 @@
       </div>
     </div>
   
-  </section>
+  </section> -->
 
   <div class="container mt-5">
     <h2 class="text-center mb-4 heading">Frequently Asked Questions</h2>
@@ -748,6 +752,7 @@
       $("#loader").load("./preloader.html");
       $("#category-list").load("./categorylist.html");
       $("#top-deals").load("./topdeals.html");
+      $("#content-page").load("./content-page.html");
      });
     fetch('./Navabar.html')
       .then(response => response.text())
