@@ -116,14 +116,17 @@ body {
 } */
 
 footer {
-    background-color: white;
-    color: #000;
+    background-color: rgb(1, 39, 88);
+    color: #ffffff;
     padding: 15px 35px;
 }
 .foot-top {
     display: flex;
     border-bottom: 1px solid rgb(85, 78, 78);
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+}
+.foot-top ul,.foot-down ul{
+    padding: 0;
 }
 .foot-left, .foot-right {
     display: flex;
@@ -134,22 +137,33 @@ footer {
     flex-wrap: wrap;
 }
 .foot-left h5, .foot-right h5 {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
     color: #9b9898;
 }
-.foot-left .about li, .foot-right .part, .foot-right .office, .social ul li {
+.foot-left .about li,.foot-down li, .foot-right .part, .foot-right .office, .social ul li {
     list-style: none;
 }
 .foot-left .about li a, .social ul li a, .foot-down ul li a {
     font-size: 12px;
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: 600;
     text-decoration: none;
 }
+.about{
+    min-width: 150px;
+}
+.about li a:hover{
+    text-decoration: underline;
+}
 .social ul {
     display: flex;
-    gap: 10px; 
+    gap: 20px; 
+    
+}
+.social ul .bi{
+    color: #ffffff;
+    font-size: 25px;
 }
 .foot-right {
     border-left: 1px solid rgb(85, 78, 78);
@@ -164,18 +178,31 @@ footer {
     font-weight: 600;
     flex-wrap: wrap;
 }
-.foot-down > div{
-    flex: 1 1 300px;
+.foot-down .ft-1{
+    max-width: 500px;
+    width: -webkit-fill-available;
 }
 .foot-down ul {
     display: flex;
-    gap: 200px;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    width: -webkit-fill-available;
+    justify-content: space-between;
+    flex-direction: row;
 }
-
+.payment-icons{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+}
 .payment-icons img {
     height: 15px;
 }
-
+.office a{
+    color: #70ebf9;
+}
 #phones img {
     transition: transform 0.3s ease;
   }
@@ -183,6 +210,10 @@ footer {
   #phones img:hover {
     transform: scale(1.1); /* Increase the scale factor as needed */
   }
+.bi-question-circle-fill,.bi-gift-fill,.bi-briefcase-fill
+{
+    color: #ffc600;
+}
 /* Tablets and below */
 @media (max-width: 768px) {
     footer {
@@ -198,7 +229,6 @@ footer {
     }
     .foot-right {
         border-left: none;
-        padding-left: 0;
     }
     .foot-down {
         flex-direction: column;

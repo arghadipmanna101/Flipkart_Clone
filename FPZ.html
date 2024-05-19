@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flipkart Plus Zone</title>
     <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <style>
       body {
@@ -26,21 +27,38 @@
         font-weight: bold;
       }
       .header .search-bar {
-        flex: 1;
+        display: flex;
         margin: 0 20px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        background-color: white;
+        width: 100%;
+        border-radius: 4px;
+      }
+      #search-icon{
+        background-color: white;
+        padding: 9px;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        font-size: 15px;
+        font-weight: bolder;
+        color: #08265f;
       }
       .header .search-bar input {
         width: 100%;
-        padding: 10px;
+        padding: 10px 10px 10px 0px;
         border: none;
-        border-radius: 4px;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        outline: none;
       }
       .header .options {
         display: flex;
         gap: 20px;
       }
       .banner {
-        background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtZ5ediPrmW2u1hdiQi8hvbeEjVKXu1e0PXCFd-N1m9g&s');
+        background-image:url('./images/fpz.jpg');
         background-size: cover;
         background-position: center;
         height: 400px;
@@ -50,6 +68,8 @@
         color: white;
         font-size: 36px;
         font-weight: bold;
+        box-shadow: inset 0 0 500px 0px black;
+        text-shadow: 0 0 14px black;
       }
       .container {
         padding: 20px;
@@ -86,9 +106,10 @@
   </head>
   <body>
     <div class="header">
-      <div class="logo">Flipkart Plus</div>
+      <div class="logo">Flipkart&nbsp;Plus</div>
       <div class="search-bar">
-        <input type="text" placeholder="Search for products, brands and more" />
+        <i class="bi bi-search" id="search-icon"></i>
+        <input id="search-input" type="text" placeholder="Search for products, brands and more">
       </div>
       <div class="options">
         <div>Login</div>
@@ -179,9 +200,10 @@
             <div class="mail">
               <h5>Mail Us:</h5>
               <p>
-                Flipkart Internet Private Limited,
-                Buildings Alyssa, Begonia & Clove Embassy Tech Village,
-                Outer Ring Road, Devarabeesanahalli Village, Bengaluru, 560103, Karnataka, India
+                Flipkart Internet Private Limited,<br>
+                Buildings Alyssa, Begonia & <br>Clove Embassy Tech Village,<br>
+                Outer Ring Road, Devarabeesanahalli Village,<br> Bengaluru, 560103,<br> Karnataka, India <br>
+
               </p>
             </div>
             <div class="social">
@@ -195,18 +217,16 @@
           </div>
           <div class="office">
             <h5>Registered Office Address:</h5>
-            <p>Flipkart Internet Private Limited,
-              Buildings Alyssa, Begonia & Clove Embassy Tech Village,
-              Outer Ring Road, Devarabeesanahalli Village, Bengaluru, 560103, Karnataka, India</p>
+            <p>Flipkart Internet Private Limited,<br>
+              Buildings Alyssa, Begonia & <br>Clove Embassy Tech Village,<br>
+              Outer Ring Road, Devarabeesanahalli Village,<br> Bengaluru, 560103,<br> Karnataka, India <br></p>
             <p>CIN : U51109KA2012PTC066107</p>
             <P>Telephone: <a href="">044-45614700</a></P>
           </div>
         </div>
       </div>
-      <div class="foot-down">
-  
-        <div>
-  
+      <div class="foot-down"> 
+        <div class="ft-1">
           <ul>
             <li><a href=""><i class="bi bi-briefcase-fill"></i> Become a seller</a></li>
             <li><a href=""><i class="bi bi-gift-fill"></i> Gift Cards</a></li>
