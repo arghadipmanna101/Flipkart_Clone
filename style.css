@@ -35,7 +35,10 @@ footer {
 
 /* Style for the link */
 
-
+.info{
+  color: #878787;
+  font-size: 12px;
+}
 .itemSection {
   max-width: 1434px;
   height: 314px;
