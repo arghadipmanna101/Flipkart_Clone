@@ -279,7 +279,7 @@ footer {
 
 /* For screen sizes 1010px to 1300px */
 @media screen and (min-width: 1010px) and (max-width: 1300px) {
-  /* Add your styles for this range */
+ 
 }
 /* For screen sizes 300px to 600px */
 @media screen and (min-width: 300px) and (max-width: 600px) {
