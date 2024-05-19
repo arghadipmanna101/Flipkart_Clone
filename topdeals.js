@@ -1,42 +1,66 @@
 const topdeals = [
     {
-        "name": "Classical Violins",
-        "description": "Up to 75% off",
+        "name":"Music instruments",
+        "description": " Brand : Osco",
+        "price": "₹ 4K",
+        "rating":"🌟4.5 ,",
+        "off": "30%off",
         "imageUrl": "topDeal1.webp"
     },
     {
-        "name": "Smart Accessories",
-        "description": "Starting from &#8377; 250",
+        "name": "Earphones & Watches",
+        "description": " Brand : Loyal Brothers",
+        "price": "₹ 2.5k",
+        "rating":"🌟4.0 ,",
+        "off": "15%off",
         "imageUrl": "topDeal2.webp"
     },
     {
-        "name": "Travel Umbrellas",
-        "description": "Get free umbrella case",
+        "name": "Umbrellas",
+        "description": "Brand : We",
+        "price": "₹ 590",
+        "rating":"🌟4.1 ,",
+        "off": "23%off",
+
         "imageUrl": "topDeal3.webp"
     },
     {
-        "name": "Baby-Soft Teddy Bears",
-        "description": "Under &#8377;300",
+        "name": "Teddy bear",
+        "description": "Brand : Love",
+        "price": "₹ 1.2k",
+        "rating":"🌟3.8 ,",
+        "off": "7%off",
         "imageUrl": "topDeal4.webp"
     },
     {
-        "name": "Branded Sneakers",
-        "description": "Affordable, Under &#8377;1000",
+        "name": "Shoes",
+        "description":"Brand : Buma",
+        "price": "₹ 3.5k",
+        "rating":"🌟4.5 ,",
+        "off": "5%off",
         "imageUrl": "topDeal5.webp"
     },
     {
-        "name": "Kurtas, Sets & more",
-        "description": "Starting from &#8377;249",
+        "name": "Urbanic coat",
+        "description": "Brand : Rubic",
+        "price": "₹ 4.2k",
+        "rating":"🌟4.9 ,",
+        "off": "3%off",
         "imageUrl": "topDeal6.webp"
     },
     {
-        "name": "Formal T-Shirts",
-        "description": "Under &#8377;349",
+        "name": "Hoodies",
+        "description": "Brand : Looks",
+        "price": "₹ 2.5k",
+        "rating":"🌟3.2 ,",
+        "off": "19%off",
         "imageUrl": "topDeal7.webp"
     },
     {
-        "name": "Vivo T2 Pro 5G ",
-        "description": "Up to 35% off",
+        "name": "Mobiles",
+        "description": "Brand : Ninex", 
+        "price": "₹ 56.5k",
+        "rating":"🌟4.6 ,",
         "imageUrl": "topDeal8.webp"
     }
 ]
@@ -49,6 +73,9 @@ function addTopdeals() {
             <img src="./images/${t.imageUrl}" alt="">
             <h4>${t.name}</h4>
             <p>${t.description.substring(0, 50)}</p>
+            <p>${t.price}
+            ${t.rating}
+            ${t.off}</p>
         `);
         topdealsWrapper.append(slide);
     });

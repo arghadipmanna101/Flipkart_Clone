@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-
-  <link
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flipkart</title>
+<link
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     rel="stylesheet"
   />
@@ -167,7 +165,7 @@
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="moreLinksDropdown">
             <a class="dropdown-item" href="/communication-preferences/push?t=all"> <img width="26" height="18" src="https://img.icons8.com/fluency-systems-regular/48/appointment-reminders--v2.png" alt="appointment-reminders--v2"/> Notification Preferences</a>
 
-            <a class="dropdown-item" href="helpcentre.html"> <img width="28" height="28" src="https://www.shutterstock.com/shutterstock/photos/2273439411/display_1500/stock-vector-customer-service-icon-call-center-operator-wearing-headphone-on-white-background-2273439411.jpg" alt="imgcc"> 24x7 Customer Care</a>
+            <a class="dropdown-item" href="/helpcentre"> <img width="28" height="28" src="https://www.shutterstock.com/shutterstock/photos/2273439411/display_1500/stock-vector-customer-service-icon-call-center-operator-wearing-headphone-on-white-background-2273439411.jpg" alt="imgcc"> 24x7 Customer Care</a>
 
             <a
               class="dropdown-item"
@@ -188,6 +186,129 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+<style>
+  /* Basic reset and styling */
+  body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
 
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  header, nav, main, footer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+    cursor: pointer;
+    color: #007bff;
+  }
+
+  nav ul li:hover {
+    text-decoration: underline;
+  }
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .product {
+    flex: 1 0 200px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+
+  .product img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  footer {
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Flipkart</h1>
+</header>
+
+<nav>
+  <ul>
+    <li id="electronics">Electronics</li>
+    <!-- Add more categories here -->
+  </ul>
+</nav>
+
+<main id="products">
+  <!-- Products will be displayed here -->
+</main>
+
+<footer>
+  <p>&copy; 2024 Flipkart. All rights reserved.</p>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const productsContainer = document.getElementById('products');
+
+  fetchElectronics(); // Automatically fetch electronics items when the page loads
+
+  function fetchElectronics() {
+    // Simulating fetching electronics items from a database or API
+    const electronicsItems = [
+      { name: 'Smartphone', price: '$500', image: 'https://via.placeholder.com/150' },
+      { name: 'Laptop', price: '$1000', image: 'https://via.placeholder.com/150' },
+      { name: 'Tablet', price: '$300', image: 'https://via.placeholder.com/150' }
+      // Add more electronics items here
+    ];
+
+    renderProducts(electronicsItems);
+  }
+
+  function renderProducts(products) {
+    productsContainer.innerHTML = ''; // Clear previous content
+
+    products.forEach(product => {
+      const productDiv = document.createElement('div');
+      productDiv.classList.add('product');
+      productDiv.innerHTML = `
+        <img src="${product.image}" alt="${product.name}">
+        <h2>${product.name}</h2>
+        <p>${product.price}</p>
+      `;
+      productsContainer.appendChild(productDiv);
+    });
+  }
+});
+</script>
+
+</body>
 </html>
+
