@@ -17,6 +17,15 @@ body {
     background-color: #e7eefb;
     margin-right: 15px;
 }
+.dropdown-item{
+    padding: 0px !important;
+    position: relative;
+    right: 22px ;
+}
+
+#nightowl-switcher-default{
+    top: calc(42px);
+}
 
 #input_data {
     width: 100%;
@@ -37,8 +46,8 @@ body {
 .navbar-nav {
     display: flex;
     justify-content: space-between;
-    margin-right: 50px;
-    gap: 30px;
+    /* margin-right: 50px; */
+    /* gap: 30px; */
 }
 
 .navtab {
