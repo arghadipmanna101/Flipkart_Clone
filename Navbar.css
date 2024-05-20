@@ -1,8 +1,9 @@
-#input_data {
-  width: 400px;
-  /* Adjust the width as needed */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  
 }
-
 .nav-item {
   transition: background-color 0.5s ease;
 }
@@ -12,6 +13,7 @@
   color: #000;
   display: block;
   padding: 20px;
+  width: 100%;
 }
 
 .navtab{
@@ -26,7 +28,7 @@
 }
 
 #input_data{
-  width: 500px;
+  width: 35vw;
   border: none;
   background-color: transparent;
   padding: 5px;
@@ -73,4 +75,33 @@
 .nav-item-divider:last-child::after {
   display: none; 
 }
+
+
+
+/* Styles for the dropdown menu */
+.dropdown-menu {
+  background-color: #ffffff; /* Background color of the dropdown */
+  border: 1px solid #ddd; /* Border color */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  padding: 10px 0; /* Padding inside the dropdown */
+  min-width: 250px; /* Minimum width of the dropdown */
+  z-index: 1000; /* Ensures dropdown appears above other elements */
+}
+
+/* Styles for the dropdown items */
+.dropdown-item {
+  padding: 10px 20px; /* Padding inside each item */
+  color: #333; /* Text color */
+  text-decoration: none; /* Remove underline from links */
+  display: block; /* Display as block element */
+  width: 100%; /* Full width */
+  transition: background-color 0.2s ease, color 0.2s ease; /* Smooth transition for background and text color */
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa; /* Background color on hover */
+  color: #007bff; /* Text color on hover */
+}
+
 
