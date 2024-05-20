@@ -446,8 +446,10 @@ html {
 .back-to-top:hover span {
 	transform: translateY(-4px);
 }
-
-#carousal:hover{
-    transform: scale(0.98);
-    opacity: 0.9;
+(max-width: 1000px) {
+    .navbar-nav {
+        margin-right: 40px;
+        gap: 25px;
+    }
 }
+

@@ -223,3 +223,91 @@ footer {
   height: 24px;
   margin-left: 10px;
 }
+/* For screen sizes 300px to 600px */
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  .itemSection {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .item {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+
+  .viewAllSection {
+    margin-top: 20px;
+  }
+
+  .footer-section {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .footer-section h3 {
+    font-size: 14px;
+  }
+
+  .footer-left, .footer-right {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .vertical-line {
+    display: none;
+  }
+}
+
+/* For screen sizes 610px to 800px */
+@media screen and (min-width: 610px) and (max-width: 800px) {
+  .itemSection {
+    justify-content: space-between;
+  }
+
+  .item {
+    width: 30%;
+  }
+}
+
+/* For screen sizes 810px to 1000px */
+@media screen and (min-width: 810px) and (max-width: 1000px) {
+  .itemSection {
+    justify-content: space-evenly;
+  }
+
+  .item {
+    width: 23%;
+  }
+}
+
+/* For screen sizes 1010px to 1300px */
+@media screen and (min-width: 1010px) and (max-width: 1300px) {
+ 
+}
+/* For screen sizes 300px to 600px */
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  .item {
+    width: 100%; /* Display items in a single column */
+  }
+}
+
+/* For screen sizes 610px to 800px */
+@media screen and (min-width: 610px) and (max-width: 800px) {
+  .item {
+    width: 48%; /* Display items in two columns */
+  }
+}
+
+/* For screen sizes 810px to 1000px */
+@media screen and (min-width: 810px) and (max-width: 1000px) {
+  .item {
+    width: 31%; /* Display items in three columns */
+  }
+}
+
+/* For screen sizes 1010px to 1300px */
+@media screen and (min-width: 1010px) and (max-width: 1300px) {
+  .item {
+    width: 23%; /* Display items in four columns */
+  }
+}
