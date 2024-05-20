@@ -61,7 +61,6 @@ const topdeals = [
         "description": "Brand : Ninex", 
         "price": "₹ 56.5k",
         "rating":"🌟4.6 ,",
-        "off": "12%off",
         "imageUrl": "topDeal8.webp"
     }
 ]
