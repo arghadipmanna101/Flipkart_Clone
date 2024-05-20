@@ -78,7 +78,12 @@
     border-width: 0 0 2px;
     border-color: black
   }
-
+.psw {
+   width: 90%; margin-top: 10px;height: 10px;
+    outline: 0;
+  display: flex;
+  padding-top: 16px;
+}
 .textm{
    font-size: 12px;width: 80%;
     margin: auto;padding-top: 10px;
