@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .hero {
+    background: url('https://source.unsplash.com/1600x900/?grocery,store') no-repeat center center;
+    background-size: cover;
+    height: 80vh;
+  }
+  
+  .hero-text {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .products-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+  }
+  
+  .section-title {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+  }
+  
+  .product-card {
+    margin-bottom: 30px;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .product-card .card-body {
+    background-color: #f0f0f0;
+    padding: 15px;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: white;
+  }
+  
