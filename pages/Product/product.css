@@ -1,36 +1,130 @@
-#products{
+#products {
     display: flex;
+    justify-content: space-between;
+    padding: 20px;
 }
 
-#topmenu >span{
+.filters {
+    width: 22%;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+#topmenu {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 10px;
+}
+
+#topmenu > span {
     padding: 5px;
     margin: 5px;
     font-family: sans-serif;
+    cursor: pointer;
+    background-color: #E0E0E0;
+    border-radius: 5px;
 }
 
-#collection{
+#collection {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
 }
 
-#collection >div{
- 
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; 
-  margin:10px;
-  padding:5px; 
-  border-radius: 8px;  
+#collection > div {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 8px;
 }
 
-.avatar{
-    height: 300px;
-    width: 150px;
-}
-
-.innerbox{
-    display: flex;
-    justify-content:space-between;
-}
-#collection >div> img{
+.avatar {
     width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0; 
+}
+
+.innerbox {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Footer */
+#footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+#footer div {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.heading {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#footer div ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer div ul li {
+    margin-bottom: 5px;
+}
+
+#footer div ul li:last-child {
+    margin-bottom: 0;
+}
+
+#footer div ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%; 
+    max-width: 200px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card .avatar {
+    max-height: 200px; 
+    width: auto;
+    margin-bottom: 10px;
+    border-radius: 8px; 
+}
+
+.product-card p {
+    margin-bottom: 5px;
+}
+
+.price-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price,
+.actual-price {
+    font-weight: bold;
+}
+
+.actual-price {
+    text-decoration: line-through;
+    color: #999;
 }
