@@ -17,6 +17,15 @@ body {
     background-color: #e7eefb;
     margin-right: 15px;
 }
+.dropdown-item{
+    padding: 0px !important;
+    position: relative;
+    right: 22px ;
+}
+
+#nightowl-switcher-default{
+    top: calc(42px);
+}
 
 #input_data {
     width: 100%;
@@ -37,8 +46,8 @@ body {
 .navbar-nav {
     display: flex;
     justify-content: space-between;
-    margin-right: 50px;
-    gap: 30px;
+    /* margin-right: 50px; */
+    /* gap: 30px; */
 }
 
 .navtab {
@@ -56,17 +65,20 @@ body {
 }
 
 .main{
-    font-size:2.5rem;
-    color:#000;
-    margin: 10px  0;
-    font-weight: 500;
+    font-size:16px;
+    /* color:#000; */
+    /* margin: 10px  0; */
+    /* font-weight: 500; */
+    color: #878787;
 }
 
  .heading{
-    font-size:1.5rem;
+    /* font-size:1.5rem; */
+    font-size: 16px;
     /* color:#000099; */
-    color: #000066;
-   margin-bottom: 0.5rem;
+    /* color: #000066; */
+    color: #878787;
+   /* margin-bottom: 0.5rem; */
    font-weight:500;
  }
  .details{
@@ -434,8 +446,10 @@ html {
 .back-to-top:hover span {
 	transform: translateY(-4px);
 }
-
-#carousal:hover{
-    transform: scale(0.98);
-    opacity: 0.9;
+(max-width: 1000px) {
+    .navbar-nav {
+        margin-right: 40px;
+        gap: 25px;
+    }
 }
+
