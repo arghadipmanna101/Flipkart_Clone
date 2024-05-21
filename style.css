@@ -16,52 +16,28 @@ footer {
   width: 100%;
 }
 
-/* Add a smooth transition effect */
-.nav-item {
-  transition: background-color 0.5s ease; 
+.nav-link:hover{
+  background-color: #80aaed35;
+  border-radius: 15px;
 }
 
-.nav-item:hover {
-  background-color: grey;
-  text-decoration: underline;
-  opacity:1;
-}
 
 /* Style for the link */
 
 .nav-item:hover {
-  background-color: rgb(182, 181, 181);
-  text-decoration: none;
-  opacity: 0.85;
-  transition: all 0.2s ease-in;
-  transform:scale(1.1);
-  z-index: 1;
+  /* background-color: rgb(182, 181, 181); */
+  /* text-decoration: none; */
+  /* opacity: 0.85; */
+  /* transition: all 0.2s ease-in; */
+  /* transform:scale(1.1); */
+  /* z-index: 1; */
 }
 
 /* Style for the link */
 
-.nav-link {
-  text-decoration:none;
-  color: #000;
-  display: block;
-  padding: 20px;
-}
-
-.nav-link::after {
-  content:'';
-  opacity: 0;
-  transition: all 0.3s ease;
- 
-  height: 2px;
-  width: 100%;
-  background-color:color-mix(in srgb,rgb(54, 51, 51),grey);
-  position: absolute;
-  bottom: 0;
-  left:0;
-}
-
-.nav-link:hover::after{
-  opacity:1;
+.info{
+  color: #878787;
+  font-size: 12px;
 }
 .itemSection {
   max-width: 1434px;
@@ -82,6 +58,11 @@ footer {
 
 .itemImg {
   height: 200px;
+}
+
+.nav-item:hover{
+  background-color: #e7eefb;
+  border-radius: 20px;
 }
 
 .itemDescription {
@@ -241,4 +222,92 @@ footer {
 .payment-icons img {
   height: 24px;
   margin-left: 10px;
+}
+/* For screen sizes 300px to 600px */
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  .itemSection {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .item {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+
+  .viewAllSection {
+    margin-top: 20px;
+  }
+
+  .footer-section {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .footer-section h3 {
+    font-size: 14px;
+  }
+
+  .footer-left, .footer-right {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .vertical-line {
+    display: none;
+  }
+}
+
+/* For screen sizes 610px to 800px */
+@media screen and (min-width: 610px) and (max-width: 800px) {
+  .itemSection {
+    justify-content: space-between;
+  }
+
+  .item {
+    width: 30%;
+  }
+}
+
+/* For screen sizes 810px to 1000px */
+@media screen and (min-width: 810px) and (max-width: 1000px) {
+  .itemSection {
+    justify-content: space-evenly;
+  }
+
+  .item {
+    width: 23%;
+  }
+}
+
+/* For screen sizes 1010px to 1300px */
+@media screen and (min-width: 1010px) and (max-width: 1300px) {
+ 
+}
+/* For screen sizes 300px to 600px */
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  .item {
+    width: 100%; /* Display items in a single column */
+  }
+}
+
+/* For screen sizes 610px to 800px */
+@media screen and (min-width: 610px) and (max-width: 800px) {
+  .item {
+    width: 48%; /* Display items in two columns */
+  }
+}
+
+/* For screen sizes 810px to 1000px */
+@media screen and (min-width: 810px) and (max-width: 1000px) {
+  .item {
+    width: 31%; /* Display items in three columns */
+  }
+}
+
+/* For screen sizes 1010px to 1300px */
+@media screen and (min-width: 1010px) and (max-width: 1300px) {
+  .item {
+    width: 23%; /* Display items in four columns */
+  }
 }
