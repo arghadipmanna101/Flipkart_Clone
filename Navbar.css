@@ -1,6 +1,5 @@
-#input_data {
+/* #input_data {
   width: 400px;
-  /* Adjust the width as needed */
 }
 
 .nav-item {
@@ -72,5 +71,96 @@
 
 .nav-item-divider:last-child::after {
   display: none; 
+} */
+
+/* #input_data {
+  width: 400px;
+} */
+
+.nav{
+  display: flex;
 }
 
+.nav-item {
+  transition: background-color 0.5s ease;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  padding: 20px;
+}
+
+.navbar #searchbar{
+  width: 400px;
+  border: none;
+  padding: 5px;
+}
+
+#searchbar svg{
+  margin-right: 2px;
+  margin-bottom: 5px;
+  margin-left: 2px;
+}
+
+.navtab {
+  margin-left: 10px;
+  padding-left: 10px;
+  background-color: #e6eeff;
+  border-radius: 10px;
+}
+
+.navbar-nav {
+  margin-right: auto;
+}
+
+#input_data {
+  width: 300px;
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+}
+
+.nav-item:hover {
+  background-color: transparent;
+  transform: none;
+  border-bottom: none;
+}
+
+.nav-item::before:hover {
+  border: #fff;
+  transform: none;
+  background-color: transparent;
+}
+
+.nav-item-divider::before {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 30px;
+  background-color: #ccc;
+  margin: 0 10px;
+  transition: all 0.4s;
+}
+
+.nav-item-divider:last-child::before {
+  display: none;
+}
+
+.nav-item:hover .nav-item-divider::before {
+  background-color: #000;
+}
+
+.nav-item-divider::after {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 30px;
+  background-color: #ccc;
+  margin: 0 10px;
+}
+
+.nav-item-divider:last-child::after {
+  display: none;
+}
