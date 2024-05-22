@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Flipkart</title>
   <link rel="icon" type="image/x-icon" href="images/flipkart_lite.png">
+  <link rel="stylesheet" href="faq.css">
   <link rel="stylesheet" href="style.css" />
   <link rel="manifest" href="manifest.json" />
   <link rel="stylesheet" href="./index.css" />
@@ -15,11 +16,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-
+  <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
-  <style>
+  <!-- <style>
     * {
       padding: 0;
       margin: 0;
@@ -27,7 +28,7 @@
 
     html,
     body {
-      position: relative;
+     
       height: 100%;
       background: #eee;
       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -56,10 +57,12 @@
       height: 100%;
       object-fit: cover;
     }
-  </style>
+  </style> -->
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!</title>
+    <link rel="icon" type="image/png" href="https://iconpusher.com/icon/1449/1">
     <title>Flipkart</title>
     <link rel="icon" type="image/x-icon" href="/flipkart favicon-modified.png">
     <link rel="stylesheet" href="style.css" />
@@ -102,7 +105,12 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            transition: transform 0.3s ease;
       }
+        .swipe-slide img:hover{
+          transform: scale(1.1); 
+        }
+        
 
         #navbar-container {
           position: fixed;
@@ -112,7 +120,7 @@
           z-index: 600;
         }
         #carousal {
-          padding: 18vh 2% 15px;
+         padding-top: 100px;
           width: 100%;
         }
         #top-deals {
@@ -132,14 +140,14 @@
         }
         .bi-question-circle-fill,.bi-gift-fill,.bi-briefcase-fill
         {
-            color: #ffc600;
+            color: rgb(143, 143, 143);
         }
 /* Apply the animation to the footer sections */
 
 .foot-left .about li a:hover, 
 .social ul li a:hover, 
 .foot-down ul li a:hover {
-    color: #ffc600; /* Change to your desired hover color */
+    color: #427eff; /* Change to your desired hover color */
 }
 
 .social ul li a i {
@@ -150,8 +158,59 @@
     animation: slideInFromLeft 0.5s ease forwards;
 }
 #carouselExampleIndicators{
-  padding: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
+
+.container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        .title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+        .deals {
+            display: flex;
+            overflow-x: auto;
+            gap: 1rem;
+        }
+        .deal-item {
+            flex: none;
+            width: 14rem;
+        }
+        .deal-item img {
+            width: 100%;
+            height: auto;
+            background-color: #e2e8f0;
+            object-fit: cover;
+        }
+        .deal-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-top: 0.5rem;
+        }
+        .deal-price {
+            font-size: 0.875rem;
+            color: #718096;
+        }
+        .chevron {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 3rem;
+            height: 3rem;
+            background-color: #4299e1;
+            color: white;
+            border-radius: 50%;
+            margin-left: 1rem;
+        }
+        .chevron svg {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
 
     </style>
 </head>
@@ -168,6 +227,7 @@
   <!-- preloader -->
   <div id="loader"></div>
 
+
   <!-- category list -->
   <div id="category-list"></div>
 
@@ -181,13 +241,19 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="./images/add1.jpg" style="width: 100vw;" alt="First slide">
+          <a href="img-add1.html" target="_self">
+            <img class="d-block w-100" src="./images/add1.jpg" style="width: 100vw;" alt="First slide">
+          </a>
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="./images/add2.jpg" style="width: 100vw;" alt="Second slide">
+          <a href="img-add2.html" target="_self">
+            <img class="d-block w-100" src="./images/add2.jpg" style="width: 100vw;" alt="Second slide">
+          </a>
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="./images/add3.png" style="width: 100vw;" alt="Third slide">
+          <a href="img-add3.html" target="_self">
+            <img class="d-block w-100" src="./images/add3.png" style="width: 100vw;" alt="Third slide">
+          </a>
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -201,10 +267,9 @@
     </div>
   </section>
 
- 
-  </section>
   
-  <section id="phones">
+  
+  <!-- <section id="phones">
     <div><h3>Best Deals On Smartphones..</h3></div>
     <div id="box">
       <div class="box-i">
@@ -237,8 +302,51 @@
       </div>
       
     </div>
-  </section>
+  </section> -->
 
+<section id="phones">
+  <div class="box">
+    <h2 class="title">Top Deals on Electronics</h2>
+    <div class="deals">
+        <div class="deal-item">
+            <img src="tab.webp" alt="Bestselling Tablets" width="200" height="200" style="margin-top: 30%;">
+            <h3 class="deal-title">Bestselling Tablets</h3>
+            <p class="deal-price">From ₹9,899*</p>
+        </div>
+        <div class="deal-item">
+            <img src="lap.webp" alt="Big Savings on i5 Laptops" width="200" height="200" style="margin-top: 30%;">
+            <h3 class="deal-title">Big Savings on i5 Laptops</h3>
+            <p class="deal-price">From ₹24,990*</p>
+        </div>
+        <div class="deal-item">
+            <img src="nikon.webp.jpg" alt="Nikon D7500 DSLR" width="200" height="200">
+            <h3 class="deal-title">Nikon D7500 DSLR</h3>
+            <p class="deal-price">Just ₹2,238/month*</p>
+        </div>
+        <div class="deal-item">
+            <img src="MI.jpg" alt="Mi & REDMI" width="200" height="200">
+            <h3 class="deal-title">Mi & REDMI</h3>
+            <p class="deal-price">From ₹1,049</p>
+        </div>
+        <div class="deal-item">
+            <img src="headphone.webp" alt="Headphone Pouches" width="200" height="200">
+            <h3 class="deal-title">Headphone Pouches</h3>
+            <p class="deal-price">From ₹99</p>
+        </div>
+        <div class="deal-item">
+            <img src="carmusic.webp" alt="Car Music System" width="200" height="200">
+            <h3 class="deal-title">Car Music System</h3>
+            <p class="deal-price">Up to 65% Off</p>
+        </div>
+        <div class="chevron">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 18l6-6-6-6"></path>
+            </svg>
+        </div>
+    </div>
+</div>
+</section>
+  
   <!-- newsection for grid items  -->
   <section id="img-box">
     <a href=""
@@ -278,7 +386,8 @@
     
   </section>
  
-
+  <div id="content-page"></div>
+<!-- 
   <section>
     <div class="details">
       <div class="info">
@@ -370,7 +479,84 @@
       </div>
     </div>
   
-  </section>
+  </section> -->
+
+  <div class="container mt-5">
+    <h2 class="text-center mb-4 heading">Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+        <div class="card">
+            <div class="card-header bg-white" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link text-dark" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        1. How do I create an account?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                <div class="card-body">
+                    To create an account on Flipkart, simply click on the "Sign Up" button located at the top-right corner of the homepage. Follow the prompts to enter your details and create your account.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header bg-white" id="headingTwo">
+                <h5 class="mb-0">
+                    <button class="btn btn-link text-dark collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        2. How can I place an order?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                <div class="card-body">
+                    Placing an order on Flipkart is easy! Once you've found the product you want to buy, click on it to view details and then click on the "Buy Now" or "Add to Cart" button. Follow the steps to complete your order.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header bg-white" id="headingThree">
+                <h5 class="mb-0">
+                    <button class="btn btn-link text-dark collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        3. What payment options are available?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                <div class="card-body">
+                    Flipkart offers various payment options including credit/debit cards, net banking, UPI, EMI, and Cash on Delivery (COD) for eligible orders.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header bg-white" id="headingFour">
+                <h5 class="mb-0">
+                    <button class="btn btn-link text-dark collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        4. How can I track my order?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
+                <div class="card-body">
+                    You can track your order by clicking on the "Track Order" link in the "My Orders" section of your Flipkart account. You will receive regular updates on your order status via email and SMS.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header bg-white" id="headingFive">
+                <h5 class="mb-0">
+                    <button class="btn btn-link text-dark collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        5. What is Flipkart's return policy?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqAccordion">
+                <div class="card-body">
+                    Flipkart has a hassle-free return policy. If you're not satisfied with your purchase, you can initiate a return within the specified return period. Simply go to the "My Orders" section, select the order you want to return, and follow the prompts.
+                </div>
+            </div>
+        </div>
+        <!-- Add more FAQ items if required -->
+    </div>
+</div> 
 
   <footer>
     <div class="foot-top">
@@ -436,7 +622,7 @@
             <h5>Social</h5>
             <ul>
               <li><a href="https://www.facebook.com/flipkart/"><i class="bi bi-facebook"></i></a></li>
-              <li><a href="https://twitter.com/Flipkart"><i class="bi bi-twitter"></i></a></li>
+              <li><a href="https://twitter.com/Flipkart"><i class="fa-brands fa-x-twitter" style="padding-top: 5px;"></i></a></li>
               <li><a href="https://www.youtube.com/flipkart"><i class="bi bi-youtube"></i></a></li>
             </ul>
           </div>
@@ -567,6 +753,7 @@
       $("#loader").load("./preloader.html");
       $("#category-list").load("./categorylist.html");
       $("#top-deals").load("./topdeals.html");
+      $("#content-page").load("./content-page.html");
      });
     fetch('./Navabar.html')
       .then(response => response.text())
@@ -605,7 +792,19 @@
 <a href="#" class="back-to-top">
   <span class="material-icons">arrow_upward</span>
 </a>
-
+<script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '6647471456cab012ae016d07' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production'
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
 </body>
 
 </html>
