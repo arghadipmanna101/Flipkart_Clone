@@ -451,5 +451,10 @@ html {
         margin-right: 40px;
         gap: 25px;
     }
+  
+@media screen and (max-width: 768px) {    
+    #category-grid{
+        display: flex;
+        flex-direction: column;
+    }
 }
-
