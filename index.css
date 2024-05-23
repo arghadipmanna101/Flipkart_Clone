@@ -7,13 +7,24 @@ body {
     margin: 0;
     padding: 0;
 }
-
+.info > div {
+    text-align: justify;
+}
 /* Navbar styles */
 #searchbar {
     padding: 4px;
     border-radius: 15px;
     background-color: #e7eefb;
-    margin-left: 15px;
+    margin-right: 15px;
+}
+.dropdown-item{
+    padding: 0px !important;
+    position: relative;
+    right: 22px ;
+}
+
+#nightowl-switcher-default{
+    top: calc(42px);
 }
 
 #input_data {
@@ -35,8 +46,8 @@ body {
 .navbar-nav {
     display: flex;
     justify-content: space-between;
-    margin-right: 50px;
-    gap: 30px;
+    /* margin-right: 50px; */
+    /* gap: 30px; */
 }
 
 .navtab {
@@ -54,24 +65,25 @@ body {
 }
 
 .main{
-    font-size:2.5rem;
-    color:#000;
-    margin: 10px  0;
-    font-weight: 500;
-    
+    font-size:16px;
+    /* color:#000; */
+    /* margin: 10px  0; */
+    /* font-weight: 500; */
+    color: #878787;
 }
 
  .heading{
-    font-size:1.5rem;
+    /* font-size:1.5rem; */
+    font-size: 16px;
     /* color:#000099; */
-    color: #000066;
-   margin-bottom: 0.5rem;
+    /* color: #000066; */
+    color: #878787;
+   /* margin-bottom: 0.5rem; */
    font-weight:500;
  }
  .details{
     padding:2rem;
  }
-
 
 
 #category-grid {
@@ -376,27 +388,28 @@ footer {
     padding: 20px;
     margin: 15px;
     gap: 49px;
-    
-    
 }
+
 .img{
     transition: transform 0.3s ease 0.1s, width 2s, height 2.5s;
 
 }
+
 .img:hover{
     transform: scale(1.1);
 }
+
 /* adding Transition property to the images of the img-box section */
- #img-box img{
-    width: 100%; 
+#img-box img{
+  width: 100%; 
   height: auto; 
   transition: transform 0.3s ease-in-out;
- }
-  #img-box img:hover{
-    transform: scale(1.2);
-    opacity: 0.82;
-  }
+}
 
+#img-box img:hover{
+    transform: scale(1.0);
+    opacity: 0.75;
+}
 
 
 /* BACK TO TOP */
@@ -433,3 +446,10 @@ html {
 .back-to-top:hover span {
 	transform: translateY(-4px);
 }
+@media(max-width: 1000px) {
+    .navbar-nav {
+        margin-right: 40px;
+        gap: 25px;
+    }
+}
+
