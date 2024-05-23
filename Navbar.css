@@ -23,6 +23,8 @@
 
 .navbar-nav{
   margin-right: auto;
+  /* display: flex;
+  justify-content: center; */
 }
 
 #input_data{
