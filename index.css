@@ -443,3 +443,12 @@ html {
 .back-to-top:hover span {
 	transform: translateY(-4px);
 }
+
+@media(max-width: 1000px) {
+    .navbar-nav {
+        margin-right: 40px;
+        gap: 25px;
+    }
+}
+
+

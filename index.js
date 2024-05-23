@@ -15,13 +15,11 @@ let arr = [
       title: "Fashion",
       href:'Product.html'
     },
-    ,
     {
       img_src:
         "https://rukminim1.flixcart.com/flap/80/80/image/69c6589653afdb9a.png?q=100",
       title: "Electronics",
     },
-    ,
     {
       img_src:
         "https://rukminim1.flixcart.com/flap/80/80/image/ab7e2b022a4587dd.jpg?q=100",
