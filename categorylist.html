@@ -6,6 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./categorylist.css">
     <title>Category List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .categorylist-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .categories {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 0 -1rem;
+        }
+        .category-item {
+            width: calc(33.333% - 2rem);
+            margin: 1rem;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .category-item:hover {
+            transform: translateY(-5px);
+        }
+        .category-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .category-title {
+            padding: 1rem;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>

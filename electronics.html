@@ -14,11 +14,45 @@
         .card-img-top {
             height: 200px;
             object-fit: cover;
+            transition: transform 0.5s; /* Add a smooth transition effect */
+        }
+        .card-img-top:hover {
+            transform: scale(1.05); /* Add a hover effect to the image */
+        }
+        .card-body {
+            padding: 1.5rem; /* Add some padding to the card body */
+        }
+        .card-title {
+            font-weight: bold; /* Make the card title bold */
+        }
+        .card-text {
+            font-size: 0.9rem; /* Make the card text smaller */
+            color: #666; /* Make the card text a bit darker */
         }
     </style>
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Electronics</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="container mt-5">
         <h1 class="text-center mb-4">Electronics Categories</h1>
         <div class="row">
@@ -28,6 +62,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Mobile Phones</h5>
                         <p class="card-text">Smartphones, Feature Phones</p>
+                        <a href="#" class="btn btn-primary btn-sm">Explore</a> <!-- Add a call-to-action button -->
                     </div>
                 </div>
             </div>
@@ -37,6 +72,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Computers</h5>
                         <p class="card-text">Laptops, Desktops, Tablets</p>
+                        <a href="#" class="btn btn-primary btn-sm">Explore</a>
                     </div>
                 </div>
             </div>
@@ -46,6 +82,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Accessories</h5>
                         <p class="card-text">Headphones, Chargers, Cases</p>
+                        <a href="#" class="btn btn-primary btn-sm">Explore</a>
                     </div>
                 </div>
             </div>
@@ -59,3 +96,7 @@
 </body>
 
 </html>
+<!--Here are the changes I made:
+
+Added a navigation bar at the top with links to Home, About, and Contact pages.
+Added a hover effect to the card-->
