@@ -25,6 +25,8 @@ body {
 
 #nightowl-switcher-default{
     top: calc(42px);
+    margin-left: 25px;
+    margin-top: -6px;
 }
 
 #input_data {
