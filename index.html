@@ -20,45 +20,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
-  <!-- <style>
-    * {
-      padding: 0;
-      margin: 0;
-    }
-
-    html,
-    body {
-     
-      height: 100%;
-      background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color: #000;
-      margin: 0;
-      padding: 0;
-    }
-
-    .swiper {
-      width: 100%;
-      height: 100%;
-    }
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  </style> -->
-
+ 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!</title>
@@ -82,7 +44,7 @@
         body {
             position: relative;
             height: 100%;
-            background: white;
+            background: rgb(249, 246, 246);
             font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
             font-size: 14px;
             color: #000;
@@ -96,7 +58,7 @@
         .swiper-slide{
             text-align: center;
             font-size: 18px;
-            background: #fff;
+            background: white;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -121,9 +83,12 @@
           z-index: 600;
         }
         #carousal {
-         padding-top: 100px;
+         padding-top: 120px;
           width: 100%;
+          height: max-content;
         }
+     
+        
         #top-deals {
           width: 100%;
           height: max-content;
@@ -155,6 +120,7 @@
     font-size: 18px; /* Adjust the size as needed */
 }
 
+
 .footer-section {
     animation: slideInFromLeft 0.5s ease forwards;
 }
@@ -162,6 +128,83 @@
   padding-top: 20px;
   padding-bottom: 20px;
 }
+#phones {
+    padding: 2rem;
+    background-color: white;
+    width: 100%;
+}
+
+#phones h2 {
+  
+    text-align: left;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+
+}
+#box {
+     
+    gap: 1rem;
+    padding-bottom: 1rem; 
+}
+
+.box-i {
+    flex: 0 0 auto; 
+    width: 14rem; 
+    text-align: center;
+    border: 1px solid rgb(228, 222, 222); 
+}
+
+.box-i img {
+    width: 80%;
+    height: auto; 
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+.box-i p {
+    margin-top: 0.5rem;
+}
+
+.box-i:hover img {
+    transform: scale(1.1); 
+}
+#electronics {
+  padding: 2rem;
+    background-color: white;
+    width: 100%;
+}
+
+#electronics h2 {
+    text-align: start;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#electronics #box {
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+#electronics .box-i {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgb(228, 222, 222);
+}
+
+#electronics .box-i img {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+#electronics .box-i p {
+    margin-top: 0.5rem;
+    margin-bottom: 0; 
+}
+
 
         .container {
             max-width: 1200px;
@@ -212,6 +255,12 @@
             width: 1.5rem;
             height: 1.5rem;
         }
+      
+
+    #carouselExampleIndicators .carousel-item img {
+      width: 100%;
+      height: 270px;
+    }
 
     </style>
 </head>
@@ -231,10 +280,8 @@
 
   <!-- category list -->
   <div id="category-list"></div>
-
-  <!-- carousel -->
-  <section id="carousal">
-    <div class="cat_list" >
+ <!--Redundant category list code
+<div class="cat_list" >
       <button class="btn btn-link">
         <a href="">
           <img src="grocry.jpg">
@@ -289,22 +336,27 @@
           <p>Two wheelers</p>
         </a>
       </button>
-     </div>
+     </div>-->
+
+  <!-- carousel -->
+  <section id="carousal">
+    
+    
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
-      <div class="carousel-inner">
+      <div class="carousel-inner" style="height: 270px;">
         <div class="carousel-item active">
-          <a href="img-add1.html" target="_self">
-            <img class="d-block w-100" src="./images/add1.jpg" style="width: 100vw;" alt="First slide">
+          <a href="img-add2.html" target="_self">
+            <img class="d-block w-100" src="./images/add2.jpg" style="width: 100vw;" alt="First slide">
           </a>
         </div>
         <div class="carousel-item">
-          <a href="img-add2.html" target="_self">
-            <img class="d-block w-100" src="./images/add2.jpg" style="width: 100vw;" alt="Second slide">
+          <a href="img-add1.html" target="_self">
+            <img class="d-block w-100" src="./images/add1.jpg" style="width: 100vw;" alt="Second slide">
           </a>
         </div>
         <div class="carousel-item">
@@ -328,9 +380,11 @@
   
   <section id="phones">
     <div><h2>Best Deals On Smartphones</h2></div>
+    
     <div id="box">
       <div class="box-i">
         <a href=""><img src="phone-6.webp"  alt="" /></a>
+        
         <p>poco m6 pro</p>
       </div>
       <div class="box-i">
@@ -347,58 +401,59 @@
       </div>
       <div class="box-i">
         <a href=""><img src="phone-2.webp" alt=""/></a>
+        
         <p>poco m6 5g</p>
       </div>
       <div class="box-i">
         <a href=""><img src="phone-3.webp" alt=""/></a>
         <p>poco x6 neo 5g</p>
       </div>
+      <div class="box-i">
+        <a href=""><img src="phone-5.webp" alt="" /></a>
+        <br>
+        <p>redmi 12 5g</p>
+      </div>
+     
+      
+      
       
     </div>
   </section>
+  <section id="electronics">
+    <div><h2>Top Deals on Electronics</h2></div>
 
-<section id="phones">
-  <div class="box">
-    <h2 class="title">Top Deals on Electronics</h2>
-    <div class="deals">
-        <div class="deal-item">
-            <img src="tab.webp" alt="Bestselling Tablets" width="200" height="200" style="margin-top: 30%;">
-            <h3 class="deal-title">Bestselling Tablets</h3>
-            <p class="deal-price">From ₹9,899*</p>
+    <div id="box">
+        <div class="box-i">
+            <a href=""><img src="tab.webp" alt="Bestselling Tablets" /></a>
+            <p>Bestselling Tablets</p>
         </div>
-        <div class="deal-item">
-            <img src="lap.webp" alt="Big Savings on i5 Laptops" width="200" height="200" style="margin-top: 30%;">
-            <h3 class="deal-title">Big Savings on i5 Laptops</h3>
-            <p class="deal-price">From ₹24,990*</p>
+        <div class="box-i">
+            <a href=""><img src="lap.webp" alt="Big Savings on i5 Laptops" /></a>
+            <p>Big Savings on i5 Laptops</p>
         </div>
-        <div class="deal-item">
-            <img src="nikon.webp.jpg" alt="Nikon D7500 DSLR" width="200" height="200">
-            <h3 class="deal-title">Nikon D7500 DSLR</h3>
-            <p class="deal-price">Just ₹2,238/month*</p>
+        <div class="box-i">
+            <a href=""><img src="nikon.webp.jpg" alt="Nikon D7500 DSLR" /></a>
+            <p>Nikon D7500 DSLR</p>
         </div>
-        <div class="deal-item">
-            <img src="MI.jpg" alt="Mi & REDMI" width="200" height="200">
-            <h3 class="deal-title">Mi & REDMI</h3>
-            <p class="deal-price">From ₹1,049</p>
+        <div class="box-i">
+            <a href=""><img src="MI.jpg" alt="Mi & REDMI" /></a>
+            <p>Mi & REDMI</p>
         </div>
-        <div class="deal-item">
-            <img src="headphone.webp" alt="Headphone Pouches" width="200" height="200">
-            <h3 class="deal-title">Headphone Pouches</h3>
-            <p class="deal-price">From ₹99</p>
+        <div class="box-i">
+            <a href=""><img src="headphone.webp" alt="Headphone Pouches" /></a>
+            <p>Headphone Pouches</p>
         </div>
-        <div class="deal-item">
-            <img src="carmusic.webp" alt="Car Music System" width="200" height="200">
-            <h3 class="deal-title">Car Music System</h3>
-            <p class="deal-price">Up to 65% Off</p>
-        </div>
-        <div class="chevron">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M9 18l6-6-6-6"></path>
-            </svg>
+        <div class="box-i">
+          <a href=""><img src="tab.webp" alt="Bestselling Tablets" /></a>
+          <p>Bestselling Tablets</p>
+      </div>
+        <div class="box-i">
+            <a href=""><img src="carmusic.webp" alt="Car Music System" /></a>
+            <p>Car Music System</p>
         </div>
     </div>
-</div>
 </section>
+
   
   <!-- newsection for grid items  -->
   <section id="img-box">
@@ -802,6 +857,45 @@
   </script>
 
   <script>
+    document.addEventListener('DOMContentLoaded', function() {
+  const phoneBox = document.getElementById('phone-box');
+  const electronicsBox = document.getElementById('electronics-box');
+  const phoneArrowPrev = document.querySelector('#phones .prev-arrow');
+  const phoneArrowNext = document.querySelector('#phones .next-arrow');
+  const electronicsArrowPrev = document.querySelector('#electronics .prev-arrow');
+  const electronicsArrowNext = document.querySelector('#electronics .next-arrow');
+
+  const scrollStep = 200; // Adjust this value as needed
+
+  phoneArrowPrev.addEventListener('click', function() {
+    phoneBox.scrollBy({
+      left: -scrollStep,
+      behavior: 'smooth'
+    });
+  });
+
+  phoneArrowNext.addEventListener('click', function() {
+    phoneBox.scrollBy({
+      left: scrollStep,
+      behavior: 'smooth'
+    });
+  });
+
+  electronicsArrowPrev.addEventListener('click', function() {
+    electronicsBox.scrollBy({
+      left: -scrollStep,
+      behavior: 'smooth'
+    });
+  });
+
+  electronicsArrowNext.addEventListener('click', function() {
+    electronicsBox.scrollBy({
+      left: scrollStep,
+      behavior: 'smooth'
+    });
+  });
+});
+
      $(function () {
       $("#loader").load("./preloader.html");
       $("#category-list").load("./categorylist.html");
