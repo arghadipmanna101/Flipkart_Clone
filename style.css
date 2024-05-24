@@ -17,19 +17,80 @@ footer {
 }
 
 /*Navbar items styling */
+
+
+/* General input styling */
+#input_data {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+  outline: none;
+}
+
+/* Navbar styling */
+.navbar-nav {
+  margin-right: auto;
+}
+
+/* Navigation item styling */
 .nav-item {
   transition: background-color 0.3s ease;
 }
 
 .nav-item:hover {
-  background-color: #f0f0f0;
+  background-color: #1badec;
   animation: pulseBackground 1s infinite alternate;
 }
 
-.nav-link:hover{
-  background-color: #80aaed35;
-  border-radius: 15px;
+
+/* Navigation tab styling */
+.navtab {
+  display: flex;
+  align-items: center;
+  padding: 4px 15px;
+  margin-left: 10px;
+  padding-left: 10px;
+  background-color: #e6eeff;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
+
+.navtab:hover {
+  background-color: #d4e1f7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navtab:hover svg {
+  transform: scale(1.2); /* Zoom effect */
+}
+
+/* Divider between navigation items */
+.nav-item-divider::before,
+.nav-item-divider::after {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 30px;
+  background-color: #0d9edc;
+  margin: 0 10px;
+  transition: all 0.4s;
+}
+
+.nav-item-divider::before:hover {
+  background-color: #000;
+}
+
+.nav-item-divider:last-child::before,
+.nav-item-divider:last-child::after {
+  display: none;
+}
+
+#searchbar svg {
+  margin-right: 10px;
+  transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+}
+
 
 
 
@@ -53,14 +114,13 @@ footer {
 
 /* Style for the link */
 
-
 .nav-link {
   text-decoration: none;
   color: #000;
   display: inline-block;
   padding: 20px;
   position: relative;
-  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, color 0.5s ease;
 }
 
 .nav-link::after {
@@ -70,11 +130,9 @@ footer {
   height: 2px;
   width: 0;
   background-color: #4187d7;
-  transition: all 0.3s ease;
- 
   height: 2px;
   width: 100%;
-  background-color:color-mix(in srgb,rgb(54, 51, 51),grey);
+  background-color: color-mix(in srgb, rgb(54, 51, 51), rgb(128, 128, 128));
   position: absolute;
   bottom: -5px;
   left: 50%;
@@ -85,12 +143,16 @@ footer {
 .nav-link:hover::after {
   opacity: 1;
   width: calc(100% + 8px);
+  color: #050b12;
 }
 
 .nav-link:hover {
-  color: #4187d7;
-  background-color: #f0f8ff;
+  background-color: #127fde;
   transform: scale(1.05);
+  border-radius: 25px;
+  color: #000 !important; /* Add !important to ensure it takes effect */
+}
+
 
 .info{
   color: #878787;
