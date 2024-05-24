@@ -66,6 +66,7 @@
     <title>Flipkart</title>
     <link rel="icon" type="image/x-icon" href="/flipkart favicon-modified.png">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="cat_list.css" />
     <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
@@ -107,7 +108,7 @@
             height: 100%;
             object-fit: cover;
             transition: transform 0.3s ease;
-      }
+        }
         .swipe-slide img:hover{
           transform: scale(1.1); 
         }
@@ -163,7 +164,7 @@
   padding-bottom: 20px;
 }
 
-.container {
+        .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 2rem 1rem;
@@ -234,6 +235,62 @@
 
   <!-- carousel -->
   <section id="carousal">
+    <div class="cat_list" >
+      <button class="btn btn-link">
+        <a href="">
+          <img src="grocry.jpg">
+          <p>Grocery</p>
+        </a>
+      </button>
+      <button class="btn btn-link">
+        <a href="">
+          <img src="mobile.webp">
+          <p>Mobile</p>
+        </a>
+      </button>
+      <button class="btn btn-link">
+        <a href="">
+          <img src="fashionnn.jpg" height="75px">
+          <p>Fashion</p>
+        </a>
+      </button>
+      <button class="btn btn-link" height="75px">
+        <a href="">
+          <img src="laptop.jpg" height="75px">
+          <p>Electronics</p>
+        </a>
+      </button>
+      <button class="btn btn-link" >
+        <a href="">
+          <img src="home.jpg" height="75px">
+          <p>Home & Furniture</p>
+        </a>
+      </button>
+      <button class="btn btn-link" >
+        <a href="">
+          <img src="appliance.webp" height="75px">
+          <p>Appliances</p>
+        </a>
+      </button>
+      <button class="btn btn-link">
+        <a href="">
+          <img src="travel.webp" height="75px">
+          <p>Travel</p>
+        </a>
+      </button>
+      <button class="btn btn-link">
+        <a href="">
+          <img src="beauty toys more.jpg" height="75px">
+          <p>Beauty,toys & more</p>
+        </a>
+      </button>
+      <button class="btn btn-link">
+        <a href="">
+          <img src="two wheelers.jpg" height="75px">
+          <p>Two wheelers</p>
+        </a>
+      </button>
+     </div>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -270,40 +327,36 @@
 
   
   
-  <!-- <section id="phones">
-    <div><h3>Best Deals On Smartphones..</h3></div>
+  <section id="phones">
+    <div><h2>Best Deals On Smartphones</h2></div>
     <div id="box">
       <div class="box-i">
-        <a href=""><img src="phone-6.webp" alt="" width="143" height="146"/></a>
-        poco m6 pro
+        <a href=""><img src="phone-6.webp"  alt="" /></a>
+        <p>poco m6 pro</p>
       </div>
       <div class="box-i">
-        <a href=""><img src="phone-2.webp" alt="" width="143" height="146"/></a>
-        moto edge 40 neo
+        <a href=""><img src="phone-2.webp" alt=""/></a>
+        <p>moto edge 40 neo</p>
       </div>
       <div class="box-i">
-        <a href=""><img src="phone-3.webp" alt=""width="143" height="146" /></a>
-        vivo t2 pro 5g
+        <a href=""><img src="phon-4.webp" alt="" /></a>
+        <p>redmi 12 5g</p>
       </div>
       <div class="box-i">
-        <a href=""><img src="phon-4.webp" alt=""width="143" height="146" /></a>
-        redmi 12 5g
+        <a href=""><img src="phone-5.webp" alt="" /></a>
+        <p>poco x6 5g</p>
       </div>
       <div class="box-i">
-        <a href=""><img src="phone-5.webp" alt=""width="143" height="146" /></a>
-        poco x6 5g
+        <a href=""><img src="phone-2.webp" alt=""/></a>
+        <p>poco m6 5g</p>
       </div>
       <div class="box-i">
-        <a href=""><img src="phone-2.webp" alt=""width="143" height="146" /></a>
-        poco m6 5g
-      </div>
-      <div class="box-i">
-        <a href=""><img src="phone-3.webp" alt=""width="143" height="146" /></a>
-        poco x6 neo 5g
+        <a href=""><img src="phone-3.webp" alt=""/></a>
+        <p>poco x6 neo 5g</p>
       </div>
       
     </div>
-  </section> -->
+  </section>
 
 <section id="phones">
   <div class="box">
@@ -727,7 +780,7 @@
             Buildings Alyssa, Begonia & Clove Embassy Tech Village,
             Outer Ring Road, Devarabeesanahalli Village, Bengaluru, 560103, Karnataka, India</p>
           <p>CIN : U51109KA2012PTC066107</p>
-          <P>Telephone: <a href="">044-45614700</a></P>
+          <P>Telephone: <a href="tel:+044-45614700">044-45614700</a></P>
         </div>
       </div>
     </div>
