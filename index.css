@@ -131,7 +131,7 @@ body {
 } */
 
 footer {
-    background-color: rgb(1, 39, 88);
+    background-color: rgba(0, 0, 0, 0.85);
     color: #ffffff;
     padding: 15px 35px;
 }
@@ -480,5 +480,13 @@ html {
         gap: 25px;
     }
 }
-
-
+.soc_icn{
+    display: flex;
+    margin-top: 1rem;
+    width: 15vw;
+    justify-content: space-evenly;
+}
+.soc_icn i{
+    color: white;
+    font-size:22px;
+}
