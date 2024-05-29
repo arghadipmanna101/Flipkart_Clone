@@ -1,76 +1,71 @@
+/* General input styling */
 #input_data {
-  width: 400px;
-  /* Adjust the width as needed */
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+  outline: none;
 }
 
+/* Navbar styling */
+.navbar-nav {
+  margin-right: auto;
+}
+
+/* Navigation item styling */
 .nav-item {
-  transition: background-color 0.5s ease;
+  transition: background-color 0.3s ease;
 }
 
-.nav-link {
-  text-decoration: none;
-  color: #000;
-  display: block;
-  padding: 20px;
+.nav-item:hover {
+  background-color: #f0f0f0;
+  animation: pulseBackground 1s infinite alternate;
 }
 
-.navtab{
+
+/* Navigation tab styling */
+.navtab {
+  display: flex;
+  align-items: center;
+  padding: 4px 15px;
   margin-left: 10px;
   padding-left: 10px;
   background-color: #e6eeff;
   border-radius: 10px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.navbar-nav{
-  margin-right: auto;
+.navtab:hover {
+  background-color: #d4e1f7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#input_data{
-  width: 500px;
-  border: none;
-  background-color: transparent;
-  padding: 5px;
+.navtab:hover svg {
+  transform: scale(1.2); /* Zoom effect */
 }
 
-.nav-item:hover{
-  background-color: transparent;
-  transform: none;
-  border-bottom: none;
-}
-.nav-item::before:hover{
-  border: #fff;
-  transform: none;
-  background-color: transparent;
-}
-
-.nav-item-divider::before {
-  content: '';
-  display: inline-block;
-  width: 1px; 
-  height: 30px; 
-  background-color: #ccc; 
-  margin: 0 10px; 
-  transition: all 0.4s;
-}
-
-.nav-item-divider:last-child::before {
-  display: none; 
-}
-
-.nav-item:hover .nav-item-divider::before {
-  background-color: #000; 
-}
-
+/* Divider between navigation items */
+.nav-item-divider::before,
 .nav-item-divider::after {
   content: '';
   display: inline-block;
   width: 1px;
-  height: 30px; 
-  background-color: #ccc; 
+  height: 30px;
+  background-color: #cccccc;
   margin: 0 10px;
+  transition: all 0.4s;
 }
 
+.nav-item-divider::before:hover {
+  background-color: #000;
+}
+
+.nav-item-divider:last-child::before,
 .nav-item-divider:last-child::after {
-  display: none; 
+  display: none;
 }
 
+#searchbar svg {
+  margin-right: 10px;
+  transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+}
