@@ -173,12 +173,13 @@ footer {
 }
 .social ul {
     display: flex;
+    align-items: center;
     gap: 20px; 
     
 }
-.social ul .bi{
+.social>ul>li>a>i{
     color: #ffffff;
-    font-size: 25px;
+    font-size: 2rem;
 }
 .foot-right {
     border-left: 1px solid rgb(85, 78, 78);
@@ -267,6 +268,7 @@ footer {
     }
     .social ul {
         justify-content: center;
+
     }
     .foot-down ul {
         justify-content: center;
