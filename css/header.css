@@ -1,0 +1,26 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#header-bluebg .secondNav{
+    background: #fff;
+    font-size: 14px;
+}
+#header-bluebg .nav-link .bi-chevron-up {
+    display: none;
+  }
+
+  #header-bluebg .nav-link:hover .bi-chevron-down {
+    display: none;
+  }
+ #header-bluebg .nav-link:hover .bi-chevron-up {
+    display: inline;
+  }
+  #header-bluebg .nav-link i{
+    font-size: 10px;
+  }
+

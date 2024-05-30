@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #dcdcdc !important;
+}
+
+.navname_ac .bi-chevron-up {
+  display: none;
+}
+
+.acnavdd:hover .navname_ac .bi-chevron-down {
+  display: none;
+}
+
+.acnavdd:hover .navname_ac .bi-chevron-up {
+  display: inline;
+}
+
+#categorylist-wrapper {
+  margin-top: 8px;
+}
+
+@media screen and (max-width: 770px) {
+  #categorylist-wrapper {
+    margin-top: 50px;
+  }
+}
+
+
+/* for category tab */
+
+.categorylist-wrapper {
+  width: 100vw;
+  overflow-x: scroll;
+  /* z-index: 500; */
+}
+
+.categorylist-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+
+.categories {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: rgb(255, 253, 253);
+  position: relative;
+  padding: 0;
+  padding: 0 4%;
+  width: 100%;
+  min-width: 1000px;
+  box-shadow: 0 0 10px rgb(87, 110, 172);
+
+}
+
+.categories>li {
+  position: static;
+  display: inline-block;
+  padding: 20px 15px;
+  cursor: pointer;
+}
+
+.categories li a {
+  text-decoration: none;
+}
+
+.categories>li>ul {
+  display: none;
+  position: fixed;
+  background-color: rgb(201, 224, 252) !important;
+  padding: 15px;
+  gap: 15px 5px;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: max-content;
+  max-height: 100vh;
+  padding: 0 10%;
+  left: 0;
+  font-size: 14px;
+  overflow: hidden;
+  z-index: 500;
+}
+
+.categories>li:hover>ul {
+  display: flex;
+  justify-content: left;
+  align-items: stretch;
+}
+
+.categories>li:hover {
+  background-color: #bac8f6;
+  transition: all 0.5s;
+  border-radius: 20px;
+}
+
+.categories>li:hover>ul>li {
+  margin: 15px 0;
+  flex: 1 1 200px;
+  list-style-type: none;
+}
+
+.categories>li:hover>ul>li li {
+  list-style-type: none;
+  margin: 15px 0;
+  color: rgb(88, 116, 194);
+}
+
+.categories>li:hover>ul li li:hover {
+  color: rgb(112, 112, 166);
+}
+
+#category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.category {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease 0.1s, width 2s, height 2.5s;
+
+}
+
+.category:hover {
+  transform: scale(1.1025);
+}
+
+.category h3 {
+  font-size: 18px;
+  color: #333333;
+}
+
+/*adding transition property to the images of the cateogory-grid section*/
+#category-grid img {
+  transition: transform 0.3s ease-in-out;
+}
+
+#category-grid img:hover {
+  transform: scale(1.1);
+  opacity: 0.82;
+}
+
+#img-box {
+  display: flex;
+  height: 175;
+  padding: 20px;
+  margin: 15px;
+  gap: 49px;
+}
+
+.img {
+  transition: transform 0.3s ease 0.1s, width 2s, height 2.5s;
+
+}
+
+.img:hover {
+  transform: scale(1.1);
+}
+
+/* adding Transition property to the images of the img-box section */
+#img-box img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+#img-box img:hover {
+  transform: scale(1.2);
+  opacity: 0.82;
+}
+
+
+
+/* FAQ Section Styles */
+#faq {
+  background-color: #ffe24f;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#faq .heading {
+  font-weight: bold;
+  color: #333;
+}
+
+.accordion-item {
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#faq .accordion .card {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  border-radius: 0;
+}
+
+#faq .accordion .card-header {
+  padding: 0.75rem 1.25rem;
+}
+
+.accordion-header {
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 20px;
+}
+
+#faq .accordion .btn-link {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+#faq .accordion .btn-link:hover {
+  text-decoration: underline;
+}
+
+#faq .accordion .btn-link.collapsed {
+  color: #333;
+}
+
+#faq .accordion .card-body {
+  padding: 1rem 1.25rem;
+  background-color: #f8f9fa;
+}
+
+/* FAQ Section Styles */
+#faq .heading {
+  font-weight: bold;
+  color: #333;
+}
+
+#faq .accordion .accordion-item {
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#faq .accordion .accordion-button {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#faq .accordion .accordion-button:hover {
+  text-decoration: underline;
+}
+
+#faq .accordion .accordion-button:not(.collapsed) {
+  color: #333;
+  background-color: #fff;
+}
+
+#faq .accordion .accordion-body {
+  padding: 1rem 1.25rem;
+  background-color: #f8f9fa;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #faq .heading {
+    font-size: 1.5rem;
+  }
+
+  #faq .accordion .accordion-button {
+    font-size: 1rem;
+  }
+
+  #faq .accordion .accordion-body {
+    padding: 0.75rem 1rem;
+  }
+}
