@@ -23,7 +23,7 @@ function createProductCard(product) {
   return `
     <a class="btn col-lg-2 col-md-2 col-sm-4 col-6 p-2" href="##"> 
       <div class="products">
-          <div class="text-center img-fluid"><img src="../json-api/product-img/${product.productImg}" height="150px"
+          <div class="text-center img-fluid"><img src="json-api/product-img/${product.productImg}" height="150px"
               alt="${product.id}">
           </div>
           <div class="text-center card-title">${product.name}</div>
@@ -78,10 +78,10 @@ function fetchAndShuffleData(url, callback, numberOfProducts) {
 }
 
 // Fetch data for best-deal products  rendom products & top selection
-fetchAndShuffleData("../json-api/product.json", rendom_products, 12);
-fetchAndShuffleData("../json-api/product.json", best_deal_products, 18);
+fetchAndShuffleData("json-api/product.json", rendom_products, 12);
+fetchAndShuffleData("json-api/product.json", best_deal_products, 18);
 fetchAndShuffleData(
-  "../json-api/product.json",
+  "json-api/product.json",
   top_selection_products,
   12
 );

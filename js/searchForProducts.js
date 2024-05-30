@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
             resultElement.classList.add("p-2");
             resultElement.innerHTML = `
             <div class="text-center">
-            <img src="/json-api/product-img/${result.productImg}" height="150px"
+            <img src="json-api/product-img/${result.productImg}" height="150px"
             alt="${result.id}">
             </div>
             <div class="text-center card-title">${result.name}</div>
