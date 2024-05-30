@@ -208,7 +208,7 @@ body {
 } */
 
 footer {
-    background-color: rgb(1, 39, 88);
+    background-color: rgba(0, 0, 0, 0.85);
     color: #ffffff;
     padding: 15px 35px;
 }
@@ -260,7 +260,9 @@ footer {
 
 .social ul {
     display: flex;
+
     gap: 10px;
+
 
 }
 
@@ -365,6 +367,7 @@ footer {
 
     .social ul {
         justify-content: center;
+
     }
 
     .foot-down ul {
@@ -599,5 +602,7 @@ html {
         gap: 25px;
     }
 
+
 }
+
 
