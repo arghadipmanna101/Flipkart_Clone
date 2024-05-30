@@ -58,20 +58,20 @@
         gap: 20px;
       }
       .banner {
+background-image: url('./images/fpz.jpg');
+background-size: cover;
+background-position: center;
+height: 400px;
+display: flex;
+justify-content: center; /* Center horizontally */
+align-items: center; /* Center vertically */
+color: white; /* Set text color to white */
+font-size: 36px;
+font-weight: bold; /* Ensure text is bold */
+text-align: center; /* Center the text horizontally */
+box-shadow: inset 0 0 500px 0px black; /* Apply inset box shadow */
+text-shadow: 0 0 14px black; /* Apply text shadow */
 
-
-        background-image:url('./images/fpz.jpg');
-        background-size: cover;
-        background-position: center;
-        height: 400px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-size: 36px;
-        font-weight: bold;
-        box-shadow: inset 0 0 500px 0px black;
-        text-shadow: 0 0 14px black;
       }
 
       .container {
@@ -105,6 +105,12 @@
         font-size: 16px;
         font-weight: bold;
       }
+      .welcome{
+        color: black;
+        text-align: center;
+        font-size: 36px;
+        font-weight: bold;
+      }
       
     </style>
   </head>
@@ -122,27 +128,30 @@
       </div>
     </div>
     <div class="banner">
-      Welcome to Flipkart Plus Zone
     </div>
     <div class="container">
+      <div class="welcome">
+        Welcome to Flipkart Plus Zone
+        <hr>
+      </div>
       <div class="product-list">
         <div class="product">
-          <img src="phone-6.webp" alt="Product Image" />
+          <img src="./assets/images/phone-6.webp" alt="Product Image" />
           <div class="name">Moto G</div>
           <div class="price">₹9999</div>
         </div>
         <div class="product">
-          <img src="phone-2.webp" alt="Product Image" />
+          <img src="./assets/images/phone-2.webp" alt="Product Image" />
           <div class="name">Poco M6 </div>
           <div class="price">₹11,999</div>
         </div>
         <div class="product">
-          <img src="phone-3.webp" alt="Product Image" />
+          <img src="./assets/images/phone-3.webp" alt="Product Image" />
           <div class="name">Poco C65</div>
           <div class="price">₹21,999</div>
         </div>
         <div class="product">
-          <img src="phone-5.webp" alt="Product Image" />
+          <img src="./assets/images/phone-5.webp" alt="Product Image" />
           <div class="name">Moto A14</div>
           <div class="price">₹19,999</div>
         </div>
@@ -253,13 +262,13 @@
   
         
         <div class="payment-icons">
-          <img src="visa.jpeg" alt="Visa">
-          <img src="mastercard.jpeg" alt="Mastercard">
-          <img src="images/rupay.png" alt="rupay">
-          <img src="images/discover.png" alt="discover">
-          <img src="images/emi.png" alt="emi">
-          <img src="images/net_banking.png" alt="net banking">
-          <img src="images/cod.png" alt="cash on delivery">
+          <img src="./assets/images/visa.jpeg" alt="Visa">
+          <img src="./assets/images/mastercard.jpeg" alt="Mastercard">
+          <img src="./assets/images/images/rupay.png" alt="rupay">
+          <img src="./assets/images/images/discover.png" alt="discover">
+          <img src="./assets/images/images/emi.png" alt="emi">
+          <img src="./assets/images/images/net_banking.png" alt="net banking">
+          <img src="./assets/images/images/cod.png" alt="cash on delivery">
         </div>
       </div>
     </footer>
