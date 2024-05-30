@@ -79,7 +79,14 @@
         }
 
         button:hover{background-color:#FB641B;}
-
+        .nav-link {
+          display: flex;
+          align-items: center;
+        }
+        .text {
+          white-space: nowrap;
+        }
+        
     </style>
 </head>
 
@@ -107,8 +114,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <div class="row w-100">
-            <div class="col-md-6">
-              <div class="navtab" id="searchbar">
+            <span class="flex-grow w-50" style="margin-left: 50px;">
+              <input
+                id="input_data"
+                type="text"
+                class="form-control"
+                placeholder="Search for Products, Brands and More"
+              />
+            </span>
                 <span>
                   <svg
                     width="24"
@@ -117,6 +130,7 @@
                     viewBox="0 0 24 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    style="margin-left: 10px; margin-top: 6px;"
                   >
                     <title>Search Icon</title>
                     <path
@@ -127,7 +141,7 @@
                       stroke-linejoin="round"
                     ></path>
                     <path
-                      d="M16 16L21 21"
+                      d="M16 16L21 20"
                       stroke="#717478"
                       stroke-width="1.4"
                       stroke-linecap="round"
@@ -135,17 +149,10 @@
                     ></path>
                   </svg>
                 </span>
-                <span class="flex-grow">
-                  <input
-                    id="input_data"
-                    type="text"
-                    placeholder="Search for Products, Brands and More"
-                  />
-                </span>
-              </div>
+              
             </div>
             
-            <div class="col-md-6">
+            <div class="col2">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item dropdown">
                   <a
@@ -159,9 +166,9 @@
                   >
                     <img
                       src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-815786.svg"
-                      alt="Profile"
+                      alt="Profile" class="Profile"
                     />
-                    Profile
+                    <span class="text">Profile</span>
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="profile.html">Profile</a>
@@ -176,13 +183,13 @@
                     <a class="dropdown-item" href="#">Gift Cards</a>
                   </div>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" >
                   <a class="nav-link" href="#">
                     <img
                       src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg"
                       alt="Become a Seller"
                     />
-                    Become a Seller
+                    <span class="text">Become a Seller</span>
                   </a>
                 </li>
                 <li class="nav-item">
@@ -191,10 +198,10 @@
                       src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg"
                       alt="Cart"
                     />
-                    Cart
+                    <span class="text">Cart</span>
                   </a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown" class="nav-item" >
                   <a
                     class="nav-link"
                     href="#"
@@ -206,7 +213,7 @@
                   >
                     <img
                       src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-ea7819.svg"
-                      alt="More Links"
+                      alt="More Links" 
                     />
                   </a>
                   <div
@@ -235,8 +242,6 @@
                 </li>
               </ul>
             </div>
-          </div>
-        </div>
       </nav>
     <br><br>
 
@@ -248,7 +253,7 @@
         </center>
         <br><br>
         <div class="order-item">
-            <img src="product1.jpg" alt="Product 1">
+            <img src="../../assets/images/product1.jpg" alt="Product 1">
             <div class="order-item-info">
                 <h3>Product 1</h3>
                 <p>Price: $20</p>
@@ -257,7 +262,7 @@
         </div>
         <br>
         <div class="order-item">
-            <img src="product2.jpg" alt="Product 2">
+            <img src="../../assets/images/product2.jpg" alt="Product 2">
             <div class="order-item-info">
                 <h3>Product 2</h3>
                 <p>Price: $30</p>
@@ -281,3 +286,4 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </html>
+
