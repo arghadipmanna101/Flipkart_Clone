@@ -14,7 +14,7 @@ body {
 #searchbar {
     padding: 4px;
     border-radius: 15px;
-    background-color: #e7eefb;
+    background-color: #eee;
     margin-left: 15px;
 }
 
@@ -34,26 +34,26 @@ body {
     flex-grow: 1;
 }
 
-.navbar-nav {
+/* .navbar-nav {
     display: flex;
     justify-content: space-between;
     margin-right: 50px;
     gap: 30px;
-}
+} */
 
-.navtab {
+/* .navtab {
     display: flex;
     align-items: center;
-}
+} */
 
-.navbar-brand img {
+/* .navbar-brand img {
     width: 160px;
     height: 40px;
 }
 
 .navbar-nav .nav-link img {
     margin-right: 8px;
-}
+} */
 
 .main{
     font-size:2.5rem;
