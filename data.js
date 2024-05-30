@@ -19,7 +19,8 @@ let sample_data = [
         names:"Men Slim Fit Self",
         price:"1,286",
         actualprice:"2,499"
-    }, {
+    }, 
+    {
         Brand:"Arrow",
         img_src:"https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/2/z/o/46-ares02011a-arrow-sport-original-imagknbgg4dcqvvv.jpeg?q=70",
         names:"Men Slim Self Shirt",
@@ -47,7 +48,7 @@ let sample_data = [
         price:"5578",
         actualprice:"10,399"
     },
-    , {
+    {
         Brand:"Arrow",
         img_src:"https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/s/4/f/-original-imagsfejwcyfa4yx.jpeg?q=70",
         names:"Men Slim Fit Self",
