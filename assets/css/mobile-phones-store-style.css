@@ -1,0 +1,25 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f5f5;
+}
+
+
+
+  /* mobo-brond */
+  .mobo-brond{
+    border: 1px solid #000;
+  }
+  .mobiles{
+    margin: 0;
+    padding: 0;
+  }
+
+
+
