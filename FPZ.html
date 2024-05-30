@@ -58,20 +58,20 @@
         gap: 20px;
       }
       .banner {
+background-image: url('./images/fpz.jpg');
+background-size: cover;
+background-position: center;
+height: 400px;
+display: flex;
+justify-content: center; /* Center horizontally */
+align-items: center; /* Center vertically */
+color: white; /* Set text color to white */
+font-size: 36px;
+font-weight: bold; /* Ensure text is bold */
+text-align: center; /* Center the text horizontally */
+box-shadow: inset 0 0 500px 0px black; /* Apply inset box shadow */
+text-shadow: 0 0 14px black; /* Apply text shadow */
 
-
-        background-image:url('./images/fpz.jpg');
-        background-size: cover;
-        background-position: center;
-        height: 400px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-size: 36px;
-        font-weight: bold;
-        box-shadow: inset 0 0 500px 0px black;
-        text-shadow: 0 0 14px black;
       }
 
       .container {
@@ -105,6 +105,12 @@
         font-size: 16px;
         font-weight: bold;
       }
+      .welcome{
+        color: black;
+        text-align: center;
+        font-size: 36px;
+        font-weight: bold;
+      }
       
     </style>
   </head>
@@ -122,9 +128,12 @@
       </div>
     </div>
     <div class="banner">
-      Welcome to Flipkart Plus Zone
     </div>
     <div class="container">
+      <div class="welcome">
+        Welcome to Flipkart Plus Zone
+        <hr>
+      </div>
       <div class="product-list">
         <div class="product">
           <img src="./assets/images/phone-6.webp" alt="Product Image" />
