@@ -40,7 +40,7 @@
   border-bottom: none;
 }
 .nav-item::before:hover{
-  border: #fff;
+  border: #0000ee;
   transform: none;
   background-color: transparent;
 }

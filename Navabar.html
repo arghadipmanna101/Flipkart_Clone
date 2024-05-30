@@ -4,26 +4,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Improved Navbar</title>
+  <title>Improved Navbar 2</title>
   <!-- <link rel="stylesheet" href="Navbar.css"> -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/0f2352a0bd.js" crossorigin="anonymous"></script>
+  
   <style>
     body {
       font-family: Arial, sans-serif;
+      background-color: #ddd;
     }
 
     .navbar {
-      background-color: #333;
-      height: 60px;
+      background-color: #fff;
+      height: 63px;
     }
 
     .navbar-nav{
-      padding-right: 100px;
+      padding-right: 20px;
 
     }
 
     .navbar-brand img {
       height: 40px;
+      margin-right: 40px;
     }
 
     .navbar-toggler {
@@ -33,34 +37,36 @@
 
     .navbar-nav .nav-link {
       color: black;
-      /* padding: 10px 15px; */
       font-size: 16px;
-      text-transform: uppercase;
+      padding:10px;
+      /* text-transform:uppercase; */
       position: relative;
-      transition: background-color 0.5s;
+      transition:  0.5s;
+      
     }
     .navbar-nav .nav-link:hover {
       display: block;
-      background-color: white;
-      width:7.47rem;
-      height: 4.8rem;
+      background-color: #007bff; 
+      /* background-color: white; */
+      width:8rem;
+      height: 3.3rem;
       align-content: center;
       text-align: center;
       border-radius: 10px;
     }
 
     .navbar-nav .nav-link img {
-      height: 20px;
-      margin-right: 5px;
+      height: 5px;
+      margin-right: 10px;
     }
 
     .navbar-nav .dropdown-menu {
-      background-color: #333;
+      background-color: #fff;
       border: none;
     }
 
     .navbar-nav .dropdown-menu .dropdown-item {
-      color: white;
+      color: #333;
     }
 
     .navbar-nav .dropdown-menu .dropdown-item:hover {
@@ -74,17 +80,18 @@
     }
 
     #input_data {
-      width: 300px;
+      width: 600px;
       padding: 6px 12px;
       border: 1px solid #ccc;
       border-radius: 4px;
     }
 
     .categories-bar {
-      background-color: #f8f9fa;
+      
+      background-color: #333;
       display: flex;
       justify-content: center;
-      padding: 10px 0;
+      padding: 40px 0;
     }
 
     .categories-bar ul {
@@ -95,28 +102,34 @@
     }
 
     .categories-bar li {
-      margin: 0 15px;
+      margin: 0 5px;
     }
 
     .categories-bar a {
       color: #333;
       text-decoration: none;
       font-size: 16px;
-      text-transform: uppercase;
+      text-transform: none;
     }
 
     .categories-bar a:hover {
-      color: #007bff;
+      color: #333;
       text-decoration: none;
-    }
+    } */
 
     .navbar-nav .nav-item:hover .nav-link {
-      color: black;
+      color: #333;
     }
     
     /* Adjustments */
-    .navbar-nav .nav-link {
-      margin-left: 10px; /* Adjust the margin as needed */
+    /* .navbar-nav .nav-link {
+      margin-left: 20px;
+    } */
+
+    a.nav-link{
+      margin-left:20px;
+      margin-right:10px;
+     
     }
     /* .navbar-nav{
       background-color: #333;
@@ -125,11 +138,25 @@
       right:14px;
     } */
     .navbar-collapse{
-      background-color: #333;
+      background-color:#fff;
       position: relative;
       bottom: 2px;
       right: 14px;
     }
+
+    #moreLinksDropdown{
+      display: block;
+      background-color: #fff; 
+      /* background-color: white; */
+      width:3rem;
+      height: 2rem;
+      align-content: center;
+      text-align: center;
+      border-radius: 10px;
+      
+    }
+
+
     /* @media screen and (max-width:1000px){
 
     } */
@@ -137,7 +164,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark">
+  <nav class="navbar navbar-expand-lg navbar-white">
     <a class="navbar-brand" href="https://flipkart-clone-seven-azure.vercel.app/">
       <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
         alt="Flipkart" />
@@ -165,41 +192,38 @@
         <li class="nav-item dropdown">
           <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
-            <i class="fa-regular fa-user"></i>   Profile
+            <i class="fa-solid fa-circle-user"></i> Login
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="profile.html">
-              <img width="28" height="28" src="./assets/images/profile.jpg"
+              <img width="28" height="28" src="assets/images/profile.jpg"
               alt="Profile"/> My Profile</a>
             <a class="dropdown-item" href="signup.html">SignUp</a>
             <a class="dropdown-item" href="signin.html">SignIn</a>
             <a class="dropdown-item" href="FPZ.html">
-              <img width="27" height="18" src="./assets/images/plus.png" alt="imgplus">Flipkart Plus Zone</a>
+              <img width="27" height="18" src="assets/images/plus.png" alt="imgplus">Flipkart Plus Zone</a>
             <a class="dropdown-item" href="order.html">
-              <img width="24" height="22" src="./assets/images/box.png" alt="imgplus"> Orders</a>
+              <img width="24" height="22" src="assets/images/box.png" alt="imgplus"> Orders</a>
+            <a class="dropdown-item" href="wishlist.html">
+              <img width="20" height="18" src="assets/images/wishlist.png" alt="imgwish"> Wishlist</a>
             <a class="dropdown-item" href="#">
-              <img width="20" height="18" src="./assets/images/wishlist.png" alt="imgwish"> Wishlist</a>
-            <a class="dropdown-item" href="#">
-              <img width="22" height="18" src="./assets/images/rewards.png" alt="imgplus"> Rewards</a>
-            <a class="dropdown-item" href="#">
-              <img width="24" height="18" src="./assets/images/gift-card.png" alt="imgplus"> Gift Cards</a>
-            <a class="dropdown-item" href="FPZ.html">Flipkart Plus Zone</a>
-            <a class="dropdown-item" href="order.html">Orders</a>
-            <a class="dropdown-item" href="wishlist.html">Wishlist</a>
-            <a class="dropdown-item" href="#">Rewards</a>
-            <a class="dropdown-item" href="./Gift Card/GiftCard.html">Gift Cards</a>
+              <img width="22" height="18" src="assets/images/rewards.png" alt="imgplus"> Rewards</a>
+            <a class="dropdown-item" href="./Gift Card/GiftCard.html">
+              <img width="24" height="18" src="assets/images/gift-card.png" alt="imgplus"> Gift Cards</a>
           </div>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="./cart/cart.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Cart
+            
+          </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="pages/Sell_Online/sell_online.html">
             <i class="fa-solid fa-store"></i>
             Become a Seller
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./cart/cart.html">
-            <i class="fa-solid fa-cart-shopping"></i>
-            Cart
           </a>
         </li>
         <li class="nav-item dropdown">
@@ -219,6 +243,7 @@
   </nav>
 
   <!-- Bootstrap JS -->
+  
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -228,3 +253,8 @@
   </script> -->
 </body>
 </html>
+
+
+
+
+
