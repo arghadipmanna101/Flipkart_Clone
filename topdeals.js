@@ -70,7 +70,7 @@ function addTopdeals() {
 
     topdeals.map((t) => {
         const slide = $("<div>").addClass("swiper-slide").html(`
-            <img src="./images/${t.imageUrl}" alt="">
+            <img src="./assets/images/${t.imageUrl}" alt="">
             <h4>${t.name}</h4>
             <p>${t.description.substring(0, 50)}</p>
             <p>${t.price}
