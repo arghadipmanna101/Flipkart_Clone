@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+	<title>Contents</title>
+</head>
+
+<body>
+	<style>
+		#content {
+			background: #ede9e9;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 20px;
+		}
+
+		a {
+			text-decoration: none;
+			color: black;
+		}
+
+		a:hover {
+			color: #2888f5;
+		}
+
+		.box {
+			margin: 10px;
+			max-width: 100%;
+			background: white;
+			padding: 20px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			text-align: center;
+		}
+
+		.img-container {
+			position: relative;
+			margin: 10px;
+			width: 200px;
+			border-radius: 5px;
+			border: 1px solid rgb(161, 157, 157);
+			overflow: hidden;
+			transition: transform 0.2s ease;
+		}
+
+		.img-container:hover {
+			transform: scale(1.1);
+		}
+
+		.box h3 {
+			font-family: sans-serif;
+			font-size: 20px;
+			padding: 10px;
+			display: block;
+			width: 100%;
+			text-align: center;
+		}
+
+		.box p,
+		.box h4 {
+			margin: 5px;
+			text-align: center;
+			font-size: 17px;
+		}
+
+		.box img {
+			width: 100%;
+			height: auto;
+		}
+
+		.btn1 {
+			position: absolute;
+
+			left: 45%;
+			padding: 10px;
+			font-size: 20px;
+			font-weight: bold;
+			background: white;
+			border: 1px solid gray;
+			color: #111;
+			cursor: pointer;
+			border-radius: 3px;
+		}
+
+		.icon {
+			width: 100px;
+			height: 100px;
+			display: block;
+			margin: 0 auto;
+		}
+
+		.heading {
+			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+			font-size: 30px;
+			font-weight: bold;
+			padding: 10px;
+			text-align: center;
+			color: black;
+		}
+
+		.heading2 {
+			font-family: monospace;
+			font-size: 20px;
+			font-weight: 200;
+			color: gray;
+			text-align: center;
+		}
+
+		@media (max-width: 768px) {
+			.img-container {
+				width: 100%;
+			}
+		}
+	</style>
+	<div id="content">
+		<!-- section 1 -->
+		<section class="box">
+			<h3>Deals on Mobile Phones</h3>
+			<a href="#">
+				<div class="img-container">
+					<img src="../../assets/img\vivo-mobile-phone-1000x1000.webp" alt="" class="about-img">
+					<p>Vivo T3X 5G
+					<h4>From <i class="fa-solid fa-indian-rupee-sign"></i>14,500*</h4>
+					</p>
+				</div>
+			</a>
+			<a href="#">
+				<div class="img-container">
+					<img src="../../assets/img/vivo-y16-mobile-phone-250x250.webp" alt="" class="about-img">
+					<p>Vivo Y16 5G
+					<h4>From <i class="fa-solid fa-indian-rupee-sign"></i>17,500*</h4>
+					</p>
+				</div>
+			</a>
+			<a href="#">
+				<div class="img-container">
+					<img src="../../assets/img/vivo-y17s-forest-green-4gb-ram-128gb-storage-250x250.webp" alt=""
+						class="about-img">
+					<p>Vivo Y17 pro
+					<h4>From <i class="fa-solid fa-indian-rupee-sign"></i>20,500*</h4>
+					</p>
+				</div>
+			</a>
+			<a href="#">
+				<div class="img-container">
+					<img src="../../assets/img/one.png" alt="" class="about-img">
+					<p>OneplusNord N20 5G
+					<h4>From <i class="fa-solid fa-indian-rupee-sign"></i>29,500*</h4>
+					</p>
+				</div>
+			</a>
+			<a href="#">
+				<div class="img-container">
+					<img src="../../assets/img/y35-250x250.webp" alt="" class="about-img">
+					<p>Vivo Y35 5G
+					<h4>From <i class="fa-solid fa-indian-rupee-sign"></i>22,500*</h4>
+					</p>
+				</div>
+			</a>
+		</section>
+
+		<!-- section 2 -->
+		<section class="box">
+			<h3>Best of Electronics</h3>
+			<a href="#">
+				<div class="img-container">
+					<img src="../../assets/img/z-24-200mm-z5-nikon-original-imag2zuekuxgxsgg.webp" alt="camera"
+						class="about-img">
+					<p>Mirrorless Cameras
+					<h4>Shop Now!</h4>
+					</p>
+				</div>
+			</a>
+			<a href="#">
+				<div class="img-container">
+					<img src="../../assets/img/earphon3.jpg" alt="earphones" class="about-img">
+					<p>Best wireless Ear...
+					<h4>Grab Now</h4>
+					</p>
+				</div>
+			</a>
+			<a href="#">
+				<div class="img-container">
+					<img src="../../assets/img/Picture.png" alt="shaver" class="about-img">
+					<p>Best of Shavers
+					<h4>From <i class="fa-solid fa-indian-rupee-sign"></i>1,500*</h4>
+					</p>
+				</div>
+			</a>
+			<a href="#">
+				<div class="img-container">
+					<img src="../../assets/img/earphone2.jpg" alt="Headsets" class="about-img">
+					<p>Headsets
+					<h4>From <i class="fa-solid fa-indian-rupee-sign"></i>3,500*</h4>
+					</p>
+				</div>
+			</a>
+			<a href="#">
+				<div class="img-container">
+					<img src="../../assets/img/projector.png" alt="projector" class="about-img">
+					<p>Projector
+					<h4>From <i class="fa-solid fa-indian-rupee-sign"></i>9,500*</h4>
+					</p>
+				</div>
+			</a>
+
+		</section>
+
+		<!-- section 3 -->
+
+		<section class="box">
+			<h3>Dresses</h3>
+			<a href="#">
+				<div class="img-container">
+					<img src="../../assets/img/cloth1.webp" alt="cloth" class="about-img">
+					<p><span>Tokiyo Talkies</span><br>Women Bodycon Bl..
+					<h4>From <i class="fa-solid fa-indian-rupee-sign">379</i></h4>
+					</p>
+				</div>
+			</a>
+			<a href="#">
+				<div class="img-container">
+					<img src="../../assets/img/cloth2.webp" alt="cloth" class="about-img">
+					<p><span>Tokiyo Talkies</span><br>Women A-line Multi...
+					<h4>From <i class="fa-solid fa-indian-rupee-sign">600</i></h4>
+					</p>
+				</div>
+			</a>
+			<a href="#">
+				<div class="img-container">
+					<img src="../../assets/img/cloth3.webp" alt="cloth" class="about-img">
+					<p><span>Tokiyo Talkies</span><br>Women Ribbed Pink...
+					<h4>From <i class="fa-solid fa-indian-rupee-sign">599</i></h4>
+					</p>
+				</div>
+			</a>
+			<a href="#">
+				<div class="img-container">
+					<img src="../../assets/img/cloth4.webp" alt="cloth" class="about-img">
+					<p><span>Tokiyo Talkies</span><br>Women Ribbed Pink...
+					<h4>From <i class="fa-solid fa-indian-rupee-sign">299</i></h4>
+					</p>
+				</div>
+			</a>
+
+			<div class="box_one">
+				<img src="../../assets/img/Oppo_Reno_10_5g" alt="icon" class="icon">
+				<h3 class="heading">Top selling Smartphones</h3>
+				<p class="heading2">Latest Technology , Best Brands!</p><br>
+				<button class="btn1">Explore <i class="fa-solid fa-chevron-right"></i></button>
+			</div>
+		</section>
+	</div>
+</body>
+
+</html>

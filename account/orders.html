@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#2874F0" id="themeColor" />
+    <title>
+        Flipkart | Online Shopping Site for Mobiles, Electronics, Furniture,
+        Grocery, Lifestyle, Books &amp; More. Best Offers!
+    </title>
+    <link rel="icon" type="image/x-icon" href="../assets/img/flipkart_lite.png" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/orders.css" />
+</head>
+
+<header id="header-orders" class="text-center text-secondary fs-4">
+    This is Header
+</header>
+
+<section>
+    <style>
+        .containers {
+            display: flex;
+            padding: 20px;
+        }
+
+        #filtersBox {
+            background-color: #e6eeff;
+            height: fit-content;
+            width: 250px;
+            padding: 20px;
+            margin-right: 20px;
+            margin-top: 20px;
+        }
+
+        .filtersTitle {
+            padding: 8px 16px;
+            font-weight: 500;
+            font-size: 25px;
+        }
+
+        .orderStatus,
+        .orderTime {
+            padding: 0 16px;
+            border-top: 1px solid #f8f8f8;
+        }
+
+        .opt {
+            display: flex;
+            margin-bottom: 8px;
+            cursor: pointer;
+        }
+
+        #info {
+            font-weight: 500;
+            font-size: 14px;
+            text-transform: uppercase;
+            padding: 8px 0;
+        }
+
+        .orders {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        .search {
+            display: flex;
+            margin-right: 10%;
+            margin-bottom: 16px;
+            border-radius: 4px 0 0 4px;
+        }
+
+        .search-bar {
+            position: relative;
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+        }
+
+        .search-input {
+            height: 40px;
+            width: 100%;
+            border: 1px solid #dbdbdb;
+            padding: 8px;
+            border-radius: 4px 0 0 4px;
+            font-size: 14px;
+        }
+
+        .search-button {
+            background: #2874f0;
+            color: #fff;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+            border: none;
+            align-items: center;
+        }
+
+        .search-icon {
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            padding: 5px;
+        }
+
+        .icon {
+            margin-right: 6px;
+        }
+
+        .orderContainer {
+            background-color: #e6eeff;
+            border: 1px solid #888;
+            margin: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .orderContainer:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+
+        .col-image,
+        .col-description,
+        .col-price,
+        .col-status,
+        .col-details {
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .col-image {
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+
+        .col-description {
+            flex: 0 0 66.666667%;
+            max-width: 66.666667%;
+        }
+
+        .col-price {
+            flex: 0 0 16.666667%;
+            max-width: 16.666667%;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .col-status {
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .col-details {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        /* Image container */
+        .img-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .img {
+            width: 75px;
+            height: 75px;
+            overflow: hidden;
+        }
+
+        .img1 {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Details text */
+        .details-text {
+            display: flex;
+            flex-direction: column;
+            margin: 2px;
+        }
+
+        .names {
+            font-weight: bold;
+        }
+
+        .attributes {
+            margin-top: 5px;
+        }
+
+        .color-attribute,
+        .size-attribute {
+            margin-right: 10px;
+        }
+
+        /* Status */
+        .status {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .circle {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: green;
+            display: inline-block;
+            margin-right: 8px;
+        }
+
+        .date {
+            font-size: 0.9em;
+            color: #888;
+            padding: 2px;
+        }
+
+        .msg {
+            font-size: 0.85em;
+            color: #555;
+            padding: 2px;
+        }
+
+        .end {
+            margin: 10px 0;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+
+        .of-orders {
+            color: #2874f0;
+            font-weight: 500;
+            text-align: center;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #d7d7d7;
+            font-size: 14px;
+            border-radius: 2px;
+            text-transform: capitalize;
+            box-shadow: none;
+        }
+    </style>
+
+    <div class="containers">
+        <div id="filtersBox">
+            <div class="filtersTitle">
+                <span>Filters</span>
+            </div>
+            <div class="orderStatus">
+                <div id="info">ORDER STATUS</div>
+                <div class="opt">
+                    <input type="checkbox"><span>On the Way</span>
+                </div>
+                <div class="opt">
+                    <input type="checkbox"><span>Delivered</span>
+                </div>
+                <div class="opt">
+                    <input type="checkbox"><span>Cancelled</span>
+                </div>
+                <div class="opt">
+                    <input type="checkbox"><span>Returned</span>
+                </div>
+            </div>
+            <div class="orderTime">
+                <div id="info">ORDER TIME</div>
+                <div class="opt">
+                    <input type="checkbox"><span>Last 30 days</span>
+                </div>
+                <div class="opt">
+                    <input type="checkbox"><span>2023</span>
+                </div>
+                <div class="opt">
+                    <input type="checkbox"><span>2022</span>
+                </div>
+                <div class="opt">
+                    <input type="checkbox"><span>2021</span>
+                </div>
+                <div class="opt">
+                    <input type="checkbox"><span>2020</span>
+                </div>
+                <div class="opt">
+                    <input type="checkbox"><span>Older</span>
+                </div>
+            </div>
+        </div>
+        <div class="column orders">
+            <div class="search">
+                <div class="search-bar">
+                    <input type="text" class="search-input" placeholder="Search your orders here">
+                </div>
+                <button class="search-button">
+                    <div class="search-icon">
+                        <svg width="16" height="16" viewBox="0 0 17 18" class="icon" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="#fff" fill-rule="evenodd">
+                                <path class=""
+                                    d="m11.618 9.897l4.225 4.212c.092.092.101.232.02.313l-1.465 1.46c-.081.081-.221.072-.314-.02l-4.216-4.203">
+                                </path>
+                                <path class=""
+                                    d="m6.486 10.901c-2.42 0-4.381-1.956-4.381-4.368 0-2.413 1.961-4.369 4.381-4.369 2.42 0 4.381 1.956 4.381 4.369 0 2.413-1.961 4.368-4.381 4.368m0-10.835c-3.582 0-6.486 2.895-6.486 6.467 0 3.572 2.904 6.467 6.486 6.467 3.582 0 6.486-2.895 6.486-6.467 0-3.572-2.904-6.467-6.486-6.467">
+                                </path>
+                            </g>
+                        </svg>
+                        <span>Search Orders</span>
+                    </div>
+                </button>
+            </div>
+
+            <div class="orderContainer">
+                <div class="orders">
+                    <div class="row order-row">
+                        <div class="col-details">
+                            <div class="row">
+                                <div class="col-image">
+                                    <div class="img-container">
+                                        <div class="img" style="height: 75px; width: 75px;">
+                                            <img class="img1" alt="OnePlus12"
+                                                src="https://images-cdn.ubuy.co.in/65a4d1da79c8e03a06140a3c-oneplus-12-24gb-1tb-6-82-amoled.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-description">
+                                    <div class="details-text">
+                                        <span class="row item names">OnePlus 12 (Flowy Emerald, 256 GB) (12 GB
+                                            RAM)</span>
+                                        <div class="row attributes">
+                                            <span class="color-attribute">
+                                                <span class="type">Color: </span>
+                                                <span class="val">Flowy Emerald</span>
+                                            </span>
+                                            <span class="size-attribute">
+                                                <span class="type">Size: </span>
+                                                <span class="val">256 GB</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-price">
+                            ₹59,299
+                        </div>
+                        <div class="col-status">
+                            <div>
+                                <div class="circle"></div>
+                                <span class="date">Delivered on May 2</span>
+                                <div class="msg">Your item has been delivered</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="orderContainer">
+                <div class="orders">
+                    <div class="row order-row">
+                        <div class="col-details">
+                            <div class="row">
+                                <div class="col-image">
+                                    <div class="img-container">
+                                        <div class="img" style="height: 75px; width: 75px;">
+                                            <img class="img1" alt="Tanso Jinsei Full Graphite"
+                                                src="https://rukminim2.flixcart.com/image/850/1000/xif0q/racquet/y/4/l/g4-3-25-inches-strung-jinsei-full-graphite-ultra-light-weight-original-imagx7vy2fachrzb.jpeg?q=90&crop=false">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-description">
+                                    <div class="details-text">
+                                        <span class="row item names">Tanso Jinsei Full Graphite Ultra Light W...</span>
+                                        <div class="row attributes">
+                                            <span class="color-attribute">
+                                                <span class="type">Color: </span>
+                                                <span class="val">White</span>
+                                            </span>
+                                            <span class="size-attribute">
+                                                <span class="type"></span>
+                                                <span class="val"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-price">
+                            ₹1,039
+                        </div>
+                        <div class="col-status">
+                            <div>
+                                <div class="circle"></div>
+                                <span class="date">Delivered on Apr 20</span>
+                                <div class="msg">Your item has been delivered</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="orderContainer">
+                <div class="orders">
+                    <div class="row order-row">
+                        <div class="col-details">
+                            <div class="row">
+                                <div class="col-image">
+                                    <div class="img-container">
+                                        <div class="img" style="height: 75px; width: 75px;">
+                                            <img class="img1" alt="Apple 2020 Macbook Air"
+                                                src="https://shoplet.pl/286301-large_default/apple-macbook-air-m1-133-wqxga-8gb-256gb-mac-os-srebrny.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-description">
+                                    <div class="details-text">
+                                        <span class="row item names">Apple 2020 Macbook Air Apple M1 ..</span>
+                                        <div class="row attributes">
+                                            <span class="color-attribute">
+                                                <span class="type">Color: </span>
+                                                <span class="val">Space Grey</span>
+                                            </span>
+                                            <span class="size-attribute">
+                                                <span class="type">Size: </span>
+                                                <span class="val">13.3 inch</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-price">
+                            ₹73,990
+                        </div>
+                        <div class="col-status">
+                            <div>
+                                <div class="circle"></div>
+                                <span class="date">Delivered on Mar 17</span>
+                                <div class="msg">Your item has been delivered</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="orderContainer">
+                <div class="orders">
+                    <div class="row order-row">
+                        <div class="col-details">
+                            <div class="row">
+                                <div class="col-image">
+                                    <div class="img-container">
+                                        <div class="img" style="height: 75px; width: 75px;">
+                                            <img class="img1" alt="CASIO FX-350MS 2nd Edition Scientific Calculator"
+                                                src="https://www.casio.com/content/dam/casio/product-info/locales/intl/en/calc/product/scientific/F/FX/FX3/fx-350EX/assets/fx-350EX_Seq1.jpg.transform/main-visual-sp/image.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-description">
+                                    <div class="details-text">
+                                        <span class="row item names">CASIO FX-350MS 2nd Edition Scientific C...</span>
+                                        <div class="row attributes">
+                                            <span class="color-attribute">
+                                                <span class="type">Color: </span>
+                                                <span class="val">Black</span>
+                                            </span>
+                                            <span class="size-attribute">
+                                                <span class="type">Size: </span>
+                                                <span class="val">Medium</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-price">
+                            ₹660
+                        </div>
+                        <div class="col-status">
+                            <div>
+                                <div class="circle"></div>
+                                <span class="date">Delivered on Jan 20</span>
+                                <div class="msg">Your item has been delivered</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="end">
+                <div class="of-orders"><span>No more results to display</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer id="footer-orders" style="background-color: #293649 !important"></footer>
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/orders.js"></script>
+
+<body></body>
+
+</html>
