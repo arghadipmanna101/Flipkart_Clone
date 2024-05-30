@@ -2,7 +2,7 @@ const categoriesData = [
     {
         "id": "grocery",
         "name": "Grocery&Food",
-        "image": "images/.png", // Add the path to the image
+        "image": "images/grocery.png", // Add the path to the image
         "subcategories": [
             {
                 "id": "fruits-vegetables",
