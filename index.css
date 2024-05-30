@@ -75,84 +75,43 @@ body {
  }
 
 
- #category-grid {
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   gap: 40px;
-   padding: 20px;
-   max-width: 1200px;
-   margin: auto;
- }
- 
- .category-item {
-   background: #fff;
-   border-radius: 15px;
-   overflow: hidden;
-   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-   transition: transform 0.3s ease-in-out;
- }
- 
- .category-item:hover {
-   transform: translateY(-10px);
- }
- 
- .category-img {
-   width: 100%;
-   height: 200px;
-   overflow: hidden;
- }
- 
- .category-img img {
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
-   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
- }
- 
- .category-item:hover .category-img img {
-   transform: scale(1.1);
-   opacity: 0.82;
- }
- 
- .category-content {
-   padding: 20px;
-   text-align: center;
- }
- 
- .category-title {
-   font-size: 18px;
-   color: #333;
-   margin: 15px 0 10px;
- }
- 
- .category-description {
-   font-size: 14px;
-   color: #666;
-   margin-bottom: 20px;
- }
- 
- .category-button {
-   display: inline-block;
-   padding: 10px 20px;
-   border-radius: 25px;
-   background: #fd3838;
-   color: #fff;
-   text-decoration: none;
-   font-weight: 500;
-   box-shadow: 0px 5px 15px rgba(253, 56, 56, 0.3);
- }
- 
- @media screen and (max-width: 768px) {
-   #category-grid {
-     grid-template-columns: 1fr;
-     gap: 15px;
+
+#category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 40px; 
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .category {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease 0.1s, width 2s, height 2.5s;
+
+  }
+  
+.category:hover {
+    transform: scale(1.1025); 
+} 
+  
+  .category h3 {
+    font-size: 18px; 
+    color: #333333; 
+  }
+
+  /*adding transition property to the images of the cateogory-grid section*/
+   #category-grid img {
+    transition: transform 0.3s ease-in-out;
    }
- 
-   .category-item {
-     margin: 0 auto;
+   #category-grid img:hover{
+    transform: scale(1.1);
+    opacity: 0.82;
    }
- }
- 
+
   /* .details .info{
     line-height: 16px;
     font-size: 12px;
