@@ -1,7 +1,6 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  < Fixing-the-login-icon
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -388,6 +387,7 @@ $("#carousel").load("./carousel.html");
     <link rel="icon" type="image/x-icon" href="/flipkart favicon-modified.png">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="cat_list.css" />
+    <link rel="stylesheet" href="topElectronics.css" />
     <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
@@ -484,7 +484,7 @@ $("#carousel").load("./carousel.html");
 .footer-section {
     animation: slideInFromLeft 0.5s ease forwards;
 }
-#carouselExampleIndicators{
+/* #carouselExampleIndicators{
   padding-top: 60px;
   padding-bottom: 20px;
 }
@@ -541,7 +541,7 @@ $("#carousel").load("./carousel.html");
         #banner{
           position: relative;
           top:35px;
-        }
+        } */
 
     </style>
 </head>
@@ -683,48 +683,57 @@ $("#carousel").load("./carousel.html");
       
     </div>
   </section>
-<section id="phones">
-  <div class="box">
-    <h2 class="title" id = "sub-heading">Top Deals on Electronics</h2>
-    <div class="deals">
-        <div class="deal-item">
-            <img src="./assets/images/tab.webp" alt="Bestselling Tablets" width="200" height="200" style="margin-top: 30%;">
-            <h3 class="deal-title">Bestselling Tablets</h3>
-            <p class="deal-price">From ₹9,899*</p>
-        </div>
-        <div class="deal-item">
-            <img src="./assets/images/lap.webp" alt="Big Savings on i5 Laptops" width="200" height="200" style="margin-top: 30%;">
-            <h3 class="deal-title">Big Savings on i5 Laptops</h3>
-            <p class="deal-price">From ₹24,990*</p>
-        </div>
-        <div class="deal-item">
-            <img src="./assets/images/nikon.webp.jpg" alt="Nikon D7500 DSLR" width="200" height="200">
-            <h3 class="deal-title">Nikon D7500 DSLR</h3>
-            <p class="deal-price">Just ₹2,238/month*</p>
-        </div>
-        <div class="deal-item">
-            <img src="./assets/images/MI.jpg" alt="Mi & REDMI" width="200" height="200">
-            <h3 class="deal-title">Mi & REDMI</h3>
-            <p class="deal-price">From ₹1,049</p>
-        </div>
-        <div class="deal-item">
-            <img src="./assets/images/headphone.webp" alt="Headphone Pouches" width="200" height="200">
-            <h3 class="deal-title">Headphone Pouches</h3>
-            <p class="deal-price">From ₹99</p>
-        </div>
-        <div class="deal-item">
-            <img src="./assets/images/carmusic.webp" alt="Car Music System" width="200" height="200">
-            <h3 class="deal-title">Car Music System</h3>
-            <p class="deal-price">Up to 65% Off</p>
-        </div>
-        <div class="chevron">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M9 18l6-6-6-6"></path>
-            </svg>
-        </div>
+  <section class="electronic-box">
+    <h2 >Top Deals on Electronics</h2>
+    <a href="#"><div class="electronic-img-container">
+      <img src="./assets/images/tab.webp" alt="" class="about-img">
+      <p>Bestselling Tablets
+      <h4>From <i class="fa-solid fa-indian-rupee-sign"></i>9,899*</h4>
+      </p>
     </div>
-</div>
-</section>
+  </a>
+  <a href="#">
+    <div class="electronic-img-container">
+      <img src="./assets/images/lap.webp" alt="" class="about-img">
+      <p>Bestelling Laptops
+      <h4>From <i class="fa-solid fa-indian-rupee-sign"></i>24,990*</h4>
+      </p>
+    </div>
+  </a>
+  <a href="#">
+    <div class="electronic-img-container">
+      <img src="./assets/images/nikon.webp.jpg" alt=""
+          class="about-img">
+      <p>Nikon D7500 DSLR
+      <h4>From <i class="fa-solid fa-indian-rupee-sign"></i>9,999*</h4>
+      </p>
+    </div>
+  </a>
+  <a href="#">
+    <div class="electronic-img-container">
+      <img src="./assets/images/MI.jpg" alt="" class="about-img">
+      <p>Mi & REDMI
+      <h4>From <i class="fa-solid fa-indian-rupee-sign"></i>4,999*</h4>
+      </p>
+    </div>
+  </a>
+  <a href="#">
+    <div class="electronic-img-container">
+      <img src="./assets/images/headphone.webp" alt="" class="about-img">
+      <p>Vivo Y35 5G
+      <h4>From <i class="fa-solid fa-indian-rupee-sign"></i>99*</h4>
+      </p>
+    </div>
+  </a>
+  <a href="#">
+    <div class="electronic-img-container">
+      <img src="./assets/images/carmusic.webp" alt="" class="about-img">
+      <p>Car Music System
+      <h4>From <i class="fa-solid fa-indian-rupee-sign"></i>3,999*</h4>
+      </p>
+    </div>
+  </a>
+  </section>
   
   <!-- newsection for grid items  -->
   <section id="img-box">
