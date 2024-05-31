@@ -24,7 +24,7 @@ function createProductCard(product) {
     <a class="btn col-lg-2 col-md-2 col-sm-4 col-6 p-2" href="##"> 
       <div class="products">
       <div class="text-center img-fluid" style="height:150px";>
-      <img src="../json-api/product-img/${product.productImg}" style="width: 100%; height: 100%; object-fit: contain;" alt="${product.id}">
+      <img src="json-api/product-img/${product.productImg}" style="width: 100%; height: 100%; object-fit: contain;" alt="${product.id}">
   </div>
           <div class="text-center card-title">${product.name}</div>
           <div class="text-center">${product.rating}</div>
