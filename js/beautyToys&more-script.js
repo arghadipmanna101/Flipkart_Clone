@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Function to create a product card
 function createbeautyToysProductCard(product) {
     return `
-        <a class="btn col-lg-2 col-md-3 col-sm-4 col-6 p-2" href="/addtokart/?query=${product.name}"> 
+        <a class="btn col-lg-2 col-md-3 col-sm-4 col-6 p-2" href="../addtokart/?query=${product.name}"> 
           <div class="products">
               <div class="text-center img-fluid" style="height:150px";>
           <img src="../json-api/product-img/${product.productImg}" style="width: 100%; height: 100%; object-fit: contain;" alt="${product.id}">

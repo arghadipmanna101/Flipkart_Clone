@@ -25,20 +25,22 @@ function getQueryParameter(name) {
 // Function to create product card
 function createSearchProductCard(product) {
   return `
-  <div class="col-md-2">
-  <div class="text-center img-fluid" style="height:300px" ;>
-      <img src="../json-api/product-img/${product.productImg}"
-          style="width: 100%; height: 100%; object-fit: contain;" alt="${product.name}">
-  </div>
-</div>
-<div class="col-md-2">
-  <div class="text-center card-title">${product.name}</div>  
-  <div class="text-center">Price: ₹${product.price}</div>
-</div>
-<div class="text-center card-title">${product.description}</div>
-<button class="btn btn-primary">Add To Cart</button>
-<button class="btn btn-danger">Buy Now</button>    
-        
+            <div class="col-md-6">
+                <div class="text-center img-fluid" style="height:300px" ;>
+                    <img class="p-3" src="../json-api/product-img/${product.productImg}"
+                        style="width: 100%; height: 100%; object-fit: contain;" alt="${product.name}">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="text-center card-title">${product.name}</div>
+                <div class="text-center">Price: ₹${product.price}</div>
+                <div class="text-center">Rating ${product.rating}</div>
+                </br></br>
+                <div class="text-center card-title">${product.description}</div>
+                </br></br>
+                <button class="btn btn-primary">Add To Cart</button>
+                <button class="btn btn-danger">Buy Now</button>
+            </div>       
     `;
 }
 

@@ -68,13 +68,14 @@ document.addEventListener("DOMContentLoaded", function () {
             resultElement.classList.add("col-6");
             resultElement.classList.add("p-2");
             resultElement.innerHTML = `
-            <a class="text-center" style="height:150px"; href="/addtokart/?query=${product.name}">
+            <a href="../addtokart/?query=${result.name}">
+            <div class="text-center" style="height:150px";>
             <img src="json-api/product-img/${result.productImg}" style="width: 100%; height: 100%; object-fit: contain;"
-            alt="${result.id}">
+            alt="${result.name}">
             </div>
             <div class="text-center card-title">${result.name}</div>
-            <div class="text-center">${result.rating}</div>
-            <div class="text-center">Price: ₹${result.price}</a>
+            <div class="text-center">Price: ₹${result.price}</div>
+            </a>
             `;
             resultsContainer.appendChild(resultElement);
           });          
