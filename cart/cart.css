@@ -89,3 +89,24 @@ footer span {
     background-color: rgb(255, 117, 67);
     color: white;
 }
+.flipcart{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+    font-style: italic;
+    font-size: small;
+}
+
+.explore{
+    color: white;
+    margin-right: 2px;
+}
+
+.s4NJ5L{
+    color: gold;
+    margin-right: 2px;
+}
