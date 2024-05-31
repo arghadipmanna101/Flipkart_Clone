@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    margin-bottom: 80px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #dbe5f3;
+}
+
+main{
+    height: 1000px;
+    width: 100%;
+    background-color: #dbe5f3;
+}
+
+.main-content{
+    height: 100%;
+    width: 100%;
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.options{
+    width: 20%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+
+.notifications{
+    width: 60%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    margin-left: 15px;
+}
+
+.options-hello{
+    background-color: white;
+    width: 100%;
+    height: 75px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+
+.options-hello h4{
+    font-weight: 600;
+    flex: 1;
+    padding-left: 20px;
+}
+
+.options-myorders{
+    background-color: white;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgb(3, 141, 226);
+    margin-bottom: 1px;
+}
+
+.options-myorders a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: grey;
+    font-weight: 600;
+    flex: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.options-myorders a:hover{
+    text-decoration: none;
+    color: rgb(3, 141, 226);
+}
+
+.options-account{
+    height: 205px;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 1px;
+}
+
+.options-payments{
+    height: 205px;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 1px;
+}
+
+.options-mystuff{
+    height: 250px;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 1px;
+}
+
+.heading{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: rgb(3, 141, 226);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.options-heading{
+    font-size: 1rem;
+    color: grey;
+    font-weight: 600;
+    flex: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.lists{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.lists li{
+    height: 45px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 54px;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.lists a{
+    text-decoration: none;
+    color: black;
+}
+
+.lists li:hover{
+    background-color: #f5faff;
+}
+
+.lists li:hover a{
+    text-decoration: none;
+    color:#2874f0;
+}
