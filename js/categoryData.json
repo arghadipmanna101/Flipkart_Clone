@@ -1,0 +1,173 @@
+[
+    {
+        "id": "grocery",
+        "name": "Grocery",
+        "icon": "grocery.png",
+        "subcategories": [
+            {
+                "id": "fruits-vegetables",
+                "name": "Fruits & Vegetables",
+                "icon": "grocery.png",
+                "subcategories": ["Fresh Fruits", "Fresh Vegetables"]
+            },
+            {
+                "id": "dairy-eggs",
+                "name": "Dairy & Eggs",
+                "icon": "grocery.png",
+                "subcategories": ["Milk", "Cheese", "Eggs"]
+            },
+            {
+                "id": "bakery",
+                "name": "Bakery",
+                "icon": "grocery.png",
+                "subcategories": ["Bread", "Pastries", "Cakes"]
+            },
+            {
+                "id": "canned-packaged",
+                "name": "Canned & Packaged",
+                "icon": "grocery.png",
+                "subcategories": ["Canned Food", "Pasta", "Rice", "Snacks"]
+            },
+            {
+                "id": "desserts",
+                "name": "Desserts",
+                "icon": "grocery.png",
+                "subcategories": null
+            }
+        ]
+    },
+    {
+        "id": "Mobiles",
+        "name":"Mobiles",
+        "icon": "mobiles.png",
+        "subcategories": [
+        ]
+    },
+    {
+        "id": "Fashion",
+        "name": "Fashion",
+        "icon": "fashion.png",
+        "subcategories": [
+            {
+                "id": "mens-clothing",
+                "name": "Men's Clothing",
+                "icon": "fashion.png",
+                "subcategories": ["Shirts", "Pants", "Jackets"]
+            },
+            {
+                "id": "womens-clothing",
+                "name": "Women's Clothing",
+                "icon": "fashion.png",
+                "subcategories": ["Dresses", "Skirts", "Tops"]
+            },
+            {
+                "id": "kids-clothing",
+                "name": "Kids' Clothing",
+                "icon": "fashion.png",
+                "subcategories": ["T-shirts", "Jeans", "Dresses"]
+            }
+        ]
+    },
+    {
+        "id": "electronics",
+        "name": "Electronics",
+        "icon": "electronics.png",
+        "subcategories": [
+         
+            {
+                "id": "computers",
+                "name": "Computers",
+                "icon": "electronics.png",
+                "subcategories": ["Laptops", "Desktops", "Tablets"]
+            },
+            {
+                "id": "accessories",
+                "name": "Accessories",
+                "icon": "electronics.png",
+                "subcategories": ["Headphones", "Chargers", "Cases"]
+            }
+        ]
+    },
+   
+    {
+        "id": "home-furniture",
+        "name": "Home & Furniture",
+        "icon": "home&furniture.jpg",
+        "subcategories": [
+            {
+                "id": "Kitchen-appliances",
+                "name": "kitchen Appliances",
+                "icon": "home&furniture.jpg",
+                "subcategories": ["Blenders", "Microwaves", "Coffee Makers", "Pressure cookers", "Pans"]
+            },
+            {
+                "id": "furniture",
+                "name": "Furniture",
+                "icon": "home&furniture.jpg",
+                "subcategories": ["Sofas", "Tables", "Chairs", "Beds"]
+            },
+            {
+                "id": "home-decor",
+                "name": "Home Decor",
+                "icon": "home&furniture.jpg",
+                "subcategories": ["Rugs", "Lamps", "Mirrors", "Clocks"]
+            },
+            
+            {
+                "id": "pet",
+                "name": "Pet supplies",
+                "icon": "home&furniture.jpg",
+                "subcategories": ["Dogs", "Cats", "Fish and Aquatics"]
+            }
+        ]
+    },
+    {
+        "id": "appliances",
+        "name":"Appliances",
+        "icon": "appliances.jpg",
+        "subcategories": [
+        ]
+    },
+    {
+        "id": "travel",
+        "name":"Travel",
+        "icon": "travel.png",
+        "subcategories": [
+        ]
+    },
+    {
+        "id": "beauty",
+        "name": "Beauty, Toys & More",
+        "icon": "beautyToys.png",
+        "subcategories": [
+            {
+                "id": "face",
+                "name": "Face",
+                "icon": "beautyToys.png",
+                "subcategories": ["Foundation", "Concealer", "Powder"]
+            },
+            {
+                "id": "eyes",
+                "name": "Eyes",
+                "icon": "beautyToys.png",
+                "subcategories": ["Eyeshadow", "Mascara", "Eyeliner"]
+            },
+            {
+                "id": "lips",
+                "name": "Lips",
+                "icon": "beautyToys.png",
+                "subcategories": ["Lipstick", "Lip Gloss", "Lip Liner"]
+            }
+        ]
+    },
+    
+    {
+        "id": "twowheelers",
+        "name": "Two Wheelers",
+        "icon": "twowheelers.png",
+        "subcategories": [
+        
+
+        ]
+    }
+]
