@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Improved Navbar</title>
-
+  <!-- <link rel="stylesheet" href="Navbar.css"> -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
   <style>
     body {
@@ -17,25 +17,36 @@
       height: 60px;
     }
 
+    .navbar-nav{
+      padding-right: 100px;
+
+    }
+
     .navbar-brand img {
       height: 40px;
     }
 
     .navbar-toggler {
       border: none;
+      position: absolute;
     }
 
     .navbar-nav .nav-link {
-      color: white;
-      padding: 10px 15px;
+      color: black;
+      /* padding: 10px 15px; */
       font-size: 16px;
       text-transform: uppercase;
       position: relative;
+      transition: background-color 0.5s;
     }
-
     .navbar-nav .nav-link:hover {
-      color: black;
-      background-color: transparent;
+      display: block;
+      background-color: white;
+      width:7.47rem;
+      height: 4.8rem;
+      align-content: center;
+      text-align: center;
+      border-radius: 10px;
     }
 
     .navbar-nav .nav-link img {
@@ -107,6 +118,21 @@
     .navbar-nav .nav-link {
       margin-left: 10px; /* Adjust the margin as needed */
     }
+    /* .navbar-nav{
+      background-color: #333;
+      position: relative;
+      bottom: 2px;
+      right:14px;
+    } */
+    .navbar-collapse{
+      background-color: #333;
+      position: relative;
+      bottom: 2px;
+      right: 14px;
+    }
+    /* @media screen and (max-width:1000px){
+
+    } */
   </style>
 </head>
 
@@ -139,52 +165,47 @@
         <li class="nav-item dropdown">
           <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
-            <img width="28" height="28" src="images/profile.png"
-              alt="Profile" />Profile
+            <i class="fa-regular fa-user"></i>   Profile
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="profile.html">
-              <img width="28" height="28" src="images/profile.png"
+              <img width="28" height="28" src="./assets/images/profile.jpg"
               alt="Profile"/> My Profile</a>
             <a class="dropdown-item" href="signup.html">SignUp</a>
             <a class="dropdown-item" href="signin.html">SignIn</a>
             <a class="dropdown-item" href="FPZ.html">
-              <img width="27" height="18" src="images/plus.jpeg" alt="imgplus">Flipkart Plus Zone</a>
+              <img width="27" height="18" src="./assets/images/plus.png" alt="imgplus">Flipkart Plus Zone</a>
             <a class="dropdown-item" href="order.html">
-              <img width="24" height="22" src="images/box-iso.svg" alt="imgplus"> Orders</a>
+              <img width="24" height="22" src="./assets/images/box.png" alt="imgplus"> Orders</a>
             <a class="dropdown-item" href="#">
-              <img width="20" height="18" src="images/wish.png" alt="imgwish"> Wishlist</a>
+              <img width="20" height="18" src="./assets/images/wishlist.png" alt="imgwish"> Wishlist</a>
             <a class="dropdown-item" href="#">
-              <img width="22" height="18" src="images/gift.png" alt="imgplus"> Rewards</a>
+              <img width="22" height="18" src="./assets/images/rewards.png" alt="imgplus"> Rewards</a>
             <a class="dropdown-item" href="#">
-              <img width="24" height="18" src="images/gift-card.png" alt="imgplus"> Gift Cards</a>
+              <img width="24" height="18" src="./assets/images/gift-card.png" alt="imgplus"> Gift Cards</a>
             <a class="dropdown-item" href="FPZ.html">Flipkart Plus Zone</a>
             <a class="dropdown-item" href="order.html">Orders</a>
             <a class="dropdown-item" href="wishlist.html">Wishlist</a>
             <a class="dropdown-item" href="#">Rewards</a>
-            <a class="dropdown-item" href="giftcard.html">Gift Cards</a>
+            <a class="dropdown-item" href="./Gift Card/GiftCard.html">Gift Cards</a>
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
-            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg"
-              alt="Become a Seller" />
+          <a class="nav-link" href="pages/Sell_Online/sell_online.html">
+            <i class="fa-solid fa-store"></i>
             Become a Seller
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./cart/cart.html">
-            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg"
-              alt="Cart" />
+            <i class="fa-solid fa-cart-shopping"></i>
             Cart
           </a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link" href="#" id="moreLinksDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
-            <img
-              src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-ea7819.svg"
-              alt="More Links" />
+            <i class="fa-solid fa-ellipsis-vertical"></i>
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="moreLinksDropdown">
             <a class="dropdown-item" href="/communication-preferences/push?t=all">Notification Preferences</a>
@@ -201,5 +222,9 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- <script>
+    const bg=document.querySelector('.show');
+    
+  </script> -->
 </body>
 </html>

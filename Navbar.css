@@ -9,14 +9,15 @@
 .nav-item {
   transition: background-color 0.5s ease;
 }
-
-.nav-link {
+/* .nav-link {
   text-decoration: none;
   color: #000;
   display: block;
   padding: 20px;
+} */
+.navbar-toggler{
+  position: absolute;
 }
-
 .navtab{
   margin-left: 10px;
   padding-left: 10px;
@@ -24,9 +25,10 @@
   border-radius: 10px;
 }
 
-.navbar-nav{
+/* .navbar-nav{
   margin-right: auto;
-}
+  background-color: #333;
+} */
 
 #input_data{
   width: 500px;

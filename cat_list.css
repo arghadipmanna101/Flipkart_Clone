@@ -1,0 +1,55 @@
+.cat_list{
+  background-color: white;
+  margin-top: 10px;
+  max-width: 98%;
+  margin-left: 50px;
+  margin-right: 50px;
+  button{
+    margin-left: 40px;
+  }
+  padding-top: 15px;
+  justify-content: space-between;
+  margin-bottom: -45px;
+  margin-top: 30px;
+}
+.cat_list {
+display: flex;
+flex-wrap: nowrap;
+overflow-x: auto;
+padding: 10px 10px;
+left: 10px; /* Optional: add padding to the top and bottom */
+}
+
+.cat_list .btn {
+flex: 0 0 auto;
+margin: 0 10px; /* Adjust margin for spacing between buttons */
+padding: 0;
+border: none;
+background: none;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start;
+}
+
+.cat_list .btn a {
+text-decoration: none;
+color: inherit;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.cat_list .btn img {
+height: 75px; /* Consistent image height */
+display: block;
+margin: 0 auto;
+}
+
+.cat_list .btn p {
+margin: 5px 0 0 0; /* Ensure top margin only */
+font-size: 14px; /* Adjust font size as needed */
+color: #000; /* Adjust color as needed */
+text-align: center;
+}
+
