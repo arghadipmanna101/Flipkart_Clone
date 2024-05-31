@@ -76,7 +76,7 @@ body {
 
 
 
-#category-grid {
+/*#category-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 40px; 
@@ -92,7 +92,78 @@ body {
     object-fit: cover;
     transition: transform 0.3s ease 0.1s, width 2s, height 2.5s;
 
+  }*/
+  /* Other Top Deals */
+#category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
+  
+  .category-container {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  .category {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+  }
+  
+  .show-items-link {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none; /* Remove default link styling */
+  }
+  
+  .show-items-btn {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none;
+    cursor: pointer;
+  }
+  
+  .category-container:hover .show-items-btn {
+    display: block;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    #category-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px; /* Adjust the gap for smaller screens using this*/
+      margin: 10px; /* Adjust margins for smaller screens using this */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #category-grid {
+      grid-template-columns: 1fr;
+      gap: 10px; /* Adjust gap for smallest screens using this*/
+      margin: 5px; /* Adjust margins for smallest screens using this*/
+    }
+  }
+  
+  /*adding transition property to the images of the cateogory-grid section*/
+   #category-grid img {
+    transition: transform 0.3s ease-in-out;
+   }
+   #category-grid img:hover{
+    transform: scale(1.1);
+    opacity: 0.82;
+   }
   
 .category:hover {
     transform: scale(1.1025); 
