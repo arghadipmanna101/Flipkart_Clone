@@ -2,6 +2,9 @@
   width: 400px;
   /* Adjust the width as needed */
 }
+.navbar {
+  position: relative;
+}
 
 .nav-item {
   transition: background-color 0.5s ease;
@@ -67,7 +70,7 @@
   width: 1px;
   height: 30px; 
   background-color: #ccc; 
-  margin: 0 10px;
+  margin: 0 0px;
 }
 
 .nav-item-divider:last-child::after {
