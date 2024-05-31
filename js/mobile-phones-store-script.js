@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // Function to create a mobile card
 function createMobileCard(mobile) {
   return `
-      <a class="col-lg-2 col-md-2 col-sm-4 col-6 p-2" href="/addtokart/?query=${product.name}"> 
+      <a class="col-lg-2 col-md-2 col-sm-4 col-6 p-2" href="../addtokart/?query=${product.name}"> 
         <div class="mobiles">
             <divclass="text-center img-fluid" style="height:150px" ><img src="../json-api/product-img/${mobile.productImg}"  style="width: 100%; height: 100%; object-fit: contain;"
                 alt="${mobile.id}">
