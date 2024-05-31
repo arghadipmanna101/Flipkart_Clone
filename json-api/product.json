@@ -1,0 +1,1012 @@
+[
+    {
+        "name": "Apple iPhone 14 (Blue, 128 GB)",
+        "productImg": "mobile (1).jpeg",
+        "rating": 4.3,
+        "category":"mobile",
+        "price": 58999
+    },
+    {
+        "name": "Apple iPhone 15 (Blue, 128 GB)",
+        "productImg": "mobile (2).jpeg",
+        "rating": 4.5,
+        "category":"mobile",
+        "price": 79999
+    },
+    {
+        "name": "Apple iPhone 13 (Starlight, 128 GB)",
+        "productImg": "mobile (3).jpeg",
+        "rating": 4.2,
+        "category":"mobile",
+        "price": 59999
+    },
+    {
+        "name": "Apple iPhone 15 (Black, 128 GB)",
+        "productImg": "mobile (4).jpeg",
+        "rating": 4.4,
+        "category":"mobile",
+        "price": 79999
+    },
+    {
+        "name": "Apple iPhone 14 Plus (Starlight, 128 GB)",
+        "productImg": "mobile (5).jpeg",
+        "rating": 4.1,
+        "category":"mobile",
+        "price": 79900
+    },
+    {
+        "name": "Apple iPhone 14 (Purple, 128 GB)",
+        "productImg": "mobile (6).jpeg",
+        "rating": 4.6,
+        "category":"mobile",
+        "price": 69900
+    },
+    {
+        "name": "OPPO A59 5G (Starry Black, 128 GB)",
+        "productImg": "mobile (7).jpeg",
+        "rating": 4.2,
+        "category":"mobile",
+        "price": 17999
+    },
+    {
+        "name": "OPPO A58 (Dazzling Green, 128 GB)",
+        "productImg": "mobile (8).jpeg",
+        "rating": 4.5,
+        "category":"mobile",
+        "price": 15499
+    },
+    {
+        "name": "OPPO A59 5G (Silk Gold, 128 GB)",
+        "productImg": "mobile (9).jpeg",
+        "rating": 4.4,
+        "category":"mobile",
+        "price": 19999
+    },
+    {
+        "name": "OPPO A58 (Glowing Black, 128 GB)",
+        "productImg": "mobile (10).jpeg",
+        "rating": 4.3,
+        "category":"mobile",
+        "price": 15999
+    },
+    {
+        "name": "OPPO Reno11 5G (Wave Green, 128 GB)",
+        "productImg": "mobile (11).jpeg",
+        "rating": 4.1,
+        "category":"mobile",
+        "price": 38999
+    },
+    {
+        "name": "OPPO A17 (Lake Blue, 64 GB)",
+        "productImg": "mobile (12).jpeg",
+        "rating": 4.6,
+        "category":"mobile",
+        "price": 14999
+    },
+    {
+        "name": "Motorola g14 (Sky Blue, 128 GB)",
+        "productImg": "mobile (13).jpeg",
+        "rating": 4.2,
+        "category":"mobile",
+        "price": 13999
+    },
+    {
+        "name": "Motorola Edge 40 Neo (Peach Fuzz, 128 GB)",
+        "productImg": "mobile (14).jpeg",
+        "rating": 4.5,
+        "category":"mobile",
+        "price": 27999
+    },
+    {
+        "name": "Motorola G34 5G (Ice Blue, 128 GB)",
+        "productImg": "mobile (15).jpeg",
+        "rating": 4.4,
+        "category":"mobile",
+        "price": 14999
+    },
+    {
+        "name": "MOTOROLA g24 Power (Ink blue, 128 GB)",
+        "productImg": "mobile (16).jpeg",
+        "rating": 4.3,
+        "category":"mobile",
+        "price": 11999
+    },
+    {
+        "name": "Motorola G32 (Satin Silver, 128 GB)",
+        "productImg": "mobile (17).jpeg",
+        "rating": 4.1,
+        "category":"mobile",
+        "price": 18999
+    },
+    {
+        "name": "Motorola G34 5G (Ocean Green, 128 GB)",
+        "productImg": "mobile (18).jpeg",
+        "rating": 4.6,
+        "category":"mobile",
+        "price": 13999
+    },
+    {
+        "name": "POCO C65 (Matte Black, 128 GB)",
+        "productImg": "mobile (19).jpeg",
+        "rating": 4.2,
+        "category":"mobile",
+        "price": 1099
+    },
+    {
+        "name": "POCO C65 (Matte Black, 256 GB)",
+        "productImg": "mobile (19).jpeg",
+        "rating": 4.2,
+        "category":"mobile",
+        "price": 13999
+    },
+    {
+        "name": "POCO C65 (Pastel Green, 128 GB)",
+        "productImg": "mobile (20).jpeg",
+        "rating": 4.5,
+        "category":"mobile",
+        "price": 16999
+    },
+    {
+        "name": "POCO M6 5G (Polaris Green, 256 GB)",
+        "productImg": "mobile (21).jpeg",
+        "rating": 4.4,
+        "category":"mobile",
+        "price": 13999
+    },
+    {
+        "name": "POCO C61 (Diamond Dust Black, 128 GB)",
+        "productImg": "mobile (22).jpeg",
+        "rating": 4.3,
+        "category":"mobile",
+        "price": 9999
+    },
+    {
+        "name": "POCO C65 (Pastel Blue, 128 GB)",
+        "productImg": "mobile (23).jpeg",
+        "rating": 4.1,
+        "category":"mobile",
+        "price": 10999
+    },
+    {
+        "name": "Google Pixel 8 Pro (Obsidian, 128 GB)",
+        "productImg": "mobile (24).jpeg",
+        "rating": 4.6,
+        "category":"mobile",
+        "price": 169999
+    },
+    {
+        "name": "Google Pixel 8 (Rose, 128 GB)",
+        "productImg": "mobile (25).jpeg",
+        "rating": 4.2,
+        "category":"mobile",
+        "price": 73999
+    },
+    {
+        "name": "Google Pixel 7 (Snow, 128 GB)",
+        "productImg": "mobile (26).jpeg",
+        "rating": 4.5,
+        "category":"mobile",
+        "price": 59999
+    },
+    {
+        "name": "Google Pixel 8a (Bay, 128 GB)",
+        "productImg": "mobile (27).jpeg",
+        "rating": 4.4,
+        "category":"mobile",
+        "price": 52999
+    },
+    {
+        "name": "Google Pixel 7 Pro (Hazel, 128 GB)",
+        "productImg": "mobile (28).jpeg",
+        "rating": 4.3,
+        "category":"mobile",
+        "price": 84999
+    },
+    {
+        "name": "Google Pixel 7a (Charcoal, 128 GB)",
+        "productImg": "mobile (29).jpeg",
+        "rating": 4.1,
+        "category":"mobile",
+        "price": 43999
+    },
+    {
+        "name": "Infinix Note 40 Pro+ 5G (Vintage Green, 256 GB)",
+        "productImg": "mobile (30).jpeg",
+        "rating": 4.6,
+        "category":"mobile",
+        "price": 33999
+    },
+    {
+        "name": "Infinix Note 30 5G (Magic Black, 256 GB)",
+        "productImg": "mobile (31).jpeg",
+        "rating": 4.2,
+        "category":"mobile",
+        "price": 19999
+    },
+    {
+        "name": "Infinix HOT 40i (Palm Blue, 256 GB)",
+        "productImg": "mobile (32).jpeg",
+        "rating": 4.5,
+        "category":"mobile",
+        "price": 10999
+    },
+    {
+        "name": "Infinix SMART 8 HD (Galaxy White, 64 GB)",
+        "productImg": "mobile (33).jpeg",
+        "rating": 4.4,
+        "category":"mobile",
+        "price": 7999
+    },
+    {
+        "name": "Infinix SMART 8 HD (Crystal Green, 64 GB)",
+        "productImg": "mobile (34).jpeg",
+        "rating": 4.3,
+        "category":"mobile",
+        "price": 8999
+    },
+    {
+        "name": "Infinix SMART 8 HD (Timber Black, 64 GB)",
+        "productImg": "mobile (35).jpeg",
+        "rating": 4.1,
+        "category":"mobile",
+        "price": 7999
+    },
+    {
+        "name": "REDMI 13C (Starfrost White, 128 GB)",
+        "productImg": "mobile (36).jpeg",
+        "rating": 4.6,
+        "category":"mobile",
+        "price": 11999
+    },
+    {
+        "name": "REDMI 13C 5G (Startrail Green, 128 GB)",
+        "productImg": "mobile (37).jpeg",
+        "rating": 4.2,
+        "category":"mobile",
+        "price": 13999
+    },
+    {
+        "name": "REDMI A2 (Sea Green, 64 GB)",
+        "productImg": "mobile (38).jpeg",
+        "rating": 4.5,
+        "category":"mobile",
+        "price": 9999
+    },
+    {
+        "name": "REDMI 12 (Pastel Blue, 128 GB)",
+        "productImg": "mobile (39).jpeg",
+        "rating": 4.4,
+        "category":"mobile",
+        "price": 13999
+    },
+    {
+        "name": "REDMI Note 13 5G (Stealth Black, 256 GB)",
+        "productImg": "mobile (40).jpeg",
+        "rating": 4.3,
+        "category":"mobile",
+        "price": 23999
+    },
+    {
+        "name": "REDMI 13C 5G (Startrail Silver, 128 GB",
+        "productImg": "mobile (41).jpeg",
+        "rating": 4.1,
+        "category":"mobile",
+        "price": 13999
+    },
+    {
+        "name": "realme 12x 5G (Twilight Purple, 128 GB)",
+        "productImg": "mobile (42).jpeg",
+        "rating": 4.6,
+        "category":"mobile",
+        "price": 17999
+    },
+    {
+        "name": "realme P1 5G (Peacock Green, 128 GB)",
+        "productImg": "mobile (43).jpeg",
+        "rating": 4.2,
+        "category":"mobile",
+        "price": 13999
+    },
+    {
+        "name": "realme C53 (Champion Black, 128 GB)",
+        "productImg": "mobile (44).jpeg",
+        "rating": 4.5,
+        "category":"mobile",
+        "price": 13999
+    },
+    {
+        "name": "realme C51 (Mint Green, 64 GB)",
+        "productImg": "mobile (45).jpeg",
+        "rating": 4.4,
+        "category":"mobile",
+        "price": 10999
+    },
+    {
+        "name": "realme C53realme C53 (Champion Gold, 128 GB)",
+        "productImg": "mobile (46).jpeg",
+        "rating": 4.3,
+        "category":"mobile",
+        "price": 11999
+    },
+    {
+        "name": "realme C53 (Champion Gold, 128 GB)",
+        "productImg": "mobile (46).jpeg",
+        "rating": 4.3,
+        "category":"mobile",
+        "price": 13999
+    },
+    {
+        "name": "SAMSUNG Galaxy F15 5G (Ash Black, 128 GB)",
+        "productImg": "mobile (47).jpeg",
+        "rating": 4.1,
+        "category":"mobile",
+        "price": 16999
+    },
+    {
+        "name": "SAMSUNG Galaxy F54 5G (Meteor Blue, 256 GB)",
+        "productImg": "mobile (48).jpeg",
+        "rating": 4.6,
+        "category":"mobile",
+        "price": 35999
+    },
+    {
+        "name": "SAMSUNG Galaxy F04 (Jade Purple, 64 GB)",
+        "productImg": "mobile (49).jpeg",
+        "rating": 4.2,
+        "category":"mobile",
+        "price": 13999
+    },
+    {
+        "name": "SAMSUNG Galaxy F34 5G (Orchid Violet, 128 GB)",
+        "productImg": "mobile (50).jpeg",
+        "rating": 4.5,
+        "category":"mobile",
+        "price": 24999
+    },
+    {
+        "name": "SAMSUNG Galaxy F15 5G (Jazzy Green, 128 GB)",
+        "productImg": "mobile (51).jpeg",
+        "rating": 4.4,
+        "category":"mobile",
+        "price": 13999
+    },
+    {
+        "name": "SAMSUNG Galaxy F14 5G (OMG Black, 128 GB)",
+        "productImg": "mobile (52).jpeg",
+        "rating": 4.3,
+        "category":"mobile",
+        "price": 18499
+    },
+    {
+        "name": "vivo T2x 5G (Marine Blue, 128 GB)",
+        "productImg": "mobile (53).jpeg",
+        "rating": 4.1,
+        "category":"mobile",
+        "price": 18999
+    },
+    {
+        "name": "vivo T2x 5G (Aurora Gold, 128 GB)",
+        "productImg": "mobile (55).jpeg",
+        "rating": 4.6,
+        "category":"mobile",
+        "price": 17999
+    },
+    {
+        "name": "vivo T2x 5G (Aurora Gold, 128 GB)",
+        "productImg": "mobile (55).jpeg",
+        "rating": 4.6,
+        "category":"mobile",
+        "price": 18999
+    },
+    {
+        "name": "vivo T3x 5G (Celestial Green, 128 GB)",
+        "productImg": "mobile (54).jpeg",
+        "rating": 4.2,
+        "category":"mobile",
+        "price": 18999
+    },
+    {
+        "name": "vivo T3x 5G (Crimson Bliss, 128 GB)",
+        "productImg": "mobile (56).jpeg",
+        "rating": 4.5,
+        "category":"mobile",
+        "price": 14499
+    },
+    {
+        "name": "vivo T3x 5G (Crimson Bliss, 128 GB)",
+        "productImg": "mobile (56).jpeg",
+        "rating": 4.5,
+        "category":"mobile",
+        "price": 17499
+    },
+    {
+        "name": "PHILIPS BT3101/15 Trimmer 45 min Runtime 10 Length",
+        "productImg": "steel-cordless-philips.jpeg",
+        "rating": 4.2,
+        "category": "electronics",
+        "price": 1495
+      },
+      {
+        "name": "NOVA NHT 1053 USB Trimmer 160 min Runtime 40 Length",
+        "productImg": "nova-original-ima.jpeg",
+        "rating": 4.5,
+        "category": "electronics",
+        "price": 2195
+      },
+      {
+        "name": "PHILIPS BT1233/18 Trimmer 30 min Runtime 4 Length",
+        "productImg": "stainless-steel-cordless-philips-.jpeg",
+        "rating": 4.0,
+        "category": "electronics",
+        "price": 945
+      },
+      {
+        "name": "NOVA NHP 8100/05 Hair Dryer",
+        "productImg": "silky-shine-hot-nova-original.jpeg",
+        "rating": 4.2,
+        "category": "electronics",
+        "price": 845
+      },
+      {
+        "name": "PHILIPS HP8302/06 Hair Straightener",
+        "productImg": "original-imagky3myujy5rar.jpeg",
+        "rating": 4.1,
+        "category": "electronics",
+        "price": 1295
+      },
+      {
+        "name": "TAPUJI Dancing Cactus Repeats What You Say,Electronic",
+        "productImg": "dancing-cactus-.jpeg",
+        "rating": 4.6,
+        "category": "electronics",
+        "price": 334
+      },
+      {
+        "name": "HAMOFY Professional MaxtopT99 Rechargeable Cordless",
+        "productImg": "maxtopt99-rechargeable.jpeg",
+        "rating": 4.5,
+        "category": "electronics",
+        "price": 2499
+      },
+      {
+        "name": "Apple 2022 MacBook AIR Apple M2 - (8 GB/256 GB SSD/Mac OS Monterey) MLY33HN/A  (13.6 Inch, Midnight, 1.24 Kg)",
+        "productImg": "appleMacbook.jpeg",
+        "rating": 4.5,
+        "category": "electronics/laptop",
+        "price": 86990
+      },
+      {
+        "name": "HP Chromebook(2024) MediaTek MT8183 -(4 GB/32 GB EMMC Storage/Chrome OS) 11MK G9 Chromebook  (11.6 Inch, Black, 1.34 Kg)",
+        "productImg": "11mk-g9-chromebook-hp.jpeg",
+        "rating": 3.8,
+        "category": "electronics/laptop",
+        "price": 34554
+      },
+      {
+        "name": "DELL Latitude Intel Core i3 11th Gen 1115G4 - (8 GB/512)",
+        "productImg": "latitude-laptop-dell-.jpeg",
+        "rating": 4.2,
+        "category": "electronics/laptop",
+        "price": 73412
+      },
+      {
+        "name": "DELL Intel Core i3 12th Gen 1215U - (8 GB/512 GB SSD",
+        "productImg": "del-i3-12gen.jpeg",
+        "rating": 4.2,
+        "category": "electronics/laptop",
+        "price": 59999
+      },
+      {
+        "name": "Elista ELS WK-710 Wired USB Multi-device Keyboard",
+        "productImg": "keyboard.jpeg",
+        "rating": 4.5,
+        "category": "electronics",
+        "price": 699
+      },
+      {
+        "name": "Portronics POR 1682 Wireless Optical Mouse",
+        "productImg": "Optical Mouse.jpeg",
+        "rating": 4.4,
+        "category": "electronics",
+        "price": 599
+      },
+      {
+        "name": "Portronics Toad 13, POR 1381, POR 1382 Wireless Optical Mouse",
+        "productImg": "toad-13-portronic.jpeg",
+        "rating": 4.1,
+        "category": "electronics",
+        "price": 399
+      },
+      {
+        "name": "ZEBRONICS K-35 Wired USB Multi-device Keyboard",
+        "productImg": "zebronics-origkeyboard.jpeg",
+        "rating": 4.5,
+        "category": "electronics",
+        "price": 285
+      },
+      {
+        "name": "Boult Bassbox X120 with Subwoofer, 120W Power, 2.1",
+        "productImg": "original-imahyauhvfaa45en.jpeg",
+        "rating": 4.3,
+        "category": "electronics",
+        "price": 5999
+      },
+      {
+        "name": "UIC 5103 80 W Bluetooth Tower Speaker",
+        "productImg": "uic-original-imagrb.jpeg",
+        "rating": 3.8,
+        "category": "electronics",
+        "price": 1900
+      },
+      {
+        "name": "Vox V7171 90 W Bluetooth Home Theatre",
+        "productImg": "vox-original-mgj3.jpeg",
+        "rating": 4.5,
+        "category": "electronics",
+        "price": 2057
+      },
+      {
+        "name": "Tata Sampann Toor Dal 1 kg ",
+        "productImg": "toorDal.jpeg",
+        "rating": 4.5,
+        "category": "grocery",
+        "price": 320
+      },
+      {
+        "name": "Fortune Premium kachi ghani pure Mustard Oli",
+        "productImg": "mustard-oil-fortune.jpeg",
+        "rating": 4.5,
+        "category": "grocery",
+        "price": 180
+      },
+      {
+        "name": "DHARA Fit n Fine Soyabean Oil",
+        "productImg": "soyabean-oil-dhara-.jpeg",
+        "rating": 4.5,
+        "category": "grocery",
+        "price": 130
+      },
+      {
+        "name": "Dabur Anmol Gold 100% Pure Coconut Hair Oil",
+        "productImg": "coconut-hair-oil-600ml-dabur.jpeg",
+        "rating": 4.5,
+        "category": "grocery",
+        "price": 261
+      },
+      {
+        "name": "COMPLAN Nutrition Drink Powder",
+        "productImg": "COMPLAN Nutrition Drink Powder.jpeg",
+        "rating": 4.5,
+        "category": "grocery",
+        "price": 569
+      },
+      {
+        "name": "Red Label Natural Care Mulethi, Ginger 1kg",
+        "productImg": "redlabletea.jpeg",
+        "rating": 4.5,
+        "category": "grocery",
+        "price": 600
+      },
+      {
+        "name": "Molsi's Royal Zahidi Dates (Khajur)",
+        "productImg": "khajoor.jpeg",
+        "rating": 4.5,
+        "category": "grocery",
+        "price": 160
+      },
+      {
+        "name": "Tata Coffee Grand Premium",
+        "productImg": "teacoffee.jpeg",
+        "rating": 4.5,
+        "category": "grocery",
+        "price": 149
+      },
+      {
+        "name": "Kissan Jam Mix Fruit Tub 90 g",
+        "productImg": "Kissan Jam Mix Fruit Tub 90 g.jpeg",
+        "rating": 4.5,
+        "category": "grocery",
+        "price": 100
+      },
+      {
+        "name": "BRITANNIA Good Day",
+        "productImg": "BRITANNIA Good Day.jpeg",
+        "rating": 4.5,
+        "category": "grocery",
+        "price": 130
+      },
+      {
+        "name": "UNIBIC Sugar Free Cashew Cookies",
+        "productImg": "UNIBIC Sugar Free Cashew Cookiee.jpeg",
+        "rating": 4.5,
+        "category": "grocery",
+        "price": 60
+      },
+      {
+        "name": "PARLE Hide & Seek Milano Cookies",
+        "productImg": "origina6nzybfu.jpeg",
+        "rating": 4.5,
+        "category": "grocery",
+        "price": 58
+      },
+      {
+        "name": "Dettol Original Germ Protection",
+        "productImg": "dettolfzpadj.jpeg",
+        "rating": 4.5,
+        "category": "grocery",
+        "price": 135
+      },
+      {
+        "name": "Pears Pure & Gentle Bar",
+        "productImg": "pure-pears-.jpeg",
+        "rating": 4.5,
+        "category": "grocery",
+        "price": 452
+      },
+      {
+        "name": "Santoor by Wipro Skin Moisturizing",
+        "productImg": "santoor.jpeg",
+        "rating": 4.5,
+        "category": "grocery",
+        "price": 310
+      },
+      {
+        "name": "Colgate ZigZag Medium Bristle",
+        "productImg": "imagyfescnvgxdp7.jpeg",
+        "rating": 4.5,
+        "category": "grocery",
+        "price": 85
+      },
+      {
+        "name": "Colgate MaxFresh Toothpaste",
+        "productImg": "-original-imahymrstzvfj4gc.jpeg",
+        "rating": 4.5,
+        "category": "grocery",
+        "price": 157
+      },
+      {
+        "name": "Kodak Television",
+        "productImg": "koeqktv.jpeg",
+        "rating": 4.5,
+        "category": "appliances/TV",
+        "price": 11000
+      },
+      {
+        "name": "LG TV UR7500",
+        "productImg": "lgtvguafs.jpeg",
+        "rating": 4.5,
+        "category": "appliances/TV",
+        "price": 32990
+      },
+      {
+        "name": "Samsung Televisions",
+        "productImg": "susmtvsbzud.jpeg",
+        "rating": 4.5,
+        "category": "appliances/TV",
+        "price": 38000
+      },
+      {
+        "name": "Mi 5X Television",
+        "productImg": "mitv8g8vznua.jpeg",
+        "rating": 4.5,
+        "category": "appliances/TV",
+        "price": 40999
+      },
+      {
+        "name": "Blaupunkt Cybersound",
+        "productImg": "dhqxc.jpeg",
+        "rating": 4.5,
+        "category": "appliances/TV",
+        "price": 24999
+      },
+      {
+        "name": "Samsung HD Smart TV",
+        "productImg": "samyzsbzud.jpeg",
+        "rating": 4.5,
+        "category": "appliances/TV",
+        "price": 33500
+      },
+      {
+        "name": "Ecodubble Washing Machine",
+        "productImg": "wash4w.jpeg",
+        "rating": 4.5,
+        "category": "appliances/washing",
+        "price": 15000
+      },
+      {
+        "name": "Semi Automatic Washing Machine",
+        "productImg": "semfcnw9yt.jpeg",
+        "rating": 4.5,
+        "category": "appliances/washing",
+        "price": 16000
+      },
+      {
+        "name": "High Capacity Refrigerator",
+        "productImg": "kpazkqm7tnbr.jpeg",
+        "rating": 4.5,
+        "category": "appliances",
+        "price": 27900
+      },
+      {
+        "name": "3Star Refrigerator",
+        "productImg": "5tfwbqu.jpeg",
+        "rating": 4.5,
+        "category": "appliances",
+        "price": 12490
+      },
+      {
+        "name": "Sewing Machine",
+        "productImg": "ag5gz9dd3z8gzq.jpeg",
+        "rating": 4.5,
+        "category": "appliances",
+        "price": 18000
+      },
+      {
+        "name": "Iron",
+        "productImg": "6e6ub.jpeg",
+        "rating": 4.5,
+        "category": "appliances",
+        "price": 1000
+      },
+      {
+        "name": "Philips Iron",
+        "productImg": "6e6ub.jpeg",
+        "rating": 4.5,
+        "category": "appliances",
+        "price": 800
+      },
+      {
+        "name": "Juicer Mixer Grinders",
+        "productImg": "bb179e371e6fae0a.jpg",
+        "rating": 4.5,
+        "category": "appliances",
+        "price":1099 
+      },
+      {
+        "name": "Energy Fans",
+        "productImg": "22561ea064c1ce0b.jpg",
+        "rating": 4.5,
+        "category": "appliances",
+        "price": 1899
+      },
+      {
+        "name": "Homes Julian Engineered Wood Door Walnut",
+        "productImg": "vwhs6z.jpeg",
+        "rating": 3.7,
+        "category": "home&furniture",
+        "price": 7499
+      },
+      {
+        "name": "Bekner 100 ml Manual Ice Cream Maker",
+        "productImg": "axhcb6jupd.jpeg",
+        "rating": 4.0,
+        "category": "home&furniture",
+        "price": 189
+      },
+      {
+        "name": "SRE 27 Wooden Spatula",
+        "productImg": "qwfjr.jpeg",
+        "rating": 4.1,
+        "category": "home&furniture",
+        "price": 145
+      },
+      {
+        "name": "OGGN Marble Chakla Wooden Belan",
+        "productImg": "kmqwyu.jpeg",
+        "rating": 4.5,
+        "category": "home&furniture",
+        "price": 499
+      },
+      {
+        "name": "HANGUL Wallchiere Wall Lamp With Bulb",
+        "productImg": "kysberf6sck.jpeg",
+        "rating": 4.7,
+        "category": "home&furniture",
+        "price": 603
+      },
+      {
+        "name": "Uplight Wall Bulb",
+        "productImg": "cgrcfmh9.jpeg",
+        "rating": 4.5,
+        "category": "home&furniture",
+        "price": 999
+      },
+      {
+        "name": "Mamaearth Onion Redensyl for Fall Control Hair Oil",
+        "productImg": "f22wvxa.jpeg",
+        "rating": 4.5,
+        "category": "beauty&toys",
+        "price": 348
+      },
+      {
+        "name": "Topline Derma Roller 540",
+        "productImg": "zthgywhjrh2.jpeg",
+        "rating": 3.5,
+        "category": "beauty&toys",
+        "price": 499
+      },
+      {
+        "name": "Pond's Super Light Gel",
+        "productImg": "f3dwzx3k6apb.jpeg",
+        "rating": 4.5,
+        "category": "beauty&toys",
+        "price": 260
+      },
+      {
+        "name": "Livon Hair Serum",
+        "productImg": "u4bsuasy.jpeg",
+        "rating": 4.2,
+        "category": "beauty&toys",
+        "price": 750
+      },
+      {
+        "name": "Jovees De Tan Face Wash",
+        "productImg": "iginal-imahyqn8fhksrjqj.jpeg",
+        "rating": 4.5,
+        "category": "beauty&toys",
+        "price": 225
+      },
+      {
+        "name": "Sheopals Beard Growth Serum",
+        "productImg": "vuyxr4fqyfv.jpeg",
+        "rating": 4.5,
+        "category": "beauty&toys",
+        "price": 399
+      },
+      {
+        "name": "Nexteesh Moster Car",
+        "productImg": "l-imafxruqgz7rw4xw.jpeg",
+        "rating": 4.5,
+        "category": "beauty&toys",
+        "price": 594
+      },
+      {
+        "name": "Caddles Toes Famous Car",
+        "productImg": "yphzhvpmv.jpeg",
+        "rating": 3.3,
+        "category": "beauty&toys",
+        "price": 1999
+      },
+      {
+        "name": "Tapuji Dancing Cactus",
+        "productImg": "ginal-imahya7dewezwgdj.jpeg",
+        "rating": 4.5,
+        "category": "beauty&toys",
+        "price": 420
+      },
+      {
+        "name": "Beauty of Joseon Sunscreen",
+        "productImg": "ybk3jt4b7b.jpeg",
+        "rating": 2.5,
+        "category": "beauty&toys",
+        "price": 2099
+      },
+      {
+        "name": "FTX T-Shirt",
+        "productImg": "hztgaaft73g.jpeg",
+        "rating": 4.5,
+        "category": "fashion",
+        "price": 429
+      },
+      {
+        "name": "Lorofy Saree",
+        "productImg": "magx7g6npgg6ff9.jpeg",
+        "rating": 4.5,
+        "category": "fashion",
+        "price": 1999
+      }
+      ,
+      {
+        "name": "Multicolor Kurti",
+        "productImg": "vzkm5tfyryh.jpeg",
+        "rating": 4.5,
+        "category": "fashion",
+        "price": 462
+      },
+      {
+        "name": "Jeans",
+        "productImg": "ynw4czxk8.jpeg",
+        "rating": 4.5,
+        "category": "fashion",
+        "price": 2499
+      },
+      {
+        "name": "Printed Women Round Neck Pure Cotton Multicolor T-Shirt",
+        "productImg": "dyxnev3gw.jpeg",
+        "rating": 4.5,
+        "category": "fashion",
+        "price": 1495
+      },
+      {
+        "name": "Printed Women Round Neck Pure Cotton Multicolor T-Shirt",
+        "productImg": "gr5rxa8kvkzem.jpeg",
+        "rating": 4.6,
+        "category": "fashion",
+        "price": 1495
+      },
+      {
+        "name": "Women Red Heels Sandal",
+        "productImg": "cdhsc5sbwh7.jpeg",
+        "rating": 4.5,
+        "category": "fashion",
+        "price": 1999
+      },
+      {
+        "name": "Women Pink Heels Sandal",
+        "productImg": "fybppzvjhhx7.jpeg",
+        "rating": 4.5,
+        "category": "fashion",
+        "price": 1949
+      },
+      {
+        "name": "Women Beige Heels",
+        "productImg": "phb4nemc5.jpeg",
+        "rating": 4.5,
+        "category": "fashion",
+        "price": 2290
+      },
+      {
+        "name": "Men Camel Sandal",
+        "productImg": "ghknczgstzxkb.jpeg",
+        "rating": 4.5,
+        "category": "fashion",
+        "price": 600
+      },
+      {
+        "name": "Men Slim Fit Solid Sirt",
+        "productImg": "aggvvnywmgthyq.jpeg",
+        "rating": 4.5,
+        "category": "fashion",
+        "price": 1599
+      },
+      {
+        "name": "Men Slim Fit Sirt",
+        "productImg": "agf4mxnhanzdtn.jpeg",
+        "rating": 4.5,
+        "category": "fashion",
+        "price": 468
+      },
+      {
+        "name": "Hero Super Splendor (Disc)",
+        "productImg": "-imahfy58uvs82sth.jpeg",
+        "rating": 4.5,
+        "category": "two-wheelers",
+        "price": 84198
+      },
+      {
+        "name": "Hero DESTINI PRIME Booking for Ex-Showroom Price",
+        "productImg": "6xgddjyk8.jpeg",
+        "rating": 4.5,
+        "category": "two-wheelers",
+        "price": 71499
+      },
+      {
+        "name": "Hero Glamour XTEC (Disc) Booking for Ex-Showroom Price",
+        "productImg": "-original-imaggcjz4ypdz8jq.jpeg",
+        "rating": 4.5,
+        "category": "two-wheelers",
+        "price":94368 
+      },
+      {
+        "name": "VIDA Powered by Hero V1 Pro",
+        "productImg": "-original-imagz8xnkeykwmpc.jpeg",
+        "rating": 4.5,
+        "category": "two-wheelers",
+        "price":  149900
+      },
+      {
+        "name": "Hero Glamour (drum)",
+        "productImg": "l-imagtnjz6p5fgycd.jpeg",
+        "rating": 4.4,
+        "category": "two-wheelers",
+        "price": 83448
+      },
+      {
+        "name": "Hero Super Splendor",
+        "productImg": "-original-imagn5bnymq8aucu.jpeg",
+        "rating": 4.5,
+        "category": "two-wheelers",
+        "price": 83549
+      }
+      
+]
