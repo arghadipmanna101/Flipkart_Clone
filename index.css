@@ -37,8 +37,8 @@ body {
 .navbar-nav {
     display: flex;
     justify-content: space-between;
-    margin-right: 50px;
-    gap: 30px;
+    margin-right: 80px; 
+    gap: 30px; /* Uncommented the gap property from the main branch */
 }
 
 .navtab {
