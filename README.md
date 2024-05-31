@@ -50,7 +50,11 @@
    git switch -c <your-branch-name>
    ```
 
-6. **Make changes:** Start making your changes to the source code.
+6. **Make changes:** Always take a pull from the upsteam repository to your master branch to keep it at par with the main project(updated repository).
+```bash
+   git pull upstream main
+```
+
 
 7. **Add your changes:** Stage your changes for commit:
 
