@@ -538,10 +538,11 @@ html {
 	padding: 0.5rem;
 	text-decoration: none;
 	transition: 0.2s ease-out;
+    
 }
 
 .back-to-top span {
-	color: #fff;
+	color: #000;
 	font-size: 3rem;
 	transition: 0.2s ease-out;
 }
