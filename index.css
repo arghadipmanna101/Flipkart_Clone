@@ -134,6 +134,8 @@ footer {
     background-color: rgba(0, 0, 0, 0.85);
     color: #ffffff;
     padding: 15px 35px;
+    /* margin: 0; */
+    margin-bottom: -55px;
 }
 .foot-top {
     display: flex;
@@ -145,12 +147,18 @@ footer {
 }
 .foot-left, .foot-right {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    gap: 30px;
+    /* gap: 30px; */
     padding: 25px;
     flex: 1 1 500px;
     flex-wrap: wrap;
 }
+/* .foot-right{
+    height: 300px;
+    width: 150px;
+    background-color: red;
+} */
 .foot-left h5, .foot-right h5 {
     font-size: 13px;
     font-weight: 600;
@@ -204,8 +212,11 @@ footer {
     align-content: center;
     align-items: center;
     width: -webkit-fill-available;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
+}
+.foot-down ul li{
+    padding-left: 40px;
 }
 .payment-icons{
     display: flex;
@@ -492,4 +503,7 @@ html {
 .soc_icn i{
     color: white;
     font-size:22px;
+}
+.office, .part{
+    width: 300px;
 }
