@@ -292,3 +292,62 @@ body {
     padding: 0.75rem 1rem;
   }
 }
+
+/* got to top button */
+#goToTopBtn {
+    /* display: none; */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #eb4242;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#goToTopBtn:hover {
+  background-color: #555;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Loader */
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader-spinner {
+    width: 100px;
+    height: 100px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    border-top: 5px solid transparent;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+      transform: rotate(0deg);
+  }
+
+  to {
+      transform: rotate(360deg);
+  }
+  
+}

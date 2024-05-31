@@ -85,3 +85,27 @@ fetchAndShuffleData(
   top_selection_products,
   12
 );
+
+
+ // Show or hide the "Go to Top" button based on scroll position
+window.addEventListener("scroll", function() {
+    var scrollToTopBtn = document.getElementById("goToTopBtn");
+    if (window.scrollY > 100) {
+        scrollToTopBtn.classList.remove("hidden");
+    } else {
+        scrollToTopBtn.classList.add("hidden");
+    }
+});
+ // Scroll to the top when the button is clicked
+document.getElementById("goToTopBtn").addEventListener("click", function() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth" 
+    });
+});
+
+
+// loader
+setTimeout(function() {
+    document.getElementById('loader').style.display = 'none';
+  }, 3000);
