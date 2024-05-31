@@ -8,7 +8,11 @@
     <title>Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!
     </title>
     <link rel="icon" type="image/x-icon" href=https://iconpusher.com/icon/1449/1>
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    
+    <script src="pages/CategoryList/categorylist.js"></script>
+
+    
    
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     
@@ -312,11 +316,11 @@
 </html>
 <script>
   $(function(){
-$("#container").load("./Navabar.html");
+$("#container").load(".Navbar/Navabar.html");
 });
 
 $(function(){
-$("#carousel").load("./carousel.html");
+$("#carousel").load("./Carousel/carousel.html");
 });
 </script>
 
@@ -326,11 +330,11 @@ $("#carousel").load("./carousel.html");
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Flipkart</title>
-  <link rel="icon" type="image/x-icon" href="images/flipkart_lite.png">
-  <link rel="stylesheet" href="faq.css">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="./assets/images/flipkart_lite.png">
+  <link rel="stylesheet" href="./pages/FAQ/faq.css">
+  <link rel="stylesheet" href="./assets/css/style.css" />
   <link rel="manifest" href="manifest.json" />
-  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="./assets/css/index.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     integrity="sha512-..." crossorigin="anonymous" />
@@ -385,10 +389,10 @@ $("#carousel").load("./carousel.html");
     <title>Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!</title>
     <link rel="icon" type="image/png" href="https://iconpusher.com/icon/1449/1">
     <title>Flipkart</title>
-    <link rel="icon" type="image/x-icon" href="/flipkart favicon-modified.png">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="cat_list.css" />
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon-modified.png">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/cat_list.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -1023,7 +1027,7 @@ $("#carousel").load("./carousel.html");
 
         <ul>
           <li><a href="pages/Sell_Online/sell_online.html"><i class="bi bi-briefcase-fill"></i> Become a seller</a></li>
-          <li><a href="./Gift Card/GiftCard.html"><i class="bi bi-gift-fill"></i> Gift Cards</a></li>
+          <li><a href="./pages/GiftCard/giftcard.html"><i class="bi bi-gift-fill"></i> Gift Cards</a></li>
           <li><a href=""><i class="bi bi-question-circle-fill"></i> Help Center</a></li>
           <div>
             <li>&copy;<span class="update_Cyear"></span> Flipkart.com</li>
@@ -1125,17 +1129,25 @@ $("#carousel").load("./carousel.html");
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-  <!-- <script src="./index.js"> -->
+ 
   </script>
 
-  <script>
+  <!-- <script>
      $(function () {
       $("#loader").load("./preloader.html");
-      $("#category-list").load("./categorylist.html");
-      $("#top-deals").load("./topdeals.html");
-      $("#content-page").load("./content-page.html");
+      $("#category-list").load("./pages/CategoryList/categorylist.html", function(response, status, xhr) {
+                if (status == "error") {
+                    console.error("Error loading categorylist.html:", xhr.status, xhr.statusText);
+                    console.log("Response:", response);
+                } else {
+                    console.log("categorylist.html loaded successfully.");
+                }
+            });
+      // $("#category-list").load("./pages/CategoryList/categorylist.html");
+      $("#top-deals").load("./pages/TopDeals/topdeals.html");
+      $("#content-page").load("./pages/Content-page/content-page.html");
      });
-    fetch('./Navabar.html')
+    fetch('./pages/Navbar/Navabar.html')
       .then(response => response.text())
       .then(data => {
         // Insert the retrieved HTML content into the navbar-container
@@ -1144,7 +1156,66 @@ $("#carousel").load("./carousel.html");
       .catch(error => console.error('Error fetching navbar:', error));
 
 
-  </script>
+  </script> -->
+  <script>
+    $(function () {
+        console.log("jQuery document ready function executed.");
+
+        // Load preloader
+        $("#loader").load("./preloader.html", function(response, status, xhr) {
+            if (status == "error") {
+                console.error("Error loading preloader.html:", xhr.status, xhr.statusText);
+                console.log("Response:", response);
+            } else {
+                console.log("preloader.html loaded successfully.");
+            }
+        });
+
+        // Load category list
+        $("#category-list").load("./pages/CategoryList/categorylist.html", function(response, status, xhr) {
+            if (status == "error") {
+                console.error("Error loading categorylist.html:", xhr.status, xhr.statusText);
+                console.log("Response:", response);
+            } else {
+                console.log("categorylist.html loaded successfully.");
+            }
+        });
+
+        // Load top deals
+        $("#top-deals").load("./pages/TopDeals/topdeals.html", function(response, status, xhr) {
+            if (status == "error") {
+                console.error("Error loading topdeals.html:", xhr.status, xhr.statusText);
+                console.log("Response:", response);
+            } else {
+                console.log("topdeals.html loaded successfully.");
+            }
+        });
+
+        // Load content page
+        $("#content-page").load("./pages/Content-page/content-page.html", function(response, status, xhr) {
+            if (status == "error") {
+                console.error("Error loading content-page.html:", xhr.status, xhr.statusText);
+                console.log("Response:", response);
+            } else {
+                console.log("content-page.html loaded successfully.");
+            }
+        });
+    });
+
+    // Fetch Navbar
+    fetch('./pages/Navbar/Navabar.html')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return response.text();
+        })
+        .then(data => {
+            document.getElementById('navbar-container').innerHTML = data;
+            console.log("Navabar.html loaded successfully.");
+        })
+        .catch(error => console.error('Error fetching navbar:', error));
+</script>
 
   <script>
     // Get the current year
@@ -1165,7 +1236,7 @@ $("#carousel").load("./carousel.html");
 
 <script>
   if('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js', { scope: '/' });
+    navigator.serviceWorker.register('./sw.js', { scope: '/' });
   }
   </script>
 
@@ -1185,9 +1256,9 @@ $("#carousel").load("./carousel.html");
       v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
   })(document, 'script');
 </script>
+
 </body>
 
 </html>
 
 </html>    
-
