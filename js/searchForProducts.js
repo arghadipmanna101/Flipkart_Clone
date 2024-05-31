@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
             resultElement.classList.add("col-6");
             resultElement.classList.add("p-2");
             resultElement.innerHTML = `
-            <a href="../addtokart/?query=${result.name}">
+            <a href="addtokart/?query=${result.name}">
             <div class="text-center" style="height:150px";>
             <img src="json-api/product-img/${result.productImg}" style="width: 100%; height: 100%; object-fit: contain;"
             alt="${result.name}">
