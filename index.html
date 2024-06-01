@@ -748,22 +748,66 @@ $("#carousel").load("./carousel.html");
   <!-- top deals -->
   <div id="top-deals" id = "sub-heading"></div>
 
-  <!-- -grid for deals -->
-  
-  <section id="category-grid">
-    <img class="category" src="./assets/images/deal5.png" alt="deal1">
-    <img class="category" src="./assets/images/deal6.png" alt="deal1">
-    <img class="category" src="./assets/images/deal1.png" alt="deal1">
-    <img class="category" src="./assets/images/deal7.png" alt="deal1">
-    <img class="category" src="./assets/images/deal8.png" alt="deal1">
-    <img class="category" src="./assets/images/deal9.png" alt="deal1">
-    <img class="category" src="./assets/images/deal10.png" alt="deal1">
-    <img class="category" src="./assets/images/deal11.png" alt="deal1">
-    <img class="category" src="./assets/images/deal12.png" alt="deal1">
+   <!-- -grid for deals -->
+<!--Other Top Deals-->
+<Center><h1>Other Top Deals</h1></Center>
+<section id="category-grid">
+  <div class="category-container">
+      <img class="category" src="assets/images/deal5.png" alt="deal1">
+      <a href="#" class="show-items-link">
+          <button class="show-items-btn">Show Items</button>
+      </a>
+  </div>
+  <div class="category-container">
+      <img class="category" src="assets/images/deal6.png" alt="deal2">
+      <a href="#" class="show-items-link">
+          <button class="show-items-btn">Show Items</button>
+      </a>
+  </div>
+  <div class="category-container">
+      <img class="category" src="assets/images/deal1.png" alt="deal3">
+      <a href="#" class="show-items-link">
+          <button class="show-items-btn">Show Items</button>
+      </a>
+  </div>
+  <div class="category-container">
+      <img class="category" src="assets/images/deal7.png" alt="deal4">
+      <a href="#" class="show-items-link">
+          <button class="show-items-btn">Show Items</button>
+      </a>
+  </div>
+  <div class="category-container">
+      <img class="category" src="assets/images/deal8.png" alt="deal5">
+      <a href="#" class="show-items-link">
+          <button class="show-items-btn">Show Items</button>
+      </a>
+  </div>
+  <div class="category-container">
+      <img class="category" src="assets/images/deal9.png" alt="deal6">
+      <a href="#" class="show-items-link">
+          <button class="show-items-btn">Show Items</button>
+      </a>
+  </div>
+  <div class="category-container">
+      <img class="category" src="assets/images/deal10.png" alt="deal7">
+      <a href="#" class="show-items-link">
+          <button class="show-items-btn">Show Items</button>
+      </a>
+  </div>
+  <div class="category-container">
+      <img class="category" src="assets/images/deal11.png" alt="deal8">
+      <a href="#" class="show-items-link">
+          <button class="show-items-btn">Show Items</button>
+      </a>
+  </div>
+  <div class="category-container">
+      <img class="category" src="assets/images/deal12.png" alt="deal9">
+      <a href="#" class="show-items-link">
+          <button class="show-items-btn">Show Items</button>
+      </a>
+  </div>
+</section>
 
-
-    
-  </section>
  
   <div id="content-page"></div>
 <!-- 
@@ -860,15 +904,17 @@ $("#carousel").load("./carousel.html");
   
   </section> -->
 
-  <div class="container mt-5">
+  <div class="container mt-5 mb-5">
     <h2 class="text-center mb-4 heading">Frequently Asked Questions</h2>
     <div class="accordion" id="faqAccordion">
         <div class="card">
-            <div class="card-header bg-white" id="headingOne">
+            <div class="card-header bg-white" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 <h5 class="mb-0">
-                    <button class="btn btn-link text-dark" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <button class="btn btn-link text-dark" type="button" >
                         1. How do I create an account?
                     </button>
+                    <i class="fas fa-chevron-down float-right"></i> <!-- Align icon to the right -->
+
                 </h5>
             </div>
             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
@@ -878,11 +924,13 @@ $("#carousel").load("./carousel.html");
             </div>
         </div>
         <div class="card">
-            <div class="card-header bg-white" id="headingTwo">
+            <div class="card-header bg-white" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
                 <h5 class="mb-0">
                     <button class="btn btn-link text-dark collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         2. How can I place an order?
                     </button>
+                    <i class="fas fa-chevron-down float-right"></i> <!-- Align icon to the right -->
+
                 </h5>
             </div>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
@@ -892,11 +940,13 @@ $("#carousel").load("./carousel.html");
             </div>
         </div>
         <div class="card">
-            <div class="card-header bg-white" id="headingThree">
+            <div class="card-header bg-white" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
                 <h5 class="mb-0">
                     <button class="btn btn-link text-dark collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                         3. What payment options are available?
                     </button>
+                    <i class="fas fa-chevron-down float-right"></i> <!-- Align icon to the right -->
+
                 </h5>
             </div>
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
@@ -906,25 +956,28 @@ $("#carousel").load("./carousel.html");
             </div>
         </div>
         <div class="card">
-            <div class="card-header bg-white" id="headingFour">
+            <div class="card-header bg-white" id="headingFour" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
                 <h5 class="mb-0">
                     <button class="btn btn-link text-dark collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                         4. How can I track my order?
                     </button>
+                    <i class="fas fa-chevron-down float-right"></i> <!-- Align icon to the right -->
+
                 </h5>
             </div>
-            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion" >
                 <div class="card-body">
                     You can track your order by clicking on the "Track Order" link in the "My Orders" section of your Flipkart account. You will receive regular updates on your order status via email and SMS.
                 </div>
             </div>
         </div>
         <div class="card">
-            <div class="card-header bg-white" id="headingFive">
+            <div class="card-header bg-white" id="headingFive" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseOne">
                 <h5 class="mb-0">
                     <button class="btn btn-link text-dark collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                         5. What is Flipkart's return policy?
                     </button>
+                    <i class="fas fa-chevron-down float-right"></i> <!-- Align icon to the right -->
                 </h5>
             </div>
             <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqAccordion">
@@ -935,7 +988,8 @@ $("#carousel").load("./carousel.html");
         </div>
         <!-- Add more FAQ items if required -->
     </div>
-</div> 
+</div>
+
 
 <br>
 
@@ -1023,6 +1077,7 @@ $("#carousel").load("./carousel.html");
           
           </div>
 
+
           <div class="office">
             <h5>Registered Office Address:</h5>
             <p>Flipkart Internet Private Limited,
@@ -1031,6 +1086,7 @@ $("#carousel").load("./carousel.html");
             <p>CIN : U51109KA2012PTC066107</p>
             <P>Telephone: <a href="tel:+044-45614700">044-45614700</a></P>
           </div>
+
 
       </div>
 
@@ -1047,20 +1103,24 @@ $("#carousel").load("./carousel.html");
           <div>
             <li>&copy;<span class="update_Cyear"></span> Flipkart.com</li>
           </div>
+
         </ul>
+
+
+          <li class="payment-icons" style="padding-left: 500px;">
+            <img src="./assets/images/visa.jpeg" alt="Visa">
+            <img src="./assets/images/mastercard.jpeg" alt="Mastercard">
+            <img src="./assets/images/rupay.png" alt="rupay">
+            <img src="./assets/images/discover.png" alt="discover">
+            <img src="./assets/images/emi.png" alt="emi">
+            <img src="./assets/images/net_banking.png" alt="net banking">
+            <img src="./assets/images/cod.png" alt="cash on delivery">
+          </li>
+         </ul>
 
       </div>
 
       
-      <div class="payment-icons">
-        <img src="./assets/images/visa.jpeg" alt="Visa">
-        <img src="./assets/images/mastercard.jpeg" alt="Mastercard">
-        <img src="./assets/images/rupay.png" alt="rupay">
-        <img src="./assets/images/discover.png" alt="discover">
-        <img src="./assets/images/emi.png" alt="emi">
-        <img src="./assets/images/net_banking.png" alt="net banking">
-        <img src="./assets/images/cod.png" alt="cash on delivery">
-      </div>
     </div>
   </footer>
 
