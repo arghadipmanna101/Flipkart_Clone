@@ -106,3 +106,9 @@ button {
     width: 100%;
     max-width: 300px;
 }
+.g-signin2{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
