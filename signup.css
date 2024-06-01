@@ -12,37 +12,45 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    
     height: 100%;
+    background-color:whitesmoke;
 }
 
 #innerbox{
     display: flex;
     background-color: white;
-    width: 90%;
-    max-width: 800px;
-    height: auto;
-    margin: 20px;
+    
+    height: 75%;
+    
 }
 
 .leftinnerbox{
     background-color: #2874F0;
     color: white;
     font-family: sans-serif;
-    width: 50%;
+    max-width: 60%;
     padding: 20px;
 }
 
 .rightinnerbox{
     font-family: sans-serif;
-    width: 50%;
-    padding: 20px;
+    width: 90%;
+    padding-top:20px;
+    flex-direction:column;
+}
+.para1{
+    margin-top:12px;
+    font-weight:12px;
+    font-size:25px;
+    
 }
 
 .image-container {
     display: flex;
     justify-content: center;
     margin-top: 30px;
+    
 }
 
 .image-container img {
@@ -54,9 +62,21 @@ body, html {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+
 }
 
-input[type="text"], input[type="password"] {
+.mobile-number{
+    
+    width:70%;
+    height:25px;
+    outline:0;
+    border-width: 0 0 2px;
+    border-color: rgb(168, 168, 168);
+}
+
+
+
+/* input[type="text"], input[type="password"] {
     width: 100%;
     max-width: 300px;
     height: 40px;
@@ -65,7 +85,8 @@ input[type="text"], input[type="password"] {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-}
+    
+} */
 
 .terms {
     margin-top: 20px;
@@ -79,30 +100,114 @@ input[type="text"], input[type="password"] {
     padding-top: 10px;
 }
 
-.button-group {
+.button-group1{
+    
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 5px;
+
+    
 }
 
+.button-group2{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    
+}
 button {
     cursor: pointer;
     border: none;
-    border-radius: 5px;
-    font-size: 20px;
+    border-radius: 500px;
+    font-size: 10px;
     padding: 10px 20px;
 }
 
-.login-button {
+.request-otp {
     background-color: #FB641B;
     color: white;
     width: 100%;
-    max-width: 300px;
+    max-width: 350px;
 }
 
-.signup-button {
+.sign-in {
     background-color: whitesmoke;
     color: #2874F0;
     width: 100%;
-    max-width: 300px;
+    max-width: 350px;
+}
+
+.footer{
+    background-color:rgb(39, 36, 36);
+    height: auto;
+    display:flex;
+    
+    
+
+}
+.about{
+    margin:40px;
+    padding:15px;
+}
+.fa{
+    color:rgb(213, 174, 174);
+}
+.fc-a{
+    color:white;
+    font-size:12px;
+}
+
+.grp-cmpany{
+    margin:40px;
+    padding:15px;
+}
+.fg{
+    color:rgb(213, 174, 174);
+}
+.fc-g{
+    color:white;
+    font-size:12px;
+}
+
+.help{
+    margin:40px;
+    padding:15px;
+}
+.fh{
+    color:rgb(213, 174, 174);
+}
+.fc-h{
+    color:white;
+    font-size:12px;
+}
+
+.consumer-policy{
+    margin:40px;
+    padding:15px;
+}
+.fcp{
+    color:rgb(213, 174, 174);
+}
+.fc-cp{
+    color:white;
+    font-size:12px;
+}
+
+.vl{
+    border-left:3px solid rgb(213, 174, 174);
+    margin:40px;
+    padding:15px;
+
+}
+
+.mail{
+    margin:30px;
+    padding:15px;
+}
+.fmu{
+    color:rgb(213, 174, 174);
+}
+.fc-m{
+    color:white;
+    font-size:12px;
 }
