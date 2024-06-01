@@ -516,7 +516,7 @@ footer {
   transition: transform 0.3s ease-in-out;
  }
   #img-box img:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     opacity: 0.82;
   }
 
