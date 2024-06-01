@@ -50,9 +50,9 @@
    git switch -c <your-branch-name>
    ```
 
-6. **Make changes:** Always take a pull from the upsteam repository to your master branch to keep it at par with the main project(updated repository).
+6. **Make changes:** Deployment failed with the following error:
 ```bash
-   git pull upstream main
+   Resource is limited - try again in 2 hours (more than 100, code: "api-deployments-free-per-day").
 ```
 
 
