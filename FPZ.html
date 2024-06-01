@@ -8,130 +8,161 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <style>
-      body {
-        .product {
-    background-color: white;
-    padding: 20px;
-    border-radius: 4px;
-    width: calc(25% - 20px);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  .product img {
-    width: 100%;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 15px;
-    transition: transform 0.3s ease;
-  }
-  .product:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
-  }
-  .product:hover img {
-    transform: scale(1.1);
-  }
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f1f3f6;
-      }
-      .header {
-        background-color: #2874f0;
-        color: white;
-        padding: 10px 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-      .header .logo {
-        font-size: 24px;
-        font-weight: bold;
-      }
-      .header .search-bar {
-        display: flex;
-        margin: 0 20px;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center;
-        background-color: white;
-        width: 100%;
-        border-radius: 4px;
-      }
-      #search-icon{
-        background-color: white;
-        padding: 9px;
-        border-top-left-radius: 4px;
-        border-bottom-left-radius: 4px;
-        font-size: 15px;
-        font-weight: bolder;
-        color: #08265f;
-      }
-      .header .search-bar input {
-        width: 100%;
-        padding: 10px 10px 10px 0px;
-        border: none;
-        border-top-right-radius: 4px;
-        border-bottom-right-radius: 4px;
-        outline: none;
-      }
-      .header .options {
-        display: flex;
-        gap: 20px;
-      }
-      .banner {
-background-image: url('./images/fpz.jpg');
-background-size: cover;
-background-position: center;
-height: 400px;
-display: flex;
-justify-content: center; /* Center horizontally */
-align-items: center; /* Center vertically */
-color: white; /* Set text color to white */
-font-size: 36px;
-font-weight: bold; /* Ensure text is bold */
-text-align: center; /* Center the text horizontally */
-box-shadow: inset 0 0 500px 0px black; /* Apply inset box shadow */
-text-shadow: 0 0 14px black; /* Apply text shadow */
+      
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f3f6;
+}
 
-      }
+* {
+  box-sizing: border-box;
+}
 
-      .container {
-        padding: 20px;
-      }
-      .product-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-      }
-      .product {
-        background-color: white;
-        padding: 20px;
-        border-radius: 4px;
-        width: calc(25% - 20px);
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      }
-      .product img {
-        width: 100%;
-        border-bottom: 1px solid #eee;
-        padding-bottom: 15px;
-      }
-      .product .name {
-        font-size: 18px;
-        font-weight: bold;
-        margin: 10px 0;
-      }
-      .product .price {
-        color: #2874f0;
-        font-size: 16px;
-        font-weight: bold;
-      }
-      .welcome{
-        color: black;
-        text-align: center;
-        font-size: 36px;
-        font-weight: bold;
-      }
+/* Header Styles */
+.header {
+  background-color: #2874f0;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header .search-bar {
+  display: flex;
+  margin: 0 20px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  border-radius: 4px;
+}
+
+#search-icon {
+  background-color: white;
+  padding: 9px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  font-size: 15px;
+  font-weight: bolder;
+  color: #08265f;
+}
+
+.header .search-bar input {
+  width: 100%;
+  padding: 10px 10px 10px 0px;
+  border: none;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  outline: none;
+}
+
+.header .options {
+  display: flex;
+  gap: 20px;
+}
+
+/* Banner Styles */
+.banner {
+  background-image: url('./images/fpz.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  color: white; /* Set text color to white */
+  font-size: 36px;
+  font-weight: bold; /* Ensure text is bold */
+  text-align: center; /* Center the text horizontally */
+  box-shadow: inset 0 0 500px 0px black; /* Apply inset box shadow */
+  text-shadow: 0 0 14px black; /* Apply text shadow */
+}
+
+/* Container Styles */
+.container {
+  padding: 20px;
+}
+
+/* Product List Styles */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Product Styles */
+.product {
+  background-color: white;
+  padding: 20px;
+  border-radius: 4px;
+  width: calc(25% - 20px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product img {
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product:hover img {
+  transform: scale(1.1);
+}
+
+.product .name {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.product .price {
+  color: #2874f0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Welcome Styles */
+.welcome {
+  color: black;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/* Adjustments for additional padding and margin */
+.product-list {
+  padding: 10px 0; /* Additional padding */
+}
+
+.product {
+  margin: 10px; /* Additional margin */
+}
+
+.header .search-bar {
+  padding: 5px; /* Additional padding */
+}
+
+.container {
+  margin-top: 20px; /* Additional margin */
+}
+
       
     </style>
   </head>

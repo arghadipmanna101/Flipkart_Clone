@@ -23,6 +23,7 @@
   padding-left: 10px;
   background-color: #e6eeff;
   border-radius: 10px;
+  box-sizing: border-box;
 }
 
 /* .navbar-nav{
@@ -35,12 +36,14 @@
   border: none;
   background-color: transparent;
   padding: 5px;
+  box-sizing: border-box;
 }
 
 .nav-item:hover{
   background-color: transparent;
   transform: none;
   border-bottom: none;
+  box-sizing: border-box;
 }
 .nav-item::before:hover{
   border: #fff;
@@ -73,6 +76,7 @@
   height: 30px; 
   background-color: #ccc; 
   margin: 0 0px;
+  box-sizing: border-box;
 }
 
 .nav-item-divider:last-child::after {

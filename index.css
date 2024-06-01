@@ -38,7 +38,8 @@ body {
     display: flex;
     justify-content: space-between;
     margin-right: 80px; 
-    gap: 30px; /* Uncommented the gap property from the main branch */
+    gap: 30; /* Uncommented the gap property from the main branch */
+   
 }
 
 .navtab {
@@ -49,10 +50,12 @@ body {
 .navbar-brand img {
     width: 160px;
     height: 40px;
+    margin-top: 20px;
 }
 
 .navbar-nav .nav-link img {
     margin-right: 8px;
+    
 }
 
 .main{
