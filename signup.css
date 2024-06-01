@@ -211,3 +211,9 @@ button {
     color:white;
     font-size:12px;
 }
+.g-signin2{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
