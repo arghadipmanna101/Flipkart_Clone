@@ -149,7 +149,7 @@
         "productImg": "mobile (19).jpeg",
         "rating": 4.2,
         "category":"mobile",
-        "price": 1099
+        "price": 10999
     },
     {
         "name": "POCO C65 (Matte Black, 256 GB)",
@@ -552,7 +552,7 @@
         "price": 34554
       },
       {
-        "name": "DELL Latitude Intel Core i3 11th Gen(8 GB/512) ",
+        "name": "DELL Latitude Intel Core i3 11th Gen(8 GB/512)",
         "description": "DELL Latitude Intel Core i3 11th Gen 1115G4 - (8 GB/512)",
         "productImg": "latitude-laptop-dell-.jpeg",
         "rating": 4.2,
@@ -624,8 +624,8 @@
         "price": 2057
       },
       {
-        "name": "Tata Sampann Toor Dal 1 kg ",
-        "description": "Tata Sampann Toor Dal 1 kg ",
+        "name": "Tata Sampann Toor Dal 1 kg",
+        "description": "Tata Sampann Toor Dal 1 kg",
         "productImg": "toorDal.jpeg",
         "rating": 4.5,
         "category": "grocery",
@@ -712,8 +712,8 @@
         "price": 60
       },
       {
-        "name": "PARLE Hide & Seek Milano Cookies",
-        "description": "PARLE Hide & Seek Milano Cookies",
+        "name": "PARLE Hide and Seek Milano Cookies",
+        "description": "PARLE Hide and Seek Milano Cookies",
         "productImg": "origina6nzybfu.jpeg",
         "rating": 4.5,
         "category": "grocery",
@@ -728,8 +728,8 @@
         "price": 135
       },
       {
-        "name": "Pears Pure & Gentle Bar",
-        "description": "Pears Pure & Gentle Bar",
+        "name": "Pears Pure and Gentle Bar",
+        "description": "Pears Pure and Gentle Bar",
         "productImg": "pure-pears-.jpeg",
         "rating": 4.5,
         "category": "grocery",
@@ -1113,7 +1113,7 @@
         "price": 84198
       },
       {
-        "name": "Hero DESTINI ",
+        "name": "Hero DESTINI",
         "description": "Hero DESTINI PRIME Booking for Ex-Showroom Price",
         "productImg": "6xgddjyk8.jpeg",
         "rating": 4.5,
