@@ -29,6 +29,7 @@ body {
 
 #nightowl-switcher-default {
     top: calc(42px);
+}
 
 
 #input_data {
@@ -218,7 +219,9 @@ footer {
     border-bottom: 1px solid rgb(85, 78, 78);
     flex-wrap: nowrap;
 }
-.foot-top ul,.foot-down ul{
+
+.foot-top ul,
+.foot-down ul {
     padding: 0;
 }
 
@@ -296,18 +299,22 @@ footer {
     justify-content: space-between;
     flex-direction: row;
 }
-.payment-icons{
+
+.payment-icons {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     align-items: center;
 }
+
 .payment-icons img {
     height: 15px;
 }
-.office a{
+
+.office a {
     color: #70ebf9;
 }
+
 #phones img {
     transition: transform 0.3s ease-in-out;
 }
@@ -540,6 +547,7 @@ footer {
 
     transform: scale(1.1);
 }
+
 /* adding Transition property to the images of the img-box section */
 
 #img-box img {
@@ -595,14 +603,11 @@ html {
 }
 
 
-(max-width: 1000px) {
+@media only screen and (max-width:1000px) {
 
     .navbar-nav {
         margin-right: 40px;
         gap: 25px;
     }
 
-
 }
-
-
