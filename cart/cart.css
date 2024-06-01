@@ -46,6 +46,75 @@ i {
     width: 30px;
     
 }
+/* login menu in navbar */
+.login-container {
+    background-color: white;
+    padding: 8px 40px;
+    border-radius: 2px;
+
+}
+.login-container a{
+    color:rgb(75, 75, 255) ;
+    text-decoration: none;
+    font-weight: 700;
+}
+.login_menu{
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    top: 45px;
+    transform: translateX(-40%);
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
+    max-height: 290px;
+    padding-top: 15px;
+}
+.login-container:hover .login_menu{
+    display: block;
+}
+.login_menu::before{
+    position: absolute;
+    content: "";
+    top: 0px;
+    margin-left: 110px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+	border-bottom: 15px solid rgb(255, 255, 255);
+}
+.login_menu_list{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 15px 0px;
+    font-size: 15px;
+    cursor: pointer;
+    
+}
+.login_menu_row1{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 15px;
+}
+.login_menu_row1 a:hover{
+    text-decoration: underline;
+}
+.login_menu_rows{
+    padding: 10px 20px;
+    border-top: 1px solid rgba(169, 163, 163, 0.349);
+}
+.login_menu_rows:hover{
+    background-color:rgba(169, 163, 163, 0.106) ;
+    
+}
+.login_menu_rows a span{
+    color: black;
+}
+.login_menu_rows a i{
+    position: initial;
+    right: 0px;
+}
 
 
 footer {
@@ -88,4 +157,25 @@ footer span {
 .empty-cart button{
     background-color: rgb(255, 117, 67);
     color: white;
+}
+.flipcart{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+    font-style: italic;
+    font-size: small;
+}
+
+.explore{
+    color: white;
+    margin-right: 2px;
+}
+
+.s4NJ5L{
+    color: gold;
+    margin-right: 2px;
 }

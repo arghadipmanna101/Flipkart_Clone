@@ -2,7 +2,7 @@ const categoriesData = [
     {
         "id": "grocery",
         "name": "Grocery&Food",
-        "image": "images/.png", // Add the path to the image
+        "image": "images/grocery.webp", // Add the path to the image
         "subcategories": [
             {
                 "id": "fruits-vegetables",
@@ -200,7 +200,7 @@ $(document).ready(function () {
         const categoryLink = $("<a>").attr("href", `#${categoryData.id}`).text(categoryData.name);
 
         // Adding images to the main category items only
-        const categoryImage = $("<img>").attr("src", `./images/${categoryData.id}.webp`).attr("alt", categoryData.name);
+        const categoryImage = $("<img>").attr("src", `./assets/images/${categoryData.id}.webp`).attr("alt", categoryData.name);
         categoryLink.prepend(categoryImage);
 
         categoryItem.append(categoryLink);

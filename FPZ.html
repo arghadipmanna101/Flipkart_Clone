@@ -5,9 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flipkart Plus Zone</title>
     <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <style>
       body {
+        .product {
+    background-color: white;
+    padding: 20px;
+    border-radius: 4px;
+    width: calc(25% - 20px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .product img {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+    transition: transform 0.3s ease;
+  }
+  .product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+  }
+  .product:hover img {
+    transform: scale(1.1);
+  }
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
@@ -26,31 +48,51 @@
         font-weight: bold;
       }
       .header .search-bar {
-        flex: 1;
+        display: flex;
         margin: 0 20px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        background-color: white;
+        width: 100%;
+        border-radius: 4px;
+      }
+      #search-icon{
+        background-color: white;
+        padding: 9px;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        font-size: 15px;
+        font-weight: bolder;
+        color: #08265f;
       }
       .header .search-bar input {
         width: 100%;
-        padding: 10px;
+        padding: 10px 10px 10px 0px;
         border: none;
-        border-radius: 4px;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        outline: none;
       }
       .header .options {
         display: flex;
         gap: 20px;
       }
       .banner {
-      background-image: url('./images/plus-flipkart.png');
-      background-size: cover;
-      background-position: center;
-      height: 400px;
-      display: flex;
-      justify-content: center; /* Center horizontally */
-      align-items: center; /* Center vertically */
-      color: #ffffff; /* Set text color to white */
-      font-size: 36px;
-      font-weight: bold; /* Ensure text is bold */
-      text-align: center; /* Center the text horizontally */
+background-image: url('./images/fpz.jpg');
+background-size: cover;
+background-position: center;
+height: 400px;
+display: flex;
+justify-content: center; /* Center horizontally */
+align-items: center; /* Center vertically */
+color: white; /* Set text color to white */
+font-size: 36px;
+font-weight: bold; /* Ensure text is bold */
+text-align: center; /* Center the text horizontally */
+box-shadow: inset 0 0 500px 0px black; /* Apply inset box shadow */
+text-shadow: 0 0 14px black; /* Apply text shadow */
+
       }
 
       .container {
@@ -60,6 +102,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
+        justify-content: center;
       }
       .product {
         background-color: white;
@@ -83,14 +126,21 @@
         font-size: 16px;
         font-weight: bold;
       }
+      .welcome{
+        color: black;
+        text-align: center;
+        font-size: 36px;
+        font-weight: bold;
+      }
       
     </style>
   </head>
   <body>
     <div class="header">
-      <div class="logo">Flipkart Plus</div>
+      <div class="logo">Flipkart&nbsp;Plus</div>
       <div class="search-bar">
-        <input type="text" placeholder="Search for products, brands and more" />
+        <i class="bi bi-search" id="search-icon"></i>
+        <input id="search-input" type="text" placeholder="Search for products, brands and more">
       </div>
       <div class="options">
         <div>Login</div>
@@ -99,29 +149,42 @@
       </div>
     </div>
     <div class="banner">
-      Welcome to Flipkart Plus Zone
     </div>
     <div class="container">
+      <div class="welcome">
+        Welcome to Flipkart Plus Zone
+        <hr>
+      </div>
       <div class="product-list">
         <div class="product">
-          <img src="phone-6.webp" alt="Product Image" />
+          <img src="./assets/images/phone-6.webp" alt="Product Image" />
           <div class="name">Moto G</div>
           <div class="price">₹9999</div>
         </div>
         <div class="product">
-          <img src="phone-2.webp" alt="Product Image" />
+          <img src="./assets/images/phone-2.webp" alt="Product Image" />
           <div class="name">Poco M6 </div>
           <div class="price">₹11,999</div>
         </div>
         <div class="product">
-          <img src="phone-3.webp" alt="Product Image" />
+          <img src="./assets/images/phone-3.webp" alt="Product Image" />
           <div class="name">Poco C65</div>
           <div class="price">₹21,999</div>
         </div>
         <div class="product">
-          <img src="phone-5.webp" alt="Product Image" />
+          <img src="./assets/images/phone-5.webp" alt="Product Image" />
           <div class="name">Moto A14</div>
           <div class="price">₹19,999</div>
+        </div>
+        <div class="product">
+          <img src="phon-4.webp" alt="Product Image" />
+          <div class="name">Poco C65</div>
+          <div class="price">₹21,999</div>
+        </div>
+        <div class="product">
+          <img src="phone-6.webp" alt="Product Image" />
+          <div class="name">Moto G</div>
+          <div class="price">₹9999</div>
         </div>
       </div>
     </div>
@@ -181,9 +244,10 @@
             <div class="mail">
               <h5>Mail Us:</h5>
               <p>
-                Flipkart Internet Private Limited,
-                Buildings Alyssa, Begonia & Clove Embassy Tech Village,
-                Outer Ring Road, Devarabeesanahalli Village, Bengaluru, 560103, Karnataka, India
+                Flipkart Internet Private Limited,<br>
+                Buildings Alyssa, Begonia & <br>Clove Embassy Tech Village,<br>
+                Outer Ring Road, Devarabeesanahalli Village,<br> Bengaluru, 560103,<br> Karnataka, India <br>
+
               </p>
             </div>
             <div class="social">
@@ -197,18 +261,16 @@
           </div>
           <div class="office">
             <h5>Registered Office Address:</h5>
-            <p>Flipkart Internet Private Limited,
-              Buildings Alyssa, Begonia & Clove Embassy Tech Village,
-              Outer Ring Road, Devarabeesanahalli Village, Bengaluru, 560103, Karnataka, India</p>
+            <p>Flipkart Internet Private Limited,<br>
+              Buildings Alyssa, Begonia & <br>Clove Embassy Tech Village,<br>
+              Outer Ring Road, Devarabeesanahalli Village,<br> Bengaluru, 560103,<br> Karnataka, India <br></p>
             <p>CIN : U51109KA2012PTC066107</p>
             <P>Telephone: <a href="">044-45614700</a></P>
           </div>
         </div>
       </div>
-      <div class="foot-down">
-  
-        <div>
-  
+      <div class="foot-down"> 
+        <div class="ft-1">
           <ul>
             <li><a href=""><i class="bi bi-briefcase-fill"></i> Become a seller</a></li>
             <li><a href=""><i class="bi bi-gift-fill"></i> Gift Cards</a></li>
@@ -221,13 +283,13 @@
   
         
         <div class="payment-icons">
-          <img src="visa.jpeg" alt="Visa">
-          <img src="mastercard.jpeg" alt="Mastercard">
-          <img src="images/rupay.png" alt="rupay">
-          <img src="images/discover.png" alt="discover">
-          <img src="images/emi.png" alt="emi">
-          <img src="images/net_banking.png" alt="net banking">
-          <img src="images/cod.png" alt="cash on delivery">
+          <img src="./assets/images/visa.jpeg" alt="Visa">
+          <img src="./assets/images/mastercard.jpeg" alt="Mastercard">
+          <img src="./assets/images/images/rupay.png" alt="rupay">
+          <img src="./assets/images/images/discover.png" alt="discover">
+          <img src="./assets/images/images/emi.png" alt="emi">
+          <img src="./assets/images/images/net_banking.png" alt="net banking">
+          <img src="./assets/images/images/cod.png" alt="cash on delivery">
         </div>
       </div>
     </footer>

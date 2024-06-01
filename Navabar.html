@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Improved Navbar</title>
-
+  <!-- <link rel="stylesheet" href="Navbar.css"> -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
   <style>
     body {
@@ -26,28 +26,32 @@
       height: 40px;
     }
 
-    
-
     .navbar-toggler {
       border: none;
+      position: absolute;
     }
 
     .navbar-nav .nav-link {
-      color: white;
-      padding: 10px 15px;
+      color: black;
+      /* padding: 10px 15px; */
       font-size: 16px;
       text-transform: uppercase;
       position: relative;
+      transition: background-color 0.5s;
     }
-
     .navbar-nav .nav-link:hover {
-      color: black;
-      background-color: transparent;
+      display: block;
+      background-color: white;
+      width:7.47rem;
+      height: 4.8rem;
+      align-content: center;
+      text-align: center;
+      border-radius: 10px;
     }
 
     .navbar-nav .nav-link img {
       height: 20px;
-      margin-right: 5px;
+      padding-right: 20px;
     }
 
     .navbar-nav .dropdown-menu {
@@ -114,6 +118,21 @@
     .navbar-nav .nav-link {
       margin-left: 10px; /* Adjust the margin as needed */
     }
+    /* .navbar-nav{
+      background-color: #333;
+      position: relative;
+      bottom: 2px;
+      right:14px;
+    } */
+    .navbar-collapse{
+      background-color: #333;
+      position: relative;
+      bottom: 2px;
+      right: 14px;
+    }
+    /* @media screen and (max-width:1000px){
+
+    } */
   </style>
 </head>
 
@@ -176,7 +195,7 @@
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="pages/Sell_Online/sell_online.html">
             <i class="fa-solid fa-store"></i>
             Become a Seller
           </a>
@@ -207,5 +226,9 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- <script>
+    const bg=document.querySelector('.show');
+    
+  </script> -->
 </body>
 </html>
