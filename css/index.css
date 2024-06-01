@@ -351,3 +351,12 @@ body {
   }
   
 }
+
+
+#s1-product .products{
+  margin: 0 auto;
+  padding: 5px;
+}
+#s2-product .products{
+  font-size: 14px;
+}

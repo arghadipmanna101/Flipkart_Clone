@@ -11,18 +11,19 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 	<link rel="stylesheet" href="css/homeHeader.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
-<!-- loader -->
+	<!-- loader -->
 	<div id="loader">
-        <div class="loader-spinner"></div> 
-		<img src="img/flipkardLoader.png" height="50px" alt="">      
-    </div>
+		<div class="loader-spinner"></div>
+		<img src="img/flipkardLoader.png" height="50px" alt="">
+	</div>
+
 	<!--Header start  -->
 	<header id="homeHeader">
 		<nav class="navbar homeHeader navbar-expand-lg navbar-light bg-light">
@@ -123,8 +124,7 @@
 									src="img/svg/helpcenter.svg" alt="imgcc">24x7 Customer Care</a>
 							<a class="dropdown-item"
 								href="https://www.vecteezy.com/png/10158686-trend-icon-sign-symbol-design"><img
-									width="30" height="20" src="img/svg/advertise.svg"
-									alt="Advertise">Advertise</a>
+									width="30" height="20" src="img/svg/advertise.svg" alt="Advertise">Advertise</a>
 							<a class="dropdown-item" href="mobile-apps/"><img width="30" height="20"
 									src="img/svg/downloadApp.svg" alt="img3">Download App</a>
 					</li>
@@ -218,6 +218,14 @@
 	</div>
 
 
+	<!-- fetch mobile under 15000-->
+	<div class="containter-fluid bg-white">
+		<div class="containter-fluid p-3 mt-1" style="border-bottom: 1px solid #e4e7eb;">
+			<h4>Mobile Phone Under 15000 Rs</h4>
+		</div>
+		<div id="mobileUnder15000-product" class="row m-1"></div>
+	</div>
+
 	<!-- newsection for grid items  -->
 	<section id="img-box">
 		<a href="">
@@ -245,7 +253,36 @@
 	<!-- fetch for content  -->
 	<div id="content-page"></div>
 
+	<!-- fetch data under 500-->
+	<div class="containter-fluid bg-white">
+		<div class="containter-fluid p-3 mt-1" style="border-bottom: 1px solid #e4e7eb;">
+			<h4>Shop Now Under 500 Rs</h4>
+		</div>
+		<div id="shopUnder500-product" class="row m-1"></div>
+	</div>
 
+
+	<!-- fetch data-->
+	<div class="containter-fluid bg-white">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="containter-fluid p-3 mt-1" style="border-bottom: 1px solid #e4e7eb;">
+					<h4>Best for You</h4>
+				</div>
+				<div id="s1-product" class="row m-1">
+					<a href="Fashion-/"><img src="img/fk-default-image-75ff340b.png" alt=""></a>
+				</div>
+			</div>
+			<div class="col-md-9">
+				<div class="containter-fluid p-3 mt-1" style="border-bottom: 1px solid #e4e7eb;">
+					<h4> </h4>
+				</div>
+				<div id="s2-product" class="row m-1"></div>
+			</div>
+		</div>
+	</div>
+
+	
 	<!-- Top Selection -->
 	<div class="containter-fluid bg-white">
 		<div class="containter-fluid p-3 mt-1" style="border-bottom: 1px solid #e4e7eb;">
@@ -357,12 +394,13 @@
 	<!-- footer fetch to components : components/footer/footer.html -->
 	<footer id="footer" style="background-color: #292d33;"></footer>
 
+	
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/homeHeader.js"></script>
 	<script src="js/categoryjs.js"></script>
 	<script src="js/searchForProducts.js"></script>
 	<script src="js/index.js"></script>
-	
+
 
 </body>
 

@@ -58,6 +58,32 @@ function top_selection_products(products) {
     .join("");
 }
 
+// Function to under 15000 rs mobile
+function mobileUnder15000(products) {
+  const productList = document.getElementById("mobileUnder15000-product");
+  productList.innerHTML = products
+    .map((product) => createProductCard(product))
+    .join("");
+}
+
+
+
+// Function to s2-product
+function s2_products(products) {
+  const productList = document.getElementById("s2-product");
+  productList.innerHTML = products
+    .map((product) => createProductCard(product))
+    .join("");
+}
+
+// Function to under 500 Product
+function shopUnder500(products) {
+  const productList = document.getElementById("shopUnder500-product");
+  productList.innerHTML = products
+    .map((product) => createProductCard(product))
+    .join("");
+}
+
 // General function to fetch and shuffle data
 function fetchAndShuffleData(url, callback, numberOfProducts) {
   fetch(url)
@@ -78,14 +104,64 @@ function fetchAndShuffleData(url, callback, numberOfProducts) {
     .catch((error) => console.error("Error fetching data:", error));
 }
 
+
+// General function to fetch 15000 rs mobile data
+function fetchAndShuffleDataMobile15000(url, callback, numberOfProducts) {
+  fetch(url)
+    .then((response) => response.json())
+    .then((data) => {
+
+      const f_data = data.filter(product => product.price<=15000 && product.category=='mobile');
+      // Shuffle the array using the Fisher-Yates algorithm
+      for (let i = f_data.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [f_data[i], f_data[j]] = [f_data[j], f_data[i]];
+      }
+
+      // Select the desired number of products from the shuffled array
+      const selectedProducts = f_data.slice(0, numberOfProducts);
+
+      // Call the callback function with the selected products
+      callback(selectedProducts);
+    })
+    .catch((error) => console.error("Error fetching data:", error));
+}
+
+// General function to fetch under 500 data
+function fetchAndShuffleDataUnder(url, callback, numberOfProducts) {
+  fetch(url)
+    .then((response) => response.json())
+    .then((data) => {
+
+      const f_data = data.filter(product => product.price<=500);
+      // Shuffle the array using the Fisher-Yates algorithm
+      for (let i = f_data.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [f_data[i], f_data[j]] = [f_data[j], f_data[i]];
+      }
+
+      // Select the desired number of products from the shuffled array
+      const selectedProducts = f_data.slice(0, numberOfProducts);
+
+      // Call the callback function with the selected products
+      callback(selectedProducts);
+    })
+    .catch((error) => console.error("Error fetching data:", error));
+}
+
+
+
+//  mobileUnder15000Data()
 // Fetch data for best-deal products  rendom products & top selection
 fetchAndShuffleData("json-api/product.json", rendom_products, 12);
 fetchAndShuffleData("json-api/product.json", best_deal_products, 18);
-fetchAndShuffleData(
-  "json-api/product.json",
-  top_selection_products,
-  12
-);
+fetchAndShuffleData("json-api/product.json", top_selection_products, 12);
+fetchAndShuffleData("json-api/product.json", s2_products, 12);
+fetchAndShuffleDataMobile15000("json-api/product.json", mobileUnder15000, 12);
+fetchAndShuffleDataUnder("json-api/product.json", shopUnder500, 18);
+
+
+
 
 
  // Show or hide the "Go to Top" button based on scroll position
@@ -97,6 +173,9 @@ window.addEventListener("scroll", function() {
         scrollToTopBtn.classList.add("hidden");
     }
 });
+
+
+
  // Scroll to the top when the button is clicked
 document.getElementById("goToTopBtn").addEventListener("click", function() {
     window.scrollTo({
@@ -109,4 +188,4 @@ document.getElementById("goToTopBtn").addEventListener("click", function() {
 // loader
 setTimeout(function() {
     document.getElementById('loader').style.display = 'none';
-  }, 3000);
+  }, 2000);

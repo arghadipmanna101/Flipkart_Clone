@@ -16,9 +16,12 @@ body {
   .mobo-brond{
     border: 1px solid #000;
   }
-  .mobiles{
+  .products{
     margin: 0;
     padding: 0;
+  }
+  a:link{
+    text-decoration: none;
   }
 
 

@@ -59,6 +59,6 @@ fetch("../json-api/product.json")
     const query = getQueryParameter("query");
     const filteredProducts = data.filter((product) => product.name == query);
     searchFetch(filteredProducts);
-    // console.log(query)
+    console.log(query)
   })
   .catch((error) => console.error("Error fetching data:", error));
