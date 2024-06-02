@@ -50,7 +50,11 @@
    git switch -c <your-branch-name>
    ```
 
-6. **Make changes:** Start making your changes to the source code.
+6. **Make changes:** Deployment failed with the following error:
+```bash
+   Resource is limited - try again in 2 hours (more than 100, code: "api-deployments-free-per-day").
+```
+
 
 7. **Add your changes:** Stage your changes for commit:
 

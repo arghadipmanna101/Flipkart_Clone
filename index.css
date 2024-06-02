@@ -51,8 +51,8 @@ body {
 .navbar-nav {
     display: flex;
     justify-content: space-between;
-    margin-right: 50px;
-    gap: 30px;
+    margin-right: 80px; 
+    gap: 30px; /* Uncommented the gap property from the main branch */
 }
 
 .navtab {
@@ -102,8 +102,10 @@ body {
 
 
 
+
 #category-grid {
     background-color: rgb(244, 244, 239);
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
@@ -169,7 +171,9 @@ body {
     object-fit: cover;
     transition: transform 0.3s ease 0.1s, width 2s, height 2.5s;
 
+
 }
+
 
 .category:hover {
     transform: scale(1.1025);
@@ -212,6 +216,8 @@ footer {
     background-color: rgba(0, 0, 0, 0.85);
     color: #ffffff;
     padding: 15px 35px;
+    /* margin: 0; */
+    margin-bottom: -55px;
 }
 
 .foot-top {
@@ -220,6 +226,7 @@ footer {
     flex-wrap: nowrap;
 }
 
+
 .foot-top ul,
 .foot-down ul {
     padding: 0;
@@ -227,21 +234,48 @@ footer {
 
 .foot-left,
 .foot-right {
+
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     gap: 30px;
+    padding: 15px;    flex-direction: row;
+    /* flex-wrap: wrap; */
+}
+
+.part{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    font-size: 12px;
+    font-weight: 100;
+    line-height: 18px;
+    gap: 1.5rem;
+}
+
+.mail-social{
+    font-size: 12px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+    /* gap: 30px; */
     padding: 25px;
     flex: 1 1 500px;
     flex-wrap: wrap;
 }
 
 
+
 .foot-left h5,
 .foot-right h5 {
     font-size: 12px;
+
     font-weight: 600;
     color: #9b9898;
 }
+
 
 .foot-left .about li,
 .foot-right .part,
@@ -254,12 +288,12 @@ footer {
 .foot-left .about li a,
 .social ul li a,
 .foot-down ul li a {
+
     font-size: 12px;
     color: rgb(255, 255, 255);
-    font-weight: 600;
+    font-weight: 100;
     text-decoration: none;
 }
-
 
 .social ul {
     display: flex;
@@ -267,26 +301,46 @@ footer {
     gap: 10px;
 
 
+
 }
 
 .foot-right {
     border-left: 1px solid rgb(85, 78, 78);
     padding-left: 30px;
+    font-size: 12px;
+    gap: 1rem;
 }
+
+.mail p{
+    font-size: 12px;
+}
+
+.office p{
+    font-size: 12px;
+}
+
+.soc_icn {
+    display: flex;
+    margin-top: 1rem;
+    width: 15vw;
+    gap: 1.2rem;
+}
+
+
 
 .foot-down {
     padding: 10px 40px;
     display: flex;
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 12px;
     justify-content: space-between;
-    font-weight: 600;
+    font-weight: 100;
     flex-wrap: wrap;
 }
 
-
 .foot-down>div {
     flex: 1 1 300px;
+
 
 }
 
@@ -296,22 +350,28 @@ footer {
     align-content: center;
     align-items: center;
     width: -webkit-fill-available;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
 }
 
+
 .payment-icons {
+
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     align-items: center;
+    gap: 0.3rem;
 }
 
 .payment-icons img {
-    height: 15px;
+    height: 20px;
+    border-radius: 0.15rem;
 }
 
+
 .office a {
+
     color: #70ebf9;
 }
 
@@ -320,9 +380,11 @@ footer {
 }
 
 #phones img:hover {
+
     transform: scale(1.1);
     /* Increase the scale factor as needed */
     opacity: 0.9;
+
 
 }
 
@@ -550,6 +612,7 @@ footer {
 
 /* adding Transition property to the images of the img-box section */
 
+
 #img-box img {
     width: 100%;
     height: auto;
@@ -563,6 +626,7 @@ footer {
 
 
 
+
 /* BACK TO TOP */
 
 html {
@@ -572,6 +636,7 @@ html {
 }
 
 .back-to-top {
+
     position: sticky;
     bottom: 2rem;
     right: 2rem;
@@ -590,6 +655,7 @@ html {
     color: #fff;
     font-size: 3rem;
     transition: 0.2s ease-out;
+
 }
 
 .back-to-top:hover {
@@ -610,4 +676,6 @@ html {
         gap: 25px;
     }
 
+
 }
+
