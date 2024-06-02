@@ -33,7 +33,8 @@ function createSearchProductCard(product) {
                   <img src="../json-api/product-img/${product.productImg}" style="width: 100%; height: 100%; object-fit: contain;" alt="${product.id}">
               </div>
               <div class="text-center card-title">${product.name}</div>
-              <div class="text-center">Price: ₹${product.price}</div>
+              <div class="text-center rating">${product.rating} &nbsp<i class="bi bi-star-fill"></i></div>
+              <div class="text-center"> Price:<strong> ₹${product.price}</strong></div>
           </div>
       </a>
   `;

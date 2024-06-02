@@ -117,6 +117,9 @@ body {
 .categories>li:hover>ul li li:hover {
   color: rgb(112, 112, 166);
 }
+.categories li ul li img{
+  display: none;
+}
 
 #category-grid {
   display: grid;
@@ -184,14 +187,25 @@ body {
   opacity: 0.82;
 }
 
+/* product best for you */
+#s1-product .products {
+  margin: 0 auto;
+  padding: 5px;
+}
 
+#s2-product .products {
+  font-size: 14px;
+}
 
 /* FAQ Section Styles */
+
 #faq {
-  background-color: #ffe24f;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(45deg, #2d7cea, #e52e71);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  /* Increased box shadow */
+  margin-bottom: 75px;
 }
 
 #faq .heading {
@@ -207,12 +221,24 @@ body {
 
 #faq .accordion .card {
   border: none;
-  border-bottom: 1px solid #ddd;
-  border-radius: 0;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#faq .accordion .card:hover {
+  transform: translateY(-5px);
+  /* Added hover effect */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+  /* Increased box shadow on hover */
 }
 
 #faq .accordion .card-header {
-  padding: 0.75rem 1.25rem;
+  background-color: #fff;
+  border: none;
+  border-radius: 15px 15px 0 0;
+  padding: 15px 20px;
 }
 
 .accordion-header {
@@ -241,14 +267,18 @@ body {
 }
 
 #faq .accordion .card-body {
-  padding: 1rem 1.25rem;
-  background-color: #f8f9fa;
+  border-radius: 0 0 15px 15px;
+  padding: 20px;
+  font-size: 16px;
+  background-color: #f9f9f9;
 }
 
-/* FAQ Section Styles */
+
 #faq .heading {
   font-weight: bold;
-  color: #333;
+  color: #ff9f80;
+  font-size: 30px;
+  text-align: center;
 }
 
 #faq .accordion .accordion-item {
@@ -291,34 +321,44 @@ body {
   #faq .accordion .accordion-body {
     padding: 0.75rem 1rem;
   }
+
+  .mdHide {
+    display: none;
+  }
 }
+
+/* faq css end */
+
 
 /* got to top button */
 #goToTopBtn {
-    /* display: none; */
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #eb4242;
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    font-size: 18px;
+  /* display: none; */
+  position: fixed;
+  bottom: 5px;
+  right: 50%;
+  background-color: rgba(235, 66, 66, .5);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 18px;
 }
 
 #goToTopBtn:hover {
-  background-color: #555;
+  background-color: #2874F0;
 }
 
 .hidden {
   display: none;
 }
 
+
+
 /* Loader */
-#loader {
+
+/* #loader {
     position: fixed;
     top: 0;
     left: 0;
@@ -350,13 +390,57 @@ body {
       transform: rotate(360deg);
   }
   
-}
+} */
 
 
-#s1-product .products{
-  margin: 0 auto;
-  padding: 5px;
+.loader-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  z-index: 100000;
 }
-#s2-product .products{
-  font-size: 14px;
+
+.loader-wrapper {
+  position: relative;
+}
+
+.loader {
+  border: 10px solid #e4e3e3;
+  border-radius: 50%;
+  border-top: 10px solid #5f7cff;
+  width: 100px;
+  height: 100px;
+  animation: spin 1.3s linear infinite;
+  background-color: transparent;
+  z-index: 100000;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 10px solid transparent;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  z-index: -1;
+  background-image: url("../img/flipkart_lite.png");
+  background-position: center;
+  background-size: cover;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }

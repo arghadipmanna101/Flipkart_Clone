@@ -11,14 +11,16 @@ body {
 }
 
 
-
   /* mobo-brond */
   .mobo-brond{
-    border: 1px solid #000;
+    border: 1px solid #e0dddd;
+    margin-top: 5px;
+    font-weight: 600;
   }
   .products{
     margin: 0;
     padding: 0;
+    color :black
   }
   a:link{
     text-decoration: none;

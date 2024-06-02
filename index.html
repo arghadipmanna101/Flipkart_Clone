@@ -15,14 +15,23 @@
 	<link rel="stylesheet" href="css/homeHeader.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" href="css/footer.css">
+
 </head>
 
-<body>
+<body class="light">
 	<!-- loader -->
-	<div id="loader">
+	<!-- <div id="loader">
 		<div class="loader-spinner"></div>
 		<img src="img/flipkardLoader.png" height="50px" alt="">
+	</div> -->
+	<div class="loader-container">
+		<div class="loader-wrapper">
+			<div class="loader"></div>
+			<div class="logo"></div>
+		</div>
 	</div>
+	<!-- loader end -->
+
 
 	<!--Header start  -->
 	<header id="homeHeader">
@@ -128,6 +137,7 @@
 							<a class="dropdown-item" href="mobile-apps/"><img width="30" height="20"
 									src="img/svg/downloadApp.svg" alt="img3">Download App</a>
 					</li>
+					
 				</ul>
 			</div>
 		</nav>
@@ -208,6 +218,22 @@
 		</div>
 	</div>
 
+<!-- best of Electronics -->
+<div class="containter-fluid bg-white">
+	<div class="containter-fluid p-3 mt-1" style="border-bottom: 1px solid #e4e7eb;">
+		<h4>Best of Electronics</h4>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-10">
+				<div id="bestOfElectronics-product" class="row m-1"></div>
+			</div>
+			<div class="col-md-2">
+				<img src="img/flytecafd87e5.webp" alt="" style="width: 100%; height: 100%; object-fit: contain" class="mdHide">
+			</div>
+		</div>
+	</div>
+</div>
 
 	<!-- fetch random products -->
 	<div class="containter-fluid bg-white">
@@ -282,7 +308,7 @@
 		</div>
 	</div>
 
-	
+
 	<!-- Top Selection -->
 	<div class="containter-fluid bg-white">
 		<div class="containter-fluid p-3 mt-1" style="border-bottom: 1px solid #e4e7eb;">
@@ -304,7 +330,7 @@
 	</section>
 
 	<!-- FAQ Section -->
-	<div id="faq">
+	<div class="container" id="faq">
 		<div class="container mt-5">
 			<h2 class="text-center mb-4 heading">Frequently Asked Questions</h2>
 			<div class="accordion" id="faqAccordion">
@@ -390,11 +416,28 @@
 			</div>
 		</div>
 	</div>
+	<!-- faq end -->
+
+	<!-- go to top button -->
 	<button id="goToTopBtn" class="hidden"><i class="fas fa-chevron-up"></i></button>
 	<!-- footer fetch to components : components/footer/footer.html -->
 	<footer id="footer" style="background-color: #292d33;"></footer>
 
-	
+	<!-- voiceflow.chat script -->
+	<script type="text/javascript">
+		(function (d, t) {
+			var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+			v.onload = function () {
+				window.voiceflow.chat.load({
+					verify: { projectID: '6647471456cab012ae016d07' },
+					url: 'https://general-runtime.voiceflow.com',
+					versionID: 'production'
+				});
+			}
+			v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+		})(document, 'script');
+	</script>
+
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/homeHeader.js"></script>
 	<script src="js/categoryjs.js"></script>

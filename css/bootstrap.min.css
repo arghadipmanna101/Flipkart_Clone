@@ -15,4 +15,16 @@
   }
   .products{
     font-size:medium;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
   }
+  .rating{
+    background-color: green;
+    width: fit-content;
+    padding: 0px 16px;
+    border-radius: 5px;
+    color: #fff;
+  }
+  

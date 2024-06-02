@@ -32,14 +32,18 @@ function createSearchProductCard(product) {
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="text-center card-title">${product.name}</div>
-                <div class="text-center">Price: ₹${product.price}</div>
-                <div class="text-center">Rating ${product.rating}</div>
-                </br></br>
-                <div class="text-center card-title">${product.description}</div>
-                </br></br>
-                <button class="btn btn-primary">Add To Cart</button>
-                <button class="btn btn-danger">Buy Now</button>
+                <div class=" products">
+                  <div class="text-center card-title">${product.name}</div>
+                  <div class="text-center">Price: ₹${product.price}</div>
+                  <div class="text-center rating">${product.rating} &nbsp<i class="bi bi-star-fill"></i></div>
+                  </br></br>
+                  <div class="text-center card-title">${product.description}</div>
+                  </br></br>
+                </div>
+                <div>
+                  <button class="btn btn-primary">Add To Cart</button>
+                  <button class="btn btn-danger">Buy Now</button>
+                </div>
             </div>       
     `;
 }

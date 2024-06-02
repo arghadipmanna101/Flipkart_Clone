@@ -1,3 +1,4 @@
+// footer and content page load 
 document.addEventListener("DOMContentLoaded", () => {
   const components = [
     { id: "content-page", url: "pages/content-page.html" },
@@ -16,19 +17,23 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 // end -footer
-{/* <a class="nav-link" href="../search/?query=electronics */}
+
+
+
+/* <a class="nav-link" href="../search/?query=electronics */
 // product fetch
 // Function to create a product card
 function createProductCard(product) {
   return `
     <a class="btn col-lg-2 col-md-2 col-sm-4 col-6 p-2" href="addtokart/?query=${product.name}"> 
       <div class="products">
+      <i class="bi bi-heart-fill" style="color : #e2d8d8ab; align-self: flex-end;"></i>
       <div class="text-center img-fluid" style="height:150px";>
       <img src="json-api/product-img/${product.productImg}" style="width: 100%; height: 100%; object-fit: contain;" alt="${product.id}">
   </div>
           <div class="text-center card-title">${product.name}</div>
-          <div class="text-center">${product.rating}</div>
-          <div class="text-center">Price: ₹${product.price}</div>
+          <div class="text-center rating">${product.rating} &nbsp<i class="bi bi-star-fill"></i></div>
+          <div class="text-center"><strong> ₹${product.price}</strong></div>
         </div>
       </a>
       
@@ -84,6 +89,14 @@ function shopUnder500(products) {
     .join("");
 }
 
+// best of Electronics 
+function bestOfEelecronics_products(products) {
+  const productList = document.getElementById("bestOfElectronics-product");
+  productList.innerHTML = products
+    .map((product) => createProductCard(product))
+    .join("");
+}
+
 // General function to fetch and shuffle data
 function fetchAndShuffleData(url, callback, numberOfProducts) {
   fetch(url)
@@ -127,6 +140,30 @@ function fetchAndShuffleDataMobile15000(url, callback, numberOfProducts) {
     .catch((error) => console.error("Error fetching data:", error));
 }
 
+
+// best of electronics 
+function bestOfEelecronics(url, callback, numberOfProducts) {
+  fetch(url)
+    .then((response) => response.json())
+    .then((data) => {
+
+      const f_data = data.filter(product => product.category=='electronics');
+      // Shuffle the array using the Fisher-Yates algorithm
+      for (let i = f_data.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [f_data[i], f_data[j]] = [f_data[j], f_data[i]];
+      }
+
+      // Select the desired number of products from the shuffled array
+      const selectedProducts = f_data.slice(0, numberOfProducts);
+
+      // Call the callback function with the selected products
+      callback(selectedProducts);
+    })
+    .catch((error) => console.error("Error fetching data:", error));
+}
+
+
 // General function to fetch under 500 data
 function fetchAndShuffleDataUnder(url, callback, numberOfProducts) {
   fetch(url)
@@ -153,6 +190,7 @@ function fetchAndShuffleDataUnder(url, callback, numberOfProducts) {
 
 //  mobileUnder15000Data()
 // Fetch data for best-deal products  rendom products & top selection
+bestOfEelecronics("json-api/product.json", bestOfEelecronics_products, 6);
 fetchAndShuffleData("json-api/product.json", rendom_products, 12);
 fetchAndShuffleData("json-api/product.json", best_deal_products, 18);
 fetchAndShuffleData("json-api/product.json", top_selection_products, 12);
@@ -186,6 +224,19 @@ document.getElementById("goToTopBtn").addEventListener("click", function() {
 
 
 // loader
-setTimeout(function() {
-    document.getElementById('loader').style.display = 'none';
-  }, 2000);
+// old
+// setTimeout(function() {
+//     document.getElementById('loader').style.display = 'none';
+//   }, 2000);
+
+// new
+  document.addEventListener("DOMContentLoaded", function() {
+		const loader = document.querySelector(".loader-container");
+		setTimeout(function() {
+			loader.style.display = "none";
+		}, 2000);
+	});
+
+
+
+
