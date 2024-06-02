@@ -581,7 +581,8 @@
       background-color: #4299e1;
       color: white;
       border-radius: 50%;
-      margin-left: 1rem;
+      /* margin-left: 1rem; */
+      margin-right: 1rem;
     }
 
     .chevron svg {
@@ -614,6 +615,35 @@
     display: flex;
     align-items: flex-end;
 }
+
+    .box-i img {
+      max-width: 200px; /* Adjust this value as needed */
+      height: auto;
+      margin: auto;
+    }
+
+    .deal-item img {
+      max-width: 250px; /* Adjust this value as needed */
+      height: auto;
+    }
+    .deal-item {
+      max-width: 300px; /* Adjust this value as needed */
+      margin: auto;
+    }
+    .chevron svg {
+      width: 24px;
+      height: 24px;
+    }
+   
+
+    .deals {
+      margin-top: 20px; /* Add margin to prevent overlap */
+    }
+    @media (max-width: 576px) {
+      .deals {
+        margin-top: 65px; /* Increase margin for extra small screens */
+      }
+    }
 
   </style>
 </head>
@@ -726,82 +756,79 @@
     </div>
   </section>
   <section id="phones">
+  <div><h2 class="text-center">Best Deals On Smartphones</h2></div>
+  <div id="box" class="row justify-content-around align-items:center mt-3">
+    <div class="box-i col-6 col-sm-4 col-md-3 col-lg-2 text-center d-flex gap-3 flex-column align-items-center mb-4">
+      <a href=""><img src="./assets/images/phone-6.webp" alt="" class="img-fluid" /></a>
+      <p>poco m6 pro</p>
+    </div>
+    <div class="box-i col-6 col-sm-4 col-md-3 col-lg-2 text-center d-flex flex-column align-items-center mb-4">
+      <a href=""><img src="./assets/images/phone-2.webp" alt="" class="img-fluid"/></a>
+      <p>moto edge 40 neo</p>
+    </div>
+    <div class="box-i col-6 col-sm-4 col-md-3 col-lg-2 text-center d-flex flex-column align-items-center mb-4">
+      <a href=""><img src="./assets/images/phon-4.webp" alt="" class="img-fluid" /></a>
+      <p>redmi 12 5g</p>
+    </div>
+    <div class="box-i col-6 col-sm-4 col-md-3 col-lg-2 text-center d-flex flex-column align-items-center mb-4">
+      <a href=""><img src="./assets/images/phone-5.webp" alt="" class="img-fluid" /></a>
+      <p>poco x6 5g</p>
+    </div>
+    <div class="box-i col-6 col-sm-4 col-md-3 col-lg-2 text-center d-flex flex-column align-items-center mb-4">
+      <a href=""><img src="./assets/images/phone-2.webp" alt="" class="img-fluid"/></a>
+      <p>poco m6 5g</p>
+    </div>
+    <div class="box-i col-6 col-sm-4 col-md-3 col-lg-2 text-center d-flex flex-column align-items-center mb-4">
+      <a href=""><img src="./assets/images/phone-3.webp" alt="" class="img-fluid"/></a>
+      <p>poco x6 neo 5g</p>
+    </div>
+  </div>
+</section>
+  
+<section id="phones">
+  <div class="box">
     <div>
-      <h2>Best Deals On Smartphones</h2>
+      <h2 class="title text-center" id="sub-heading">Top Deals on Electronics</h2>
     </div>
-    <div id="box">
-      <div class="box-i">
-        <a href=""><img src="./assets/images/phone-6.webp" alt="" /></a>
-        <p>poco m6 pro</p>
+    <div class="deals row justify-content-between align-items-center">
+      <div class="deal-item col-6 col-sm-4 col-md-3 col-lg-2 text-center d-flex flex-column align-items-center mb-4">
+        <img src="./assets/images/tab.webp" alt="Bestselling Tablets" class="img-fluid">
+        <h3 class="deal-title">Bestselling Tablets</h3>
+        <p class="deal-price">From ₹9,899*</p>
       </div>
-      <div class="box-i">
-        <a href=""><img src="./assets/images/phone-2.webp" alt="" /></a>
-        <p>moto edge 40 neo</p>
+      <div class="deal-item col-6 col-sm-4 col-md-3 col-lg-2 text-center d-flex flex-column align-items-center mb-4">
+        <img src="./assets/images/lap.webp" alt="Big Savings on i5 Laptops" class="img-fluid">
+        <h3 class="deal-title">Big Savings on i5 Laptops</h3>
+        <p class="deal-price">From ₹24,990*</p>
       </div>
-      <div class="box-i">
-        <a href=""><img src="./assets/images/phon-4.webp" alt="" /></a>
-        <p>redmi 12 5g</p>
+      <div class="deal-item col-6 col-sm-4 col-md-3 col-lg-2 text-center d-flex flex-column align-items-center mb-4">
+        <img src="./assets/images/nikon.webp.jpg" alt="Nikon D7500 DSLR" class="img-fluid">
+        <h3 class="deal-title">Nikon D7500 DSLR</h3>
+        <p class="deal-price">Just ₹2,238/month*</p>
       </div>
-      <div class="box-i">
-        <a href=""><img src="./assets/images/phone-5.webp" alt="" /></a>
-        <p>poco x6 5g</p>
+      <div class="deal-item col-6 col-sm-4 col-md-3 col-lg-2 text-center d-flex flex-column align-items-center mb-4">
+        <img src="./assets/images/MI.jpg" alt="Mi & REDMI" class="img-fluid">
+        <h3 class="deal-title">Mi & REDMI</h3>
+        <p class="deal-price">From ₹1,049</p>
       </div>
-      <div class="box-i">
-        <a href=""><img src="./assets/images/phone-2.webp" alt="" /></a>
-        <p>poco m6 5g</p>
+      <div class="deal-item col-6 col-sm-4 col-md-3 col-lg-2 text-center d-flex flex-column align-items-center mb-4">
+        <img src="./assets/images/headphone.webp" alt="Headphone Pouches" class="img-fluid">
+        <h3 class="deal-title">Headphone Pouches</h3>
+        <p class="deal-price">From ₹99</p>
       </div>
-      <div class="box-i">
-        <a href=""><img src="./assets/images/phone-3.webp" alt="" /></a>
-        <p>poco x6 neo 5g</p>
+      <div class="deal-item col-6 col-sm-4 col-md-3 col-lg-2 text-center d-flex flex-column align-items-center mb-4">
+        <img src="./assets/images/carmusic.webp" alt="Car Music System" class="img-fluid">
+        <h3 class="deal-title">Car Music System</h3>
+        <p class="deal-price">Up to 65% Off</p>
       </div>
-
-    </div>
-  </section>
-  <section id="phones">
-    <div class="box">
-      <h2 class="title" id="sub-heading">Top Deals on Electronics</h2>
-      <div class="deals">
-        <div class="deal-item">
-          <img src="./assets/images/tab.webp" alt="Bestselling Tablets" width="200" height="200"
-            style="margin-top: 30%;">
-          <h3 class="deal-title">Bestselling Tablets</h3>
-          <p class="deal-price">From ₹9,899*</p>
-        </div>
-        <div class="deal-item">
-          <img src="./assets/images/lap.webp" alt="Big Savings on i5 Laptops" width="200" height="200"
-            style="margin-top: 30%;">
-          <h3 class="deal-title">Big Savings on i5 Laptops</h3>
-          <p class="deal-price">From ₹24,990*</p>
-        </div>
-        <div class="deal-item">
-          <img src="./assets/images/nikon.webp.jpg" alt="Nikon D7500 DSLR" width="200" height="200">
-          <h3 class="deal-title">Nikon D7500 DSLR</h3>
-          <p class="deal-price">Just ₹2,238/month*</p>
-        </div>
-        <div class="deal-item">
-          <img src="./assets/images/MI.jpg" alt="Mi & REDMI" width="200" height="200">
-          <h3 class="deal-title">Mi & REDMI</h3>
-          <p class="deal-price">From ₹1,049</p>
-        </div>
-        <div class="deal-item">
-          <img src="./assets/images/headphone.webp" alt="Headphone Pouches" width="200" height="200">
-          <h3 class="deal-title">Headphone Pouches</h3>
-          <p class="deal-price">From ₹99</p>
-        </div>
-        <div class="deal-item">
-          <img src="./assets/images/carmusic.webp" alt="Car Music System" width="200" height="200">
-          <h3 class="deal-title">Car Music System</h3>
-          <p class="deal-price">Up to 65% Off</p>
-        </div>
-        <div class="chevron">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
-            <path d="M9 18l6-6-6-6"></path>
-          </svg>
-        </div>
+      <div class="chevron">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 18l6-6-6-6"></path>
+        </svg>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- newsection for grid items  -->
   <section id="img-box">
