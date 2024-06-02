@@ -1,4 +1,5 @@
 /* General styles */
+
 body {
     background-color: #F1F2F4;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -204,30 +205,45 @@ body {
     background-color: #f5f5f5;
 } */
 
-footer {
+
+
+
+body {
+    margin: 0; /* Existing styles */
+    padding: 0; /* Existing styles */
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: -20px; /* Adjust as needed */
+    margin-right: -20px; /* Adjust as needed */
+  }
+  
+
+  footer {
     background-color: rgba(0, 0, 0, 0.85);
     color: #ffffff;
-    padding: 15px 35px;
-    /* margin: 0; */
-    margin-bottom: -55px;
-}
-.foot-top {
+    padding: 15px 0; /* Adjusted padding to remove side padding */
+    margin: 0; /* Ensuring no margin around the footer */
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .foot-top {
     display: flex;
     border-bottom: 1px solid rgb(85, 78, 78);
     flex-wrap: nowrap;
-}
+  }
 .foot-top ul,.foot-down ul{
     padding: 0;
 }
 .foot-left, .foot-right {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /* gap: 30px; */
-    padding: 25px;
-    flex: 1 1 500px;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* Removed flex: 1 1 500px; */
+  padding: 25px; /* You can adjust padding as needed */
+  flex-wrap: wrap;
 }
+  
 /* .foot-right{
     height: 300px;
     width: 150px;
@@ -360,6 +376,7 @@ footer {
     }
 }
 
+
 /* Footer styles
 /* footer {
     background-color: black;
@@ -459,7 +476,7 @@ footer {
     height: 996;
     width: 300;
     padding: 4px;
-    margin: 8px;
+    
   }
   #phones h2{
     font-size: 1.5rem;
@@ -581,3 +598,7 @@ html {
 .office, .part{
     width: 300px;
 }
+
+
+
+

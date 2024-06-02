@@ -217,6 +217,7 @@ $("#carousel").load("./carousel.html");
           width: 100%;
           height: 10vh;
           z-index: 600;
+          
         }
         
         #carousal {
@@ -224,6 +225,7 @@ $("#carousel").load("./carousel.html");
           padding-top: 10vh;/* Adjust as needed */
         
           box-sizing: border-box;
+
         }
         
         #top-deals {
@@ -269,6 +271,8 @@ $("#carousel").load("./carousel.html");
   padding-top: 60px;
   padding-bottom: 20px;
   box-sizing: border-box;
+  margin-bottom: 80px;
+
   
 }
 
@@ -325,8 +329,26 @@ $("#carousel").load("./carousel.html");
           position: relative;
           top:35px;
         }
+        #category-list {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 40px;
+          
+          margin-top: 20px;
+          margin-bottom: 20px;
+          margin-left: 20px;
+          margin-right: 20px;
+        }
+   
+    </style> 
+</head>
 
-    </style>
+<body>
+  <!-- inline stylesheet -->
+  <!-- internal css -->
+  <!-- external css -->
+  <!-- id, class -->
+
 </head>
 
 <body>
@@ -347,6 +369,62 @@ $("#carousel").load("./carousel.html");
 
   <!-- carousel -->
   <section id="carousal">
+    <div class="cat_list">
+      <button class="btn btn-link">
+        <a href="">
+          <img src="./assets/images/grocry.jpg">
+          <p>Grocery</p>
+        </a>
+      </button>
+      <button class="btn btn-link">
+        <a href="">
+          <img src="./assets/images/mobile.webp">
+          <p>Mobile</p>
+        </a>
+      </button>
+      <button class="btn btn-link">
+        <a href="">
+          <img src="./assets/images/fashionnn.jpg" height="75px">
+          <p>Fashion</p>
+        </a>
+      </button>
+      <button class="btn btn-link" height="75px">
+        <a href="">
+          <img src="./assets/images/laptop.jpg" height="75px">
+          <p>Electronics</p>
+        </a>
+      </button>
+      <button class="btn btn-link">
+        <a href="">
+          <img src="./assets/images/home.jpg" height="75px">
+          <p>Home & Furniture</p>
+        </a>
+      </button>
+      <button class="btn btn-link">
+        <a href="">
+          <img src="./assets/images/appliance.webp" height="75px">
+          <p>Appliances</p>
+        </a>
+      </button>
+      <button class="btn btn-link">
+        <a href="">
+          <img src="./assets/images/travel.webp" height="75px">
+          <p>Travel</p>
+        </a>
+      </button>
+      <button class="btn btn-link">
+        <a href="">
+          <img src="./assets/images/beauty toys more.jpg" height="75px">
+          <p>Beauty,toys & more</p>
+        </a>
+      </button>
+      <button class="btn btn-link">
+        <a href="">
+          <img src="./assets/images/two wheelers.jpg" height="75px">
+          <p>Two wheelers</p>
+        </a>
+      </button>
+    </div>
    
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
