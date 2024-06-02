@@ -1,0 +1,60 @@
+body {
+    background-color: #f8f9fa;
+  }
+  
+  .navbar {
+    background-color: #2874f0;
+  }
+  
+  .navbar-brand {
+    color: #fff;
+  }
+  
+  .nav-link {
+    color: #fff !important;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .bg-gradient {
+    background: linear-gradient(45deg, #2874f0, #1e90ff);
+    animation: gradientAnimation 5s ease infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .text-white {
+    color: #fff !important;
+  }
+  
+  .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #2874f0;
+  }
+  
+  .btn-primary {
+    background-color: #2874f0;
+    border-color: #2874f0;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #1e90ff;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+  }
+  
+  .container {
+    max-width: 600px;
+  }
+  
+  .card-body {
+    padding: 2rem;
+  }
+  
+  
