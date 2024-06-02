@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="google-signin-client_id" content="YOUR_GOOGLE_CLOUD_ID">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-In</title>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <link rel="stylesheet" href="signup.css">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <link rel="stylesheet" href="./signup.css">
 </head>
 <body>
   <div id="container"></div>
@@ -39,6 +41,7 @@
             <div class="button-group">
                 <button onclick="Signin()" class="login-button">Login</button>
             </div>
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
             <div class="button-group">
                 <button onclick="window.location.href='../Auth/signup.html'" class="signup-button">Not an Existing User? Signup</button>
             </div> 
@@ -49,8 +52,18 @@
 </body>
 </html>
 <script>
+    function onSignIn(googleUser) {
+        var profile = googleUser.getBasicProfile();
+        console.log('ID: ' + profile.getId()); 
+        console.log('Name: ' + profile.getName());
+        console.log('Image URL: ' + profile.getImageUrl());
+        console.log('Email: ' + profile.getEmail()); 
+    }
     $(function(){
     $("#container").load("../Navbar/Navabar.html");
   });
 </script>
 <script src="./Signin.js"></script>
+
+
+
