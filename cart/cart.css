@@ -14,7 +14,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 8px 5%;
-    background-color: rgb(75, 75, 255);
+    background-color: #cccccc;
 }
 .nav-left{
     display: flex;
@@ -24,6 +24,7 @@ nav {
 input {
     width: 500px;
     padding: 10px;
+    
 }
 button {
     padding: 10px 20px;
@@ -117,29 +118,7 @@ i {
 }
 
 
-footer {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 5%;
-    margin-top: 100px;
-    font-size: 14px;
-    color: grey;
-    position: relative;
-}
-footer::before {
-    position: absolute;
-    height: 2px;
-    background-color: grey;
-    content: '';
-    top: -35px;
-    width: 100%;
-    left: 0;
-}
-footer span {
-    color:rgb(75, 75, 255) ;
-}
+
 .empty-cart {
     margin: 25px 5%;
     display: flex;
@@ -158,6 +137,156 @@ footer span {
     background-color: rgb(255, 117, 67);
     color: white;
 }
+
+footer {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #ffffff;
+    padding: 15px 35px;
+}
+
+.foot-left .about li a:hover, 
+.social ul li a:hover, 
+.foot-down ul li a:hover {
+    color: white;
+}
+
+.foot-down a:hover
+{
+  text-decoration: underline white;
+}
+
+.social ul li a i {
+    font-size: 18px; /* Adjust the size as needed */
+}
+
+.footer-section {
+    animation: slideInFromLeft 0.5s ease forwards;
+}
+
+.foot-top {
+    display: flex;
+    border-bottom: 1px solid rgb(85, 78, 78);
+    flex-wrap: nowrap;
+}
+.foot-top ul,.foot-down ul{
+    padding: 0;
+}
+.foot-left, .foot-right {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 25px;
+    flex: 1 1 500px;
+    flex-wrap: wrap;
+}
+.foot-left h5, .foot-right h5 {
+    font-size: 13px;
+    font-weight: 600;
+    color: #9b9898;
+}
+.foot-left .about li,.foot-down li, .foot-right .part, .foot-right .office, .social ul li {
+    list-style: none;
+}
+.foot-left .about li a, .social ul li a, .foot-down ul li a {
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    text-decoration: none;
+}
+.about{
+    min-width: 150px;
+}
+.about li a:hover{
+    text-decoration: underline;
+}
+.social ul {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    
+}
+.social>ul>li>a>i{
+    color: #ffffff;
+    font-size: 2rem;
+}
+.foot-right {
+    border-left: 1px solid rgb(85, 78, 78);
+    padding-left: 30px;
+}
+.foot-down {
+    padding: 10px 40px;
+    display: flex;
+    margin-top: 20px;
+    font-size: 12px;
+    justify-content: space-between;
+    font-weight: 600;
+    flex-wrap: wrap;
+}
+.foot-down .ft-1{
+    max-width: 500px;
+    width: -webkit-fill-available;
+}
+.foot-down ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    width: -webkit-fill-available;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.payment-icons{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+}
+.payment-icons img {
+    height: 15px;
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 15px;
+    }
+    .foot-top {
+        flex-direction: column;
+    }
+    .foot-left, .foot-right {
+        flex: 1 1 auto;
+        padding: 15px;
+        justify-content: flex-start;
+    }
+    .foot-right {
+        border-left: none;
+    }
+    .foot-down {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .foot-down ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .payment-icons {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .foot-left, .foot-right {
+        flex-direction: column;
+    }
+    .social ul {
+        justify-content: center;
+
+    }
+    .foot-down ul {
+        justify-content: center;
+    }
+
 .flipcart{
     margin: 5px;
     display: flex;
