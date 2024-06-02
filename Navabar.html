@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Improved Navbar</title>
-  <!-- <link rel="stylesheet" href="Navbar.css"> -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
   <style>
     body {
@@ -15,11 +13,6 @@
     .navbar {
       background-color: #333;
       height: 60px;
-    }
-
-    .navbar-nav{
-      padding-right: 100px;
-
     }
 
     .navbar-brand img {
@@ -32,26 +25,15 @@
     }
 
     .navbar-nav .nav-link {
-      color: black;
-      /* padding: 10px 15px; */
+      color: white;
       font-size: 16px;
       text-transform: uppercase;
-      position: relative;
       transition: background-color 0.5s;
     }
-    .navbar-nav .nav-link:hover {
-      display: block;
-      background-color: white;
-      width:7.47rem;
-      height: 4.8rem;
-      align-content: center;
-      text-align: center;
-      border-radius: 10px;
-    }
 
-    .navbar-nav .nav-link img {
-      height: 20px;
-      padding-right: 20px;
+    .navbar-nav .nav-link:hover {
+      background-color: #555;
+      border-radius: 10px;
     }
 
     .navbar-nav .dropdown-menu {
@@ -65,12 +47,6 @@
 
     .navbar-nav .dropdown-menu .dropdown-item:hover {
       background-color: #007bff;
-      color: white;
-    }
-
-    #searchbar {
-      display: flex;
-      align-items: center;
     }
 
     #input_data {
@@ -107,32 +83,22 @@
 
     .categories-bar a:hover {
       color: #007bff;
-      text-decoration: none;
     }
 
     .navbar-nav .nav-item:hover .nav-link {
-      color: black;
+      color: white;
     }
-    
-    /* Adjustments */
+
     .navbar-nav .nav-link {
       margin-left: 10px; /* Adjust the margin as needed */
     }
-    /* .navbar-nav{
-      background-color: #333;
-      position: relative;
-      bottom: 2px;
-      right:14px;
-    } */
-    .navbar-collapse{
+
+    .navbar-collapse {
       background-color: #333;
       position: relative;
       bottom: 2px;
       right: 14px;
     }
-    /* @media screen and (max-width:1000px){
-
-    } */
   </style>
 </head>
 
@@ -165,45 +131,44 @@
         <li class="nav-item dropdown">
           <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
-            <i class="fa-regular fa-user"></i>   Profile
+            <i class="fa-regular fa-user"></i> Profile
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="profile.html">
-              <i class="fa-solid fa-user"></i>
-               My Profile</a>
+              <i class="fa-solid fa-user"></i> My Profile
+            </a>
             <a class="dropdown-item" href="signup.html">
-              <i class="fa-solid fa-user-plus"></i>
-              SignUp</a>
+              <i class="fa-solid fa-user-plus"></i> SignUp
+            </a>
             <a class="dropdown-item" href="signin.html">
-              <i class="fa-solid fa-right-to-bracket"></i>
-              SignIn</a>
+              <i class="fa-solid fa-right-to-bracket"></i> SignIn
+            </a>
             <a class="dropdown-item" href="FPZ.html">
-              <img id="flipkartPlusImage" width="16" height="17" src="images/plus.png" alt="imgplus"> Flipkart Plus Zone</a>
-
+              <img id="flipkartPlusImage" width="16" height="17" src="images/plus.png" alt="Flipkart Plus"> Flipkart Plus
+              Zone
+            </a>
             <a class="dropdown-item" href="order.html">
-              <i class="fa-solid fa-box"></i>
-              Orders</a>
+              <i class="fa-solid fa-box"></i> Orders
+            </a>
             <a class="dropdown-item" href="wishlist.html">
-              <i class="fa-regular fa-heart"></i>
-              Wishlist</a>
+              <i class="fa-regular fa-heart"></i> Wishlist
+            </a>
             <a class="dropdown-item" href="#">
-              <i class="fas fa-gift"></i>
-              Rewards</a>
+              <i class="fas fa-gift"></i> Rewards
+            </a>
             <a class="dropdown-item" href="giftcard.html">
-              <img width="22" height="18" src="images/gift-card.png" alt="imgplus"> 
-              Gift Cards</a>
+              <img width="22" height="18" src="images/gift-card.png" alt="Gift Cards"> Gift Cards
+            </a>
           </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="pages/Sell_Online/sell_online.html">
-            <i class="fa-solid fa-store"></i>
-            Become a Seller
+            <i class="fa-solid fa-store"></i> Become a Seller
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./cart/cart.html">
-            <i class="fa-solid fa-cart-shopping"></i>
-            Cart
+            <i class="fa-solid fa-cart-shopping"></i> Cart
           </a>
         </li>
         <li class="nav-item dropdown">
@@ -226,9 +191,5 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <!-- <script>
-    const bg=document.querySelector('.show');
-    
-  </script> -->
 </body>
 </html>
