@@ -196,7 +196,7 @@ $(document).ready(function () {
     const categoriesList = $("#categories");
 
     function createCategoryItem(categoryData) {
-        const categoryItem = $("<li>");
+        const categoryItem = $("<li>").attr('id', `${categoryData.id}`);
         const categoryLink = $("<a>").attr("href", `#${categoryData.id}`).text(categoryData.name);
 
         // Adding images to the main category items only
@@ -205,15 +205,16 @@ $(document).ready(function () {
 
         categoryItem.append(categoryLink);
 
-        const subcategoriesList = $("<ul>");
+        const subcategoriesList = $("<div>").attr("class", `dropdownbox ${categoryData.id}`);
+
 
         if (!categoryData.subcategories) {
-            const singleItem = $("<li>").text(categoryData.name);
+            const singleItem = $("<div>").text(categoryData.name);
             subcategoriesList.append(singleItem);
         } else {
-            $.each(categoryData.subcategories, function(index, subcategoryData) {
+            $.each(categoryData.subcategories, function (index, subcategoryData) {
                 if (subcategoryData && typeof subcategoryData === "string") {
-                    const subcategoryItem = $("<li>").text(subcategoryData);
+                    const subcategoryItem = $("<div>").text(subcategoryData);
                     subcategoriesList.append(subcategoryItem);
                 } else if (subcategoryData) {
                     const subcategoryItem = createSubcategoryItem(subcategoryData);
@@ -222,27 +223,57 @@ $(document).ready(function () {
             });
         }
 
-        categoryItem.append(subcategoriesList);
+        categoryItem.on('mouseenter', function (event) {
+            $('.categorylist-wrapper').append(subcategoriesList);
+            //categoryItem.append(subcategoriesList);
+            subcategoriesList.show();
+        });
+
+        categoryItem.on('mouseleave', function (event) {
+
+            // subcategorieslist should not hide when mouse leave to subdropdown
+            const relatedTarget = event.relatedTarget;
+            if (!relatedTarget.closest(`.${event.target.id}`)) {
+                $(`.${event.target.id}`).remove();
+                subcategoriesList.hide();
+            }
+        });
+
+        if (subcategoriesList && subcategoriesList.length) {
+            subcategoriesList.on('mouseleave', function (event) {
+                console.log(event.relatedTarget);
+                subcategoriesList.hide();
+                $(`.${categoryData.id}`).remove();
+            });
+        } else {
+            console.log("subcategoriesList is not defined or is empty.");
+        }
+
         return categoryItem;
     }
 
     function createSubcategoryItem(subcategoryData) {
-        const subcategoryItem = $("<li>").text(subcategoryData.name);
+        const subcategoryItem = $("<div>");
+        subcategoryItem.append($("<div>").text(subcategoryData.name));
         if (subcategoryData.subcategories) {
-            const subsubcategoriesList = $("<ul>");
-            $.each(subcategoryData.subcategories, function(index, subsubcategoryData) {
-                const subsubcategoryItem = $("<li>").text(subsubcategoryData);
+            const subsubcategoriesList = $("<div>").attr({ "id": subcategoryData.id, "class": "subdropdown" });
+            subsubcategoriesList.append($("<div>").text(`More in ${subcategoryData.name}`));
+
+            $.each(subcategoryData.subcategories, function (index, subsubcategoryData) {
+                const subsubcategoryItem = $("<div>").text(subsubcategoryData);
                 subsubcategoriesList.append(subsubcategoryItem);
             });
             subcategoryItem.append(subsubcategoriesList);
         }
+        subcategoryItem.append($("<span>").attr('class', 'sidearrow'));
         return subcategoryItem;
     }
 
-    categoriesData.forEach(function(categoryData) {
+    categoriesData.forEach(function (categoryData) {
         const categoryItem = createCategoryItem(categoryData);
         categoriesList.append(categoryItem);
     });
+
 });
 
 
