@@ -1,26 +1,54 @@
-  name: "🐞 Bug Report"
-  description: "Create a report to help us improve"
-  title: "BUG:"
-  labels: ["Bug"]
-  body:
-    - type: checkboxes
-      attributes:
-        label: "Is there an existing issue for this?"
-        description: "Please search to see if an issue already exists for the bug you encountered."
-        options:
-          - label: "I have searched the existing issues"
-            required: true
-    - type: textarea
-      attributes:
-        label: "What happened?"
-        description: "A concise description of what you're experiencing."
+name: "🐞 Bug Report"
+description: "Create a report to help us improve"
+title: "BUG:"
+labels: ["Bug"]
+body:
+  - type: checkboxes
+    attributes:
+      label: "Is there an existing issue for this?"
+      description: "Please search to see if an issue already exists for the bug you encountered."
+      options:
+        - label: "I have searched the existing issues"
+          required: true
+
+  - type: textarea
+    attributes:
+      label: "Describe the bug"
+      description: "A clear and concise description of what the bug is."
       validations:
         required: true
-    - type: checkboxes
-      attributes:
-        label: "Record"
-        options:
-          - label: "I agree to follow this project's Code of Conduct"
-            required: true
-          - label: "I'm a GSSOC'24 contributor"
-          - label: "I want to work on this issue"
+
+ - type: textarea
+    attributes:
+      label: "What happened?"
+      description: "A concise description of what you're experiencing."
+    validations:
+      required: true
+    
+  - type: markdown
+    attributes:
+      value: |
+        **To Reproduce**
+        Steps to reproduce the behavior:
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+
+        **Expected behavior**
+        A clear and concise description of what you expected to happen.
+
+        **Screenshots**
+        If applicable, add screenshots to help explain your problem.
+
+        **Additional context**
+        Add any other context about the problem here.
+
+  - type: checkboxes
+    attributes:
+      label: "Record"
+      options:
+        - label: "I agree to follow this project's Code of Conduct"
+          required: true
+        - label: "I'm a GSSOC'24 contributor"
+        - label: "I want to work on this issue"
