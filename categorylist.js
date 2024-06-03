@@ -27,7 +27,7 @@ const categoriesData = [
             {
                 "id": "desserts",
                 "name": "Desserts",
-                "subcategories": ["Cookies", "Ice-Cream"]
+                "subcategories": ["Ice Cream", "Cakes", "Pies", "Cookies"]
             }
         ]
     },
@@ -169,6 +169,9 @@ const categoriesData = [
             {
                 "id": "toys",
                 "name": "Toys",
+
+                "subcategories": ["Remote Control Toys", "Soft Toys", "Puzzles", "Board Games", "Baby Toys"]
+=======
                 "subcategories": [
                     "Action Figures",
                     "Board Games",
@@ -180,13 +183,9 @@ const categoriesData = [
             {
                 "id": "stationary",
                 "name": "Stationary",
-                "subcategories": [
-                    "Notebooks",
-                    "Pens",
-                    "Markers",
-                    "Folders",
-                    "Sticky Notes"
-                ]
+                "subcategories": ["Notebooks", "Pens", "Pencils", "Markers", "Staplers"]
+=======
+               
             }
         ]
     }
@@ -244,5 +243,6 @@ $(document).ready(function () {
         categoriesList.append(categoryItem);
     });
 });
+
 
 
