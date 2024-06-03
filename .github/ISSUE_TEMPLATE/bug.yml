@@ -18,13 +18,13 @@ body:
       validations:
         required: true
 
- - type: textarea
+  - type: textarea
     attributes:
       label: "What happened?"
       description: "A concise description of what you're experiencing."
-    validations:
-      required: true
-    
+      validations:
+        required: true
+
   - type: markdown
     attributes:
       value: |
