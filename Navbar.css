@@ -1,13 +1,15 @@
-
 #input_data {
   width: 400px;
   /* Adjust the width as needed */
 }
+.navbar {
+  position: relative;
+}
 
 .nav-link {
   white-space: nowrap;
-}
 
+}
 .navtab{
   margin-left: 10px;
   padding-left: 10px;
@@ -15,9 +17,10 @@
   border-radius: 10px;
 }
 
-.navbar-nav{
+/* .navbar-nav{
   margin-right: auto;
-}
+  background-color: #333;
+} */
 
 #input_data{
   width: 500px;
@@ -32,7 +35,7 @@
   border-bottom: none;
 }
 .nav-item::before:hover{
-  border: none;
+  border: #fff;
   transform: none;
   background-color: transparent;
 }
