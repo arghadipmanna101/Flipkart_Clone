@@ -55,7 +55,7 @@ function saveToLocalStorage(key, newData) {
           </div>
         </div>
         <div class="deliveryDate">
-          Delivery by Fri Jun 7 | ₹40Free
+          Delivery by Fri Jun 7
         </div>
       </div>
     `;
@@ -100,7 +100,7 @@ function saveToLocalStorage(key, newData) {
             <pre>
 Price (${totlaItems} items)			₹${totalPrice}
 Discount                        0
-Delivery Charges                ₹110 Free
+Delivery Charges                Free
 Total Amount                    <b>₹${totalPrice}</b> 
 You will save ₹110 on this order
                             </pre>
