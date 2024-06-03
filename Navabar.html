@@ -11,17 +11,16 @@
     body {
       font-family: Arial, sans-serif;
     }
-
+    .navbar-nav .nav-link:hover {
+      border-bottom: 2px solid #1114bd; /* Change the color as desired */  
+    }    
     .navbar {
       background-color: #333;
       height: 60px;
     }
-
     .navbar-nav{
       padding-right: 100px;
-
     }
-
     .navbar-brand img {
       height: 40px;
     }
@@ -30,7 +29,6 @@
       border: none;
       position: absolute;
     }
-
     .navbar-nav .nav-link {
       color: black;
       /* padding: 10px 15px; */
@@ -58,52 +56,33 @@
       background-color: #333;
       border: none;
     }
-
-    .navbar-nav .dropdown-menu .dropdown-item {
-      color: white;
+    .nav-item:hover {
+      text-decoration: none;
+      opacity: 0.85;
+      transition: all 0.2s ease-in;
+      transform:scale(1.1);
+      z-index: 1;
     }
-
-    .navbar-nav .dropdown-menu .dropdown-item:hover {
-      background-color: #007bff;
-      color: white;
+    .nav-link::after {
+    content:'';
+    opacity: 0;
+    transition: all 0.3s ease;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left:0;
     }
-
-    #searchbar {
-      display: flex;
-      align-items: center;
-    }
-
-    #input_data {
-      width: 300px;
-      padding: 6px 12px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    .categories-bar {
-      background-color: #f8f9fa;
-      display: flex;
-      justify-content: center;
-      padding: 10px 0;
-    }
-
-    .categories-bar ul {
-      display: flex;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .categories-bar li {
-      margin: 0 15px;
-    }
-
+    .nav-link:hover::after{
+    opacity:1;
+      }
     .categories-bar a {
       color: #333;
       text-decoration: none;
       font-size: 16px;
       text-transform: uppercase;
     }
+
 
     .categories-bar a:hover {
       color: #007bff;
@@ -151,14 +130,21 @@
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
           <div class="navtab" id="searchbar">
-            <input id="input_data" type="text" placeholder="Search for Products, Brands and More" />
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <title>Search Icon</title>
-              <path d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z"
-                stroke="#717478" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
-              <path d="M16 16L21 21" stroke="#717478" stroke-width="1.4" stroke-linecap="round"
-                stroke-linejoin="round"></path>
-            </svg>
+
+            <span>
+              <svg width="24" height="24" class="" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <title>Search Icon</title>
+                <path
+                  d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z"
+                  stroke="#717478" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M16 16L21 21" stroke="#717478" stroke-width="1.4" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </svg>
+            </span>
+            <span class="flex-grow">
+              <input id="input_data" type="text" placeholder="Search for Products, Brands and More" />
+            </span>
+
           </div>
         </li>
       </ul>
@@ -184,9 +170,7 @@
             <a class="dropdown-item" href="order.html">
               <i class="fa-solid fa-box"></i>
               Orders</a>
-            <a class="dropdown-item" href="notifications.html">
-              <i class="fa-regular fa-bell"></i>
-              Notifications</a>
+
             <a class="dropdown-item" href="wishlist.html">
               <i class="fa-regular fa-heart"></i>
               Wishlist</a>
@@ -206,7 +190,8 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./cart/cart.html">
-            <i class="fa-solid fa-cart-shopping"></i>
+            <img
+              src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg"/>
             Cart
           </a>
         </li>
@@ -218,9 +203,78 @@
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="moreLinksDropdown">
             <a class="dropdown-item" href="notification.html">Notification Preferences</a>
             <a class="dropdown-item" href="/helpcentre">24x7 Customer Care</a>
-            <a class="dropdown-item" href="https://advertising.flipkart.com/?otracker=ch_vn_advertise_header">Advertise</a>
-            <a class="dropdown-item" href="/mobile-apps?otracker=ch_vn_mobile_apps">Download App</a>
+            <a
+              class="dropdown-item"
+              href="https://advertising.flipkart.com/?otracker=ch_vn_advertise_header"
+              >Advertise</a
+            >
+            <a
+              class="dropdown-item"
+              href="/mobile-apps?otracker=ch_vn_mobile_apps"
+              >Download App</a>
+              </li>
+            </ul>
           </div>
+
+            <!-- <a class="dropdown-item"
+              href="https://advertising.flipkart.com/?otracker=ch_vn_advertise_header">Advertise</a>
+            <a class="dropdown-item" href="http://play.google.com/store/search?q=flipkart&c=apps" target="_blank"
+              rel="external">Download App</a>
+            <div class="col-md-6">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <img
+                      src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-815786.svg"
+                      alt="Profile" />
+                    Profile
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="profile.html">Profile</a>
+                    <a class="dropdown-item" href="signup.html">Signup</a>
+                    <a class="dropdown-item" href="signin.html">Signin</a>
+                    <a class="dropdown-item" href="FPZ.html">Flipkart Plus Zone</a>
+                    <a class="dropdown-item" href="order.html">Orders</a>
+                    <a class="dropdown-item" href="#">Wishlist</a>
+                    <a class="dropdown-item" href="#">Rewards</a>
+                    <a class="dropdown-item" href="#">Gift Cards</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img
+                      src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg"
+                      alt="Become a Seller" />
+                    Become a Seller
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img
+                      src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg"
+                      alt="Cart" />
+                    Cart
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" id="moreLinksDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <img
+                      src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-ea7819.svg"
+                      alt="More Links" />
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="moreLinksDropdown">
+                    <a class="dropdown-item" href="/communication-preferences/push?t=all">Notification Preferences</a>
+                    <a class="dropdown-item" href="/helpcentre">24x7 Customer Care</a>
+                    <a class="dropdown-item"
+                      href="https://advertising.flipkart.com/?otracker=ch_vn_advertise_header">Advertise</a>
+                    <a class="dropdown-item" href="/mobile-apps?otracker=ch_vn_mobile_apps">Download App</a>
+                  </div>
+                </li>
+              </ul>
+            </div> -->
+
         </li>
       </ul>
     </div>
@@ -236,3 +290,4 @@
   </script> -->
 </body>
 </html>
+
