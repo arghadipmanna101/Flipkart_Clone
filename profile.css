@@ -15,7 +15,7 @@ body {
 }
 
 #input_data {
-  width: 160%;
+  width: 190%;
   border: none;
   outline: none;
   background-color: transparent;
@@ -34,7 +34,7 @@ body {
 }
 
 .navtab {
-  width: 160%;
+  width: 190%;
   margin-left: 20px;
   padding-left: 10px;
   background-color: #e6eeff;
