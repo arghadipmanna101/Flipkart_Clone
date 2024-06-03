@@ -21,24 +21,15 @@ body:
       label: "What happened?"
       description: "A concise description of what you're experiencing."
 
-  - type: markdown
+  - type: textarea
     attributes:
-      value: |
-        **To Reproduce**
-        Steps to reproduce the behavior:
-        1. Go to '...'
-        2. Click on '....'
-        3. Scroll down to '....'
-        4. See error
+      label: "Expected behavior"
+      description: " A clear and concise description of what you expected to happen."
 
-        **Expected behavior**
-        A clear and concise description of what you expected to happen.
-
-        **Screenshots**
-        If applicable, add screenshots to help explain your problem.
-
-        **Additional context**
-        Add any other context about the problem here.
+   - type: textarea
+    attributes:
+      label: "Screenshots"
+      description: "  If applicable, add screenshots to help explain your problem."
 
   - type: checkboxes
     attributes:
