@@ -406,21 +406,61 @@ $("#carousel").load("./Carousel/carousel.html");
     }
   </style> -->
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!
-  </title>
-  <link rel="icon" type="image/png" href="https://iconpusher.com/icon/1449/1">
-  <title>Flipkart</title>
-  <link rel="icon" type="image/x-icon" href="./assets/images/favicon-modified.png">
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <link rel="stylesheet" href="./assets/css/cat_list.css" />
-  <link rel="stylesheet" href="./assets/css/index.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    integrity="sha512-..." crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!</title>
+    <link rel="icon" type="image/png" href="https://iconpusher.com/icon/1449/1">
+    <title>Flipkart</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon-modified.png">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/cat_list.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        html,
+        body {
+            position: relative;
+            height: 100%;
+            background: white;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide{
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .swipe-slide img:hover{
+          transform: scale(1.1); 
+        }
+        
 
 
   <style>
@@ -805,18 +845,34 @@ $("#carousel").load("./Carousel/carousel.html");
 
   <!-- newsection for grid items  -->
   <section id="img-box">
+
+    <a href=""
+
+      ><div class="img"><img src="grid-1.webp" alt="" />
+        <p>Clothing Footwere and Accessories</p>
+        <p>in Just ₹199 </p>
+        </div
+    ></a>
+    <a href=""
+      ><div class="img"><img src="grid-2.jpg" alt="" />
+        <p>Gas Stove and Hobs</p>
+        <p>From ₹799</p>
+        </div
+    ></a>
     <a href="">
-      <div class="img"><img src="./assets/images/grid-1.webp" alt="" /></div>
-    </a>
-    <a href="">
-      <div class="img"><img src="./assets/images/grid-2.jpg" alt="" /></div>
-    </a>
-    <a href="">
-      <div class="img"><img src="./assets/images/grid-3.jpg" alt="" /></div>
-    </a>
-    <a href="">
-      <div class="img"><img src="./assets/images/grid-1.webp" alt="" /></div>
-    </a>
+      <div class="img"><img src="grid-3.jpg" alt="" />
+         <p>Peak Summer Care</p>
+        <p>From ₹99</p>
+        </div
+    ></a>
+    <a href=""
+      ><div class="img"><img src="grid-1.webp" alt="" />
+         <p>Clothing Footwere and Accessories</p>
+        <p>in Just ₹199 </p>
+        </div
+
+    ></a>
+
   </section>
 
 
@@ -829,16 +885,99 @@ $("#carousel").load("./Carousel/carousel.html");
   <!-- -grid for deals -->
 
   <section id="category-grid">
-    <img class="category" src="./assets/images/deal5.png" alt="deal1">
-    <img class="category" src="./assets/images/deal6.png" alt="deal1">
-    <img class="category" src="./assets/images/deal1.png" alt="deal1">
-    <img class="category" src="./assets/images/deal7.png" alt="deal1">
-    <img class="category" src="./assets/images/deal8.png" alt="deal1">
-    <img class="category" src="./assets/images/deal9.png" alt="deal1">
-    <img class="category" src="./assets/images/deal10.png" alt="deal1">
-    <img class="category" src="./assets/images/deal11.png" alt="deal1">
-    <img class="category" src="./assets/images/deal12.png" alt="deal1">
 
+    <div class="card">
+     <img class="category" src="./images/deal5.png" alt="deal1">
+     <h4>Ceiling Fans</h4>
+     <p>Best deal of the sale</p>
+     <p>From ₹999</p> 
+     <button class="cartbtn">Add to cart  <lord-icon
+    src="https://cdn.lordicon.com/pbrgppbb.json"
+    trigger="hover"
+    style="width:20px;height:20px">
+</lord-icon></button>
+    </div>
+
+    <div class="card">
+     <img class="category" src="./images/deal1.png" alt="deal1">
+     <h4>India's No.1 AC</h4>
+     <p>Top 50 deal on AC</p>
+     <p>From ₹2,499</p> 
+     <button class="cartbtn">Add to cart  <lord-icon
+    src="https://cdn.lordicon.com/pbrgppbb.json"
+    trigger="hover"
+    style="width:20px;height:20px">
+</lord-icon></button>
+    </div>
+
+
+       <div class="card">
+     <img class="category" src="./images/deal10.png" alt="deal1">
+     <h4>Make a Scent-sation!</h4>
+     <p>Upto 70% Off</p>
+     <p>From ₹100</p> 
+     <button class="cartbtn">Add to cart  <lord-icon
+    src="https://cdn.lordicon.com/pbrgppbb.json"
+    trigger="hover"
+    style="width:20px;height:20px">
+</lord-icon></button>
+    </div>
+
+
+
+
+    <div class="card">
+     <img class="category" src="./images/deal8.png" alt="deal1">
+     <h4>Power Drill and Ladder</h4>
+     <p>Upto 70% Off</p>
+     <p>From ₹999</p> 
+     <button class="cartbtn">Add to cart  <lord-icon
+    src="https://cdn.lordicon.com/pbrgppbb.json"
+    trigger="hover"
+    style="width:20px;height:20px">
+</lord-icon></button>
+    </div>
+
+    <div class="card">
+     <img class="category" src="./images/deal9.png" alt="deal1">
+     <h4>Wall Decor and Showpieces</h4>
+     <p>Best deal of the sale</p>
+     <p>From ₹59</p> 
+     <button class="cartbtn">Add to cart  <lord-icon
+    src="https://cdn.lordicon.com/pbrgppbb.json"
+    trigger="hover"
+    style="width:20px;height:20px">
+</lord-icon></button>
+    </div>
+
+    
+       <div class="card">
+     <img class="category" src="./images/deal6.png" alt="deal1">
+     <h4>Kitchen Appliences</h4>
+     <p>Best deal of the sale</p>
+     <p>From ₹399</p> 
+     <button class="cartbtn">Add to cart  <lord-icon
+    src="https://cdn.lordicon.com/pbrgppbb.json"
+    trigger="hover"
+    style="width:20px;height:20px">
+</lord-icon></button>
+    </div>
+
+        <div class="card">
+     <img class="category" src="./images/deal12.png" alt="deal1">
+     <h4>Wakefit and Sleepyhead</h4>
+     <p>Best deal of the sale</p>
+     <p>From ₹2,990</p> 
+     <button class="cartbtn">Add to cart  <lord-icon
+    src="https://cdn.lordicon.com/pbrgppbb.json"
+    trigger="hover"
+    style="width:20px;height:20px">
+</lord-icon></button>
+    </div>
+
+   
+
+   
 
 
   </section>
@@ -1448,5 +1587,6 @@ $("#carousel").load("./Carousel/carousel.html");
 </body>
 
 </html>
+
 
 </html>    
