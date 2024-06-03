@@ -24,9 +24,23 @@ function saveToLocalStorage(key, newData) {
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get(name);
   }
-  
+
+ // Function to display search results
+ function searchFetch(products) {
+    const searchList = document.getElementById("itemsInCart");
+    searchList.innerHTML += products
+    .map(product => fetchCartData(product))
+    .join("");
+  }
+
+
+  let totalPrice=0
+  let totlaItems=0
   // Function to generate HTML for a cart item
   function fetchCartData(item) {
+    totlaItems=totlaItems+1;
+    totalPrice=totalPrice+ item.price
+
     return `
       <div class="itemInCart d-flex">
         <img class="p-3" src="../json-api/product-img/${item.productImg}" style="width: auto; height: 200px; object-fit: contain;" alt="${item.name}">
@@ -44,28 +58,30 @@ function saveToLocalStorage(key, newData) {
           Delivery by Fri Jun 7 | ₹40Free
         </div>
       </div>
-      <button class="btn btn-danger">Buy Now</button>
     `;
   }
   
-  // Function to display search results
-  function searchFetch(products) {
-    const searchList = document.getElementById("itemsInCart");
-    searchList.innerHTML += products
-    .map(product => fetchCartData(product))
-    .join("");
-  }
+  let cartInProduct=document.getElementById("cardInProduct")
+  let cartisEmpty=document.getElementById("cardisEmpty")
   
   // Fetch data from the JSON file and filter products based on the query
   fetch("../json-api/product.json")
     .then(response => response.json())
     .then(data => {
       const query = getQueryParameter("query");
-      const filteredProducts = data.filter(product => product.name === query);
+      const filteredProducts = data.filter(product => product.name === query);	  
+	  if (filteredProducts.length==0){
+		cartInProduct.style.display="none"
+		cartisEmpty.style.display="block"		
+	  } else{
+		cartInProduct.style.display="block"
+		cartisEmpty.style.display="none"
+	  }
+
       // Save filtered products to local storage without overwriting existing data
       saveToLocalStorage("filteredProducts", filteredProducts);
-      // Display the filtered products
-      searchFetch(filteredProducts);
+      // Display the filtered products	  
+      searchFetch(filteredProducts);	 
     })
     .catch(error => console.error("Error fetching data:", error));
   
@@ -73,6 +89,25 @@ function saveToLocalStorage(key, newData) {
   const savedFilteredProducts = getFromLocalStorage("filteredProducts");
   if (savedFilteredProducts) {
     // Use savedFilteredProducts as needed
+	
     searchFetch(savedFilteredProducts);
   }
   
+
+
+
+  let priceDetail=`
+            <pre>
+Price (${totlaItems} items)			₹${totalPrice}
+Discount                        0
+Delivery Charges                ₹110 Free
+Total Amount                    <b>₹${totalPrice}</b> 
+You will save ₹110 on this order
+                            </pre>
+    `
+document.getElementById("priceDetail").innerHTML=priceDetail
+
+
+ 
+
+

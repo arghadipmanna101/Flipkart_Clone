@@ -20,7 +20,7 @@
                 <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
                     width="160" height="40" title="Flipkart" alt="Flipkart" />
             </a>
-    
+
             <div class="search">
                 <input type="search" placeholder="Search for products, brands and more...">
                 <i class="fa fa-search" aria-hidden="true"></i>
@@ -31,25 +31,27 @@
     </nav>
 
 
-    <div class="cart-container">
-       <div class="empty-cart">
-        <img src="https://rukminim2.flixcart.com/www/800/800/promos/16/05/2019/d438a32e-765a-4d8b-b4a6-520b560971e8.png?q=90" alt="" height="200px" width="200px">
-        <h4>Missing Cart items?</h4>
-        <small>
-            Login to see the items you added previously</small>
+    <div class="cart-container" id="cardisEmpty">
+        <div class="empty-cart">
+            <img src="https://rukminim2.flixcart.com/www/800/800/promos/16/05/2019/d438a32e-765a-4d8b-b4a6-520b560971e8.png?q=90"
+                alt="" height="200px" width="200px">
+            <h4>Missing Cart items?</h4>
+            <small>
+                Login to see the items you added previously</small>
             <button>Login</button>
-       </div>
+        </div>
     </div>
-<div class="container-fluid">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <div class="deliver_c_pc d-flex justify-content-between align-items-center">
-                    <p>Delever to: <strong>Bhopal-462025</strong></p>
-                    <p class="btn">Change</p>
-                </div>
-                <div id="itemsInCart">
-                    <!-- <div class="itemInCart d-flex">
+ 
+    <div class="container-fluid mt-4" id="cardInProduct">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="deliver_c_pc d-flex justify-content-between align-items-center">
+                        <p>Delever to: <strong>Bhopal-462025</strong></p>
+                        <p class="btn">Change</p>
+                    </div>
+                    <div id="itemsInCart">
+                        <!-- <div class="itemInCart d-flex">
                         <img src="../img/appliances.jpg" alt="items">
                         <div class="itemDetail">
                             <div>
@@ -65,25 +67,28 @@
                             Delivery by Fri Jun 7 | ₹40Free
                         </div>
                     </div> -->
+                    </div>
                 </div>
-             </div>   
-            <div class="col-md-4">
-                <div>
-                    <h5>PRICE DETAILS</h5>
-                    Price (2 items)                    
-                    ₹15,998
-                    Discount
-                    − ₹12,900
-                    Delivery Charges
-                    ₹110Free
-                    Total Amount
-                    ₹3,098
-                    You will save ₹12,900 on this order
+                <div class="col-md-4">
+                    <div>
+                        <h5>PRICE DETAILS</h5>
+                        <div id="priceDetail">
+                            <pre>
+Price (2 items)                 ₹15,998
+Discount                        0
+Delivery Charges                ₹110 Free
+Total Amount                    <b>₹3,098</b> 
+You will save ₹110 on this order
+                            </pre>
+                        </div>
+                        <div>
+                            <button class="btn btn-danger">Buy Now</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
 
 
@@ -97,8 +102,8 @@
         </div>
     </footer>
 
-<script src="../js/bootstrap.bundle.min.js"></script>
-<script src="viewcart.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="viewcart.js"></script>
 </body>
 
 </html>
