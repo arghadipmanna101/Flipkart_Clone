@@ -1,20 +1,27 @@
 name: "📑 Documentation Update"
 description: "Improve Documentation"
 title: "DOC:"
-labels: [DOC, Needs Triage]
+labels: ["DOC", "Needs Triage"]
 body:
   - type: textarea
     attributes:
       label: "What's wrong with the existing documentation"
       description: "Which things do we need to add or delete"
-    validations:
-      required: true
+  
   - type: textarea
     attributes:
-      label: "Add ScreenShots"
-      description: "Add sufficient SS to explain your issue."
-    validations:
-      required: false
+      label: "File to change"
+      description: "Specify which file needs the changes"
+
+  - type: textarea
+    attributes:
+      label: "Details of the change"
+      description: "Describe what needs to be changed"
+
+  - type: textarea
+    attributes:
+      label: "Type of change"
+      description: "For example: grammatical errors, adding new sections"
 
   - type: checkboxes
     attributes:
