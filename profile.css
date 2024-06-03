@@ -1,123 +1,110 @@
 body {
-    background-color: #f4f4f4;
-    padding-left: 570px;
-    margin-top: 150px;
+  background-color: #f4f4f4;
+  margin-top: 150px;
 }
 
 #navbar-container {
-    position: fixed;
-    top: 0;right: 0;
-    width: 100%;
-    height: 10vh;
-    z-index: 600;
-  }
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 10vh;
+  z-index: 600;
+}
 
-  #input_data {
-    width: 400px;
-    /* Adjust the width as needed */
-  }
-  
-  .nav-item {
-    transition: background-color 0.5s ease;
-  }
-  
-  .nav-link {
-    text-decoration: none;
-    color: #000;
-    display: block;
-    padding: 20px;
-  }
-  
-  .navtab{
-    margin-left: 10px;
-    padding-left: 10px;
-    background-color: #e6eeff;
-    border-radius: 10px;
-  }
-  
-  .navbar-nav{
-    margin-right: auto;
-  }
-  
-  #input_data{
-    width: 500px;
-    border: none;
-    background-color: transparent;
-    padding: 5px;
-  }
-  
-  .nav-item:hover{
-    background-color: transparent;
-    transform: none;
-    border-bottom: none;
-  }
-  .nav-item::before:hover{
-    border: #fff;
-    transform: none;
-    background-color: transparent;
-  }
-  
-  .nav-item-divider::before {
-    content: '';
-    display: inline-block;
-    width: 1px; 
-    height: 30px; 
-    background-color: #ccc; 
-    margin: 0 10px; 
-    transition: all 0.4s;
-  }
-  
-  .nav-item-divider:last-child::before {
-    display: none; 
-  }
-  
-  .nav-item:hover .nav-item-divider::before {
-    background-color: #000; 
-  }
-  
-  .nav-item-divider::after {
-    content: '';
-    display: inline-block;
-    width: 1px;
-    height: 30px; 
-    background-color: #ccc; 
-    margin: 10px 10px;
-  }
-  
-  .nav-item-divider:last-child::after {
-    display: none; 
-  }
-  
-  .container {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 30px;
-    box-shadow: 0 4px 8px rgba(91, 77, 77, 0.1);
-    max-width: 780px; /* Reduced size of card */
+#input_data {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  padding: 5px;
 }
+
+.nav-item {
+  transition: background-color 0.5s ease;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  padding: 20px;
+}
+
+.navtab {
+  margin-left: 10px;
+  padding-left: 10px;
+  background-color: #e6eeff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav {
+  margin-right: auto;
+}
+
+.nav-item:hover {
+  background-color: transparent;
+  transform: none;
+  border-bottom: none;
+}
+
+.nav-item-divider::before,
+.nav-item-divider::after {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 30px;
+  background-color: #ccc;
+  margin: 0 10px;
+  transition: all 0.4s;
+}
+
+.nav-item-divider:last-child::before,
+.nav-item-divider:last-child::after {
+  display: none;
+}
+
+.nav-item:hover .nav-item-divider::before {
+  background-color: #000;
+}
+
+.container {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(91, 77, 77, 0.1);
+  max-width: 100%;
+}
+
 h1 {
-    color: #1149ff;
+  color: #1149ff;
 }
+
 .form-group label {
-    color: #343a40;
+  color: #343a40;
 }
+
 .form-control {
-    border: 1px solid #ced4da;
+  border: 1px solid #ced4da;
 }
+
 .form-control:focus {
-    border-color: #0755ff;
-    box-shadow: 0 0 0 0.2rem rgba(12, 82, 163, 0.25);
+  border-color: #0755ff;
+  box-shadow: 0 0 0 0.2rem rgba(12, 82, 163, 0.25);
 }
+
 .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
+  background-color: #007bff;
+  border-color: #007bff;
 }
+
 .btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
+  background-color: #0056b3;
+  border-color: #0056b3;
 }
+
 .btn-primary:focus {
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
 }
-  
