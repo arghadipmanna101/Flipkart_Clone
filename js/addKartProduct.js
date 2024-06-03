@@ -41,7 +41,7 @@ function createSearchProductCard(product) {
                   </br></br>
                 </div>
                 <div>
-                  <button class="btn btn-primary">Add To Cart</button>
+                  <a class="btn btn-primary" href="../viewcart/?query=${product.name}">Add To Cart</a>
                   <button class="btn btn-danger">Buy Now</button>
                 </div>
             </div>       

@@ -11,6 +11,7 @@ footer{
     color: #fff;
     font-size: 12px;
 }
+
 footer .footerTop{
     padding: 22px;
 }
@@ -27,7 +28,7 @@ footer .footerTop ul{
 footer .footerI h5{
     color: #878787;
     font-size: 12px;
-    margin-bottom: 12px;
+    margin: 20px 5px;
 }
 footer .mailSocial{
     border-left: 1px solid #454d5e;

@@ -1,7 +1,7 @@
 // footer and content page load 
 document.addEventListener("DOMContentLoaded", () => {
   const components = [
-    { id: "content-page", url: "pages/content-page.html" },
+    // { id: "content-page", url: "pages/content-page.html" },
     { id: "footer", url: "footer/footer.html" },
   ];
 
@@ -92,6 +92,14 @@ function shopUnder500(products) {
 // best of Electronics 
 function bestOfEelecronics_products(products) {
   const productList = document.getElementById("bestOfElectronics-product");
+  productList.innerHTML = products
+    .map((product) => createProductCard(product))
+    .join("");
+}
+
+// seletcYourChoice-product
+function seletcYourChoice_products(products) {
+  const productList = document.getElementById("seletcYourChoice-product");
   productList.innerHTML = products
     .map((product) => createProductCard(product))
     .join("");
@@ -191,10 +199,13 @@ function fetchAndShuffleDataUnder(url, callback, numberOfProducts) {
 //  mobileUnder15000Data()
 // Fetch data for best-deal products  rendom products & top selection
 bestOfEelecronics("json-api/product.json", bestOfEelecronics_products, 6);
+
 fetchAndShuffleData("json-api/product.json", rendom_products, 12);
 fetchAndShuffleData("json-api/product.json", best_deal_products, 18);
 fetchAndShuffleData("json-api/product.json", top_selection_products, 12);
 fetchAndShuffleData("json-api/product.json", s2_products, 12);
+fetchAndShuffleData("json-api/product.json", seletcYourChoice_products, 120);
+
 fetchAndShuffleDataMobile15000("json-api/product.json", mobileUnder15000, 12);
 fetchAndShuffleDataUnder("json-api/product.json", shopUnder500, 18);
 

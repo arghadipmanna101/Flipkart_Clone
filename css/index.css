@@ -430,7 +430,6 @@ body {
   width: 100px;
   height: 100px;
   z-index: -1;
-  background-image: url("../img/flipkart_lite.png");
   background-position: center;
   background-size: cover;
 }

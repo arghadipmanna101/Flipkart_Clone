@@ -89,3 +89,17 @@ footer span {
     background-color: rgb(255, 117, 67);
     color: white;
 }
+
+
+
+/* card items  */
+
+#itemsInCart{
+    height: 60vh;
+    overflow-y: scroll;
+}
+
+#itemsInCart p{
+margin: 0;
+padding: 0;
+}
