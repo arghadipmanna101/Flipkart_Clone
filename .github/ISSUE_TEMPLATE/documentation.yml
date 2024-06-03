@@ -7,36 +7,21 @@ body:
     attributes:
       label: "What's wrong with the existing documentation"
       description: "Which things do we need to add or delete"
-      validations:
-        required: true
+  
+  - type: textarea
+    attributes:
+      label: "File to change"
+      description: "Specify which file needs the changes"
 
   - type: textarea
     attributes:
-      label: "Which file to change"
-      description: ""
-      validations:
-        required: false
+      label: "Details of the change"
+      description: "Describe what needs to be changed"
 
   - type: textarea
     attributes:
-      label: "Which file to change"
-      description: ""
-      validations:
-        required: true
-
-  - type: textarea
-    attributes:
-      label: "What to change"
-      description: ""
-      validations:
-        required: true
-
-  - type: textarea
-    attributes:
-      label: "What type of change"
-      description: "for example: grammatical errors, adding new sections"
-      validations:
-        required: true
+      label: "Type of change"
+      description: "For example: grammatical errors, adding new sections"
 
   - type: checkboxes
     attributes:
