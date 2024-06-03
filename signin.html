@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="google-signin-client_id" content="YOUR_GOOGLE_CLOUD_ID">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-In</title>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
     <link rel="stylesheet" href="./signup.css">
 </head>
 <body>
@@ -23,11 +25,14 @@
 
             <div class="input-group">
                 <input id="mobile" class="mobile" type="text" placeholder="Enter Mobile Number"/>
-            </div>
-            
+            </div>    
+          
             <div class="input-group">
                 <input id="pass" class="password" type="password" placeholder="Enter Password"/>
             </div>
+
+            <span style="color:blue;font-size: 14px;width: 80%;
+            padding-left: 30px;"><a href="signup.html">forgot password?</a></span>
             <div class="terms">
                 <p class="textm">By continuing, you agree to Flipkart's 
                     <span style="color: blue;"> Terms of Use</span>
@@ -36,6 +41,7 @@
             <div class="button-group">
                 <button onclick="Signin()" class="login-button">Login</button>
             </div>
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
             <div class="button-group">
                 <button onclick="window.location.href='signup.html'" class="signup-button">Not an Existing User? Signup</button>
             </div> 
@@ -46,8 +52,18 @@
 </body>
 </html>
 <script>
+    function onSignIn(googleUser) {
+        var profile = googleUser.getBasicProfile();
+        console.log('ID: ' + profile.getId()); 
+        console.log('Name: ' + profile.getName());
+        console.log('Image URL: ' + profile.getImageUrl());
+        console.log('Email: ' + profile.getEmail()); 
+    }
     $(function(){
     $("#container").load("./Navabar.html");
   });
 </script>
 <script src="./Signin.js"></script>
+
+
+

@@ -1,7 +1,8 @@
 const categoriesData = [
     {
         "id": "grocery",
-        "name": "Grocery",
+        "name": "Grocery&Food",
+        "image": "images/grocery.webp", // Add the path to the image
         "subcategories": [
             {
                 "id": "fruits-vegetables",
@@ -26,13 +27,14 @@ const categoriesData = [
             {
                 "id": "desserts",
                 "name": "Desserts",
-                "subcategories": null
+                "subcategories": ["Cookies", "Ice-Cream"]
             }
         ]
     },
     {
         "id": "electronics",
         "name": "Electronics",
+        "image": "images/electronics.png",
         "subcategories": [
             {
                 "id": "mobile-phones",
@@ -54,6 +56,7 @@ const categoriesData = [
     {
         "id": "clothing",
         "name": "Clothing",
+        "image": "images/clothing.png",
         "subcategories": [
             {
                 "id": "mens-clothing",
@@ -75,10 +78,11 @@ const categoriesData = [
     {
         "id": "home-furniture",
         "name": "Home & Furniture",
+        "image": "images/home-furniture.png",
         "subcategories": [
             {
                 "id": "Kitchen-appliances",
-                "name": "kitchen Appliances",
+                "name": "Kitchen Appliances",
                 "subcategories": ["Blenders", "Microwaves", "Coffee Makers", "Pressure cookers", "Pans"]
             },
             {
@@ -91,10 +95,9 @@ const categoriesData = [
                 "name": "Home Decor",
                 "subcategories": ["Rugs", "Lamps", "Mirrors", "Clocks"]
             },
-            ,
             {
                 "id": "pet",
-                "name": "Pet supplies",
+                "name": "Pet Supplies",
                 "subcategories": ["Dogs", "Cats", "Fish and Aquatics"]
             }
         ]
@@ -102,6 +105,7 @@ const categoriesData = [
     {
         "id": "beauty",
         "name": "Beauty",
+        "image": "images/beauty.png",
         "subcategories": [
             {
                 "id": "face",
@@ -123,6 +127,7 @@ const categoriesData = [
     {
         "id": "travel",
         "name": "Travel",
+        "image": "images/travel.png",
         "subcategories": [
             {
                 "id": "luggage",
@@ -143,7 +148,8 @@ const categoriesData = [
     },
     {
         "id": "sports-stationary",
-        "name": "Sports & Stationary",
+        "name": "Sports",
+        "image": "images/sports-stationary.png",
         "subcategories": [
             {
                 "id": "fitness-equipment",
@@ -163,15 +169,25 @@ const categoriesData = [
             {
                 "id": "toys",
                 "name": "Toys",
-                "subcategories": null
+                "subcategories": [
+                    "Action Figures",
+                    "Board Games",
+                    "Dolls",
+                    "Puzzles",
+                    "Remote Control Toys"
+                ]
             },
-            ,
             {
                 "id": "stationary",
                 "name": "Stationary",
-                "subcategories": null
+                "subcategories": [
+                    "Notebooks",
+                    "Pens",
+                    "Markers",
+                    "Folders",
+                    "Sticky Notes"
+                ]
             }
-
         ]
     }
 ];
@@ -180,7 +196,14 @@ $(document).ready(function () {
     const categoriesList = $("#categories");
 
     function createCategoryItem(categoryData) {
-        const categoryItem = $("<li>").text(categoryData.name);
+        const categoryItem = $("<li>");
+        const categoryLink = $("<a>").attr("href", `#${categoryData.id}`).text(categoryData.name);
+
+        // Adding images to the main category items only
+        const categoryImage = $("<img>").attr("src", `./assets/images/${categoryData.id}.webp`).attr("alt", categoryData.name);
+        categoryLink.prepend(categoryImage);
+
+        categoryItem.append(categoryLink);
 
         const subcategoriesList = $("<ul>");
 
@@ -189,20 +212,31 @@ $(document).ready(function () {
             subcategoriesList.append(singleItem);
         } else {
             $.each(categoryData.subcategories, function(index, subcategoryData) {
-                if (subcategoryData && subcategoryData.name == undefined) {
-                    const singleItem = $("<li>").text(subcategoryData);
-                    subcategoriesList.append(singleItem);
+                if (subcategoryData && typeof subcategoryData === "string") {
+                    const subcategoryItem = $("<li>").text(subcategoryData);
+                    subcategoriesList.append(subcategoryItem);
                 } else if (subcategoryData) {
-                    const subcategoryItem = createCategoryItem(subcategoryData);
+                    const subcategoryItem = createSubcategoryItem(subcategoryData);
                     subcategoriesList.append(subcategoryItem);
                 }
             });
         }
 
         categoryItem.append(subcategoriesList);
-        console.log(categoryItem);
-
         return categoryItem;
+    }
+
+    function createSubcategoryItem(subcategoryData) {
+        const subcategoryItem = $("<li>").text(subcategoryData.name);
+        if (subcategoryData.subcategories) {
+            const subsubcategoriesList = $("<ul>");
+            $.each(subcategoryData.subcategories, function(index, subsubcategoryData) {
+                const subsubcategoryItem = $("<li>").text(subsubcategoryData);
+                subsubcategoriesList.append(subsubcategoryItem);
+            });
+            subcategoryItem.append(subsubcategoriesList);
+        }
+        return subcategoryItem;
     }
 
     categoriesData.forEach(function(categoryData) {
@@ -210,6 +244,5 @@ $(document).ready(function () {
         categoriesList.append(categoryItem);
     });
 });
-
 
 

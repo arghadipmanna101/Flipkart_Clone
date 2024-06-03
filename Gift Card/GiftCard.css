@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    width: 100%;
+    height:100vh;
+    font-size: 14px;
+    background-color: #f1f3f6;
+    color: #212121;
+    /* overflow-x: hidden; */
+}
+
+.gift-container{
+   
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    min-width: 978px;
+    max-width: 1680px;
+    padding: 50px;
+}
+
+.gift-container h1{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.gift-container p {
+    line-height: 1.45;
+    font-size: 12px;
+    color: #878787;
+    margin-top: 10px;
+    
+}
+
+.banner-1{
+    margin-top: 10px;
+    width: 100%;
+  
+    
+}
+
+.banner-2{
+    width: 100%;
+}
+
+.banner-3{
+    width: 100%;
+}
+
+.banner-4{
+    width: 100%;
+   
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+   
+
+
+}
+
+.cards img{
+   width: 416px;
+   border-radius: 20px;
+
+}
+
+
+.banner-5{
+    width: 100%;
+    margin: auto;
+   
+}
+
+.bottom-text{
+    padding: 10px 25px;
+    color: #878787;
+    background-color: #fff;
+    font-size: 11px;
+    text-align: left;
+}
+
+
+.bottom-text h2 strong{
+    font-size: 14px;
+    line-height: 16px;
+    font-size: 15px;
+    color: #878787;
+    margin-bottom: 12px;
+}
+
+.bottom-text p {
+    font-size: 11px;
+    font-weight: 400;
+}

@@ -1,0 +1,76 @@
+/* styles.css */
+
+.container {
+    background: linear-gradient(45deg, #2d7cea, #e52e71);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased box shadow */
+    margin-bottom: 75px;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Added hover effect */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25); /* Increased box shadow on hover */
+}
+
+.card-header {
+    background-color: #fff;
+    border: none;
+    border-radius: 15px 15px 0 0;
+    padding: 15px 20px;
+}
+
+.card-body {
+    border-radius: 0 0 15px 15px;
+    padding: 20px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+.card-header button {
+    width: 100%;
+    text-align: left;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+    transition: color 0.3s ease;
+}
+
+.card-header button:focus {
+    outline: none;
+}
+
+.card-body p {
+    margin-bottom: 0;
+}
+
+.btn-link {
+    text-decoration: none;
+    color: #ff9f80;
+    font-weight: bold;
+}
+
+.btn-link:hover {
+    text-decoration: none;
+    color: #ff7f50;
+}
+
+.heading {
+    color: #ff9f80;
+    font-size: 30px;
+    text-align: center;
+}
+
+.card-body {
+    font-weight: 400;
+}

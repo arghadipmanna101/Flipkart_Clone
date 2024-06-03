@@ -1,87 +1,391 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flipkart Order Tracking</title>
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    
-    .order-card {
-      margin-bottom: 20px;
-    }
-    .order-image {
-      width: 100px;
-      height: 100px;
-      object-fit: cover;
-    }
-    .track-orders-title {
-      color: blue;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Orders</title>
+    <link rel="stylesheet" href="orders.css">
 </head>
 <body>
-  <div class="container">
-    <h1 class="mt-4 mb-4 track-orders-title">Track Your Orders</h1>
+    <header>
+        <div id="navbar-container"></div>
+        <div id="loader"></div>
+        <div id="category-list"></div>
+    </header>
 
-    <!-- Example Order Card 1 -->
-    <div class="card order-card">
-      <div class="card-header">
-        Order #123456
-      </div>
-      <div class="card-body">
-        <div class="row">
-          <div class="col-md-4">
-            <img src="https://rewardmobile.co.uk/wp-content/uploads/2021/01/S21_5G_PhantomViolet_FrontBack-1.png" alt="Product Image" class="order-image">
-          </div>
-          <div class="col-md-8">
-            <h5 class="card-title">Smartphone - Samsung Galaxy S21</h5>
-            <p class="card-text">Order Status: <strong>Processing</strong></p>
-            <p class="card-text">Estimated Delivery: <strong>May 20, 2024</strong></p>
-          </div>
+    <div class="linkers part">
+        <div class="link">
+            <a href="/index.html" class="click">Home ></a>
         </div>
-      </div>
+        <div class="link">
+            <a class="click" href="/#">profile ></a>
+        </div>
+        <div class="link">
+            <a class="click" href="/order.html">My Orders </a>
+        </div>
     </div>
 
-    <!-- Example Order Card 2 -->
-    <div class="card order-card">
-      <div class="card-header">
-        Order #654321
-      </div>
-      <div class="card-body">
-        <div class="row">
-          <div class="col-md-4">
-            <img src="https://www.techandsoft.com/wp-content/uploads/2019/08/91Qbl1lVWL._SL1500_.jpg" alt="Product Image" class="order-image">
-          </div>
-          <div class="col-md-8">
-            <h5 class="card-title">Laptop - Dell XPS 13</h5>
-            <p class="card-text">Order Status: <strong>Shipped</strong></p>
-            <p class="card-text">Estimated Delivery: <strong>May 22, 2024</strong></p>
-          </div>
+    <div class="containers">
+        <div id="filtersBox">
+            <div class="filtersTitle">
+                <span>Filters</span>
+            </div>
+            <div class="orderStatus">
+                <div id="info">ORDER STATUS</div>
+                <div class="opt">
+                    <input type="checkbox"><span>On the Way</span>
+                </div>
+                <div class="opt">
+                    <input type="checkbox"><span>Delivered</span>
+                </div>
+                <div class="opt">
+                    <input type="checkbox"><span>Cancelled</span>
+                </div>
+                <div class="opt">
+                    <input type="checkbox"><span>Returned</span>
+                </div>
+            </div>
+            <div class="orderTime">
+                <div id="info">ORDER TIME</div>
+                <div class="opt">
+                    <input type="checkbox"><span>Last 30 days</span>
+                </div>
+                <div class="opt">
+                    <input type="checkbox"><span>2023</span>
+                </div>
+                <div class="opt">
+                    <input type="checkbox"><span>2022</span>
+                </div>
+                <div class="opt">
+                    <input type="checkbox"><span>2021</span>
+                </div>
+                <div class="opt">
+                    <input type="checkbox"><span>2020</span>
+                </div>
+                <div class="opt">
+                    <input type="checkbox"><span>Older</span>
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="column orders">
+            <div class="search">
+                <div class="search-bar">
+                    <input type="text" class="search-input" placeholder="Search your orders here">
+                </div>
+                <button class="search-button">
+                    <div class="search-icon">
+                        <svg width="16" height="16" viewBox="0 0 17 18" class="icon" xmlns="http://www.w3.org/2000/svg"><g fill="#fff" fill-rule="evenodd"><path class="" d="m11.618 9.897l4.225 4.212c.092.092.101.232.02.313l-1.465 1.46c-.081.081-.221.072-.314-.02l-4.216-4.203"></path><path class="" d="m6.486 10.901c-2.42 0-4.381-1.956-4.381-4.368 0-2.413 1.961-4.369 4.381-4.369 2.42 0 4.381 1.956 4.381 4.369 0 2.413-1.961 4.368-4.381 4.368m0-10.835c-3.582 0-6.486 2.895-6.486 6.467 0 3.572 2.904 6.467 6.486 6.467 3.582 0 6.486-2.895 6.486-6.467 0-3.572-2.904-6.467-6.486-6.467"></path></g></svg>
+                        <span>Search Orders</span>
+                    </div>
+                </button>
+            </div>
+
+            <div class="orderContainer">
+                <div class="orders">
+                    <div class="row order-row">
+                        <div class="col-details">
+                            <div class="row">
+                                <div class="col-image">
+                                    <div class="img-container">
+                                        <div class="img" style="height: 75px; width: 75px;">
+                                            <img class="img1" alt="OnePlus12" src="https://images-cdn.ubuy.co.in/65a4d1da79c8e03a06140a3c-oneplus-12-24gb-1tb-6-82-amoled.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-description">
+                                    <div class="details-text">
+                                        <span class="row item names">OnePlus 12 (Flowy Emerald, 256 GB)  (12 GB RAM)</span>
+                                        <div class="row attributes">
+                                            <span class="color-attribute">
+                                                <span class="type">Color: </span>
+                                                <span class="val">Flowy Emerald</span>
+                                            </span>
+                                            <span class="size-attribute">
+                                                <span class="type">Size: </span>
+                                                <span class="val">256 GB</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-price">
+                            ₹59,299
+                        </div>
+                        <div class="col-status">
+                            <div>
+                                <div class="circle"></div>
+                                <span class="date">Delivered on May 2</span>
+                                <div class="msg">Your item has been delivered</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div class="orderContainer">
+                <div class="orders">
+                    <div class="row order-row">
+                        <div class="col-details">
+                            <div class="row">
+                                <div class="col-image">
+                                    <div class="img-container">
+                                        <div class="img" style="height: 75px; width: 75px;">
+                                            <img class="img1" alt="Tanso Jinsei Full Graphite" src="https://rukminim2.flixcart.com/image/850/1000/xif0q/racquet/y/4/l/g4-3-25-inches-strung-jinsei-full-graphite-ultra-light-weight-original-imagx7vy2fachrzb.jpeg?q=90&crop=false">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-description">
+                                    <div class="details-text">
+                                        <span class="row item names">Tanso Jinsei Full Graphite Ultra Light W...</span>
+                                        <div class="row attributes">
+                                            <span class="color-attribute">
+                                                <span class="type">Color: </span>
+                                                <span class="val">White</span>
+                                            </span>
+                                            <span class="size-attribute">
+                                                <span class="type"></span>
+                                                <span class="val"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-price">
+                            ₹1,039
+                        </div>
+                        <div class="col-status">
+                            <div>
+                                <div class="circle"></div>
+                                <span class="date">Delivered on Apr 20</span>
+                                <div class="msg">Your item has been delivered</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div class="orderContainer">
+                <div class="orders">
+                    <div class="row order-row">
+                        <div class="col-details">
+                            <div class="row">
+                                <div class="col-image">
+                                    <div class="img-container">
+                                        <div class="img" style="height: 75px; width: 75px;">
+                                            <img class="img1" alt="Apple 2020 Macbook Air" src="https://shoplet.pl/286301-large_default/apple-macbook-air-m1-133-wqxga-8gb-256gb-mac-os-srebrny.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-description">
+                                    <div class="details-text">
+                                        <span class="row item names">Apple 2020 Macbook Air Apple M1 ..</span>
+                                        <div class="row attributes">
+                                            <span class="color-attribute">
+                                                <span class="type">Color: </span>
+                                                <span class="val">Space Grey</span>
+                                            </span>
+                                            <span class="size-attribute">
+                                                <span class="type">Size: </span>
+                                                <span class="val">13.3 inch</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-price">
+                            ₹73,990
+                        </div>
+                        <div class="col-status">
+                            <div>
+                                <div class="circle"></div>
+                                <span class="date">Delivered on Mar 17</span>
+                                <div class="msg">Your item has been delivered</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div class="orderContainer">
+                <div class="orders">
+                    <div class="row order-row">
+                        <div class="col-details">
+                            <div class="row">
+                                <div class="col-image">
+                                    <div class="img-container">
+                                        <div class="img" style="height: 75px; width: 75px;">
+                                            <img class="img1" alt="CASIO FX-350MS 2nd Edition Scientific Calculator" src="https://www.casio.com/content/dam/casio/product-info/locales/intl/en/calc/product/scientific/F/FX/FX3/fx-350EX/assets/fx-350EX_Seq1.jpg.transform/main-visual-sp/image.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-description">
+                                    <div class="details-text">
+                                        <span class="row item names">CASIO FX-350MS 2nd Edition Scientific C...</span>
+                                        <div class="row attributes">
+                                            <span class="color-attribute">
+                                                <span class="type">Color: </span>
+                                                <span class="val">Black</span>
+                                            </span>
+                                            <span class="size-attribute">
+                                                <span class="type">Size: </span>
+                                                <span class="val">Medium</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-price">
+                            ₹660
+                        </div>
+                        <div class="col-status">
+                            <div>
+                                <div class="circle"></div>
+                                <span class="date">Delivered on Jan 20</span>
+                                <div class="msg">Your item has been delivered</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="end"><div class="of-orders"><span>No more results to display</span></div></div>
+        </div>    
     </div>
 
-    <!-- Example Order Card 3 -->
-    <div class="card order-card">
-        <div class="card-header">
-          Order #789012
-        </div>
-        <div class="card-body">
-          <div class="row">
-            <div class="col-md-4">
-              <img src="https://cdn.afterdawn.fi/v3/news/original/Sony-WH-1000XM4.jpg" alt="Product Image" class="order-image">
+    <footer>
+        <div class="foot-top">
+          <div class="foot-left">
+            <div class="about">
+              <h5>ABOUT</h5>
+              <ul>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Flipkart Stories</a></li>
+                <li><a href="">Press</a></li>
+                <li><a href="">Corporate Information</a></li>
+               <li><i><a href="">Explore Plus</a></i></li>
+              </ul>
             </div>
-            <div class="col-md-8">
-              <h5 class="card-title">Headphones - Sony WH-1000XM4</h5>
-              <p class="card-text">Order Status: <strong>Processing</strong></p>
-              <p class="card-text">Estimated Delivery: <strong>May 20, 2024</strong></p>
+            <div class="about">
+              <h5>GROUP COMPANIES</h5>
+              <ul>
+                <li><a href="https://www.myntra.com/">Myntra</a></li>
+                <li><a href="https://www.flipkartwholesale.com/">Flipkart Wholesale</a></li>
+                <li><a href="https://www.cleartrip.com/">Cleartrip</a></li>
+                <li><a href="https://www.shopsy.in/">Shopsy</a></li>
+              </ul>
+            </div>
+            <div class="about">
+              <h5>HELP</h5>
+              <ul>
+                <li><a href="">Payments</a></li>
+                <li><a href="">Shipping</a></li>
+                <li><a href="">Cancellation & Returns</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Report Infringement</a></li>
+              </ul>
+            </div>
+            <div class="about">
+              <div id="policy">
+                <h5>CONSUMER POLICY</h5>
+                <ul>
+                  <li><a href="">Cancellation & Returns</a></li>
+                  <li><a href="">Terms Of Use</a></li>
+                  <li><a href="">Security</a></li>
+                  <li><a href="">Privacy</a></li>
+                  <li><a href="">Sitemap</a></li>
+                  <li><a href="">Grievance Redressal</a></li>
+                  <li><a href="">EPR Compilance</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    
+          <div class="foot-right">
+            <div class="part">
+              <div class="mail">
+                <h5>Mail Us:</h5>
+                <p>
+                  Flipkart Internet Private Limited,
+                  Buildings Alyssa, Begonia & Clove Embassy Tech Village,
+                  Outer Ring Road, Devarabeesanahalli Village, Bengaluru, 560103, Karnataka, India
+                </p>
+              </div>
+              <div class="social">
+                <h5>Social</h5>
+                <ul>
+                  <li><a href=""><i class="bi bi-facebook"></i></a></li>
+                  <li><a href=""><i class="bi bi-twitter"></i></a></li>
+                  <li><a href=""><i class="bi bi-youtube"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="office">
+              <h5>Registered Office Address:</h5>
+              <p>Flipkart Internet Private Limited,
+                Buildings Alyssa, Begonia & Clove Embassy Tech Village,
+                Outer Ring Road, Devarabeesanahalli Village, Bengaluru, 560103, Karnataka, India</p>
+              <p>CIN : U51109KA2012PTC066107</p>
+              <P>Telephone: <a href="">044-45614700</a></P>
             </div>
           </div>
         </div>
-      </div>
+        <div class="foot-down">
+    
+          <div>
+    
+            <ul>
+              <li><a href=""><i class="bi bi-briefcase-fill"></i> Become a seller</a></li>
+              <li><a href=""><i class="bi bi-gift-fill"></i> Gift Cards</a></li>
+              <li><a href=""><i class="bi bi-question-circle-fill"></i> Help Center</a></li>
+              <div>
+                <li>&copy;<span class="update_Cyear"></span> Flipkart.com</li>
+              </div>
+             </ul>
+          </div>
+    
+          
+          <div class="payment-icons">
+            <img src="./assets/images/visa.jpeg" alt="Visa">
+            <img src="./assets/images/mastercard.jpeg" alt="Mastercard">
+            <img src="./assets/images/rupay.png" alt="rupay">
+            <img src="./assets/images/discover.png" alt="discover">
+            <img src="./assets/images/emi.png" alt="emi">
+            <img src="./assets/images/net_banking.png" alt="net banking">
+            <img src="./assets/images/cod.png" alt="cash on delivery">
+          </div>
+        </div>
+      </footer>
 
-  </div>
+    <script>
+        $(function () {
+            $("#loader").load("./preloader.html");
+            $("#category-list").load("./categorylist.html");
+            $("#top-deals").load("./topdeals.html");
+        });
+
+        fetch('./Navabar.html')
+            .then(response => response.text())
+            .then(data => {
+                // Insert the retrieved HTML content into the navbar-container
+                document.getElementById('navbar-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error fetching navbar:', error));
+    </script>
 </body>
 </html>
 
