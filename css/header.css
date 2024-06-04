@@ -54,6 +54,15 @@
     width: 28vw;
     padding: 2px;
   }
+  .cartLogoandname{
+    position: relative ;
+  }
+  #cartItems{
+    position: absolute;
+    top: -15px;
+    left: 3px;
+  }
+
 
   @media (max-width: 992px) { 
     #header-bluebg .b_a_s, #more_h{

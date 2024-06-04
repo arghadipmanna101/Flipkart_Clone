@@ -50,3 +50,6 @@ function createfashionsProductCard(product) {
       })
       .catch(error => console.error('Error fetching data:', error));
 
+
+
+  

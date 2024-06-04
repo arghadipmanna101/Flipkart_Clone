@@ -29,7 +29,7 @@ body {
 .signupin .rightSignuppanal {
     padding: 10px;
     background: #fff;
-    height:400px;
+    height: 400px;
     width: 30vw;
     display: flex;
     align-items: center;
@@ -98,4 +98,31 @@ body {
 .I-qZ4MvLRlQb input[type="text"]:focus~.underline,
 .I-qZ4MvLRlQb input[type="text"]:valid~.underline {
     transform: scaleX(1);
+}
+
+@media screen and (max-width: 1200px) {
+    .signupin .leftpanal {
+        width: 30vw;
+    }
+    .signupin .rightSignuppanal {
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .signupin .leftpanal {
+        width: 35vw;
+        padding: 15px;
+    }
+    .signupin .rightSignuppanal {
+        width: 45vw;
+    }
+}
+@media screen and (max-width: 800px) {
+    .signupin .leftpanal {
+        width: 43vw;
+    }
+    .signupin .rightSignuppanal {
+        width: 56vw;
+    }
 }

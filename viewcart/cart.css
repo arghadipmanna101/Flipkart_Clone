@@ -4,9 +4,10 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
+    /* border: 1px solid red; */
 }
 body {
-    background-color: rgb(244, 237, 237);
+    background-color:#f1f3f6;
 }
 nav {
     width: 100%;
@@ -14,7 +15,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 8px 5%;
-    background-color: rgb(75, 75, 255);
+    background-color: #2874F0;
 }
 .nav-left{
     display: flex;
@@ -35,7 +36,6 @@ button {
 }
 .search {
     position: relative;
-    background-color: blueviolet;
 }
 i {
     position: absolute;
@@ -93,13 +93,65 @@ footer span {
 
 
 /* card items  */
-
+#cardInProduct .container-{
+margin: 5px 2vw;
+}
 #itemsInCart{
     height: 60vh;
     overflow-y: scroll;
+}
+#itemsInCart .itemDetail, .deliveryDate{
+    font-size: small;
+}
+#itemsInCart .itemDetail{
+    width: 60%;
+}
+
+#cardInProduct .placeOrder{
+    background: #fb641b;
+    width: max-content;
+    padding: 10px 50px;
+    border-radius: 5px;
 }
 
 #itemsInCart p{
 margin: 0;
 padding: 0;
+
+}
+
+
+@media screen and (max-width : 1070px) {
+    footer{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width : 890px) {
+    footer{
+        font-size: 11px;
+        padding: 0 5px;
+    }
+    input{
+        width:40vw ;
+        padding: 5px;
+        font-size: 12px;
+    }
+    nav button{
+        padding: 5px;
+        width: 100px;
+        font-size: 12px;
+    }
+    .nav-left{
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width : 670px) {
+   nav img{
+    height: 20px;
+   }
+   input, nav button{
+    font-size: 8px;
+   }
+
 }

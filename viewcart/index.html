@@ -2,14 +2,15 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- font awesome icons link -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#2874F0" id="themeColor" />
+    <title>Shopping Cart | Flipkart.com </title>
+    <link rel="icon" type="image/x-icon" href="../img/flipkart_lite.png" />
     <script src="https://kit.fontawesome.com/c732ec9339.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
     <link rel="stylesheet" href="./cart.css">
-    <link rel="shortcut icon" href="../img/flipkart_favicon.ico" type="image/x-icon">
-    <title>Shopping Cart | Flipkart.com</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
 
 <body>
@@ -17,8 +18,7 @@
     <nav>
         <div class="nav-left">
             <a class="navbar-brand" href="https://flipkart-clone-seven-azure.vercel.app/">
-                <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
-                    width="160" height="40" title="Flipkart" alt="Flipkart" />
+                <img src="../img/flipcartlogo.PNG" width=auto height="40" title="Flipkart" alt="Flipkart" />
             </a>
 
             <div class="search">
@@ -41,45 +41,51 @@
             <button>Login</button>
         </div>
     </div>
- 
+
     <div class="container-fluid mt-4" id="cardInProduct">
-        <div class="container">
+        <div class="container-">
             <div class="row">
                 <div class="col-md-8">
-                    <div class="deliver_c_pc d-flex justify-content-between align-items-center">
-                        <p>Delever to: <strong>Bhopal-462025</strong></p>
-                        <p class="btn">Change</p>
+                    <div class="deliver_c_pc d-flex justify-content-between align-items-center bg-white">
+                        <p class="p-3">Delever to: <strong>Bhopal-462025</strong></p>
+                        <button class="btn m-3">Change</button>
                     </div>
                     <div id="itemsInCart">
-                        <!-- <div class="itemInCart d-flex">
-                        <img src="../img/appliances.jpg" alt="items">
-                        <div class="itemDetail">
-                            <div>
-                                <p>Noise Icon 4 with Stunning 1.96'' AMOLED Display, Metallic </<p>Finish, BT Calling Smartwatch </p>
-                            <p> Forest Green Strap, Regular</p>
-                            <p> Seller: Ezig </p>
+                        <!-- <div class="itemInCart d-flex bg-white p-3 m-1">
+                            <div style="height: 112px; width: 112px;" class="m-3"><img src="../img/appliances.jpg"
+                                    alt="items" width="100%"></div>
+                            <div class="itemDetail">
+                                <div>
+                                    <p>Noise Icon 4 with Stunning 1.96'' AMOLED Display, Metallic Finish, BT
+                                        Calling Smartwatch </p>
+                                    <p> Forest Green Strap, Regular</p>
+                                    <p> Seller: Ezig </p>
+                                </div>
+                                <div>
+                                    <b>₹6,999</b> 1 offer applied
+                                </div>
                             </div>
-                            <div>
-                                ₹6,999₹1,99971% Off1 offer applied
+                            <div class="deliveryDate">
+                                Delivery by Fri Jun 7 | ₹40Free
                             </div>
-                        </div>
-                        <div class="deliveryDate">
-                            Delivery by Fri Jun 7 | ₹40Free
-                        </div>
-                    </div> -->
+                        </div> -->
+
+                    </div>
+                    <div class="d-flex flex-row-reverse p-3 bg-white" style="border: 2px solid #efefef;">
+                        <button class="placeOrder text-white">PLACE ORDER</button>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div>
                         <h5>PRICE DETAILS</h5>
                         <div id="priceDetail">
-                            <pre>
+                            <!-- <pre>
 Price (2 items)                 ₹15,998
 Discount                        0
 Delivery Charges                ₹110 Free
 Total Amount                    <b>₹3,098</b> 
 You will save ₹110 on this order
-                            </pre>
+                            </pre> -->
                         </div>
                         <div>
                             <button class="btn btn-danger">Buy Now</button>
@@ -107,3 +113,5 @@ You will save ₹110 on this order
 </body>
 
 </html>
+
+

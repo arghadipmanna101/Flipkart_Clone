@@ -16,3 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+// for kart
+const cartItemsFromStorage = JSON.parse(localStorage.getItem("filteredProducts"));
+let cartItems=cartItemsFromStorage.length
+
+document.getElementById("cartItems").innerText=cartItems
