@@ -31,19 +31,28 @@
       position: absolute;
     }
 
+    .nav-link{
+      position: absolute;
+      text-align: center;
+    }
+
     .navbar-nav .nav-link {
       color: black;
+      margin: auto;
       /* padding: 10px 15px; */
       font-size: 16px;
       text-transform: uppercase;
       position: relative;
-      transition: background-color 0.5s;
+      /* transition: background-color 0.5s; */
+      border-radius: 10px;
+
     }
+
     .navbar-nav .nav-link:hover {
       display: block;
-      background-color: white;
-      width:7.47rem;
-      height: 4.8rem;
+      /* background-color: white; */  
+      /* width:7.47rem;      (this property ditorts the nav bar)
+      height: 2rem;  */
       align-content: center;
       text-align: center;
       border-radius: 10px;
@@ -52,6 +61,7 @@
     .navbar-nav .nav-link img {
       height: 20px;
       padding-right: 20px;
+      border-radius: 10px;
     }
 
     .navbar-nav .dropdown-menu {
@@ -112,10 +122,15 @@
 
     .navbar-nav .nav-item:hover .nav-link {
       color: black;
+    
+    }
+    .nav-item 
+    {
+      border-radius: 10px;
     }
     
     /* Adjustments */
-    .navbar-nav .nav-link {
+    .navbar-nav {
       margin-left: 10px; /* Adjust the margin as needed */
     }
     /* .navbar-nav{
