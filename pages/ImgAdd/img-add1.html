@@ -11,7 +11,7 @@
   <style>
 
     .navbar-nav .nav-link:hover {
-      border-bottom: 2px solid #007bff; /* Change the color as desired */
+      border-bottom: 1px solid #007bff; /* Change the color as desired */
       
     }
     .nav-link{
@@ -31,16 +31,12 @@
   
 
     .nav-item {
-      transition: background-color 0.5s ease; 
+      transition: background-color 0.2s ease; 
     }
 
+   
     .nav-item:hover {
-      background-color: grey;
-      text-decoration: underline;
-      opacity:1;
-    }
-    .nav-item:hover {
-      background-color: rgb(182, 181, 181);
+      background-color: rgb(0, 0, 0);
       text-decoration: none;
       opacity: 0.85;
       transition: all 0.2s ease-in;
@@ -79,7 +75,7 @@
 
 
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="Navbar.css">
+  <link rel="stylesheet" href="../Navbar/Navbar.css">
 
 
 </head>
@@ -126,11 +122,11 @@
             Profile
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="profile.html">Profile</a>
-            <a class="dropdown-item" href="signup.html">SignUp</a>
-            <a class="dropdown-item" href="signin.html">SignIn</a>
-            <a class="dropdown-item" href="FPZ.html">Flipkart Plus Zone</a>
-            <a class="dropdown-item" href="order.html">Orders</a>
+            <a class="dropdown-item" href="../Profile/profile.html">Profile</a>
+            <a class="dropdown-item" href="../Auth/signup.html">SignUp</a>
+            <a class="dropdown-item" href="../Auth/signin.html">SignIn</a>
+            <a class="dropdown-item" href="../FPZ/FPZ.html">Flipkart Plus Zone</a>
+            <a class="dropdown-item" href="../order/order.html">Orders</a>
             <a class="dropdown-item" href="#">Wishlist</a>
             <a class="dropdown-item" href="#">Rewards</a>
             <a class="dropdown-item" href="#">Gift Cards</a>
@@ -144,7 +140,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./cart/cart.html">
+          <a class="nav-link" href="../cart/cart.html">
             <img
               src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg"
 
@@ -170,13 +166,13 @@
             <a
               class="dropdown-item"
               href="https://www.vecteezy.com/png/10158686-trend-icon-sign-symbol-design"
-              ><img width="26" height="16" src="./assets/images/vecteezy_trend-icon-sign-symbol-design_10158686.png" alt="img"> Advertise
+              ><img width="26" height="16" src="../../assets/images/vecteezy_trend-icon-sign-symbol-design_10158686.png" alt="img"> Advertise
               </a
             >
             <a
               class="dropdown-item"
               href="/mobile-apps?otracker=ch_vn_mobile_apps"
-              > <img width="31" height="23" src= "./assets/images/down icon.avif" alt="img3">Download App</a
+              > <img width="31" height="23" src= "../../assets/images/down icon.avif" alt="img3">Download App</a
             >
       </ul>
     </div>
@@ -261,7 +257,7 @@
 
 <nav>
   <ul>
-    <li id="fashion">Fashion</li>
+    <li id="electronics">Electronics</li>
     <!-- Add more categories here -->
   </ul>
 </nav>
@@ -278,18 +274,18 @@
 document.addEventListener("DOMContentLoaded", function() {
   const productsContainer = document.getElementById('products');
 
-  fetchFashion(); // Automatically fetch fashion items when the page loads
+  fetchElectronics(); // Automatically fetch electronics items when the page loads
 
-  function fetchFashion() {
-    // Simulating fetching fashion items from a database or API
-    const fashionItems = [
-      { name: 'Dress', price: '$50', image: 'https://via.placeholder.com/150' },
-      { name: 'Shirt', price: '$30', image: 'https://via.placeholder.com/150' },
-      { name: 'Jeans', price: '$40', image: 'https://via.placeholder.com/150' }
-      // Add more fashion items here
+  function fetchElectronics() {
+    // Simulating fetching electronics items from a database or API
+    const electronicsItems = [
+      { name: 'Smartphone', price: '$500', image: 'https://via.placeholder.com/150' },
+      { name: 'Laptop', price: '$1000', image: 'https://via.placeholder.com/150' },
+      { name: 'Tablet', price: '$300', image: 'https://via.placeholder.com/150' }
+      // Add more electronics items here
     ];
 
-    renderProducts(fashionItems);
+    renderProducts(electronicsItems);
   }
 
   function renderProducts(products) {
@@ -311,3 +307,4 @@ document.addEventListener("DOMContentLoaded", function() {
 
 </body>
 </html>
+
