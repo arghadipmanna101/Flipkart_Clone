@@ -31,19 +31,28 @@
       position: absolute;
     }
 
+    .nav-link{
+      position: absolute;
+      text-align: center;
+    }
+
     .navbar-nav .nav-link {
       color: black;
+      margin: auto;
       /* padding: 10px 15px; */
       font-size: 16px;
       text-transform: uppercase;
       position: relative;
-      transition: background-color 0.5s;
+      /* transition: background-color 0.5s; */
+      border-radius: 10px;
+
     }
+
     .navbar-nav .nav-link:hover {
       display: block;
-      background-color: white;
-      width:7.47rem;
-      height: 4.8rem;
+      /* background-color: white; */  
+      /* width:7.47rem;      (this property ditorts the nav bar)
+      height: 2rem;  */
       align-content: center;
       text-align: center;
       border-radius: 10px;
@@ -52,6 +61,7 @@
     .navbar-nav .nav-link img {
       height: 20px;
       padding-right: 20px;
+      border-radius: 10px;
     }
 
     .navbar-nav .dropdown-menu {
@@ -112,10 +122,15 @@
 
     .navbar-nav .nav-item:hover .nav-link {
       color: black;
+    
+    }
+    .nav-item 
+    {
+      border-radius: 10px;
     }
     
     /* Adjustments */
-    .navbar-nav .nav-link {
+    .navbar-nav {
       margin-left: 10px; /* Adjust the margin as needed */
     }
     /* .navbar-nav{
@@ -142,12 +157,11 @@
       <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
         alt="Flipkart" />
     </a>
-    <img src="C:\Users\user\Desktop\logoflip\Flipkart_Clone\assets\images\flipkart_lite.png" width="30">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav"  style="margin-left: 34px;">
+    <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
           <div class="navtab" id="searchbar">
@@ -184,9 +198,6 @@
             <a class="dropdown-item" href="order.html">
               <i class="fa-solid fa-box"></i>
               Orders</a>
-            <a class="dropdown-item" href="notifications.html">
-              <i class="fa-regular fa-bell"></i>
-              Notifications</a>
             <a class="dropdown-item" href="wishlist.html">
               <i class="fa-regular fa-heart"></i>
               Wishlist</a>
