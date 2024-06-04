@@ -46,6 +46,10 @@
     transition: color 0.3s ease;
 }
 
+.card-header button:hover {
+    cursor: pointer;
+}
+
 .card-header button:focus {
     outline: none;
 }
