@@ -1,81 +1,78 @@
-#input_data {
-  width: 400px;
-  /* Adjust the width as needed */
-}
 .navbar {
-  position: relative;
-}
-
-.nav-item {
-  transition: background-color 0.5s ease;
-}
-/* .nav-link {
-  text-decoration: none;
-  color: #000;
-  display: block;
-  padding: 20px;
-} */
-.navbar-toggler{
-  position: absolute;
-}
-.navtab{
-  margin-left: 10px;
-  padding-left: 10px;
-  background-color: #e6eeff;
-  border-radius: 10px;
-}
-
-/* .navbar-nav{
-  margin-right: auto;
   background-color: #333;
-} */
+}
 
-#input_data{
-  width: 500px;
-  border: none;
-  background-color: transparent;
+.navbar-brand img {
+  height: 40px;
+  width: auto;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #fff;
+}
+
+.navbar-toggler {
+  border-color: #fff;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navtab {
+  display: flex;
+  align-items: center;
   padding: 5px;
+  background-color: #fff;
+  border-radius: 5px;
 }
 
-.nav-item:hover{
-  background-color: transparent;
-  transform: none;
-  border-bottom: none;
-}
-.nav-item::before:hover{
-  border: #fff;
-  transform: none;
-  background-color: transparent;
+.navtab input {
+  border: none;
+  flex-grow: 1;
+  margin-right: 5px;
 }
 
-.nav-item-divider::before {
-  content: '';
-  display: inline-block;
-  width: 1px; 
-  height: 30px; 
-  background-color: #ccc; 
-  margin: 0 10px; 
-  transition: all 0.4s;
+.navtab svg {
+  color: #717478;
 }
 
-.nav-item-divider:last-child::before {
-  display: none; 
+.dropdown-menu {
+  background-color: #333;
+  padding-left: 3rem !important; 
 }
 
-.nav-item:hover .nav-item-divider::before {
-  background-color: #000; 
+.dropdown-menu .dropdown-item {
+  color: black;
+  padding: 0.5rem 1rem; 
+  margin: 0;
+  transition: color 0.5s ease;
 }
 
-.nav-item-divider::after {
-  content: '';
-  display: inline-block;
-  width: 1px;
-  height: 30px; 
-  background-color: #ccc; 
-  margin: 0 0px;
+.dropdown-menu .dropdown-item:hover {
+  opacity: 0.8;
 }
 
-.nav-item-divider:last-child::after {
-  display: none; 
-}
+@media (max-width: 1100px) {
+  .navbar-nav .nav-item .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
 
+  .navbar-brand img {
+    height: 30px;
+  }
+
+  .navtab {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .navtab input {
+    width: 100%;
+  }
+
+  .navbar-nav {
+    margin-top: 1rem;
+  }
+}

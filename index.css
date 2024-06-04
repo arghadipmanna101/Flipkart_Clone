@@ -28,9 +28,15 @@ body {
 }
 
 #nightowl-switcher-default {
-    top: calc(42px);
+    top: calc(6px) !important;
+    left: calc(100% - 70px) !important;
 }
-
+@media (max-width: 1100px) {
+    #nightowl-switcher-default {
+        top: calc(2px) !important;
+        left: calc(100% - 120px) !important;
+    }
+}
 
 #input_data {
     width: 100%;
