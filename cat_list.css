@@ -4,6 +4,7 @@
   max-width: 98%;
   margin-left: 50px;
   margin-right: 50px;
+  border-radius:15px;
   button{
     margin-left: 40px;
   }
@@ -32,12 +33,17 @@ align-items: center;
 justify-content: flex-start;
 }
 
+.cat_list .btn:hover{
+transform: scale(1.1);
+}
+
 .cat_list .btn a {
 text-decoration: none;
 color: inherit;
 display: flex;
 flex-direction: column;
 align-items: center;
+padding:10px;
 }
 
 .cat_list .btn img {
