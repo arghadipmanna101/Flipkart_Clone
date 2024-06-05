@@ -116,7 +116,7 @@ body {
     margin-bottom: 20px;
     margin-left: 0px;
     margin-right: 20px;
-
+    animation: fade-in 1s ease-in-out;
 }
 
 #category-grid .card {
