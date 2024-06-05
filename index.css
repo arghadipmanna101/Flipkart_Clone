@@ -1,4 +1,7 @@
 /* General styles */
+*{
+    overflow-x: hidden;
+}
 body {
     background-color: #F1F2F4;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
