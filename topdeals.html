@@ -6,11 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 
     <style>
+        #top-deals h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            font-size: 25px;
+        }
         *{
             margin: 0;padding: 0;box-sizing: border-box;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
         body {
             background-color: rgb(232, 232, 232);
@@ -52,30 +58,30 @@
             border-bottom: 1px solid rgb(226, 226, 226);
         }
         .swiper-slide {
-    position: relative;
-    transition: transform 0.3s, opacity 0.3s;
-}
+        position: relative;
+        transition: transform 0.3s, opacity 0.3s;
+        }
 
-.swiper-slide:hover {
-    transform: scale(1.05);
-    opacity: 0.9;
-}
+        .swiper-slide:hover {
+        transform: scale(1.05);
+        opacity: 0.9;
+        }
 
-.swiper-slide::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0);
-    transition: background-color 0.3s;
-    z-index: -1;
-}
+        .swiper-slide::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0);
+        transition: background-color 0.3s;
+        z-index: -1;
+        }
 
-.swiper-slide:hover::before {
-    background-color: rgba(255, 255, 255, 0.1);
-}
+        .swiper-slide:hover::before {
+        background-color: rgba(255, 255, 255, 0.1);
+        }
 
         .swiper-button-next,
         .swiper-button-prev {

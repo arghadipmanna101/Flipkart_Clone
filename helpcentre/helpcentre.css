@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: linear-gradient(to right, #ffe97c, #51b4e6bf);
+}
+
+section {
+    padding: 60px 0;
+}
+
+footer {
+    background: #343a40;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}
+
+.list-group-item {
+    cursor: pointer;
+}
+
+.btn-link {
+    color: #2874f0;
+}
+
+.btn-link:hover {
+    text-decoration: none;
+    color: #0056b3;
+}
+
+.card-header {
+    background-color: #f8f9fa;
+}
+
+.card-header h5 {
+    margin: 0;
+}
+
+.flipkart-logo {
+    display: block;
+    margin: -24px auto;
+    max-width: 400px;
+}
+.card-header button.btn-link {
+    color: #000000; /* Setting the question color to black */
+}
+.heading {
+    color: rgb(13, 58, 156); /* Setting the heading background color to blue */
+}

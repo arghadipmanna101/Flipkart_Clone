@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -36,6 +36,7 @@ body {
     display: inline-block;
     padding: 20px 15px;
     cursor: pointer;
+    margin:6px;
 }
 
 .categories > li > ul {
