@@ -141,6 +141,7 @@ body {
     width: 330px;
     border-radius: 20px;
     object-fit: fill;
+    transition: transform 0.3s ease-in-out;
 }
 
 #category-grid .cartbtn {
@@ -158,6 +159,7 @@ body {
     background-color: #f1dede;
     margin-left: 5px;
     margin-bottom: 8px;
+    transition: background-color 0.3s ease-in-out;
 
 }
 
@@ -173,6 +175,7 @@ body {
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease 0.1s, width 2s, height 2.5s;
+    animation: zoomIn 1s ease-in-out;
 
 
 }
