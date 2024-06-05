@@ -1,0 +1,158 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2874f0;
+  padding: 10px 20px;
+  color: white;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar .title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar .links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar .links a:hover {
+  text-decoration: underline;
+}
+
+.navbar .search-bar {
+  flex-grow: 1;
+  margin: 0 20px;
+}
+
+.navbar .search-bar input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+.gift-card-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  margin: 20px auto 20px auto;
+}
+
+.info {
+  margin: 10px;
+  background-color: #e6eeff;
+}
+
+.head {
+  font-size: 20px;
+  color: black;
+  padding: 10px 0 0 10px;
+}
+
+.detail {
+  color: #0202027d;
+  padding: 0 10px 10px 10px;
+}
+
+h1 {
+  color: #2874f0;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+select:hover {
+  border-color: #2874f0;
+}
+
+button[type="submit"] {
+  background-color: #2874f0;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #1a5bb8;
+}
+
+.preview {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.preview h2 {
+  margin-top: 0;
+}
+
+
+@media (max-width: 768px) {
+
+  .navbar-container,
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-links {
+    margin-top: 10px;
+  }
+
+  .navbar-links a {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+}
