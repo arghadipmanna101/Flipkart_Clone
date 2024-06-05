@@ -55,8 +55,8 @@ document.getElementById("btmTxtP").innerHTML = btmText;
 
 document.addEventListener("DOMContentLoaded", () => {
   const components = [
-    { id: "header-plus", url: "../components/header/header.html" },
-    { id: "footer-plus", url: "../components/footer/footer.html" },
+    { id: "header-plus", url: "../header/header.html" },
+    { id: "footer-plus", url: "../footer/footer.html" },
   ];
 
   components.forEach((component) => {

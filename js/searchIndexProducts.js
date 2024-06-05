@@ -55,3 +55,7 @@ fetch('../json-api/product.json')
       searchFetch(filteredProducts);
   })
   .catch(error => console.error('Error fetching data:', error));
+
+
+
+ 

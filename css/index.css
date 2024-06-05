@@ -10,6 +10,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   background: #dcdcdc !important;
+  overflow-x: hidden;
 }
 
 .navname_ac .bi-chevron-up {
