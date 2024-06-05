@@ -6,6 +6,8 @@ body {
     color: #000;
     margin: 0;
     padding: 0;
+    
+    transition: background-color 0.3s ease-in-out;
 }
 
 .info>div {
@@ -19,6 +21,8 @@ body {
     background-color: #e7eefb;
 
     margin-right: 15px;
+    
+    transition: background-color 0.3s ease-in-out;
 }
 
 .dropdown-item {
@@ -37,6 +41,8 @@ body {
     padding: 6px;
     border: none;
     background-color: transparent;
+    
+    transition: border 0.3s ease-in-out;
 }
 
 #input_data:focus {
@@ -113,7 +119,8 @@ body {
     margin-bottom: 20px;
     margin-left: 0px;
     margin-right: 20px;
-
+    
+    animation: fade-in 1s ease-in-out;
 }
 
 #category-grid .card {
@@ -138,6 +145,8 @@ body {
     width: 330px;
     border-radius: 20px;
     object-fit: fill;
+    
+    transition: transform 0.3s ease-in-out;
 }
 
 #category-grid .cartbtn {
@@ -156,6 +165,9 @@ body {
     margin-left: 5px;
     margin-bottom: 8px;
 
+    
+    transition: background-color 0.3s ease-in-out;
+
 }
 
 #category-grid .cartbtn:hover {
@@ -170,8 +182,8 @@ body {
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease 0.1s, width 2s, height 2.5s;
-
-
+    
+    animation: zoomIn 1s ease-in-out;
 }
 
 
@@ -186,6 +198,7 @@ body {
 
 /*adding transition property to the images of the cateogory-grid section*/
 #category-grid img {
+    
     transition: transform 0.3s ease-in-out;
 }
 
@@ -444,6 +457,25 @@ footer {
     }
 }
 
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
 /* Footer styles
 /* footer {
     background-color: black;
@@ -678,4 +710,3 @@ html {
 
 
 }
-
