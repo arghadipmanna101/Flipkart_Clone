@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
 // Function to get query parameter
 function getQueryParameter(name) {
   const urlParams = new URLSearchParams(window.location.search);
