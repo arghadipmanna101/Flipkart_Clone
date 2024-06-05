@@ -27,4 +27,10 @@
     border-radius: 5px;
     color: #fff;
   }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #dcdcdc;
+    overflow-x: hidden;
+  }
   
