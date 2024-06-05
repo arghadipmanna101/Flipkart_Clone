@@ -1,0 +1,97 @@
+.toggledm {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 62px;
+    height: 30px;
+    border:2px solid white;
+    /* Further adjusted width to make the toggledm box smaller */
+    border-radius: 25px;
+    /* Adjusted for smaller height */
+    transition: .2s;
+    align-items: center;
+}
+
+.toggledm i {
+    width: 50%;
+    line-height: 30px;
+    /* Adjusted to match smaller height */
+    text-align: center;
+    font-size: 16px;
+    /* Adjusted font size for smaller icons */
+    z-index: 1;
+}
+
+.toggledm .ball {
+    position: absolute;
+    width: 25px;
+    /* Adjusted ball size */
+    height: 25px;
+    /* Adjusted ball size */
+    margin: 2.5px;
+    /* Adjusted margin to center the ball */
+    border-radius: 50%;
+    transition: .3s ease-out;
+}
+
+.dmInput {
+    display: none;
+}
+
+/* -- Light Mode -- */
+
+.light {
+    background: #dcdcdc;
+}
+
+
+.light .toggledm .bxs-sun {
+    color: #dcdcdc;
+}
+
+.light .toggledm .bx-moon {
+    color: #198754;
+}
+
+.light .toggledm .ball {
+    background: #198754;
+}
+/* -- Dark Mode -- */
+.dark {
+    background: #151d2a;
+}
+
+.dark .toggledm {
+    background: #151d2a;
+    box-shadow: 3px 3px 3px #0e131b,
+        -3px -3px 3px #1c2739;
+}
+
+.dark .toggledm .bx {
+    color: #dcdcdc;
+}
+
+.dark .toggledm .bxs-moon {
+    color: #080cc3;
+}
+.bxs-sun{
+    color: #ff8f00;
+}
+.toggledm .ball{
+    background: #dcdcdc;
+    transform: translateX(0%);
+}
+.dark .toggledm .ball {
+    background: #dcdcdc;
+    transform: translateX(115%);
+    /* Adjusted for smaller toggledm width */
+}
+
+.dark{
+    .media-body{
+        p{
+            color: white;
+        }
+    }
+}
