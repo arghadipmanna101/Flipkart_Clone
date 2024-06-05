@@ -39,6 +39,7 @@ body {
     padding: 6px;
     border: none;
     background-color: transparent;
+    transition: border 0.3s ease-in-out;
 }
 
 #input_data:focus {
