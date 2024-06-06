@@ -140,60 +140,6 @@ body {
 
 }
 
-#homeHeader .navbar-brand img {
-  transition: transform 0.3s ease-in-out;
-}
-
-#homeHeader .navbar-brand img:hover {
-  transform: scale(1.1);
-}
-
-/* Search Bar */
-#searchbar input {
-  transition: border-color 0.3s ease-in-out;
-}
-
-#searchbar input:focus {
-  border-color: #2874F0; /* Change the border color on focus */
-}
-
-/* Account Dropdown */
-#navbarDropdow .nav-link img {
-  transition: transform 0.3s ease-in-out;
-}
-
-#navbarDropdow .nav-link img:hover {
-  transform: scale(1.1);
-}
-
-/* Cart Icon */
-.cartLogoandname img {
-  transition: transform 0.3s ease-in-out;
-}
-
-.cartLogoandname img:hover {
-  transform: scale(1.1);
-}
-
-/* Become a Seller Icon */
-.navItem4 img {
-  transition: transform 0.3s ease-in-out;
-}
-
-.navItem4 img:hover {
-  transform: scale(1.1);
-}
-
-/* More Links Dropdown */
-#moreLinksDropdow .nav-link img {
-  transition: transform 0.3s ease-in-out;
-}
-
-#moreLinksDropdow .nav-link img:hover {
-  transform: scale(1.1);
-}
-
-
 .category:hover {
   transform: scale(1.1025);
 }
