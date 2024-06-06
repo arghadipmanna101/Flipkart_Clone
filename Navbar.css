@@ -1,0 +1,81 @@
+#input_data {
+  width: 400px;
+  /* Adjust the width as needed */
+}
+.navbar {
+  position: relative;
+}
+
+.nav-item {
+  transition: background-color 0.5s ease;
+}
+/* .nav-link {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  padding: 20px;
+} */
+.navbar-toggler{
+  position: absolute;
+}
+.navtab{
+  margin-left: 10px;
+  padding-left: 10px;
+  background-color: #e6eeff;
+  border-radius: 10px;
+}
+
+/* .navbar-nav{
+  margin-right: auto;
+  background-color: #333;
+} */
+
+#input_data{
+  width: 500px;
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+}
+
+.nav-item:hover{
+  background-color: transparent;
+  transform: none;
+  border-bottom: none;
+}
+.nav-item::before:hover{
+  border: #fff;
+  transform: none;
+  background-color: transparent;
+}
+
+.nav-item-divider::before {
+  content: '';
+  display: inline-block;
+  width: 1px; 
+  height: 30px; 
+  background-color: #ccc; 
+  margin: 0 10px; 
+  transition: all 0.4s;
+}
+
+.nav-item-divider:last-child::before {
+  display: none; 
+}
+
+.nav-item:hover .nav-item-divider::before {
+  background-color: #000; 
+}
+
+.nav-item-divider::after {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 30px; 
+  background-color: #ccc; 
+  margin: 0 0px;
+}
+
+.nav-item-divider:last-child::after {
+  display: none; 
+}
+

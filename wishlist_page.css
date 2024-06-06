@@ -1,0 +1,55 @@
+body {
+    background: linear-gradient(135deg, #f1f3f6, #d1d8e0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.profile-header {
+    background: linear-gradient(to right, hsl(61, 99%, 73%), #ffe69a);
+    color: rgb(30, 77, 206);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.profile-header img {
+    border: 3px solid white;
+}
+.wishlist-header {
+    border-bottom: 2px solid #090909;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+.wishlist-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.wishlist-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.wishlist-item img {
+    max-width: 100px;
+    border-radius: 10px;
+}
+.btn-remove {
+    color: rgb(76, 137, 240);
+    border: none;
+    background: none;
+    font-size: 1.1em;
+}
+.btn-remove:hover {
+    color: rgb(21, 0, 139);
+}
+.wishlist-item h5 {
+    color: #333;
+    font-weight: 600;
+}
+.wishlist-item p {
+    color: #666;
+    font-size: 1.1em;
+}
