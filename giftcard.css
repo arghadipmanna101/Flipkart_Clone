@@ -43,7 +43,9 @@ body {
 .navbar .search-bar {
   flex-grow: 1;
   margin: 0 20px;
+  
 }
+
 .navbar .search-bar input[type="text"] {
   width: 100%;
   padding: 10px;

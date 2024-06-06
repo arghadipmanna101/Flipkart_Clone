@@ -61,7 +61,14 @@
       display: flex;
       align-items: center;
     }
-
+    input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  height: 24px;
+  width: 24px;
+  margin-left: .4em;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23777'><path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/></svg>");
+  cursor: pointer;
+}
     #input_data {
       width: 300px;
       padding: 6px 12px;
@@ -124,7 +131,7 @@
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
           <div class="navtab" id="searchbar">
-            <input id="input_data" type="text" placeholder="Search for Products, Brands and More" />
+            <input id="input_data" type="search" placeholder="Search for Products, Brands and More" />
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <title>Search Icon</title>
               <path d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z"
