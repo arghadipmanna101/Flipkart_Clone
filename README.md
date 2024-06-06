@@ -1,3 +1,23 @@
+<div align="center">
+ <p>
+
+[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)
+![GitHub forks](https://img.shields.io/github/forks/Anushka-Bhowmick/Supnits-Classes)
+![GitHub Repo stars](https://img.shields.io/github/stars/arghadipmanna101/Flipkart_Clone)
+![GitHub contributors](https://img.shields.io/github/contributors/arghadipmanna101/Flipkart_Clone)
+![GitHub last commit](https://img.shields.io/github/last-commit/arghadipmanna101/Flipkart_Clone)
+![GitHub repo size](https://img.shields.io/github/repo-size/arghadipmanna101/Flipkart_Clone)
+![Github](https://img.shields.io/github/license/arghadipmanna101/Flipkart_Clone)
+![GitHub issues](https://img.shields.io/github/issues/arghadipmanna101/Flipkart_Clone)
+![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/arghadipmanna101/Flipkart_Clone)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/arghadipmanna101/Flipkart_Clone)
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/arghadipmanna101/Flipkart_Clone)
+
+ </p>
+</div>
+
+
 <!-- Open Source Programs -->
   <div>
     <h2><img src="https://github.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/blob/master/Emojis/Hand%20gestures/Flexed%20Biceps.png?raw=true" width="35" height="35" >Open Source Programs</h2>
