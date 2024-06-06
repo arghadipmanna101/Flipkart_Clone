@@ -159,6 +159,11 @@ body {
   opacity: 0.82;
 }
 
+#homeHeader .navbar-brand img {
+  transition: transform 0.3s ease-in-out;
+}
+
+
 #img-box {
   display: flex;
   height: 175;
