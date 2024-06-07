@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="css/homeHeader.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
 </head>
 
@@ -31,8 +32,8 @@
 		</div>
 	</div>
 	<!-- loader end -->
-
-
+	 
+	
 	<!--Header start  -->
 	<header id="homeHeader">
 		<nav class="navbar homeHeader navbar-expand-lg navbar-light bg-light">
@@ -41,7 +42,76 @@
 					width="160" height="40" title="Flipkart" alt="Flipkart" />
 			</a>
 			<div id="navbarNav_">
-				<ul class="navbar-nav">
+				<div class="search-container flex">
+                    <i class="fa fa-search" style="color: #7a7a7a;"></i>
+                    <form id="search-form">
+                        <input type="text" placeholder="Search for Products, Brands and More" id="input_data">
+                    </form>
+                    <!--recent search-->
+                    <div class="recent_Search">
+                        <div class="more">
+                            <span>Discover More</span>
+                        </div>
+
+                        <div class="recent_list">
+                            <i class="fa fa-search"></i>
+							<a href="https://www.flipkart.com/search?q=motorola+mobiles+5g&as=on&as-show=on&otracker=AS_Query_PredictiveAutoSuggest_2_0_na_na_na&otracker1=AS_Query_PredictiveAutoSuggest_2_0_na_na_na&as-pos=2&as-type=PREDICTIVE&suggestionId=motorola+mobiles+5g&requestId=46417743-12ba-405b-a8ef-02bb91ebd09b">
+							<p>Mobile</p>
+                            </a>
+                        </div>
+
+                        <div class="recent_list">
+                            <i class="fa fa-search"></i>
+                            <a href="https://www.flipkart.com/search?q=shoes&as=on&as-show=on&otracker=AS_Query_TrendingAutoSuggest_2_0_na_na_na&otracker1=AS_Query_TrendingAutoSuggest_2_0_na_na_na&as-pos=2&as-type=TRENDING&suggestionId=shoes&requestId=f50ab44c-8a48-4874-bfe1-b4593bf35d8d">
+                            <p>Shoes</p>
+                            </a>
+                        </div>
+
+                        <div class="recent_list">
+                            <i class="fa fa-search"></i>
+                            <a href="https://www.flipkart.com/search?q=t+shirts&as=on&as-show=on&otracker=AS_Query_TrendingAutoSuggest_3_0_na_na_na&otracker1=AS_Query_TrendingAutoSuggest_3_0_na_na_na&as-pos=3&as-type=TRENDING&suggestionId=t+shirts&requestId=29c416d3-f051-4e8b-9360-2d0e64471769">
+                                <p>T shirts</p>
+                            </a>
+                        </div>
+
+                        <div class="recent_list">
+                            <i class="fa fa-search"></i>
+                            <a href="https://www.flipkart.com/search?q=motorola+mobiles+5g&as=on&as-show=on&otracker=AS_Query_PredictiveAutoSuggest_2_0_na_na_na&otracker1=AS_Query_PredictiveAutoSuggest_2_0_na_na_na&as-pos=2&as-type=PREDICTIVE&suggestionId=motorola+mobiles+5g&requestId=46417743-12ba-405b-a8ef-02bb91ebd09b">
+                                <p>Moto Mobile</p>
+                            </a>
+                        </div>
+
+                        <div class="recent_list">
+                            <i class="fa fa-search"></i>
+                            <a href="https://www.flipkart.com/search?q=laptops&as=on&as-show=on&otracker=AS_Query_TrendingAutoSuggest_4_0_na_na_na&otracker1=AS_Query_TrendingAutoSuggest_4_0_na_na_na&as-pos=4&as-type=TRENDING&suggestionId=laptops&requestId=29c416d3-f051-4e8b-9360-2d0e64471769">
+                                <p>Laptop</p>
+                            </a>
+                        </div>
+
+                        <div class="recent_list">
+                            <i class="fa fa-search"></i>
+                            <a href="https://www.flipkart.com/search?q=watches&as=on&as-show=on&otracker=AS_Query_TrendingAutoSuggest_5_0_na_na_na&otracker1=AS_Query_TrendingAutoSuggest_5_0_na_na_na&as-pos=5&as-type=TRENDING&suggestionId=watches&requestId=29c416d3-f051-4e8b-9360-2d0e64471769">
+                                <p>Watches</p>
+                            </a>
+                        </div>
+
+                        <div class="recent_list">
+                            <i class="fa fa-search"></i>
+                            <a href="https://www.flipkart.com/search?q=tv&as=on&as-show=on&otracker=AS_Query_TrendingAutoSuggest_6_0_na_na_na&otracker1=AS_Query_TrendingAutoSuggest_6_0_na_na_na&as-pos=6&as-type=TRENDING&suggestionId=tv&requestId=29c416d3-f051-4e8b-9360-2d0e64471769">
+                                <p>Tv</p>
+                            </a>
+                        </div>
+
+                        <div class="recent_list">
+                            <i class="fa fa-search"></i>
+                            <a href="https://www.flipkart.com/search?q=sarees&as=on&as-show=on&otracker=AS_Query_TrendingAutoSuggest_7_0_na_na_na&otracker1=AS_Query_TrendingAutoSuggest_7_0_na_na_na&as-pos=7&as-type=TRENDING&suggestionId=sarees&requestId=29c416d3-f051-4e8b-9360-2d0e64471769">
+                                <p>Saree</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+				<!-- <ul class="navbar-nav">
 					<li class="nav-item navItem1">
 						<div id="searchbar" class="navtab">
 							<span id="searchButton" style="display: flex;align-items: center;">
@@ -68,17 +138,53 @@
 							</div>
 						</div>
 					</li>
-				</ul>
-				<ul class="navbar-nav ml-auto"
-					style="flex-wrap: nowrap;flex-direction: row;width: 40vw; justify-content: space-around">
+				</ul> -->
+				
+				<ul class="navbar-nav ml-auto" style="flex-wrap: nowrap;flex-direction: row;width:100%; justify-content: space-around">
 					<li class="nav-item navItem2 dropdown" id="navbarDropdow">
-						<a class="nav-link nav-dd acnavdd" href="#" id="navbarDropdown" role="button"
+						<a class="nav-link nav-dd acnavdd" href="https://www.flipkart.com/account/login?ret=%2Faccount%2F%3Frd%3D0%26link%3Dhome_account" id="navbarDropdown" role="button"
 							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<img src="img/svg/profile-.svg" alt="Profile" />
-							<span class="navname navname_ac"> Account <i class="bi bi-chevron-down"></i><i
+							<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-52e0dc.svg" alt="Login" class="login" width="24" height="24">
+							<span class="navname navname_ac login"> Login <i class="bi bi-chevron-down"></i><i
 									class="bi bi-chevron-up"></i></span>
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="left: 0;">
+							<div class="login_menu_top">
+								<a href="https://www.flipkart.com/account/login?signup=true&ret=/">
+									<span style="color: black; font-weight: 500;">New customer?</span>
+								</a>
+								<a href="https://www.flipkart.com/account/login?signup=true&ret=/">    
+									<span class="sign">Sign Up</span>
+								</a>
+							</div>
+							<a class="dropdown-item" href="https://www.flipkart.com/account/login?ret=%2Faccount%2F%3Frd%3D0%26link%3Dhome_account">
+								<img width="20" src="img/svg/profile-.svg" alt="flipKart">
+								My Profile </a>
+							<a class="dropdown-item" href=https://www.flipkart.com/plus>
+								<img width="20" src="img/svg/fkplus-+.svg" alt="flipKart">
+								Flipkart Plus Zone</a>
+							<a class="dropdown-item" href="https://www.flipkart.com/account/login?ret=%2Faccount%2Forders%3Flink%3Dhome_orders&fromMyOrdersPage=true">
+								<img width="20" src="img/svg/orders.svg" alt="flipKart">
+								Orders</a>
+							<a class="dropdown-item" href="https://www.flipkart.com/account/login?ret=%2Fwishlist%3Flink%3Dhome_wishlist">
+								<img width="20" src="img/svg/wishList.svg" alt="flipKart">
+								Wishlist</a>
+							<a class="dropdown-item" href="https://www.flipkart.com/account/login?ret=%2Faccount%2Frewards%3Flink%3Dhome_rewards">
+								<img width="20" src="img/svg/rewards.svg" alt="flipKart">
+								Rewards</a>
+							<a class="dropdown-item" href="https://www.flipkart.com/the-gift-card-store?link=home_giftcard">
+								<img width="20" src="img/svg/giftCard.svg" alt="flipKart">
+								Gift Cards</a>
+						</div>
+					</li>
+					<!-- <li class="nav-item navItem2 dropdown" id="navbarDropdow">
+						<a class="nav-link nav-dd acnavdd" href="https://www.flipkart.com/account/login?ret=%2Faccount%2F%3Frd%3D0%26link%3Dhome_account" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-52e0dc.svg" alt="Login" class="login" width="24" height="24">
+							<span class="navname navname_ac"> Login <i class="bi bi-chevron-down"></i><i
+									class="bi bi-chevron-up"></i></span>
+						</a> -->
+						<!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="left: 0;">
 							<a class="dropdown-item" href="account/home_account.html">
 								<img width="20" src="img/svg/profile-.svg" alt="flipKart">
 								My Profile </a>
@@ -102,7 +208,25 @@
 								<img width="20" src="img/svg/giftCard.svg" alt="flipKart">
 								Gift Cards</a>
 						</div>
-					</li>
+					</li> -->
+					<div class="category-div flex">
+                        <span class="material-symbols-outlined">
+                            shopping_cart
+                        </span>
+                        <a class="hover-links" href="https://www.flipkart.com/viewcart?exploreMode=true&preference=FLIPKART">
+                            <p class="hover-links">Cart</p>
+                        </a>
+                    </div>
+
+					<div class="category-div flex" style="margin-left: 30px;">
+                        <span class="material-symbols-outlined">
+                            storefront
+                        </span>
+                        <a class="hover-links" href="https://seller.flipkart.com/sell-online/?utm_source=fkwebsite&utm_medium=websitedirect">
+                            <p class="hover-links">Become a Seller</p>
+                        </a>
+                    </div>
+<!-- 					
 					<li class="nav-item navItem3">
 						<a class="nav-link cartLogoandname" href="viewcart/">
 							<img
@@ -116,7 +240,7 @@
 								alt="Become a Seller" />
 							<span class="navname3">Become a Seller</span>
 						</a>
-					</li>
+					</li> -->
 					<li class="nav-item navItem5 dropdown " id="moreLinksDropdow">
 						<a class="nav-link nav-dd" href="#" id="moreLinksDropdown" role="button" data-toggle="dropdown"
 							aria-haspopup="true" aria-expanded="false">
@@ -125,16 +249,16 @@
 								alt="More Links" />
 						</a>
 						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="moreLinksDropdown">
-							<a class="dropdown-item" href="notifications/"><img width="30" height="20"
+							<a class="dropdown-item" href="https://www.flipkart.com/communication-preferences/push?t=all"><img width="30" height="20"
 									src="img/svg/notificationPreferences.svg"
 									alt="appointment-reminders--v2" />Notification
 								Preferences</a>
-							<a class="dropdown-item" href="helpcentre/"><img width="30" height="20"
+							<a class="dropdown-item" href="https://www.flipkart.com/helpcentre"><img width="30" height="20"
 									src="img/svg/helpcenter.svg" alt="imgcc">24x7 Customer Care</a>
 							<a class="dropdown-item"
-								href="https://www.vecteezy.com/png/10158686-trend-icon-sign-symbol-design"><img
+								href="https://advertising.flipkart.com/login?returl=/?otracker=ch_vn_advertise_header"><img
 									width="30" height="20" src="img/svg/advertise.svg" alt="Advertise">Advertise</a>
-							<a class="dropdown-item" href="mobile-apps/"><img width="30" height="20"
+							<a class="dropdown-item" href="https://www.flipkart.com/mobile-apps?otracker=ch_vn_mobile_apps"><img width="30" height="20"
 									src="img/svg/downloadApp.svg" alt="img3">Download App</a>
 					</li>
 					
@@ -208,15 +332,15 @@
 	<!-- carousel end -->
 
 
-	<!-- search product show Showing results-->
+	<!-- search product show Showing results
 	<div class="containter-fluid bg-white">
 		<div class="containter-fluid p-3 mt-1" style="border-bottom: 1px solid #e4e7eb;">
-			<!-- <h4 id="showingrslt">Showing Results</h4> -->
+			<h4 id="showingrslt">Showing Results</h4> 
 		</div>
 		<div class="container-fluid mt-4">
 			<div class="row mt-1" id="results"></div>
 		</div>
-	</div>
+	</div> -->
 
 <!-- best of Electronics -->
 <div class="containter-fluid bg-white">
