@@ -70,6 +70,33 @@ body {
   cursor: pointer;
 }
 
+.categories > li a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  padding-right: 20px; /* Adjust padding to make room for the icon */
+  position: relative;
+}
+
+.categories > li a::after {
+  content: '';
+  position: absolute;
+  right: 0; /* Adjust the position as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 24 24"><path fill="currentcolor" d="m12 13.171l4.95-4.95l1.414 1.415L12 16L5.636 9.636L7.05 8.222z"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease; /* Smooth rotation */
+  pointer-events: none; /* Prevent interaction with the symbol */
+}
+
+.categories > li:hover a::after {
+  transform: translateY(-50%) rotate(180deg); /* Rotate the symbol */
+}
+
 .categories li a {
   text-decoration: none;
 }
