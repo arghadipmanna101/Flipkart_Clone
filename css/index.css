@@ -203,8 +203,23 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
-.navItem4 img:hover {
-  transform: scale(1.1);
+/* Hover effetct on become a seller */
+.navItem4 :hover {
+  /* transform: scale(1.1); */
+  background-color: rgba(0, 0, 0, 0.058);
+  border-radius: 15px;
+}
+
+/* cart icon */
+.navItem3 img {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect on card icon */
+.navItem3 :hover {
+  /* transform: scale(1.1); */
+  background-color: rgba(0, 0, 0, 0.058);
+  border-radius: 15px;
 }
 
 /* More Links Dropdown */
