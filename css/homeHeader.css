@@ -1,69 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  --primary-color:#f0f5ff;
-  --secondary-color: #f1f2f4;
-  --accent-color: #1c41d6;
-  --accent-color-dark: #0d2998;
-  --primary-text-color: #141414;
-  --secondary-text-color: #141414;
-  --another-text-color: #878787;
-  --padding-inline-section: 4px;
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
-  color: var(--primary-text-color);
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: #f1f2f4;
-}
-
-p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  color: var(--secondary-text-color);
-  line-height: 1.8rem;
-}
-
-a {
-  text-decoration: none;
-  display: inline-block;
-}
-
-form {
-  width: 100%;
-}
-
-.container {
-  width: 100%;
-  margin-inline: auto;
-}
-
-.flex {
-  display: flex;
-  align-items: center;
-}
-
-.hover-links {
-  color: var(--primary-text-color);
-}
-
-.hover-links:hover {
-  transition: 0.3s ease-in-out;
-}
-
-
-
 #homeHeader {
   position: sticky;
   top: 0;
@@ -180,11 +114,11 @@ form {
     line-height: 16px;
     font-size: 12px;
     color: #fff;
-}
+} */
 
 
 /* Styles for the dropdown menu */
-.homeHeader .dropdown-menu {
+/* .homeHeader .dropdown-menu {
   position: absolute !important;
   background-color: #ffffff;
   border: 1px solid #ddd;
@@ -196,13 +130,10 @@ form {
   min-width: 300px;
   z-index: 1000;
   right: 0;
-  line-height: 0px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
 }
 
 /* Styles for the dropdown items */
-.homeHeader .dropdown-item {
+/* .homeHeader .dropdown-item {
   padding: 10px 20px;
   color: #333;
   text-decoration: none;
@@ -285,151 +216,4 @@ form {
     display: none;
   }
 
-}
-
-/* nav bar right btn style */
-nav {
-  position: relative;
-  top: 0;
-  left: 0;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  z-index: 1000;
-  background-color: white;
-}
-
-.main-nav {
-  justify-content: space-between;
-  padding: 13px 0 13px;
-  
-}
-
-.search-container {
-  height: 45px;
-  flex-grow: 1;
-  background-color: var(--primary-color);
-  margin-left: 1rem;
-  margin-right: 1rem;
-  padding: 0px 10px;
-  border-radius: 0.5rem;
-  justify-content: flex-start;
-  gap: 0.7rem;
-  margin: 0 0 0 3rem;
-  outline: none;
-  position: relative;
-  text-overflow: ellipsis;
-}
-
-
-.recent_Search {
-  position: absolute;
-  background-color: white;
-  height: 370px;
-  width: 100%;
-  top: 45px;
-  margin-left: -15px;
-  border-top: 1px solid #ccc;
-  display: none;
-  padding: 10px;
-  z-index: 12;
-  box-shadow: -5px -0px 5px rgba(0,0,0,0.1),
-  5px 5px 5px rgba(0,0,0,0.1);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-}
-
-.search-container:focus-within .recent_Search{
-  display: block;
-}
-
-.recent_list{
-  display: flex;
-  padding: 5px 5px;
-  cursor: pointer;
-}
-
-.recent_list:hover{
-  background-color: var(--primary-color);
-}
-
-.recent_list i{
-  color:#7a7a7a;
-  font-size: 14px;
-}
-
-.recent_list p{
-  padding-left: 20px;
-  font-size: 15px;
-  line-height: 12px;
-  padding-top: 3px;
-}
-
-.more{
-  font-size: 14px;
-  line-height: 20px;
-  padding: 16px 0 4px 8px;
-  color: #666;
-  font-weight: 600;
-}
-
-.list{
-  font-size: 14px;
-  line-height: 20px;
-  padding: 16px 0 4px 8px;
-  color: #666;
-  font-weight: 600;
-}
-
-/*******loginBtn_container**********/
-.login_menu_top{
-  padding: 12px;
-  border-bottom: 1px solid #e0e0e0;
-  font-size: 16px;
-  line-height: 24px;
-  text-decoration: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #000;
-  margin-bottom: 20px;
-}
-
-.login {
-  display: inline;
-  position: relative;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-  color: black;
-  font-weight: 500;
-  font-size: 16px;
-}
-
-/******become a seller***/
-.category-div{
-  padding-left: 20px;
-  color: #000;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  line-height: 24px;
-  text-align: center;
-  cursor: pointer;
-}
-
-.category-div p{
-  padding-top: 20px;
-  padding-left: 10px;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.icon {
-  position: relative;
-}
-
-@media (min-width: 768px) and (max-width: 1191px) {
-  .category-div {
-      padding: 0 6px;
-  }
 }
