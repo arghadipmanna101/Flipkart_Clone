@@ -51,8 +51,13 @@ fetch('../json-api/product.json')
   .then(response => response.json())
   .then(data => {
       const query = getQueryParameter('query');
-      const filteredProducts = data.filter(product => product.category.toLowerCase().includes(query.toLowerCase()) || product.name.toLowerCase().includes(query));
-      searchFetch(filteredProducts);
+      if(query=="men"){
+        const filteredProducts = data.filter(product => product.category.toLowerCase().includes(query.toLowerCase()) && !product.category.toLowerCase().includes("women")|| product.name.toLowerCase().includes(query) && !product.name.toLowerCase().includes('women'));  
+        searchFetch(filteredProducts);
+      }else{
+      const filteredProducts = data.filter(product => product.category.toLowerCase().includes(query.toLowerCase()) || product.name.toLowerCase().includes(query));  
+        searchFetch(filteredProducts);      
+      }
   })
   .catch(error => console.error('Error fetching data:', error));
 
