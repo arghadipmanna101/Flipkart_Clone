@@ -393,9 +393,9 @@ body {
 #goToTopBtn {
   /* display: none; */
   position: fixed;
-  bottom: 5px;
-  right: 50%;
-  background-color: rgba(235, 66, 66, .5);
+  bottom: 4%;
+  right: 7%;
+  background-color: rgba(235, 66, 66, 0.724);
   color: #fff;
   border: none;
   border-radius: 10px;
