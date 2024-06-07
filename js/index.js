@@ -214,24 +214,29 @@ fetchAndShuffleDataUnder("json-api/product.json", shopUnder500, 18);
 
 
  // Show or hide the "Go to Top" button based on scroll position
-window.addEventListener("scroll", function() {
-    var scrollToTopBtn = document.getElementById("goToTopBtn");
-    if (window.scrollY > 100) {
-        scrollToTopBtn.classList.remove("hidden");
-    } else {
-        scrollToTopBtn.classList.add("hidden");
-    }
+ document.addEventListener("DOMContentLoaded", function () {
+  const backToTopButton = document.getElementById('goToTopBtn');
+
+  function checkButtonVisibility() {
+      if (window.innerWidth > 100 && window.scrollY > 100) {
+          backToTopButton.style.display = 'block';
+      } else {
+          backToTopButton.style.display = 'none';
+      }
+  }
+
+  window.addEventListener('scroll', checkButtonVisibility);
+  window.addEventListener('resize', checkButtonVisibility);
+
+  backToTopButton.addEventListener('click', function () {
+      window.scrollTo({
+          top: 0,
+          behavior: 'smooth' 
+      });
+  });
+  checkButtonVisibility();
 });
 
-
-
- // Scroll to the top when the button is clicked
-document.getElementById("goToTopBtn").addEventListener("click", function() {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth" 
-    });
-});
 
 
 // loader
