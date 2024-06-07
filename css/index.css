@@ -393,6 +393,7 @@ body {
 #goToTopBtn {
   /* display: none; */
   position: fixed;
+  /* position of the gototop button */
   bottom: 4%;
   right: 7%;
   background-color: rgba(235, 66, 66, 0.724);
