@@ -49,7 +49,7 @@ function searchFetch(products) {
 // Fetch data from the JSON file and filter products based on the query
 fetch('../json-api/product.json')
   .then(response => response.json())
-  .then(data => {
+  .then(data =>{
       const query = getQueryParameter('query');
       if(query=="men"){
         const filteredProducts = data.filter(product => product.category.toLowerCase().includes(query.toLowerCase()) && !product.category.toLowerCase().includes("women")|| product.name.toLowerCase().includes(query) && !product.name.toLowerCase().includes('women'));  
