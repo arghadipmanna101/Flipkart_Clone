@@ -42,8 +42,9 @@ footer p {
 
 .flipkart-logo {
     display: block;
-    margin: -24px auto;
+    margin: 16px auto;
     max-width: 400px;
+    padding-right: 66px;
 }
 .card-header button.btn-link {
     color: #000000; /* Setting the question color to black */
