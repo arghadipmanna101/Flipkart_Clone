@@ -45,9 +45,13 @@ footer p {
     margin: -24px auto;
     max-width: 400px;
 }
+
 .card-header button.btn-link {
-    color: #000000; /* Setting the question color to black */
+    color: #000000;
+    /* Setting the question color to black */
 }
+
 .heading {
-    color: rgb(13, 58, 156); /* Setting the heading background color to blue */
+    color: rgb(13, 58, 156);
+    /* Setting the heading background color to blue */
 }

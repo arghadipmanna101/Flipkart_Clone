@@ -11,28 +11,34 @@
         body {
             background-color: #f8f9fa;
         }
+
         .card-img-top {
             height: 200px;
             object-fit: cover;
             transition: transform 0.3s ease;
         }
+
         .card {
             overflow: hidden;
             border: none;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
         .card:hover {
             transform: translateY(-10px);
             box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
         }
+
         .card:hover .card-img-top {
             transform: scale(1.1);
         }
+
         .card-body {
             background-color: #fff;
             transition: background-color 0.3s ease;
         }
+
         .card:hover .card-body {
             background-color: #f1f1f1;
         }

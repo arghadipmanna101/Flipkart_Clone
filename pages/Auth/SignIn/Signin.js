@@ -20,11 +20,11 @@ function Signin(){
      else{
 
      
-    for(let i=0;i<getUsersdata.length;i++)
+    for(const element of getUsersdata)
     {
-        if(mobile == getUsersdata[i].mobile)
+        if(mobile == element.mobile)
         {
-            if(password == getUsersdata[i].password)
+            if(password == element.password)
             {
                alert("Sign in Successful");
                window.location.href = "index.html"

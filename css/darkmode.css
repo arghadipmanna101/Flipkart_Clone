@@ -5,7 +5,7 @@
     justify-content: space-between;
     width: 62px;
     height: 30px;
-    border:2px solid white;
+    border: 2px solid white;
     /* Further adjusted width to make the toggledm box smaller */
     border-radius: 25px;
     /* Adjusted for smaller height */
@@ -33,6 +33,8 @@
     /* Adjusted margin to center the ball */
     border-radius: 50%;
     transition: .3s ease-out;
+    background: #dcdcdc;
+    transform: translateX(0%);
 }
 
 .dmInput {
@@ -57,9 +59,16 @@
 .light .toggledm .ball {
     background: #198754;
 }
+
 /* -- Dark Mode -- */
 .dark {
     background: #151d2a;
+
+    .media-body {
+        p {
+            color: white;
+        }
+    }
 }
 
 .dark .toggledm {
@@ -75,23 +84,13 @@
 .dark .toggledm .bxs-moon {
     color: #080cc3;
 }
-.bxs-sun{
+
+.bxs-sun {
     color: #ff8f00;
 }
-.toggledm .ball{
-    background: #dcdcdc;
-    transform: translateX(0%);
-}
+
 .dark .toggledm .ball {
     background: #dcdcdc;
     transform: translateX(115%);
     /* Adjusted for smaller toggledm width */
-}
-
-.dark{
-    .media-body{
-        p{
-            color: white;
-        }
-    }
 }

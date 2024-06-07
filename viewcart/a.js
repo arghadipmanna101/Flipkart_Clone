@@ -122,8 +122,3 @@ You will save ₹110 on this order
                             </pre>
     `
 document.getElementById("priceDetail").innerHTML=priceDetail
-
-
- 
-
-

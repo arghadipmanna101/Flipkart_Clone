@@ -14,13 +14,18 @@
             font-weight: 800;
             font-size: 25px;
         }
-        *{
-            margin: 0;padding: 0;box-sizing: border-box;
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
             font-family: 'Poppins', sans-serif;
         }
+
         body {
             background-color: rgb(232, 232, 232);
         }
+
         .swiper {
             width: 100%;
             height: 100%;
@@ -29,13 +34,18 @@
             padding-bottom: 40px;
 
         }
+
         .top-deals {
             margin-inline: 2%;
             margin-bottom: 10px;
-            background-color: rgb(255, 255, 255);padding: 10px;
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
         }
+
         .top-deals h1 {
-            margin-bottom: 10px;font-size:25px;margin-left: 10px;
+            margin-bottom: 10px;
+            font-size: 25px;
+            margin-left: 10px;
         }
 
         .swiper-slide {
@@ -50,37 +60,36 @@
             height: 400px;
             box-shadow: 0 0 5px rgb(129, 129, 129);
             overflow: hidden;
+            position: relative;
+            transition: transform 0.3s, opacity 0.3s;
         }
+
         .swiper-slide img {
             width: 100%;
             height: 300px;
             transition: 0.5s;
             border-bottom: 1px solid rgb(226, 226, 226);
         }
-        .swiper-slide {
-        position: relative;
-        transition: transform 0.3s, opacity 0.3s;
-        }
 
         .swiper-slide:hover {
-        transform: scale(1.05);
-        opacity: 0.9;
+            transform: scale(1.05);
+            opacity: 0.9;
         }
 
         .swiper-slide::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(255, 255, 255, 0);
-        transition: background-color 0.3s;
-        z-index: -1;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0);
+            transition: background-color 0.3s;
+            z-index: -1;
         }
 
         .swiper-slide:hover::before {
-        background-color: rgba(255, 255, 255, 0.1);
+            background-color: rgba(255, 255, 255, 0.1);
         }
 
         .swiper-button-next,
@@ -89,17 +98,20 @@
             color: rgb(129, 129, 129);
             width: 40px;
             height: 100px;
-            margin-top:-5%;
+            margin-top: -5%;
             border-radius: 10px 0 0 10px;
         }
+
         .swiper-button-prev {
 
             border-radius: 0 10px 10px 0;
         }
+
         h4 {
             font-size: 18px;
             margin: 7px;
         }
+
         p {
             font-size: 15px;
         }
@@ -131,38 +143,38 @@
 
     <script>
         var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 5,
-    spaceBetween: 20,
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-        300: {
-            slidesPerView: 1,
-        },
-        520: {
-            slidesPerView: 2,
-        },
-        800: {
-            slidesPerView: 3,
-        },
-        1000: {
-            slidesPerView: 4,
-        },
-        1200: {
             slidesPerView: 5,
-        },
-    },
-});
+            spaceBetween: 20,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                300: {
+                    slidesPerView: 1,
+                },
+                520: {
+                    slidesPerView: 2,
+                },
+                800: {
+                    slidesPerView: 3,
+                },
+                1000: {
+                    slidesPerView: 4,
+                },
+                1200: {
+                    slidesPerView: 5,
+                },
+            },
+        });
     </script>
 </body>
 

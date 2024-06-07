@@ -104,6 +104,7 @@ body {
     .signupin .leftpanal {
         width: 30vw;
     }
+
     .signupin .rightSignuppanal {
         width: 40vw;
     }
@@ -114,14 +115,17 @@ body {
         width: 35vw;
         padding: 15px;
     }
+
     .signupin .rightSignuppanal {
         width: 45vw;
     }
 }
+
 @media screen and (max-width: 800px) {
     .signupin .leftpanal {
         width: 43vw;
     }
+
     .signupin .rightSignuppanal {
         width: 56vw;
     }

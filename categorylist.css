@@ -35,56 +35,56 @@ body {
     box-shadow: 0 0 10px rgb(87, 110, 172);
 }
 
-.categories > li {
+.categories>li {
     display: inline-block;
     padding: 20px 15px;
     cursor: pointer;
-    margin:6px;
+    margin: 6px;
 }
 
-.categories > li > ul {
+.categories>li>ul {
     display: none;
     position: fixed;
     background-color: rgb(201, 224, 252) !important;
-    padding: 15px;
     gap: 15px 5px;
     flex-wrap: wrap;
     width: 90vw;
     height: max-content;
     max-height: 100vh;
     padding: 0 10%;
-    top: 20vh; /* Adjust this value to move the subcategory menu down */
+    top: 20vh;
+    /* Adjust this value to move the subcategory menu down */
     left: 70px;
     font-size: 14px;
     overflow: hidden;
     z-index: 500;
 }
 
-.categories > li:hover > ul {
+.categories>li:hover>ul {
     display: flex;
     justify-content: left;
     align-items: stretch;
 }
 
-.categories > li:hover {
+.categories>li:hover {
     background-color: #bac8f6;
     transition: all 0.5s;
     border-radius: 20px;
 }
 
-.categories > li:hover > ul > li {
+.categories>li:hover>ul>li {
     margin: 15px 0;
     flex: 1 1 200px;
     list-style-type: none;
 }
 
-.categories > li:hover > ul > li li {
+.categories>li:hover>ul>li li {
     list-style-type: none;
     margin: 15px 0;
     color: rgb(88, 116, 194);
 }
 
-.categories > li:hover > ul li li:hover {
+.categories>li:hover>ul li li:hover {
     color: rgb(112, 112, 166);
 }
 
@@ -93,7 +93,7 @@ body {
     color: black;
 }
 
-.categories > li > a > img {
+.categories>li>a>img {
     width: 40px;
     height: 40px;
     margin-right: 10px;

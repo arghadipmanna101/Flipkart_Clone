@@ -5,9 +5,11 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
 }
+
 body {
     background-color: rgb(244, 237, 237);
 }
+
 nav {
     width: 100%;
     display: flex;
@@ -16,16 +18,19 @@ nav {
     padding: 8px 5%;
     background-color: #cccccc;
 }
-.nav-left{
+
+.nav-left {
     display: flex;
     align-items: center;
     gap: 20px;
 }
+
 input {
     width: 500px;
     padding: 10px;
-    
+
 }
+
 button {
     padding: 10px 20px;
     width: 150px;
@@ -34,10 +39,12 @@ button {
     font-weight: 600;
     border: none;
 }
+
 .search {
     position: relative;
     background-color: blueviolet;
 }
+
 i {
     position: absolute;
     top: 30%;
@@ -45,8 +52,9 @@ i {
     color: rgb(75, 75, 255);
     height: 100%;
     width: 30px;
-    
+
 }
+
 /* login menu in navbar */
 .login-container {
     background-color: white;
@@ -54,12 +62,14 @@ i {
     border-radius: 2px;
 
 }
-.login-container a{
-    color:rgb(75, 75, 255) ;
+
+.login-container a {
+    color: rgb(75, 75, 255);
     text-decoration: none;
     font-weight: 700;
 }
-.login_menu{
+
+.login_menu {
     display: none;
     position: absolute;
     background-color: transparent;
@@ -71,19 +81,22 @@ i {
     max-height: 290px;
     padding-top: 15px;
 }
-.login-container:hover .login_menu{
+
+.login-container:hover .login_menu {
     display: block;
 }
-.login_menu::before{
+
+.login_menu::before {
     position: absolute;
     content: "";
     top: 0px;
     margin-left: 110px;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-	border-bottom: 15px solid rgb(255, 255, 255);
+    border-bottom: 15px solid rgb(255, 255, 255);
 }
-.login_menu_list{
+
+.login_menu_list {
     background-color: white;
     height: 100%;
     width: 100%;
@@ -91,28 +104,34 @@ i {
     padding: 15px 0px;
     font-size: 15px;
     cursor: pointer;
-    
+
 }
-.login_menu_row1{
+
+.login_menu_row1 {
     display: flex;
     justify-content: space-around;
     padding-bottom: 15px;
 }
-.login_menu_row1 a:hover{
+
+.login_menu_row1 a:hover {
     text-decoration: underline;
 }
-.login_menu_rows{
+
+.login_menu_rows {
     padding: 10px 20px;
     border-top: 1px solid rgba(169, 163, 163, 0.349);
 }
-.login_menu_rows:hover{
-    background-color:rgba(169, 163, 163, 0.106) ;
-    
+
+.login_menu_rows:hover {
+    background-color: rgba(169, 163, 163, 0.106);
+
 }
-.login_menu_rows a span{
+
+.login_menu_rows a span {
     color: black;
 }
-.login_menu_rows a i{
+
+.login_menu_rows a i {
     position: initial;
     right: 0px;
 }
@@ -130,10 +149,12 @@ i {
     gap: 25px;
 
 }
+
 .empty-cart h4 {
     font-size: 18px;
 }
-.empty-cart button{
+
+.empty-cart button {
     background-color: rgb(255, 117, 67);
     color: white;
 }
@@ -144,19 +165,19 @@ footer {
     padding: 15px 35px;
 }
 
-.foot-left .about li a:hover, 
-.social ul li a:hover, 
+.foot-left .about li a:hover,
+.social ul li a:hover,
 .foot-down ul li a:hover {
     color: white;
 }
 
-.foot-down a:hover
-{
-  text-decoration: underline white;
+.foot-down a:hover {
+    text-decoration: underline white;
 }
 
 .social ul li a i {
-    font-size: 18px; /* Adjust the size as needed */
+    font-size: 18px;
+    /* Adjust the size as needed */
 }
 
 .footer-section {
@@ -168,10 +189,14 @@ footer {
     border-bottom: 1px solid rgb(85, 78, 78);
     flex-wrap: nowrap;
 }
-.foot-top ul,.foot-down ul{
+
+.foot-top ul,
+.foot-down ul {
     padding: 0;
 }
-.foot-left, .foot-right {
+
+.foot-left,
+.foot-right {
     display: flex;
     justify-content: space-between;
     gap: 30px;
@@ -179,40 +204,56 @@ footer {
     flex: 1 1 500px;
     flex-wrap: wrap;
 }
-.foot-left h5, .foot-right h5 {
+
+.foot-left h5,
+.foot-right h5 {
     font-size: 13px;
     font-weight: 600;
     color: #9b9898;
 }
-.foot-left .about li,.foot-down li, .foot-right .part, .foot-right .office, .social ul li {
+
+.foot-left .about li,
+.foot-down li,
+.foot-right .part,
+.foot-right .office,
+.social ul li {
     list-style: none;
 }
-.foot-left .about li a, .social ul li a, .foot-down ul li a {
+
+.foot-left .about li a,
+.social ul li a,
+.foot-down ul li a {
     font-size: 12px;
     color: rgb(255, 255, 255);
     font-weight: 600;
     text-decoration: none;
 }
-.about{
+
+.about {
     min-width: 150px;
 }
-.about li a:hover{
+
+.about li a:hover {
     text-decoration: underline;
 }
+
 .social ul {
     display: flex;
     align-items: center;
-    gap: 20px; 
-    
+    gap: 20px;
+
 }
-.social>ul>li>a>i{
+
+.social>ul>li>a>i {
     color: #ffffff;
     font-size: 2rem;
 }
+
 .foot-right {
     border-left: 1px solid rgb(85, 78, 78);
     padding-left: 30px;
 }
+
 .foot-down {
     padding: 10px 40px;
     display: flex;
@@ -222,10 +263,12 @@ footer {
     font-weight: 600;
     flex-wrap: wrap;
 }
-.foot-down .ft-1{
+
+.foot-down .ft-1 {
     max-width: 500px;
     width: -webkit-fill-available;
 }
+
 .foot-down ul {
     display: flex;
     flex-wrap: wrap;
@@ -235,12 +278,14 @@ footer {
     justify-content: space-between;
     flex-direction: row;
 }
-.payment-icons{
+
+.payment-icons {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     align-items: center;
 }
+
 .payment-icons img {
     height: 15px;
 }
@@ -249,26 +294,33 @@ footer {
     footer {
         padding: 15px;
     }
+
     .foot-top {
         flex-direction: column;
     }
-    .foot-left, .foot-right {
+
+    .foot-left,
+    .foot-right {
         flex: 1 1 auto;
         padding: 15px;
         justify-content: flex-start;
     }
+
     .foot-right {
         border-left: none;
     }
+
     .foot-down {
         flex-direction: column;
         align-items: center;
         gap: 10px;
     }
+
     .foot-down ul {
         flex-direction: column;
         gap: 10px;
     }
+
     .payment-icons {
         display: flex;
         justify-content: center;
@@ -276,35 +328,39 @@ footer {
 }
 
 @media (max-width: 480px) {
-    .foot-left, .foot-right {
+
+    .foot-left,
+    .foot-right {
         flex-direction: column;
     }
+
     .social ul {
         justify-content: center;
 
     }
+
     .foot-down ul {
         justify-content: center;
     }
 
-.flipcart{
-    margin: 5px;
-    display: flex;
-    flex-direction: column;
-}
+    .flipcart {
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+    }
 
-a{
-    text-decoration: none;
-    font-style: italic;
-    font-size: small;
-}
+    a {
+        text-decoration: none;
+        font-style: italic;
+        font-size: small;
+    }
 
-.explore{
-    color: white;
-    margin-right: 2px;
-}
+    .explore {
+        color: white;
+        margin-right: 2px;
+    }
 
-.s4NJ5L{
-    color: gold;
-    margin-right: 2px;
-}
+    .s4NJ5L {
+        color: gold;
+        margin-right: 2px;
+    }

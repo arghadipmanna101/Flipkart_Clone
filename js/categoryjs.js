@@ -41,7 +41,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         categoryItem.appendChild(subcategoriesList);
-        // console.log(categoryItem);
 
         return categoryItem;
     }

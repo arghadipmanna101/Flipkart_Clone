@@ -215,7 +215,7 @@ fetchAndShuffleDataUnder("json-api/product.json", shopUnder500, 18);
 
  // Show or hide the "Go to Top" button based on scroll position
 window.addEventListener("scroll", function() {
-    var scrollToTopBtn = document.getElementById("goToTopBtn");
+    let scrollToTopBtn = document.getElementById("goToTopBtn");
     if (window.scrollY > 100) {
         scrollToTopBtn.classList.remove("hidden");
     } else {
@@ -233,12 +233,6 @@ document.getElementById("goToTopBtn").addEventListener("click", function() {
     });
 });
 
-
-// loader
-// old
-// setTimeout(function() {
-//     document.getElementById('loader').style.display = 'none';
-//   }, 2000);
 
 // new
   document.addEventListener("DOMContentLoaded", function() {

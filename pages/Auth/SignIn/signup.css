@@ -6,10 +6,9 @@
 
 body {
     font-family: Arial, sans-serif;
-    background:linear-gradient(to right,whitesmoke,#8faff3);
-    margin-top:150px;
+    background: linear-gradient(to right, whitesmoke, #8faff3);
+    margin-top: 150px;
 }
-
 
 #outerbox {
     display: flex;
@@ -18,7 +17,7 @@ body {
     margin-top: 20px;
 }
 
-#innerbox{
+#innerbox {
     display: flex;
     background-color: #ffffff;
     width: 70%;
@@ -27,7 +26,7 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.leftinnerbox{
+.leftinnerbox {
     background-color: black;
     color: #ffffff;
     width: 40%;
@@ -39,24 +38,24 @@ body {
     justify-content: center;
 }
 
-.rightinnerbox{
+.rightinnerbox {
     width: 50%;
     padding-left: 50px;
     padding-top: 40px;
 }
 
-.para1{
+.para1 {
     font-weight: bold;
     font-size: 35px;
     margin-bottom: 20px;
 }
 
-.para2{
+.para2 {
     font-size: 14px;
     margin-bottom: 30px;
 }
 
-.para3{
+.para3 {
     font-size: 20px;
     text-align: center;
 }
@@ -65,8 +64,9 @@ body {
     margin-bottom: 20px;
 }
 
-input[type="number"], input[type="text"], input[type="password"] 
-{
+input[type="number"],
+input[type="text"],
+input[type="password"] {
     width: 50%;
     text-align: center;
     margin-top: 30px;
@@ -76,37 +76,32 @@ input[type="number"], input[type="text"], input[type="password"]
     border-color: gray;
     font-size: 20px;
 
-    
+
 }
 
-input[type="number"]:focus, input[type="text"]:focus, input[type="password"]:focus
-{
-    border-color: #2874F0; 
+input[type="number"]:focus,
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #2874F0;
 }
 
 .textm {
     text-align: center;
     font-size: 14px;
     margin-bottom: 20px;
-    
+
 }
 
-/* .continue, .login {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: #2874F0;
-    color: #ffffff;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-} */
 
-.continue:hover, .login:hover {
+.continue:hover,
+.login:hover {
     background-color: #1E59D9;
     cursor: pointer;
 }
+
 .button-container {
-    margin: 10px; /* Adds space around the buttons */
+    margin: 10px;
+    /* Adds space around the buttons */
 }
 
 /* Common button styles */
@@ -122,7 +117,7 @@ input[type="number"]:focus, input[type="text"]:focus, input[type="password"]:foc
 /* Primary button style */
 .primary-btn {
     background-color: #ffffff;
-    color:black ;
+    color: black;
     border: 1px solid #2874F0;
     margin-bottom: 10px;
 }

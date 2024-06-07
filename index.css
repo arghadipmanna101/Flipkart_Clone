@@ -51,8 +51,9 @@ body {
 .navbar-nav {
     display: flex;
     justify-content: space-between;
-    margin-right: 80px; 
-    gap: 30px; /* Uncommented the gap property from the main branch */
+    margin-right: 80px;
+    gap: 30px;
+    /* Uncommented the gap property from the main branch */
 }
 
 .navtab {
@@ -239,11 +240,12 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     gap: 30px;
-    padding: 15px;    flex-direction: row;
+    padding: 15px;
+    flex-direction: row;
     /* flex-wrap: wrap; */
 }
 
-.part{
+.part {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -253,14 +255,11 @@ footer {
     gap: 1.5rem;
 }
 
-.mail-social{
+.mail-social {
     font-size: 12px;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-}
-
-    /* gap: 30px; */
     padding: 25px;
     flex: 1 1 500px;
     flex-wrap: wrap;
@@ -311,11 +310,11 @@ footer {
     gap: 1rem;
 }
 
-.mail p{
+.mail p {
     font-size: 12px;
 }
 
-.office p{
+.office p {
     font-size: 12px;
 }
 
@@ -678,4 +677,3 @@ html {
 
 
 }
-

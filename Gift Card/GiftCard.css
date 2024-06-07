@@ -1,21 +1,20 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 html,
-body{
+body {
     width: 100%;
-    height:100vh;
+    height: 100vh;
     font-size: 14px;
     background-color: #f1f3f6;
     color: #212121;
-    /* overflow-x: hidden; */
 }
 
-.gift-container{
-   
+.gift-container {
+
     width: 100%;
     position: relative;
     margin: 0 auto;
@@ -24,7 +23,7 @@ body{
     padding: 50px;
 }
 
-.gift-container h1{
+.gift-container h1 {
     font-weight: 700;
     font-size: 18px;
 }
@@ -34,53 +33,53 @@ body{
     font-size: 12px;
     color: #878787;
     margin-top: 10px;
-    
+
 }
 
-.banner-1{
+.banner-1 {
     margin-top: 10px;
     width: 100%;
-  
-    
+
+
 }
 
-.banner-2{
+.banner-2 {
     width: 100%;
 }
 
-.banner-3{
+.banner-3 {
     width: 100%;
 }
 
-.banner-4{
+.banner-4 {
     width: 100%;
-   
+
 }
 
-.cards{
+.cards {
     display: flex;
     align-items: center;
     justify-content: center;
- 
-   
+
+
 
 
 }
 
-.cards img{
-   width: 416px;
-   border-radius: 20px;
+.cards img {
+    width: 416px;
+    border-radius: 20px;
 
 }
 
 
-.banner-5{
+.banner-5 {
     width: 100%;
     margin: auto;
-   
+
 }
 
-.bottom-text{
+.bottom-text {
     padding: 10px 25px;
     color: #878787;
     background-color: #fff;
@@ -89,8 +88,7 @@ body{
 }
 
 
-.bottom-text h2 strong{
-    font-size: 14px;
+.bottom-text h2 strong {
     line-height: 16px;
     font-size: 15px;
     color: #878787;

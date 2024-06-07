@@ -24,7 +24,7 @@ main {
     padding: 1rem;
     width: 200px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .wishlist-item img {
@@ -62,12 +62,15 @@ footer {
     background-color: rgb(28, 27, 27);
     padding: 15px 35px;
 }
+
 .foot-top {
     display: flex;
     border-bottom: 1px solid rgb(85, 78, 78);
     flex-wrap: wrap;
 }
-.foot-left, .foot-right {
+
+.foot-left,
+.foot-right {
     display: flex;
     justify-content: space-between;
     gap: 30px;
@@ -75,29 +78,41 @@ footer {
     flex: 1 1 500px;
     flex-wrap: wrap;
 }
-.foot-left h5, .foot-right h5 {
+
+.foot-left h5,
+.foot-right h5 {
     font-size: 12px;
     font-weight: 600;
     color: #9b9898;
 }
-.foot-left .about li, .foot-right .part, .foot-right .office, .social ul li {
+
+.foot-left .about li,
+.foot-right .part,
+.foot-right .office,
+.social ul li {
     list-style: none;
     color: #fff;
 }
-.foot-left .about li a, .social ul li a, .foot-down ul li a {
+
+.foot-left .about li a,
+.social ul li a,
+.foot-down ul li a {
     font-size: 12px;
     color: white;
     font-weight: 600;
     text-decoration: none;
 }
+
 .social ul {
     display: flex;
-    gap: 10px; 
+    gap: 10px;
 }
+
 .foot-right {
     border-left: 1px solid rgb(85, 78, 78);
     padding-left: 30px;
 }
+
 .foot-down {
     padding: 10px 40px;
     display: flex;
@@ -106,39 +121,49 @@ footer {
     justify-content: space-between;
     font-weight: 600;
 }
+
 .foot-down ul {
     display: flex;
     gap: 200px;
 }
+
 .payment-icons img {
     height: 15px;
 }
+
 /* Tablets and below */
 @media (max-width: 768px) {
     footer {
         padding: 15px;
     }
+
     .foot-top {
         flex-direction: column;
     }
-    .foot-left, .foot-right {
+
+    .foot-left,
+    .foot-right {
         flex: 1 1 auto;
         padding: 15px;
         justify-content: flex-start;
     }
+
     .foot-right {
         border-left: none;
         padding-left: 0;
     }
+
     .foot-down {
         flex-direction: column;
         align-items: center;
         gap: 10px;
     }
+
     .foot-down ul {
         flex-direction: column;
         gap: 10px;
     }
+
     .payment-icons {
         display: flex;
         justify-content: center;

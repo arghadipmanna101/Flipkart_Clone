@@ -1,4 +1,4 @@
-var privacypolicy=`
+let privacypolicy=`
 <pre>
     PRIVACY POLICY
 

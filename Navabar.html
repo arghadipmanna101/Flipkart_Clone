@@ -5,7 +5,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Improved Navbar</title>
-  <!-- <link rel="stylesheet" href="Navbar.css"> -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
   <style>
     body {
@@ -17,7 +16,7 @@
       height: 60px;
     }
 
-    .navbar-nav{
+    .navbar-nav {
       padding-right: 100px;
 
     }
@@ -33,16 +32,18 @@
 
     .navbar-nav .nav-link {
       color: black;
-      /* padding: 10px 15px; */
       font-size: 16px;
       text-transform: uppercase;
       position: relative;
       transition: background-color 0.5s;
+      margin-left: 10px;
+      /* Adjust the margin as needed */
     }
+
     .navbar-nav .nav-link:hover {
       display: block;
       background-color: white;
-      width:7.47rem;
+      width: 7.47rem;
       height: 4.8rem;
       align-content: center;
       text-align: center;
@@ -113,51 +114,42 @@
     .navbar-nav .nav-item:hover .nav-link {
       color: black;
     }
-    
-    /* Adjustments */
-    .navbar-nav .nav-link {
-      margin-left: 10px; /* Adjust the margin as needed */
-    }
-    /* .navbar-nav{
-      background-color: #333;
-      position: relative;
-      bottom: 2px;
-      right:14px;
-    } */
-    .navbar-collapse{
+
+
+    .navbar-collapse {
       background-color: #333;
       position: relative;
       bottom: 2px;
       right: 14px;
     }
-    /* @media screen and (max-width:1000px){
-
-    } */
   </style>
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark">
     <a class="navbar-brand" href="https://flipkart-clone-seven-azure.vercel.app/">
-      <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
+      <img
+        src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
         alt="Flipkart" />
     </a>
-    <img src="C:\Users\user\Desktop\logoflip\Flipkart_Clone\assets\images\flipkart_lite.png" width="30">
+    <img src="C:\Users\user\Desktop\logoflip\Flipkart_Clone\assets\images\flipkart_lite.png" width="30"
+      alt="flipkart logo">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav"  style="margin-left: 34px;">
+    <div class="collapse navbar-collapse" id="navbarNav" style="margin-left: 34px;">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
           <div class="navtab" id="searchbar">
             <input id="input_data" type="text" placeholder="Search for Products, Brands and More" />
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <title>Search Icon</title>
-              <path d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z"
+              <path
+                d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z"
                 stroke="#717478" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
-              <path d="M16 16L21 21" stroke="#717478" stroke-width="1.4" stroke-linecap="round"
-                stroke-linejoin="round"></path>
+              <path d="M16 16L21 21" stroke="#717478" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              </path>
             </svg>
           </div>
         </li>
@@ -166,12 +158,12 @@
         <li class="nav-item dropdown">
           <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
-            <i class="fa-regular fa-user"></i>   Profile
+            <i class="fa-regular fa-user"></i> Profile
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="profile.html">
               <i class="fa-solid fa-user"></i>
-               My Profile</a>
+              My Profile</a>
             <a class="dropdown-item" href="signup.html">
               <i class="fa-solid fa-user-plus"></i>
               SignUp</a>
@@ -179,7 +171,8 @@
               <i class="fa-solid fa-right-to-bracket"></i>
               SignIn</a>
             <a class="dropdown-item" href="FPZ.html">
-              <img id="flipkartPlusImage" width="16" height="17" src="images/plus.png" alt="imgplus"> Flipkart Plus Zone</a>
+              <img id="flipkartPlusImage" width="16" height="17" src="images/plus.png" alt="imgplus"> Flipkart Plus
+              Zone</a>
 
             <a class="dropdown-item" href="order.html">
               <i class="fa-solid fa-box"></i>
@@ -194,7 +187,7 @@
               <i class="fas fa-gift"></i>
               Rewards</a>
             <a class="dropdown-item" href="giftcard.html">
-              <img width="22" height="18" src="images/gift-card.png" alt="imgplus"> 
+              <img width="22" height="18" src="images/gift-card.png" alt="imgplus">
               Gift Cards</a>
           </div>
         </li>
@@ -218,7 +211,8 @@
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="moreLinksDropdown">
             <a class="dropdown-item" href="notification.html">Notification Preferences</a>
             <a class="dropdown-item" href="/helpcentre">24x7 Customer Care</a>
-            <a class="dropdown-item" href="https://advertising.flipkart.com/?otracker=ch_vn_advertise_header">Advertise</a>
+            <a class="dropdown-item"
+              href="https://advertising.flipkart.com/?otracker=ch_vn_advertise_header">Advertise</a>
             <a class="dropdown-item" href="/mobile-apps?otracker=ch_vn_mobile_apps">Download App</a>
           </div>
         </li>
@@ -230,9 +224,6 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <!-- <script>
-    const bg=document.querySelector('.show');
-    
-  </script> -->
 </body>
+
 </html>

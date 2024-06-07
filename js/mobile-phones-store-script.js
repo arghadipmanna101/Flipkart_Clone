@@ -173,22 +173,3 @@ fetch("../json-api/product.json")
     populatevivoMobiles(vivoMobiles);
   })
   .catch((error) => console.error("Error fetching data:", error));
-
-//  djfkd
-
-// Fetch data from the JSON file and apple mobiles
-//   fetch('../json-api/product.json')
-//   .then(response => response.json())
-//   .then(data => {
-//     const filteredMobiles = data.filter(mobile => mobile.category === "mobile");
-//     appleMobiles(filteredMobiles);
-//   })
-//   .catch(error => console.error('Error fetching data:', error));
-
-//   fetch('scripts/data.json')
-//     .then(response => response.json())
-//     .then(data => {
-//       const filteredMobiles = data.filter(mobile => mobile.name.toLowerCase().includes('oppo'));
-//       populateMobiles(filteredMobiles);
-//     })
-//     .catch(error => console.error('Error fetching data:', error));

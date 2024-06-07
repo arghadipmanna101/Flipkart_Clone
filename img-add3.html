@@ -1,79 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Flipkart</title>
-<link
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-  <style>
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flipkart</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
     .navbar-nav .nav-link:hover {
-      border-bottom: 2px solid #007bff; /* Change the color as desired */
-      
+      border-bottom: 2px solid #007bff;
+      /* Change the color as desired */
+
     }
-    .nav-link{
+
+    .nav-link {
       margin-right: 50px;
+      text-decoration: none;
+      color: #000;
+      display: block;
+      padding: 20px;
     }
 
     /* .navbar-nav .nav-link:hover {
       border-bottom: 2px solid #007bff; /* Change the color as desired */
-      
-    /* } */ 
+
+    /* } */
 
 
     /* Adjusting the width of the search input */
     #input_data {
-      width: 400px; /* Adjust the width as needed */
+      width: 400px;
+      /* Adjust the width as needed */
     }
-  
+
 
     .nav-item {
-      transition: background-color 0.5s ease; 
+      transition: background-color 0.5s ease;
     }
 
-    .nav-item:hover {
-      background-color: grey;
-      text-decoration: underline;
-      opacity:1;
-    }
     .nav-item:hover {
       background-color: rgb(182, 181, 181);
       text-decoration: none;
       opacity: 0.85;
       transition: all 0.2s ease-in;
-      transform:scale(1.1);
+      transform: scale(1.1);
       z-index: 1;
-    }
-
-   
-   
-
-  
-    .nav-link {
-    text-decoration:none;
-    color: #000;
-    display: block;
-    padding: 20px;
-
     }
 
 
     .nav-link::after {
-    content:'';
-    opacity: 0;
-    transition: all 0.3s ease;
-    height: 2px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left:0;
+      content: '';
+      opacity: 0;
+      transition: all 0.3s ease;
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
     }
 
-    .nav-link:hover::after{
-    opacity:1;
+    .nav-link:hover::after {
+      opacity: 1;
     }
   </style>
 
@@ -85,8 +72,8 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a  class="navbar-brand" href="https://flipkart-clone-seven-azure.vercel.app/">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="Main Navigation">
+    <a class="navbar-brand" href="https://flipkart-clone-seven-azure.vercel.app/">
       <img
         src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
         width="160" height="40" title="Flipkart" alt="Flipkart" />
@@ -147,11 +134,7 @@
           <a class="nav-link" href="./cart/cart.html">
             <img
               src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg"
-
-            />
-
-              
-
+              alt="cart" />
             Cart
           </a>
         </li>
@@ -163,21 +146,20 @@
               alt="More Links" />
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="moreLinksDropdown">
-            <a class="dropdown-item" href="/communication-preferences/push?t=all"> <img width="26" height="18" src="https://img.icons8.com/fluency-systems-regular/48/appointment-reminders--v2.png" alt="appointment-reminders--v2"/> Notification Preferences</a>
+            <a class="dropdown-item" href="/communication-preferences/push?t=all"> <img width="26" height="18"
+                src="https://img.icons8.com/fluency-systems-regular/48/appointment-reminders--v2.png"
+                alt="appointment-reminders--v2" /> Notification Preferences</a>
 
-            <a class="dropdown-item" href="/helpcentre"> <img width="28" height="28" src="https://www.shutterstock.com/shutterstock/photos/2273439411/display_1500/stock-vector-customer-service-icon-call-center-operator-wearing-headphone-on-white-background-2273439411.jpg" alt="imgcc"> 24x7 Customer Care</a>
+            <a class="dropdown-item" href="/helpcentre"> <img width="28" height="28"
+                src="https://www.shutterstock.com/shutterstock/photos/2273439411/display_1500/stock-vector-customer-service-icon-call-center-operator-wearing-headphone-on-white-background-2273439411.jpg"
+                alt="imgcc"> 24x7 Customer Care</a>
 
-            <a
-              class="dropdown-item"
-              href="https://www.vecteezy.com/png/10158686-trend-icon-sign-symbol-design"
-              ><img width="26" height="16" src="./assets/images/vecteezy_trend-icon-sign-symbol-design_10158686.png" alt="img"> Advertise
-              </a
-            >
-            <a
-              class="dropdown-item"
-              href="/mobile-apps?otracker=ch_vn_mobile_apps"
-              > <img width="31" height="23" src= "./assets/images/down icon.avif" alt="img3">Download App</a
-            >
+            <a class="dropdown-item" href="https://www.vecteezy.com/png/10158686-trend-icon-sign-symbol-design"><img
+                width="26" height="16" src="./assets/images/vecteezy_trend-icon-sign-symbol-design_10158686.png"
+                alt="img"> Advertise
+            </a>
+            <a class="dropdown-item" href="/mobile-apps?otracker=ch_vn_mobile_apps"> <img width="31" height="23"
+                src="./assets/images/down icon.avif" alt="img3">Download App</a>
       </ul>
     </div>
   </nav>
@@ -186,129 +168,137 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<style>
-  /* Basic reset and styling */
-  body, h1, h2, p, ul, li {
-    margin: 0;
-    padding: 0;
-  }
+  <style>
+    /* Basic reset and styling */
+    body,
+    h1,
+    h2,
+    p,
+    ul,
+    li {
+      margin: 0;
+      padding: 0;
+    }
 
-  body {
-    font-family: Arial, sans-serif;
-  }
+    body {
+      font-family: Arial, sans-serif;
+    }
 
-  header, nav, main, footer {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
+    header,
+    nav,
+    main,
+    footer {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
 
-  header {
-    background-color: #007bff;
-    color: #fff;
-    text-align: center;
-  }
+    header {
+      background-color: #007bff;
+      color: #fff;
+      text-align: center;
+    }
 
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
 
-  nav ul li {
-    display: inline;
-    margin-right: 20px;
-    cursor: pointer;
-    color: #007bff;
-  }
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+      cursor: pointer;
+      color: #007bff;
+    }
 
-  nav ul li:hover {
-    text-decoration: underline;
-  }
+    nav ul li:hover {
+      text-decoration: underline;
+    }
 
-  main {
-    display: flex;
-    flex-wrap: wrap;
-  }
+    main {
+      display: flex;
+      flex-wrap: wrap;
+    }
 
-  .product {
-    flex: 1 0 200px;
-    margin: 10px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    text-align: center;
-  }
+    .product {
+      flex: 1 0 200px;
+      margin: 10px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
 
-  .product img {
-    width: 100%;
-    max-width: 150px;
-    height: auto;
-    margin-bottom: 10px;
-  }
+    .product img {
+      width: 100%;
+      max-width: 150px;
+      height: auto;
+      margin-bottom: 10px;
+    }
 
-  footer {
-    background-color: #f8f9fa;
-    color: #333;
-    text-align: center;
-  }
-</style>
-</head>
-<body>
+    footer {
+      background-color: #f8f9fa;
+      color: #333;
+      text-align: center;
+    }
+  </style>
 
-<header>
-  <h1>Flipkart</h1>
-</header>
+  <body>
 
-<nav>
-  <ul>
-    <li id="sales">Huge Sales</li>
-    <!-- Add more categories here -->
-  </ul>
-</nav>
+    <header>
+      <h1>Flipkart</h1>
+    </header>
 
-<main id="products">
-  <!-- Products will be displayed here -->
-</main>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li id="sales">Huge Sales</li>
+        <!-- Add more categories here -->
+      </ul>
+    </nav>
 
-<footer>
-  <p>&copy; 2024 Flipkart. All rights reserved.</p>
-</footer>
+    <main id="products">
+      <!-- Products will be displayed here -->
+    </main>
 
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const salesButton = document.getElementById('sales');
-  const productsContainer = document.getElementById('products');
+    <footer>
+      <p>&copy; 2024 Flipkart. All rights reserved.</p>
+    </footer>
 
-  fetchSales(); // Automatically fetch sales items when the page loads
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const productsContainer = document.getElementById('products');
 
-  function fetchSales() {
-    // Simulating fetching items on sale from a database or API
-    const salesItems = [
-      { name: 'Headphones', price: '$20 (50% off)', image: 'https://via.placeholder.com/150' },
-      { name: 'Smartwatch', price: '$50 (30% off)', image: 'https://via.placeholder.com/150' },
-      { name: 'Backpack', price: '$25 (40% off)', image: 'https://via.placeholder.com/150' }
-      // Add more items on sale here
-    ];
+        fetchSales(); // Automatically fetch sales items when the page loads
 
-    renderProducts(salesItems);
-  }
+        function fetchSales() {
+          // Simulating fetching items on sale from a database or API
+          const salesItems = [
+            { name: 'Headphones', price: '$20 (50% off)', image: 'https://via.placeholder.com/150' },
+            { name: 'Smartwatch', price: '$50 (30% off)', image: 'https://via.placeholder.com/150' },
+            { name: 'Backpack', price: '$25 (40% off)', image: 'https://via.placeholder.com/150' }
+            // Add more items on sale here
+          ];
 
-  function renderProducts(products) {
-    productsContainer.innerHTML = ''; // Clear previous content
+          renderProducts(salesItems);
+        }
 
-    products.forEach(product => {
-      const productDiv = document.createElement('div');
-      productDiv.classList.add('product');
-      productDiv.innerHTML = `
+        function renderProducts(products) {
+          productsContainer.innerHTML = ''; // Clear previous content
+
+          products.forEach(product => {
+            const productDiv = document.createElement('div');
+            productDiv.classList.add('product');
+            productDiv.innerHTML = `
         <img src="${product.image}" alt="${product.name}">
         <h2>${product.name}</h2>
         <p>${product.price}</p>
       `;
-      productsContainer.appendChild(productDiv);
-    });
-  }
-});
-</script>
+            productsContainer.appendChild(productDiv);
+          });
+        }
+      });
+    </script>
 
-</body>
+  </body>
+
 </html>

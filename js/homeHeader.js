@@ -35,7 +35,6 @@ try {
     localStorage.getItem("filteredProducts")
   );
   let cartItemslen = cartItemsFromStorage.length;
-  let toggleItmDis = document.getElementById("cartItems");
   let dataItms = document.getElementById("cartItems");
   dataItms.innerText = cartItemslen;
 } catch (error) {
