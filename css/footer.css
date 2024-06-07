@@ -17,11 +17,11 @@ footer .footerTop{
 }
 
 footer .footerTop a{
-    text-decoration: none;
+    text-decoration: serif;
     color: #fff;
 }
 footer .footerTop ul{
-    list-style-type: none;
+    list-style-type: serif;
     padding: 0;
     margin: 0;
 }
@@ -62,11 +62,14 @@ footer .footerEnd{
     color: #fff;
     font-size: 12px;
 }
+text-white {
+    color: #fff;}
+    
 footer .footerEnd .col-auto{
     margin: 0 22px;
 }
 footer .footerEnd a{
-    text-decoration: none; 
+    text-decoration: serif; 
     color: #fff
 }
 @media screen and (max-width: 770px){
