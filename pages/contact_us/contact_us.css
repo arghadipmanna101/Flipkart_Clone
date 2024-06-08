@@ -1,41 +1,48 @@
 /* Google Font CDN Link */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+/* Reset CSS */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
-#navbar-container {
-  position: fixed;
-  width: 100%;
-  height: 200px;
-  top: 0px;
-
-}
+/* Global Styles */
 body {
   min-height: 100vh;
   width: 100%;
-  background: #c8e8e9;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background:#dcdce1 !important;
+  font-family: "Poppins", sans-serif; /* Use Google Font */
 }
+
 .container {
   max-width: 1100px;
-  margin-top: 10%;
-  width: 100%;
+  margin: 10% auto; /* Adjust margin as needed */
   background: #fff;
   border-radius: 6px;
-  padding: 20px 60px 30px 40px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px 60px 30px 40px;
+  position: relative; /* Add position relative */
+  margin-top: 2%;
 }
+
 .container .content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
+
+.container .content::before {
+  content: "";
+  height: calc(100% - 40px); /* Adjust the height as needed */
+  width: 2px;
+  background: #afafb6;
+  right: calc(25% - 20px); /* Adjust the position based on the left-side width */
+  top: 20px; /* Adjust the top position based on the padding */
+}
+
 .container .content .left-side {
   width: 25%;
   height: 100%;
@@ -43,32 +50,24 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 15px;
-  position: relative;
 }
-.content .left-side::before {
-  content: "";
-  position: absolute;
-  height: 70%;
-  width: 2px;
-  right: -15px;
-  top: 50%;
-  transform: translateY(-50%);
-  background: #afafb6;
-}
+
 .content .left-side .details {
   margin: 14px;
   text-align: center;
 }
+
 .content .left-side .details i {
   font-size: 30px;
   color: #3e2093;
   margin-bottom: 10px;
 }
+
 .content .left-side .details .topic {
   font-size: 18px;
   font-weight: 500;
 }
+
 .content .left-side .details .text-one,
 .content .left-side .details .text-two {
   font-size: 14px;
@@ -79,18 +78,22 @@ body {
   width: 75%;
   margin-left: 75px;
 }
+
 .content .right-side .topic-text {
-  font-size: 23px;
+  font-size: 38px;
   font-weight: 600;
   color: #3e2093;
 }
+
 .right-side .input-box {
   height: 55px;
   width: 100%;
   margin: 12px 0;
 }
+
 .right-side .input-box input,
-.right-side .input-box textarea {
+.right-side .input-box textarea,
+.right-side .input-box select {
   height: 100%;
   width: 100%;
   border: none;
@@ -101,17 +104,21 @@ body {
   padding: 0 15px;
   resize: none;
 }
+
 .right-side .message-box {
   min-height: 110px;
 }
+
 .right-side .input-box textarea {
   padding-top: 6px;
 }
+
 .right-side .button {
   display: inline-block;
   margin-top: 12px;
 }
-.right-side .button input[type="button"] {
+
+.right-side .button input[type="submit"] {
   color: #fff;
   font-size: 18px;
   outline: none;
@@ -122,7 +129,8 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.button input[type="button"]:hover {
+
+.button input[type="submit"]:hover {
   background: #5029bc;
 }
 
@@ -131,19 +139,22 @@ body {
     width: 90%;
     padding: 30px 40px 40px 35px;
   }
+
   .container .content .right-side {
-    width: 75%;
     margin-left: 55px;
   }
 }
+
 @media (max-width: 820px) {
   .container {
     margin: 40px 0;
     height: 100%;
   }
+
   .container .content {
     flex-direction: column-reverse;
   }
+
   .container .content .left-side {
     width: 100%;
     flex-direction: row;
@@ -151,13 +162,103 @@ body {
     justify-content: center;
     flex-wrap: wrap;
   }
+
   .container .content .left-side::before {
     display: none;
   }
+
   .container .content .right-side {
     width: 100%;
     margin-left: 0;
   }
 }
 
-/* /// */
+/* Navbar Styling */
+.navbar {
+  background-color: #ffffff; /* Dark background color */
+  padding: 10px 20px; /* Add some padding */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Vertically center items */
+}
+
+.navbar-brand {
+  margin-right: 30px; /* Add some spacing between logo and other elements */
+}
+
+.navbar-brand img {
+  height: 30px; /* Adjust logo height as needed */
+}
+
+.navbar-nav {
+  display: flex; /* Use flexbox for navigation links */
+  align-items: center;
+  margin-left: auto; /* Push navigation links to the right */
+}
+/* Hover dropdown menu */
+.nav-hover-dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  z-index: 1000;
+}
+
+.nav-hover-dropdown .dropdown:hover .dropdown-menu {
+  display: block;
+  margin-right: 2rem !important;
+}
+/* CSS */
+.navname_ac::after {
+  content: "\f078"; /* Unicode character for chevron-up */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-left: 5px; /* Adjust spacing as needed */
+  transition: transform 0.1s ease; /* Add transition for smooth animation */
+}
+
+.navname_ac:hover::after {
+  content: "\f077";
+}
+
+
+.navbar-nav .nav-link {
+  margin-right: 3rem !important;
+  font-family: 'Poppins';
+  color: #000000 !important; /* White text color */
+  font-size: 14px; /* Adjust font size as needed */
+  text-transform: uppercase; /* Uppercase navigation links */
+  padding: 10px 15px; /* Add some padding for spacing */
+  transition: background-color 0.3s ease; /* Add transition for hover effect */
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
+  border-radius: 4px; /* Add some border radius */
+}
+
+.navbar-nav .nav-link.active {
+  background-color: rgba(255, 255, 255, 0.2); /* Darker background for active link */
+  border-radius: 4px; /* Add some border radius */
+}
+.dropdown-menu {
+  right: 0;
+  left: auto !important;
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-top: none;
+  min-width: 160px;
+  z-index: 1000;
+}
+
+.dropdown-menu::before {
+  right: 12px;
+  left: auto;
+}
