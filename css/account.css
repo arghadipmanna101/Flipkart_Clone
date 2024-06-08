@@ -7,6 +7,11 @@ section .container {
   max-width: 100%;
   transition: box-shadow 0.3s ease;
 }
+
+section .container:hover {
+  box-shadow: 0 8px 16px rgba(91, 77, 77, 0.2); 
+}
+
 section h1 {
   color: #1149ff;
 }
