@@ -31,12 +31,16 @@ section .form-group label:hover {
 
 section .form-control {
   border: 1px solid #ced4da;
-  
+  border-radius: 4px;
+  padding: 10px;
+  transition: border-color 0.3s ease;
 }
+
 section .form-control:focus {
   border-color: #0755ff;
   box-shadow: 0 0 0 0.2rem rgba(12, 82, 163, 0.25);
 }
+
 section .btn-primary {
   background-color: #007bff;
   border-color: #007bff;
