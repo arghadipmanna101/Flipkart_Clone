@@ -14,12 +14,20 @@ section .container:hover {
 
 section h1 {
   color: #1149ff;
+  text-align: center;
+  margin-bottom: 20px;
 }
+
 section .form-group label {
   color: #343a40;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-top: 5px ;
 }
+
 section .form-control {
   border: 1px solid #ced4da;
+  
 }
 section .form-control:focus {
   border-color: #0755ff;
