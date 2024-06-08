@@ -5,6 +5,7 @@ section .container {
   padding: 30px;
   box-shadow: 0 4px 8px rgba(91, 77, 77, 0.1);
   max-width: 100%;
+  transition: box-shadow 0.3s ease;
 }
 section h1 {
   color: #1149ff;
