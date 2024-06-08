@@ -18,5 +18,4 @@ jobs:
         with:
       
           issue-message: "Hi there! Thanks for opening this issue. We appreciate your contribution to this open-source project. We aim to respond or assign your issue as soon as possible."
-          pr-message: "Great job, @${{ github.actor }}! 🎉 Thank you for submitting your pull request. Your contribution is valuable and we appreciate your efforts to improve our project.We will promptly review your changes and offer feedback. Keep up the excellent work! Kindly remember to check our [contributing guidelines](https://github.com/Anshika14528/RAPIDOC-HEALTHCARE-WEBSITE-/blob/main/CONTRIBUTING.md)"
-        
+          pr-message: "Great job, @${{ github.actor }}! 🎉 Thank you for submitting your pull request. Your contribution is valuable and we appreciate your efforts to improve our project.We will promptly review your changes and offer feedback. 
