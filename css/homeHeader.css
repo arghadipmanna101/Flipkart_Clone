@@ -189,11 +189,24 @@ form {
   background-color: #ffffff;
   border: 1px solid #ddd;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding-top: none;
-  padding-bottom: none;
   height: 320px;
   width: 100%;
   min-width: 300px;
+  z-index: 1000;
+  right: 0;
+  line-height: 0px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.homeHeader .dropdown-menu-right{
+  position: absolute !important;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 170px;
+  width: 100%;
+  min-width: 250px;
   z-index: 1000;
   right: 0;
   line-height: 0px;
