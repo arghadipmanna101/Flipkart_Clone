@@ -39,6 +39,7 @@ section .form-control {
 section .form-control:focus {
   border-color: #0755ff;
   box-shadow: 0 0 0 0.2rem rgba(12, 82, 163, 0.25);
+  outline: none;
 }
 
 section .btn-primary {
