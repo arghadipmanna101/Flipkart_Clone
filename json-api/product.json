@@ -5,7 +5,8 @@
         "productImg": "mobile (1).jpeg",
         "rating": 4.3,
         "category":"mobile",
-        "price": 58999
+        "price": 58999,
+        "quantity": 0
     },
     {
         "name": "Apple iPhone 15 (Blue, 128 GB)",
@@ -13,7 +14,8 @@
         "productImg": "mobile (2).jpeg",
         "rating": 4.5,
         "category":"mobile",
-        "price": 79999
+        "price": 79999,
+        "quantity": 0
     },
     {
         "name": "Apple iPhone 13 (Starlight, 128 GB)",
@@ -21,7 +23,8 @@
         "productImg": "mobile (3).jpeg",
         "rating": 4.2,
         "category":"mobile",
-        "price": 59999
+        "price": 59999,
+        "quantity": 0
     },
     {
         "name": "Apple iPhone 15 (Black, 128 GB)",
@@ -29,7 +32,8 @@
         "productImg": "mobile (4).jpeg",
         "rating": 4.4,
         "category":"mobile",
-        "price": 79999
+        "price": 79999,
+        "quantity": 0
     },
     {
         "name": "Apple iPhone 14 Plus (Starlight, 128 GB)",
@@ -37,7 +41,8 @@
         "productImg": "mobile (5).jpeg",
         "rating": 4.1,
         "category":"mobile",
-        "price": 79900
+        "price": 79900,
+        "quantity": 0
     },
     {
         "name": "Apple iPhone 14 (Purple, 128 GB)",
@@ -45,7 +50,8 @@
         "productImg": "mobile (6).jpeg",
         "rating": 4.6,
         "category":"mobile",
-        "price": 69900
+        "price": 69900,
+        "quantity": 0
     },
     {
         "name": "OPPO A59 5G (Starry Black, 128 GB)",
@@ -53,7 +59,8 @@
         "productImg": "mobile (7).jpeg",
         "rating": 4.2,
         "category":"mobile",
-        "price": 17999
+        "price": 17999,
+        "quantity": 0
     },
     {
         "name": "OPPO A58 (Dazzling Green, 128 GB)",
@@ -61,7 +68,8 @@
         "productImg": "mobile (8).jpeg",
         "rating": 4.5,
         "category":"mobile",
-        "price": 15499
+        "price": 15499,
+        "quantity": 0
     },
     {
         "name": "OPPO A59 5G (Silk Gold, 128 GB)",
@@ -69,7 +77,8 @@
         "productImg": "mobile (9).jpeg",
         "rating": 4.4,
         "category":"mobile",
-        "price": 19999
+        "price": 19999,
+        "quantity": 0
     },
     {
         "name": "OPPO A58 (Glowing Black, 128 GB)",
@@ -77,7 +86,8 @@
         "productImg": "mobile (10).jpeg",
         "rating": 4.3,
         "category":"mobile",
-        "price": 15999
+        "price": 15999,
+        "quantity": 0
     },
     {
         "name": "OPPO Reno11 5G (Wave Green, 128 GB)",
@@ -85,7 +95,8 @@
         "productImg": "mobile (11).jpeg",
         "rating": 4.1,
         "category":"mobile",
-        "price": 38999
+        "price": 38999,
+        "quantity": 0
     },
     {
         "name": "OPPO A17 (Lake Blue, 64 GB)",
@@ -93,7 +104,8 @@
         "productImg": "mobile (12).jpeg",
         "rating": 4.6,
         "category":"mobile",
-        "price": 14999
+        "price": 14999,
+        "quantity": 0
     },
     {
         "name": "Motorola g14 (Sky Blue, 128 GB)",
@@ -101,7 +113,8 @@
         "productImg": "mobile (13).jpeg",
         "rating": 4.2,
         "category":"mobile",
-        "price": 13999
+        "price": 13999,
+        "quantity": 0
     },
     {
         "name": "Motorola Edge 40 Neo (Peach Fuzz, 128 GB)",
@@ -109,7 +122,8 @@
         "productImg": "mobile (14).jpeg",
         "rating": 4.5,
         "category":"mobile",
-        "price": 27999
+        "price": 27999,
+        "quantity": 0
     },
     {
         "name": "Motorola G34 5G (Ice Blue, 128 GB)",
@@ -117,7 +131,8 @@
         "productImg": "mobile (15).jpeg",
         "rating": 4.4,
         "category":"mobile",
-        "price": 14999
+        "price": 14999,
+        "quantity": 0
     },
     {
         "name": "MOTOROLA g24 Power (Ink blue, 128 GB)",
@@ -125,7 +140,8 @@
         "productImg": "mobile (16).jpeg",
         "rating": 4.3,
         "category":"mobile",
-        "price": 11999
+        "price": 11999,
+        "quantity": 0
     },
     {
         "name": "Motorola G32 (Satin Silver, 128 GB)",
@@ -133,7 +149,8 @@
         "productImg": "mobile (17).jpeg",
         "rating": 4.1,
         "category":"mobile",
-        "price": 18999
+        "price": 18999,
+        "quantity": 0
     },
     {
         "name": "Motorola G34 5G (Ocean Green, 128 GB)",
@@ -141,7 +158,8 @@
         "productImg": "mobile (18).jpeg",
         "rating": 4.6,
         "category":"mobile",
-        "price": 13999
+        "price": 13999,
+        "quantity": 0
     },
     {
         "name": "POCO C65 (Matte Black, 128 GB)",
@@ -149,7 +167,8 @@
         "productImg": "mobile (19).jpeg",
         "rating": 4.2,
         "category":"mobile",
-        "price": 10999
+        "price": 10999,
+        "quantity": 0
     },
     {
         "name": "POCO C65 (Matte Black, 256 GB)",
@@ -157,7 +176,8 @@
         "productImg": "mobile (19).jpeg",
         "rating": 4.2,
         "category":"mobile",
-        "price": 13999
+        "price": 13999,
+        "quantity": 0
     },
     {
         "name": "POCO C65 (Pastel Green, 128 GB)",
@@ -165,7 +185,8 @@
         "productImg": "mobile (20).jpeg",
         "rating": 4.5,
         "category":"mobile",
-        "price": 16999
+        "price": 16999,
+        "quantity": 0
     },
     {
         "name": "POCO M6 5G (Polaris Green, 256 GB)",
@@ -173,7 +194,8 @@
         "productImg": "mobile (21).jpeg",
         "rating": 4.4,
         "category":"mobile",
-        "price": 13999
+        "price": 13999,
+        "quantity": 0
     },
     {
         "name": "POCO C61 (Diamond Dust Black, 128 GB)",
@@ -181,7 +203,8 @@
         "productImg": "mobile (22).jpeg",
         "rating": 4.3,
         "category":"mobile",
-        "price": 9999
+        "price": 9999,
+        "quantity": 0
     },
     {
         "name": "POCO C65 (Pastel Blue, 128 GB)",
@@ -189,7 +212,8 @@
         "productImg": "mobile (23).jpeg",
         "rating": 4.1,
         "category":"mobile",
-        "price": 10999
+        "price": 10999,
+        "quantity": 0
     },
     {
         "name": "Google Pixel 8 Pro (Obsidian, 128 GB)",
@@ -197,7 +221,8 @@
         "productImg": "mobile (24).jpeg",
         "rating": 4.6,
         "category":"mobile",
-        "price": 169999
+        "price": 169999,
+        "quantity": 0
     },
     {
         "name": "Google Pixel 8 (Rose, 128 GB)",
@@ -205,7 +230,8 @@
         "productImg": "mobile (25).jpeg",
         "rating": 4.2,
         "category":"mobile",
-        "price": 73999
+        "price": 73999,
+        "quantity": 0
     },
     {
         "name": "Google Pixel 7 (Snow, 128 GB)",
@@ -213,7 +239,8 @@
         "productImg": "mobile (26).jpeg",
         "rating": 4.5,
         "category":"mobile",
-        "price": 59999
+        "price": 59999,
+        "quantity": 0
     },
     {
         "name": "Google Pixel 8a (Bay, 128 GB)",
@@ -221,7 +248,8 @@
         "productImg": "mobile (27).jpeg",
         "rating": 4.4,
         "category":"mobile",
-        "price": 52999
+        "price": 52999,
+        "quantity": 0
     },
     {
         "name": "Google Pixel 7 Pro (Hazel, 128 GB)",
@@ -229,7 +257,8 @@
         "productImg": "mobile (28).jpeg",
         "rating": 4.3,
         "category":"mobile",
-        "price": 84999
+        "price": 84999,
+        "quantity": 0
     },
     {
         "name": "Google Pixel 7a (Charcoal, 128 GB)",
@@ -237,7 +266,8 @@
         "productImg": "mobile (29).jpeg",
         "rating": 4.1,
         "category":"mobile",
-        "price": 43999
+        "price": 43999,
+        "quantity": 0
     },
     {
         "name": "Infinix Note 40 Pro+ 5G",
@@ -245,7 +275,8 @@
         "productImg": "mobile (30).jpeg",
         "rating": 4.6,
         "category":"mobile",
-        "price": 33999
+        "price": 33999,
+        "quantity": 0
     },
     {
         "name": "Infinix Note 30 5G (Magic Black, 256 GB)",
@@ -253,7 +284,8 @@
         "productImg": "mobile (31).jpeg",
         "rating": 4.2,
         "category":"mobile",
-        "price": 19999
+        "price": 19999,
+        "quantity": 0
     },
     {
         "name": "Infinix HOT 40i (Palm Blue, 256 GB)",
@@ -261,7 +293,8 @@
         "productImg": "mobile (32).jpeg",
         "rating": 4.5,
         "category":"mobile",
-        "price": 10999
+        "price": 10999,
+        "quantity": 0
     },
     {
         "name": "Infinix SMART 8 HD (Galaxy White, 64 GB)",
@@ -269,7 +302,8 @@
         "productImg": "mobile (33).jpeg",
         "rating": 4.4,
         "category":"mobile",
-        "price": 7999
+        "price": 7999,
+        "quantity": 0
     },
     {
         "name": "Infinix SMART 8 HD (Crystal Green, 64 GB)",
@@ -277,7 +311,8 @@
         "productImg": "mobile (34).jpeg",
         "rating": 4.3,
         "category":"mobile",
-        "price": 8999
+        "price": 8999,
+        "quantity": 0
     },
     {
         "name": "Infinix SMART 8 HD (Timber Black, 64 GB)",
@@ -285,7 +320,8 @@
         "productImg": "mobile (35).jpeg",
         "rating": 4.1,
         "category":"mobile",
-        "price": 7999
+        "price": 7999,
+        "quantity": 0
     },
     {
         "name": "REDMI 13C (Starfrost White, 128 GB)",
@@ -293,7 +329,8 @@
         "productImg": "mobile (36).jpeg",
         "rating": 4.6,
         "category":"mobile",
-        "price": 11999
+        "price": 11999,
+        "quantity": 0
     },
     {
         "name": "REDMI 13C 5G (Startrail Green, 128 GB)",
@@ -301,7 +338,8 @@
         "productImg": "mobile (37).jpeg",
         "rating": 4.2,
         "category":"mobile",
-        "price": 13999
+        "price": 13999,
+        "quantity": 0
     },
     {
         "name": "REDMI A2 (Sea Green, 64 GB)",
@@ -309,7 +347,8 @@
         "productImg": "mobile (38).jpeg",
         "rating": 4.5,
         "category":"mobile",
-        "price": 9999
+        "price": 9999,
+        "quantity": 0
     },
     {
         "name": "REDMI 12 (Pastel Blue, 128 GB)",
@@ -317,7 +356,8 @@
         "productImg": "mobile (39).jpeg",
         "rating": 4.4,
         "category":"mobile",
-        "price": 13999
+        "price": 13999,
+        "quantity": 0
     },
     {
         "name": "REDMI Note 13 5G (Stealth Black, 256 GB)",
@@ -325,7 +365,8 @@
         "productImg": "mobile (40).jpeg",
         "rating": 4.3,
         "category":"mobile",
-        "price": 23999
+        "price": 23999,
+        "quantity": 0
     },
     {
         "name": "REDMI 13C 5G (Startrail Silver, 128 GB",
@@ -333,7 +374,8 @@
         "productImg": "mobile (41).jpeg",
         "rating": 4.1,
         "category":"mobile",
-        "price": 13999
+        "price": 13999,
+        "quantity": 0
     },
     {
         "name": "realme 12x 5G (Twilight Purple, 128 GB)",
@@ -341,7 +383,8 @@
         "productImg": "mobile (42).jpeg",
         "rating": 4.6,
         "category":"mobile",
-        "price": 17999
+        "price": 17999,
+        "quantity": 0
     },
     {
         "name": "realme P1 5G (Peacock Green, 128 GB)",
@@ -349,7 +392,8 @@
         "productImg": "mobile (43).jpeg",
         "rating": 4.2,
         "category":"mobile",
-        "price": 13999
+        "price": 13999,
+        "quantity": 0
     },
     {
         "name": "realme C53 (Champion Black, 128 GB)",
@@ -357,7 +401,8 @@
         "productImg": "mobile (44).jpeg",
         "rating": 4.5,
         "category":"mobile",
-        "price": 13999
+        "price": 13999,
+        "quantity": 0
     },
     {
         "name": "realme C51 (Mint Green, 64 GB)",
@@ -365,7 +410,8 @@
         "productImg": "mobile (45).jpeg",
         "rating": 4.4,
         "category":"mobile",
-        "price": 10999
+        "price": 10999,
+        "quantity": 0
     },
     {
         "name": "realme C53realme C53 (Champion Gold, 128 GB)",
@@ -373,7 +419,8 @@
         "productImg": "mobile (46).jpeg",
         "rating": 4.3,
         "category":"mobile",
-        "price": 11999
+        "price": 11999,
+        "quantity": 0
     },
     {
         "name": "realme C53 (Champion Gold, 128 GB)",
@@ -381,7 +428,8 @@
         "productImg": "mobile (46).jpeg",
         "rating": 4.3,
         "category":"mobile",
-        "price": 13999
+        "price": 13999,
+        "quantity": 0
     },
     {
         "name": "SAMSUNG Galaxy F15 5G (Ash Black, 128 GB)",
@@ -389,7 +437,8 @@
         "productImg": "mobile (47).jpeg",
         "rating": 4.1,
         "category":"mobile",
-        "price": 16999
+        "price": 16999,
+        "quantity": 0
     },
     {
         "name": "SAMSUNG Galaxy F54 5G (Meteor Blue, 256 GB)",
@@ -397,7 +446,8 @@
         "productImg": "mobile (48).jpeg",
         "rating": 4.6,
         "category":"mobile",
-        "price": 35999
+        "price": 35999,
+        "quantity": 0
     },
     {
         "name": "SAMSUNG Galaxy F04 (Jade Purple, 64 GB)",
@@ -405,7 +455,8 @@
         "productImg": "mobile (49).jpeg",
         "rating": 4.2,
         "category":"mobile",
-        "price": 13999
+        "price": 13999,
+        "quantity": 0
     },
     {
         "name": "SAMSUNG Galaxy F34 5G (Orchid Violet, 128 GB)",
@@ -413,7 +464,8 @@
         "productImg": "mobile (50).jpeg",
         "rating": 4.5,
         "category":"mobile",
-        "price": 24999
+        "price": 24999,
+        "quantity": 0
     },
     {
         "name": "SAMSUNG Galaxy F15 5G (Jazzy Green, 128 GB)",
@@ -421,7 +473,8 @@
         "productImg": "mobile (51).jpeg",
         "rating": 4.4,
         "category":"mobile",
-        "price": 13999
+        "price": 13999,
+        "quantity": 0
     },
     {
         "name": "SAMSUNG Galaxy F14 5G (OMG Black, 128 GB)",
@@ -429,7 +482,8 @@
         "productImg": "mobile (52).jpeg",
         "rating": 4.3,
         "category":"mobile",
-        "price": 18499
+        "price": 18499,
+        "quantity": 0
     },
     {
         "name": "vivo T2x 5G (Marine Blue, 128 GB)",
@@ -437,7 +491,8 @@
         "productImg": "mobile (53).jpeg",
         "rating": 4.1,
         "category":"mobile",
-        "price": 18999
+        "price": 18999,
+        "quantity": 0
     },
     {
         "name": "vivo T2x 5G (Aurora Gold, 128 GB)",
@@ -445,7 +500,8 @@
         "productImg": "mobile (55).jpeg",
         "rating": 4.6,
         "category":"mobile",
-        "price": 17999
+        "price": 17999,
+        "quantity": 0
     },
     {
         "name": "vivo T2x 5G (Aurora Gold, 128 GB)",
@@ -453,7 +509,8 @@
         "productImg": "mobile (55).jpeg",
         "rating": 4.6,
         "category":"mobile",
-        "price": 18999
+        "price": 18999,
+        "quantity": 0
     },
     {
         "name": "vivo T3x 5G (Celestial Green, 128 GB)",
@@ -461,7 +518,8 @@
         "productImg": "mobile (54).jpeg",
         "rating": 4.2,
         "category":"mobile",
-        "price": 18999
+        "price": 18999,
+        "quantity": 0
     },
     {
         "name": "vivo T3x 5G (Crimson Bliss, 128 GB)",
@@ -469,7 +527,8 @@
         "productImg": "mobile (56).jpeg",
         "rating": 4.5,
         "category":"mobile",
-        "price": 14499
+        "price": 14499,
+        "quantity": 0
     },
     {
         "name": "vivo T3x 5G (Crimson Bliss, 128 GB)",
@@ -477,7 +536,8 @@
         "productImg": "mobile (56).jpeg",
         "rating": 4.5,
         "category":"mobile",
-        "price": 17499
+        "price": 17499,
+        "quantity": 0
     },
     {
         "name": "PHILIPS BT3101/15 Trimmer",
@@ -485,7 +545,8 @@
         "productImg": "steel-cordless-philips.jpeg",
         "rating": 4.2,
         "category": "electronics",
-        "price": 1495
+        "price": 1495,
+        "quantity": 0
       },
       {
         "name": "NOVA NHT 1053 USB Trimmer",
@@ -493,7 +554,8 @@
         "productImg": "nova-original-ima.jpeg",
         "rating": 4.5,
         "category": "electronics",
-        "price": 2195
+        "price": 2195,
+        "quantity": 0
       },
       {
         "name": "PHILIPS BT1233/18 Trimmer",
@@ -501,7 +563,8 @@
         "productImg": "stainless-steel-cordless-philips-.jpeg",
         "rating": 4.0,
         "category": "electronics",
-        "price": 945
+        "price": 945,
+        "quantity": 0
       },
       {
         "name": "NOVA NHP 8100/05 Hair Dryer",
@@ -509,7 +572,8 @@
         "productImg": "silky-shine-hot-nova-original.jpeg",
         "rating": 4.2,
         "category": "electronics",
-        "price": 845
+        "price": 845,
+        "quantity": 0
       },
       {
         "name": "PHILIPS HP8302/06 Hair Straightener",
@@ -517,7 +581,8 @@
         "productImg": "original-imagky3myujy5rar.jpeg",
         "rating": 4.1,
         "category": "electronics",
-        "price": 1295
+        "price": 1295,
+        "quantity": 0
       },
       {
         "name": "TAPUJI Dancing Cactus",
@@ -525,7 +590,8 @@
         "productImg": "dancing-cactus-.jpeg",
         "rating": 4.6,
         "category": "kids toys",
-        "price": 334
+        "price": 334,
+        "quantity": 0
       },
       {
         "name": "HAMOFY Professional MaxtopT99",
@@ -533,7 +599,8 @@
         "productImg": "maxtopt99-rechargeable.jpeg",
         "rating": 4.5,
         "category": "electronics",
-        "price": 2499
+        "price": 2499,
+        "quantity": 0
       },
       {
         "name": "Apple 2022 MacBook AIR Apple M2",
@@ -541,7 +608,8 @@
         "productImg": "appleMacbook.jpeg",
         "rating": 4.5,
         "category": "electronics/laptop",
-        "price": 86990
+        "price": 86990,
+        "quantity": 0
       },
       {
         "name": "HP Chromebook(2024) MediaTek MT8183",
@@ -549,7 +617,8 @@
         "productImg": "11mk-g9-chromebook-hp.jpeg",
         "rating": 3.8,
         "category": "electronics/laptop",
-        "price": 34554
+        "price": 34554,
+        "quantity": 0
       },
       {
         "name": "DELL Latitude Intel Core i3 11th Gen(8 GB/512)",
@@ -557,7 +626,8 @@
         "productImg": "latitude-laptop-dell-.jpeg",
         "rating": 4.2,
         "category": "electronics/laptop",
-        "price": 73412
+        "price": 73412,
+        "quantity": 0
       },
       {
         "name": "DELL Intel Core i3 12th Gen (8 GB/512 GB SSD",
@@ -565,7 +635,8 @@
         "productImg": "del-i3-12gen.jpeg",
         "rating": 4.2,
         "category": "electronics/laptop",
-        "price": 59999
+        "price": 59999,
+        "quantity": 0
       },
       {
         "name": "Elista ELS WK-710 Wired USB Multi-device Keyboard",
@@ -573,7 +644,8 @@
         "productImg": "keyboard.jpeg",
         "rating": 4.5,
         "category": "electronics",
-        "price": 699
+        "price": 699,
+        "quantity": 0
       },
       {
         "name": "Portronics POR 1682 Wireless Optical Mouse",
@@ -589,7 +661,8 @@
         "productImg": "toad-13-portronic.jpeg",
         "rating": 4.1,
         "category": "electronics",
-        "price": 399
+        "price": 399,
+        "quantity": 0
       },
       {
         "name": "ZEBRONICS K-35 Wired USB Multi-device Keyboard",
@@ -597,7 +670,8 @@
         "productImg": "zebronics-origkeyboard.jpeg",
         "rating": 4.5,
         "category": "electronics",
-        "price": 285
+        "price": 285,
+        "quantity": 0
       },
       {
         "name": "Boult Bassbox X120 with Subwoofer, 120W Power, 2.1",
@@ -605,7 +679,8 @@
         "productImg": "original-imahyauhvfaa45en.jpeg",
         "rating": 4.3,
         "category": "electronics",
-        "price": 5999
+        "price": 5999,
+        "quantity": 0
       },
       {
         "name": "UIC 5103 80 W Bluetooth Tower Speaker",
@@ -613,7 +688,8 @@
         "productImg": "uic-original-imagrb.jpeg",
         "rating": 3.8,
         "category": "electronics",
-        "price": 1900
+        "price": 1900,
+        "quantity": 0
       },
       {
         "name": "Vox V7171 90 W Bluetooth Home Theatre",
@@ -621,7 +697,8 @@
         "productImg": "vox-original-mgj3.jpeg",
         "rating": 4.5,
         "category": "electronics",
-        "price": 2057
+        "price": 2057,
+        "quantity": 0
       },
       {
         "name": "Tata Sampann Toor Dal 1 kg",
@@ -629,7 +706,8 @@
         "productImg": "toorDal.jpeg",
         "rating": 4.5,
         "category": "grocery",
-        "price": 320
+        "price": 320,
+        "quantity": 0
       },
       {
         "name": "Fortune Premium kachi ghani pure Mustard Oli",
@@ -637,7 +715,8 @@
         "productImg": "mustard-oil-fortune.jpeg",
         "rating": 4.5,
         "category": "grocery",
-        "price": 180
+        "price": 180,
+        "quantity": 0
       },
       {
         "name": "DHARA Fit n Fine Soyabean Oil",
@@ -645,7 +724,8 @@
         "productImg": "soyabean-oil-dhara-.jpeg",
         "rating": 4.5,
         "category": "grocery",
-        "price": 130
+        "price": 130,
+        "quantity": 0
       },
       {
         "name": "Dabur Anmol Gold 100% Pure Coconut Hair Oil",
@@ -653,7 +733,8 @@
         "productImg": "coconut-hair-oil-600ml-dabur.jpeg",
         "rating": 4.5,
         "category": "grocery",
-        "price": 261
+        "price": 261,
+        "quantity": 0
       },
       {
         "name": "COMPLAN Nutrition Drink Powder",
@@ -661,7 +742,8 @@
         "productImg": "COMPLAN Nutrition Drink Powder.jpeg",
         "rating": 4.5,
         "category": "grocery",
-        "price": 569
+        "price": 569,
+        "quantity": 0
       },
       {
         "name": "Red Label Natural Care Mulethi, Ginger 1kg",
@@ -669,7 +751,8 @@
         "productImg": "redlabletea.jpeg",
         "rating": 4.5,
         "category": "grocery",
-        "price": 600
+        "price": 600,
+        "quantity": 0
       },
       {
         "name": "Molsi's Royal Zahidi Dates (Khajur)",
@@ -677,7 +760,8 @@
         "productImg": "khajoor.jpeg",
         "rating": 4.5,
         "category": "grocery",
-        "price": 160
+        "price": 160,
+        "quantity": 0
       },
       {
         "name": "Tata Coffee Grand Premium",
@@ -685,7 +769,8 @@
         "productImg": "teacoffee.jpeg",
         "rating": 4.5,
         "category": "grocery",
-        "price": 149
+        "price": 149,
+        "quantity": 0
       },
       {
         "name": "Kissan Jam Mix Fruit Tub 90 g",
@@ -693,7 +778,8 @@
         "productImg": "Kissan Jam Mix Fruit Tub 90 g.jpeg",
         "rating": 4.5,
         "category": "grocery",
-        "price": 100
+        "price": 100,
+        "quantity": 0
       },
       {
         "name": "BRITANNIA Good Day",
@@ -701,7 +787,8 @@
         "productImg": "BRITANNIA Good Day.jpeg",
         "rating": 4.5,
         "category": "grocery",
-        "price": 130
+        "price": 130,
+        "quantity": 0
       },
       {
         "name": "UNIBIC Sugar Free Cashew Cookies",
@@ -709,7 +796,8 @@
         "productImg": "UNIBIC Sugar Free Cashew Cookiee.jpeg",
         "rating": 4.5,
         "category": "grocery",
-        "price": 60
+        "price": 60,
+        "quantity": 0
       },
       {
         "name": "PARLE Hide and Seek Milano Cookies",
@@ -717,7 +805,8 @@
         "productImg": "origina6nzybfu.jpeg",
         "rating": 4.5,
         "category": "grocery",
-        "price": 58
+        "price": 58,
+        "quantity": 0
       },
       {
         "name": "Dettol Original Germ Protection",
@@ -725,7 +814,8 @@
         "productImg": "dettolfzpadj.jpeg",
         "rating": 4.5,
         "category": "grocery",
-        "price": 135
+        "price": 135,
+        "quantity": 0
       },
       {
         "name": "Pears Pure and Gentle Bar",
@@ -733,7 +823,8 @@
         "productImg": "pure-pears-.jpeg",
         "rating": 4.5,
         "category": "grocery",
-        "price": 452
+        "price": 452,
+        "quantity": 0
       },
       {
         "name": "Santoor by Wipro Skin Moisturizing",
@@ -741,7 +832,8 @@
         "productImg": "santoor.jpeg",
         "rating": 4.5,
         "category": "grocery",
-        "price": 310
+        "price": 310,
+        "quantity": 0
       },
       {
         "name": "Colgate ZigZag Medium Bristle",
@@ -749,7 +841,8 @@
         "productImg": "imagyfescnvgxdp7.jpeg",
         "rating": 4.5,
         "category": "grocery",
-        "price": 85
+        "price": 85,
+        "quantity": 0
       },
       {
         "name": "Colgate MaxFresh Toothpaste",
@@ -757,7 +850,8 @@
         "productImg": "-original-imahymrstzvfj4gc.jpeg",
         "rating": 4.5,
         "category": "grocery",
-        "price": 157
+        "price": 157,
+        "quantity": 0
       },
       {
         "name": "Kodak Television",
@@ -765,7 +859,8 @@
         "productImg": "koeqktv.jpeg",
         "rating": 4.5,
         "category": "appliances/TV",
-        "price": 11000
+        "price": 11000,
+        "quantity": 0
       },
       {
         "name": "LG TV UR7500",
@@ -773,7 +868,8 @@
         "productImg": "lgtvguafs.jpeg",
         "rating": 4.5,
         "category": "appliances/TV",
-        "price": 32990
+        "price": 32990,
+        "quantity": 0
       },
       {
         "name": "Samsung Televisions",
@@ -781,7 +877,8 @@
         "productImg": "susmtvsbzud.jpeg",
         "rating": 4.5,
         "category": "appliances/TV",
-        "price": 38000
+        "price": 38000,
+        "quantity": 0
       },
       {
         "name": "Mi 5X Television",
@@ -789,7 +886,8 @@
         "productImg": "mitv8g8vznua.jpeg",
         "rating": 4.5,
         "category": "appliances/TV",
-        "price": 40999
+        "price": 40999,
+        "quantity": 0
       },
       {
         "name": "Blaupunkt Cybersound",
@@ -797,7 +895,8 @@
         "productImg": "dhqxc.jpeg",
         "rating": 4.5,
         "category": "appliances/TV",
-        "price": 24999
+        "price": 24999,
+        "quantity": 0
       },
       {
         "name": "Samsung HD Smart TV",
@@ -805,7 +904,8 @@
         "productImg": "samyzsbzud.jpeg",
         "rating": 4.5,
         "category": "appliances/TV",
-        "price": 33500
+        "price": 33500,
+        "quantity": 0
       },
       {
         "name": "Ecodubble Washing Machine",
@@ -813,7 +913,8 @@
         "productImg": "wash4w.jpeg",
         "rating": 4.5,
         "category": "appliances/washing",
-        "price": 15000
+        "price": 15000,
+        "quantity": 0
       },
       {
         "name": "Semi Automatic Washing Machine",
@@ -821,7 +922,8 @@
         "productImg": "semfcnw9yt.jpeg",
         "rating": 4.5,
         "category": "appliances/washing",
-        "price": 16000
+        "price": 16000,
+        "quantity": 0
       },
       {
         "name": "High Capacity Refrigerator",
@@ -829,7 +931,8 @@
         "productImg": "kpazkqm7tnbr.jpeg",
         "rating": 4.5,
         "category": "appliances",
-        "price": 27900
+        "price": 27900,
+        "quantity": 0
       },
       {
         "name": "3Star Refrigerator",
@@ -837,7 +940,8 @@
         "productImg": "5tfwbqu.jpeg",
         "rating": 4.5,
         "category": "appliances",
-        "price": 12490
+        "price": 12490,
+        "quantity": 0
       },
       {
         "name": "Sewing Machine",
@@ -845,7 +949,8 @@
         "productImg": "ag5gz9dd3z8gzq.jpeg",
         "rating": 4.5,
         "category": "appliances",
-        "price": 18000
+        "price": 18000,
+        "quantity": 0
       },
       {
         "name": "Iron",
@@ -853,7 +958,8 @@
         "productImg": "6e6ub.jpeg",
         "rating": 4.5,
         "category": "appliances",
-        "price": 1000
+        "price": 1000,
+        "quantity": 0
       },
       {
         "name": "Philips Iron",
@@ -861,7 +967,8 @@
         "productImg": "6e6ub.jpeg",
         "rating": 4.5,
         "category": "appliances",
-        "price": 800
+        "price": 800,
+        "quantity": 0
       },
       {
         "name": "Juicer Mixer Grinders",
@@ -869,7 +976,8 @@
         "productImg": "bb179e371e6fae0a.jpg",
         "rating": 4.5,
         "category": "appliances",
-        "price":1099 
+        "price":1099 ,
+        "quantity": 0
       },
       {
         "name": "Energy Fans",
@@ -877,7 +985,8 @@
         "productImg": "22561ea064c1ce0b.jpg",
         "rating": 4.5,
         "category": "appliances",
-        "price": 1899
+        "price": 1899,
+        "quantity": 0
       },
       {
         "name": "Homes Julian Engineered Wood Door Walnut",
@@ -885,7 +994,8 @@
         "productImg": "vwhs6z.jpeg",
         "rating": 3.7,
         "category": "home&furniture",
-        "price": 7499
+        "price": 7499,
+        "quantity": 0
       },
       {
         "name": "Bekner 100 ml Manual Ice Cream Maker",
@@ -893,7 +1003,8 @@
         "productImg": "axhcb6jupd.jpeg",
         "rating": 4.0,
         "category": "home&furniture",
-        "price": 189
+        "price": 189,
+        "quantity": 0
       },
       {
         "name": "SRE 27 Wooden Spatula",
@@ -901,7 +1012,8 @@
         "productImg": "qwfjr.jpeg",
         "rating": 4.1,
         "category": "home&furniture",
-        "price": 145
+        "price": 145,
+        "quantity": 0
       },
       {
         "name": "OGGN Marble Chakla Wooden Belan",
@@ -909,7 +1021,8 @@
         "productImg": "kmqwyu.jpeg",
         "rating": 4.5,
         "category": "home&furniture",
-        "price": 499
+        "price": 499,
+        "quantity": 0
       },
       {
         "name": "HANGUL Wallchiere Wall Lamp With Bulb",
@@ -917,7 +1030,8 @@
         "productImg": "kysberf6sck.jpeg",
         "rating": 4.7,
         "category": "home&furniture",
-        "price": 603
+        "price": 603,
+        "quantity": 0
       },
       {
         "name": "Uplight Wall Bulb",
@@ -925,7 +1039,8 @@
         "productImg": "cgrcfmh9.jpeg",
         "rating": 4.5,
         "category": "home&furniture",
-        "price": 999
+        "price": 999,
+        "quantity": 0
       },
       {
         "name": "Mamaearth Onion Redensyl for Fall Control Hair Oil",
@@ -933,7 +1048,8 @@
         "productImg": "f22wvxa.jpeg",
         "rating": 4.5,
         "category": "beauty&toys",
-        "price": 348
+        "price": 348,
+        "quantity": 0
       },
       {
         "name": "Topline Derma Roller 540",
@@ -941,7 +1057,8 @@
         "productImg": "zthgywhjrh2.jpeg",
         "rating": 3.5,
         "category": "beauty&toys",
-        "price": 499
+        "price": 499,
+        "quantity": 0
       },
       {
         "name": "Pond's Super Light Gel",
@@ -949,7 +1066,8 @@
         "productImg": "f3dwzx3k6apb.jpeg",
         "rating": 4.5,
         "category": "beauty&toys",
-        "price": 260
+        "price": 260,
+        "quantity": 0
       },
       {
         "name": "Livon Hair Serum",
@@ -957,7 +1075,8 @@
         "productImg": "u4bsuasy.jpeg",
         "rating": 4.2,
         "category": "beauty&toys",
-        "price": 750
+        "price": 750,
+        "quantity": 0
       },
       {
         "name": "Jovees De Tan Face Wash",
@@ -965,7 +1084,8 @@
         "productImg": "iginal-imahyqn8fhksrjqj.jpeg",
         "rating": 4.5,
         "category": "beauty&toys",
-        "price": 225
+        "price": 225,
+        "quantity": 0
       },
       {
         "name": "Sheopals Beard Growth Serum",
@@ -973,7 +1093,8 @@
         "productImg": "vuyxr4fqyfv.jpeg",
         "rating": 4.5,
         "category": "beauty&toys",
-        "price": 399
+        "price": 399,
+        "quantity": 0
       },
       {
         "name": "Nexteesh Moster Car",
@@ -981,7 +1102,8 @@
         "productImg": "l-imafxruqgz7rw4xw.jpeg",
         "rating": 4.5,
         "category": "beauty&toys",
-        "price": 594
+        "price": 594,
+        "quantity": 0
       },
       {
         "name": "Caddles Toes Famous Car",
@@ -989,7 +1111,8 @@
         "productImg": "yphzhvpmv.jpeg",
         "rating": 3.3,
         "category": "beauty&toys",
-        "price": 1999
+        "price": 1999,
+        "quantity": 0
       },
       {
         "name": "Tapuji Dancing Cactus",
@@ -997,7 +1120,8 @@
         "productImg": "ginal-imahya7dewezwgdj.jpeg",
         "rating": 4.5,
         "category": "kids toys",
-        "price": 420
+        "price": 420,
+        "quantity": 0
       },
       {
         "name": "Beauty of Joseon Sunscreen",
@@ -1005,7 +1129,8 @@
         "productImg": "ybk3jt4b7b.jpeg",
         "rating": 2.5,
         "category": "beauty&toys",
-        "price": 2099
+        "price": 2099,
+        "quantity": 0
       },
       {
         "name": "FTX T-Shirt",
@@ -1013,7 +1138,8 @@
         "productImg": "hztgaaft73g.jpeg",
         "rating": 4.5,
         "category": "fashion",
-        "price": 429
+        "price": 429,
+        "quantity": 0
       },
       {
         "name": "Lorofy Saree",
@@ -1021,7 +1147,8 @@
         "productImg": "magx7g6npgg6ff9.jpeg",
         "rating": 4.5,
         "category": "fashion",
-        "price": 1999
+        "price": 1999,
+        "quantity": 0
       }
       ,
       {
@@ -1030,7 +1157,8 @@
         "productImg": "vzkm5tfyryh.jpeg",
         "rating": 4.5,
         "category": "fashion",
-        "price": 462
+        "price": 462,
+        "quantity": 0
       },
       {
         "name": "Jeans",
@@ -1038,7 +1166,8 @@
         "productImg": "ynw4czxk8.jpeg",
         "rating": 4.5,
         "category": "fashion",
-        "price": 2499
+        "price": 2499,
+        "quantity": 0
       },
       {
         "name": "Printed Women Round Neck T-Shirt",
@@ -1046,7 +1175,8 @@
         "productImg": "dyxnev3gw.jpeg",
         "rating": 4.5,
         "category": "fashion",
-        "price": 1495
+        "price": 1495,
+        "quantity": 0
       },
       {
         "name": "Printed Women Round Neck T-Shirt",
@@ -1054,7 +1184,8 @@
         "productImg": "gr5rxa8kvkzem.jpeg",
         "rating": 4.6,
         "category": "fashion",
-        "price": 1495
+        "price": 1495,
+        "quantity": 0
       },
       {
         "name": "Women Red Heels Sandal",
@@ -1062,7 +1193,8 @@
         "productImg": "cdhsc5sbwh7.jpeg",
         "rating": 4.5,
         "category": "fashion",
-        "price": 1999
+        "price": 1999,
+        "quantity": 0
       },
       {
         "name": "Women Pink Heels Sandal",
@@ -1070,7 +1202,8 @@
         "productImg": "fybppzvjhhx7.jpeg",
         "rating": 4.5,
         "category": "fashion",
-        "price": 1949
+        "price": 1949,
+        "quantity": 0
       },
       {
         "name": "Women Beige Heels",
@@ -1078,7 +1211,8 @@
         "productImg": "phb4nemc5.jpeg",
         "rating": 4.5,
         "category": "fashion",
-        "price": 2290
+        "price": 2290,
+        "quantity": 0
       },
       {
         "name": "Men Camel Sandal",
@@ -1086,7 +1220,8 @@
         "productImg": "ghknczgstzxkb.jpeg",
         "rating": 4.5,
         "category": "fashion",
-        "price": 600
+        "price": 600,
+        "quantity": 0
       },
       {
         "name": "Men Slim Fit Solid Sirt",
@@ -1094,7 +1229,8 @@
         "productImg": "aggvvnywmgthyq.jpeg",
         "rating": 4.5,
         "category": "fashion",
-        "price": 1599
+        "price": 1599,
+        "quantity": 0
       },
       {
         "name": "Men Slim Fit Sirt",
@@ -1102,7 +1238,8 @@
         "productImg": "agf4mxnhanzdtn.jpeg",
         "rating": 4.5,
         "category": "fashion",
-        "price": 468
+        "price": 468,
+        "quantity": 0
       },
       {
         "name": "Hero Super Splendor (Disc)",
@@ -1110,7 +1247,8 @@
         "productImg": "-imahfy58uvs82sth.jpeg",
         "rating": 4.5,
         "category": "two-wheelers",
-        "price": 84198
+        "price": 84198,
+        "quantity": 0
       },
       {
         "name": "Hero DESTINI",
@@ -1118,7 +1256,8 @@
         "productImg": "6xgddjyk8.jpeg",
         "rating": 4.5,
         "category": "two-wheelers",
-        "price": 71499
+        "price": 71499,
+        "quantity": 0
       },
       {
         "name": "Hero Glamour XTEC (Disc)",
@@ -1126,7 +1265,8 @@
         "productImg": "-original-imaggcjz4ypdz8jq.jpeg",
         "rating": 4.5,
         "category": "two-wheelers",
-        "price":94368 
+        "price":94368,
+        "quantity": 0 
       },
       {
         "name": "VIDA Powered by Hero V1 Pro",
@@ -1134,7 +1274,8 @@
         "productImg": "-original-imagz8xnkeykwmpc.jpeg",
         "rating": 4.5,
         "category": "two-wheelers",
-        "price":  149900
+        "price":  149900,
+        "quantity": 0
       },
       {
         "name": "Hero Glamour (drum)",
@@ -1142,7 +1283,8 @@
         "productImg": "l-imagtnjz6p5fgycd.jpeg",
         "rating": 4.4,
         "category": "two-wheelers",
-        "price": 83448
+        "price": 83448,
+        "quantity": 0
       },
       {
         "name": "Hero Super Splendor",
@@ -1150,7 +1292,8 @@
         "productImg": "-original-imagn5bnymq8aucu.jpeg",
         "rating": 4.5,
         "category": "two-wheelers",
-        "price": 83549
+        "price": 83549,
+        "quantity": 0
       },
       {
         "name": "Boys Casual Shirt Pant, Cap  (Green)",
@@ -1158,7 +1301,8 @@
         "productImg": "years4-5-boys-202-20-boom-.jpeg",
         "rating": 4.1,
         "category": "fashion-kids",
-        "price": 699
+        "price": 699,
+        "quantity": 0
       },
       {
         "name": "Baby Girls Midi/Knee Length Festive/Wedding Dress",
@@ -1166,7 +1310,8 @@
         "productImg": "6-12-months-rifa-rm-kids-fashion.jpeg",
         "rating": 4,
         "category": "fashion-kids",
-        "price": 999
+        "price": 999,
+        "quantity": 0
       },
       {
         "name": "Boys Party(Festive) Shirt Trouser, Jacket, Bow Tie",
@@ -1174,7 +1319,8 @@
         "productImg": "1-2-years-blz-blue-gunatit.jpeg",
         "rating": 3.5,
         "category": "fashion-kids",
-        "price": 1499
+        "price": 1499,
+        "quantity": 0
       },
       {
         "name": "Boys Casual T-shirt Shorts",
@@ -1182,7 +1328,8 @@
         "productImg": "original-imahyjk3umtakrs9.jpeg",
         "rating": 4.2,
         "category": "fashion-kids",
-        "price": 599
+        "price": 599,
+        "quantity": 0
       },
       {
         "name": "Boys Party(Festive) Waistcoat Shirt, Pant",
@@ -1190,7 +1337,8 @@
         "productImg": "8-9-years-bl-bi-ch-prm-paryushnam.jpeg",
         "rating": 4.5,
         "category": "fashion-kids",
-        "price": 1299
+        "price": 1299,
+        "quantity": 0
       },
       {
         "name": "Boys Party(Festive) Shirt Jeans, Bow Tie, Waistcoat",
@@ -1198,7 +1346,8 @@
         "productImg": "2-3-years-bmw-go-berry.jpeg",
         "rating": 4,
         "category": "fashion-kids",
-        "price": 799
+        "price": 799,
+        "quantity": 0
       },
       {
         "name": "Lehenga Choli Fusion Wear Printed Lehenga, Choli and Dupatta Set",
@@ -1206,7 +1355,8 @@
         "productImg": "1-2-years-ruber-royal-blue-9.jpeg",
         "rating": 3.8,
         "category": "fashion-kids",
-        "price": 999
+        "price": 999,
+        "quantity": 0
       },
       {
         "name": "Girls Lehenga Choli Party Wear Embellished Lehenga",
@@ -1214,7 +1364,8 @@
         "productImg": "9-12-months-001-greenj.jpeg",
         "rating": 4.1,
         "category": "fashion-kids",
-        "price": 999
+        "price": 999,
+        "quantity": 0
       },
       {
         "name": "Girls Lehenga Choli Ethnic Wear Embroidered Lehenga",
@@ -1222,7 +1373,8 @@
         "productImg": "3-4-years-girls-lehenga-original.jpeg",
         "rating": 4.4,
         "category": "fashion-kids",
-        "price": 999
+        "price": 999,
+        "quantity": 0
       },
       {
         "name": "MamyPoko Standard Small 64 - S",
@@ -1230,7 +1382,8 @@
         "productImg": "-original-imagsggrbmbhczbn.jpeg",
         "rating": 4.3,
         "category": "kids",
-        "price": 599
+        "price": 599,
+        "quantity": 0
       },
       {
         "name": "HIMALAYA Total Care Baby Pants - S",
@@ -1238,7 +1391,8 @@
         "productImg": "s-total-care-himalaya.jpeg",
         "rating": 4.4,
         "category": "kids",
-        "price": 1010
+        "price": 1010,
+        "quantity": 0
       },
       {
         "name": "HIMALAYA Refreshing Baby Wash",
@@ -1246,7 +1400,8 @@
         "productImg": "400-refreshing-baby-wash-400ml-himajg.jpeg",
         "rating": 4.1,
         "category": "kids",
-        "price": 290
+        "price": 290,
+        "quantity": 0
       },
       {
         "name": "KEYA SETH AROMATHERAPY Schoolers Nourishing Cream",
@@ -1254,7 +1409,8 @@
         "productImg": "50-schoolers-nourishing-cream-deep-moisturizing.jpeg",
         "rating": 4.3,
         "category": "kids",
-        "price": 225
+        "price": 225,
+        "quantity": 0
       },
       {
         "name": "Cute Soft Body Toy for Kids in Pink Dress",
@@ -1262,7 +1418,8 @@
         "productImg": "pink-teddy-boy-el-figo-origin.jpeg",
         "rating": 4.3,
         "category": "kids toys",
-        "price": 649
+        "price": 649,
+        "quantity": 0
       },
       {
         "name": "Zobhin Cute Boy in Camouflage Dress Doll for Kids",
@@ -1270,7 +1427,8 @@
         "productImg": "army-boy-zobhin-original-imn.jpeg",
         "rating": 4.1,
         "category": "kids",
-        "price": 599
+        "price": 599,
+        "quantity": 0
       },
       {
         "name": "sampoorna satwik Sprouted Wheat Cereal",
@@ -1278,7 +1436,8 @@
         "productImg": "wheat-cereal-200-gm-healthy-natural-hom.jpeg",
         "rating": 4.2,
         "category": "kids",
-        "price": 185
+        "price": 185,
+        "quantity": 0
       },
       {
         "name": "Slurrp Farm Instant Health Mix Milk Drink",
@@ -1286,7 +1445,8 @@
         "productImg": "instant-hea-cereal-no-added-sugar.jpeg",
         "rating": 4.1,
         "category": "kids",
-        "price": 129
+        "price": 129,
+        "quantity": 0
       },
       {
         "name": "My First Board Book All In One English-Hindi Learning Book",
@@ -1294,7 +1454,8 @@
         "productImg": "my-first-board-book-of-all-in-one-learning-n.jpeg",
         "rating": 4.4,
         "category": "kids",
-        "price": 319
+        "price": 319,
+        "quantity": 0
       },
       {
         "name": "Maths Concept King All Formulas And Theorum",
@@ -1302,7 +1463,8 @@
         "productImg": "math-concept-king-all-formulas-and-theorems.jpeg",
         "rating": 4.5,
         "category": "books",
-        "price": 360
+        "price": 360,
+        "quantity": 0
       },
       {
         "name": "Aditya Ranjan Sir Railway Maths| Railway Ganit",
@@ -1310,7 +1472,8 @@
         "productImg": "aditya-ranjan-sir-railway-maths-railway-ganit-.jpeg",
         "rating": 4.6,
         "category": "books",
-        "price": 395
+        "price": 395,
+        "quantity": 0
       },
       {
         "name": "A P J Abdul Kalam Wings Of Fire (English, Paperback",
@@ -1318,7 +1481,8 @@
         "productImg": "paperback-apj-abdul.jpeg",
         "rating": 4.5,
         "category": "books",
-        "price": 499
+        "price": 499,
+        "quantity": 0
       },
       {
         "name": "Rich Dad Poor Dad: 25th Anniversary Edit Paperback",
@@ -1326,7 +1490,8 @@
         "productImg": "rich-dad-poor-dad.jpeg",
         "rating": 4.1,
         "category": "books",
-        "price": 599
+        "price": 599,
+        "quantity": 0
       },
       {
         "name": "Reasoning Concept King - Verbal, Non-Verbal",
@@ -1334,7 +1499,8 @@
         "productImg": "reasoning-concept-king-verbal.jpeg",
         "rating": 4.4,
         "category": "books",
-        "price": 300
+        "price": 300,
+        "quantity": 0
       },
       {
         "name": "CBSE NCERT Solutions Science",
@@ -1342,7 +1508,8 @@
         "productImg": "100-ncert-solutions-scienc.jpeg",
         "rating": 4.1,
         "category": "books",
-        "price": 100
+        "price": 100,
+        "quantity": 0
       },
       {
         "name": "JEE Advance Chapterwise Solutions - Mathematics",
@@ -1350,7 +1517,8 @@
         "productImg": "41-years-jee-advance.jpeg",
         "rating": 4.1,
         "category": "books",
-        "price": 625
+        "price": 625,
+        "quantity": 0
       },
       {
         "name": "JEE Advance Chapterwise Solutions - Physics",
@@ -1358,7 +1526,8 @@
         "productImg": "40-years-jee-advance.jpeg",
         "rating": 4.4,
         "category": "books",
-        "price": 400
+        "price": 400,
+        "quantity": 0
       },
       {
         "name": "JEE Advance Chapterwise Solutions - Chemistry",
@@ -1366,7 +1535,8 @@
         "productImg": "41-years-jee-advance-.jpeg",
         "rating": 4.2,
         "category": "books",
-        "price": 405
+        "price": 405,
+        "quantity": 0
       },
       {
         "name": "Mastery In Python Programming",
@@ -1374,7 +1544,8 @@
         "productImg": "zero-to-mastery-in-python.jpeg",
         "rating": 4.4,
         "category": "books",
-        "price": 575
+        "price": 575,
+        "quantity": 0
       },
       {
         "name": "HTML, CSS & Javascript Web Publishing",
@@ -1382,7 +1553,8 @@
         "productImg": "mastering-html-css-javascript.jpeg",
         "rating": 4.3,
         "category": "books",
-        "price": 530
+        "price": 530,
+        "quantity": 0
       },
       {
         "name": "BRAHMASTRA Complete Maths",
@@ -1390,7 +1562,8 @@
         "productImg": "BRAHMASTRAMathshyqvfq.jpeg",
         "rating": 4.5,
         "category": "books",
-        "price": 300
+        "price": 300,
+        "quantity": 0
       },
       {
         "name": "GATE-2025: CS and IT Previous Year Solved Papers",
@@ -1398,7 +1571,8 @@
         "productImg": "gate-2025-comput.jpeg",
         "rating": 4.8,
         "category": "books",
-        "price": 1000
+        "price": 1000,
+        "quantity": 0
       },
       {
         "name": "Arihant CS and IT GATE 2025",
@@ -1406,7 +1580,8 @@
         "productImg": "arihant-computer-scienc.jpeg",
         "rating": 3.5,
         "category": "books",
-        "price": 985
+        "price": 985,
+        "quantity": 0
       },
       {
         "name": "Gate 2025 Data Science, ML & AI",
@@ -1414,7 +1589,8 @@
         "productImg": "gkp-gate-2025-da.jpeg",
         "rating": 4.3,
         "category": "books",
-        "price": 1295
+        "price": 1295,
+        "quantity": 0
       },
       {
         "name": "Oswaal GATE Maths",
@@ -1422,7 +1598,8 @@
         "productImg": "oswaal-gate-year-wise.jpeg",
         "rating": 4.5,
         "category": "books",
-        "price": 599
+        "price": 599,
+        "quantity": 0
       },
       {
         "name": "GATE 2025 : General Aptitude & Engineering Mathematics",
@@ -1430,7 +1607,8 @@
         "productImg": "gkp-gate-2025-ge.jpeg",
         "rating": 3.4,
         "category": "books",
-        "price": 750
+        "price": 750,
+        "quantity": 0
       },
       {
         "name": "Data Structures and Algorithms",
@@ -1438,7 +1616,8 @@
         "productImg": "data-structures-and-av.jpeg",
         "rating": 3.4,
         "category": "books",
-        "price": 180
+        "price": 180,
+        "quantity": 0
       },
       {
         "name": "DSA in Python",
@@ -1446,7 +1625,8 @@
         "productImg": "data-structures-python.jpeg",
         "rating": 4.7,
         "category": "books",
-        "price": 3500
+        "price": 3500,
+        "quantity": 0
       },
       {
         "name": "Canon R100 Mirrorless Camera RF-S 18-45mm",
@@ -1454,7 +1634,8 @@
         "productImg": "eos-r100-24-1-eos-r100-kit.jpeg",
         "rating": 4.4,
         "category": "electronics",
-        "price": 64995
+        "price": 64995,
+        "quantity": 0
       },
       {
         "name": "Analog Watch - For Men",
@@ -1462,7 +1643,8 @@
         "productImg": "1-antique-2-0-dq.jpeg",
         "rating": 3.8,
         "category": "fashion",
-        "price": 1999
+        "price": 1999,
+        "quantity": 0
       },
       {
         "name": "",
@@ -1470,7 +1652,8 @@
         "productImg": "",
         "rating": 4.4,
         "category": "",
-        "price": 0
+        "price": 0,
+        "quantity": 0
       },
       {
         "name": "",
@@ -1478,7 +1661,8 @@
         "productImg": "",
         "rating": 4.4,
         "category": "",
-        "price": 0
+        "price": 0,
+        "quantity": 0
       },
       {
         "name": "",
@@ -1486,7 +1670,8 @@
         "productImg": "",
         "rating": 4.2,
         "category": "",
-        "price": 0
+        "price": 0,
+        "quantity": 0
       },
       {
         "name": "",
@@ -1494,7 +1679,8 @@
         "productImg": "",
         "rating": 4,
         "category": "",
-        "price": 0
+        "price": 0,
+        "quantity": 0
       },
       {
         "name": "",
@@ -1502,7 +1688,8 @@
         "productImg": "",
         "rating": 4.5,
         "category": "",
-        "price": 0
+        "price": 0,
+        "quantity": 0
       },
       {
         "name": "",
@@ -1510,7 +1697,8 @@
         "productImg": "",
         "rating": 4.4,
         "category": "",
-        "price": 0
+        "price": 0,
+        "quantity": 0
       },
       {
         "name": "",
@@ -1518,7 +1706,8 @@
         "productImg": "",
         "rating": 4.2,
         "category": "",
-        "price": 0
+        "price": 0,
+        "quantity": 0
       },
       {
         "name": "",
@@ -1526,6 +1715,7 @@
         "productImg": "",
         "rating": 4.1,
         "category": "",
-        "price": 0
+        "price": 0,
+        "quantity": 0
       }
 ]

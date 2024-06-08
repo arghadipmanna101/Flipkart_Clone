@@ -62,6 +62,7 @@ fetch("../json-api/product.json")
   .then((data) => {
     const query = getQueryParameter("query");
     const filteredProducts = data.filter((product) => product.name == query);
+    console.log(filteredProducts, "flitering", data)
     searchFetch(filteredProducts);
     console.log(query)
   })
