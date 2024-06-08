@@ -35,17 +35,16 @@
 	 
 	
 	<!--Header start  -->
-	<header id="homeHeader">
-		<nav class="navbar homeHeader navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand" href="https://flipkart-clone-seven-azure.vercel.app/">
-				<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
-					width="160" height="40" title="Flipkart" alt="Flipkart" />
-			</a>
-			<div id="navbarNav_">
-				<div class="search-container flex">
+	<header>
+        <nav>
+            <div class="container flex main-nav">
+                <a href="#" class="company-logo">
+                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg" width="160" height="40" title="Flipkart">
+                </a> 
+                <div class="search-container flex">
                     <i class="fa fa-search" style="color: #7a7a7a;"></i>
                     <form id="search-form">
-                        <input type="text" placeholder="Search for Products, Brands and More" id="input_data">
+                        <input type="text" placeholder="Search for Products, Brands and More" class="input-container" id="search_input">
                     </form>
                     <!--recent search-->
                     <div class="recent_Search">
@@ -55,15 +54,15 @@
 
                         <div class="recent_list">
                             <i class="fa fa-search"></i>
-							<a href="https://www.flipkart.com/search?q=motorola+mobiles+5g&as=on&as-show=on&otracker=AS_Query_PredictiveAutoSuggest_2_0_na_na_na&otracker1=AS_Query_PredictiveAutoSuggest_2_0_na_na_na&as-pos=2&as-type=PREDICTIVE&suggestionId=motorola+mobiles+5g&requestId=46417743-12ba-405b-a8ef-02bb91ebd09b">
-							<p>Mobile</p>
+                            <a href="https://www.flipkart.com/search?q=motorola+mobiles+5g&as=on&as-show=on&otracker=AS_Query_PredictiveAutoSuggest_2_0_na_na_na&otracker1=AS_Query_PredictiveAutoSuggest_2_0_na_na_na&as-pos=2&as-type=PREDICTIVE&suggestionId=motorola+mobiles+5g&requestId=46417743-12ba-405b-a8ef-02bb91ebd09b">
+                                <p>Mobile</p>
                             </a>
                         </div>
 
                         <div class="recent_list">
                             <i class="fa fa-search"></i>
-                            <a href="https://www.flipkart.com/search?q=shoes&as=on&as-show=on&otracker=AS_Query_TrendingAutoSuggest_2_0_na_na_na&otracker1=AS_Query_TrendingAutoSuggest_2_0_na_na_na&as-pos=2&as-type=TRENDING&suggestionId=shoes&requestId=f50ab44c-8a48-4874-bfe1-b4593bf35d8d">
-                            <p>Shoes</p>
+                            <a href="https://www.flipkart.com/search?q=shoes&as=on&as-show=on&otracker=AS_Query_TrendingAutoSuggest_2_0_na_na_na&otracker1=AS_Query_TrendingAutoSuggest_2_0_na_na_na&as-pos=2&as-type=TRENDING&suggestionId=shoes&requestId=29c416d3-f051-4e8b-9360-2d0e64471769">
+                                <p>Shoes</p>
                             </a>
                         </div>
 
@@ -77,7 +76,7 @@
                         <div class="recent_list">
                             <i class="fa fa-search"></i>
                             <a href="https://www.flipkart.com/search?q=motorola+mobiles+5g&as=on&as-show=on&otracker=AS_Query_PredictiveAutoSuggest_2_0_na_na_na&otracker1=AS_Query_PredictiveAutoSuggest_2_0_na_na_na&as-pos=2&as-type=PREDICTIVE&suggestionId=motorola+mobiles+5g&requestId=46417743-12ba-405b-a8ef-02bb91ebd09b">
-                                <p>Moto Mobile</p>
+                                <p>Mobile</p>
                             </a>
                         </div>
 
@@ -110,8 +109,121 @@
                         </div>
                     </div>
                 </div>
+    
+                <div class="right-nav-container flex">
+                    <div class="loginBtn_container">
+                        <a href="https://www.flipkart.com/account/login?ret=%2Faccount%2F%3Frd%3D0%26link%3Dhome_account">
+                            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-52e0dc.svg" alt="Login" class="login" width="24" height="24">
+                            <span class="login">Login</span>
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAxNCAxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgZmlsdGVyPSJ1cmwoI2ZpbHRlcjBfZF80OTc0Xzc1OTY5KSI+CjxwYXRoIGQ9Ik0zIDJMNyA2TDExIDIiIHN0cm9rZT0iIzExMTExMiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8ZmlsdGVyIGlkPSJmaWx0ZXIwX2RfNDk3NF83NTk2OSIgeD0iMC4yNSIgeT0iMC4yNSIgd2lkdGg9IjEzLjUiIGhlaWdodD0iOS44MTI1IiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+CjxmZUNvbG9yTWF0cml4IGluPSJTb3VyY2VBbHBoYSIgdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDEyNyAwIiByZXN1bHQ9ImhhcmRBbHBoYSIvPgo8ZmVPZmZzZXQgZHk9IjEiLz4KPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMSIvPgo8ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMC4xNiAwIi8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW4yPSJCYWNrZ3JvdW5kSW1hZ2VGaXgiIHJlc3VsdD0iZWZmZWN0MV9kcm9wU2hhZG93XzQ5NzRfNzU5NjkiLz4KPGZlQmxlbmQgbW9kZT0ibm9ybWFsIiBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJlZmZlY3QxX2Ryb3BTaGFkb3dfNDk3NF83NTk2OSIgcmVzdWx0PSJzaGFwZSIvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8L3N2Zz4K" alt="Chevron" class="login" width="12" height="12">
+                        </a>
+                        <div class="login_menu">
+                            <div class="login_menu_list">
+                                <div class="login_menu_top">
+                                    <a href="https://www.flipkart.com/account/login?signup=true&ret=/">
+                                        <span style="color: black; font-weight: 500;">New customer?</span>
+                                    </a>
+                                    <a href="https://www.flipkart.com/account/login?signup=true&ret=/">    
+                                        <span class="sign">Sign Up</span>
+                                    </a>
+                                </div>
+                                <div class="menu_nav_link">
+									<div class="menu_nav_link_list">
+										<a href="https://www.flipkart.com/account/login?ret=%2Faccount%2F%3Frd%3D0%26link%3Dhome_account">
+											<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-52e0dc.svg" class="menu_nav_icon" />
+                                        	<p class="words">My Profile</p>
+										</a>
+									</div>
+									<div class="menu_nav_link_list">
+										<a href="#">
+                                        	<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkplus-4ff29a.svg" class="menu_nav_icon" />
+                                        	<p class="words">Flipkart plus zone</p>
+                                    	</a>
+									</div>
+									<div class="menu_nav_link_list">
+										<a href="#">
+                                        	<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/orders-bfe8c4.svg" class="menu_nav_icon" />
+                                        	<p class="words">Order</p>
+                                    	</a>
+									</div>
+									<div class="menu_nav_link_list">
+									<a href="#">
+                                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDIwLjI0OUMxMiAyMC4yNDkgMi42MjUgMTQuOTk5IDIuNjI1IDguNjI0MDNDMi42MjUgNy40OTcwNSAzLjAxNTQ2IDYuNDA0ODggMy43Mjk5NiA1LjUzMzM0QzQuNDQ0NDUgNC42NjE3OSA1LjQzODg0IDQuMDY0NzIgNi41NDM5MyAzLjg0MzdDNy42NDkwMyAzLjYyMjY4IDguNzk2NTcgMy43OTEzNyA5Ljc5MTMxIDQuMzIxMDZDMTAuNzg2MSA0Ljg1MDc2IDExLjU2NjUgNS43MDg3NCAxMiA2Ljc0OTAzVjYuNzQ5MDNDMTIuNDMzNSA1LjcwODc0IDEzLjIxMzkgNC44NTA3NiAxNC4yMDg3IDQuMzIxMDZDMTUuMjAzNCAzLjc5MTM3IDE2LjM1MSAzLjYyMjY4IDE3LjQ1NjEgMy44NDM3QzE4LjU2MTIgNC4wNjQ3MiAxOS41NTU1IDQuNjYxNzkgMjAuMjcgNS41MzMzNEMyMC45ODQ1IDYuNDA0ODggMjEuMzc1IDcuNDk3MDUgMjEuMzc1IDguNjI0MDNDMjEuMzc1IDE0Ljk5OSAxMiAyMC4yNDkgMTIgMjAuMjQ5WiIgc3Ryb2tlPSIjMjEyMTIxIiBzdHJva2Utd2lkdGg9IjEuNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=" class="menu_nav_icon" />
+                                        <p class="words">Wishlist</p>
+                                    </a>
+									</div>
+									<div class="menu_nav_link_list">
+									<a href="#">
+                                        <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/rewards-fbd212.svg" class="menu_nav_icon" />
+                                        <p class="words">Rewards</p>
+                                    </a>
+									</div>
+									<div class="menu_nav_link_list">
+										<a href="#">
+                                        <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/giftCard-bd87e1.svg" class="menu_nav_icon" />
+                                        <p class="words">Gift Cards</p>
+                                    	</a>
+									</div>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="category-div flex" style="margin-left: 30px;">
+                        <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg" alt="Cart" width="24" height="24">
+                        <a class="hover-links" href="https://www.flipkart.com/viewcart?exploreMode=true&preference=FLIPKART">
+                            <p class="hover-links">Cart</p>
+                        </a>
+                    </div>
+    
+                    <div class="category-div flex" style="margin-left: 30px;">
+                        <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg" alt="Become a Seller" width="24" height="24">
+                        <a class="hover-links" href="https://seller.flipkart.com/sell-online/?utm_source=fkwebsite&utm_medium=websitedirect">
+                            <p class="hover-links">Become a Seller</p>
+                        </a>
+                    </div>
 
-				<!-- <ul class="navbar-nav">
+
+                    <div class="more_link">
+						<a>
+							<img class="-dOa_b" src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-ea7819.svg" width="24" height="24" alt="Dropdown with more help links">
+						</a>
+                        <div class="more_menu">
+                            <div class="more_menu_list">
+                                <a href="https://www.flipkart.com/communication-preferences/push?t=all">
+                                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/notificationPreferences-cfffaf.svg" class="menu_nav_icon" />
+                                    <p>Notification Preferences</p>
+                                </a>
+                                <a href="https://www.flipkart.com/helpcentre">
+                                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/helpcenter-7d90c0.svg" class="menu_nav_icon" />
+                                    <p>24 X 7 Customer Care</p>
+                                </a>
+                                <a href="https://advertising.flipkart.com/login?returl=/?otracker=ch_vn_advertise_header">
+                                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/advertise-298691.svg" class="menu_nav_icon" />
+                                    <p>Advertise</p>
+                                </a>
+                                <a href="https://www.flipkart.com/mobile-apps?otracker=ch_vn_mobile_apps">
+                                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/downloadApp-2ea657.svg" class="menu_nav_icon" />
+                                    <p>Download App</p>
+                                </a>
+            
+            
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+	<!-- <header id="homeHeader">
+		<nav class="navbar homeHeader navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="https://flipkart-clone-seven-azure.vercel.app/">
+				<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
+					width="160" height="40" title="Flipkart" alt="Flipkart" />
+			</a>
+			<div id="navbarNav_">
+				<ul class="navbar-nav">
 					<li class="nav-item navItem1">
 						<div id="searchbar" class="navtab">
 							<span id="searchButton" style="display: flex;align-items: center;">
@@ -138,9 +250,9 @@
 							</div>
 						</div>
 					</li>
-				</ul> -->
-				
-				<ul class="navbar-nav ml-auto" style="flex-wrap: nowrap;flex-direction: row;width:100%; justify-content: space-around">
+				</ul>
+				<ul class="navbar-nav ml-auto"
+					style="flex-wrap: nowrap;flex-direction: row;width: 40vw; justify-content: space-around">
 					<li class="nav-item navItem2 dropdown" id="navbarDropdow">
 						<a class="nav-link nav-dd acnavdd" href="https://www.flipkart.com/account/login?ret=%2Faccount%2F%3Frd%3D0%26link%3Dhome_account" id="navbarDropdown" role="button"
 							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -249,7 +361,7 @@
 								alt="More Links" />
 						</a>
 						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="moreLinksDropdown">
-							<a class="dropdown-item" href="https://www.flipkart.com/communication-preferences/push?t=all"><img width="30" height="20"
+							<a class="dropdown-item" href="notifications/"><img width="30" height="20"
 									src="img/svg/notificationPreferences.svg"
 									alt="appointment-reminders--v2" />Notification
 								Preferences</a>
@@ -265,7 +377,7 @@
 				</ul>
 			</div>
 		</nav>
-	</header>
+	</header> -->
 	<!--Header end -->
 
 	<!-- categorylist -->
