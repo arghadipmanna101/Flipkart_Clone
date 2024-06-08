@@ -1,0 +1,32 @@
+section .container {
+  background-color: #ffffff25;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(91, 77, 77, 0.1);
+  max-width: 100%;
+}
+section h1 {
+  color: #1149ff;
+}
+section .form-group label {
+  color: #343a40;
+}
+section .form-control {
+  border: 1px solid #ced4da;
+}
+section .form-control:focus {
+  border-color: #0755ff;
+  box-shadow: 0 0 0 0.2rem rgba(12, 82, 163, 0.25);
+}
+section .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+section .btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+section .btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+} 
