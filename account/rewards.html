@@ -53,25 +53,88 @@
                 margin-bottom: 10px;
             }
     
-            .navigation ul {
+            .navigation-orders{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                border-bottom: 1px solid #ddd;
+            }
+            .navigation-orders img{
+                width: 20px;
+                height: 20px;
+            }
+            .navigation-orders h3{
+                margin: 0;
+                color:#8b8b8b;
+                font-weight: 600;
+                
+            }
+            .navigation-account{
+                display: flex;
+                flex-direction: row;
+                padding: 10px;
+                padding-left: 50px;
+                border-bottom: 1px solid #ddd;
+            }
+            .navigation-account img{
+                width: 20px;
+                height: 20px;
+                margin-right: 10px;
+            }
+            .navigation-account h3{
+                margin: 0;
+                color:#8b8b8b;
+                font-weight: 600;
+            }
+            
+            .navigation-payments{
+                display: flex;
+                flex-direction: row;
+                padding: 10px;
+                padding-left: 50px;
+                border-bottom: 1px solid #ddd;
+            }
+            .navigation-payments img{
+                width: 20px;
+                height: 20px;
+            }
+            .navigation-payments h3{
+                margin: 0;
+                color:#8b8b8b;
+                font-weight: 600;
+            }
+            
+            .navigation-my-stuff{
+                display: flex;
+                flex-direction: row;
+                padding: 10px;
+                padding-left: 50px;
+                border-bottom: 1px solid #ddd;
+            }
+            .navigation-my-stuff img{
+                width: 20px;
+                height: 20px;
+            }
+            .navigation-my-stuff h3{
+                margin: 0;
+                color:#8b8b8b;
+                font-weight: 600;
+            }
+            
+            .nav-list{
                 list-style: none;
                 padding: 0;
             }
-    
-            .navigation ul li {
-                margin: 15px 0;
-            }
-    
-            .navigation ul li a {
+            .nav-list ul li a {
                 text-decoration: none;
-                color: #333;
-                font-weight: bold;
+                color: #000;
+                font-weight: 500;
             }
     
-            .navigation ul li a:hover {
+            .nav-list ul li a:hover {
                 color: #0073e6;
             }
-    
             .right-column {
                 width: 75%;
                 padding: 20px;
@@ -123,12 +186,42 @@
                     <h4>User Name</h4>
                 </div>
                 <nav class="navigation">
-                    <ul>
-                        <li><a href="#">Account Settings</a></li>
-                        <li><a href="#">My Orders</a></li>
-                        <li><a href="#">Payments</a></li>
-                        <li><a href="#">My Stuff</a></li>
-                    </ul>
+                    <div class="navigation-orders">
+                        <img src="img\svg\download.svg" alt="orders image">
+                        <h3>MY ORDERS</h3>
+                        <a><img src="arrow" alt="arrow"></a>
+                    </div>
+                    <div class="navigation-account">
+                        <img src="img\svg\account-nav.svg" alt="accounts img">
+                        <h3>ACCOUNT SETTINGS</h3>
+                        <div class="nav-list">
+                        <ul>
+                            <li><a href="#">Personal Information</a></li>
+                            <li><a href="#">Manage Address</a></li>
+                            <li><a href="#">PAN Card Information</a></li>
+                        </ul></div>
+                    </div>
+                    <div class="navigation-payments">
+                        <img src="img\svg\payments-nav.svg" alt="payments image">
+                        <h3>PAYMENTS</h3>
+                        <div class="nav-list">
+                        <ul>
+                            <li><a href="#">Gift Cards</a></li>
+                            <li><a href="#">Saved UPI</a></li>
+                            <li><a href="#">Saved Cards</a></li>
+                        </ul></div>
+                    </div>
+                    <div class="navigation-my-stuff">
+                        <img src="img\svg\stuff-nav.svg" alt="stuff image">
+                        <h3>MY STUFF</h3>
+                        <div class="nav-list">
+                        <ul>
+                            <li><a href="#">My Coupons</a></li>
+                            <li><a href="#">My Reviews & Ratings</a></li>
+                            <li><a href="#">All Notifications</a></li>
+                            <li><a href="#">My Wishlist</a></li>
+                        </ul></div>
+                    </div>
                 </nav>
             </div>
             <div class="right-column">
