@@ -54,8 +54,23 @@ section .btn-primary {
 section .btn-primary:hover {
   background-color: #0056b3;
   border-color: #0056b3;
+}
+
+section .btn-primary:focus {
+  background-color: #0056b3;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
   cursor: pointer;
 }
+
 section .btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
-} 
+}
+
+section .form-check-input {
+  margin-right: 5px;
+}
+
+section #orderHistory {
+  resize: vertical; 
+  margin-bottom: 15px;
+}
