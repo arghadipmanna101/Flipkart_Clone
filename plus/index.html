@@ -74,6 +74,33 @@
                 font-size: 16px;
                 font-weight: bold;
             }
+            .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            margin: 10px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            display: inline-block;
+            width: 200px;
+        }
+
+        .product img {
+            max-width: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+            background-color: #f0f0f0;
+        }
+
+        .product:hover img {
+            transform: scale(1.1);
+        }
+
+        .name, .price {
+            margin: 10px 0;
+        }
         </style>
         <h3 class="text-center">Welcome to Flipkart Plus Zone</h3>
         <div class="banner">
