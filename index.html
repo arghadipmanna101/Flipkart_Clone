@@ -15,10 +15,422 @@
 	<link rel="stylesheet" href="css/homeHeader.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" href="css/footer.css">
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 </head>
 
 <body>
+	<button id="CommentBtn" aria-label="Toggle Comment Form"><i class="fas fa-comment"></i>feedback</button>
+	
+				<!-- Comment form -->
+			
+				<!-- Modal background -->
+				<div id="modalBackground">
+				  <!-- Comment form -->
+				  <div id="commentForm">
+					<form id="feedback-form">
+					  <label for="userComment" style="color: rgb(229, 230, 239);">Your Feedback:</label>
+					  <div class="form-group">
+						<div class="icon" >
+						  <i class="fas fa-user"></i>
+						</div>
+						<input type="text" id="name" onfocus="changeColor()" placeholder="Your Name" name="name" required style="
+						width: 250px;
+					">
+					  </div>
+					  <div class="form-group">
+						<div class="icon">
+						  <i class="fas fa-envelope"></i>
+						</div>
+						<input type="email" id="email" onfocus="changeColor()" placeholder="Email Id" required style="
+						width: 250px;
+					">
+					  </div>
+					  <div class="form-group">
+						<textarea cols="30" rows="5" placeholder="Your Feedback" required></textarea>
+					  </div>
+					  <div class="rating">
+						<h2>Rate us:</h2>
+						<i class="rating__star far fa-star"></i>
+						<i class="rating__star far fa-star"></i>
+						<i class="rating__star far fa-star"></i>
+						<i class="rating__star far fa-star"></i>
+						<i class="rating__star far fa-star"></i>
+					  </div>
+					  <button id="ll" style="color: rgb(105, 106, 134);">Submit</button>
+					</form>
+				  </div>
+				</div>
+			
+				<script>
+				   const ratingStars = [...document.getElementsByClassName("rating__star")];
+			
+			function executeRating(stars) {
+			  const starClassActive = "rating__star fas fa-star";
+			  const starClassInactive = "rating__star far fa-star";
+			  const starsLength = stars.length;
+			  let i;
+			  stars.map((star) => {
+				star.onclick = () => {
+				  i = stars.indexOf(star);
+			
+				  if (star.className===starClassInactive) {
+					for (i; i >= 0; --i) stars[i].className = starClassActive;
+				  } else {
+					for (i; i < starsLength; ++i) stars[i].className = starClassInactive;
+				  }
+				};
+			  });
+			}
+			executeRating(ratingStars);
+			  
+			 
+				  const ratingInputs = document.querySelectorAll('input[name="rating"]');
+			  ratingInputs.forEach((input) => {
+				input.addEventListener("click", function() {
+				  const value = parseInt(input.value);
+				  for (let i = 1; i <= value; i++) {
+					document.getElementById(`star${i}`).checked = true;
+				  }
+				  for (let i = value + 1; i <= 5; i++) {
+					document.getElementById(`star${i}`).checked = false;
+				  }
+				});
+			  });
+				  document.getElementById("CommentBtn").addEventListener("click", function () {
+					document.getElementById("modalBackground").style.display = "flex";
+				  });
+				 
+				  // Close the form when clicking outside of it (optional)
+				  document.getElementById("modalBackground").addEventListener("click", function (event) {
+					if (event.target === this) {
+					  this.style.display = "none";
+					}
+				  });
+				  let commentForm = document.getElementById("commentForm");
+			let modalBackground = document.getElementById("modalBackground");
+			
+			document.getElementById("CommentBtn").addEventListener("click", function(event) {
+			  if (commentForm.style.display === "none") {
+				commentForm.style.display = "block";
+				modalBackground.style.display = "flex";
+			  } else {
+				commentForm.style.display = "none";
+				modalBackground.style.display = "none";
+			  }
+			});
+			
+			document.getElementById("ll").addEventListener("click", function(event) {
+			  commentForm.style.display = "none";
+			  modalBackground.style.display = "none";
+			});
+				</script>
+				<style>/* Preloader Css Ends */
+					.contact h2 {
+					  margin-bottom: 3rem;
+					}
+					
+					.contact form {
+					  max-width: 70rem;
+					  margin: 1rem auto;
+					  text-align: center;
+					  margin-bottom: 3rem;
+					}
+					.contact form .input-box {
+					  display: flex;
+					  justify-content: space-between;
+					  flex-wrap: wrap;
+					}
+					
+					.contact form .input-box input,
+					.contact form textarea {
+					  width: 100%;
+					  padding: 1.5rem;
+					  font-size: 1.6rem;
+					  color: rgb(206, 255, 206);
+					  background: var(--second-color);
+					  border-radius: 0.8rem;
+					  margin: 0.7rem 0;
+					  border-radius: 20px;
+					  background: #053314;
+					  box-shadow: inset 23px 23px 21px #04240e, inset -23px -23px 21px #07421a;
+					}
+					.contact form .input-box input::placeholder,
+					.contact form textarea::placeholder {
+					  color: rgb(206, 255, 206);
+					}
+					input[type="number"]::-webkit-inner-spin-button,
+					input[type="number"]::-webkit-inner-spin-button {
+					  -webkit-appearance: none;
+					  margin: 0;
+					}
+					.contact form .input-box input {
+					  width: 49%;
+					}
+					
+					.contact form textarea {
+					  resize: none;
+					}
+					.contact form .btn {
+					  margin-top: 2rem;
+					  cursor: pointer;
+					}
+					
+					#review-btn{
+					  padding: 10px 20px;
+					  border: none;
+					  border-radius: 5px 0 0 5px;
+					  background-color:  #B19222;
+					  color: white;
+					  font-size: 16px;
+					  writing-mode: vertical-rl;
+					  cursor: pointer;
+					  transition: background-color 0.3s ease;
+					  position: absolute;
+					  right: 0; /* Attach to the right edge */
+					  top: 50%; /* Vertically center */
+					  transform: translateY(-50%); /* Adjust for centering */
+					  white-space: nowrap; /* Prevent text from wrapping */
+					  
+					  
+					
+					}
+					#review-btn:hover{
+					  background-color:#B19222 ;
+					}
+					.button-container {
+					  position: fixed;
+					  top: 50%;
+					  right: 0;
+					  transform: translateY(-50%);
+					  z-index: 200; /* Ensure it stays on top */
+					}
+					
+					/* Modal styles */
+					.modal {
+					  
+					  display: none;
+					  flex-direction: column;
+					  /* flex-wrap: nowrap; */
+					  justify-content: center;
+					  align-items: center;
+					  position: fixed;
+					  z-index: 101;
+					  left: 0;
+					  top: 0;
+					  width: 100%;
+					  height: 100%;
+					  /*overflow: auto;*/
+					  background-color: rgba(0, 0, 0, 0.4);
+					}
+					.modal-content {
+					  background-color: #ffffff;
+					  /* margin: 10% auto; */
+					  padding: 50px;
+					  border-radius: 10px;
+					  width: 90%;
+					  max-width: 500px;
+					  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+					  position: relative;
+						text-align: center;
+					}
+					.close {
+					  color: #aaa;
+					  float: right;
+					  font-size: 24px;
+					  font-weight: bold;
+					  cursor: pointer;
+					}
+					.close:hover,
+					.close:focus {
+					  color: #000;
+					}
+					.modal-content h2 {
+					  margin-top: 0;
+					  margin-bottom: 10px;
+					  text-align: center;
+					  color:black;
+					  font-size: 24px;
+					}
+					
+					.form-group {
+					  position: relative;
+					  margin-bottom: 20px;
+					}
+					.form-group .icon {
+					  position: absolute;
+					  top: 50%;
+					  left: 10px;
+					  transform: translateY(-50%);
+					  background-color: #8a2be2;
+					  background-color:rgb(161, 216, 217);
+					  color: white;
+					  border-radius: 50%;
+					  width: 24px;
+					  height: 24px;
+					  display: flex;
+					  justify-content: center;
+					  align-items: center;
+					}
+					.form-group input,
+					.form-group textarea {
+						width: 100%;
+						padding: 10px 10px 10px 40px;
+						border: 1px solid #ccc;
+						border-radius: 5px;
+						font-size: 14px;
+					}
+					.form-group input::placeholder,
+					.form-group textarea::placeholder {
+						color: #bbb;
+					}
+					.form-group textarea {
+					  height: 80px;
+					  padding: 10px;
+					}
+					
+					.modal-content button[type="submit"] {
+					  background: linear-gradient(to right, #8a2be2, #f163ed);
+					  background: linear-gradient(to right, rgb(75, 120, 179), rgb(165, 153, 209));
+						color: white;
+						border: none;
+						border-radius: 5px;
+						padding: 10px;
+						font-size: 16px;
+						cursor: pointer;
+						width: 100%;
+					}
+					
+					.modal-content button[type="submit"]:hover {
+					  background: linear-gradient(to right, #f55ef0, #8a2be2);
+					}
+					
+					
+					.modal-content button[type="submit"]:focus {
+					  outline: none;
+					}
+					.close:hover {
+					  color: #000;
+					}
+					.close:focus {
+					  color: #000;
+					  text-decoration: none;
+					  cursor: pointer;
+					}
+					/* rating stars */
+					.rating {
+					  display: flex;
+					  justify-content: center;
+					  align-items: center;
+					  margin-bottom: 20px;
+					  bottom: 10px;
+					}
+					.rating h2 {
+					  margin: 0;
+					  margin-right: 10px;
+					  font-size: 18px;
+					}
+					.rating__star {
+					  font-size: 24px;
+					  margin: 0 5px;
+					  cursor: pointer;
+					  color: #dabd18b2;
+					}
+					.rating__star:hover,
+					.rating__star.active {
+						color: #ffc107;
+					}
+					/* comment */
+					#CommentBtn {
+					  position: fixed;
+					  bottom: 270px;
+					  width: 140px;
+					  height: 40px;
+					  right: 0;
+					  background-color: rgb(161, 216, 217);
+					  color: white;
+					  border: none;
+					  cursor: pointer;
+					  font-size: 24px;
+					  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+					  display: flex;
+					  justify-content: center;
+					  align-items: center;
+					  opacity: 0.4;
+					  transition: 500ms;
+					  transform: rotate(90deg);
+					}
+					
+					#CommentBtn:hover {
+					  background-color: #0056b3;
+					  opacity: 1;
+					}
+					
+					
+					/* Style for the modal background */
+					#modalBackground {
+					  display: none;
+					  position: fixed;
+					  top: 0;
+					  left: 0;
+					  width: 100%;
+					  height: 100%;
+					  background-color: rgba(0, 0, 0, 0.5);
+					  justify-content: center;
+					  align-items: center;
+					  z-index: 1000;
+					}
+					
+					/* Style for the comment form */
+					#commentForm {
+					  max-width: 500px;
+					  padding: 20px;
+					  border: 1px solid #ddd;
+					  border-radius: 10px;
+					  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+					  background: linear-gradient(to right, rgb(161, 216, 217), rgb(105, 106, 134));
+					  z-index: 1001;
+					}
+					
+					#commentForm label {
+					  display: block;
+					  margin-bottom: 10px;
+					  font-weight: bold;
+					}
+					
+					#commentForm textarea {
+					  width: 96%;
+					  padding: 10px;
+					  margin-bottom: 10px;
+					  border: 1px solid #ddd;
+					  border-radius: 5px;
+					  resize: vertical;
+					}
+					
+					#commentForm button[type="submit"] {
+					  color: white;
+					  border: none;
+					  padding: 10px 20px;
+					  border-radius: 5px;
+					  cursor: pointer;
+					  font-size: 16px;
+					}
+					
+					#commentForm button[type="submit"]:hover {
+					  background-color: #ace3ed;
+					}
+					#ll{
+					  bottom: 5px;
+					  border: #8a2be2;
+					  background-color: #e1eaeb;
+					  border-radius: 4px;
+					}
+					.rating{
+						background: linear-gradient(to right, rgb(161, 216, 217), rgb(105, 106, 134));
+					  
+					}</style>
 	<!-- loader -->
 	<!-- <div id="loader">
 		<div class="loader-spinner"></div>
@@ -140,6 +552,7 @@
 					
 				</ul>
 			</div>
+			
 		</nav>
 	</header>
 	<!--Header end -->
