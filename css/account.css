@@ -25,6 +25,10 @@ section .form-group label {
   margin-top: 5px ;
 }
 
+section .form-group label:hover {
+  color: #007bff;
+}
+
 section .form-control {
   border: 1px solid #ced4da;
   
