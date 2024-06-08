@@ -31,7 +31,20 @@
     justify-content: center;
     margin: 1rem;
 }
+.wishlist-item img {
+            max-width: 100%;
+            transition: transform 0.3s ease;
+        }
 
+        .wishlist-item:hover {
+            transform: scale(1.05);
+            background-color: #e0f7fa;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .wishlist-item:hover img {
+            transform: scale(1.1);
+        }
 .wishlist-item {
     background-color: white;
     border: 1px solid #ddd;
@@ -44,9 +57,10 @@
 }
 
 .wishlist-item img {
-    max-width: 100%;
-    height: auto;
-}
+            width: 120px; /* Set a fixed width for the images */
+            height: 180px; /* Set a fixed height for the images */
+            
+        }
 
 .wishlist-item h2 {
     font-size: 1.2rem;
