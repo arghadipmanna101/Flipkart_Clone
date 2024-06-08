@@ -45,10 +45,16 @@ section .form-control:focus {
 section .btn-primary {
   background-color: #007bff;
   border-color: #007bff;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
+
 section .btn-primary:hover {
   background-color: #0056b3;
   border-color: #0056b3;
+  cursor: pointer;
 }
 section .btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
