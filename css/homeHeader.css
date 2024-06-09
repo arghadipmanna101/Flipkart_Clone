@@ -1,10 +1,14 @@
+
 #homeHeader {
   position: sticky;
   top: 0;
   width: 100%;
   z-index: 9999;
 }
-
+.navbar{
+  padding-top: 0rem;
+    padding-bottom: 0rem;
+}
 .homeHeader .nav-item {
   transition: background-color 0.5s ease;
   /* padding: 9px 13px; */
@@ -75,7 +79,7 @@
 }
 
 .homeHeader .nav-item:hover .homeHeader .nav-item-divider::before {
-  background-color: #000;
+  background-color: #159430;
 }
 
 .homeHeader .nav-item-divider::after {
@@ -141,7 +145,7 @@
 }
 
 .homeHeader .dropdown-item:hover {
-  background-color: #f8f9fa;
+  background-color: #f8f8fa;
   color: #007bff;
 }
 
@@ -166,8 +170,9 @@
   .navItem5 {
     margin: 0
   }
-
+ 
 }
+
 
 @media screen and (max-width:995px) {
 
