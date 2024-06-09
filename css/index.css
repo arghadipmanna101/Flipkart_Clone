@@ -35,6 +35,29 @@ body {
   }
 }
 
+/* Hover effect for Cart */
+.nav-link.cartLogoandname:hover {
+  background-color: #dcdcdc;
+  /* Light grey background */
+  color: #2874F0;
+  /* Flipkart theme color for text */
+  border-radius: 10px;
+  /* Rounded corners */
+  transition: background-color 0.2s, color 0.2s;
+  /* Smooth transition */
+}
+
+/* Hover effect for Become a Seller */
+.nav-link:hover {
+  background-color: #dcdcdc;
+  /* Light grey background */
+  color: #2874F0;
+  /* Flipkart theme color for text */
+  border-radius: 10px;
+  /* Rounded corners */
+  transition: background-color 0.3s, color 0.3s;
+  /* Smooth transition */
+}
 
 /* for category tab */
 
@@ -118,7 +141,8 @@ body {
 .categories>li:hover>ul li li:hover {
   color: rgb(112, 112, 166);
 }
-.categories li ul li img{
+
+.categories li ul li img {
   display: none;
 }
 
@@ -177,7 +201,8 @@ body {
 }
 
 #searchbar input:focus {
-  border-color: #2874F0; /* Change the border color on focus */
+  border-color: #2874F0;
+  /* Change the border color on focus */
 }
 
 /* Account Dropdown */
@@ -233,6 +258,7 @@ body {
 .img:hover {
   transform: scale(1.1);
 }
+
 
 /* adding Transition property to the images of the img-box section */
 #img-box img {
@@ -502,4 +528,3 @@ body {
     transform: rotate(360deg);
   }
 }
-
