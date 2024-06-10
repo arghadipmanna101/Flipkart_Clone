@@ -429,19 +429,31 @@
 	<footer id="footer" style="background-color: #292d33;"></footer>
 
 	<!-- voiceflow.chat script -->
-	<script type="text/javascript">
-		(function (d, t) {
-			var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-			v.onload = function () {
-				window.voiceflow.chat.load({
-					verify: { projectID: '6647471456cab012ae016d07' },
-					url: 'https://general-runtime.voiceflow.com',
-					versionID: 'production'
-				});
-			}
-			v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
-		})(document, 'script');
-	</script>
+	<script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+	<script src="https://mediafiles.botpress.cloud/999d2d24-cb74-407f-976e-15c3f1304238/webchat/config.js" defer></script>
+	<script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script>
+  window.botpressWebChat.init({
+      "composerPlaceholder": "Welcome to Flipkart!",
+      "botConversationDescription": "Welcome to Flipkart!",
+      "botId": "999d2d24-cb74-407f-976e-15c3f1304238",
+      "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+      "messagingUrl": "https://messaging.botpress.cloud",
+      "clientId": "999d2d24-cb74-407f-976e-15c3f1304238",
+      "webhookId": "6ce3ce73-f094-4a7a-abc9-13326c5cf909",
+      "lazySocket": true,
+      "themeName": "prism",
+      "botName": "Flipkart",
+      "avatarUrl": "data:image/jpeg;base64,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",
+      "stylesheet": "https://webchat-styler-css.botpress.app/prod/13f41bf8-3f4a-4e4f-8cda-65d8907933c4/v53076/style.css",
+      "frontendVersion": "v1",
+      "useSessionStorage": true,
+      "enableConversationDeletion": true,
+      "theme": "prism",
+      "themeColor": "#2563eb",
+      "allowedOrigins": []
+  });
+</script>
 
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/homeHeader.js"></script>
