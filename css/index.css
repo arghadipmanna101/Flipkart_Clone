@@ -514,9 +514,10 @@ body {
 #goToTopBtn {
   /* display: none; */
   position: fixed;
-  /* position of the gototop button */
+  /* position of the gototop button*/
   bottom: 4%;
   right: 7%;
+  /* Color issue resolved */
   background-color: rgb(255, 0, 0);
   color: #fff;
   border: none;
