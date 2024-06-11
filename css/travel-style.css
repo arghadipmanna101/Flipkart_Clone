@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+.bookTripForm {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 20px 10px;
+    width: 80vw;
+    min-height: calc(10vw + 20px);
+    background: #fff;
+    font-size: small;
+}
+
+.formSection label {
+  position: relative;
+  padding: 0 3px;
+}
+
+.formSection label .input {
+  width: 100%;
+  padding: 10px 10px 20px 20px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.formSection label .input + span {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.formSection label .input:placeholder-shown + span {
+  top: 15px;
+  font-size: 0.9em;
+}
+
+.formSection label .input:focus + span,.formSection label .input:valid + span {
+  top: 30px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+
+/* CSS for Responsive  */
+
+@media screen and (min-width: 1000px) {
+  
+    /*  */
+  }

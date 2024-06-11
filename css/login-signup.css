@@ -1,5 +1,5 @@
 body {
-    background: #f1f3f6;
+    background: #f1f3f6;    
 }
 
 #divB {
@@ -121,6 +121,7 @@ body {
 @media screen and (max-width: 800px) {
     .signupin .leftpanal {
         width: 43vw;
+        padding: 5px;
     }
     .signupin .rightSignuppanal {
         width: 56vw;
