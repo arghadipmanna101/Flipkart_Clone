@@ -499,7 +499,7 @@ body {
 #goToTopBtn {
   /* display: none; */
   position: fixed;
-  bottom: 75px;
+  bottom: 45px;
   right: 50%;
   left: 50%;
   background-color: hsla(217, 87%, 55%, 0.7);
