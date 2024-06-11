@@ -12,7 +12,39 @@ body {
   background: #dcdcdc !important;
   overflow-x: hidden;
 }
-
+/* Scrollbar */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+  transition: width 0.3s;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #fff;
+  background-image: -webkit-gradient(
+    linear,
+    40% 0%,
+    75% 84%,
+    from(#0d6efd),
+    color-stop(0.4, #0d6efd), 
+    color-stop(0.5, #1d7bfd), 
+    color-stop(0.6, #3d8bfd), 
+    to(#3d8bfd)
+  );
+  transition: background-color 0.3s, width 0.3s;
+}
+/* Hover effect */
+::-webkit-scrollbar:hover {
+  width: 14px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #0d6efd; 
+}
 .navname_ac .bi-chevron-up {
   display: none;
 }
@@ -27,6 +59,7 @@ body {
 
 #categorylist-wrapper {
   margin-top: 8px;
+  width: -webkit-fill-available;
 }
 
 @media screen and (max-width: 770px) {
@@ -60,10 +93,9 @@ body {
   width: 100%;
   min-width: 1000px;
   box-shadow: 0 0 10px rgb(87, 110, 172);
-
 }
 
-.categories>li {
+ .categories>li {
   position: static;
   display: inline-block;
   padding: 20px 15px;
@@ -72,6 +104,8 @@ body {
 
 .categories li a {
   text-decoration: none;
+  color: black;
+  font-weight: 500;
 }
 
 .categories>li>ul {
@@ -91,33 +125,6 @@ body {
   z-index: 500;
 }
 
-.categories>li:hover>ul {
-  display: flex;
-  justify-content: left;
-  align-items: stretch;
-}
-
-.categories>li:hover {
-  background-color: #bac8f6;
-  transition: all 0.5s;
-  border-radius: 20px;
-}
-
-.categories>li:hover>ul>li {
-  margin: 15px 0;
-  flex: 1 1 200px;
-  list-style-type: none;
-}
-
-.categories>li:hover>ul>li li {
-  list-style-type: none;
-  margin: 15px 0;
-  color: rgb(88, 116, 194);
-}
-
-.categories>li:hover>ul li li:hover {
-  color: rgb(112, 112, 166);
-}
 .categories li ul li img{
   display: none;
 }
@@ -147,6 +154,105 @@ body {
 .category h3 {
   font-size: 18px;
   color: #333333;
+}
+
+.dropdownbox {
+  /* left:20%; */
+  display: none;
+  position: absolute;
+  top:30%;
+  width:240px;
+  /* height:528px; */
+  box-shadow: 0 8px 8px 1px rgba(0, 0, 0, .3);
+  border-radius: 8px;
+  background-color: #fff;
+  color: rgb(43, 42, 42);
+  line-height: 20px;
+  font-size: 12px;
+  z-index: 1000;
+}
+.grocery{
+  left:5%;
+}
+.Mobiles{
+  left: 10%;
+}
+.Fashion{
+  left:20%;
+}
+.electronics{
+  left:30%;
+}
+.home-furniture{
+  left:40%;
+}
+.appliances{
+  left: 50%;
+}
+.travel{
+  left:65%;
+}
+.beauty{
+  left:70%;
+}
+.twowheelers{
+  left:80%;
+}
+
+.dropdownbox > div > div + div{
+  display: none;
+  position: absolute;
+  top:0%;
+  width:240px;
+  left: 100%;
+  box-shadow: 0 8px 8px 1px rgba(0, 0, 0, .3);
+  border-radius: 8px;
+  background-color: #fff;
+  line-height: 20px;
+}
+
+.dropdownbox > div:hover > div + div{
+  display: block;
+}
+
+.sidearrow{
+  display: none;
+  position: absolute;
+  right: 30px;
+  height: 6px;
+  width: 6px;
+  margin: 15px 0 15px 0;
+  border-color: #111112;
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+  transform-origin: 50% 50%;
+  transform: translateY(75%) rotate(-45deg);
+}
+.dropdownbox > div{
+  display: flex;
+}
+.dropdownbox > div > div:not(.subdropdown){
+  padding: 12px 16px;
+}
+.dropdownbox > div:hover > div:not(.subdropdown){
+  font-weight:bold;
+}
+.dropdownbox > div:hover{
+  background-color:#cbdcf7;
+}
+.dropdownbox > div:hover >.sidearrow{
+  display: block;
+}
+.subdropdown > div:first-child {
+  font-weight: bold;
+}
+.dropdownbox > div > div > div{
+  padding: 12px 16px;
+  font-size: 12px;
+}
+
+.subdropdown > div:hover{
+  font-weight: bold;
 }
 
 /*adding transition property to the images of the cateogory-grid section*/
@@ -254,12 +360,12 @@ body {
   width: 100%;
   height: auto;
   transition: transform 0.3s ease-in-out;
-}
+} 
 
 #img-box img:hover {
   transform: scale(1.2);
   opacity: 0.82;
-}
+} */
 
 /* product best for you */
 #s1-product .products {
@@ -411,10 +517,10 @@ body {
   /* position of the gototop button */
   bottom: 4%;
   right: 7%;
-  background-color: rgba(235, 66, 66, 0.724);
+  background-color: rgb(255, 0, 0);
   color: #fff;
   border: none;
-  border-radius: 10px;
+  border-radius: 50%;
   width: 40px;
   height: 40px;
   cursor: pointer;
@@ -422,7 +528,7 @@ body {
 }
 
 #goToTopBtn:hover {
-  background-color: #2874F0;
+  background-color: hsl(217, 87%, 45%);
 }
 
 .hidden {

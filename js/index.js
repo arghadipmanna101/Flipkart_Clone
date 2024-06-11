@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+
 /* <a class="nav-link" href="../search/?query=electronics */
 // product fetch
 // Function to create a product card
@@ -214,6 +215,18 @@ fetchAndShuffleDataUnder("json-api/product.json", shopUnder500, 18);
 
 
  // Show or hide the "Go to Top" button based on scroll position
+ document.addEventListener("DOMContentLoaded", function () {
+  const backToTopButton = document.getElementById('goToTopBtn');
+
+  function checkButtonVisibility() {
+      if (window.innerWidth > 100 && window.scrollY > 100) {
+          backToTopButton.style.display = 'block';
+      } else {
+          backToTopButton.style.display = 'none';
+      }
+  }
+
+// Show or hide the "Go to Top" button based on scroll position
 window.addEventListener("scroll", function() {
     var scrollToTopBtn = document.getElementById("goToTopBtn");
     if (window.scrollY > 100) {
@@ -224,14 +237,18 @@ window.addEventListener("scroll", function() {
 });
 
 
+  window.addEventListener('scroll', checkButtonVisibility);
+  window.addEventListener('resize', checkButtonVisibility);
 
- // Scroll to the top when the button is clicked
-document.getElementById("goToTopBtn").addEventListener("click", function() {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth" 
-    });
+  backToTopButton.addEventListener('click', function () {
+      window.scrollTo({
+          top: 0,
+          behavior: 'smooth' 
+      });
+  });
+  checkButtonVisibility();
 });
+
 
 
 // loader
