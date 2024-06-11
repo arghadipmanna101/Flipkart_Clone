@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+
 /* <a class="nav-link" href="../search/?query=electronics */
 // product fetch
 // Function to create a product card
@@ -224,6 +225,17 @@ fetchAndShuffleDataUnder("json-api/product.json", shopUnder500, 18);
           backToTopButton.style.display = 'none';
       }
   }
+
+// Show or hide the "Go to Top" button based on scroll position
+window.addEventListener("scroll", function() {
+    var scrollToTopBtn = document.getElementById("goToTopBtn");
+    if (window.scrollY > 100) {
+        scrollToTopBtn.classList.remove("hidden");
+    } else {
+        scrollToTopBtn.classList.add("hidden");
+    }
+});
+
 
   window.addEventListener('scroll', checkButtonVisibility);
   window.addEventListener('resize', checkButtonVisibility);
