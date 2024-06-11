@@ -37,7 +37,7 @@ function createSearchProductCard(product) {
   }
   return `
   <style>
-  .products img:hover{transform:scale(1.1)}.products{font-size:medium;display:flex;flex-direction:column;}.rating{background-color:green;width:fit-content;padding:0 16px;border-radius:5px;color:#fff}.products .product_Img{height:150px}.products img{padding:1px;width:100%;height:100%;object-fit:contain}
+  .products_kart img:hover{transform:scale(1.1)}.products_kart{font-size:medium;display:flex;flex-direction:column;}.rating{background-color:green;width:fit-content;padding:0 16px;border-radius:5px;color:#fff}.products_kart .product_Img{height:150px}.products_kart img{padding:1px;width:100%;height:100%;object-fit:contain}
   </style>
             <div class="col-md-6">
               <div class="container">
@@ -52,7 +52,7 @@ function createSearchProductCard(product) {
                 </div>
             </div>
             <div class="col-md-6">
-                <div class=" products">
+                <div class=" products_kart">
                   <div class="mt-2 card-title">${product.name}</div>
                   <div class=" rating">${product.rating} &nbsp<i class="bi bi-star-fill"></i></div>
                   <span class="text-success mt-2">Special price</span>
