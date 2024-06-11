@@ -18,88 +18,149 @@
 
 <section>
     <style>
-       section .container {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 30px;
-  box-shadow: 0 4px 8px rgba(91, 77, 77, 0.1);
-  max-width: 100%;
-}
+        @import url("https://fonts.googleapis.com/css2?family=Lato&family=Silkscreen&display=swap");
 
-section h1 {
-  color: #1149ff;
-}
+        body {
+            font-family: "Lato", sans-serif;
+        }
 
-section .form-group label {
-  color: #343a40;
-}
+        section .container {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(91, 77, 77, 0.1);
+            max-width: 100%;
+        }
 
-section .form-control {
-  border: 1px solid #ced4da;
-}
+        section h1 {
+            color: #1149ff;
+        }
 
-section .form-control:focus {
-  border-color: #0755ff;
-  box-shadow: 0 0 0 0.2rem rgba(12, 82, 163, 0.25);
-}
+        .inner {
+            width: 400px;
+            margin: 0 auto;
+            position: relative;
+            top: 45%;
+            transform: translateY(-50%);
+            padding: 30px 40px;
+            background: linear-gradient(to top left, #ffffffff, #ffffff6f);
+            border: 2px solid black;
+            border-radius: 15px;
+            line-height: 35px;
+            box-shadow: 2px 2px 7px #2773a5;
+            z-index: 2;
+        }
 
-section .btn-primary {
-  background-color: #007bff;
-  border-color: #007bff;
-}
+        .profile {
+            margin: 15px 0px;
+        }
 
-section .btn-primary:hover {
-  background-color: #0056b3;
-  border-color: #0056b3;
-}
+        .profile div {
+            margin: 10px 0;
+        }
 
-section .btn-primary:focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
-}
+        .profile div label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .profile input {
+            width: 100%;
+            padding: 8px;
+            border: 2px solid rgba(113, 110, 110, 0.622);
+            border-radius: 10px;
+            font-family: a;
+            margin-top: 1px;
+            background-color: rgba(237, 234, 234, 0.622);
+        }
+
+        #orderHistory{
+            width: 100%;
+            padding: 8px;
+            border: 2px solid rgba(113, 110, 110, 0.622);
+            border-radius: 10px;
+            font-family: a;
+            margin-top: 1px;
+            background-color: rgba(237, 234, 234, 0.622);
+        }
+
+        #submit {
+            background-color: #3498db;
+            border: none;
+            cursor: pointer;
+        }
+
+        #submit:hover {
+            background-color: #14679fe1;
+        }
+
+        .gender{
+            display: flex;
+            flex-direction: column;
+            flex-flow: wrap;
+            align-items: center;
+        }
+        #form-gender{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        #form-check-input{
+            padding:0 5px;
+        }
     </style>
     <div class="container mt-5">
         <div class="row justify-content-center">
-            <div class="col-12 col-md-8">                
-                <h1 class="text-center mb-4" style="display: inline-block;"><img src="../img/flipkardLoader.png" alt="Flipkart Logo" class="img-fluid mb-4 mx-auto" style="width: 100%; max-width: 180px;">lipkart Profile</h1>
-                <form>
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Enter your full name">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter your email address">
-                    </div>
-                    <div class="form-group">
-                        <label for="address">Address</label>
-                        <input type="text" class="form-control" id="address" placeholder="Enter your address">
-                    </div>
-                    <div class="form-group">
-                        <label for="payment">Payment Information</label>
-                        <input type="text" class="form-control" id="payment" placeholder="Enter your payment information">
-                    </div>
-                    <div class="form-group">
-                        <label>Gender</label>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gender" id="male" value="male">
-                            <label class="form-check-label" for="male">Male</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gender" id="female" value="female">
-                            <label class="form-check-label" for="female">Female</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gender" id="other" value="other">
-                            <label class="form-check-label" for="other">Other</label>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="orderHistory">Order History</label>
-                        <textarea class="form-control" id="orderHistory" rows="3" placeholder="Enter your order history"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Save</button>
-                </form>
+            <div class="col-12 col-md-8">
+                <h1 class="text-center mb-4" style="display: inline-block;"><img src="../img/flipkardLoader.png"
+                        alt="Flipkart Logo" class="img-fluid mb-4 mx-auto"
+                        style="width: 100%; max-width: 180px;">lipkart Profile</h1>
+                <div class="inner">
+                    <form class="profile">
+                        <form action="#">
+                            <div class="form-group">
+                                <label for="firstname">Full Name</label>
+                                <input type="text" id="firstname" class="form-control" placeholder="eg.Harsh" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="eg.harshp1832004@gmail.com" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Address</label>
+                                <input type="text" class="form-control" id="address" placeholder="Enter your address">
+                            </div>
+                            <div class="form-group">
+                                <label for="payment">Payment Information</label>
+                                <input type="text" class="form-control" id="payment" placeholder="Enter your payment information">
+                            </div>
+                            <div class="form-group gender">
+                                <label style="padding-right: 30px;">Gender</label>
+                                <div id="form-gender" class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                                    <label id="form-check-input" class="form-check-label" for="male">Male</label>
+                                </div>
+                                <div id="form-gender" class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                                    <label id="form-check-input" class="form-check-label" for="female">Female</label>
+                                </div>
+                                <div id="form-gender" class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender" id="other" value="other">
+                                    <label id="form-check-input" class="form-check-label" for="other">Other</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                    <label for="orderHistory">Order History</label>
+                                    <textarea class="form-control" id="orderHistory" rows="3" placeholder="Enter your order history"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input class="btn btn-primary" type="submit" class="btn btn-primary" id="submit" value="Save" />
+                            </div>
+                        </form>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
