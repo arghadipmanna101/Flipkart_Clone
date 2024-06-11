@@ -18,6 +18,19 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 // end -footer
 
+
+// Show or hide the "Go to Top" button based on scroll position
+ document.addEventListener("DOMContentLoaded", function () {
+  const backToTopButton = document.getElementById('goToTopBtn');
+
+  function checkButtonVisibility() {
+      if (window.innerWidth > 100 && window.scrollY > 100) {
+          backToTopButton.style.display = 'block';
+      } else {
+          backToTopButton.style.display = 'none';
+      }
+  }
+
 // Show or hide the "Go to Top" button based on scroll position
 window.addEventListener("scroll", function() {
     var scrollToTopBtn = document.getElementById("goToTopBtn");
@@ -28,16 +41,28 @@ window.addEventListener("scroll", function() {
     }
 });
 
- // Scroll to the top when the button is clicked
-document.getElementById("goToTopBtn").addEventListener("click", function() {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth" 
-    });
+
+  window.addEventListener('scroll', checkButtonVisibility);
+  window.addEventListener('resize', checkButtonVisibility);
+
+  backToTopButton.addEventListener('click', function () {
+      window.scrollTo({
+          top: 0,
+          behavior: 'smooth' 
+      });
+  });
+  checkButtonVisibility();
 });
 
 
+
 // loader
+// old
+// setTimeout(function() {
+//     document.getElementById('loader').style.display = 'none';
+//   }, 2000);
+
+// new
   document.addEventListener("DOMContentLoaded", function() {
 		const loader = document.querySelector(".loader-container");
 		setTimeout(function() {
