@@ -312,7 +312,7 @@ body {
 /* Hover effetct on become a seller */
 .navItem4 :hover {
   /* transform: scale(1.1); */
-  background-color: rgba(0, 0, 0, 0.058);
+  background-color: rgba(0, 0, 0, 0.032);
   border-radius: 15px;
 }
 
@@ -324,7 +324,7 @@ body {
 /* Hover effect on card icon */
 .navItem3 :hover {
   /* transform: scale(1.1); */
-  background-color: rgba(0, 0, 0, 0.058);
+  background-color: rgba(0, 0, 0, 0.032);
   border-radius: 15px;
 }
 
@@ -518,7 +518,8 @@ body {
   bottom: 4%;
   right: 7%;
   /* Color issue resolved */
-  background-color: rgb(255, 0, 0);
+  /* position fixed */
+  background-color: rgba(30, 0, 255, 0.623);
   color: #fff;
   border: none;
   border-radius: 50%;
