@@ -1,0 +1,110 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.container-fluid {
+    padding: 0 15px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 15px;
+}
+
+header .container-fluid {
+    background-color: #2874F0;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+header form {
+    display: flex;
+    align-items: center;
+}
+
+header input.form-control {
+    border-radius: 4px 0 0 4px;
+}
+
+header button.btn {
+    border-radius: 0 4px 4px 0;
+}
+
+/* Gift card styles */
+.gift-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.gift-card {
+    border: 1px solid #ddd;
+    border-radius: 16px; /* Rounded corners */
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: calc(33.333% - 20px); /* Adjust width to ensure 3 boxes per row */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gift-card img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.gift-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.gift-card-details {
+    padding: 15px;
+}
+
+.gift-card-details h5 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.gift-card-price {
+    font-weight: bold;
+    color: #2874F0;
+    margin-top: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .gift-card {
+        width: calc(50% - 20px); /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .gift-card {
+        width: calc(100% - 20px); /* Adjust for very small screens */
+    }
+}
