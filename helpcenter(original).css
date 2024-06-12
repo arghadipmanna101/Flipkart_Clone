@@ -3,7 +3,7 @@ body {
 }
 
 header {
-    background: linear-gradient(to right, white, #51b4e6bf);
+    background: linear-gradient(to right, blue);
 }
 
 section {
@@ -22,7 +22,6 @@ footer p {
 .list-group-item {
     cursor: pointer;
 }
-
 
 
 
