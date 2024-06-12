@@ -1,20 +1,46 @@
+
+<div align="center">
+  <h1 style="font-size: 36px; font-weight: bold;">Flipkart_Clone</h1>
+  
+</div>
+
 <div align="center">
  <p>
 
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)
-![GitHub Repo stars](https://img.shields.io/github/stars/arghadipmanna101/Flipkart_Clone)
 ![GitHub contributors](https://img.shields.io/github/contributors/arghadipmanna101/Flipkart_Clone)
-![GitHub last commit](https://img.shields.io/github/last-commit/arghadipmanna101/Flipkart_Clone)
 ![GitHub repo size](https://img.shields.io/github/repo-size/arghadipmanna101/Flipkart_Clone)
 ![Github](https://img.shields.io/github/license/arghadipmanna101/Flipkart_Clone)
-![GitHub issues](https://img.shields.io/github/issues/arghadipmanna101/Flipkart_Clone)
-![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/arghadipmanna101/Flipkart_Clone)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/arghadipmanna101/Flipkart_Clone)
-![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/arghadipmanna101/Flipkart_Clone)
-
  </p>
 </div>
+
+<table align="center">
+    <thead align="center">
+        <tr border: 1px;>
+            <td><b>🌟 Stars</b></td>
+            <td><b>🍴 Forks</b></td>
+            <td><b>🐛 Issues</b></td>
+            <td><b>   Closed Issues</b></td>
+            <td><b>🔔 Open PRs</b></td>
+            <td><b>🔕 Close PRs</b></td>
+            <td><b> last commit</b></td>
+        </tr>
+     </thead>
+    <tbody>
+         <tr>
+            <td><img alt="Stars" src="https://img.shields.io/github/stars/arghadipmanna101/Flipkart_Clone"/></td>
+             <td><img alt="Forks" src="https://img.shields.io/github/forks/arghadipmanna101/Flipkart_Clone?style=flat&logo=github"/></td>
+            <td><img alt="Issues" src="https://img.shields.io/github/issues/arghadipmanna101/Flipkart_Clone?style=flat&logo=github"/></td>
+            <td><img alt="closed issues" src="https://img.shields.io/github/issues-closed-raw/arghadipmanna101/Flipkart_Clone"</td>
+            <td><img alt="Open Pull Requests" src="https://img.shields.io/github/issues-pr/arghadipmanna101/Flipkart_Clone?style=flat&logo=github"/></td>
+            <td><img alt="Close Pull Requests" src="https://img.shields.io/github/issues-pr-closed/arghadipmanna101/Flipkart_Clone"/></td>
+           <td><img alt="last commit" src="https://img.shields.io/github/last-commit/arghadipmanna101/Flipkart_Clone"/></td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
 
 
 <!-- Open Source Programs -->
@@ -22,15 +48,26 @@
     <h2><img src="https://github.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/blob/master/Emojis/Hand%20gestures/Flexed%20Biceps.png?raw=true" width="35" height="35" >Open Source Programs</h2>
   </div>
 
-  This project is a part of GirlScript Summer of code. We welcome contibutions from the community to help improve the project Flipkart_Clone.
-  
-![gssoc](https://github.com/d1vyadharsh1n1/Flipkart_Clone/assets/146218077/dd4ffa29-2d52-47ad-9967-d0d6f8aff717)
+  <!--This project is a part of GirlScript Summer of code. We welcome contibutions from the community to help improve the project Flipkart_Clone.-->
 
+  <table>
 
-<div align="center">
-  <h1 style="font-size: 36px; font-weight: bold;">Flipkart_Clone</h1>
+   <tr>
+      <th>Event Logo</th>
+      <th>Event Name</th>
+      <th>Event Description</th>
+   </tr>
+   <tr>
+      <td><img src="https://user-images.githubusercontent.com/63473496/153487849-4f094c16-d21c-463e-9971-98a8af7ba372.png" width="200" height="auto" loading="lazy" alt="GSSoC 24"/></td>
+      <td>GirlScript Summer of Code 2024</td>
+      <td>GirlScript Summer of Code is a three-month-long Open Source Program conducted every summer by GirlScript Foundation. It is an initiative to bring more beginners to Open-Source Software Development.</td>
+   </tr>
+
+</table>
+
+<hr>
   
-</div>
+<!--![gssoc](https://github.com/d1vyadharsh1n1/Flipkart_Clone/assets/146218077/dd4ffa29-2d52-47ad-9967-d0d6f8aff717)-->
 
 <div style="text-align:center;">
  <img src="https://cdn.dribbble.com/users/1980856/screenshots/4760116/media/5021b87fb97e90b8f153a4480ffc615e.gif" alt="Flipkart Logo Animation" width="3800" height="450">
