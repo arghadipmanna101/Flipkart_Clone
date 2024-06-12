@@ -626,3 +626,18 @@ body {
   }
 }
 
+.text{
+  background-color: white;
+  padding: 20px 30px;
+  font-size: 11px;
+  
+}
+.main1{
+  font-size: 16px;
+  color: #878787;
+}
+.heading1{
+  font-weight: 500;
+  font-size: 16px;
+  color: #878787;
+}
