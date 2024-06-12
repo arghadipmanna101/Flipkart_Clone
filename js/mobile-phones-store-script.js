@@ -36,7 +36,7 @@ function createMobileCard(mobile) {
     <style>
     .products div{font-size:14px}.products img:hover{transform:scale(1.1)}.products{font-size:medium;display:flex;flex-direction:column;align-items:center}.rating{background-color:green;width:fit-content;padding:0 16px;border-radius:5px;color:#fff}.products .product_Img{height:150px}.products img{padding:1px;width:100%;height:100%;object-fit:contain}
     </style>
-      <a class="btn col-lg-2 col-md-3 col-sm-4 col-6 p-2" href="../addtokart/?query=${mobile.name}">
+      <a class="btn col-lg-2 col-md-2 col-sm-4 col-6 p-2" href="../addtokart/?query=${mobile.name}">
           <div class="products">
               <div class="text-center product_Img img-fluid">
                   <img src="../json-api/product-img/${mobile.productImg}" alt="${mobile.id}">
