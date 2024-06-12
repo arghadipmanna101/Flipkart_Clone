@@ -1,61 +1,86 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const components = [
-    { id: "footer-searchtab", url: "../footer/footer.html" },
-    { id: "header-searchtab", url: "../header/header.html" },
-  ];
+const searchJSON = (query) => {
+  // Fetch JSON data from the data.json file
+  return fetch("json-api/product.json")
+    .then((response) => response.json())
+    .then((data) => {
+      const results = data.filter((item) => {
+        return (
+          item.name.toLowerCase().includes(query.toLowerCase()) ||
+          item.category.toLowerCase().includes(query.toLowerCase())
+        );
+      });
 
-  components.forEach((component) => {
-    fetch(component.url)
-      .then((response) => response.text())
-      .then((data) => {
-        document.getElementById(component.id).innerHTML = data;
-      })
-      .catch((error) =>
-        console.error(`Error loading ${component.url}:`, error)
-      );
+      return results;
+    })
+    .catch((error) => console.error("Error fetching JSON:", error));
+};
+
+document.addEventListener("DOMContentLoaded", function () {
+  const searchInput = document.getElementById("input_data");
+  const autocompleteResults = document.getElementById("autocompleteResults");
+  const searchButton = document.getElementById("searchButton");
+  const resultsContainer = document.getElementById("results");
+
+  searchInput.addEventListener("input", function () {
+    const query = searchInput.value.trim();
+    searchJSON(query).then((autocompleteSuggestions) => {
+      // Clear previous autocomplete suggestions
+      autocompleteResults.innerHTML = "";
+
+      // Display autocomplete suggestions
+      if (query.length > 0 && autocompleteSuggestions.length > 0) {
+        autocompleteSuggestions.forEach((result) => {
+          const suggestionItem = document.createElement("div");
+          suggestionItem.classList.add("autocomplete-item");
+          suggestionItem.textContent = `${result.name} - ${result.category}`;
+          suggestionItem.addEventListener("click", function () {
+            searchInput.value = result.name;
+            autocompleteResults.style.display = "none";
+          });
+          autocompleteResults.appendChild(suggestionItem);
+        });
+        autocompleteResults.style.display = "block";
+      } else {
+        autocompleteResults.style.display = "none";
+      }
+    });
+  });
+
+  searchButton.addEventListener("click", function () {
+    autocompleteResults.style.display = "none";
+    const query = searchInput.value.trim();
+
+    if (query === "") {
+      resultsContainer.innerHTML = "";
+    } else {
+      searchJSON(query).then((searchResults) => {
+        // Clear previous results
+        resultsContainer.innerHTML = "";
+
+        // Display results
+        if (searchResults.length === 0) {
+          resultsContainer.innerHTML = "No results found.";
+        } else {
+          searchResults.forEach((result) => {
+            const resultElement = document.createElement("div");
+            resultElement.classList.add("col-md-2");
+            resultElement.classList.add("col-sm-4");
+            resultElement.classList.add("col-6");
+            resultElement.classList.add("p-2");
+            resultElement.innerHTML = `
+            <a href="addtokart/?query=${result.name}">
+            <div class="text-center" style="height:150px";>
+            <img src="json-api/product-img/${result.productImg}" style="width: 100%; height: 100%; object-fit: contain;"
+            alt="${result.name}">
+            </div>
+            <div class="text-center card-title">${result.name}</div>
+            <div class="text-center">Price: ₹${result.price}</div>
+            </a>
+            `;
+            resultsContainer.appendChild(resultElement);
+          });          
+        }
+      });
+    }
   });
 });
-
-
-
-// Function to get query parameter
-function getQueryParameter(name) {
-  const urlParams = new URLSearchParams(window.location.search);
-  return urlParams.get(name);
-}
-
-// Function to create product card
-function createSearchProductCard(product) {
-  return `
-      <a class="btn col-lg-2 col-md-3 col-sm-4 col-6 p-2" href="../addtokart/?query=${product.name}">
-          <div class="products">
-              <div class="text-center img-fluid" style="height:150px";>
-                  <img src="../json-api/product-img/${product.productImg}" style="width: 100%; height: 100%; object-fit: contain;" alt="${product.id}">
-              </div>
-              <div class="text-center card-title">${product.name}</div>
-              <div class="text-center rating">${product.rating} &nbsp<i class="bi bi-star-fill"></i></div>
-              <div class="text-center"> Price:<strong> ₹${product.price}</strong></div>
-          </div>
-      </a>
-  `;
-}
-
-// Function to display search results
-function searchFetch(products) {
-  const searchList = document.getElementById('results');
-  searchList.innerHTML = products.map(product => createSearchProductCard(product)).join('');
-}
-
-// Fetch data from the JSON file and filter products based on the query
-fetch('../json-api/product.json')
-  .then(response => response.json())
-  .then(data => {
-      const query = getQueryParameter('query');
-      const filteredProducts = data.filter(product => product.category.toLowerCase().includes(query.toLowerCase()) || product.name.toLowerCase().includes(query));
-      searchFetch(filteredProducts);
-  })
-  .catch(error => console.error('Error fetching data:', error));
-
-
-
- 
