@@ -2012,5 +2012,149 @@
         "rating": 3.1,
         "category": "two-wheelers",
         "price": 84000
+      },
+      {
+        "name": "Men Solid Round Neck Polyester Black T-Shirt",
+        "description": "Men Solid Round Neck Polyester Black T-Shirt",
+        "productImg": "s-01-t-shirt-juste.jpeg",
+        "rating": 4.2,
+        "category": "fashion-men",
+        "price": 999
+      },
+      {
+        "name": "Men Regular Fit Solid Spread Collar Casual Shirt",
+        "description": "Men Regular Fit Solid Spread Collar Casual Shirt",
+        "productImg": "s-dpmayzs8pa.jpeg",
+        "rating": 3.8,
+        "category": "fashion-men",
+        "price": 499
+      },
+      {
+        "name": "Men Striped Round Neck T-Shirt",
+        "description": "Men Striped Round Neck Cotton Blend Dark Green, Black T-Shirt",
+        "productImg": "xl-ask-0nfe6t.jpeg",
+        "rating": 3.7,
+        "category": "fashion-men",
+        "price": 599
+      },
+      {
+        "name": "Men Regular Fit Checkered Casual Shirt",
+        "description": "Men Regular Fit Checkered Casual Shirt",
+        "productImg": "2xl-menshy.jpeg",
+        "rating": 4,
+        "category": "fashion-men",
+        "price": 899
+      },
+      {
+        "name": "Men Self Design Polo Neck Black T-Shirt",
+        "description": "Men Self Design Polo Neck Cotton Blend (220 gsm) Black T-Shirt",
+        "productImg": "m-db1024gug.jpeg",
+        "rating": 4.1,
+        "category": "fashion-men",
+        "price": 499 
+      },
+      {
+        "name": "Lite Sports Running Shoes For Men  (Grey)",
+        "description": "Lite Sports Running Shoes For Men  (Grey)",
+        "productImg": "7-na-rng-85nw.jpeg",
+        "rating": 3.9,
+        "category": "fashion-men",
+        "price": 999
+      },
+      {
+        "name": "MIKE (N) Running Shoes For Men  (Blue)",
+        "description": "MIKE (N) Running Shoes For Men  (Blue)",
+        "productImg": "9-5g-845-k-bb.jpeg",
+        "rating": 4.1,
+        "category": "fashion-men",
+        "price": 1699
+      },
+      {
+        "name": "Lite Sports Shoes Running Shoes For Men  (Blue)",
+        "description": "Lite Sports Shoes Running Shoes For Men  (Blue)",
+        "productImg": "-original-imahf3kvwrbuhgh9.jpeg",
+        "rating": 3.9,
+        "category": "fashion-men",
+        "price": 2499
+      },
+      {
+        "name": "AlphaBounce Running Shoes For Men (Black)",
+        "description": "AlphaBounce + Running Shoes For Men (Black)",
+        "productImg": "-originamxtg2.jpeg",
+        "rating": 4.2,
+        "category": "fashion-men",
+        "price": 3311
+      },
+      {
+        "name": "TENIS TOP Tennis Shoes For Men (Green)",
+        "description": "ADIDAS TENIS TOP Tennis Shoes For Men (Green)",
+        "productImg": "-origijwv.jpeg",
+        "rating": 4.5,
+        "category": "fashion-men",
+        "price": 4999
+      },
+      {
+        "name": "SM 773 Running Shoes For Men (Grey, Maroon)",
+        "description": "SM 773 Running Shoes For Men  (Grey, Maroon)",
+        "productImg": "7-sm-773-mq6x3fu.jpeg",
+        "rating": 4.1,
+        "category": "fashion-men",
+        "price": 1299
+      },
+      {
+        "name": "Men Slim Mid Rise Blue Jeans",
+        "description": "Men Slim Mid Rise Blue Jeans",
+        "productImg": "ycq3kgugmyez.jpeg",
+        "rating": 4.3,
+        "category": "fashion-men",
+        "price": 2599
+      },
+      {
+        "name": "Men Skinny Mid Rise Blue Jeans",
+        "description": "Men Skinny Mid Rise Blue Jeans",
+        "productImg": "32-kjo-80152-sk.jpeg",
+        "rating": 4.4,
+        "category": "fashion-men",
+        "price": 1499
+      },
+      {
+        "name": "Men Cargos",
+        "description": "Men Cargos",
+        "productImg": "m-olive-cargo-0edtnd.jpeg",
+        "rating": 3.9,
+        "category": "fashion-men",
+        "price": 1290
+      },
+      {
+        "name": "Men Solid Pure Cotton Straight Kurta",
+        "description": "Men Solid Pure Cotton Straight Kurta  (Multicolor)",
+        "productImg": "s-vgj.jpeg",
+        "rating": 3.7,
+        "category": "fashion-men",
+        "price": 1999
+      },
+      {
+        "name": "Men Solid Riding Jacket",
+        "description": "Men Solid Biker/Riding Jacket",
+        "productImg": "xl-no-hz5eeef.jpeg",
+        "rating": 3.6,
+        "category": "fashion-men",
+        "price": 2999
+      },
+      {
+        "name": "Men Casual, Formal Tan Artificial Leather RFID Wallet",
+        "description": "Men Casual, Formal Tan Artificial Leather RFID Wallet  (5 Card Slots)",
+        "productImg": "gul-tywfqmg.jpeg",
+        "rating": 3.9,
+        "category": "fashion-men",
+        "price": 499
+      },
+      {
+        "name": "Camping Bag Travel Backpack",
+        "description": "Mountain Rucksacksbag Hiking Trekking Camping Bag Travel Backpack Rucksack - 60 L  (Grey)",
+        "productImg": "60l-trackinhyfvcz.jpeg",
+        "rating": 4,
+        "category": "fashion",
+        "price": 2999
       }
 ]

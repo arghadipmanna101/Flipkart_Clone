@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#2874F0" id="themeColor">
+	<title>Flipkart | Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books &amp; More. Best Offers!</title>
+	<link rel="icon" type="image/x-icon" href="../img/flipkart_lite.png">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="../css/homeHeader.css">
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<link rel="stylesheet" href="../css/footer.css">
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<!--Header start  -->
+	<header id="homeHeader">
+		<nav class="navbar homeHeader navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="https://flipkart-clone-seven-azure.vercel.app/">
+				<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
+					width="160" height="40" title="Flipkart" alt="Flipkart" />
+			</a>
+			<div id="navbarNav_">
+				<ul class="navbar-nav">
+					<li class="nav-item navItem1">
+						<div id="searchbar" class="navtab">
+							<span id="searchButton" style="display: flex;align-items: center;">
+								<svg width="24" height="24" class="" viewBox="0 0 24 24" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<title>Search Icon</title>
+									<path
+										d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z"
+										stroke="#717478" stroke-width="1.4" stroke-linecap="round"
+										stroke-linejoin="round"></path>
+									<path d="M16 16L21 21" stroke="#717478" stroke-width="1.4" stroke-linecap="round"
+										stroke-linejoin="round"></path>
+								</svg>
+							</span>
+							<span class="flex-grow">
+								<input id="input_data" type="text" placeholder="Search for Products, Brands and More" />
+							</span>
+							<div id="autocompleteResults" class="autocom-box" style="display: none;
+							position: absolute;
+							top: 67px;
+							background: rgb(255, 255, 255);
+							padding: 10px;
+							border: rgba(255, 51, 255, 0.2);">
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="navbar-nav ml-auto"
+					style="flex-wrap: nowrap;flex-direction: row;width: 40vw; justify-content: space-around">
+					<li class="nav-item navItem2 dropdown" id="navbarDropdow">
+						<a class="nav-link nav-dd acnavdd" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<img src="../img/svg/profile-.svg" alt="Profile" />
+							<span class="navname navname_ac"> Account <i class="bi bi-chevron-down"></i><i
+									class="bi bi-chevron-up"></i></span>
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="left: 0;">
+							<a class="dropdown-item" href="../account/home_account.html">
+								<img width="20" src="../img/svg/profile-.svg" alt="flipKart">
+								My Profile </a>
+
+							<a class="dropdown-item" href="../account/login-signup.html">
+								<img width="20" src="../img/svg/profile-.svg" alt="flipKart">
+								Sign In</a>
+							<a class="dropdown-item" href="../plus/">
+								<img width="20" src="../img/svg/fkplus-+.svg" alt="flipKart">
+								Flipkart Plus Zone</a>
+							<a class="dropdown-item" href="../account/orders.html">
+								<img width="20" src="../img/svg/orders.svg" alt="flipKart">
+								Orders</a>
+							<a class="dropdown-item" href="../wishlist/">
+								<img width="20" src="../img/svg/wishList.svg" alt="flipKart">
+								Wishlist</a>
+							<a class="dropdown-item" href="account/rewards.html">
+								<img width="20" src="../img/svg/rewards.svg" alt="flipKart">
+								Rewards</a>
+							<a class="dropdown-item" href="../the-gift-card-store/">
+								<img width="20" src="../img/svg/giftCard.svg" alt="flipKart">
+								Gift Cards</a>
+						</div>
+					</li>
+					<li class="nav-item navItem3">
+						<a class="nav-link cartLogoandname" href="../viewcart/">
+							<img
+								src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg" />
+							<span class="navname2">Cart</span><span id="cartItems"></span>
+							</a>
+					</li>
+					<li class="nav-item navItem4">
+						<a class="nav-link" href="../sell-online/">
+							<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg"
+								alt="Become a Seller" />
+							<span class="navname3">Become a Seller</span>
+						</a>
+					</li>
+					<li class="nav-item navItem5 dropdown " id="moreLinksDropdow">
+						<a class="nav-link nav-dd" href="#" id="moreLinksDropdown" role="button" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">
+							<img class="nav-dd"
+								src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-ea7819.svg"
+								alt="More Links" />
+						</a>
+						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="moreLinksDropdown">
+							<a class="dropdown-item" href="../notifications/"><img width="30" height="20"
+									src="../img/svg/notificationPreferences.svg"
+									alt="appointment-reminders--v2" />Notification
+								Preferences</a>
+							<a class="dropdown-item" href="../helpcentre/"><img width="30" height="20"
+									src="../img/svg/helpcenter.svg" alt="imgcc">24x7 Customer Care</a>
+							<a class="dropdown-item"
+								href="https://advertising.flipkart.com/"><img
+									width="30" height="20" src="img/svg/advertise.svg" alt="Advertise">Advertise</a>
+							<a class="dropdown-item" href="../mobile-apps/"><img width="30" height="20"
+									src="../img/svg/downloadApp.svg" alt="img3">Download App</a>
+					</li>
+					
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<!-- Main Content -->
+	<main>
+		<div class="container">
+			<div class="gift-card-container">
+				<!-- Example Gift Card -->
+				<div class="gift-card">
+					<img src="images/apple.webp" alt="Gift Card 1">
+					<div class="gift-card-details">
+						<h5>Gift Card 1</h5>
+						<p class="gift-card-price">$25</p>
+					</div>
+				</div>
+				<div class="gift-card">
+					<img src="images/blackberry.webp" alt="Gift Card 2">
+					<div class="gift-card-details">
+						<h5>Gift Card 2</h5>
+						<p class="gift-card-price">$50</p>
+					</div>
+				</div>
+				<div class="gift-card">
+					<img src="images/cinema.webp" alt="Gift Card 3">
+					<div class="gift-card-details">
+						<h5>Gift Card 3</h5>
+						<p class="gift-card-price">$75</p>
+					</div>
+				</div>
+				<div class="gift-card">
+					<img src="images/flipkart.webp" alt="Gift Card 4">
+					<div class="gift-card-details">
+						<h5>Gift Card 4</h5>
+						<p class="gift-card-price">$100</p>
+					</div>
+				</div>
+				<div class="gift-card">
+					<img src="images/myntra.webp" alt="Gift Card 5">
+					<div class="gift-card-details">
+						<h5>Gift Card 5</h5>
+						<p class="gift-card-price">$125</p>
+					</div>
+				</div>
+				<div class="gift-card">
+					<img src="images/tanishq.webp" alt="Gift Card 6">
+					<div class="gift-card-details">
+						<h5>Gift Card 6</h5>
+						<p class="gift-card-price">$150</p>
+					</div>
+				</div>
+				<div class="gift-card">
+					<img src="images/trends.webp" alt="Gift Card 7">
+					<div class="gift-card-details">
+						<h5>Gift Card 7</h5>
+						<p class="gift-card-price">$175</p>
+					</div>
+				</div>
+				<div class="gift-card">
+					<img src="images/uber.webp" alt="Gift Card 8">
+					<div class="gift-card-details">
+						<h5>Gift Card 8</h5>
+						<p class="gift-card-price">$200</p>
+					</div>
+				</div>
+				<div class="gift-card">
+					<img src="images/zomato.webp" alt="Gift Card 9">
+					<div class="gift-card-details">
+						<h5>Gift Card 9</h5>
+						<p class="gift-card-price">$225</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- Footer Section -->
+	<footer>
+		<div class="container-fluid bg-dark text-white p-3 text-center">
+			<p>© 2023 Flipkart. All rights reserved.</p>
+		</div>
+	</footer>
+
+	<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
