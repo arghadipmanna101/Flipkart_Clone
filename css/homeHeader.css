@@ -70,6 +70,13 @@
   border-radius: 10px;
 }
 
+.homeHeader .navItem4:hover,
+.homeHeader .navItem3:hover{
+  background: #ebe8e8;
+  border-radius: 10px;
+  transition: all 0.4s;
+}
+
 .homeHeader .nav-item-divider:last-child::before {
   display: none;
 }
