@@ -1,4 +1,4 @@
-// Date and Time
+//Date and Time
 const today = new Date();
 const nextThreeDays = new Date(today);
 nextThreeDays.setDate(today.getDate() + 3);
@@ -7,13 +7,13 @@ const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Fri
 const dayOfWeek = daysOfWeek[nextThreeDays.getDay()];
 const date = nextThreeDays.toLocaleDateString();
 
-// Cart JS
+//Cart JS
 
-// Function to save data to local storage
+//Function to save data to local storage
 function saveToLocalStorage(key, newData) {
   let existingData = getFromLocalStorage(key) || [];
 
-  // Check for duplicates and add only unique products
+//Check for duplicates and add only unique products
   newData.forEach(newProduct => {
     const isDuplicate = existingData.some(existingProduct => existingProduct.name === newProduct.name);
     if (!isDuplicate) {
@@ -30,7 +30,7 @@ function getFromLocalStorage(key) {
   return data ? JSON.parse(data) : [];
 }
 
-// Function to get query parameter
+//Function to get query parameter
 function getQueryParameter(name) {
   const urlParams = new URLSearchParams(window.location.search);
   return urlParams.get(name);
