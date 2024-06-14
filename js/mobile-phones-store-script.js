@@ -216,7 +216,7 @@ setTimeout(() => {
 
   function fetchValue_h() {
       const value = inputField_h.value;
-      window.location.href = `?query=${value}`;
+      window.location.href = `../search/?query=${value}`;
   }
  
   fetchButton_h.addEventListener('click', fetchValue_h);
