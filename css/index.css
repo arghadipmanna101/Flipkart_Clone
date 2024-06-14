@@ -689,3 +689,15 @@ body {
   font-size: 16px;
   color: #878787;
 }
+.brand-directory{
+  background-color: white;
+  padding: 20px 30px;
+  color: #878787;
+  letter-spacing: 0;
+
+}
+.brand-directory-heading{
+  font-weight: 24px;
+  color:black ;
+
+}
