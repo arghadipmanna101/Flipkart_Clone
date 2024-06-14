@@ -139,7 +139,7 @@ If you find this project helpful, please consider giving it a star on GitHub! Yo
     <h2><img src="https://github.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/blob/master/Emojis/Hand%20gestures/Flexed%20Biceps.png?raw=true" width="35" height="35" >Open Source Programs</h2>
   </div>
 
-  This project is a part of GirlScript Summer of code. We welcome contibutions from the community to help improve the project Flipkart_Clone.
+  This project is a part of GirlScript Summer of code. We welcome contributions from the community to help improve the project Flipkart_Clone.
   
 ![gssoc](https://github.com/d1vyadharsh1n1/Flipkart_Clone/assets/146218077/dd4ffa29-2d52-47ad-9967-d0d6f8aff717)
 
