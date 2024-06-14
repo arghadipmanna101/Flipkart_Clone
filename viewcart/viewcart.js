@@ -8,7 +8,6 @@ const dayOfWeek = daysOfWeek[nextThreeDays.getDay()];
 const date = nextThreeDays.toLocaleDateString();
 
 //Cart JS
-
 //Function to save data to local storage
 function saveToLocalStorage(key, newData) {
   let existingData = getFromLocalStorage(key) || [];
@@ -196,5 +195,4 @@ fetch("../json-api/product.json")
     searchFetch(savedFilteredProducts);
   })
   .catch(error => console.error("Error fetching data:", error));
-
 // end
