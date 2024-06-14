@@ -1,4 +1,4 @@
-// Date and Time
+//Date and Time
 const today = new Date();
 const nextThreeDays = new Date(today);
 nextThreeDays.setDate(today.getDate() + 3);
@@ -7,9 +7,8 @@ const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Fri
 const dayOfWeek = daysOfWeek[nextThreeDays.getDay()];
 const date = nextThreeDays.toLocaleDateString();
 
-// Cart JS
-
-// Function to save data to local storage
+//Cart JS
+//Function to save data to local storage
 function saveToLocalStorage(key, newData) {
   let existingData = getFromLocalStorage(key) || [];
 
@@ -196,5 +195,4 @@ fetch("../json-api/product.json")
     searchFetch(savedFilteredProducts);
   })
   .catch(error => console.error("Error fetching data:", error));
-
 // end
