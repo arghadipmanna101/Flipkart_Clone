@@ -1,25 +1,28 @@
 document.addEventListener("DOMContentLoaded", function () {
     const categoriesList = document.getElementById("categories");
 
-    function createCategoryItem(categoryData) {
+    function createCategoryItem(categoryData, isSubcategory = false) {
         const categoryItem = document.createElement("li");
-
-        const icon = document.createElement("img");
-        icon.src = "img/" + categoryData.icon;
-
+    
+        if (categoryData.icon && !isSubcategory) {
+            const icon = document.createElement("img");
+            icon.src = "img/" + categoryData.icon;
+            icon.style.display = "block";
+            icon.style.margin = "auto";
+            categoryItem.appendChild(icon);
+        }
+    
         const nameLink = document.createElement("a");
         nameLink.href = categoryData.name + "-/"; //find index.html
         nameLink.textContent = categoryData.name;
-
+    
         const name = document.createElement("span");
-        name.appendChild(document.createElement("br"));
         name.appendChild(nameLink);
-
-        categoryItem.appendChild(icon);
+    
         categoryItem.appendChild(name);
-
+    
         const subcategoriesList = document.createElement("ul");
-
+    
         if (!categoryData.subcategories) {
             const singleItem = document.createElement("li");
             const singleLink = document.createElement("a");
@@ -34,15 +37,14 @@ document.addEventListener("DOMContentLoaded", function () {
                     singleItem.textContent = subcategoryData;
                     subcategoriesList.appendChild(singleItem);
                 } else if (subcategoryData) {
-                    const subcategoryItem = createCategoryItem(subcategoryData);
+                    const subcategoryItem = createCategoryItem(subcategoryData, true);
                     subcategoriesList.appendChild(subcategoryItem);
                 }
             });
         }
-
+    
         categoryItem.appendChild(subcategoriesList);
-        // console.log(categoryItem);
-
+    
         return categoryItem;
     }
 
