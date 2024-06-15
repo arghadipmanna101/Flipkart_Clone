@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Responsive Contact Us Form | CodingLab</title>
+    <link rel="stylesheet" href="Contact-us.css" />
+    <link rel="stylesheet" href="css/index.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div id="navbar-container">
+
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Improved Navbar</title>
+  <!-- <link rel="stylesheet" href="Navbar.css"> -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      background-color: #333;
+      height: 60px;
+    }
+
+    .navbar-nav{
+      padding-right: 100px;
+
+    }
+
+    .navbar-brand img {
+      height: 40px;
+    }
+
+    .navbar-toggler {
+      border: none;
+      position: absolute;
+    }
+
+    .navbar-nav .nav-link {
+      color: black;
+      /* padding: 10px 15px; */
+      font-size: 16px;
+      text-transform: uppercase;
+      position: relative;
+      transition: background-color 0.5s;
+    }
+    .navbar-nav .nav-link:hover {
+      display: block;
+      background-color: white;
+      width:7.47rem;
+      height: 4.8rem;
+      align-content: center;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .navbar-nav .nav-link img {
+      height: 20px;
+      margin-right: 5px;
+    }
+
+    .navbar-nav .dropdown-menu {
+      background-color: #333;
+      border: none;
+    }
+
+    .navbar-nav .dropdown-menu .dropdown-item {
+      color: white;
+    }
+
+    .navbar-nav .dropdown-menu .dropdown-item:hover {
+      background-color: #007bff;
+      color: white;
+    }
+
+    #searchbar {
+      display: flex;
+      align-items: center;
+    }
+
+    #input_data {
+      width: 300px;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .categories-bar {
+      background-color: #f8f9fa;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    .categories-bar ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .categories-bar li {
+      margin: 0 15px;
+    }
+
+    .categories-bar a {
+      color: #333;
+      text-decoration: none;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+
+    .categories-bar a:hover {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .navbar-nav .nav-item:hover .nav-link {
+      color: black;
+    }
+
+    /* Adjustments */
+    .navbar-nav .nav-link {
+      margin-left: 10px; /* Adjust the margin as needed */
+    }
+    /* .navbar-nav{
+      background-color: #333;
+      position: relative;
+      bottom: 2px;
+      right:14px;
+    } */
+    .navbar-collapse{
+      background-color: #333;
+      position: relative;
+      bottom: 2px;
+      right: 14px;
+    }
+    /* @media screen and (max-width:1000px){
+
+    } */
+  </style>
+
+
+		<nav class="navbar homeHeader navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="https://flipkart-clone-seven-azure.vercel.app/">
+				<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
+					width="160" height="40" title="Flipkart" alt="Flipkart" />
+			</a>
+			<div id="navbarNav_">
+				<ul class="navbar-nav">
+					<li class="nav-item navItem1">
+						<div id="searchbar" class="navtab">
+							<span id="searchButton" style="display: flex;align-items: center;">
+								<svg width="24" height="24" class="" viewBox="0 0 24 24" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<title>Search Icon</title>
+									<path
+										d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z"
+										stroke="#717478" stroke-width="1.4" stroke-linecap="round"
+										stroke-linejoin="round"></path>
+									<path d="M16 16L21 21" stroke="#717478" stroke-width="1.4" stroke-linecap="round"
+										stroke-linejoin="round"></path>
+								</svg>
+							</span>
+							<span class="flex-grow">
+								<input id="input_data" class="searchbar" type="text" placeholder="Search for Products, Brands and More" />
+							</span>
+							<div id="autocompleteResults" class="autocom-box" style="display: none;
+							position: absolute;
+							top: 67px;
+							background: rgb(255, 255, 255);
+							padding: 10px;
+							border: rgba(255, 51, 255, 0.2);">
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul  class="navbar-nav ml-auto"
+					style="flex-wrap: nowrap;flex-direction: row;width: 40vw; justify-content: space-around">
+					<li class="nav-item navItem2 dropdown" id="navbarDropdow">
+						<a class="nav-link nav-dd acnavdd" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<img src="img/svg/profile-.svg" alt="Profile" />
+							<span class="navname navname_ac"> Login <i class="bi bi-chevron-down"></i><i
+									class="bi bi-chevron-up"></i></span>
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="left: 0;">
+							<a class="dropdown-item" href="account/home_account.html">
+								<img width="20" src="img/svg/profile-.svg" alt="flipKart">
+								My Profile </a>
+
+							<a class="dropdown-item" href="account/login-signup.html">
+								<img width="20" src="img/svg/profile-.svg" alt="flipKart">
+								Sign In</a>
+							<a class="dropdown-item" href="plus/">
+								<img width="20" src="img/svg/fkplus-+.svg" alt="flipKart">
+								Flipkart Plus Zone</a>
+							<a class="dropdown-item" href="account/orders.html">
+								<img width="20" src="img/svg/orders.svg" alt="flipKart">
+								Orders</a>
+							<a class="dropdown-item" href="wishlist/">
+								<img width="20" src="img/svg/wishList.svg" alt="flipKart">
+								Wishlist</a>
+							<a class="dropdown-item" href="account/rewards.html">
+								<img width="20" src="img/svg/rewards.svg" alt="flipKart">
+								Rewards</a>
+							<a class="dropdown-item" href="the-gift-card-store/">
+								<img width="20" src="img/svg/giftCard.svg" alt="flipKart">
+								Gift Cards</a>
+						</div>
+					</li>
+					<li class="nav-item navItem3">
+						<a class="nav-link cartLogoandname" href="viewcart/">
+							<img
+								src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg" />
+							<span class="navname2">Cart</span><span id="cartItems"></span>
+						</a>
+					</li>
+					<li class="nav-item navItem4">
+						<a class="nav-link" href="sell-online/">
+							<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg"
+								alt="Become a Seller" />
+							<span class="navname3">Become a Seller</span>
+						</a>
+					</li>
+					<li class="nav-item navItem5 dropdown " id="moreLinksDropdow">
+						<a class="nav-link nav-dd" href="#" id="moreLinksDropdown" role="button" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">
+							<img class="nav-dd"
+								src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-ea7819.svg"
+								alt="More Links" />
+						</a>
+						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="moreLinksDropdown">
+							<a class="dropdown-item" href="notifications/"><img width="30" height="20"
+									src="img/svg/notificationPreferences.svg"
+									alt="appointment-reminders--v2" />Notification
+								Preferences</a>
+							<a class="dropdown-item" href="helpcentre/"><img width="30" height="20"
+									src="img/svg/helpcenter.svg" alt="imgcc">24x7 Customer Care</a>
+							<a class="dropdown-item"
+								href="https://advertising.flipkart.com/"><img
+									width="30" height="20" src="img/svg/advertise.svg" alt="Advertise">Advertise</a>
+							<a class="dropdown-item" href="mobile-apps/"><img width="30" height="20"
+									src="img/svg/downloadApp.svg" alt="img3">Download App</a>
+					</li>
+					
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+<!-- </div> -->
+    <div class="container">
+      <div class="content">
+        <div class="left-side">
+          <div class="address details">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="topic">Address</div>
+            <div class="text-one">Bengaluru<br>560103 ,Karnataka</div>
+            <div class="text-two">India</div>
+          </div>
+          <div class="phone details">
+            <i class="fas fa-phone-alt"></i>
+            <div class="topic">Phone</div>
+            <div class="text-one">+123-456-789</div>
+          </div>
+          <div class="email details">
+            <i class="fas fa-envelope"></i>
+            <div class="topic">Email</div>
+            <div class="text-one">abc@gmail.com</div>
+            <div class="text-two">abc@yahoo.com</div>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="topic-text">Send us a message</div>
+          <p>If you have any work from me or any types of quries related to my tutorial, you can send me message from here. It's my pleasure to help you.</p>
+          <form action="#">
+            <div class="input-box">
+              <input type="text" placeholder="Enter your name" />
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="Enter your email" />
+            </div>
+            <div class="input-box message-box">
+              <textarea placeholder="Enter your message"></textarea>
+            </div>
+            <div class="button">
+              <input type="button" id="submit" value="Send Now"/>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Get reference to the button
+      const submit = document.getElementById('submit');
+
+      // Add click event listener to the button
+      submit.addEventListener('click', () => {
+          // Navigate to the home page
+          window.location.href = '../../index.html'; // Replace 'home.html' with the actual URL of your home page
+      });
+  </script>
+  </body>
+</html>
