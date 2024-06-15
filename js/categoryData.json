@@ -49,20 +49,44 @@
         "icon": "fashion.png",
         "subcategories": [
             {
-                "id": "mens-clothing",
-                "name": "Men's Clothing",
+                "id": "mens-top_wear",
+                "name": "Men's Top Wear",
                 "icon": "fashion.png",
-                "subcategories": ["Shirts", "Pants", "Jackets"]
+                "subcategories": ["All" ,"Men's T-Shirts", "Men's Casual Shirts","Men's Kurtas","Men's Ethnic Sets", "Men's Blazers", "Men's Raincoat","Men's Formal Shirts", "Men's Pants", "Men's Jackets"]
             },
             {
-                "id": "womens-clothing",
-                "name": "Women's Clothing",
+                "id": "mens-bottom_wear",
+                "name": "Men's Bottom Wear",
                 "icon": "fashion.png",
-                "subcategories": ["Dresses", "Skirts", "Tops"]
+                "subcategories": ["All" ,"Men's Jeans", "Men's Tousers","Men's Track Pants","Men's Shorts", "Men's Cargo", "Men's Threefourths","Men's Dhoti", "Men's Ethnic Pyjama", "Men's Pyjama & Loungerpants"]
+            },
+            {
+                "id": "womens-ethnics",
+                "name": "Women's Ethnic",
+                "icon": "fashion.png",
+                "subcategories": ["All","Women Sarees","Women kurtas & Kurtis","Women Kurta Set & Salwar Suits","Women Gowns","Women Blouse","Ethnic Dresses", "Women Dupatta"]
+            },
+            {
+                "id": "mens-Footwear_wear",
+                "name": "Men's Footwear",
+                "icon": "fashion.png",
+                "subcategories": ["All", "Men's Sports Shoe","Mens Casual shoes", "Shoe Care"]
+            },
+            {
+                "id": "women-Footwear_wear",
+                "name": "Women Footwear",
+                "icon": "fashion.png",
+                "subcategories": ["All","Women Flats","Women Heels","Women Sports Shoe","Women Casual shoes", "Shoe Care"]
+            },
+            {
+                "id": "watches_and_accessories",
+                "name": "Watches And Accessories",
+                "icon": "fashion.png",
+                "subcategories": ["All","Men & Women Watches", "Men & Women Sunglasses","Wallets","Mens & Women Belts"]
             },
             {
                 "id": "kids-clothing",
-                "name": "Kids' Clothing",
+                "name": "Kids",
                 "icon": "fashion.png",
                 "subcategories": ["T-shirts", "Jeans", "Dresses"]
             }
@@ -125,8 +149,7 @@
         "id": "appliances",
         "name":"Appliances",
         "icon": "appliances.jpg",
-        "subcategories": [
-        ]
+        "subcategories": []
     },
     {
         "id": "travel",
@@ -166,8 +189,16 @@
         "name": "Two Wheelers",
         "icon": "twowheelers.png",
         "subcategories": [
-        
-
+            {
+                "id": "petrol-vehicles",
+                "name": "Petrol Vehicles",
+                "subcategories": ["TVS scooty","Honda"]
+            },
+            {
+                "id": "electric-vehicles",
+                "name": "Electric Vehicles",
+                "subcategories": ["Ola Electric S1","Ather 450X"]
+            }
         ]
     }
 ]

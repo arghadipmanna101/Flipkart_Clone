@@ -1465,67 +1465,484 @@
         "price": 1999
       },
       {
-        "name": "",
-        "description": "",
-        "productImg": "",
+        "name": "Cotton Double Jaipuri Prints Flat Bedsheet",
+        "description": "VNV Creation 160 TC Cotton Double Jaipuri Prints Flat Bedsheet  (Pack of 1, White, Green)",
+        "productImg": "cotton-double-bed-bedshee.jpeg",
         "rating": 4.4,
-        "category": "",
-        "price": 0
+        "category": "home&furniture",
+        "price": 499
       },
       {
-        "name": "",
-        "description": "",
-        "productImg": "",
+        "name": "Double bed Mosquito Net",
+        "description": "BELOMODA Polyester Adults Washable King Size Double bed Mosquito Net  (Blue, White, Tent)",
+        "productImg": "royal-blue-mosquito-net.jpeg",
         "rating": 4.4,
-        "category": "",
-        "price": 0
+        "category": "home&furniture",
+        "price":499 
       },
       {
-        "name": "",
-        "description": "",
-        "productImg": "",
+        "name": "Cotton King Striped Fitted (Elastic) Bedsheet",
+        "description": "Decent Home 144 TC Cotton King Striped Fitted (Elastic) Bedsheet  (Pack of 1, Yellow)",
+        "productImg": "flamingo-1-fm-001-flat-flamingo.jpeg",
+        "rating": 3.4,
+        "category": "home&furniture",
+        "price": 219
+      },
+      {
+        "name": "Polyester Semi Transparent Window Curtain",
+        "description": "Home Sizzler 153 cm (5 ft) Polyester Semi Transparent Window Curtain (Pack Of 2)  (Geometric, Blue)",
+        "productImg": "geometric-panel2.jpeg",
+        "rating": 3.2,
+        "category": "home&furniture",
+        "price": 455
+      },
+      {
+        "name": "Polycotton 550 GSM Hand Towel",
+        "description": "conewango Polycotton 550 GSM Hand Towel  (Pack of 6)",
+        "productImg": "towels-6-14-6towels-cone.jpeg",
+        "rating": 3.8,
+        "category": "home&furniture",
+        "price": 599
+      },
+      {
+        "name": "Three Fold Single Cotton Mattress",
+        "description": "COLOFLY Three Fold Ep 2 inch Single Cotton Mattress  (L x W: 72 inch x 35 inch)",
+        "productImg": "single-3-72-35-thf.jpeg",
+        "rating": 3.7,
+        "category": "home&furniture",
+        "price": 959
+      },
+      {
+        "name": "Double PU Foam Mattress",
+        "description": "nikunjdotcom NDC (72x47) 2 inch PU Foam Sheet with cover 2 inch Double PU Foam Mattress  (L x W: 72 inch x 47 inch)",
+        "productImg": "normal-top-dof9xgpr6y.jpeg",
+        "rating": 3.4,
+        "category": "home&furniture",
+        "price": 1899
+      },
+      {
+        "name": "Tea Table for Living Room",
+        "description": "FURNEASER Witely Tea Table for Living Room, Centre Table, Sofa Table, Engineered Wood Coffee Table  (Finish Color - Wenge & White, DIY(Do-It-Yourself))",
+        "productImg": "50-particle-board.jpeg",
+        "rating": 4.4,
+        "category": "home&furniture",
+        "price": 2968
+      },
+      {
+        "name": "Sigma Engineered Wood Coffee Table",
+        "description": "Crystal Furnitech Sigma Engineered Wood Coffee Table  (Finish Color - wallnut + wenge, Knock Down)",
+        "productImg": "particle-board-mh-coffeefd.jpeg",
+        "rating": 4.4,
+        "category": "home&furniture",
+        "price": 2999
+      },
+      {
+        "name": "Homeify Carlo 9 Seater L-Shaped Sectional Sofa",
+        "description": "Homeify Carlo 9 Seater L-Shaped Sectional Sofa with Ottoman for Living Room Fabric 9 Seater Sofa  (Finish Color - Blue / Gray, DIY(Do-It-Yourself))",
+        "productImg": "right-facingmpguu.jpeg",
         "rating": 4.2,
-        "category": "",
-        "price": 0
+        "category": "home&furniture",
+        "price": 47999
       },
       {
-        "name": "",
-        "description": "",
-        "productImg": "",
+        "name": "Star Work Leather Manual Recliner chair",
+        "description": "Star Work Leather Manual Recliner  (Finish Color - BLACK, Knock Down)",
+        "productImg": "seater-bugpez.jpeg",
+        "rating": 4.4,
+        "category": "home&furniture",
+        "price": 3314
+      },
+      {
+        "name": "Engineered Wood TV Entertainment Unit",
+        "description": "icrush Engineered Wood TV Entertainment Unit  (Finish Color - Brown, DIY(Do-It-Yourself))",
+        "productImg": "20-80-mdf-8-a1-i.jpeg",
+        "rating": 4.2,
+        "category": "home&furniture",
+        "price": 1599
+      },
+      {
+        "name": "Embroidered 6 Seater Table Cover",
+        "description": "HOMECROWN Embroidered 6 Seater Table Cover  (Clear, Transparent, Plastic, PVC)",
+        "productImg": "6-seater-6-seater-yn7k.jpeg",
         "rating": 4,
-        "category": "",
-        "price": 0
+        "category": "home&furniture",
+        "price": 899 
       },
       {
-        "name": "",
-        "description": "",
-        "productImg": "",
-        "rating": 4.5,
-        "category": "",
-        "price": 0
+        "name": "Single Wall Water Bottle 900 ml",
+        "description": "NIRLON Tranzy Sipper Stainless Steel Single Wall Water Bottle 900 ml Bottle  (Pack of 2, Silver, Steel)",
+        "productImg": "900-tranzy-sipper-stazr.jpeg",
+        "rating": 3.7,
+        "category": "home&furniture",
+        "price": 998
       },
       {
-        "name": "",
-        "description": "",
-        "productImg": "",
+        "name": "Freezer safe 1000 ml Bottle",
+        "description": "cello Venice | Break proof and Leak Proof | Hygienic & Freezer safe 1000 ml Bottle  (Pack of 5, Multicolor, Plastic)",
+        "productImg": "st115-cello-original-i5svhdf.jpeg",
         "rating": 4.4,
-        "category": "",
-        "price": 0
+        "category": "home&furniture",
+        "price": 675
       },
       {
-        "name": "",
-        "description": "",
-        "productImg": "",
+        "name": "Harmoso Analog Wall Clock",
+        "description": "Harmoso Analog 25 cm X 25 cm Wall Clock  (Black, White, Gold, With Glass, Standard)",
+        "productImg": "h-89-25-h-89-analogy.jpeg",
         "rating": 4.2,
-        "category": "",
-        "price": 0
+        "category": "home&furniture",
+        "price": 350
       },
       {
-        "name": "",
-        "description": "",
-        "productImg": "",
+        "name": "BIG BANG CREATIONS Analog Wall Clock",
+        "description": "BIG BANG CREATIONS Analog 25 cm X 25 cm Wall Clock  (White, With Glass, Standard)",
+        "productImg": "khatushyam-ji-designec.jpeg",
         "rating": 4.1,
-        "category": "",
-        "price": 0
+        "category": "home&furniture",
+        "price": 399
+      },
+      {
+        "name": "Vegetable Cleaner & Salad Spinner Colander",
+        "description": "WONDERCHEF Vegetable Cleaner & Salad Spinner Colander  (Green)",
+        "productImg": "no-vegetable-cle.jpeg",
+        "rating": 3.9,
+        "category": "home&furniture",
+        "price": 1100
+      },
+      {
+        "name": "Non-Stick Coated Cookware Set",
+        "description": "Prestige Omega Festival Pack - Build Your Kitchen Induction Bottom Non-Stick Coated Cookware Set  (Aluminium, 3 - Piece)",
+        "productImg": "-original-imagyg3jznnuq3jw.jpeg",
+        "rating": 3.9,
+        "category": "home&furniture",
+        "price": 1599
+      },
+      {
+        "name": "Prestige Svachh Duo GTSD 04 SQ with Liftable Burner",
+        "description": "Prestige Svachh Duo GTSD 04 SQ with Liftable Burner & Superior Toughened Glass Manual Gas Stove  (4 Burners)",
+        "productImg": "4-13-40380-presmy6cs.jpeg",
+        "rating": 3.3,
+        "category": "home&furniture",
+        "price": 7899
+      },
+      {
+        "name": "Prestige Omega Marble Tawa",
+        "description": "Prestige Omega Marble Tawa 28 cm diameter  (Aluminium, Non-stick, Induction Bottom)",
+        "productImg": "36602-prestigendhg2d.jpeg",
+        "rating": 4,
+        "category": "home&furniture",
+        "price": 749
+      },
+      {
+        "name": "Prestige Ceraglide Ceramic Coating Kadhai",
+        "description": "Prestige Ceraglide Ceramic Coating Kadhai 24 cm diameter with Lid 3 L capacity  (Aluminium, Non-stick, Induction Bottom)",
+        "productImg": "ceraglide-prestig75kmmg.jpeg",
+        "rating": 3.1,
+        "category": "home&furniture",
+        "price": 1340
+      },
+      {
+        "name": "Prestige Pressure Cooker",
+        "description": "Prestige Nakshatra Plus Svachh 6.5 L Outer Lid Induction Bottom Pressure Cooker & Pressure Pan  (Aluminium)",
+        "productImg": "-original-imagrzvkpgbykhrf.jpeg",
+        "rating": 4.9,
+        "category": "home&furniture",
+        "price": 2910
+      },
+      {
+        "name": "Classic Essentials Lunch Box Set",
+        "description": "Classic Essentials Lunch Box Set of 6 | 3 Microwave Safe Container with Bottle, Bag & Cutlery| 4 Containers Lunch Box  (1250 ml, Thermoware)",
+        "productImg": "1250-lunch-box-sest.jpeg",
+        "rating": 4.4,
+        "category": "home&furniture",
+        "price": 599
+      },
+      {
+        "name": "Hero Xtreme 160R 4V",
+        "description": "Hero Xtreme 160R 4V Booking for Ex-Showroom Price  (Matt Slate Black) petrol bike",
+        "productImg": "imahf6yfqbfcqypz.jpeg",
+        "rating": 4.6,
+        "category": "two-wheelers",
+        "price": 128400
+      },
+      {
+        "name": "Hero Glamour (Disc)(TECHNO BLUE MET BLK)",
+        "description": "Hero Glamour (Disc) Booking for Ex-Showroom Price  (TECHNO BLUE MET BLK) petrol bike",
+        "productImg": "disc-self-kick-glamour-dxm.jpeg",
+        "rating": 4.3,
+        "category": "two-wheelers",
+        "price": 86348
+      },
+      {
+        "name": "Hero Xtreme 160R 4V",
+        "description": "Hero Xtreme 160R 4V Booking for Ex-Showroom Price  (MATT SLATE BLACK) petrol bike",
+        "productImg": "riginal-imagtpvsvzhevutf.jpeg",
+        "rating": 4.5,
+        "category": "two-wheelers",
+        "price": 136500
+      },
+      {
+        "name": "Hero Splendor+ (Non i3S)",
+        "description": "Hero Splendor+ (Non i3S) Booking for Ex-Showroom Price  (Black with Purple) petrol bike",
+        "productImg": "imagsyyh5jmr4pzq.jpeg",
+        "rating": 4.3,
+        "category": "two-wheelers",
+        "price": 75491
+      },
+      {
+        "name": "Hero Glamour XTEC (Drum)",
+        "description": "Hero Glamour XTEC (Drum) Booking for Ex-Showroom Price  (Matte Axis Grey) petrol bike",
+        "productImg": "drum-brake-self-kick-glamour5m.jpeg",
+        "rating": 4.4,
+        "category": "two-wheelers",
+        "price": 87998
+      },
+      {
+        "name": "Hero Super Splendor Xtec (Drum)",
+        "description": "Hero Super Splendor Xtec (Drum) Booking for Ex-Showroom Price  (Gloss Black) petrol bike",
+        "productImg": "drum-brake-self-kick-5rbj.jpeg",
+        "rating": 4.5,
+        "category": "two-wheelers",
+        "price": 80800
+      },
+      {
+        "name": "Hero Xtreme 160R",
+        "description": "Hero Xtreme 160R Booking for Ex-Showroom Price  (Vibrant Blue) petrol bike",
+        "productImg": "double-disc-self-kqruj.jpeg",
+        "rating": 4.6,
+        "category": "two-wheelers",
+        "price": 123006
+      },
+      {
+        "name": "Hero Xtreme 160R (Stealth 2.0)",
+        "description": "Hero Xtreme 160R (Stealth 2.0) Booking for Ex-Showroom Price  (Matt Black) petrol bike",
+        "productImg": "stealth-2-0-self-kicbgnh.jpeg",
+        "rating": 4.5,
+        "category": "two-wheelers",
+        "price": 123002
+      },
+      {
+        "name": "Hero Glamour XTEC (Disc)(Matte Axis Grey)",
+        "description": "Hero Glamour XTEC (Disc) Booking for Ex-Showroom Price  (Matte Axis Grey) petrol bike",
+        "productImg": "drum-brake-self-kick-glamour-xt5m.jpeg",
+        "rating": 4.3,
+        "category": "two-wheelers",
+        "price": 92799
+      },
+      {
+        "name": "Hero Passion XTEC (Drum)(Black with Force Silver)",
+        "description": "Hero Passion XTEC (Drum) Booking for Ex-Showroom Price  (Black with Force Silver) petrol bike",
+        "productImg": "-original-imagg9xgez3tbx.jpeg",
+        "rating": 4.4,
+        "category": "two-wheelers",
+        "price": 81999
+      },
+      {
+        "name": "BGauss BG C12i (With CAN Enabled Charger, Matte Blue)",
+        "description": "BGauss BG C12i Ex Booking for Ex-Showroom Price (With CAN Enabled Charger, Matte Blue)",
+        "productImg": "rdnzjuqh8.jpeg",
+        "rating": 3.7,
+        "category": "two-wheelers",
+        "price": 112799
+      },
+      {
+        "name": "Ampere Magnus LT (With Charger, Black)",
+        "description": "Ampere Magnus LT Booking for Ex-Showroom Price (With Charger, Black)",
+        "productImg": "black-with-charger-uph.jpeg",
+        "rating": 4.2,
+        "category": "two-wheelers",
+        "price": 84999
+      },
+      {
+        "name": "OKAYA Freedum LI-2(with Portable Charger, Matte Green)",
+        "description": "OKAYA Freedum LI-2 Booking for Ex-Showroom Price (with Portable Charger, Matte Green)",
+        "productImg": "avgj3xg.jpeg",
+        "rating": 3.9,
+        "category": "two-wheelers",
+        "price": 74899
+      },
+      {
+        "name": "Ampere Magnus (With Charger, Glacial White)",
+        "description": "Ampere Magnus EX Booking for Ex-Showroom Price (With Charger, Glacial White)",
+        "productImg": "-original-tubmg.jpeg",
+        "rating": 4.3,
+        "category": "two-wheelers",
+        "price": 94900
+      },
+      {
+        "name": "Ampere Magnus LT (With Charger, Blue)",
+        "description": "Ampere Magnus LT Booking for Ex-Showroom Price (With Charger, Blue)",
+        "productImg": "blue-with-chargerms.jpeg",
+        "rating": 4.2,
+        "category": "two-wheelers",
+        "price": 84900
+      },
+      {
+        "name": "Joy e-bike Wolf Eco(with Portable Charger)",
+        "description": "Joy e-bike Wolf Eco Booking for Ex-Showroom Price (with Portable Charger, Orange and Black)",
+        "productImg": "gqthzrzdk5gyk.jpeg",
+        "rating": 3,
+        "category": "two-wheelers",
+        "price": 84000
+      },
+      {
+        "name": "BGauss BG D15i (With CAN Enabled Charger)",
+        "description": "BGauss BG D15i Booking for Ex-Showroom Price (With CAN Enabled Charger, Matte Black & Silver)",
+        "productImg": "-originagv89ywqg.jpeg",
+        "rating": 4.3,
+        "category": "two-wheelers",
+        "price": 146119
+      },
+      {
+        "name": "Joy e-bike Wolf Eco (with Portable Charger)",
+        "description": "Joy e-bike Wolf Eco Booking for Ex-Showroom Price (with Portable Charger, Black and Red)",
+        "productImg": "qthyjfwc8ssv.jpeg",
+        "rating": 3.1,
+        "category": "two-wheelers",
+        "price": 84000
+      },
+      {
+        "name": "Men Solid Round Neck Polyester Black T-Shirt",
+        "description": "Men Solid Round Neck Polyester Black T-Shirt",
+        "productImg": "s-01-t-shirt-juste.jpeg",
+        "rating": 4.2,
+        "category": "fashion-men",
+        "price": 999
+      },
+      {
+        "name": "Men Regular Fit Solid Spread Collar Casual Shirt",
+        "description": "Men Regular Fit Solid Spread Collar Casual Shirt",
+        "productImg": "s-dpmayzs8pa.jpeg",
+        "rating": 3.8,
+        "category": "fashion-men",
+        "price": 499
+      },
+      {
+        "name": "Men Striped Round Neck T-Shirt",
+        "description": "Men Striped Round Neck Cotton Blend Dark Green, Black T-Shirt",
+        "productImg": "xl-ask-0nfe6t.jpeg",
+        "rating": 3.7,
+        "category": "fashion-men",
+        "price": 599
+      },
+      {
+        "name": "Men Regular Fit Checkered Casual Shirt",
+        "description": "Men Regular Fit Checkered Casual Shirt",
+        "productImg": "2xl-menshy.jpeg",
+        "rating": 4,
+        "category": "fashion-men",
+        "price": 899
+      },
+      {
+        "name": "Men Self Design Polo Neck Black T-Shirt",
+        "description": "Men Self Design Polo Neck Cotton Blend (220 gsm) Black T-Shirt",
+        "productImg": "m-db1024gug.jpeg",
+        "rating": 4.1,
+        "category": "fashion-men",
+        "price": 499 
+      },
+      {
+        "name": "Lite Sports Running Shoes For Men  (Grey)",
+        "description": "Lite Sports Running Shoes For Men  (Grey)",
+        "productImg": "7-na-rng-85nw.jpeg",
+        "rating": 3.9,
+        "category": "fashion-men",
+        "price": 999
+      },
+      {
+        "name": "MIKE (N) Running Shoes For Men  (Blue)",
+        "description": "MIKE (N) Running Shoes For Men  (Blue)",
+        "productImg": "9-5g-845-k-bb.jpeg",
+        "rating": 4.1,
+        "category": "fashion-men",
+        "price": 1699
+      },
+      {
+        "name": "Lite Sports Shoes Running Shoes For Men  (Blue)",
+        "description": "Lite Sports Shoes Running Shoes For Men  (Blue)",
+        "productImg": "-original-imahf3kvwrbuhgh9.jpeg",
+        "rating": 3.9,
+        "category": "fashion-men",
+        "price": 2499
+      },
+      {
+        "name": "AlphaBounce Running Shoes For Men (Black)",
+        "description": "AlphaBounce + Running Shoes For Men (Black)",
+        "productImg": "-originamxtg2.jpeg",
+        "rating": 4.2,
+        "category": "fashion-men",
+        "price": 3311
+      },
+      {
+        "name": "TENIS TOP Tennis Shoes For Men (Green)",
+        "description": "ADIDAS TENIS TOP Tennis Shoes For Men (Green)",
+        "productImg": "-origijwv.jpeg",
+        "rating": 4.5,
+        "category": "fashion-men",
+        "price": 4999
+      },
+      {
+        "name": "SM 773 Running Shoes For Men (Grey, Maroon)",
+        "description": "SM 773 Running Shoes For Men  (Grey, Maroon)",
+        "productImg": "7-sm-773-mq6x3fu.jpeg",
+        "rating": 4.1,
+        "category": "fashion-men",
+        "price": 1299
+      },
+      {
+        "name": "Men Slim Mid Rise Blue Jeans",
+        "description": "Men Slim Mid Rise Blue Jeans",
+        "productImg": "ycq3kgugmyez.jpeg",
+        "rating": 4.3,
+        "category": "fashion-men",
+        "price": 2599
+      },
+      {
+        "name": "Men Skinny Mid Rise Blue Jeans",
+        "description": "Men Skinny Mid Rise Blue Jeans",
+        "productImg": "32-kjo-80152-sk.jpeg",
+        "rating": 4.4,
+        "category": "fashion-men",
+        "price": 1499
+      },
+      {
+        "name": "Men Cargos",
+        "description": "Men Cargos",
+        "productImg": "m-olive-cargo-0edtnd.jpeg",
+        "rating": 3.9,
+        "category": "fashion-men",
+        "price": 1290
+      },
+      {
+        "name": "Men Solid Pure Cotton Straight Kurta",
+        "description": "Men Solid Pure Cotton Straight Kurta  (Multicolor)",
+        "productImg": "s-vgj.jpeg",
+        "rating": 3.7,
+        "category": "fashion-men",
+        "price": 1999
+      },
+      {
+        "name": "Men Solid Riding Jacket",
+        "description": "Men Solid Biker/Riding Jacket",
+        "productImg": "xl-no-hz5eeef.jpeg",
+        "rating": 3.6,
+        "category": "fashion-men",
+        "price": 2999
+      },
+      {
+        "name": "Men Casual, Formal Tan Artificial Leather RFID Wallet",
+        "description": "Men Casual, Formal Tan Artificial Leather RFID Wallet  (5 Card Slots)",
+        "productImg": "gul-tywfqmg.jpeg",
+        "rating": 3.9,
+        "category": "fashion-men",
+        "price": 499
+      },
+      {
+        "name": "Camping Bag Travel Backpack",
+        "description": "Mountain Rucksacksbag Hiking Trekking Camping Bag Travel Backpack Rucksack - 60 L  (Grey)",
+        "productImg": "60l-trackinhyfvcz.jpeg",
+        "rating": 4,
+        "category": "fashion",
+        "price": 2999
       }
+      
 ]

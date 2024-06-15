@@ -49,16 +49,7 @@ footer .social ul{
 }
 footer .social li{
     margin: 5px;
-}
-footer .social a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out, transform 1.3s ease-in-out;
-}
-
-footer .social a:hover img {
-    transform: scale(1.5);
-    color: blue;
+    opacity: 0.75;
 }
 
 footer .footerEnd{
