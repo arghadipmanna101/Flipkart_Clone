@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  searchButton.addEventListener("click", function () {
+ const fetchIndexProduct= ()=> {
     autocompleteResults.style.display = "none";
     const query = searchInput.value.trim();
 
@@ -75,12 +75,20 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
             <div class="text-center card-title">${result.name}</div>
             <div class="text-center">Price: ₹${result.price}</div>
-            </a>
+            </a>            
             `;
             resultsContainer.appendChild(resultElement);
           });          
         }
       });
     }
+    window.location.hash='#';
+    window.location.hash='#results';
+  }
+    searchButton.addEventListener("click", fetchIndexProduct);
+    searchInput.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter') {
+        fetchIndexProduct();
+      }
   });
 });
