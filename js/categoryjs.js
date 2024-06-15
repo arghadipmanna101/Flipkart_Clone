@@ -1,26 +1,42 @@
 document.addEventListener("DOMContentLoaded", function () {
     const categoriesList = document.getElementById("categories");
 
-    function createCategoryItem(categoryData) {
+    function createCategoryItem(categoryData, isSubcategory = false) {
         const categoryItem = document.createElement("li");
+
+    
+        if (categoryData.icon && !isSubcategory) {
+            const icon = document.createElement("img");
+            icon.src = "img/" + categoryData.icon;
+            icon.style.display = "block";
+            icon.style.margin = "auto";
+            categoryItem.appendChild(icon);
+        }
+    
+
         categoryItem.id = categoryData.id;
 
         const icon = document.createElement("img");
         icon.src = "img/" + categoryData.icon;
 
+
         const nameLink = document.createElement("a");
         nameLink.href = categoryData.name + "-/"; //find index.html
         nameLink.textContent = categoryData.name;
-
+    
         const name = document.createElement("span");
-        name.appendChild(document.createElement("br"));
         name.appendChild(nameLink);
-
-        categoryItem.appendChild(icon);
+    
         categoryItem.appendChild(name);
+
+    
+        const subcategoriesList = document.createElement("ul");
+    
+
 
         const subcategoriesList = document.createElement("div");
         subcategoriesList.classList.add('dropdownbox', `${categoryData.id}`);
+
 
         if (!categoryData.subcategories) {
             const singleItem = document.createElement("div");
@@ -36,13 +52,18 @@ document.addEventListener("DOMContentLoaded", function () {
                     singleItem.textContent = subcategoryData;
                     subcategoriesList.appendChild(singleItem);
                 } else if (subcategoryData) {
+
+                    const subcategoryItem = createCategoryItem(subcategoryData, true);
+
                     const subcategoryItem = createSubcategoryItem(subcategoryData);
+
                     subcategoriesList.appendChild(subcategoryItem);
                 }
             });
         }
-
+    
         categoryItem.appendChild(subcategoriesList);
+
 
 
         categoryItem.addEventListener('mouseenter', function (event) {
@@ -71,6 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             console.log("subcategoriesList is not defined or is empty.");
         }
+
 
         return categoryItem;
     }
