@@ -77,3 +77,15 @@ footer .footerEnd a{
     flex-flow: column;
 }
 }
+
+.footerI:hover{
+    color: #2874F0;
+}
+
+.col-auto:hover{
+    color: #2874F0;
+}
+
+.hov:hover{
+    color: #2874F0;
+}
