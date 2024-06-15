@@ -70,7 +70,7 @@ body {
 
 .I-qZ4MvLRlQb .label {
     position: absolute;
-    top: 12px;
+    top: -5px;
     left: 0;
     color: #ccc;
     transition: all 0.3s ease;
@@ -79,17 +79,18 @@ body {
 
 .I-qZ4MvLRlQb input[type="text"]:focus~.label,
 .I-qZ4MvLRlQb input[type="text"]:valid~.label {
-    top: -20px;
-    font-size: 16px;
-    color: #333;
+    top: -10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #0f0d0d;
 }
 
 .I-qZ4MvLRlQb .underline {
-    position: absolute;
+   position: absolute;
     bottom: 0;
     left: 0;
     height: 2px;
-    width: 100%;
+    width: 100%; 
     background-color: #333;
     transform: scaleX(0);
     transition: all 0.3s ease;
