@@ -49,6 +49,36 @@
         "name":"Mobiles & Tablets",
         "icon": "mobile.webp",
         "subcategories": [
+        {
+            "id": "smartphones",
+            "name": "Smartphones",
+            "icon": "mobile.png",
+            "subcategories": ["Android Phones", "iPhones"]
+        },
+        {
+            "id": "accessories",
+            "name": "Accessories",
+            "icon": "mobile.png",
+            "subcategories": ["Chargers", "Cases", "Screen Protectors"]
+        },
+        {
+            "id": "wearables",
+            "name": "Wearables",
+            "icon": "mobile.png",
+            "subcategories": ["Smartwatches", "Fitness Trackers"]
+        },
+        {
+            "id": "audio",
+            "name": "Audio",
+            "icon": "mobile.png",
+            "subcategories": ["Earbuds", "Headphones", "Speakers"]
+        },
+        {
+            "id": "brands",
+            "name": "Brands",
+            "icon": "mobile.png",
+            "subcategories": ["Samsung", "Apple", "OnePlus", "Xiaomi"]
+          }
         ]
     },
     {
@@ -164,7 +194,74 @@
             }
         ]
     },
-    
+    {
+        "id": "appliances",
+        "name":"Appliances",
+        "icon": "appliances.jpg",
+        "subcategories": [
+                {
+                    "id": "kitchen-appliances",
+                    "name": "Kitchen Appliances",
+                    "icon": "appliance.png",
+                    "subcategories": ["Microwaves", "Refrigerators", "Dishwashers"]
+                },
+                {
+                    "id": "laundry-appliances",
+                    "name": "Laundry Appliances",
+                    "icon": "appliance.png",
+                    "subcategories": ["Washing Machines", "Dryers"]
+                },
+                {
+                    "id": "small-appliances",
+                    "name": "Small Appliances",
+                    "icon": "appliance.png",
+                    "subcategories": ["Blenders", "Toasters", "Coffee Makers"]
+                },
+                {
+                    "id": "air-conditioning",
+                    "name": "Air Conditioning",
+                    "icon": "appliance.png",
+                    "subcategories": ["Air Conditioners", "Fans", "Air Purifiers"]
+                },
+                {
+                    "id": "brands",
+                    "name": "Brands",
+                    "icon": "appliance.png",
+                    "subcategories": ["LG", "Samsung", "Whirlpool", "GE"]
+                }
+            ]
+    },
+    {
+        "id": "travel",
+        "name":"Travel",
+        "icon": "travel.png",
+        "subcategories": [
+                {
+                    "id": "destinations",
+                    "name": "Destinations",
+                    "icon": "travel.png",
+                    "subcategories": ["Beach", "Mountain", "City"]
+                },
+                {
+                    "id": "transportation",
+                    "name": "Transportation",
+                    "icon": "travel.png",
+                    "subcategories": ["Flights", "Trains", "Car Rentals"]
+                },
+                {
+                    "id": "accommodation",
+                    "name": "Accommodation",
+                    "icon": "travel.png",
+                    "subcategories": ["Hotels", "Hostels", "Vacation Rentals"]
+                },
+                {
+                    "id": "travel-gear",
+                    "name": "Travel Gear",
+                    "icon": "travel.png",
+                    "subcategories": ["Luggage", "Backpacks", "Travel Accessories"]
+                }
+        ]
+    },
     {
         "id": "beauty",
         "name": "Beauty, Toys & More",
