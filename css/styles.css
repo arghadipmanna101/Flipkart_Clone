@@ -5,4 +5,11 @@
     box-sizing: border-box;
     /* border: 1px solid red; */
 }
+body{
+    background-color: #F1F2F4;
+}
 
+.category{
+    display: inline-flex;
+    flex-direction: row;
+}

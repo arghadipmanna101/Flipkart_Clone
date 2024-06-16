@@ -114,7 +114,8 @@ a.navbar-brand{
 .cartLogoandname{
   position: relative ;
 }
-#cartItems{
+/*use this for adding cart items
+#cartItems1{
   position: absolute;
     top: 14px;
     left: 14px;
@@ -129,7 +130,7 @@ a.navbar-brand{
     font-size: 12px;
     color: #fff;
 }
-
+*/
 
 /* Styles for the dropdown menu */
 .homeHeader .dropdown-menu {
