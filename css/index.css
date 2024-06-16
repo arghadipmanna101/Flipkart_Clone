@@ -720,15 +720,15 @@ Search Bar
   font-weight: 500;
   font-size: 16px;
   color: #878787;
-}
 
+.brand-directory{
+  background-color: white;
+  padding: 20px 30px;
+  color: #878787;
+  letter-spacing: 0;
 
-.banner{
-  object-fit: cover;
-  width: 100%;
-  margin: 15px 0px;
 }
+.brand-directory-heading{
+  font-weight: 24px;
+  color:black ;
 
-.searchbar{
-  width:40%;
-}
