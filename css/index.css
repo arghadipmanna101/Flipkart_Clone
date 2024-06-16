@@ -83,16 +83,17 @@ body {
 
 
 .categories {
-  display: flex;
-  align-items: flex-start;
+  display:grid;
+  grid-auto-flow: column;
   justify-content: space-between;
   background-color: rgb(255, 253, 253);
   position: relative;
   padding: 0;
+  height: calc(100% - 16px);
   padding: 0 4%;
   width: 100%;
   min-width: 1000px;
-  box-shadow: 0 0 10px rgb(87, 110, 172);
+  box-shadow: 0 0 4px rgb(76, 76, 76);
 }
 
  .categories>li {
@@ -100,12 +101,15 @@ body {
   display: inline-block;
   padding: 20px 15px;
   cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .categories li a {
   text-decoration: none;
   color: black;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .categories>li>ul {
@@ -127,6 +131,10 @@ body {
 
 .categories li ul li img{
   display: none;
+}
+.categories li img{
+  width: 64px;
+  height: 64px;
 }
 
 /*#category-grid {
