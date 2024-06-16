@@ -21,7 +21,10 @@
   /* padding: 9px 13px; */
   margin: 0 3px;
 }
-
+#searchbar.navtab{
+  width: 750px;
+  border-radius: 10px;
+}
 .homeHeader .nav-link {
   text-decoration: none;
   color: #000;
