@@ -119,7 +119,9 @@
    ```bash
       npm install
    ```
-7. **To preview** Go to index.html and "Go Live" to view in localhost
+   
+7. **To preview:** Go to index.html and "Go Live" to view in localhost
+
 
 8. **Make changes:** Deployment failed with the following error:
 ```bash
