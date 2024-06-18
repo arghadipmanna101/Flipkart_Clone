@@ -1041,7 +1041,7 @@
         "price": 2499
       },
       {
-        "name": "Printed Women Round Neck T-Shirt",
+        "name": "Printed Women Round-Neck T-Shirt",
         "description": "Printed Women Round Neck Pure Cotton Multicolor T-Shirt",
         "productImg": "dyxnev3gw.jpeg",
         "rating": 4.5,
@@ -1799,6 +1799,294 @@
         "rating": 3.1,
         "category": "two-wheelers",
         "price": 84000
+      },
+      {
+        "name": "Men Solid Round Neck Polyester Black T-Shirt",
+        "description": "Men Solid Round Neck Polyester Black T-Shirt",
+        "productImg": "s-01-t-shirt-juste.jpeg",
+        "rating": 4.2,
+        "category": "fashion-men",
+        "price": 999
+      },
+      {
+        "name": "Men Regular Fit Solid Spread Collar Casual Shirt",
+        "description": "Men Regular Fit Solid Spread Collar Casual Shirt",
+        "productImg": "s-dpmayzs8pa.jpeg",
+        "rating": 3.8,
+        "category": "fashion-men",
+        "price": 499
+      },
+      {
+        "name": "Men Striped Round Neck T-Shirt",
+        "description": "Men Striped Round Neck Cotton Blend Dark Green, Black T-Shirt",
+        "productImg": "xl-ask-0nfe6t.jpeg",
+        "rating": 3.7,
+        "category": "fashion-men",
+        "price": 599
+      },
+      {
+        "name": "Men Regular Fit Checkered Casual Shirt",
+        "description": "Men Regular Fit Checkered Casual Shirt",
+        "productImg": "2xl-menshy.jpeg",
+        "rating": 4,
+        "category": "fashion-men",
+        "price": 899
+      },
+      {
+        "name": "Men Self Design Polo Neck Black T-Shirt",
+        "description": "Men Self Design Polo Neck Cotton Blend (220 gsm) Black T-Shirt",
+        "productImg": "m-db1024gug.jpeg",
+        "rating": 4.1,
+        "category": "fashion-men",
+        "price": 499 
+      },
+      {
+        "name": "Lite Sports Running Shoes For Men  (Grey)",
+        "description": "Lite Sports Running Shoes For Men  (Grey)",
+        "productImg": "7-na-rng-85nw.jpeg",
+        "rating": 3.9,
+        "category": "fashion-men",
+        "price": 999
+      },
+      {
+        "name": "MIKE (N) Running Shoes For Men  (Blue)",
+        "description": "MIKE (N) Running Shoes For Men  (Blue)",
+        "productImg": "9-5g-845-k-bb.jpeg",
+        "rating": 4.1,
+        "category": "fashion-men",
+        "price": 1699
+      },
+      {
+        "name": "Lite Sports Shoes Running Shoes For Men  (Blue)",
+        "description": "Lite Sports Shoes Running Shoes For Men  (Blue)",
+        "productImg": "-original-imahf3kvwrbuhgh9.jpeg",
+        "rating": 3.9,
+        "category": "fashion-men",
+        "price": 2499
+      },
+      {
+        "name": "AlphaBounce Running Shoes For Men (Black)",
+        "description": "AlphaBounce + Running Shoes For Men (Black)",
+        "productImg": "-originamxtg2.jpeg",
+        "rating": 4.2,
+        "category": "fashion-men",
+        "price": 3311
+      },
+      {
+        "name": "TENIS TOP Tennis Shoes For Men (Green)",
+        "description": "ADIDAS TENIS TOP Tennis Shoes For Men (Green)",
+        "productImg": "-origijwv.jpeg",
+        "rating": 4.5,
+        "category": "fashion-men",
+        "price": 4999
+      },
+      {
+        "name": "SM 773 Running Shoes For Men (Grey, Maroon)",
+        "description": "SM 773 Running Shoes For Men  (Grey, Maroon)",
+        "productImg": "7-sm-773-mq6x3fu.jpeg",
+        "rating": 4.1,
+        "category": "fashion-men",
+        "price": 1299
+      },
+      {
+        "name": "Men Slim Mid Rise Blue Jeans",
+        "description": "Men Slim Mid Rise Blue Jeans",
+        "productImg": "ycq3kgugmyez.jpeg",
+        "rating": 4.3,
+        "category": "fashion-men",
+        "price": 2599
+      },
+      {
+        "name": "Men Skinny Mid Rise Blue Jeans",
+        "description": "Men Skinny Mid Rise Blue Jeans",
+        "productImg": "32-kjo-80152-sk.jpeg",
+        "rating": 4.4,
+        "category": "fashion-men",
+        "price": 1499
+      },
+      {
+        "name": "Men Cargos",
+        "description": "Men Cargos",
+        "productImg": "m-olive-cargo-0edtnd.jpeg",
+        "rating": 3.9,
+        "category": "fashion-men",
+        "price": 1290
+      },
+      {
+        "name": "Men Solid Pure Cotton Straight Kurta",
+        "description": "Men Solid Pure Cotton Straight Kurta  (Multicolor)",
+        "productImg": "s-vgj.jpeg",
+        "rating": 3.7,
+        "category": "fashion-men",
+        "price": 1999
+      },
+      {
+        "name": "Men Solid Riding Jacket",
+        "description": "Men Solid Biker/Riding Jacket",
+        "productImg": "xl-no-hz5eeef.jpeg",
+        "rating": 3.6,
+        "category": "fashion-men",
+        "price": 2999
+      },
+      {
+        "name": "Men Casual, Formal Tan Artificial Leather RFID Wallet",
+        "description": "Men Casual, Formal Tan Artificial Leather RFID Wallet  (5 Card Slots)",
+        "productImg": "gul-tywfqmg.jpeg",
+        "rating": 3.9,
+        "category": "fashion-men",
+        "price": 499
+      },
+      {
+        "name": "Camping Bag Travel Backpack",
+        "description": "Mountain Rucksacksbag Hiking Trekking Camping Bag Travel Backpack Rucksack - 60 L  (Grey)",
+        "productImg": "60l-trackinhyfvcz.jpeg",
+        "rating": 4,
+        "category": "fashion",
+        "price": 2999
+      },
+      {
+        "name": "Women Regular Fit Solid Spread Collar Casual Shirt",
+        "description": "Women Regular Fit Solid Spread Collar Casual Shirt  (Pack of 2)",
+        "productImg": "m-coeze7hz.jpeg",
+        "rating": 4.1,
+        "category": "fashion-women",
+        "price": 1499
+      },
+      {
+        "name": "Women Regular Fit Solid Spread Collar Casual-Shirt",
+        "description": "Women Regular Fit Solid Spread Collar Casual Shirt",
+        "productImg": "xl-syswefsnxa.jpeg",
+        "rating": 4,
+        "category": "fashion-women",
+        "price": 1299
+      },
+      {
+        "name": "Women Regular Fit Solid Casual Shirt",
+        "description": "Women Regular Fit Solid Casual Shirt",
+        "productImg": "m-bg-bb.jpeg",
+        "rating": 3.9,
+        "category": "fashion-women",
+        "price": 999
+      },
+      {
+        "name": "Women Fit and Flare Multicolor Dress",
+        "description": "Women Fit and Flare Multicolor Dress",
+        "productImg": "s-metrpvnfnykqew.jpeg",
+        "rating": 4.2,
+        "category": "fashion-women",
+        "price": 1399
+      },
+      {
+        "name": "Women Maxi Purple Dress",
+        "description": "Women Maxi Purple Dress",
+        "productImg": "m-dd199br3ze.jpeg",
+        "rating": 3.8,
+        "category": "fashion-women",
+        "price": 899
+      },
+      {
+        "name": "Women Regular Mid Rise Blue Jeans",
+        "description": "Women Regular Mid Rise Blue Jeans",
+        "productImg": "32-1u8df9.jpeg",
+        "rating": 4.3,
+        "category": "fashion-women",
+        "price": 1699
+      },
+      {
+        "name": "Women Printed Wrap Around Skirt",
+        "description": "Women Printed Wrap Around Multicolor Skirt",
+        "productImg": "65qfdau-bb.jpeg",
+        "rating": 4.1,
+        "category": "fashion-women",
+        "price": 590
+      },
+      {
+        "name": "Kurta Palazzo Set Embroidered Kurta",
+        "description": "Kurta Palazzo Set Embroidered Kurta, Palazzo & Dupatta Set",
+        "productImg": "m-es11b-foduhz.jpeg",
+        "rating": 4,
+        "category": "fashion-women",
+        "price": 2599
+      },
+      {
+        "name": "Women Viscose Rayon Kurta Pant Dupatta Set",
+        "description": "Women Viscose Rayon Kurta Pant Dupatta Set",
+        "productImg": "s-pista-grezy7rh.jpeg",
+        "rating": 4.4,
+        "category": "fashion-women",
+        "price": 1499
+      },
+      {
+        "name": "Running Shoes For Women  (Camel)",
+        "description": "Running Shoes For Women  (Camel)",
+        "productImg": "3-1335-wt-dn7grypqgt7.jpeg",
+        "rating": 3.8,
+        "category": "fashion-women",
+        "price": 999
+      },
+      {
+        "name": "Boots,Casual,Party Wear, Daily Wear",
+        "description": "Boots,Casual,Party Wear, Daily Wear, Trendy, Comfortable Stylish Boots for Girls Boots For Women  (Black)",
+        "productImg": "jg-003-4uur.jpeg",
+        "rating": 4.2,
+        "category": "fashion-women",
+        "price": 1899
+      },
+      {
+        "name": "Women Pink-Heels Sandal",
+        "description": "Women Pink Heels Sandal",
+        "productImg": "4-z-a-0wrgafz2ap.jpeg",
+        "rating": 3.5,
+        "category": "fashion-women",
+        "price": 899
+      },
+      {
+        "name": "Women Multicolor Wedges Sandal",
+        "description": "Women Multicolor Wedges Sandal",
+        "productImg": "7-combo-agzwsqrv4z7xzg.jpeg",
+        "rating": 4.4,
+        "category": "fashion-women",
+        "price": 1299
+      },
+      {
+        "name": "Elegant Stone Analog Watch - For Women ML-LR-428-WHT",
+        "description": "Elegant Stone Studded White Dail With Stainless Steel With Ion Plated Strap Analogue Watch For Women/Girls Analog Watch - For Women ML-LR-428-WHT",
+        "productImg": "ml-lr-xzfrxgty.jpeg",
+        "rating": 3.4,
+        "category": "fashion-women",
+        "price": 899
+      },
+      {
+        "name": "Unstitched Crepe Kurta & Patiyala Material Printed",
+        "description": "Unstitched Crepe Kurta & Patiyala Material Printed",
+        "productImg": "yes-2-m-jqtz.jpeg",
+        "rating": 3.6,
+        "category": "fashion-women",
+        "price": 1699
+      },
+      {
+        "name": "Embroidered Semi Stitched Lehenga Choli",
+        "description": "Embroidered Semi Stitched Lehenga Choli  (Pink)",
+        "productImg": "frgrt9rzarzmvdv.jpeg",
+        "rating": 4.4,
+        "category": "fashion-women",
+        "price": 8499
+      },
+      {
+        "name": "Chiffon Striped Pink Women Dupatta",
+        "description": "Chiffon Striped Pink Women Dupatta",
+        "productImg": "2-25-al-imagvq97mczuscgn.jpeg",
+        "rating": 4,
+        "category": "fashion-women",
+        "price": 399
+      },
+      {
+        "name": "Embroidered Semi Stitched Lehenga Choli (Purple)",
+        "description": "Embroidered Semi Stitched Lehenga Choli (Purple)",
+        "productImg": "free-half-xedrx.jpeg",
+        "rating": 4.5,
+        "category": "fashion-women",
+        "price": 1899
       }
       
 ]

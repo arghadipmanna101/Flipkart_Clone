@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
 // fetch footer
 
 document.addEventListener("DOMContentLoaded", () => {

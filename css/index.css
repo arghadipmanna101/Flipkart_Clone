@@ -129,7 +129,7 @@ body {
   display: none;
 }
 
-#category-grid {
+/*#category-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
@@ -154,7 +154,71 @@ body {
 .category h3 {
   font-size: 18px;
   color: #333333;
+}*/
+
+/*Other Top Deals*/
+#category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
+
+.category-container {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.category {
+  width: 100%; /* Adjust the width as needed */
+  height: auto;
+  display: block;
+  border-radius: 15px;
+}
+
+.show-items-link {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-decoration: none; /* Remove default link styling */
+}
+
+.show-items-btn {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: none;
+  cursor: pointer;
+}
+
+.category-container:hover .show-items-btn {
+  display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #category-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* Adjust gap for smaller screens */
+    margin: 10px; /* Adjust margins for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  #category-grid {
+    grid-template-columns: 1fr;
+    gap: 10px; /* Adjust gap for smallest screens */
+    margin: 5px; /* Adjust margins for smallest screens */
+  }
+}
+/*Other Top Deals*/
 
 .dropdownbox {
   /* left:20%; */
@@ -255,6 +319,11 @@ body {
   font-weight: bold;
 }
 
+.navbar{
+  display: grid;
+  grid-auto-flow: column;
+}
+
 /*adding transition property to the images of the cateogory-grid section*/
 #category-grid img {
   transition: transform 0.3s ease-in-out;
@@ -277,10 +346,36 @@ body {
   transform: scale(1.1);
 }
 
-/* Search Bar */
-#searchbar input {
-  transition: border-color 0.3s ease-in-out;
+Search Bar 
+#searchbar{
+  width: 100%;
+  
 }
+ #searchbar input {
+  transition: border-color 0.3s ease-in-out;
+ 
+}
+
+#searchbar {
+  display: flex; /* Ensures flex layout */
+  align-items: center; /* Centers items vertically */
+  min-width: 40%; 
+  
+}
+
+#searchbar .flex-grow {
+  flex-grow: 1; /* Allows the input to grow */
+}
+
+#searchbar .searchbar {
+  width: 100%; /* Makes the input take up available space */
+  min-width: 700px;
+  flex-grow: 1;
+  padding: 8px;
+   
+  box-sizing: border-box; /* Ensures padding is included in width */
+}
+
 
 #searchbar input:focus {
   border-color: #2874F0; /* Change the border color on focus */
@@ -399,6 +494,7 @@ body {
   /* Increased box shadow on hover */
 }
 
+
 #faq .accordion .card-header {
   background-color: #fff;
   border: none;
@@ -499,7 +595,7 @@ body {
 #goToTopBtn {
   /* display: none; */
   position: fixed;
-  bottom: 75px;
+  bottom: 45px;
   right: 50%;
   left: 50%;
   background-color: hsla(217, 87%, 55%, 0.7);
@@ -624,4 +720,15 @@ body {
   font-weight: 500;
   font-size: 16px;
   color: #878787;
+
+.brand-directory{
+  background-color: white;
+  padding: 20px 30px;
+  color: #878787;
+  letter-spacing: 0;
+
 }
+.brand-directory-heading{
+  font-weight: 24px;
+  color:black ;
+
