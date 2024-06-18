@@ -133,7 +133,7 @@
     {
         "id": "electronics",
         "name": "Electronics",
-        "icon": "electronics.webp",
+        "icon": "elec.webp",
         "subcategories": [
          
             {
