@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function createCategoryItem(categoryData) {
         const categoryItem = document.createElement("li");
+        categoryItem.classList.add("category-item");
+
 
         const icon = document.createElement("img");
         icon.src = "img/" + categoryData.icon;
@@ -18,30 +20,29 @@ document.addEventListener("DOMContentLoaded", function () {
         categoryItem.appendChild(icon);
         categoryItem.appendChild(name);
 
-        const subcategoriesList = document.createElement("ul");
+        // const subcategoriesList = document.createElement("ul");
 
-        if (!categoryData.subcategories) {
-            const singleItem = document.createElement("li");
-            const singleLink = document.createElement("a");
-            singleLink.href = categoryData.name + "-/";
-            singleLink.textContent = categoryData.name;
-            singleItem.appendChild(singleLink);
-            subcategoriesList.appendChild(singleItem);
-        } else {
+        if (categoryData.subcategories && categoryData.subcategories.length > 0) {
+            const subcategoriesList = document.createElement("ul");
+            subcategoriesList.classList.add("subcategories-list");
+
             categoryData.subcategories.forEach(function (subcategoryData) {
-                if (subcategoryData && subcategoryData.name === undefined) {
-                    const singleItem = document.createElement("li");
-                    singleItem.textContent = subcategoryData;
-                    subcategoriesList.appendChild(singleItem);
-                } else if (subcategoryData) {
-                    const subcategoryItem = createCategoryItem(subcategoryData);
-                    subcategoriesList.appendChild(subcategoryItem);
-                }
-            });
-        }
+                const subcategoryItem = document.createElement("li");
 
-        categoryItem.appendChild(subcategoriesList);
-        // console.log(categoryItem);
+                if (typeof subcategoryData === 'string') {
+                    subcategoryItem.textContent = subcategoryData;
+                } else if (subcategoryData) {
+                    const subcategoryLink = document.createElement("a");
+                    subcategoryLink.href = subcategoryData.name + "-/";
+                    subcategoryLink.textContent = subcategoryData.name;
+                    subcategoryItem.appendChild(subcategoryLink);
+                }
+
+                subcategoriesList.appendChild(subcategoryItem);
+            });
+
+            categoryItem.appendChild(subcategoriesList);
+        }
 
         return categoryItem;
     }

@@ -1,0 +1,47 @@
+#categories {
+    list-style: none;
+    padding: 0;
+}
+
+.category-item {
+    position: relative;
+    padding: 10px;
+}
+
+.category-item a {
+    text-decoration: none;
+    color: #000;
+}
+
+.subcategories-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+}
+
+.subcategories-list {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+}
+
+.subcategories-list li {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.subcategories-list li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.category-item:hover .subcategories-container {
+    display: flex;
+}
+
