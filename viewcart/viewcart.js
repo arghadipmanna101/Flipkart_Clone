@@ -1,4 +1,4 @@
-//Date and Time
+// Date and Time
 const today = new Date();
 const nextThreeDays = new Date(today);
 nextThreeDays.setDate(today.getDate() + 3);
@@ -7,8 +7,9 @@ const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Fri
 const dayOfWeek = daysOfWeek[nextThreeDays.getDay()];
 const date = nextThreeDays.toLocaleDateString();
 
-//Cart JS
-//Function to save data to local storage
+// Cart JS
+
+// Function to save data to local storage
 function saveToLocalStorage(key, newData) {
   let existingData = getFromLocalStorage(key) || [];
 
@@ -60,10 +61,20 @@ function fetchCartData(item) {
   totalItems += 1;
   totalPrice += item.price;
 
+  const discont=(Math.floor(item.rating*(parseInt((item.price.toString()).slice(0,2)))/10))
+  const afterDiscontPrice=Math.round((100-discont)*item.price/100)
+
+  function formatIndianRupee(number) {
+    const parts = number.toString().split(".");
+    const integerPart = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    const formattedNumber = parts.length > 1 ? integerPart + "." + parts[1] : integerPart;
+    return formattedNumber;
+  }
+
   return `
   <div class="cartItmListInviewCart bg-white">
     <div class="itemInCart d-flex p-3 m-1">
-      <div style="height: 112px; width: 112px;" class="m-3">
+      <div style="height: 60px; width: 112px;" class="m-3 d-flex justify-content-center">
         <img src="../json-api/product-img/${item.productImg}" style="width: auto; height: 80px; object-fit: contain;" alt="${item.name}">
       </div>
       <div class="itemDetail">
@@ -72,8 +83,8 @@ function fetchCartData(item) {
           <p> Forest Green Strap, Regular</p>
           <p> Seller: Ezig </p>
         </div>
-        <div>
-          <b>₹${item.price}</b> 1 offer applied
+        <div class=""><strong>₹${formatIndianRupee(afterDiscontPrice)}</strong> <del style="color:#878787">₹${formatIndianRupee(item.price)}</del> <span style="color:#388e3c"> ${discont}% off </span>
+        <span class="text-success">1 offer applied</span>
         </div>
       </div>
       <div class="deliveryDate">
@@ -84,9 +95,9 @@ function fetchCartData(item) {
       <div class="row">
         <div class="plusMinItm col-sm-6">
           <div class="d-flex justify-content-center align-items-center">
-            <button class="cartItmPMBtn" disabled=""> – </button>
-            <div class="cartItmQty"><input type="text" class="text-center" value="1" style="width:50px"></div>
-            <button class="cartItmPMBtn"> + </button>
+            <button class="cartItmPMBtn" disabled="">– </button>&nbsp
+            <div class="cartItmQty"><input type="text" class="text-center" value="1" style="width:50px; border: 1px solid #f1f3f6"></div>&nbsp
+            <button class="cartItmPMBtn">+ </button>
           </div>
         </div>
         <div class="cartItmSfLRm d-flex justify-content-around align-items-center col-sm-6">
@@ -150,28 +161,36 @@ function updateCartDisplay(filteredProducts) {
 
 // Function to update the price detail section
 function updatePriceDetail(products) {
+  function formatIndianRupee(number) {
+    const parts = number.toString().split(".");
+    const integerPart = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    const formattedNumber = parts.length > 1 ? integerPart + "." + parts[1] : integerPart;
+    return formattedNumber;
+  }
   totalItems = products.length;
-  totalPrice = products.reduce((acc, item) => acc + item.price, 0);
-
+  totalMRP = products.reduce((acc, item) => acc + (item.price), 0);
+  totalPrice = products.reduce((acc, item) => acc + (Math.round((100-((Math.floor(item.rating*(parseInt((item.price.toString()).slice(0,2)))/10))))*item.price/100)), 0);
+  totalDiscount=totalMRP-totalPrice
+ 
   let priceDetail = `
     <div style="display: flex; flex-direction: column;">
       <div class="d-flex justify-content-between">
         <div>Price (${totalItems} items) </div>
-        <div>₹${totalPrice}</div>
+        <div>₹${formatIndianRupee(totalMRP)}</div>
       </div>
       <div class="d-flex justify-content-between">
         <div>Discount </div>
-        <div>0</div>
+        <div>₹${formatIndianRupee(totalDiscount)}</div>
       </div>
       <div class="d-flex justify-content-between">
         <div>Delivery Charges </div>
         <div>Free</div>
       </div>
       <div class="d-flex justify-content-between">
-        <div>Total Amount </div>
-        <div><b>₹${totalPrice}</b></div>
+        <div><b>Total Amount </div>
+        <div>₹${formatIndianRupee(totalPrice)}</b></div>
       </div>
-      <div>You will save ₹40 on this order</div>
+      <div>You will save ₹${formatIndianRupee(totalDiscount)} on this order</div>
     </div>
   `;
 
@@ -195,4 +214,5 @@ fetch("../json-api/product.json")
     searchFetch(savedFilteredProducts);
   })
   .catch(error => console.error("Error fetching data:", error));
+
 // end
