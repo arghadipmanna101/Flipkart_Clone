@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#2874F0" id="themeColor" />
+    <title>
+        Flipkart | Online Shopping Site for Mobiles, Electronics, Furniture,
+        Grocery, Lifestyle, Books &amp; More. Best Offers!
+    </title>
+    <link rel="icon" type="image/x-icon" href="../img/flipkart_lite.png" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="plus.css" />
+</head>
+
+
+<body>
+    <header id="header-plus" class="text-center text-secondary fs-4">
+        This is Header
+    </header>
+
+    <section>
+        <style>
+            .banner {
+                background-image: url('../img/fpz.jpg');
+                background-size: cover;
+                background-position: center;
+                height: 400px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-size: 36px;
+                font-weight: bold;
+                box-shadow: inset 0 0 500px 0px black;
+                text-shadow: 0 0 14px black;
+                transition: background-size 0.5s ease-in-out;
+
+            }
+
+            .banner:hover {
+                background-size: 120%; 
+            }
+
+            section .container {
+                padding: 20px;
+            }
+
+            .product-list {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+                transition: transform 0.5s ease-in-out;
+            }
+
+            .product-list:hover {
+                transform: translateX(-10px); 
+            }
+
+            .product {
+                background-color: white;
+                padding: 20px;
+                border-radius: 4px;
+                width: calc(25% - 20px);
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                transition: box-shadow 0.3s ease-in-out;
+            }
+
+            .product:hover {
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+            }
+
+            .product img {
+                width: 100%;
+                border-bottom: 1px solid #eee;
+                padding-bottom: 15px;
+                transition: transform 0.3s ease-in-out;
+            }
+
+            .product img:hover {
+                transform: scale(1.1); 
+            }
+
+            .product .name {
+                font-size: 18px;
+                font-weight: bold;
+                margin: 10px 0;
+                transition: color 0.3s ease-in-out;
+            }
+
+            .product .name:hover {
+                color: #97b3e0; 
+            }
+
+            .product .price {
+                color: #2874f0;
+                font-size: 16px;
+                font-weight: bold;
+                transition: color 0.3s ease-in-out; 
+            }
+
+            .product .price:hover {
+                color: #007bff; 
+            }
+        </style>
+        <h3 class="text-center">Welcome to Flipkart Plus Zone</h3>
+        <div class="banner">
+        </div>
+        <div class="container">
+            <div class="product-list">
+                <div class="product">
+                    <img src="../img/phone-6.webp" alt="Product Image" />
+                    <div class="name">Moto G</div>
+                    <div class="price">₹9999</div>
+                </div>
+                <div class="product">
+                    <img src="../img/phone-2.webp" alt="Product Image" />
+                    <div class="name">Poco M6 </div>
+                    <div class="price">₹11,999</div>
+                </div>
+                <div class="product">
+                    <img src="../img/phone-3.webp" alt="Product Image" />
+                    <div class="name">Poco C65</div>
+                    <div class="price">₹21,999</div>
+                </div>
+                <div class="product">
+                    <img src="../img/phone-5.webp" alt="Product Image" />
+                    <div class="name">Moto A14</div>
+                    <div class="price">₹19,999</div>
+                </div>
+                <div class="product">
+                    <img src="../img/phon-4.webp" alt="Product Image" />
+                    <div class="name">Poco C65</div>
+                    <div class="price">₹21,999</div>
+                </div>
+                <div class="product">
+                    <img src="../img/phone-6.webp" alt="Product Image" />
+                    <div class="name">Moto G</div>
+                    <div class="price">₹9999</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="btmTxtP" class="container-fluid" style="background: #f3eff3;"></div>
+    <footer id="footer-plus" style="background-color: #293649 !important"></footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="plus.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="theme-color" content="#2874F0" id="themeColor">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="../img/flipkart_favicon.ico">
+	<title>Flight bookings, Cheap flights, Lowest Air tickets at Flipkart.com</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/travel-style.css">
+</head>
+
+<body>
+	<!-- Header -->
+	<header id="header-travel"></header>
+
+	<div class="d-flex justify-content-center align-items-end m-2 pb-4"
+		style="background-image: url(../img/getSetTravel.webp); height: 75vh; background-size: cover;">
+		<div class="bookTripForm mb-4">
+			<div class="d-flex flex-column ">
+				<div class="radioButton d-flex">
+					<div class="custom-control custom-radio custom-control-inline p-2">
+						<input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+						<label class="custom-control-label" for="customRadioInline1">One Way</label>
+					  </div>
+					  <div class="custom-control custom-radio custom-control-inline p-2">
+						<input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" checked>
+						<label class="custom-control-label" for="customRadioInline2">Round Trip</label>
+					  </div>
+				</div>
+				<div class="formSection d-flex">					
+					<div class="d-flex">
+						<label>
+							<input required="" placeholder="" type="text" class="input" width="200px">
+							<span>From</span>
+							<p style="font-size: smaller;">Any worldwide city or airport</p>
+						</label>
+				
+						<label>
+							<input required="" placeholder="" type="text" class="input"width="200px">
+							<span>To</span>
+							<p style="font-size: smaller;">Any worldwide city or airport</p>
+						</label>
+						<label>
+							<input required="" placeholder="" type="date" class="input" id="toDayDate" style="width: 150px;">
+							<span>Depart On</span>
+						</label>
+						<label>
+							<input required="" placeholder="" type="date" class="input" id="returnDayDate"style="width: 150px;">
+							<span>Return On</span>
+						</label>
+						<label>
+							<input required="" placeholder="" value="1 Traveler | Economy" type="text" readonly class="input">
+							<span style=" top: 30px;">Travelers | Class</span>
+						</label>
+						<label>
+							<button class="btn btn-primary mt-1">Submit</button>
+						</label>
+					</div>  
+					
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- carousel start -->
+	<div class="container-fluid">
+		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+					aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+					aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+					aria-label="Slide 3"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+					aria-label="Slide 4"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+					aria-label="Slide 5"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+					aria-label="Slide 6"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+					aria-label="Slide 7"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="../img/travelcarousel1.jpg" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="../img/travelcarousel2.jpg" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="../img/travelcarousel3.jpg" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="../img/travelcarousel4.jpg" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="../img/travelcarousel2.jpg" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="../img/travelcarousel4.jpg" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="../img/travelcarousel3.jpg" class="d-block w-100" alt="...">
+				</div>
+			</div>
+			<button class="carousel-control-prev bg-white" style="width: 35px; height: 45%;  margin-top: 60px;"
+				type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<i class="bi bi-caret-left" style="color: black; z-index: 50; margin-right: 10px;"></i>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next bg-white" style="width: 35px; height: 45%;margin-top: 60px;"
+				type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<i class="bi bi-caret-right" style="color: black; z-index: 50; margin-right: 10px;"></i>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+	</div>
+	<!-- carousel end -->
+
+	<div class="container-fluid d-flex justify-content-center">
+		<img src="../img/314d78512857f86d.png" class="img-fluid" alt="">
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-4">
+				<img src="../img/domesticFlights.webp" class="img-fluid" alt="">
+			</div>
+			<div class="col-md-4">
+				<img src="../img/internationalFlights.webp" class="img-fluid" alt="">
+			</div>
+			<div class="col-md-4">
+				<img src="../img/domesticFlights0.webp" class="img-fluid" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12">
+				<img src="../img/tobankoffer.png" width="100%" alt="">
+			</div>
+			<div class="col-12">
+				<img src="../img/additionalCashbackAxisflip.webp" width="100%" alt="">
+			</div>
+			<div class="col-12">
+				<img src="../img/travelFlivacto.JPG" width="100%" alt="">
+			</div>
+			<p class="p-4" style="background-color:#f8f8f8 ;">Thanks to online portals, you don’t have to depend on
+				travel
+				agents or anyone else to make flight bookings. You
+				can use your laptop or mobile phone to go through all the available flights, hotels, resorts, and more
+				to make
+				all
+				your flight ticket bookings. Most of these portals offer many festive flight offers that will help you
+				book
+				international and domestic flights at great prices. This way, you can stay within your budget. Once you
+				take
+				care
+				of your travel arrangements, you can also look through all the accommodation options available. Make
+				sure that
+				you
+				go through all the reviews of the various properties listed online so that you can have a pleasant stay.
+				Without
+				doing enough research, you may end up paying a lot of money for a place that doesn’t suit your needs.
+				So, while
+				looking at the best flight offers online, you can also go through numerous blogs and articles about the
+				best
+				places to stay at your destination. This will help you find romantic, adventurous, or chilled-out
+				properties.
+				Once
+				all your arrangements are done, you can plan your itinerary, pack your bags, and countdown the days
+				until your
+				much-awaited getaway. The information you are reading has been last updated on 05-Jun-24.</p>
+		</div>
+	</div>
+
+
+	<div id="travelFooterUpText" class="p-4"></div>
+	<footer id="footer-travel" style="background-color: #292d33;"> </footer>
+	
+	<!-- javaScript -->
+	<script src="../js/bootstrap.bundle.min.js"></script>
+	<script src="../js/travel-script.js"></script>
+</body>
+
+</html>

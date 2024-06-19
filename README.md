@@ -1,7 +1,73 @@
+
 <div align="center">
   <h1 style="font-size: 36px; font-weight: bold;">Flipkart_Clone</h1>
   
 </div>
+
+<div align="center">
+ <p>
+
+[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)
+![GitHub contributors](https://img.shields.io/github/contributors/arghadipmanna101/Flipkart_Clone)
+![GitHub repo size](https://img.shields.io/github/repo-size/arghadipmanna101/Flipkart_Clone)
+![Github](https://img.shields.io/github/license/arghadipmanna101/Flipkart_Clone)
+ </p>
+</div>
+
+<table align="center">
+    <thead align="center">
+        <tr border: 1px;>
+            <td><b>🌟 Stars</b></td>
+            <td><b>🍴 Forks</b></td>
+            <td><b>🐛 Issues</b></td>
+            <td><b>   Closed Issues</b></td>
+            <td><b>🔔 Open PRs</b></td>
+            <td><b>🔕 Close PRs</b></td>
+            <td><b> last commit</b></td>
+        </tr>
+     </thead>
+    <tbody>
+         <tr>
+            <td><img alt="Stars" src="https://img.shields.io/github/stars/arghadipmanna101/Flipkart_Clone"/></td>
+             <td><img alt="Forks" src="https://img.shields.io/github/forks/arghadipmanna101/Flipkart_Clone?style=flat&logo=github"/></td>
+            <td><img alt="Issues" src="https://img.shields.io/github/issues/arghadipmanna101/Flipkart_Clone?style=flat&logo=github"/></td>
+            <td><img alt="closed issues" src="https://img.shields.io/github/issues-closed-raw/arghadipmanna101/Flipkart_Clone"</td>
+            <td><img alt="Open Pull Requests" src="https://img.shields.io/github/issues-pr/arghadipmanna101/Flipkart_Clone?style=flat&logo=github"/></td>
+            <td><img alt="Close Pull Requests" src="https://img.shields.io/github/issues-pr-closed/arghadipmanna101/Flipkart_Clone"/></td>
+           <td><img alt="last commit" src="https://img.shields.io/github/last-commit/arghadipmanna101/Flipkart_Clone"/></td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+
+
+<!-- Open Source Programs -->
+  <div>
+    <h2><img src="https://github.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/blob/master/Emojis/Hand%20gestures/Flexed%20Biceps.png?raw=true" width="35" height="35" >Open Source Programs</h2>
+  </div>
+
+  <!--This project is a part of GirlScript Summer of code. We welcome contibutions from the community to help improve the project Flipkart_Clone.-->
+
+  <table>
+
+   <tr>
+      <th>Event Logo</th>
+      <th>Event Name</th>
+      <th>Event Description</th>
+   </tr>
+   <tr>
+      <td><img src="https://user-images.githubusercontent.com/63473496/153487849-4f094c16-d21c-463e-9971-98a8af7ba372.png" width="200" height="auto" loading="lazy" alt="GSSoC 24"/></td>
+      <td>GirlScript Summer of Code 2024</td>
+      <td>GirlScript Summer of Code is a three-month-long Open Source Program conducted every summer by GirlScript Foundation. It is an initiative to bring more beginners to Open-Source Software Development.</td>
+   </tr>
+
+</table>
+
+<hr>
+  
+<!--![gssoc](https://github.com/d1vyadharsh1n1/Flipkart_Clone/assets/146218077/dd4ffa29-2d52-47ad-9967-d0d6f8aff717)-->
 
 <div style="text-align:center;">
  <img src="https://cdn.dribbble.com/users/1980856/screenshots/4760116/media/5021b87fb97e90b8f153a4480ffc615e.gif" alt="Flipkart Logo Animation" width="3800" height="450">
@@ -49,8 +115,19 @@
    ```bash
    git switch -c <your-branch-name>
    ```
+6. **Setup Environment:** 
+   ```bash
+      npm install
+   ```
+   
+7. **To preview:** Go to index.html and "Go Live" to view in localhost
 
-6. **Make changes:** Start making your changes to the source code.
+
+8. **Make changes:** Deployment failed with the following error:
+```bash
+   Resource is limited - try again in 2 hours (more than 100, code: "api-deployments-free-per-day").
+```
+
 
 7. **Add your changes:** Stage your changes for commit:
 
@@ -122,26 +199,9 @@ If you find this project helpful, please consider giving it a star on GitHub! Yo
 
 
 
-<!-- Screenshots -->
-  <div>
-    <h2><img src = "https://github.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/blob/master/Emojis/Objects/Camera.png?raw=true" width="35" height ="35"> Snapshots</h2>
-  </div>
 
-  These are some of the Snapshots of the project.
-  
-  ![ss1](https://github.com/d1vyadharsh1n1/Flipkart_Clone/assets/146218077/435d0824-33a0-4855-8488-4721e869e0d6)
-  ![ss2](https://github.com/d1vyadharsh1n1/Flipkart_Clone/assets/146218077/c8bd1868-1bfa-4d17-b59b-0f3e57c98303)
-  ![ss3](https://github.com/d1vyadharsh1n1/Flipkart_Clone/assets/146218077/0953a81a-9a2d-46ed-950a-559e672878c1)
-  ![ss4](https://github.com/d1vyadharsh1n1/Flipkart_Clone/assets/146218077/440ae33d-0dcf-4e31-bff4-1af29187ebf2)
 
-<!-- Open Source Programs -->
-  <div>
-    <h2><img src="https://github.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/blob/master/Emojis/Hand%20gestures/Flexed%20Biceps.png?raw=true" width="35" height="35" >Open Source Programs</h2>
-  </div>
 
-  This project is a part of GirlScript Summer of code. We welcome contibutions from the community to help improve the project Flipkart_Clone.
-  
-![gssoc](https://github.com/d1vyadharsh1n1/Flipkart_Clone/assets/146218077/dd4ffa29-2d52-47ad-9967-d0d6f8aff717)
 
 <!-- Code of conduct -->
 <div>
