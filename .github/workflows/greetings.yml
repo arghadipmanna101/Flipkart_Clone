@@ -1,21 +1,27 @@
-name: 'Greetings'
+name: Welcome
 
 on:
   issues:
     types: [opened]
-  pull_request_target:
+  pull_request:
     types: [opened]
-permissions:
-  issues: write
-  pull-requests: write
 
 jobs:
   welcome:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: EddieHubCommunity/gh-action-community/src/welcome@main
+      - name: Send welcome message for issues
+        if: github.event_name == 'issues'
+        uses: EddieHubCommunity/gh-action-community/src/welcome@main
         with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-message: |
+            Hi there! Thanks for opening this issue. We appreciate your contribution to this open-source project. We aim to respond or assign your issue as soon as possible.
       
-          issue-message: "Hi there! Thanks for opening this issue. We appreciate your contribution to this open-source project. We aim to respond or assign your issue as soon as possible."
-          pr-message: "Great job, @${{ github.actor }}! 🎉 Thank you for submitting your pull request. Your contribution is valuable and we appreciate your efforts to improve our project.We will promptly review your changes and offer feedback.  kindly remember to check our [contributing guidelines](https://github.com/arghadipmanna101/Flipkart_Clone/blob/main/CONTRIBUITING.md)"
+      - name: Send welcome message for pull requests
+        if: github.event_name == 'pull_request'
+        uses: EddieHubCommunity/gh-action-community/src/welcome@main
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          pr-message: |
+            Great job, @${{ github.actor }}! 🎉 Thank you for submitting your pull request. Your contribution is valuable and we appreciate your efforts to improve our project. We will promptly review your changes and offer feedback. Kindly remember to check our [contributing guidelines](https://github.com/arghadipmanna101/Flipkart_Clone/blob/main/CONTRIBUITING.md)
