@@ -22,12 +22,12 @@ function getQueryParameter(name) {
   return urlParams.get(name);
 }
 
-var simiCategory
+var simiCategory;
 // Function to create product card
 function createSearchProductCard(product) {
-  simiCategory=product.category;
-  const discont=(Math.floor(product.rating*(parseInt((product.price.toString()).slice(0,2)))/10))
-  const afterDiscontPrice=Math.round((100-discont)*product.price/100)
+  simiCategory = product.category;
+  const discont = (Math.floor(product.rating * (parseInt((product.price.toString()).slice(0, 2))) / 10));
+  const afterDiscontPrice = Math.round((100 - discont) * product.price / 100);
 
   function formatIndianRupee(number) {
     const parts = number.toString().split(".");
@@ -35,6 +35,7 @@ function createSearchProductCard(product) {
     const formattedNumber = parts.length > 1 ? integerPart + "." + parts[1] : integerPart;
     return formattedNumber;
   }
+
   return `
   <style>
   .products_kart img:hover{transform:scale(1.1)}.products_kart{font-size:medium;display:flex;flex-direction:column;}.rating{background-color:green;width:fit-content;padding:0 16px;border-radius:5px;color:#fff}.products_kart .product_Img{height:150px}.products_kart img{padding:1px;width:100%;height:100%;object-fit:contain}
@@ -47,7 +48,7 @@ function createSearchProductCard(product) {
                 </div>
                 <div>
                   <a class="btn btn-primary" style="width: 48%" href="../viewcart/?query=${product.name}"> <img src="../img/svg/cart_h.svg">&nbsp Add To Cart</a>
-                  <button class="btn btn-danger" style="width: 48%"><img src="../img/svg/electricity.svg">&nbspBuy Now</button>
+                  <a class="btn btn-danger" style="width: 48%" href="checkout.html"><img src="../img/svg/electricity.svg">&nbspBuy Now</a>
                 </div>
                 </div>
             </div>
@@ -76,10 +77,10 @@ function createSearchProductCard(product) {
     `;
 }
 
-// Function to similer products
+// Function to create similar product cards
 function createSearchSimilarProducts(product) {
-  const discont=(Math.floor(product.rating*(parseInt((product.price.toString()).slice(0,2)))/10))
-  const afterDiscontPrice=Math.round((100-discont)*product.price/100)
+  const discont = (Math.floor(product.rating * (parseInt((product.price.toString()).slice(0, 2))) / 10));
+  const afterDiscontPrice = Math.round((100 - discont) * product.price / 100);
 
   function formatIndianRupee(number) {
     const parts = number.toString().split(".");
@@ -97,12 +98,12 @@ function createSearchSimilarProducts(product) {
             <div class="text-center product_Img img-fluid">
                 <img src="../json-api/product-img/${product.productImg}" alt="${product.id}">
             </div>
-            <div class="text-center card-title pt-1">${product.name.slice(0, 20)} ${product.name.length > 20 ? "<b>...</b>":""}</div>
+            <div class="text-center card-title pt-1">${product.name.slice(0, 20)} ${product.name.length > 20 ? "<b>...</b>" : ""}</div>
             <div class="text-center mb-1 rating">${product.rating} &nbsp<i class="bi bi-star-fill"></i></div>
             <div class="text-center"><strong>₹${formatIndianRupee(afterDiscontPrice)}</strong> <del style="color:#878787">₹${formatIndianRupee(product.price)}</del> <span style="color:#388e3c"> ${discont}% off </span></div>
         </div>
     </a>
-`;
+  `;
 }
 
 // Function to display search results
@@ -113,14 +114,13 @@ function searchFetch(products) {
     .join("");
 }
 
-// Function to similer products
+// Function to display similar products
 function searchFetchSimi(products) {
   const searchList = document.getElementById("similarProducts");
   searchList.innerHTML = products
     .map((product) => createSearchSimilarProducts(product))
     .join("");
 }
-
 
 // Fetch data from the JSON file and filter products based on the query
 fetch("../json-api/product.json")
@@ -130,37 +130,27 @@ fetch("../json-api/product.json")
     const filteredProducts = data.filter((product) => product.name == query);
     searchFetch(filteredProducts);
     setInterval(() => {
-      const filteredProductsSimi = data.filter((product) => product.category == simiCategory); 
-        //  ?????
-      searchFetchSimi(filteredProductsSimi.slice(0,12));
+      const filteredProductsSimi = data.filter((product) => product.category == simiCategory);
+      searchFetchSimi(filteredProductsSimi.slice(0, 12));
     }, 1500);
-    
   })
   .catch((error) => console.error("Error fetching data:", error));
 
-
-
-
-
-// header search bar search function 
-setTimeout(() => {  
+// Header search bar search function
+setTimeout(() => {
   const inputField_h = document.getElementById('inputField_h');
   const fetchButton_h = document.getElementById('fetchButton_h');
 
   function fetchValue_h() {
-      const value = inputField_h.value;
-      window.location.href = `../search/?query=${value}`;
+    const value = inputField_h.value;
+    window.location.href = `../search/?query=${value}`;
   }
- 
+
   fetchButton_h.addEventListener('click', fetchValue_h);
 
   inputField_h.addEventListener('keydown', (event) => {
-      if (event.key === 'Enter') {
-          fetchValue_h();
-      }
+    if (event.key === 'Enter') {
+      fetchValue_h();
+    }
   });
-
-
 }, 500);
-
-//end 
