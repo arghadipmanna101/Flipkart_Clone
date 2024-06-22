@@ -56,8 +56,12 @@ footer .social ul{
 }
 footer .social li{
     margin: 5px;
+    opacity: 0.75;
 }
-
+footer .social a:hover img{
+    transform: scale(1.5);
+    transition: .3s;
+}
 footer .footerEnd{
     border-top: 1px solid #454d5e;
     padding: 25px 0;
