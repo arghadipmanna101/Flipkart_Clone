@@ -1,0 +1,50 @@
+
+
+.main-conatiner{
+    margin: 0 auto;
+    width: 1216px;
+    padding: 16px 0;
+    display: flex;
+}
+
+.left{
+    flex: 0 0 360px;
+    max-width: 360px;
+    padding: 0px 16px 0px 0px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px 0px;
+    background-color: rgb(255, 255, 255);
+    flex: 0 0 856px;
+}
+
+.right{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px 0px;
+    background-color: rgb(255, 255, 255);
+    flex: 0 0 856px;
+    max-width: 856px;
+    padding: 24px 0px 0px 32px;
+   
+}
+
+.notification-img{
+    width: 850px;
+}
+
+.left{
+    flex: 0 0 360px;
+    max-width: 360px;
+    padding: 0px 16px 0px 0px;
+}
+
+.notification-section{
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .08);
+    display: flex;
+    padding: 23px 14px 14px 29px;
+    position: absolute;
+}
+
+.left-notification-img{
+    width: 312px
+}
+
