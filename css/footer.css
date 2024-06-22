@@ -51,9 +51,15 @@ footer .social li{
     margin: 5px;
     opacity: 0.75;
 }
-footer .social a:hover img{
-    transform: scale(1.5);
-    transition: .3s;
+footer .social a img 
+{
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, filter 0.3s ease-in-out;
+    border-radius: 50%;
+}
+footer .social a:hover img {
+    transform: scale(1.5) translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    filter: brightness(1.2) drop-shadow(2px 4px 6px black);
 }
 footer .footerEnd{
     border-top: 1px solid #454d5e;
