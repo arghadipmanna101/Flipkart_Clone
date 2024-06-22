@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="review.css">
+    <style>
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .background-image {
+            width: 164%;
+            height: 150%;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20pxrgba(32, 13, 58, 0.4);
+        }
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .centered h2 {
+            font-size: 36px;
+            margin: -124;
+            color: black;
+        }
+        .centered p {
+            font-size: 18px;
+            margin: 86px -141px 35px -145px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="centered">
+            <h2>Here's the Review Form</h2>
+            <p>Thank you for visiting the website! Please tell us how we can improve your experience</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="post" style="display: none;">
+            <div class="text">Thanks for rating us!</div>
+            <div class="edit">EDIT</div>
+        </div>
+        <div class="star-widget">
+            <input type="radio" name="rate" id="rate-5">
+            <label for="rate-5" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-4">
+            <label for="rate-4" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-3">
+            <label for="rate-3" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-2">
+            <label for="rate-2" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-1">
+            <label for="rate-1" class="fas fa-star"></label>
+            <form action="#">
+                <header></header>
+                <div class="textarea">
+                    <textarea cols="30" placeholder="Describe your experience.."></textarea>
+                </div>
+                <div class="btn">
+                    <button type="submit">Post</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        const btn = document.querySelector("button");
+        const post = document.querySelector(".post");
+        const widget = document.querySelector(".star-widget");
+        const editBtn = document.querySelector(".edit");
+        const textArea = document.querySelector("textarea");
+        const ratings = document.querySelectorAll('input[name="rate"]');
+
+        btn.onclick = (e) => {
+            e.preventDefault();
+            let ratingSelected = false;
+            for (const rating of ratings) {
+                if (rating.checked) {
+                    ratingSelected = true;
+                    break;
+                }
+            }
+
+            if (!ratingSelected) {
+                alert("Please select a star rating.");
+                return;
+            }
+
+            if (textArea.value.trim() === "") {
+                alert("Please describe your experience.");
+                return;
+            }
+
+            widget.style.display = "none";
+            post.style.display = "block";
+        }
+
+        editBtn.onclick = () => {
+            widget.style.display = "block";
+            post.style.display = "none";
+        }
+    </script>
+</body>
+</html>
