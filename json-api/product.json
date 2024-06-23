@@ -424,7 +424,7 @@
         "price": 13999
     },
     {
-        "name": "SAMSUNG Galaxy F14 5G (OMG Black, 128 GB)",
+        "name": "SAMSUNG Galaxy F14 5G (OMG Black,128 GB)",
         "description": "SAMSUNG Galaxy F14 5G (OMG Black, 128 GB)",
         "productImg": "mobile (52).jpeg",
         "rating": 4.3,
@@ -440,16 +440,16 @@
         "price": 18999
     },
     {
-        "name": "vivo T2x 5G (Aurora Gold, 128 GB)",
-        "description": "vivo T2x 5G (Aurora Gold, 128 GB)",
+        "name": "vivo T2x 5G (Aurora Gold, 4 GB 128 GB)",
+        "description": "vivo T2x 5G (Aurora Gold, 128 GB Storage 4 GB RAM)",
         "productImg": "mobile (55).jpeg",
         "rating": 4.6,
         "category":"mobile",
         "price": 17999
     },
     {
-        "name": "vivo T2x 5G (Aurora Gold, 128 GB)",
-        "description": "vivo T2x 5G (Aurora Gold, 128 GB)",
+        "name": "vivo T2x 5G (Aurora Gold, 8 GB 128 GB)",
+        "description": "vivo T2x 5G (Aurora Gold, 128 GB Storage 8 GB RAM)",
         "productImg": "mobile (55).jpeg",
         "rating": 4.6,
         "category":"mobile",
@@ -464,16 +464,16 @@
         "price": 18999
     },
     {
-        "name": "vivo T3x 5G (Crimson Bliss, 128 GB)",
-        "description": "vivo T3x 5G (Crimson Bliss, 128 GB)",
+        "name": "vivo T3x 5G (Crimson Bliss, 128 GB 4 GB RAM)",
+        "description": "vivo T3x 5G (Crimson Bliss, 128 GB Storage 4 GB RAM)",
         "productImg": "mobile (56).jpeg",
         "rating": 4.5,
         "category":"mobile",
         "price": 14499
     },
     {
-        "name": "vivo T3x 5G (Crimson Bliss, 128 GB)",
-        "description": "vivo T3x 5G (Crimson Bliss, 128 GB)",
+        "name": "vivo T3x 5G (Crimson Bliss, 128 GB 8GB RAM)",
+        "description": "vivo T3x 5G (Crimson Bliss, 128 GB storage 8 GB RAM)",
         "productImg": "mobile (56).jpeg",
         "rating": 4.5,
         "category":"mobile",
