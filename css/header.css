@@ -51,7 +51,7 @@
   }
 
   #header-bluebg .searchBar_h input{
-    width: 28vw;
+    width: 100%;
     padding: 5px;
   }
   .cartLogoandname{
