@@ -81,3 +81,11 @@ footer .footerEnd a{
     flex-flow: column;
 }
 }
+
+#visitorCount{
+    margin-top: 30px;
+}
+
+#visitorCount a{
+    /* padding: 20px; */
+}
