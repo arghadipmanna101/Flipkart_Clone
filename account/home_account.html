@@ -12,72 +12,35 @@
     <link rel="stylesheet" href="../css/account.css" />
 </head>
 
+<body>
+
 <header id="header-account" class="text-center text-secondary fs-4">
     This is Header
 </header>
 
 <section>
-    <style>
-       section .container {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 30px;
-  box-shadow: 0 4px 8px rgba(91, 77, 77, 0.1);
-  max-width: 100%;
-}
-
-section h1 {
-  color: #1149ff;
-}
-
-section .form-group label {
-  color: #343a40;
-}
-
-section .form-control {
-  border: 1px solid #ced4da;
-}
-
-section .form-control:focus {
-  border-color: #0755ff;
-  box-shadow: 0 0 0 0.2rem rgba(12, 82, 163, 0.25);
-}
-
-section .btn-primary {
-  background-color: #007bff;
-  border-color: #007bff;
-}
-
-section .btn-primary:hover {
-  background-color: #0056b3;
-  border-color: #0056b3;
-}
-
-section .btn-primary:focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
-}
-    </style>
     <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-12 col-md-8">                
-                <h1 class="text-center mb-4" style="display: inline-block;"><img src="../img/flipkardLoader.png" alt="Flipkart Logo" class="img-fluid mb-4 mx-auto" style="width: 100%; max-width: 180px;">lipkart Profile</h1>
+                <h1 class="text-center mb-4" style="display: inline-block;">
+                    <img src="/img/flipkardLoader.png" alt="Flipkart Logo" class="img-fluid mb-4 mx-auto" style="width: 100%; max-width: 180px;">Flipkart Profile
+                </h1>
                 <form>
                     <div class="form-group">
                         <label for="name">Full Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+                        <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email Address</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter your email address">
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
                     </div>
                     <div class="form-group">
                         <label for="address">Address</label>
-                        <input type="text" class="form-control" id="address" placeholder="Enter your address">
+                        <input type="text" class="form-control" id="address" placeholder="Enter your address"required>
                     </div>
                     <div class="form-group">
                         <label for="payment">Payment Information</label>
-                        <input type="text" class="form-control" id="payment" placeholder="Enter your payment information">
+                        <input type="text" class="form-control" id="payment" placeholder="Enter your payment information" required>
                     </div>
                     <div class="form-group">
                         <label>Gender</label>
@@ -96,20 +59,36 @@ section .btn-primary:focus {
                     </div>
                     <div class="form-group">
                         <label for="orderHistory">Order History</label>
-                        <textarea class="form-control" id="orderHistory" rows="3" placeholder="Enter your order history"></textarea>
+                        <textarea class="form-control" id="orderHistory" rows="3" placeholder="Enter your order history" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Save</button>
                 </form>
             </div>
         </div>
     </div>
+    <div id="FAQ">  
+        <h1> FAQ </h1>
+        <h4 id="heading"> What happens when I update my email address (or mobile number)? </h4> 
+        <p id="para">Your login email id (or mobile number) changes, likewise. You'll receive all your account related communication on your updated email address (or mobile number).</p> 
+        <h4 id="heading"> When will my Flipkart account be updated with the new email address (or mobile number)?</h4> 
+        <p id="para"> It happens as soon as you confirm the verification code sent to your email (or mobile) and save the changes.</p> 
+            <h4 id="heading"> What happens to my existing Flipkart account when I update my email address (or mobile number)?</h4>
+            <p id="para">Updating your email address (or mobile number) doesn't invalidate your account. Your account remains fully functional. You'll continue seeing your Order history, saved information and personal details.</p> 
+        <h4 id="heading">  Does my Seller account get affected when I update my email address? </h4> 
+        <p id="para">Flipkart has a 'single sign-on' policy. Any changes will reflect in your Seller account also. </p> 
+        </p>
+    
+     </div>
+     <div>
+        <button class="btn-primary2 "> Deactive </button>
+    </div>
+   <br>
 </section>
-
 
 <footer id="footer-account" style="background-color: #293649 !important"></footer>
 <script src="../js/bootstrap.bundle.min.js"></script>
 <script src="../js/account.js"></script>
 
-<body></body>
+</body>
 
 </html>
