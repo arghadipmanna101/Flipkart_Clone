@@ -48,7 +48,15 @@ footer .social ul{
     align-items: center;
 }
 footer .social li{
-    margin: 5px;
+    padding: 4px; /* Match the hover padding */
+    border: 2px solid transparent; /* Create space for the border on hover */
+    margin: 1px; /* Compensate for the border */
+}
+
+footer .social li:hover{
+    background-color: #454d5e;
+    border-radius: 50%;
+    border-color: #454d5e; /* Match the hover background color */
 }
 
 footer .footerEnd{
