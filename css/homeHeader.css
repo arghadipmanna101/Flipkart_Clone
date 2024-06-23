@@ -23,7 +23,7 @@
 }
 
 #searchbar.navtab{
-  width: 750px;
+  width: 100%;
   border-radius: 10px;
 }
 .homeHeader .nav-link {

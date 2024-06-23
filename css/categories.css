@@ -1,5 +1,5 @@
 .categorylist-wrapper {
-  width: 100vw;
+  width: 100%;
   overflow-x: scroll;
   /* z-index: 500; */
 }
@@ -41,7 +41,7 @@
   gap: 15px 5px;
   flex-wrap: wrap;
   width: auto;
-  max-width: 300px;
+  max-width: 100%;
   height: auto;
   left: 100%;
   top: 0;
