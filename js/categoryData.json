@@ -46,7 +46,11 @@
     
     {
         "id": "Mobiles",
+
+        "name":"Mobiles",
+
         "name":"Mobiles & Tablets",
+
         "icon": "mobile.webp",
         "subcategories": [
         {
@@ -151,12 +155,14 @@
         ]
     },
     {
+
         "id": "appliances",
         "name":"TVs & Appliances",
         "icon": "tv.webp",
         "subcategories": []
     },
     {
+
         "id": "home-kitchen",
         "name":"Home & Kitchen",
         "icon": "homekit.webp",
@@ -194,47 +200,36 @@
             }
         ]
     },
+    
     {
-        "id": "appliances",
-        "name":"Appliances",
-        "icon": "appliances.jpg",
+        "id": "beauty",
+        "name": "Beauty, Toys & More",
+        "icon": "beauty.webp",
         "subcategories": [
-                {
-                    "id": "kitchen-appliances",
-                    "name": "Kitchen Appliances",
-                    "icon": "appliance.png",
-                    "subcategories": ["Microwaves", "Refrigerators", "Dishwashers"]
-                },
-                {
-                    "id": "laundry-appliances",
-                    "name": "Laundry Appliances",
-                    "icon": "appliance.png",
-                    "subcategories": ["Washing Machines", "Dryers"]
-                },
-                {
-                    "id": "small-appliances",
-                    "name": "Small Appliances",
-                    "icon": "appliance.png",
-                    "subcategories": ["Blenders", "Toasters", "Coffee Makers"]
-                },
-                {
-                    "id": "air-conditioning",
-                    "name": "Air Conditioning",
-                    "icon": "appliance.png",
-                    "subcategories": ["Air Conditioners", "Fans", "Air Purifiers"]
-                },
-                {
-                    "id": "brands",
-                    "name": "Brands",
-                    "icon": "appliance.png",
-                    "subcategories": ["LG", "Samsung", "Whirlpool", "GE"]
-                }
-            ]
+            {
+                "id": "face",
+                "name": "Face",
+                "icon": "beautyToys.png",
+                "subcategories": ["Foundation", "Concealer", "Powder"]
+            },
+            {
+                "id": "eyes",
+                "name": "Eyes",
+                "icon": "beautyToys.png",
+                "subcategories": ["Eyeshadow", "Mascara", "Eyeliner"]
+            },
+            {
+                "id": "lips",
+                "name": "Lips",
+                "icon": "beautyToys.png",
+                "subcategories": ["Lipstick", "Lip Gloss", "Lip Liner"]
+            }
+        ]
     },
     {
         "id": "travel",
         "name":"Travel",
-        "icon": "travel.png",
+        "icon": "travel.webp",
         "subcategories": [
                 {
                     "id": "destinations",
@@ -261,6 +256,7 @@
                     "subcategories": ["Luggage", "Backpacks", "Travel Accessories"]
                 }
         ]
+
     },
     {
         "id": "beauty",
@@ -293,6 +289,7 @@
         "icon": "travel.webp",
         "subcategories": [
         ]
+
     }
     
 ]
