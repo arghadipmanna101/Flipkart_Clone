@@ -5,6 +5,7 @@
         "icon": "topoffer.webp",
         "subcategories":[]
     },
+
     {
         "id": "grocery",
         "name": "Grocery",
@@ -42,9 +43,14 @@
             }
         ]
     },
+    
     {
         "id": "Mobiles",
+
         "name":"Mobiles",
+
+        "name":"Mobiles & Tablets",
+
         "icon": "mobile.webp",
         "subcategories": [
         {
@@ -149,6 +155,14 @@
         ]
     },
     {
+
+        "id": "appliances",
+        "name":"TVs & Appliances",
+        "icon": "tv.webp",
+        "subcategories": []
+    },
+    {
+
         "id": "home-kitchen",
         "name":"Home & Kitchen",
         "icon": "homekit.webp",
@@ -242,6 +256,40 @@
                     "subcategories": ["Luggage", "Backpacks", "Travel Accessories"]
                 }
         ]
+
+    },
+    {
+        "id": "beauty",
+        "name": "Beauty, Toys & More",
+        "icon": "beauty.webp",
+        "subcategories": [
+            {
+                "id": "face",
+                "name": "Face",
+                "icon": "beautyToys.png",
+                "subcategories": ["Foundation", "Concealer", "Powder"]
+            },
+            {
+                "id": "eyes",
+                "name": "Eyes",
+                "icon": "beautyToys.png",
+                "subcategories": ["Eyeshadow", "Mascara", "Eyeliner"]
+            },
+            {
+                "id": "lips",
+                "name": "Lips",
+                "icon": "beautyToys.png",
+                "subcategories": ["Lipstick", "Lip Gloss", "Lip Liner"]
+            }
+        ]
+    },
+    {
+        "id": "travel",
+        "name":"Travel",
+        "icon": "travel.webp",
+        "subcategories": [
+        ]
+
     }
     
 ]

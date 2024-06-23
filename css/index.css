@@ -104,6 +104,7 @@ body {
   text-align: center;
   font-size: 14px;
   font-weight: 500;
+
 }
 
 .categories li a {
@@ -129,6 +130,7 @@ body {
   z-index: 500;
 }
 
+
 .categories li ul li img{
   display: none;
 }
@@ -153,18 +155,18 @@ body {
   object-fit: cover;
   transition: transform 0.3s ease 0.1s, width 2s, height 2.5s;
 
+.categories li img{
+  width: 64px;
+  height: 64px;
+
 }
 
-.category:hover {
-  transform: scale(1.1025);
+.categories li ul li img{
+  display: none;
+ 
 }
 
-.category h3 {
-  font-size: 18px;
-  color: #333333;
-}*/
 
-/*Other Top Deals*/
 #category-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -209,7 +211,7 @@ body {
 .category-container:hover .show-items-btn {
   display: block;
 }
-
+ 
 /* Responsive adjustments */
 @media (max-width: 768px) {
   #category-grid {
@@ -242,6 +244,8 @@ body {
   line-height: 20px;
   font-size: 12px;
   z-index: 1000;
+  margin-top: 25px;
+
 }
 .grocery{
   left:5%;
@@ -268,7 +272,7 @@ body {
   left:70%;
 }
 .twowheelers{
-  left:80%;
+  right:15%;
 }
 
 .dropdownbox > div > div + div{
@@ -679,7 +683,10 @@ Search Bar
 .loader-wrapper {
   position: relative;
 }
-
+.banner{
+  width:100%;
+  margin: 10px 0px;
+}
 .loader {
   border: 10px solid #e4e3e3;
   border-radius: 50%;
@@ -728,7 +735,7 @@ Search Bar
   font-weight: 500;
   font-size: 16px;
   color: #878787;
-
+}
 .brand-directory{
   background-color: white;
   padding: 20px 30px;
@@ -740,3 +747,4 @@ Search Bar
   font-weight: 24px;
   color:black ;
 
+}
