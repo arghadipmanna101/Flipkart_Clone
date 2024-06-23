@@ -14,9 +14,15 @@ body {
     padding: 30px;
 
 }
-
+.signupin .leftpanal .login-display {
+    margin: 40px 30px;
+    font-weight: bold;
+}
+.signupin .leftpanal p{
+    margin: 0 30px;
+    color: #ccc;
+}
 .signupin .leftpanal {
-    padding: 10px;
     background-color: #2874F0;
     color: #fff;
     background-image: url(../img/login_img_bg.png);
@@ -35,6 +41,9 @@ body {
     align-items: center;
     justify-content: center;
 
+}
+.LSOAQH .QqFHMw {
+    height: 45px;
 }
 
 ._7Pd1Fp {
@@ -55,11 +64,11 @@ body {
 .I-qZ4MvLRlQb {
     position: relative;
     margin: 50px auto;
-    width: 200px;
+    width: 350px;
 }
 
 .I-qZ4MvLRlQb input[type="text"] {
-    font-size: 20px;
+    font-size: 17px;
     width: 100%;
     border: none;
     border-bottom: 2px solid #ccc;
@@ -70,7 +79,7 @@ body {
 
 .I-qZ4MvLRlQb .label {
     position: absolute;
-    top: -5px;
+    top: 12px;
     left: 0;
     color: #ccc;
     transition: all 0.3s ease;
@@ -79,10 +88,10 @@ body {
 
 .I-qZ4MvLRlQb input[type="text"]:focus~.label,
 .I-qZ4MvLRlQb input[type="text"]:valid~.label {
-    top: -10px;
+    top: -15px;
     font-size: 12px;
     font-weight: 500;
-    color: #0f0d0d;
+    color: #423e3e;
 }
 
 .I-qZ4MvLRlQb .underline {
