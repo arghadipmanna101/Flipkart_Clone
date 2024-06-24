@@ -9,7 +9,7 @@
   font-size: medium;
 }
 #header-bluebg .secondNav{
-    background: #fff;
+    background: #2874F0;
     font-size: 14px;
 }
 #header-bluebg .secondNav a{
@@ -46,7 +46,7 @@
   
   #header-bluebg a ,#more_h{
     text-decoration: none;
-    color: #fff;
+    color: black;
     font-weight: 600;
   }
 
