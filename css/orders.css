@@ -65,3 +65,30 @@ main ul li {
     }
 }
 
+h2, p {
+    animation: fadeIn 2s ease-in-out;
+}
+
+h2 {
+    color: darkgreen;
+    text-align: start;
+    margin-top: 20px;
+    margin-left: 15px ;
+}
+
+p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
