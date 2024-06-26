@@ -7,13 +7,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const icon = document.createElement("img");
         icon.src = "img/" + categoryData.icon;
+        icon.style.display = "block";
+        icon.style.margin = "auto";
 
         const nameLink = document.createElement("a");
         nameLink.href = categoryData.name + "-/"; //find index.html
         nameLink.textContent = categoryData.name;
 
         const name = document.createElement("span");
-        name.appendChild(document.createElement("br"));
+        // name.appendChild(document.createElement("br"));
         name.appendChild(nameLink);
 
         categoryItem.appendChild(icon);
