@@ -16,23 +16,29 @@
   <!-- Header -->
   <header id="header-appliance"></header>
 
+  <!-- Back Button -->
+  <div class="container mt-3">
+    <button class="btn btn-secondary" onclick="goBack()">Back</button>
+  </div>
 
-<!-- data fetch -->
-  <div class="containter-fluid bg-white">
-    <div class="containter-fluid p-3 mt-1" style="border-bottom: 1px solid #e4e7eb;">
+  <!-- Data fetch -->
+  <div class="container-fluid bg-white">
+    <div class="container-fluid p-3 mt-1" style="border-bottom: 1px solid #e4e7eb;">
       <h4>Appliance</h4>
     </div>
     <div id="appliances-product" class="row m-1"></div>
   </div>
 
+  <footer id="footer-appliance" style="background-color: #292d33;"></footer>
 
-
-
-
-  <footer id="footer-appliance" style="background-color: #292d33;"> </footer>
-  <!-- javaScript -->
+  <!-- JavaScript -->
   <script src="../js/bootstrap.bundle.min.js"></script>
   <script src="../js/appliances-script.js"></script>
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
 </body>
 
 </html>
