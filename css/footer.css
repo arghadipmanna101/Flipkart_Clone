@@ -69,6 +69,7 @@ footer .footerEnd a{
     text-decoration: none; 
     color: #fff
 }
+
 @media screen and (max-width: 770px){
 .pCGSTEF{
     width: 80vw;
