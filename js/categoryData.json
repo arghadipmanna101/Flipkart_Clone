@@ -1,8 +1,15 @@
 [
     {
+        "id": "top-offers",
+        "name": "Top Offers",
+        "icon": "topoffer.webp",
+        "subcategories":[]
+    },
+
+    {
         "id": "grocery",
         "name": "Grocery",
-        "icon": "grocery.png",
+        "icon": "grocery.webp",
         "subcategories": [
             {
                 "id": "fruits-vegetables",
@@ -36,10 +43,11 @@
             }
         ]
     },
+    
     {
         "id": "Mobiles",
-        "name":"Mobiles",
-        "icon": "mobiles.png",
+        "name":"Mobiles & Tablets",
+        "icon": "mobile.webp",
         "subcategories": [
         {
             "id": "smartphones",
@@ -76,7 +84,7 @@
     {
         "id": "Fashion",
         "name": "Fashion",
-        "icon": "fashion.png",
+        "icon": "fashion.webp",
         "subcategories": [
             {
                 "id": "mens-top_wear",
@@ -125,7 +133,7 @@
     {
         "id": "electronics",
         "name": "Electronics",
-        "icon": "electronics.png",
+        "icon": "elec.webp",
         "subcategories": [
          
             {
@@ -142,11 +150,22 @@
             }
         ]
     },
-   
+    {
+        "id": "appliances",
+        "name":"TVs & Appliances",
+        "icon": "tv.webp",
+        "subcategories": []
+    },
+    {
+        "id": "home-kitchen",
+        "name":"Home & Kitchen",
+        "icon": "homekit.webp",
+        "subcategories": []
+    },
     {
         "id": "home-furniture",
-        "name": "Home & Furniture",
-        "icon": "home&furniture.jpg",
+        "name": "Furniture",
+        "icon": "furniture.webp",
         "subcategories": [
             {
                 "id": "Kitchen-appliances",
@@ -246,7 +265,7 @@
     {
         "id": "beauty",
         "name": "Beauty, Toys & More",
-        "icon": "beautyToys.png",
+        "icon": "beauty.webp",
         "subcategories": [
             {
                 "id": "face",
@@ -268,22 +287,12 @@
             }
         ]
     },
-    
     {
-        "id": "twowheelers",
-        "name": "Two Wheelers",
-        "icon": "twowheelers.png",
+        "id": "travel",
+        "name":"Travel",
+        "icon": "travel.webp",
         "subcategories": [
-            {
-                "id": "petrol-vehicles",
-                "name": "Petrol Vehicles",
-                "subcategories": ["TVS scooty","Honda"]
-            },
-            {
-                "id": "electric-vehicles",
-                "name": "Electric Vehicles",
-                "subcategories": ["Ola Electric S1","Ather 450X"]
-            }
         ]
     }
+    
 ]
