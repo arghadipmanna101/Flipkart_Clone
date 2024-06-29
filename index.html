@@ -683,36 +683,71 @@
 			</div>
 			</div>  
 </div>
-	<!-- go to top button -->
-	<button id="goToTopBtn" class="hidden"><i class="fas fa-chevron-up"></i></button>
-	<!-- footer fetch to components : components/footer/footer.html -->
-	<footer id="footer" style="background-color: #292d33;"></footer>
+<!-- go to top button -->
+<button id="goToTopBtn" class="hidden"><i class="fas fa-chevron-up"></i></button>
+<!-- footer fetch to components : components/footer/footer.html -->
+<footer id="footer" style="background-color: #292d33;"></footer>
 
-	<!-- voiceflow.chat script -->
-	<script type="text/javascript">
-		(function (d, t) {
-			var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-			v.onload = function () {
-				window.voiceflow.chat.load({
-					verify: { projectID: '6647471456cab012ae016d07' },
-					url: 'https://general-runtime.voiceflow.com',
-					versionID: 'production'
-				});
-			}
-			v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
-		})(document, 'script');
-	</script>
-
-	<script src="js/bootstrap.bundle.min.js"></script>
-	<script src="js/homeHeader.js"></script>
-	<script src="js/categoryjs.js"></script>
-	<script src="js/searchIndexProducts.js"></script>
-	<script src="js/fetchProductOfIndex.js"></script>
-	<script src="js/index.js"></script>
-	<script type="text/javascript"
-	src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+<!-- voiceflow.chat script -->
+<script type="text/javascript">
+    (function (d, t) {
+        var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        v.onload = function () {
+            window.voiceflow.chat.load({
+                verify: { projectID: '6647471456cab012ae016d07' },
+                url: 'https://general-runtime.voiceflow.com',
+                versionID: 'production'
+            });
+        }
+        v.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
+        v.type = "text/javascript";
+        s.parentNode.insertBefore(v, s);
+    })(document, 'script');
 </script>
-	<script src="js/contactus.js"></script>
-	
+
+<!-- Smooth Scroll for "Go to Top" Button -->
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+        var goToTopBtn = document.getElementById('goToTopBtn');
+        window.onscroll = function () {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                goToTopBtn.classList.remove('hidden');
+            } else {
+                goToTopBtn.classList.add('hidden');
+            }
+        };
+        goToTopBtn.onclick = function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    });
+</script>
+
+<!-- Dynamic Footer Loading -->
+<script type="text/javascript">
+    fetch('components/footer/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        });
+</script>
+
+<!-- Conditional Loading of Scripts -->
+<script type="text/javascript">
+    if (/* condition for loading email.js */) {
+        var emailScript = document.createElement('script');
+        emailScript.src = "https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js";
+        document.body.appendChild(emailScript);
+    }
+</script>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/homeHeader.js"></script>
+<script src="js/categoryjs.js"></script>
+<script src="js/searchIndexProducts.js"></script>
+<script src="js/fetchProductOfIndex.js"></script>
+<script src="js/index.js"></script>
+<script src="js/contactus.js"></script>
+
 </body>
 </html>
+
