@@ -4,6 +4,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+
 	<meta name="theme-color" content="#2874F0" id="themeColor">
 	<title>Flipkart | Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books &amp; More.
 		Best Offers!</title>
@@ -32,7 +36,6 @@
 	</div>
 	<!-- loader end -->
 
-
 	<!--Header start  -->
 	<header id="homeHeader">
 		<nav class="navbar homeHeader navbar-expand-lg navbar-light bg-light">
@@ -43,9 +46,9 @@
 			<div id="navbarNav_">
 				<ul class="navbar-nav">
 					<li class="nav-item navItem1">
-						<div id="searchbar" class="navtab">
-							<span id="searchButton" style="display: flex;align-items: center;">
-								<svg width="24" height="24" class="" viewBox="0 0 24 24" fill="none"
+						<div id="searchbar" class="navtab" style="background-color: #F0F5FF; width:43vw; margin-left:-1vw">
+							<span id="searchButton" style="display: flex;align-items: center; justify-content:space-between;margin-left:15vw;">
+								<svg width="300" height="24" class="" viewBox="0 0 24 24" fill="none"
 									xmlns="http://www.w3.org/2000/svg">
 									<title>Search Icon</title>
 									<path
@@ -57,12 +60,13 @@
 								</svg>
 							</span>
 							<span class="flex-grow">
-								<input id="input_data" class="searchbar" type="text" placeholder="Search for Products, Brands and More" />
+								<input id="input_data" class="searchbar"   type="text" placeholder="Search for Products, Brands and More" />
 							</span>
 							<div id="autocompleteResults" class="autocom-box" style="display: none;
 							position: absolute;
 							top: 67px;
-							background: rgb(255, 255, 255);
+							
+							background:#f0f5ff;
 							padding: 10px;
 							border: rgba(255, 51, 255, 0.2);">
 							</div>
@@ -70,18 +74,22 @@
 					</li>
 				</ul>
 				<ul  class="navbar-nav ml-auto"
-					style="flex-wrap: nowrap;flex-direction: row;width: 40vw; justify-content: space-around">
+					style="flex-wrap: nowrap;flex-direction: row;width: 30vw; justify-content: space-between;margin-left: 20px;">
 					<li class="nav-item navItem2 dropdown" id="navbarDropdow">
-						<a class="nav-link nav-dd acnavdd" href="#" id="navbarDropdown" role="button"
+						<a class="nav-link nav-dd acnavdd" href="#" id="navbarDropdown" role="button" style="width: 10vw; margin-top:2vh;"
 							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							<img src="img/svg/profile-.svg" alt="Profile" />
-							<span class="navname navname_ac"> Login <i class="bi bi-chevron-down"></i><i
+							<span class="navname navname_ac" style="width:50vw;"> Login <i class="bi bi-chevron-down"></i><i
 									class="bi bi-chevron-up"></i></span>
 						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="left: 0;">
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="left: 0px;">
 							<a class="dropdown-item" href="account/home_account.html">
 								<img width="20" src="img/svg/profile-.svg" alt="flipKart">
 								My Profile </a>
+
+								<a class="dropdown-item" href="login/login.html">
+									<img width="20" src="img/svg/profile-.svg" alt="flipKart">
+									Log into account </a>
 
 							<a class="dropdown-item" href="account/login-signup.html">
 								<img width="20" src="img/svg/profile-.svg" alt="flipKart">
@@ -95,6 +103,9 @@
 							<a class="dropdown-item" href="wishlist/">
 								<img width="20" src="img/svg/wishList.svg" alt="flipKart">
 								Wishlist</a>
+							<a class="dropdown-item" href="account/notifications.html">
+								<img width="20" src="img/svg/notifications.svg" alt="flipKart">
+								Notifications</a>
 							<a class="dropdown-item" href="account/rewards.html">
 								<img width="20" src="img/svg/rewards.svg" alt="flipKart">
 								Rewards</a>
@@ -107,20 +118,20 @@
 						</div>
 					</li>
 					<li class="nav-item navItem3">
-						<a class="nav-link cartLogoandname" href="viewcart/">
+						<a class="nav-link cartLogoandname" style="width: 10vw; margin-top:2vh;" href="viewcart/">
 							<img
 								src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg" />
 							<span class="navname2">Cart</span><span id="cartItems"></span>
 						</a>
 					</li>
 					<li class="nav-item navItem4">
-						<a class="nav-link" href="sell-online/">
+						<a class="nav-link" href="sell-online/" style="width: 12vw;font-size:small; margin-top:2vh;">
 							<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg"
 								alt="Become a Seller" />
 							<span class="navname3">Become a Seller</span>
 						</a>
 					</li>
-					<li class="nav-item navItem5 dropdown " id="moreLinksDropdow">
+					<li class="nav-item navItem5 dropdown " id="moreLinksDropdow" style="width: 10vw; margin-top:2vh;">
 						<a class="nav-link nav-dd" href="#" id="moreLinksDropdown" role="button" data-toggle="dropdown"
 							aria-haspopup="true" aria-expanded="false">
 							<img class="nav-dd"
@@ -493,7 +504,7 @@
           <br>
           6 months Gaana plus subscription
           <br>
-          Rupees 550 instant discount on flights on ixigo
+          Get an instant discount of Rupees 550 on Akasa flights
           <br>
           Check out https://www.flipkart.com/plus/all-offers for the entire list. Terms and conditions apply.
           <br><br>
@@ -566,9 +577,9 @@
 
 	<!-- FAQ Section -->
 	<div class="container" id="faq">
-		<div class="container mt-5">
-			<h2 class="text-center mb-4 heading">Frequently Asked Questions</h2>
-			<div class="accordion" id="faqAccordion">
+		<div style="display: flex;" class="container mt-5">
+			<h2 style="width: 35%;padding-left: 5vw;" class="text-center mb-4 heading">Frequently Asked Questions</h2>
+			<div style="width: 65%;" class="accordion" id="faqAccordion">
 				<div class="accordion-item">
 					<h2 class="accordion-header" id="headingOne">
 						<button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -706,6 +717,15 @@
 	src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
 	<script src="js/contactus.js"></script>
+
+	<label for="rating-filter">Minimum Rating:</label>
+<select id="rating-filter">
+    <option value="1">1 Star</option>
+    <option value="2">2 Stars</option>
+    <option value="3">3 Stars</option>
+    <option value="4">4 Stars</option>
+    <option value="5">5 Stars</option>
+</select>
 	
 </body>
 </html>

@@ -27,13 +27,33 @@ text-align: left;
 ::placeholder{
     color: #0000006B;
 }
+
+@keyframes blink {
+    0% {
+        box-shadow: 0 4px 8px rgba(255, 255, 255, 0.25);
+    }
+    50% {
+        box-shadow: 0 4px 8px rgba(255, 255, 255, 1);
+    }
+    100% {
+        box-shadow: 0 4px 8px rgba(255, 255, 255, 0.25);
+    }
+}
+
 .form-container {
    background: #FF7D1F63;
 
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 2.5);
     width: 400px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.form-container:hover {
+    transform: scale(1.05); /* Slightly enlarge the element */
+    animation: blink 1.5s infinite;
 }
 
 .form-container h1 {
