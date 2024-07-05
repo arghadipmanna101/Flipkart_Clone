@@ -28,6 +28,7 @@ footer .footerTop ul{
 footer .footerI h5{
     color: whitesmoke;
     font-size: white;
+    font-size: 20px;
     margin: 20px 0px;
 }
 footer .mailSocial{
@@ -51,6 +52,7 @@ footer .social ul{
 footer .social li{
     margin: 5px;
     opacity: 0.75;
+    color: rgb(155, 155, 155);
 }
 footer .social a img 
 {
