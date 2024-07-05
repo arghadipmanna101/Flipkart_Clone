@@ -555,6 +555,16 @@ Search Bar
   background-color: #f8f9fa;
 }
 
+#faq .accordion .accordion-body p {
+  transition: transform 0.3s ease;
+}
+
+#faq .accordion .accordion-body p:hover {
+  transform: scale(1.05);
+  color: #0a94f7; 
+}
+
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   #faq .heading {
