@@ -26,13 +26,12 @@ footer .footerTop ul{
     margin: 0;
 }
 footer .footerI h5{
-    color: #878787;
-    font-size: 16px;
-    margin: 20px 5px;
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    color: whitesmoke;
+    font-size: white;
+    margin: 20px 0px;
 }
 footer .mailSocial{
-    border-left: 1px solid #454d5e;
+    border-left: 2px solid white;
     padding-left: 32px;
 }
 @media screen and (max-width: 991px) {
