@@ -83,16 +83,17 @@ body {
 
 
 .categories {
-  display: flex;
-  align-items: flex-start;
+  display:grid;
+  grid-auto-flow: column;
   justify-content: space-between;
   background-color: rgb(255, 253, 253);
   position: relative;
   padding: 0;
+  height: calc(100% - 16px);
   padding: 0 4%;
   width: 100%;
   min-width: 1000px;
-  box-shadow: 0 0 10px rgb(87, 110, 172);
+  box-shadow: 0 0 4px rgb(76, 76, 76);
 }
 
  .categories>li {
@@ -100,12 +101,16 @@ body {
   display: inline-block;
   padding: 20px 15px;
   cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+
 }
 
 .categories li a {
   text-decoration: none;
   color: black;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .categories>li>ul {
@@ -125,8 +130,14 @@ body {
   z-index: 500;
 }
 
+.categories li img{
+  width: 64px;
+  height: 64px;
+}
+
 .categories li ul li img{
   display: none;
+ 
 }
 
 
@@ -435,7 +446,7 @@ Search Bar
 /* FAQ Section Styles */
 
 #faq {
-  background: linear-gradient(45deg, #2d7cea, #e52e71);
+  background: linear-gradient(45deg , #e52e71, #2d7cea );
   border-radius: 15px;
   padding: 30px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -512,7 +523,7 @@ Search Bar
 
 #faq .heading {
   font-weight: bold;
-  color: #ff9f80;
+  color: white;
   font-size: 30px;
   text-align: center;
 }
@@ -525,7 +536,7 @@ Search Bar
 #faq .accordion .accordion-button {
   font-size: 1.1rem;
   font-weight: bold;
-  color: #007bff;
+  color: blueviolet;
   text-decoration: none;
   cursor: pointer;
 }
@@ -535,7 +546,7 @@ Search Bar
 }
 
 #faq .accordion .accordion-button:not(.collapsed) {
-  color: #333;
+  color: blueviolet;
   background-color: #fff;
 }
 
@@ -646,7 +657,10 @@ Search Bar
 .loader-wrapper {
   position: relative;
 }
-
+.banner{
+  width:100%;
+  margin: 10px 0px;
+}
 .loader {
   border: 10px solid #e4e3e3;
   border-radius: 50%;
@@ -706,4 +720,5 @@ Search Bar
 .brand-directory-heading{
   font-weight: 24px;
   color:black ;
+
 }

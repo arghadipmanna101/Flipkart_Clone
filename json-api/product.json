@@ -424,7 +424,7 @@
         "price": 13999
     },
     {
-        "name": "SAMSUNG Galaxy F14 5G (OMG Black, 128 GB)",
+        "name": "SAMSUNG Galaxy F14 5G (OMG Black,128 GB)",
         "description": "SAMSUNG Galaxy F14 5G (OMG Black, 128 GB)",
         "productImg": "mobile (52).jpeg",
         "rating": 4.3,
@@ -440,16 +440,16 @@
         "price": 18999
     },
     {
-        "name": "vivo T2x 5G (Aurora Gold, 128 GB)",
-        "description": "vivo T2x 5G (Aurora Gold, 128 GB)",
+        "name": "vivo T2x 5G (Aurora Gold, 4 GB 128 GB)",
+        "description": "vivo T2x 5G (Aurora Gold, 128 GB Storage 4 GB RAM)",
         "productImg": "mobile (55).jpeg",
         "rating": 4.6,
         "category":"mobile",
         "price": 17999
     },
     {
-        "name": "vivo T2x 5G (Aurora Gold, 128 GB)",
-        "description": "vivo T2x 5G (Aurora Gold, 128 GB)",
+        "name": "vivo T2x 5G (Aurora Gold, 8 GB 128 GB)",
+        "description": "vivo T2x 5G (Aurora Gold, 128 GB Storage 8 GB RAM)",
         "productImg": "mobile (55).jpeg",
         "rating": 4.6,
         "category":"mobile",
@@ -464,16 +464,16 @@
         "price": 18999
     },
     {
-        "name": "vivo T3x 5G (Crimson Bliss, 128 GB)",
-        "description": "vivo T3x 5G (Crimson Bliss, 128 GB)",
+        "name": "vivo T3x 5G (Crimson Bliss, 128 GB 4 GB RAM)",
+        "description": "vivo T3x 5G (Crimson Bliss, 128 GB Storage 4 GB RAM)",
         "productImg": "mobile (56).jpeg",
         "rating": 4.5,
         "category":"mobile",
         "price": 14499
     },
     {
-        "name": "vivo T3x 5G (Crimson Bliss, 128 GB)",
-        "description": "vivo T3x 5G (Crimson Bliss, 128 GB)",
+        "name": "vivo T3x 5G (Crimson Bliss, 128 GB 8GB RAM)",
+        "description": "vivo T3x 5G (Crimson Bliss, 128 GB storage 8 GB RAM)",
         "productImg": "mobile (56).jpeg",
         "rating": 4.5,
         "category":"mobile",
@@ -2087,6 +2087,97 @@
         "rating": 4.5,
         "category": "fashion-women",
         "price": 1899
-      }
-      
+      },
+     
+      {
+            "id": "flight1",
+            "name": "Air India Flight AI-101",
+            "category": "flights",
+            "productImg": "flight(1).jpg",
+            "rating": 4.5,
+            "price": 100000,
+            "originalPrice": 150000,
+            "discount": 33
+        },
+        {
+            "id": "flight2",
+            "name": "Indigo Flight 6E-203",
+            "category": "flights",
+            "productImg": "flight(2).jpg",
+            "rating": 4.2,
+            "price": 80000,
+            "originalPrice": 120000,
+            "discount": 25
+        },
+        {
+            "id": "flight3",
+            "name": "SpiceJet Flight SG-502",
+            "category": "flights",
+            "productImg": "flight(3).jpg",
+            "rating": 4.0,
+            "price": 90000,
+            "originalPrice": 130000,
+            "discount": 30
+        },
+        {
+            "id": "flight4",
+            "name": "GoAir Flight G8-451",
+            "category": "flights",
+            "productImg": "flight(4).jpg",
+            "rating": 4.3,
+            "price": 75000,
+            "originalPrice": 110000,
+            "discount": 32
+        },
+        {
+            "id": "flight5",
+            "name": "Vistara Flight UK-811",
+            "category": "flights",
+            "productImg": "flight(5).jpg",
+            "rating": 4.6,
+            "price": 95000,
+            "originalPrice": 140000,
+            "discount": 29
+        },
+        {
+            "id": "flight6",
+            "name": "AirAsia Flight I5-402",
+            "category": "flights",
+            "productImg": "flight(6).jpg",
+            "rating": 4.1,
+            "price": 70000,
+            "originalPrice": 105000,
+            "discount": 33
+        },
+        {
+            "id": "flight7",
+            "name": "Jet Airways Flight 9W-301",
+            "category": "flights",
+            "productImg": "flight(7).jpg",
+            "rating": 4.4,
+            "price": 85000,
+            "originalPrice": 125000,
+            "discount": 32
+        },
+        {
+            "id": "flight8",
+            "name": "Emirates Flight EK-500",
+            "category": "flights",
+            "productImg": "flight(8).jpg",
+            "rating": 4.7,
+            "price": 120000,
+            "originalPrice": 180000,
+            "discount": 33
+        },
+        {
+            "id": "flight9",
+            "name": "Qatar Airways Flight QR-571",
+            "category": "flights",
+            "productImg": "flight(9).jpg",
+            "rating": 4.8,
+            "price": 110000,
+            "originalPrice": 165000,
+            "discount": 33
+        }
+
 ]

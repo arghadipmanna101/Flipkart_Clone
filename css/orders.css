@@ -10,8 +10,7 @@ body {
 .orders {
     padding: 20px;
     text-align: left;
-    display: flex;
-    
+    /* display: flex; */
 }
 
 
@@ -31,4 +30,9 @@ p {
     font-size: 1.2em;
     line-height: 1.6;
     margin-bottom: 20px;
+}
+
+button span{
+    font-size: 13px;
+    /* padding: 0px 10px; */
 }
