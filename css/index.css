@@ -717,6 +717,13 @@ Search Bar
   letter-spacing: 0;
 
 }
+#rating-filter {
+    margin: 10px;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
 .brand-directory-heading{
   font-weight: 24px;
   color:black ;
