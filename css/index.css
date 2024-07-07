@@ -446,7 +446,7 @@ Search Bar
 /* FAQ Section Styles */
 
 #faq {
-  background: linear-gradient(45deg, #2d7cea, #e52e71);
+  background: linear-gradient(45deg , #e52e71, #2d7cea );
   border-radius: 15px;
   padding: 30px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -523,7 +523,7 @@ Search Bar
 
 #faq .heading {
   font-weight: bold;
-  color: #ff9f80;
+  color: white;
   font-size: 30px;
   text-align: center;
 }
@@ -536,7 +536,7 @@ Search Bar
 #faq .accordion .accordion-button {
   font-size: 1.1rem;
   font-weight: bold;
-  color: #007bff;
+  color: blueviolet;
   text-decoration: none;
   cursor: pointer;
 }
@@ -546,7 +546,7 @@ Search Bar
 }
 
 #faq .accordion .accordion-button:not(.collapsed) {
-  color: #333;
+  color: blueviolet;
   background-color: #fff;
 }
 
@@ -716,6 +716,13 @@ Search Bar
   color: #878787;
   letter-spacing: 0;
 
+}
+#rating-filter {
+    margin: 10px;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 .brand-directory-heading{
   font-weight: 24px;
