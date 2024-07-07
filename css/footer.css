@@ -27,8 +27,9 @@ footer .footerTop ul{
 }
 footer .footerI h5{
     color: #878787;
-    font-size: 12px;
+    font-size: 16px;
     margin: 20px 5px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
 }
 footer .mailSocial{
     border-left: 1px solid #454d5e;
@@ -49,6 +50,7 @@ footer .social li:hover {
 }
 footer .footerTop li:hover{
     text-decoration: underline;
+    text-decoration-thickness: 2px;
 }
 footer .social ul{
     display: flex;
@@ -58,10 +60,32 @@ footer .social li{
     margin: 5px;
     opacity: 0.75;
 }
-footer .social a:hover img{
-    transform: scale(1.5);
-    transition: .3s;
+footer .social a img 
+{
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, filter 0.3s ease-in-out;
+    border-radius: 50%;
 }
+footer .social a:hover img {
+    transform: scale(1.5) translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    filter: brightness(1.2) drop-shadow(2px 4px 6px black);
+}
+
+footer .social ul li:nth-child(1) a:hover {
+    color: #0951ed; 
+    filter: invert(29%) sepia(89%) saturate(4545%) hue-rotate(187deg) brightness(90%) contrast(103%);
+}
+
+footer .social ul li:nth-child(2) a:hover {
+    color: rgb(243, 5, 5);
+    filter: invert(41%) sepia(98%) saturate(3627%) hue-rotate(328deg) brightness(91%) contrast(103%);
+}
+
+footer .social ul li:nth-child(3) a:hover {
+    color: rgb(41, 202, 60);
+    filter: invert(16%) sepia(73%) saturate(7437%) hue-rotate(450deg) brightness(90%) contrast(98%);
+}
+
 footer .footerEnd{
     border-top: 1px solid #454d5e;
     padding: 25px 0;
@@ -93,4 +117,12 @@ footer .footerEnd a li:hover {
 .footerEnd{
     flex-flow: column;
 }
+}
+
+#visitorCount{
+    margin-top: 30px;
+}
+
+#visitorCount a{
+    /* padding: 20px; */
 }
