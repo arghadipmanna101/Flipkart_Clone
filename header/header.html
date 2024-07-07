@@ -11,7 +11,7 @@
   <link rel="stylesheet" type="text/css" href="../css/header.css">
   <style>
     .navbar-brand img {
-      width: 80px;
+      width: 100%;
     }
 
     .searchBar_h {
@@ -20,7 +20,7 @@
     }
 
     .searchBar_h input {
-      width: 300px;
+      width: 100%;
       padding: 5px 10px;
       border-radius: 5px;
       border: 1px solid #ccc;
@@ -61,6 +61,38 @@
     .navbar-toggler-icon {
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28155,155,155,1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
     }
+    #more_h {
+      cursor: pointer;
+      position: relative;
+      display: inline-block;
+      padding: 10px;
+      color: #fff;
+  }
+  #more-options {
+      display: none;
+      background-color: #050505;
+      box-shadow: 0 2px 2px rgba(0,0,0,0.15);
+      padding: 10px;
+      position: absolute;
+      z-index: 1;
+      top: 100%;
+      left: 0;
+      min-width: 150px;
+      border: 1px solid #e0e0e0;
+  }
+  #more_h:hover #more-options {
+      display: block;
+  }
+  .option-item {
+      color: #f4c3c3;
+      padding: 0px 0px;
+      text-decoration: none;
+      display: block;
+      font-size: 13px;
+  }
+  .option-item:hover {
+      text-decoration: none;
+  }
   </style>
 </head>
 
@@ -86,8 +118,13 @@
               <a href="../sell-online/">Become a Seller</a>
             </div>
             <div class="text-white" id="more_h">
-              More <i class="bi bi-chevron-down"></i><i class="bi bi-chevron-up"></i>
-            </div>
+              More <i class="bi bi-chevron-down"></i><i class="bi bi-chevron-up" style="display: none;"></i>
+              <div id="more-options">
+                  <a class="option-item" href="../gift-cards/index.html">Gift-Cards</a>
+                  <a class="option-item" href="../plus/index.html">Flipkart+</a>
+                  <a class="option-item" href="../account/contact.html">Contact Us</a>
+              </div>
+          </div>
             <div class="text-white cartLogoandname">
               <a href="../viewcart/">
                 <img src="../img/svg/cart_h.svg" alt="Cart"><span class="cart_h">Cart</span><span id="cartItems"></span>
@@ -139,7 +176,7 @@
                   class="bi bi-chevron-up"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../search/?query=offer">Offer Zone <i class="bi bi-chevron-down"></i><i
+              <a class="nav-link" href="../offerpage/offerportal.html">Offer Zone <i class="bi bi-chevron-down"></i><i
                   class="bi bi-chevron-up"></i></a>
             </li>
             <li class="nav-item">
