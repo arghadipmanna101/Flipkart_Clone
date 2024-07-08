@@ -3,14 +3,29 @@
   top: 0;
   width: 100%;
   z-index: 9999;
+  
 }
 
+.homeHeader *{
+  color: #000;
+}
+.flex-grow>input::placeholder{
+  font-size: 17px;
+  color: #666666;
+  font-weight: lighter;
+  padding-top: 5px;
+  letter-spacing: 0.01rem;
+}
 .homeHeader .nav-item {
   transition: background-color 0.5s ease;
   /* padding: 9px 13px; */
   margin: 0 3px;
 }
 
+#searchbar.navtab{
+  width: 100%;
+  border-radius: 10px;
+}
 .homeHeader .nav-link {
   text-decoration: none;
   color: #000;
@@ -18,7 +33,13 @@
   padding: 20px;
   width: 100%;
 }
-
+.navbar{
+  padding: 12px 28px;
+  display: inline;
+}
+a.navbar-brand{
+  padding-right: 20px;
+}
 .homeHeader .navtab {
   display: flex;
   justify-content: center;
@@ -102,6 +123,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 43px;
 }
 
 .cartLogoandname{

@@ -1,0 +1,159 @@
+.categorylist-wrapper {
+  width: 100%;
+  overflow-x: scroll;
+  /* z-index: 500; */
+}
+
+.categorylist-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+
+.categories {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: rgb(255, 253, 253);
+  position: relative;
+  padding: 0 4%;
+  width: 100%;
+  min-width: 1000px;
+  box-shadow: 0 0 10px rgb(87, 110, 172);
+
+}
+
+.categories>li {
+  position: static;
+  display: inline-block;
+  padding: 20px 15px;
+  /* cursor: pointer; */
+}
+
+.categories li a {
+  text-decoration: none;
+}
+
+.categories > li > .subcategories-container {
+  display: none;
+  position: fixed;
+  background-color: #fff;
+  padding: 15px;
+  gap: 15px 5px;
+  flex-wrap: wrap;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  left: 100%;
+  top: 0;
+  font-size: 14px;
+  overflow: hidden;
+  z-index: 500;
+  border: 1px solid #ddd;
+}
+
+.categories > li:hover > .subcategories-container {
+  display: block;
+}
+
+.categories > li:hover {
+  background-color: #bac8f6;
+  transition: all 0.5s;
+  border-radius: 20px;
+}
+
+.categories > li > .subcategories-container > .subcategories-list > li {
+  margin: 15px 0;
+  flex: 1 1 200px;
+  list-style-type: none;
+}
+
+.categories > li > .subcategories-container > .subcategories-list > li:hover {
+  color: rgb(112, 112, 166);
+}
+.categories li ul li img{
+  display: none;
+}
+
+#category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.category {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease 0.1s, width 2s, height 2.5s;
+
+}
+
+.category:hover {
+  transform: scale(1.1025);
+}
+
+.category h3 {
+  font-size: 18px;
+  color: #333333;
+}
+
+/*adding transition property to the images of the cateogory-grid section*/
+#category-grid img {
+  transition: transform 0.3s ease-in-out;
+}
+
+#category-grid img:hover {
+  transform: scale(1.1);
+  opacity: 0.82;
+}
+
+#categories {
+    list-style: none;
+    padding: 0;
+}
+
+.category-item {
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.category-item a {
+    text-decoration: none;
+    color: #000;
+}
+
+.subcategories-container {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.subcategories-list {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+}
+
+.subcategories-list li {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.subcategories-list li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.category-item:hover .subcategories-container {
+    display: block;
+}
