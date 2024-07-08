@@ -13,23 +13,69 @@
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/orders.css" />
+    <style>
+        .orders {
+            padding: 20px;
+        }
+        .bg-img {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .bg-img img {
+            max-width: 100%;
+            height: auto;
+        }
+        .cta-button {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .cta-button a {
+            padding: 10px 20px;
+            background-color: #2874F0;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .cta-button a:hover {
+            background-color: #0056b3;
+        }
+        .card {
+            margin: 20px 0;
+        }
+        .carousel-item img {
+            max-width: 150px; /* Adjust the max-width to resize the images */
+            height: auto;
+            margin: 0 auto; /* Center the images */
+        }
+        footer {
+            padding: 20px 0;
+            color: white;
+            text-align: center;
+        }
+    </style>
 </head>
 
+<body>
 <header id="header-orders" class="text-center text-secondary fs-4">
-    This is Header
+    <img src="../img/flipkart_lite.png" alt="Flipkart Logo" style="width: 50px;">
+    <h1>Flipkart Seller Hub</h1>
 </header>
 
 <!-- style="background-image: url(Desktop_sell.webp);" -->
-<div class="orders"  >
+<div class="orders">
 
-    <div class="text">
+    <div class="text text-center">
         <div class="div1">
             <h1>Sell Online with Flipkart</h1>
-            <p>Sell Online - Learn how to sell products online, optimize listings,and boost your business with Flipkart Seller
+            <p>Sell Online - Learn how to sell products online, optimize listings, and boost your business with Flipkart Seller
             Hub.
             Start your online selling journey today!</p>
         </div>
-        
+
+        <div class="cta-button">
+            <a href="#">Start Selling Now</a>
+        </div>
 
         <h1>Seller Success Stories</h1>
 
@@ -37,15 +83,81 @@
         represent just a fraction of the wide variety available on Flipkart, providing ample opportunities for sellers to
         showcase their products to a large customer base. Here are some popular categories to consider for online selling:</p>
     </div>
+    
+    <div id="successStoriesCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="card">
+                    <img src="John_doe.jpg" class="card-img-top" alt="Seller 1">
+                    <div class="card-body">
+                        <h5 class="card-title">John Doe</h5>
+                        <p class="card-text">John Doe started selling electronics on Flipkart two years ago. His business grew rapidly, and he now employs a team of 20 people. Flipkart's platform helped him reach a wider audience, and his revenue has increased by 150%.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <img src="Jane_smith.png" class="card-img-top" alt="Seller 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Jane Smith</h5>
+                        <p class="card-text">Jane Smith, a fashion designer, launched her clothing line on Flipkart. With the help of Flipkart's seller tools, she optimized her listings and improved her sales. Today, she is one of the top sellers in the fashion category and has expanded her product range significantly.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more carousel items as needed -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#successStoriesCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#successStoriesCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
     <div class="bg-img">
         <img src="Desktop_sell.png" alt="">
     </div>
-    
 </div>
-<footer id="footer-orders" style="background-color: #293649 !important"></footer>
+
+<footer id="footer-orders" style="background-color: #293649 !important">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h5>About</h5>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h5>Help</h5>
+                <ul>
+                    <li><a href="#">Payments</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Cancellation & Returns</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h5>Policy</h5>
+                <ul>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Terms Of Use</a></li>
+                    <li><a href="#">Security</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h5>Mail Us</h5>
+                <p>Flipkart Internet Private Limited, Buildings Alyssa, Begonia & Clove Embassy Tech Village, Bengaluru, 560103, Karnataka, India</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
 <script src="../js/bootstrap.bundle.min.js"></script>
 <script src="../js/orders.js"></script>
-
-<body></body>
-
+</body>
 </html>
+
