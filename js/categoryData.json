@@ -1,8 +1,15 @@
 [
     {
+        "id": "top-offers",
+        "name": "Top Offers",
+        "icon": "topoffer.webp",
+        "subcategories":[]
+    },
+
+    {
         "id": "grocery",
         "name": "Grocery",
-        "icon": "grocery.png",
+        "icon": "grocery.webp",
         "subcategories": [
             {
                 "id": "fruits-vegetables",
@@ -36,33 +43,88 @@
             }
         ]
     },
+    
     {
         "id": "Mobiles",
-        "name":"Mobiles",
-        "icon": "mobiles.png",
+        "name":"Mobiles & Tablets",
+        "icon": "mobile.webp",
         "subcategories": [
+        {
+            "id": "smartphones",
+            "name": "Smartphones",
+            "icon": "mobile.png",
+            "subcategories": ["Android Phones", "iPhones"]
+        },
+        {
+            "id": "accessories",
+            "name": "Accessories",
+            "icon": "mobile.png",
+            "subcategories": ["Chargers", "Cases", "Screen Protectors"]
+        },
+        {
+            "id": "wearables",
+            "name": "Wearables",
+            "icon": "mobile.png",
+            "subcategories": ["Smartwatches", "Fitness Trackers"]
+        },
+        {
+            "id": "audio",
+            "name": "Audio",
+            "icon": "mobile.png",
+            "subcategories": ["Earbuds", "Headphones", "Speakers"]
+        },
+        {
+            "id": "brands",
+            "name": "Brands",
+            "icon": "mobile.png",
+            "subcategories": ["Samsung", "Apple", "OnePlus", "Xiaomi"]
+          }
         ]
     },
     {
         "id": "Fashion",
         "name": "Fashion",
-        "icon": "fashion.png",
+        "icon": "fashion.webp",
         "subcategories": [
             {
-                "id": "mens-clothing",
-                "name": "Men's Clothing",
+                "id": "mens-top_wear",
+                "name": "Men's Top Wear",
                 "icon": "fashion.png",
-                "subcategories": ["Shirts", "Pants", "Jackets"]
+                "subcategories": ["All" ,"Men's T-Shirts", "Men's Casual Shirts","Men's Kurtas","Men's Ethnic Sets", "Men's Blazers", "Men's Raincoat","Men's Formal Shirts", "Men's Pants", "Men's Jackets"]
             },
             {
-                "id": "womens-clothing",
-                "name": "Women's Clothing",
+                "id": "mens-bottom_wear",
+                "name": "Men's Bottom Wear",
                 "icon": "fashion.png",
-                "subcategories": ["Dresses", "Skirts", "Tops"]
+                "subcategories": ["All" ,"Men's Jeans", "Men's Tousers","Men's Track Pants","Men's Shorts", "Men's Cargo", "Men's Threefourths","Men's Dhoti", "Men's Ethnic Pyjama", "Men's Pyjama & Loungerpants"]
+            },
+            {
+                "id": "womens-ethnics",
+                "name": "Women's Ethnic",
+                "icon": "fashion.png",
+                "subcategories": ["All","Women Sarees","Women kurtas & Kurtis","Women Kurta Set & Salwar Suits","Women Gowns","Women Blouse","Ethnic Dresses", "Women Dupatta"]
+            },
+            {
+                "id": "mens-Footwear_wear",
+                "name": "Men's Footwear",
+                "icon": "fashion.png",
+                "subcategories": ["All", "Men's Sports Shoe","Mens Casual shoes", "Shoe Care"]
+            },
+            {
+                "id": "women-Footwear_wear",
+                "name": "Women Footwear",
+                "icon": "fashion.png",
+                "subcategories": ["All","Women Flats","Women Heels","Women Sports Shoe","Women Casual shoes", "Shoe Care"]
+            },
+            {
+                "id": "watches_and_accessories",
+                "name": "Watches And Accessories",
+                "icon": "fashion.png",
+                "subcategories": ["All","Men & Women Watches", "Men & Women Sunglasses","Wallets","Mens & Women Belts"]
             },
             {
                 "id": "kids-clothing",
-                "name": "Kids' Clothing",
+                "name": "Kids",
                 "icon": "fashion.png",
                 "subcategories": ["T-shirts", "Jeans", "Dresses"]
             }
@@ -71,7 +133,7 @@
     {
         "id": "electronics",
         "name": "Electronics",
-        "icon": "electronics.png",
+        "icon": "elec.webp",
         "subcategories": [
          
             {
@@ -88,11 +150,22 @@
             }
         ]
     },
-   
+    {
+        "id": "appliances",
+        "name":"TVs & Appliances",
+        "icon": "tv.webp",
+        "subcategories": []
+    },
+    {
+        "id": "home-kitchen",
+        "name":"Home & Kitchen",
+        "icon": "homekit.webp",
+        "subcategories": []
+    },
     {
         "id": "home-furniture",
-        "name": "Home & Furniture",
-        "icon": "home&furniture.jpg",
+        "name": "Furniture",
+        "icon": "furniture.webp",
         "subcategories": [
             {
                 "id": "Kitchen-appliances",
@@ -126,19 +199,73 @@
         "name":"Appliances",
         "icon": "appliances.jpg",
         "subcategories": [
-        ]
+                {
+                    "id": "kitchen-appliances",
+                    "name": "Kitchen Appliances",
+                    "icon": "appliance.png",
+                    "subcategories": ["Microwaves", "Refrigerators", "Dishwashers"]
+                },
+                {
+                    "id": "laundry-appliances",
+                    "name": "Laundry Appliances",
+                    "icon": "appliance.png",
+                    "subcategories": ["Washing Machines", "Dryers"]
+                },
+                {
+                    "id": "small-appliances",
+                    "name": "Small Appliances",
+                    "icon": "appliance.png",
+                    "subcategories": ["Blenders", "Toasters", "Coffee Makers"]
+                },
+                {
+                    "id": "air-conditioning",
+                    "name": "Air Conditioning",
+                    "icon": "appliance.png",
+                    "subcategories": ["Air Conditioners", "Fans", "Air Purifiers"]
+                },
+                {
+                    "id": "brands",
+                    "name": "Brands",
+                    "icon": "appliance.png",
+                    "subcategories": ["LG", "Samsung", "Whirlpool", "GE"]
+                }
+            ]
     },
     {
         "id": "travel",
         "name":"Travel",
         "icon": "travel.png",
         "subcategories": [
+                {
+                    "id": "destinations",
+                    "name": "Destinations",
+                    "icon": "travel.png",
+                    "subcategories": ["Beach", "Mountain", "City"]
+                },
+                {
+                    "id": "transportation",
+                    "name": "Transportation",
+                    "icon": "travel.png",
+                    "subcategories": ["Flights", "Trains", "Car Rentals"]
+                },
+                {
+                    "id": "accommodation",
+                    "name": "Accommodation",
+                    "icon": "travel.png",
+                    "subcategories": ["Hotels", "Hostels", "Vacation Rentals"]
+                },
+                {
+                    "id": "travel-gear",
+                    "name": "Travel Gear",
+                    "icon": "travel.png",
+                    "subcategories": ["Luggage", "Backpacks", "Travel Accessories"]
+                }
         ]
     },
     {
         "id": "beauty",
         "name": "Beauty, Toys & More",
-        "icon": "beautyToys.png",
+        "icon": "beauty.webp",
         "subcategories": [
             {
                 "id": "face",
@@ -160,14 +287,12 @@
             }
         ]
     },
-    
     {
-        "id": "twowheelers",
-        "name": "Two Wheelers",
-        "icon": "twowheelers.png",
+        "id": "travel",
+        "name":"Travel",
+        "icon": "travel.webp",
         "subcategories": [
-        
-
         ]
     }
+    
 ]

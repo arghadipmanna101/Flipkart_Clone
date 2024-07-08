@@ -16,11 +16,16 @@
     This is Header
 </header>
 
-
-<!-- search product show Showing results-->
-<div class="containter-fluid bg-white">
-    <div class="containter-fluid p-3 mt-1" style="border-bottom: 1px solid #e4e7eb;">
-        <h4 id="showingrslt">Showing Results</h4>
+<!-- Search bar and icon -->
+<div class="container-fluid bg-white">
+    <div class="container-fluid p-3 mt-1" style="border-bottom: 1px solid #e4e7eb;">
+        <div class="input-group">
+            <input type="text" id="searchInput" class="form-control" placeholder="Search for products, brands and more" aria-label="Search">
+            <button class="btn btn-outline-secondary" type="button" id="searchButton">
+                <i class="bi bi-search"></i>
+            </button>
+        </div>
+        <h5 id="showingrslt">Showing Results<b><span id="showingResultsItemName"></span></b></h5>
     </div>
     <div class="container-fluid mt-4">
         <div class="row mt-1" id="results"></div>
@@ -29,7 +34,13 @@
 
 <footer id="footer-searchtab" style="background-color: #203a61 !important"></footer>
 <script src="../js/bootstrap.bundle.min.js"></script>
-<script src="../js/searchIndexProducts.js"></script>
+<script src="../js/searchForProducts.js"></script>
+
+<script>
+    document.getElementById('searchButton').addEventListener('click', function() {
+        document.getElementById('searchInput').focus();
+    });
+</script>
 
 <body></body>
 

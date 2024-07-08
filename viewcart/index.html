@@ -26,7 +26,7 @@
                 <i class="fa fa-search" aria-hidden="true"></i>
             </div>
         </div>
-        <button>Login</button>
+        <button><a href="../account/login-signup.html">Login</a></button>
 
     </nav>
 
@@ -38,7 +38,7 @@
             <h4>Missing Cart items?</h4>
             <small>
                 Login to see the items you added previously</small>
-            <button>Login</button>
+            <button><a href="../account/login-signup.html">Login</a></button>
         </div>
     </div>
 
@@ -47,29 +47,46 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="deliver_c_pc d-flex justify-content-between align-items-center bg-white">
-                        <p class="p-3">Delever to: <strong>Bhopal-462025</strong></p>
+                        <p class="p-3">Delever to: <strong>Bhopal-462022</strong></p>
                         <button class="btn m-3">Change</button>
                     </div>
                     <div id="itemsInCart">
-                        <!-- <div class="itemInCart d-flex bg-white p-3 m-1">
-                            <div style="height: 112px; width: 112px;" class="m-3"><img src="../img/appliances.jpg"
-                                    alt="items" width="100%"></div>
-                            <div class="itemDetail">
+                        <!-- <div id="cartItmListInviewCart" class="bg-white">
+                            <div class="itemInCart d-flex p-3 m-1">
+                              <div style="height: 112px; width: 112px;" class="m-3">
+                                <img src="../json-api/product-img/${item.productImg}" style="width: auto; height: 80px; object-fit: contain;"
+                                  alt="${item.name}">
+                              </div>
+                              <div class="itemDetail">
                                 <div>
-                                    <p>Noise Icon 4 with Stunning 1.96'' AMOLED Display, Metallic Finish, BT
-                                        Calling Smartwatch </p>
-                                    <p> Forest Green Strap, Regular</p>
-                                    <p> Seller: Ezig </p>
+                                  <p>${item.name}</p>
+                                  <p> Forest Green Strap, Regular</p>
+                                  <p> Seller: Ezig </p>
                                 </div>
                                 <div>
-                                    <b>₹6,999</b> 1 offer applied
+                                  <b>₹${item.price}</b> 1 offer applied
                                 </div>
+                              </div>
+                              <div class="deliveryDate">
+                                Delivery by ${dayOfWeek}, ${date} | <del>₹40</del> Free
+                              </div>
                             </div>
-                            <div class="deliveryDate">
-                                Delivery by Fri Jun 7 | ₹40Free
+                            <div class="cartItmRmPMdiv container-fluid pt-2 pb-2" style="border-top:1px solid #f1f3f6">
+                              <div class="row">
+                                <div class="plusMinItm col-sm-6">
+                                  <div class="d-flex justify-content-center align-items-center">
+                                    <button class="cartItmPMBtn" disabled=""> – </button>
+                                    <div class="cartItmQty"><input type="text" class="text-center" value="1" style="width:50px"></div>
+                                    <button class="cartItmPMBtn"> + </button>
+                                  </div>
+                                </div>
+                                <div class="cartItmSfLRm d-flex justify-content-around align-items-center col-sm-6">
+                                  <div class="cartItmSfLRmBtn">Save for later</div>
+                                  <div class="cartItmSfLRmBtn">Remove</div>
+                                </div>
+                              </div>
                             </div>
-                        </div> -->
-
+                          </div> -->
                     </div>
                     <div class="d-flex flex-row-reverse p-3 bg-white" style="border: 2px solid #efefef;">
                         <button class="placeOrder text-white">PLACE ORDER</button>
@@ -88,7 +105,9 @@ You will save ₹110 on this order
                             </pre> -->
                         </div>
                         <div>
-                            <button class="btn btn-danger">Buy Now</button>
+                            <!-- demo -->
+                            <button class="btn btn-danger" onclick="window.location.href='addtokart/checkout.html'">Buy Now</button>
+                        </body>
                         </div>
                     </div>
                 </div>
@@ -98,6 +117,7 @@ You will save ₹110 on this order
 
 
 
+    <div id="popupCartItem" class="popup hidden"></div>
 
     <footer>
         <div class="footer-right">

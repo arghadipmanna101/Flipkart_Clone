@@ -30,14 +30,20 @@ if (moreLinksDropdown) {
 // for kart
 
 try {
-  document.getElementById("cartItems").style.display="block"
   const cartItemsFromStorage = JSON.parse(
     localStorage.getItem("filteredProducts")
   );
   let cartItemslen = cartItemsFromStorage.length;
-  let toggleItmDis = document.getElementById("cartItems");
-  let dataItms = document.getElementById("cartItems");
-  dataItms.innerText = cartItemslen;
+  if(cartItemslen>0){
+     document.getElementById("cartItems").style.visibility="visible";
+     let toggleItmDis = document.getElementById("cartItems");
+     let dataItms = document.getElementById("cartItems");
+     dataItms.innerText = cartItemslen;
+  }
+  else{
+    document.getElementById("cartItems").style.visibility="hidden";
+  }
+  
 } catch (error) {
   document.getElementById("cartItems").style.display="none"
   console.warn(error)
