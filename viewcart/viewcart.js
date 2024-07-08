@@ -43,7 +43,7 @@ function searchFetch(products) {
 
   // Add event listeners for remove buttons
   document.querySelectorAll('.cartItmSfLRmBtn.remove').forEach(button => {
-    button.addEventListener('click', function() {
+    button.addEventListener('click', function () {
       const productName = this.getAttribute('data-name');
       confirmRemoveItem(productName);
     });
@@ -61,8 +61,8 @@ function fetchCartData(item) {
   totalItems += 1;
   totalPrice += item.price;
 
-  const discont=(Math.floor(item.rating*(parseInt((item.price.toString()).slice(0,2)))/10))
-  const afterDiscontPrice=Math.round((100-discont)*item.price/100)
+  const discont = (Math.floor(item.rating * (parseInt((item.price.toString()).slice(0, 2))) / 10))
+  const afterDiscontPrice = Math.round((100 - discont) * item.price / 100)
 
   function formatIndianRupee(number) {
     const parts = number.toString().split(".");
@@ -70,7 +70,6 @@ function fetchCartData(item) {
     const formattedNumber = parts.length > 1 ? integerPart + "." + parts[1] : integerPart;
     return formattedNumber;
   }
-
   return `
   <div class="cartItmListInviewCart bg-white">
     <div class="itemInCart d-flex p-3 m-1">
@@ -95,9 +94,21 @@ function fetchCartData(item) {
       <div class="row">
         <div class="plusMinItm col-sm-6">
           <div class="d-flex justify-content-center align-items-center">
-            <button class="cartItmPMBtn" disabled="">– </button>&nbsp
-            <div class="cartItmQty"><input type="text" class="text-center" value="1" style="width:50px; border: 1px solid #f1f3f6"></div>&nbsp
-            <button class="cartItmPMBtn">+ </button>
+            <button class="cartItmPMBtn" onclick="
+              const getInput=document.querySelector('.input');
+              const setInput=Number(getInput.value);
+              if(setInput===1){
+                confirmRemoveItem('${item.name}');
+              }else{
+                getInput.value=setInput-1;
+              }
+            ">– </button>&nbsp
+            <div class="cartItmQty"><input type="text" class="text-center input" value="1" style="width:50px; border: 1px solid #f1f3f6"></div>&nbsp
+            <button class="cartItmPMBtn" onclick="
+              const getInput=document.querySelector('.input');
+              const setInput=Number(getInput.value);
+              getInput.value=setInput+1;
+            ">+ </button>
           </div>
         </div>
         <div class="cartItmSfLRm d-flex justify-content-around align-items-center col-sm-6">
@@ -109,7 +120,6 @@ function fetchCartData(item) {
   </div>
   `;
 }
-
 // Function to confirm and remove an item from the cart
 function confirmRemoveItem(name) {
   const confirmRemove = confirm(`Are you sure you want to remove "${name}" from the cart?`);
@@ -137,7 +147,7 @@ function showPopup(message) {
   popup.textContent = message;
   popup.classList.remove('hidden');
   popup.classList.add('visible');
-  
+
   // Hide the popup after 1 second
   setTimeout(() => {
     popup.classList.remove('visible');
@@ -169,9 +179,9 @@ function updatePriceDetail(products) {
   }
   totalItems = products.length;
   totalMRP = products.reduce((acc, item) => acc + (item.price), 0);
-  totalPrice = products.reduce((acc, item) => acc + (Math.round((100-((Math.floor(item.rating*(parseInt((item.price.toString()).slice(0,2)))/10))))*item.price/100)), 0);
-  totalDiscount=totalMRP-totalPrice
- 
+  totalPrice = products.reduce((acc, item) => acc + (Math.round((100 - ((Math.floor(item.rating * (parseInt((item.price.toString()).slice(0, 2))) / 10)))) * item.price / 100)), 0);
+  totalDiscount = totalMRP - totalPrice
+
   let priceDetail = `
     <div style="display: flex; flex-direction: column;">
       <div class="d-flex justify-content-between">
