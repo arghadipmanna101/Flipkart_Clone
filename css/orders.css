@@ -8,7 +8,7 @@ section{
 }
 
 #filtersBox {
-    background-color: white;
+    background-color: #088395;
     height: fit-content;
     width: 250px;
     padding: 20px;
@@ -92,7 +92,7 @@ section{
 }
 
 .orderContainer {
-    background-color: white;
+    background-color: #F1FADA;
     border: 1px solid #888;
     margin: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -232,7 +232,7 @@ section{
 }
 
 .of-orders {
-    color: #2874f0;
+    color: #000000;
     font-weight: 500;
     text-align: center;
     padding: 10px;
