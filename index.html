@@ -40,7 +40,203 @@
 		</div>
 	</div>
 	<!-- loader end -->
+	<div id="divA" class="popup-container">
+        <div class="signupin">
+            <div class="leftpanal">
+                <h4>Login</h4>
+                <p>Get access to your Orders, Wishlist and Recommendations</p>
+            </div>
+            <div class="rightSignuppanal">
+                <span class="close-btn" id="close-btn">&times;</span>
+                <form autocomplete="on">
+                    <div class="I-qZ4MvLRlQb">
+                        <input autocomplete="off" id="inputsin" type="text" class="r4vIwl BV+Dqf" value="" required="" />
+                        <label class="Gq-80aa label" id="inputsin"><span>Enter Email/Mobile </span></label>
+                        <div class="underline"></div>
+                    </div>
+                    <div class="EpHS0A">By continuing, you agree to Flipkart's
+                        <a class="c9RDXR" target="_blank" href="../pages/terms/">Terms of Use</a>
+                        and
+                        <a class="c9RDXR" target="_blank" href="../pages/privacypolicy/">Privacy Policy</a>.
+                    </div>
+                    <div class="LSOAQH mt-2">
+                        <button class="QqFHMw twnTnD _7Pd1Fp">Request OTP</button>
+                    </div>
+                    <div class="ZJ3AS1 d-flex justify-content-center mt-4">
+                        <a class="azBkHf" href="#" id="buttonA">New to Flipkart? Create an account</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    // Show the popup when the page loads
+    const popupContainer = document.getElementById("divA");
+    popupContainer.style.display = "flex";
+
+    // Hide the popup when the close button is clicked
+    const closeBtn = document.getElementById("close-btn");
+    closeBtn.addEventListener("click", function() {
+        popupContainer.style.display = "none";
+    });
+
+    // Prevent form submission from reloading the page and close the popup
+    const form = document.querySelector("form");
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        // Your form submission logic here, e.g., AJAX call
+        console.log("Form submitted");
+        // Close the popup
+        popupContainer.style.display = "none";
+    });
+});
+    </script>
+	<style>
+		#divA {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure the popup is above other content */
+}
+
+.signupin {
+    background: #f1f3f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+}
+
+.signupin .leftpanal {
+    padding: 10px;
+    background-color: #2874F0;
+    color: #fff;
+    background-image: url(../img/login_img_bg.png);
+    background-position: center 85%;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 20vw;
+}
+
+.signupin .rightSignuppanal {
+    padding: 10px;
+    background: #fff;
+    height: 400px;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+._7Pd1Fp {
+    justify-self: flex-start;
+    background: #fb641b;
+    width: 100%;
+    padding: 5px;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+    border: none;
+    color: #fff;
+}
+
+.EpHS0A {
+    font-size: 11px;
+}
+
+.I-qZ4MvLRlQb {
+    position: relative;
+    margin: 50px auto;
+    width: 200px;
+}
+
+.I-qZ4MvLRlQb input[type="text"] {
+    font-size: 20px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 5px 0;
+    background-color: transparent;
+    outline: none;
+}
+
+.I-qZ4MvLRlQb .label {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    color: #ccc;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.I-qZ4MvLRlQb input[type="text"]:focus~.label,
+.I-qZ4MvLRlQb input[type="text"]:valid~.label {
+    top: -20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.I-qZ4MvLRlQb .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #333;
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+}
+
+.I-qZ4MvLRlQb input[type="text"]:focus~.underline,
+.I-qZ4MvLRlQb input[type="text"]:valid~.underline {
+    transform: scaleX(1);
+}
+
+@media screen and (max-width: 1200px) {
+    .signupin .leftpanal {
+        width: 30vw;
+    }
+    .signupin .rightSignuppanal {
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .signupin .leftpanal {
+        width: 35vw;
+        padding: 15px;
+    }
+    .signupin .rightSignuppanal {
+        width: 45vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .signupin .leftpanal {
+        width: 43vw;
+        padding: 5px;
+    }
+    .signupin .rightSignuppanal {
+        width: 56vw;
+    }
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+	</style>
 	<!--Header start  -->
 	<header id="homeHeader">
 		<nav class="navbar homeHeader navbar-expand-lg navbar-light bg-light">
