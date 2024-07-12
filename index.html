@@ -25,6 +25,43 @@
 
 		<link href="css/contactus.css" rel="stylesheet">
 
+		<style>
+			html{
+  scroll-behavior: smooth;
+}
+body{
+
+  margin: 0;
+  padding: 0;
+}
+
+.scrollToTop {
+  height: 40px;
+  width: 40px;
+  background: hsl(217, 87%, 45%);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  position: fixed;
+  bottom: 45px;
+  right: 50%;
+  left: 50%;
+
+    .inner {
+  height: 85%;
+  width: 85%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+    }
+}
+		</style>
+
 </head>
 
 <body>
@@ -901,7 +938,12 @@
 			</div>  
 </div>
 	<!-- go to top button -->
-	<button id="goToTopBtn" class="hidden"><i class="fas fa-chevron-up"></i></button>
+	<!-- <button id="goToTopBtn" class="hidden"><i class="fas fa-chevron-up"></i></button> -->
+	<div class="scrollToTop">
+		<div class="inner">
+			<i class="fa fa-arrow-up icon"></i>
+		</div>
+	</div> 
 	<!-- footer fetch to components : components/footer/footer.html -->
 	<footer id="footer" style="background-color: #292d33;"></footer>
 
@@ -934,6 +976,37 @@
 	src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
 	<script src="js/contactus.js"></script>
+
+	<script>
+		// Select the scrollToTop element
+var scrollToTop = document.querySelector(".scrollToTop");
+
+// Function to calculate the scroll value and update the scrollToTop button
+function calcScrollValue() {
+    let pos = document.body.scrollTop || document.documentElement.scrollTop;
+    let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let percentval = Math.round((pos * 100) / calcHeight);
+
+    if (pos > 100) {
+        scrollToTop.style.display = "flex";
+    } else {
+        scrollToTop.style.display = "none";
+    }
+
+    scrollToTop.style.background = `conic-gradient(#28CEF7 ${percentval}%, white ${percentval}%)`;
+}
+
+// Add click event listener to scrollToTop button
+scrollToTop.addEventListener("click", function() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+});
+
+// Call calcScrollValue on scroll and on load
+window.onscroll = calcScrollValue;
+window.onload = calcScrollValue;
+
+	</script>
 
 	<label for="rating-filter">Minimum Rating:</label>
 <select id="rating-filter">

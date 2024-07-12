@@ -589,8 +589,8 @@ Search Bar
   bottom: 45px;
   right: 50%;
   left: 50%;
-  background-color: hsla(217, 87%, 55%, 0.7);
-  color: #fff;
+  background-color: hsla(217, 87%, 55%, 0);
+  color: #ffffff00;
   border: none;
   border-radius: 50%;
   width: 40px;
@@ -600,7 +600,7 @@ Search Bar
 }
 
 #goToTopBtn:hover {
-  background-color: hsl(217, 87%, 45%);
+  background-color: hsla(217, 87%, 45%, 0);
 }
 
 .hidden {
