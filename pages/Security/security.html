@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe and Secure Shopping</title>
+    <link rel="stylesheet" href="security.css">
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="../../css/homeHeader.css">
+	<link rel="stylesheet" type="text/css" href="../../css/index.css">
+	<link rel="stylesheet" href="../../css/footer.css">
+		<!-- <link href="../../css/contactus.css" rel="stylesheet"> -->
+</head>
+<body>
+    <header id="homeHeader">
+		<nav class="navbar homeHeader navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="https://flipkart-clone-seven-azure.vercel.app/">
+				<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
+					width="160" height="40" title="Flipkart" alt="Flipkart" />
+			</a>
+			<div id="navbarNav_">
+				<ul class="navbar-nav">
+					<li class="nav-item navItem1">
+						<div id="searchbar" class="navtab" style="background-color: #F0F5FF; width:43vw; margin-left:-1vw">
+							<span id="searchButton" style="display: flex;align-items: center; justify-content:space-between;margin-left:15vw;">
+								<svg width="300" height="24" class="" viewBox="0 0 24 24" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<title>Search Icon</title>
+									<path
+										d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z"
+										stroke="#717478" stroke-width="1.4" stroke-linecap="round"
+										stroke-linejoin="round"></path>
+									<path d="M16 16L21 21" stroke="#717478" stroke-width="1.4" stroke-linecap="round"
+										stroke-linejoin="round"></path>
+								</svg>
+							</span>
+							<span class="flex-grow">
+								<input id="input_data" class="searchbar"   type="text" placeholder="Search for Products, Brands and More" />
+							</span>
+							<div id="autocompleteResults" class="autocom-box" style="display: none;
+							position: absolute;
+							top: 67px;
+							
+							background:#f0f5ff;
+							padding: 10px;
+							border: rgba(255, 51, 255, 0.2);">
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul  class="navbar-nav ml-auto"
+					style="flex-wrap: nowrap;flex-direction: row;width: 30vw; justify-content: space-between;margin-left: 20px;">
+					<li class="nav-item navItem2 dropdown" id="navbarDropdow">
+						<a class="nav-link nav-dd acnavdd" href="#" id="navbarDropdown" role="button" style="width: 10vw; margin-top:2vh;"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<img src="img/svg/profile-.svg" alt="Profile" />
+							<span class="navname navname_ac" style="width:50vw;"> Login <i class="bi bi-chevron-down"></i><i
+									class="bi bi-chevron-up"></i></span>
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="left: 0px;">
+							<a class="dropdown-item" href="account/home_account.html">
+								<img width="20" src="img/svg/profile-.svg" alt="flipKart">
+								My Profile </a>
+
+								<a class="dropdown-item" href="login/login.html">
+									<img width="20" src="img/svg/profile-.svg" alt="flipKart">
+									Log into account </a>
+
+							<a class="dropdown-item" href="account/login-signup.html">
+								<img width="20" src="img/svg/profile-.svg" alt="flipKart">
+								Sign In</a>
+							<a class="dropdown-item" href="plus/">
+								<img width="20" src="img/svg/fkplus-+.svg" alt="flipKart">
+								Flipkart Plus Zone</a>
+							<a class="dropdown-item" href="account/orders.html">
+								<img width="20" src="img/svg/orders.svg" alt="flipKart">
+								Orders</a>
+							<a class="dropdown-item" href="wishlist/">
+								<img width="20" src="img/svg/wishList.svg" alt="flipKart">
+								Wishlist</a>
+							<a class="dropdown-item" href="account/notifications.html">
+								<img width="20" src="img/svg/notifications.svg" alt="flipKart">
+								Notifications</a>
+							<a class="dropdown-item" href="account/rewards.html">
+								<img width="20" src="img/svg/rewards.svg" alt="flipKart">
+								Rewards</a>
+							<a class="dropdown-item" href="the-gift-card-store/">
+								<img width="20" src="img/svg/giftCard.svg" alt="flipKart">
+								Gift Cards</a>
+								<a class="dropdown-item" href="account/contact.html">
+									<img width="20" src="https://pngimg.com/uploads/phone/phone_PNG48988.png" alt="flipKart">
+									Contact Us </a>
+						</div>
+					</li>
+					<li class="nav-item navItem3">
+						<a class="nav-link cartLogoandname" style="width: 10vw; margin-top:2vh;" href="viewcart/">
+							<img
+								src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg" />
+							<span class="navname2">Cart</span><span id="cartItems"></span>
+						</a>
+					</li>
+					<li class="nav-item navItem4">
+						<a class="nav-link" href="sell-online/" style="width: 12vw;font-size:small; margin-top:2vh;">
+							<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg"
+								alt="Become a Seller" />
+							<span class="navname3">Become a Seller</span>
+						</a>
+					</li>
+					<li class="nav-item navItem5 dropdown " id="moreLinksDropdow" style="width: 10vw; margin-top:2vh;">
+						<a class="nav-link nav-dd" href="#" id="moreLinksDropdown" role="button" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">
+							<img class="nav-dd"
+								src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-ea7819.svg"
+								alt="More Links" />
+						</a>
+						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="moreLinksDropdown">
+							<a class="dropdown-item" href="notifications/"><img width="30" height="20"
+									src="img/svg/notificationPreferences.svg"
+									alt="appointment-reminders--v2" />Notification
+								Preferences</a>
+							<a class="dropdown-item" href="helpcentre/"><img width="30" height="20"
+									src="img/svg/helpcenter.svg" alt="imgcc">24x7 Customer Care</a>
+							<a class="dropdown-item"
+								href="https://advertising.flipkart.com/"><img
+									width="30" height="20" src="img/svg/advertise.svg" alt="Advertise">Advertise</a>
+							<a class="dropdown-item" href="mobile-apps/"><img width="30" height="20"
+									src="img/svg/downloadApp.svg" alt="img3">Download App</a>
+					</li>
+					
+				</ul>
+			</div>
+		</nav>
+	</header>
+    <div class="container">
+        <p>Safe and Secure Shopping</p>
+
+        <div class="faq">
+            <p>Is making online payment secure on Flipkart?</p>
+            <p>Yes, making the online payment is secure on Flipkart</p>
+        </div>
+
+        <div class="faq">
+            <p>Does Flipkart store my credit/debit card information?</p>
+            <p>No. Flipkart only stores the last 4 digits of your card number for the purpose of card identification.</p>
+        </div>
+
+        <div class="faq">
+            <p>What credit/debit cards are accepted on Flipkart?</p>
+            <p>We accept VISA, MasterCard, Maestro, Rupay, American Express, Diner's Club and Discover credit/debit cards.</p>
+        </div>
+
+        <div class="faq">
+            <p>Do you accept payment made by credit/debit cards issued in other countries?</p>
+            <p>Yes! We accept VISA, MasterCard, Maestro, American Express credit/debit cards issued by banks in India and in the following countries: Australia, Austria, Belgium, Canada, Cyprus, Denmark, Finland, France, Germany, Ireland, Italy, Luxembourg, the Netherlands, New Zealand, Norway, Portugal, Singapore, Spain, Sweden, the UK and the US. Please note that we do not accept internationally issued credit/debit cards for eGV payments/top-ups.</p>
+        </div>
+
+        <div class="faq">
+            <p>What other payment options are available on Flipkart?</p>
+            <p>Apart from Credit and Debit Cards, we accept payments via Internet Banking (covering 44 banks), Cash on Delivery, Equated Monthly Installments (EMI), E-Gift Vouchers, Flipkart Pay Later, UPI, Wallet, and Paytm Postpaid.</p>
+        </div>
+
+        <div class="privacy-policy">
+            <p>Privacy Policy</p>
+            <p>Flipkart.com respects your privacy and is committed to protecting it. For more details, please see our <a href="#">Privacy Policy</a></p>
+        </div>
+
+        <div class="contact-us">
+            <p>Contact Us</p>
+            <p>Couldn't find the information you need? Please <a href="#">Contact Us</a></p>
+        </div>
+    </div>
+
+    <footer id="footer" style="background-color: #292d33;"></footer>
+</body>
+</html>
