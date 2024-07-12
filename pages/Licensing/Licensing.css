@@ -1,0 +1,75 @@
+/* Basic reset and styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', 'sans-serif';
+}
+
+body {
+    background-color: #fdfdfd;
+    color: #212121;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 20px;
+    height: 850px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.legal-heading {
+    margin-top: 0px;
+    font-size: 37px;
+}
+.backtohome img {
+    display: inline;
+    width: 32px;
+    height: 32px;
+}
+
+.backtohome img:hover{
+    transform: translate(0px, 1px);
+}
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.legal-main-heading {
+    font-size: 3rem;
+    color: #000;
+    /* background-color: rgba(250, 233, 0, 0.203); */
+    border-radius: 23px;
+    /* background: linear-gradient(to bottom, rgb(225, 255, 0), rgb(255, 162, 0)); */
+}
+
+hr {
+    width: 24%;
+    margin: auto;
+}
+
+.legal-para {
+    font-size: 18.5px;
+}
+
+.legal-tagline
+{
+    font-size: 24px;
+}
+
+
+/* Footer styling */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+}
+
+footer p  {
+    font-size: 17px;
+}
