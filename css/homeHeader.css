@@ -34,11 +34,11 @@
   width: 100%;
 }
 .navbar{
-  padding: 12px 28px;
+  padding: 2px 18px;
   display: inline;
 }
 a.navbar-brand{
-  padding-right: 20px;
+  padding-right: 5px;
 }
 .homeHeader .navtab {
   display: flex;
