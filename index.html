@@ -236,130 +236,95 @@
     font-size: 24px;
     cursor: pointer;
 }
+
 	</style>
-	<!--Header start  -->
-	<header id="homeHeader">
-		<nav class="navbar homeHeader navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand" href="https://flipkart-clone-seven-azure.vercel.app/">
-				<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
-					width="160" height="40" title="Flipkart" alt="Flipkart" />
-			</a>
-			<div id="navbarNav_">
-				<ul class="navbar-nav">
-					<li class="nav-item navItem1">
-						<div id="searchbar" class="navtab" style="background-color: #F0F5FF; width:43vw; margin-left:-1vw">
-							<span id="searchButton" style="display: flex;align-items: center; justify-content:space-between;margin-left:15vw;">
-								<svg width="300" height="24" class="" viewBox="0 0 24 24" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<title>Search Icon</title>
-									<path
-										d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z"
-										stroke="#717478" stroke-width="1.4" stroke-linecap="round"
-										stroke-linejoin="round"></path>
-									<path d="M16 16L21 21" stroke="#717478" stroke-width="1.4" stroke-linecap="round"
-										stroke-linejoin="round"></path>
-								</svg>
-							</span>
-							<span class="flex-grow">
-								<input id="input_data" class="searchbar"   type="text" placeholder="Search for Products, Brands and More" />
-							</span>
-							<div id="autocompleteResults" class="autocom-box" style="display: none;
-							position: absolute;
-							top: 67px;
-							
-							background:#f0f5ff;
-							padding: 10px;
-							border: rgba(255, 51, 255, 0.2);">
-							</div>
-						</div>
-					</li>
-				</ul>
-				<ul  class="navbar-nav ml-auto"
-					style="flex-wrap: nowrap;flex-direction: row;width: 30vw; justify-content: space-between;margin-left: 20px;">
-					<li class="nav-item navItem2 dropdown" id="navbarDropdow">
-						<a class="nav-link nav-dd acnavdd" href="#" id="navbarDropdown" role="button" style="width: 10vw; margin-top:2vh;"
-							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<img src="img/svg/profile-.svg" alt="Profile" />
-							<span class="navname navname_ac" style="width:50vw;"> Login <i class="bi bi-chevron-down"></i><i
-									class="bi bi-chevron-up"></i></span>
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="left: 0px;">
-							<a class="dropdown-item" href="account/home_account.html">
-								<img width="20" src="img/svg/profile-.svg" alt="flipKart">
-								My Profile </a>
 
-								<a class="dropdown-item" href="login/login.html">
-									<img width="20" src="img/svg/profile-.svg" alt="flipKart">
-									Log into account </a>
 
-							<a class="dropdown-item" href="account/login-signup.html">
-								<img width="20" src="img/svg/profile-.svg" alt="flipKart">
-								Sign In</a>
-							<a class="dropdown-item" href="plus/">
-								<img width="20" src="img/svg/fkplus-+.svg" alt="flipKart">
-								Flipkart Plus Zone</a>
-							<a class="dropdown-item" href="account/orders.html">
-								<img width="20" src="img/svg/orders.svg" alt="flipKart">
-								Orders</a>
-							<a class="dropdown-item" href="wishlist/">
-								<img width="20" src="img/svg/wishList.svg" alt="flipKart">
-								Wishlist</a>
-							<a class="dropdown-item" href="account/notifications.html">
-								<img width="20" src="img/svg/notifications.svg" alt="flipKart">
-								Notifications</a>
-							<a class="dropdown-item" href="account/rewards.html">
-								<img width="20" src="img/svg/rewards.svg" alt="flipKart">
-								Rewards</a>
-							<a class="dropdown-item" href="the-gift-card-store/">
-								<img width="20" src="img/svg/giftCard.svg" alt="flipKart">
-								Gift Cards</a>
-								<a class="dropdown-item" href="account/contact.html">
-									<img width="20" src="https://pngimg.com/uploads/phone/phone_PNG48988.png" alt="flipKart">
-									Contact Us </a>
-									<a class="dropdown-item" href="account/feedback.html"><i class="bi bi-chat-dots"></i> My Feedback </a>	
-						</div>
-					</li>
-					<li class="nav-item navItem3">
-						<a class="nav-link cartLogoandname" style="width: 10vw; margin-top:2vh;" href="viewcart/">
-							<img
-								src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg" />
-							<span class="navname2">Cart</span><span id="cartItems"></span>
-						</a>
-					</li>
-					<li class="nav-item navItem4">
-						<a class="nav-link" href="sell-online/" style="width: 12vw;font-size:small; margin-top:2vh;">
-							<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg"
-								alt="Become a Seller" />
-							<span class="navname3">Become a Seller</span>
-						</a>
-						
-					</li>
-					<li class="nav-item navItem5 dropdown " id="moreLinksDropdow" style="width: 10vw; margin-top:2vh;">
-						<a class="nav-link nav-dd" href="#" id="moreLinksDropdown" role="button" data-toggle="dropdown"
-							aria-haspopup="true" aria-expanded="false">
-							<img class="nav-dd"
-								src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-ea7819.svg"
-								alt="More Links" />
-						</a>
-						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="moreLinksDropdown">
-							<a class="dropdown-item" href="notifications/"><img width="30" height="20"
-									src="img/svg/notificationPreferences.svg"
-									alt="appointment-reminders--v2" />Notification
-								Preferences</a>
-							<a class="dropdown-item" href="helpcentre/"><img width="30" height="20"
-									src="img/svg/helpcenter.svg" alt="imgcc">24x7 Customer Care</a>
-							<a class="dropdown-item"
-								href="https://advertising.flipkart.com/"><img
-									width="30" height="20" src="img/svg/advertise.svg" alt="Advertise">Advertise</a>
-							<a class="dropdown-item" href="mobile-apps/"><img width="30" height="20"
-									src="img/svg/downloadApp.svg" alt="img3">Download App</a>
-					</li>
-					
-				</ul>
-			</div>
-		</nav>
-	</header>
-	<!--Header end -->
+<!--Header start  -->
+<!--Header start  -->
+<header id="homeHeader">
+    <nav class="navbar homeHeader navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="https://flipkart-clone-seven-azure.vercel.app/">
+            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
+                width="160" height="40" title="Flipkart" alt="Flipkart" />
+        </a>
+        <div id="navbarNav_" style="display: flex; align-items: center;">
+            <ul class="navbar-nav">
+                <li class="nav-item navItem1">
+                    <div id="searchbar" class="navtab">
+                        <span id="searchButton" class="search-icon">
+                            <svg width="30" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <title>Search Icon</title>
+                                <path d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z" stroke="#717478" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M16 16L21 21" stroke="#717478" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </span>
+                        <span class="flex-grow">
+                            <input id="input_data" class="searchbar" type="text" placeholder="Search for Products, Brands and More" />
+                        </span>
+                        <div id="autocompleteResults" class="autocom-box">
+                            <!-- Autocomplete results here -->
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown" id="navbarDropdown">
+					<a class="nav-link acnavdd dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<img src="img/svg/profile-.svg" alt="Profile" style="width: 20px; height: 20px; margin-right: 5px;" />
+						<span class="navname" style="font-size: 14px;">Login <i class="bi bi-chevron-down"></i></span>
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="left: 0;">
+						<a class="dropdown-item" href="account/home_account.html"><img width="20" src="img/svg/profile-.svg" alt="flipKart" style="margin-right: 5px;"> My Profile </a>
+						<a class="dropdown-item" href="login/login.html"><img width="20" src="img/svg/profile-.svg" alt="flipKart" style="margin-right: 5px;"> Log into account </a>
+						<a class="dropdown-item" href="account/login-signup.html"><img width="20" src="img/svg/profile-.svg" alt="flipKart" style="margin-right: 5px;"> Sign In</a>
+						<a class="dropdown-item" href="plus/"><img width="20" src="img/svg/fkplus-+.svg" alt="flipKart" style="margin-right: 5px;"> Flipkart Plus Zone</a>
+						<a class="dropdown-item" href="account/orders.html"><img width="20" src="img/svg/orders.svg" alt="flipKart" style="margin-right: 5px;"> Orders</a>
+						<a class="dropdown-item" href="wishlist/"><img width="20" src="img/svg/wishList.svg" alt="flipKart" style="margin-right: 5px;"> Wishlist</a>
+						<a class="dropdown-item" href="account/notifications.html"><img width="20" src="img/svg/notifications.svg" alt="flipKart" style="margin-right: 5px;"> Notifications</a>
+						<a class="dropdown-item" href="account/rewards.html"><img width="20" src="img/svg/rewards.svg" alt="flipKart" style="margin-right: 5px;"> Rewards</a>
+						<a class="dropdown-item" href="the-gift-card-store/"><img width="20" src="img/svg/giftCard.svg" alt="flipKart" style="margin-right: 5px;"> Gift Cards</a>
+						<a class="dropdown-item" href="account/contact.html"><img width="20" src="https://pngimg.com/uploads/phone/phone_PNG48988.png" alt="flipKart" style="margin-right: 5px;"> Contact Us </a>
+						<a class="dropdown-item" href="account/feedback.html"><i class="bi bi-chat-dots"></i> My Feedback </a>
+					</div>
+				</li>
+				
+                <li class="nav-item">
+                    <a class="nav-link" href="viewcart/" style="font-size: 14px;">
+                        <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg" style="width: 20px; height: 20px; margin-right: 5px;" />
+                        Cart
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sell-online/" style="font-size: 14px;">
+                        <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg" style="width: 20px; height: 20px; margin-right: 5px;" />
+                        Become a Seller
+                    </a>
+                </li>
+                <li class="nav-item dropdown" id="moreLinksDropdown">
+					<a class="nav-link nav-dd dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-ea7819.svg" style="width: 20px; height: 20px; margin-right: 5px;" />
+						More Links
+					</a>
+					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="moreLinksDropdown" style="left: auto; right: 0;">
+						<a class="dropdown-item" href="notifications/"><img width="20" height="20" src="img/svg/notificationPreferences.svg" alt="appointment-reminders--v2" style="margin-right: 5px;"> Notification Preferences</a>
+						<a class="dropdown-item" href="helpcentre/"><img width="20" height="20" src="img/svg/helpcenter.svg" alt="imgcc" style="margin-right: 5px;"> 24x7 Customer Care</a>
+						<a class="dropdown-item" href="https://advertising.flipkart.com/"><img width="20" height="20" src="img/svg/advertise.svg" alt="Advertise" style="margin-right: 5px;"> Advertise</a>
+						<a class="dropdown-item" href="mobile-apps/"><img width="20" height="20" src="img/svg/downloadApp.svg" alt="img3" style="margin-right: 5px;"> Download App</a>
+					</div>
+				</li>
+				
+            </ul>
+        </div>
+    </nav>
+</header>
+<!--Header end -->
+
+
+<!--Header end -->
+
+
+
 
 	<!-- categorylist -->
 	<div id="categorylist-wrapper" class="container-fluid categorylist-wrapper">
