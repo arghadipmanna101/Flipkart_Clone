@@ -500,6 +500,10 @@ Search Bar
   padding: 15px 20px;
 }
 
+.accordion-item .collapse {
+  visibility: visible;
+}
+
 #faq .accordion .btn-link {
   font-size: 1.1rem;
   font-weight: bold;
