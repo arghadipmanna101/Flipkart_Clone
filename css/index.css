@@ -707,13 +707,27 @@ Search Bar
   
 }
 .main1{
+  font-size: 22px;
+  font-weight: bold;
+  color: black;
+}
+.main2{
+  font-size: 19px;
+  font-weight: bold;
+  color: black;
+}
+.heading1{
+  font-weight: 700;
   font-size: 16px;
   color: #878787;
 }
-.heading1{
-  font-weight: 500;
-  font-size: 16px;
+.heading2{
+  font-weight: 800;
+  font-size: 17px;
   color: #878787;
+}
+ul{
+  list-style-type: circle;
 }
 .brand-directory{
   background-color: white;
