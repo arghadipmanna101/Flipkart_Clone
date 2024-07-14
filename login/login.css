@@ -18,7 +18,7 @@ body {
 .wrapper {
   width: 420px;
   background: transparent;
-  border: 2px solid rgba(255, 255, 255, .2);
+  border: 2px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(9px);
   color: #fff;
   border-radius: 12px;
@@ -43,7 +43,7 @@ body {
   background: transparent;
   border: none;
   outline: none;
-  border: 2px solid rgba(255, 255, 255, .2);
+  border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 40px;
   font-size: 16px;
   color: #fff;
@@ -90,11 +90,38 @@ body {
   border: none;
   outline: none;
   border-radius: 40px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   font-size: 16px;
   color: #333;
   font-weight: 600;
+}
+
+.wrapper .social-login {
+  margin-top: 20px;
+}
+
+.social-login button {
+  width: 100%;
+  height: 45px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.google-btn {
+  background-color: #dd4b39; /* Google Red */
+  color: #fff;
+}
+
+.facebook-btn {
+  background-color: #3b5998; /* Facebook Blue */
+  color: #fff;
 }
 
 .wrapper .register-link {
@@ -111,4 +138,8 @@ body {
 
 .register-link p a:hover {
   text-decoration: underline;
+}
+hr {
+  margin: 2;
+  padding: 2;
 }
