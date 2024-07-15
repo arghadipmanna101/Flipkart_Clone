@@ -44,11 +44,11 @@ function createSearchProductCard(product) {
               <div class="container">
                 <div class="text-center img-fluid" style="height:400px" ;>
                     <img class="p-3" src="../json-api/product-img/${product.productImg}"
-                        style="width: 100%; height: 100%; object-fit: contain;" alt="${product.name}">
+                        style="width: 75%; height: 75%; margin:auto auto; object-fit: contain;" alt="${product.name}">
                 </div>
                 <div>
-                  <a class="btn btn-primary" style="width: 48%" href="../viewcart/?query=${product.name}"> <img src="../img/svg/cart_h.svg">&nbsp Add To Cart</a>
-                  <a class="btn btn-danger" style="width: 48%" href="checkout.html"><img src="../img/svg/electricity.svg">&nbspBuy Now</a>
+                  <a class="btn btn-primary" style="width: 45%; height:50px; background-color:#ff9f00; padding-top:12px;" href="../viewcart/?query=${product.name}"> <img src="../img/svg/cart_h.svg">&nbsp Add To Cart</a>
+                  <a class="btn btn-danger" style="width: 45%; height:50px; background-color:#fb641b;padding-top:12px;" href="checkout.html"><img src="../img/svg/electricity.svg">&nbspBuy Now</a>
                 </div>
                 </div>
             </div>
@@ -57,19 +57,55 @@ function createSearchProductCard(product) {
                   <div class="mt-2 card-title">${product.name}</div>
                   <div class=" rating">${product.rating} &nbsp<i class="bi bi-star-fill"></i></div>
                   <span class="text-success mt-2">Special price</span>
-                  <div class=""><strong class="fs-3">₹${formatIndianRupee(afterDiscontPrice)}</strong> <del style="color:#878787">₹${formatIndianRupee(product.price)}</del> <span style="color:#388e3c"> ${discont}% off </span></div>
+                  <div class=""><strong class="fs-3">₹${formatIndianRupee(afterDiscontPrice)}</strong> <del style="color:#878787">₹${formatIndianRupee(product.price)}</del> <span style="color:#388e3c"> ${discont}% off </span><span style="color:grey; font-size:10px; padding:0px 4px; border-radius:50%; border:1px solid grey;">?</span></div>
                   <div>
                   <div class="text-success">Available offers</div>
-                  Bank OfferGet ₹50 instant discount on first Flipkart UPI transaction on order of ₹200 and aboveT&C <br>
-                  Bank Offer5% Cashback on Flipkart Axis Bank CardT&C<br>
-                  Special PriceGet extra 12% off (price inclusive of cashback/coupon)T&C<br>
-                  <span class="text-primary">View 12 more offers</span>
+                  <div  style="font-size:14px;">
+                  <img style="width:20px; height:20px;" src="https://rukminim2.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90"> <span style="font-weight:600;">Bank Offer</span> Get ₹50 instant discount on first Flipkart UPI transaction on order of ₹200 and above <a href="#">T&C</a> <br>
+                  <img style="width:20px; height:20px;" src="https://rukminim2.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90"> <span style="font-weight:600;">Bank Offer</span> 5% Cashback on Flipkart Axis Bank Card <a href="#">T&C</a><br>
+                  <img style="width:20px; height:20px;" src="https://rukminim2.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90"> <span style="font-weight:600;">Special Price</span> Get extra 12% off (price inclusive of cashback/coupon)<a href="#">T&C</a><br>
+                  <span class="text-primary"><a href="#" style="font-weight:500;">View 12 more offers</a></span>
+                  </div>
                   </div>
                   <div>
-                  Warranty
-                  Covers Manufacturing Defects  Know More
+                  <br/>
+                  <br/>
+                  <div style="background-color: #f8f8f8; padding: 20px 10px; width:70%;">
+                  <span style="color:grey; font-size:15px; font-weight:500;"> Warranty</span> 
+                  <span style="font-size:14px;"> &nbsp &nbsp Covers Manufacturing Defects <a href="#"> Know More</a></span>
                   </div>
-                  </br></br>
+                  </div>
+
+                  <div style="width: 70%; padding: 11px; background-color: #f8f8f8; border: none;">
+                     <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                      <div style="margin-right: 20px; color:grey; font-size:15px; font-weight:500; margin-left:0px;">Delivery</div>
+                      <div style=" border: none; border-bottom: 2px solid #2874f0;">
+                        <form autocomplete="off" style="display: flex; align-items: center; width: 100%;">
+                          <div style="position: relative; flex-grow: 1;">
+                            <svg width="16" height="16" viewBox="0 0 9 12" xmlns="http://www.w3.org/2000/svg" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%);">
+                                <path fill="#2874f0" d="M4.2 5.7c-.828 0-1.5-.672-1.5-1.5 0-.398.158-.78.44-1.06.28-.282.662-.44 1.06-.44.828 0 1.5.672 1.5 1.5 0 .398-.158.78-.44 1.06-.28.282-.662.44-1.06.44zm0-5.7C1.88 0 0 1.88 0 4.2 0 7.35 4.2 12 4.2 12s4.2-4.65 4.2-7.8C8.4 1.88 6.52 0 4.2 0z" fill-rule="evenodd"></path>
+                            </svg>
+                          <input placeholder="Enter Delivery Pincode" type="text" maxlength="6" style="background-color:#f8f8f8; padding: 10px 10px 10px 35px;border:none;  width: 100%; font-size:15px; color:grey; font-weight:500;"/>
+                          </div>
+                        <button style="padding: 10px 0px;background-color:#f8f8f8; color:#2874f0; border: none; margin-left: 10px; cursor: pointer;font-weight:550; font-size:15px; position:relative; ">Check</button>
+                        </form>
+                        </div>
+                      </div>
+                    <div style="padding: 10px; background-color: #e9ecef; margin-left:80px; margin-right:110px;">
+                 <div style="display: flex; justify-content: space-between; font-size:15px;">
+                  <div style="font-weight: 600;">Delivery by <span style="">16 Jul, Tuesday</span></div>
+                  <div style="width:2px; height:auto; background-color:grey;"></div>
+                  <div style="color:#388e3c; font-weight:500;">Free <span style="color:grey; font-size:10px; padding:0px 4px; border-radius:50%; border:1px solid grey;">?</span></div>
+                </div> 
+                <div style="color: #757575; font-size:14px;">if ordered before 9:59 PM</div>
+              </div>
+             <div style="margin-top: 10px; color: #007bff; cursor: pointer; font-size:15px; font-weight:550; margin-left:80px;">View Details</div>
+            </div>
+
+                
+
+
+
                   <div class="card-title"><strong>${product.description}</strong></div>
                   </br></br>
                 </div>                
@@ -100,7 +136,8 @@ function createSearchSimilarProducts(product) {
             </div>
             <div class="text-center card-title pt-1">${product.name.slice(0, 20)} ${product.name.length > 20 ? "<b>...</b>" : ""}</div>
             <div class="text-center mb-1 rating">${product.rating} &nbsp<i class="bi bi-star-fill"></i></div>
-            <div class="text-center"><strong>₹${formatIndianRupee(afterDiscontPrice)}</strong> <del style="color:#878787">₹${formatIndianRupee(product.price)}</del> <span style="color:#388e3c"> ${discont}% off </span></div>
+            <div class="text-center"><strong>₹${formatIndianRupee(afterDiscontPrice)}</strong> <del style="color:#878787">₹${formatIndianRupee(product.price)}</del> <span style="color:#388e3c"> ${discont}% off </span>
+           </div>
         </div>
     </a>
   `;
