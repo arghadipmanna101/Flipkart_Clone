@@ -877,6 +877,116 @@
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
 							5. What is Flipkart's return policy?
 						</button>
+					</h2>
+					<div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+						data-bs-parent="#faqAccordion">
+						<div class="accordion-body">
+							Flipkart has a hassle-free return policy. If you're not satisfied with your purchase, you
+							can initiate a return within the specified return period. Simply go to the "My Orders"
+							section, select the order you want to return, and follow the prompts.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- faq end -->
+	<!-- Contact Us -->
+<div class="main">
+
+	<div class="container">
+		<img src="rateus.png" alt="rateus">
+		<div class="form-container">
+			<h1>Contact Us</h1>
+			<form id="contact-form">
+				<!-- <label for="name">Name:</label> -->
+				<input type="text" id="name" name="name" required placeholder="Name:">
+	
+				<!-- <label for="email">Email:</label> -->
+				<input type="email" id="email" name="email" required placeholder="Email:">
+	
+				<!-- <label for="comment">Comment:</label> -->
+				<textarea id="comment" name="feedback" required placeholder="Comment:"></textarea>
+	
+				
+				<p id="thank-you-message" style="color: white; display: none;">Thank you !!<br>We will connect soon.</p>
+			</form>
+			<button onclick="handleSubmit()" id="button">Submit</button>
+			</div>
+			</div>  
+</div>
+	<!-- go to top button -->
+	<!-- <button id="goToTopBtn" class="hidden"><i class="fas fa-chevron-up"></i></button> -->
+	<div class="scrollToTop">
+		<div class="inner">
+			<i class="fa fa-arrow-up icon"></i>
+		</div>
+	</div> 
+	<!-- footer fetch to components : components/footer/footer.html -->
+	<footer id="footer" style="background-color: #09090a;"></footer>
+
+	<!-- voiceflow.chat script -->
+	<script type="text/javascript">
+		(function (d, t) {
+			var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+			v.onload = function () {
+				window.voiceflow.chat.load({
+					verify: { projectID: '6647471456cab012ae016d07' },
+					url: 'https://general-runtime.voiceflow.com',
+					versionID: 'production'
+				});
+			}
+			v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+		})(document, 'script');
+	</script>
+
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/homeHeader.js"></script>
+	<script src="js/categoryjs.js"></script>
+	<script src="js/searchIndexProducts.js"></script>
+	<script src="js/fetchProductOfIndex.js"></script>
+	<script src="js/index.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+
+	<script type="text/javascript"
+	src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+	<script src="js/contactus.js"></script>
+	<script>
+		// Select the scrollToTop element
+var scrollToTop = document.querySelector(".scrollToTop");
+
+// Function to calculate the scroll value and update the scrollToTop button
+function calcScrollValue() {
+    let pos = document.body.scrollTop || document.documentElement.scrollTop;
+    let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let percentval = Math.round((pos * 100) / calcHeight);
+
+    if (pos > 100) {
+        scrollToTop.style.display = "flex";
+    } else {
+        scrollToTop.style.display = "none";
+    }
+
+    scrollToTop.style.background = `conic-gradient(#28CEF7 ${percentval}%, white ${percentval}%)`;
+}
+
+// Add click event listener to scrollToTop button
+scrollToTop.addEventListener("click", function() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+});
+
+// Call calcScrollValue on scroll and on load
+window.onscroll = calcScrollValue;
+window.onload = calcScrollValue;
+
+	</script>
+	<label for="rating-filter">Minimum Rating:</label>
+<select id="rating-filter">
+=======
                     </h2>
                     <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
@@ -994,8 +1104,5 @@
     <option value="4">4 Stars</option>
     <option value="5">5 Stars</option>
 </select>
-
-
 </body>
-
 </html>
