@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: linear-gradient(to right, blue);
+}
+
+section {
+    padding: 60px 0;
+}
+
+footer {
+    background: #343a40;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}
+
+.list-group-item {
+    cursor: pointer;
+}
+
+
+
+.accordian {
+    background-color: linear white;
+    padding: 4px 16px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1px 1px 5px ;
+    cursor: pointer;
+
+}
+.card-header {
+    background-color: blue;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.card-header h5 {
+    margin: 0;
+}
+
+.accordion{
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+
+}
+
+.accordion-item{
+    background-color : linear-gradient(to right, white, #51b4e6bf);
+    color: black;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    border-radius: 0 2px 5px 0 rgba(0,0,0,0.25);
+
+}
+
+.accordion-item-header{
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+
+
+
+
+}
+
+
+
+.accordion-item-header::after{
+    content: "\002B";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+    transition: transform 0.2s ease-in-out;
+
+
+}
+
+.accordion-item-header.active::after{
+    content: "\2212";
+}
+
+.accordion-item-body {
+
+    max-height: 0;
+    overflow: hidden;
+    padding: 1rem;
+    line-height: 1.5rem;
+    transition: max-height 0.2s ease-out;
+    border-image: linear-gradient(to right,red,white);
+   
+}
+
+.accordion-item-body-content{
+    padding: 1rem;
+    line-height: 1.5rem;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right,red,white);
+
+}
+
+
+
+
+.accordion-item-header.active  + .accordion-item-body{
+    max-height: 1000px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.flipkart-logo {
+    display: block;
+    margin: -24px auto;
+    max-width: 400px;
+}
+
+.heading {
+    color: rgb(13, 58, 156); /* Setting the heading background color to blue */
+}
+

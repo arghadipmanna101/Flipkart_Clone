@@ -46,7 +46,11 @@
     
     {
         "id": "Mobiles",
+
+        "name":"Mobiles",
+
         "name":"Mobiles & Tablets",
+
         "icon": "mobile.webp",
         "subcategories": [
         {
@@ -151,12 +155,14 @@
         ]
     },
     {
+
         "id": "appliances",
         "name":"TVs & Appliances",
         "icon": "tv.webp",
         "subcategories": []
     },
     {
+
         "id": "home-kitchen",
         "name":"Home & Kitchen",
         "icon": "homekit.webp",
@@ -194,74 +200,7 @@
             }
         ]
     },
-    {
-        "id": "appliances",
-        "name":"Appliances",
-        "icon": "appliances.jpg",
-        "subcategories": [
-                {
-                    "id": "kitchen-appliances",
-                    "name": "Kitchen Appliances",
-                    "icon": "appliance.png",
-                    "subcategories": ["Microwaves", "Refrigerators", "Dishwashers"]
-                },
-                {
-                    "id": "laundry-appliances",
-                    "name": "Laundry Appliances",
-                    "icon": "appliance.png",
-                    "subcategories": ["Washing Machines", "Dryers"]
-                },
-                {
-                    "id": "small-appliances",
-                    "name": "Small Appliances",
-                    "icon": "appliance.png",
-                    "subcategories": ["Blenders", "Toasters", "Coffee Makers"]
-                },
-                {
-                    "id": "air-conditioning",
-                    "name": "Air Conditioning",
-                    "icon": "appliance.png",
-                    "subcategories": ["Air Conditioners", "Fans", "Air Purifiers"]
-                },
-                {
-                    "id": "brands",
-                    "name": "Brands",
-                    "icon": "appliance.png",
-                    "subcategories": ["LG", "Samsung", "Whirlpool", "GE"]
-                }
-            ]
-    },
-    {
-        "id": "travel",
-        "name":"Travel",
-        "icon": "travel.png",
-        "subcategories": [
-                {
-                    "id": "destinations",
-                    "name": "Destinations",
-                    "icon": "travel.png",
-                    "subcategories": ["Beach", "Mountain", "City"]
-                },
-                {
-                    "id": "transportation",
-                    "name": "Transportation",
-                    "icon": "travel.png",
-                    "subcategories": ["Flights", "Trains", "Car Rentals"]
-                },
-                {
-                    "id": "accommodation",
-                    "name": "Accommodation",
-                    "icon": "travel.png",
-                    "subcategories": ["Hotels", "Hostels", "Vacation Rentals"]
-                },
-                {
-                    "id": "travel-gear",
-                    "name": "Travel Gear",
-                    "icon": "travel.png",
-                    "subcategories": ["Luggage", "Backpacks", "Travel Accessories"]
-                }
-        ]
-    },
+    
     {
         "id": "beauty",
         "name": "Beauty, Toys & More",
@@ -292,7 +231,32 @@
         "name":"Travel",
         "icon": "travel.webp",
         "subcategories": [
+                {
+                    "id": "destinations",
+                    "name": "Destinations",
+                    "icon": "travel.png",
+                    "subcategories": ["Beach", "Mountain", "City"]
+                },
+                {
+                    "id": "transportation",
+                    "name": "Transportation",
+                    "icon": "travel.png",
+                    "subcategories": ["Flights", "Trains", "Car Rentals"]
+                },
+                {
+                    "id": "accommodation",
+                    "name": "Accommodation",
+                    "icon": "travel.png",
+                    "subcategories": ["Hotels", "Hostels", "Vacation Rentals"]
+                },
+                {
+                    "id": "travel-gear",
+                    "name": "Travel Gear",
+                    "icon": "travel.png",
+                    "subcategories": ["Luggage", "Backpacks", "Travel Accessories"]
+                }
         ]
+
     }
-    
+   
 ]
