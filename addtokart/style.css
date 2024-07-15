@@ -9569,12 +9569,16 @@ footer span {
     padding: 0 0 6px
 }
 
+
+
 .EPCmJX .vMTK1V {
     width: auto;
     position: absolute;
     right: 0
 }
-
+.cPHDOP {
+    display: block;
+}
 .EPCmJX .qhmk-f {
     margin-right: 20px
 }
@@ -9956,4 +9960,8 @@ footer span {
     top: 0;
     background-color: hsla(0,0%,100%,.7)
 }
- 
+
+.bank-icon{
+    height:10px !important;
+    width: 10px !important;
+}
