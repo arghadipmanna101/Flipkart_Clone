@@ -137,3 +137,16 @@ body {
         width: 56vw;
     }
 }
+@media screen and (max-width: 800px) {
+    .signupin .rightSignuppanal {
+      width: 60vw;
+    }
+}
+@media screen and (max-width: 500px) {
+    .signupin .rightSignuppanal {
+        width: 73vw;
+    }
+    .rightSignuppanal form{
+        width: 250px;
+    }
+}
