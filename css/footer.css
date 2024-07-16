@@ -34,7 +34,14 @@ footer .footerI h5{
 footer .mailSocial{
     border-left: 1px solid #454d5e;
     padding-left: 32px;
+    
 }
+
+footer .social li:hover {
+    transform: scale(1.1025);
+    background-color: #1b1919;
+}
+  
 @media screen and (max-width: 991px) {
     footer .mailSocial{
         border-left: none;
@@ -97,6 +104,12 @@ footer .footerEnd a{
     text-decoration: none; 
     color: #fff
 }
+
+footer .footerEnd a li:hover {
+    transform: scale(1.1025);
+    background-color: #2b2828;
+}
+
 @media screen and (max-width: 770px){
 .pCGSTEF{
     width: 80vw;
