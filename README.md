@@ -115,8 +115,15 @@
    ```bash
    git switch -c <your-branch-name>
    ```
+6. **Setup Environment:** 
+   ```bash
+      npm install
+   ```
+   
+7. **To preview:** Go to index.html and "Go Live" to view in localhost
 
-6. **Make changes:** Deployment failed with the following error:
+
+8. **Make changes:** Deployment failed with the following error:
 ```bash
    Resource is limited - try again in 2 hours (more than 100, code: "api-deployments-free-per-day").
 ```
