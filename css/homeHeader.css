@@ -27,6 +27,22 @@
 #searchbar.navtab {
   width: 100%;
   border-radius: 10px;
+  position: relative !important;
+}
+
+div#autocompleteResults { 
+  position: absolute; 
+  top: 50px; 
+  background-color: #e6eeff; 
+  border-radius: 15px; 
+  padding: 0px; 
+  display: flex !important; 
+  gap: 5px; flex-direction: column; 
+  width: 100%; 
+}
+
+.autocomplete-item {
+  padding: 5px 15px;
 }
 
 .homeHeader .nav-link {
