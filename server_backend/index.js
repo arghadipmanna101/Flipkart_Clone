@@ -1,11 +1,29 @@
 const express = require('express');
+const connectDB = require('./db');
+const authRoutes = require('./routes/auth');
+const dotenv = require('dotenv');
+const cors = require('cors');
+
+dotenv.config();
+
 const app = express();
-const port = 3000;
 
-app.get('/', (req, res) => {
-  res.send('<h1>Server started</h1>');
-});
+// cors added
+app.use(cors());
 
-app.listen(port, () => {
-  console.log(`Server is running at http://localhost:${port}`);
-});
+// Connect Database
+connectDB();
+
+// Init Middleware
+app.use(express.json({ extended: false }));
+
+// Define Routes
+app.use('/api', authRoutes);
+
+app.get('/',()=>{
+    '<h1>Server Started</h1>'
+})
+
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => console.log(`Server started on port http://localhost:${PORT}`));
