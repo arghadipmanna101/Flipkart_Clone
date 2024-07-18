@@ -43,7 +43,7 @@ function createSearchProductCard(product) {
             <div class="col-md-6">
               <div class="container">
                 <div class="text-center img-fluid" style="height:400px" ;>
-                    <img class="p-3" src="../json-api/product-img/${product.productImg}"
+                    <img class="p-3" src="https://raw.githubusercontent.com/csathnere/APIs/main/json-ec/product-img/${product.productImg}"
                         style="width: 75%; height: 75%; margin:auto auto; object-fit: contain;" alt="${product.name}">
                 </div>
                 <div>
@@ -132,7 +132,7 @@ function createSearchSimilarProducts(product) {
     <a class="btn col-lg-2 col-md-3 col-sm-4 col-6 p-2" href="?query=${product.name}">
         <div class="productsSimi">
             <div class="text-center product_Img img-fluid">
-                <img src="../json-api/product-img/${product.productImg}" alt="${product.id}">
+                <img src="https://raw.githubusercontent.com/csathnere/APIs/main/json-ec/product-img/${product.productImg}" alt="${product.id}">
             </div>
             <div class="text-center card-title pt-1">${product.name.slice(0, 20)} ${product.name.length > 20 ? "<b>...</b>" : ""}</div>
             <div class="text-center mb-1 rating">${product.rating} &nbsp<i class="bi bi-star-fill"></i></div>
@@ -160,7 +160,7 @@ function searchFetchSimi(products) {
 }
 
 // Fetch data from the JSON file and filter products based on the query
-fetch("../json-api/product.json")
+fetch("https://raw.githubusercontent.com/csathnere/APIs/main/json-ec/product.json")
   .then((response) => response.json())
   .then((data) => {
     const query = getQueryParameter("query");

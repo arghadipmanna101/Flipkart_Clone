@@ -49,7 +49,7 @@ function createSearchProductCard(product) {
     <a class="btn col-lg-2 col-md-3 col-sm-4 col-6 p-2" href="../addtokart/?query=${product.name}">
         <div class="products">
             <div class="text-center product_Img img-fluid">
-                <img src="../json-api/product-img/${product.productImg}" alt="${product.id}">
+                <img src="https://raw.githubusercontent.com/csathnere/APIs/main/json-ec/product-img/${product.productImg}" alt="${product.id}">
             </div>
             <div class="text-center card-title pt-1">${product.name.slice(0, 20)} ${product.name.length > 20 ? "<b>...</b>" : ""}</div>
             <div class="text-center mb-1 rating">${product.rating} &nbsp<i class="bi bi-star-fill"></i></div>
@@ -101,7 +101,7 @@ function searchFetch(products) {
 
 // Fetch data from the JSON file and filter products based on the query and filters
 function fetchProducts(filters = {}) {
-  fetch('../json-api/product.json')
+  fetch('https://raw.githubusercontent.com/csathnere/APIs/main/json-ec/product.json')
     .then(response => response.json())
     .then(data => {
       const query = getQueryParameter('query');

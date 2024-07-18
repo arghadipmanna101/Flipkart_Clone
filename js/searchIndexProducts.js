@@ -1,6 +1,6 @@
 const searchJSON = (query) => {
   // Fetch JSON data from the data.json file
-  return fetch("json-api/product.json")
+  return fetch("https://raw.githubusercontent.com/csathnere/APIs/main/json-ec/product.json")
     .then((response) => response.json())
     .then((data) => {
       const results = data.filter((item) => {
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
             resultElement.innerHTML = `
             <a href="addtokart/?query=${result.name}">
             <div class="text-center" style="height:150px";>
-            <img src="json-api/product-img/${result.productImg}" style="width: 100%; height: 100%; object-fit: contain;"
+            <img src="https://raw.githubusercontent.com/csathnere/APIs/main/json-ec/product-img/${result.productImg}" style="width: 100%; height: 100%; object-fit: contain;"
             alt="${result.name}">
             </div>
             <div class="text-center card-title">${result.name}</div>

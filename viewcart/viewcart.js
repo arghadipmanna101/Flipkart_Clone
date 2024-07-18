@@ -74,7 +74,7 @@ function fetchCartData(item) {
   <div class="cartItmListInviewCart bg-white">
     <div class="itemInCart d-flex p-3 m-1">
       <div style="height: 60px; width: 112px;" class="m-3 d-flex justify-content-center">
-        <img src="../json-api/product-img/${item.productImg}" style="width: auto; height: 80px; object-fit: contain;" alt="${item.name}">
+        <img src="https://raw.githubusercontent.com/csathnere/APIs/main/json-ec/product-img/${item.productImg}" style="width: auto; height: 80px; object-fit: contain;" alt="${item.name}">
       </div>
       <div class="itemDetail">
         <div>
@@ -208,7 +208,7 @@ function updatePriceDetail(products) {
 }
 
 // Fetch data from the JSON file and filter products based on the query
-fetch("../json-api/product.json")
+fetch("https://raw.githubusercontent.com/csathnere/APIs/main/json-ec/product.json")
   .then(response => response.json())
   .then(data => {
     const query = getQueryParameter("query");
