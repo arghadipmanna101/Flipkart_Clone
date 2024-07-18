@@ -19,7 +19,7 @@ function createProductCard(product) {
       <a class="btn col-lg-2 col-md-3 col-sm-4 col-6 p-2" href="addtokart/?query=${product.name}">
           <div class="products">
               <div class="text-center product_Img img-fluid">
-                  <img src="json-api/product-img/${product.productImg}" alt="${product.id}">
+                  <img src="https://raw.githubusercontent.com/csathnere/APIs/main/json-ec/product-img/${product.productImg}" alt="${product.id}">
               </div>
               <div class="text-center card-title pt-1">${product.name.slice(0, 20)} ${product.name.length > 20 ? "<b>...</b>":""}</div>
               <div class="text-center mb-1 rating">${product.rating} &nbsp<i class="bi bi-star-fill"></i></div>
@@ -187,16 +187,16 @@ function createProductCard(product) {
   
   //  mobileUnder15000Data()
   // Fetch data for best-deal products  rendom products & top selection
-  bestOfEelecronics("json-api/product.json", bestOfEelecronics_products, 6);
+  bestOfEelecronics("https://raw.githubusercontent.com/csathnere/APIs/main/json-ec/product.json", bestOfEelecronics_products, 6);
   
-  fetchAndShuffleData("json-api/product.json", rendom_products, 12);
-  fetchAndShuffleData("json-api/product.json", best_deal_products, 18);
-  fetchAndShuffleData("json-api/product.json", top_selection_products, 12);
-  fetchAndShuffleData("json-api/product.json", s2_products, 12);
-  fetchAndShuffleData("json-api/product.json", seletcYourChoice_products, 120);
+  fetchAndShuffleData("https://raw.githubusercontent.com/csathnere/APIs/main/json-ec/product.json", rendom_products, 12);
+  fetchAndShuffleData("https://raw.githubusercontent.com/csathnere/APIs/main/json-ec/product.json", best_deal_products, 18);
+  fetchAndShuffleData("https://raw.githubusercontent.com/csathnere/APIs/main/json-ec/product.json", top_selection_products, 12);
+  fetchAndShuffleData("https://raw.githubusercontent.com/csathnere/APIs/main/json-ec/product.json", s2_products, 12);
+  fetchAndShuffleData("https://raw.githubusercontent.com/csathnere/APIs/main/json-ec/product.json", seletcYourChoice_products, 120);
   
-  fetchAndShuffleDataMobile15000("json-api/product.json", mobileUnder15000, 12);
-  fetchAndShuffleDataUnder("json-api/product.json", shopUnder500, 18);
+  fetchAndShuffleDataMobile15000("https://raw.githubusercontent.com/csathnere/APIs/main/json-ec/product.json", mobileUnder15000, 12);
+  fetchAndShuffleDataUnder("https://raw.githubusercontent.com/csathnere/APIs/main/json-ec/product.json", shopUnder500, 18);
   
   
   
