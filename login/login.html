@@ -9,14 +9,14 @@
 </head>
 <body>
   <div class="wrapper">
-    <form action="">
+    <form id="login-form">
       <h1>Login</h1>
       <div class="input-box">
-        <input type="text" placeholder="Username" required>
+        <input type="text" id="email" placeholder="Email" required>
         <i class='bx bxs-user'></i>
       </div>
       <div class="input-box">
-        <input type="password" placeholder="Password" required>
+        <input type="password" id="password" placeholder="Password" required>
         <i class='bx bxs-lock-alt'></i>
       </div>
       <div class="remember-forgot">
@@ -34,5 +34,32 @@
       </div>
     </form>
   </div>
+
+  <script>
+    document.getElementById('login-form').addEventListener('submit', async function(e) {
+      e.preventDefault();
+
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+      const response = await fetch('http://localhost:5000/api/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ username: email, password: password })
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        // Save the token to localStorage or sessionStorage
+        localStorage.setItem('token', data.token);
+        window.location.href = 'https://flipkart-clone-seven-azure.vercel.app/';
+      } else {
+        alert(data.msg || 'Login failed');
+      }
+    });
+  </script>
 </body>
 </html>
