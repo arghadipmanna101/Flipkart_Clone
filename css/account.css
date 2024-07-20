@@ -1,0 +1,104 @@
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+ }
+ 
+ .flipkardLoader {
+  width: 100%;
+  max-width: 180px;
+  margin: 0 auto;
+ }
+ 
+ h1 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+ }
+ 
+ form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+ }
+ 
+ .form-group {
+  margin-bottom: 15px;
+ }
+ 
+ label {
+  font-weight: bold;
+ }
+
+ p {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em
+}
+ 
+ input[type="text"],
+ input[type="email"],
+ textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+ }
+ 
+ textarea {
+  height: 100px;
+ }
+ 
+ /* Radio buttons */
+ .form-check {
+  display: inline-block;
+  margin-right: 10px;
+ }
+
+ #FAQ{
+  padding: 50px;
+ }
+
+ #para1{
+ 
+  font-size: 14px;
+
+ }
+ #heading{
+ 
+  font-size: 20px;
+  font-weight: bold;
+
+ }
+ /* Submit button */
+ .btn-primary {
+  background-color: #2874f0;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+ }
+ .btn-primary2 {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  background-color: #2874f0;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+
+ }
+ @media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+ 
+  form {
+    max-width: 100%;
+  }
+ }

@@ -1,0 +1,152 @@
+body {
+    background: #f1f3f6;    
+}
+
+#divB {
+    display: none;
+}
+
+.signupin {
+    background: #f1f3f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+
+}
+.signupin .leftpanal .login-display{
+    margin: 40px 30px;
+    font-weight: bold;
+}
+.signupin .leftpanal p{
+    margin: 0 30px;
+    color: #ccc;
+}
+.signupin .leftpanal {
+    background-color: #2874F0;
+    color: #fff;
+    background-image: url(../img/login_img_bg.png);
+    background-position: center 85%;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 20vw;
+}
+
+.signupin .rightSignuppanal {
+    padding: 10px;
+    background: #fff;
+    height: 400px;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.LSOAQH .QqFHMw {
+    height: 45px;
+}
+
+._7Pd1Fp {
+    justify-self: flex-start;
+    background: #fb641b;
+    width: 100%;
+    padding: 5px;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+    border: none;
+    color: #fff;
+}
+
+.EpHS0A {
+    font-size: 11px;
+}
+
+
+.I-qZ4MvLRlQb {
+    position: relative;
+    margin: 50px auto;
+    width: 300px;
+}
+
+.I-qZ4MvLRlQb input[type="text"] {
+    font-size: 17px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 5px 0;
+    background-color: transparent;
+    outline: none;
+}
+
+.I-qZ4MvLRlQb .label {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    color: #ccc;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.I-qZ4MvLRlQb input[type="text"]:focus~.label,
+.I-qZ4MvLRlQb input[type="text"]:valid~.label {
+    top: -15px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #423e3e;
+}
+
+.I-qZ4MvLRlQb .underline {
+   position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%; 
+    background-color: #333;
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+}
+
+.I-qZ4MvLRlQb input[type="text"]:focus~.underline,
+.I-qZ4MvLRlQb input[type="text"]:valid~.underline {
+    transform: scaleX(1);
+}
+
+@media screen and (max-width: 1200px) {
+    .signupin .leftpanal {
+        width: 30vw;
+    }
+    .signupin .rightSignuppanal {
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .signupin .leftpanal {
+        width: 35vw;
+        padding: 15px;
+    }
+    .signupin .rightSignuppanal {
+        width: 45vw;
+    }
+}
+@media screen and (max-width: 800px) {
+    .signupin .leftpanal {
+        width: 43vw;
+        padding: 5px;
+    }
+    .signupin .rightSignuppanal {
+        width: 56vw;
+    }
+}
+@media screen and (max-width: 800px) {
+    .signupin .rightSignuppanal {
+      width: 60vw;
+    }
+}
+@media screen and (max-width: 500px) {
+    .signupin .rightSignuppanal {
+        width: 73vw;
+    }
+    .rightSignuppanal form{
+        width: 250px;
+    }
+}

@@ -1,0 +1,259 @@
+[
+    {
+        "id": "top-offers",
+        "name": "Top Offers",
+        "icon": "topoffer.webp",
+        "subcategories":[]
+    },
+
+    {
+        "id": "grocery",
+        "name": "Grocery",
+        "icon": "grocery.webp",
+        "subcategories": [
+            {
+                "id": "fruits-vegetables",
+                "name": "Fruits & Vegetables",
+                "icon": "grocery.png",
+                "subcategories": ["Fresh Fruits", "Fresh Vegetables"]
+            },
+            {
+                "id": "dairy-eggs",
+                "name": "Dairy & Eggs",
+                "icon": "grocery.png",
+                "subcategories": ["Milk", "Cheese", "Eggs"]
+            },
+            {
+                "id": "bakery",
+                "name": "Bakery",
+                "icon": "grocery.png",
+                "subcategories": ["Bread", "Pastries", "Cakes"]
+            },
+            {
+                "id": "canned-packaged",
+                "name": "Canned & Packaged",
+                "icon": "grocery.png",
+                "subcategories": ["Canned Food", "Pasta", "Rice", "Snacks"]
+            },
+            {
+                "id": "desserts",
+                "name": "Desserts",
+                "icon": "grocery.png",
+                "subcategories": null
+            }
+        ]
+    },
+    
+    {
+        "id": "Mobiles",
+        "name":"Mobiles & Tablets",
+
+        "icon": "mobile.webp",
+        "subcategories": [
+        {
+            "id": "smartphones",
+            "name": "Smartphones",
+            "icon": "mobile.png",
+            "subcategories": ["Android Phones", "iPhones"]
+        },
+        {
+            "id": "accessories",
+            "name": "Accessories",
+            "icon": "mobile.png",
+            "subcategories": ["Chargers", "Cases", "Screen Protectors"]
+        },
+        {
+            "id": "wearables",
+            "name": "Wearables",
+            "icon": "mobile.png",
+            "subcategories": ["Smartwatches", "Fitness Trackers"]
+        },
+        {
+            "id": "audio",
+            "name": "Audio",
+            "icon": "mobile.png",
+            "subcategories": ["Earbuds", "Headphones", "Speakers"]
+        },
+        {
+            "id": "brands",
+            "name": "Brands",
+            "icon": "mobile.png",
+            "subcategories": ["Samsung", "Apple", "OnePlus", "Xiaomi"]
+          }
+        ]
+    },
+    {
+        "id": "Fashion",
+        "name": "Fashion",
+        "icon": "fashion.webp",
+        "subcategories": [
+            {
+                "id": "mens-top_wear",
+                "name": "Men's Top Wear",
+                "icon": "fashion.png",
+                "subcategories": ["All" ,"Men's T-Shirts", "Men's Casual Shirts","Men's Kurtas","Men's Ethnic Sets", "Men's Blazers", "Men's Raincoat","Men's Formal Shirts", "Men's Pants", "Men's Jackets"]
+            },
+            {
+                "id": "mens-bottom_wear",
+                "name": "Men's Bottom Wear",
+                "icon": "fashion.png",
+                "subcategories": ["All" ,"Men's Jeans", "Men's Tousers","Men's Track Pants","Men's Shorts", "Men's Cargo", "Men's Threefourths","Men's Dhoti", "Men's Ethnic Pyjama", "Men's Pyjama & Loungerpants"]
+            },
+            {
+                "id": "womens-ethnics",
+                "name": "Women's Ethnic",
+                "icon": "fashion.png",
+                "subcategories": ["All","Women Sarees","Women kurtas & Kurtis","Women Kurta Set & Salwar Suits","Women Gowns","Women Blouse","Ethnic Dresses", "Women Dupatta"]
+            },
+            {
+                "id": "mens-Footwear_wear",
+                "name": "Men's Footwear",
+                "icon": "fashion.png",
+                "subcategories": ["All", "Men's Sports Shoe","Mens Casual shoes", "Shoe Care"]
+            },
+            {
+                "id": "women-Footwear_wear",
+                "name": "Women Footwear",
+                "icon": "fashion.png",
+                "subcategories": ["All","Women Flats","Women Heels","Women Sports Shoe","Women Casual shoes", "Shoe Care"]
+            },
+            {
+                "id": "watches_and_accessories",
+                "name": "Watches And Accessories",
+                "icon": "fashion.png",
+                "subcategories": ["All","Men & Women Watches", "Men & Women Sunglasses","Wallets","Mens & Women Belts"]
+            },
+            {
+                "id": "kids-clothing",
+                "name": "Kids",
+                "icon": "fashion.png",
+                "subcategories": ["T-shirts", "Jeans", "Dresses"]
+            }
+        ]
+    },
+    {
+        "id": "electronics",
+        "name": "Electronics",
+        "icon": "elec.webp",
+        "subcategories": [
+         
+            {
+                "id": "computers",
+                "name": "Computers",
+                "icon": "electronics.png",
+                "subcategories": ["Laptops", "Desktops", "Tablets"]
+            },
+            {
+                "id": "accessories",
+                "name": "Accessories",
+                "icon": "electronics.png",
+                "subcategories": ["Headphones", "Chargers", "Cases"]
+            }
+        ]
+    },
+    {
+
+        "id": "appliances",
+        "name":"TVs & Appliances",
+        "icon": "tv.webp",
+        "subcategories": []
+    },
+    {
+
+        "id": "home-kitchen",
+        "name":"Home & Kitchen",
+        "icon": "homekit.webp",
+        "subcategories": []
+    },
+    {
+        "id": "home-furniture",
+        "name": "Furniture",
+        "icon": "furniture.webp",
+        "subcategories": [
+            {
+                "id": "Kitchen-appliances",
+                "name": "kitchen Appliances",
+                "icon": "home&furniture.jpg",
+                "subcategories": ["Blenders", "Microwaves", "Coffee Makers", "Pressure cookers", "Pans"]
+            },
+            {
+                "id": "furniture",
+                "name": "Furniture",
+                "icon": "home&furniture.jpg",
+                "subcategories": ["Sofas", "Tables", "Chairs", "Beds"]
+            },
+            {
+                "id": "home-decor",
+                "name": "Home Decor",
+                "icon": "home&furniture.jpg",
+                "subcategories": ["Rugs", "Lamps", "Mirrors", "Clocks"]
+            },
+            
+            {
+                "id": "pet",
+                "name": "Pet supplies",
+                "icon": "home&furniture.jpg",
+                "subcategories": ["Dogs", "Cats", "Fish and Aquatics"]
+            }
+        ]
+    },
+    
+    {
+        "id": "beauty",
+        "name": "Beauty, Toys & More",
+        "icon": "beauty.webp",
+        "subcategories": [
+            {
+                "id": "face",
+                "name": "Face",
+                "icon": "beautyToys.png",
+                "subcategories": ["Foundation", "Concealer", "Powder"]
+            },
+            {
+                "id": "eyes",
+                "name": "Eyes",
+                "icon": "beautyToys.png",
+                "subcategories": ["Eyeshadow", "Mascara", "Eyeliner"]
+            },
+            {
+                "id": "lips",
+                "name": "Lips",
+                "icon": "beautyToys.png",
+                "subcategories": ["Lipstick", "Lip Gloss", "Lip Liner"]
+            }
+        ]
+    },
+    {
+        "id": "travel",
+        "name":"Travel",
+        "icon": "travel.webp",
+        "subcategories": [
+                {
+                    "id": "destinations",
+                    "name": "Destinations",
+                    "icon": "travel.png",
+                    "subcategories": ["Beach", "Mountain", "City"]
+                },
+                {
+                    "id": "transportation",
+                    "name": "Transportation",
+                    "icon": "travel.png",
+                    "subcategories": ["Flights", "Trains", "Car Rentals"]
+                },
+                {
+                    "id": "accommodation",
+                    "name": "Accommodation",
+                    "icon": "travel.png",
+                    "subcategories": ["Hotels", "Hostels", "Vacation Rentals"]
+                },
+                {
+                    "id": "travel-gear",
+                    "name": "Travel Gear",
+                    "icon": "travel.png",
+                    "subcategories": ["Luggage", "Backpacks", "Travel Accessories"]
+                }
+        ]
+
+    }
+   
+]

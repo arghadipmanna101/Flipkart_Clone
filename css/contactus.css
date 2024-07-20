@@ -1,0 +1,199 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(180deg, #FDD86C 8.1%, #FF7D1F 100%);
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto 100px;
+    gap: 200px;
+}
+
+
+#error {
+    color: red;
+    font-size: 18px;
+    text-align: center;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #0000006B;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+}
+
+
+@keyframes blink {
+    0%, 100% {
+        box-shadow: 0 4px 8px rgba(255, 255, 255, 0.25);
+    }
+    50% {
+        box-shadow: 0 4px 8px rgba(255, 255, 255, 1);
+    }
+}
+
+
+.form-container {
+    background: rgba(255, 125, 31, 0.39);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.25);
+    width: 400px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.form-container:hover {
+    transform: scale(1.05);
+    animation: blink 1.5s infinite;
+}
+
+
+.form-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 45px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+.container img {
+    width: 25%;
+}
+
+
+.main {
+    min-height: 70vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85vw;
+    border-radius: 20px;
+    margin-bottom: 50px !important;
+    background-image: linear-gradient(to right, red 1%, orange 99%) !important;
+}
+
+
+@media only screen and (max-width: 1212px) {
+    .container img {
+        width: 40%;
+    }
+    .container {
+        gap: 100px;
+    }
+}
+
+@media only screen and (max-width: 958px) {
+    .container img {
+        width: 50%;
+    }
+    .container {
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width: 558px) {
+    .container img {
+        width: 70% !important;
+    }
+    .container {
+        margin-top: 120px !important;
+    }
+}
+
+@media only screen and (max-width: 781px) {
+    .container img {
+        width: 50%;
+    }
+    .container {
+        flex-direction: column;
+        gap: 100px;
+    }
+    .form-container {
+        width: 70vw !important;
+    }
+}
+
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 2px solid;
+    background-color: transparent;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+}
+
+form textarea {
+    resize: none;
+    height: 80px;
+    color: #0000006B;
+    border-bottom: 1px solid;
+}
+
+
+#rating {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+
+#comment {
+    border-bottom: 1px solid;
+}
+
+
+.star {
+    font-size: 2rem;
+    cursor: pointer;
+    color: black;
+}
+
+
+#rate {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+}
+
+
+#button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: #FF7D1F;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#button:hover {
+    background-color: #333;
+}

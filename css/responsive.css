@@ -1,0 +1,10 @@
+/* responsive.css */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+    }
+}

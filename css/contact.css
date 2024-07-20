@@ -1,0 +1,48 @@
+.contact-header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 0;
+}
+.contact-header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    transition: color 0.3s;
+}
+.contact-header a:hover {
+    color: #ffd700;
+}
+.contact-section {
+    padding: 60px 0;
+}
+.contact-section h2 {
+    animation: fadeInDown 1s;
+}
+.contact-info,
+.contact-form {
+    animation: fadeInUp 1s;
+}
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.contact-info img {
+    width: 30px;
+    margin-right: 10px;
+}
+.footer {
+    background-color: #f1f1f1;
+    padding: 20px 0;
+}
+.footer a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.footer a:hover {
+    color: #0056b3;
+}
