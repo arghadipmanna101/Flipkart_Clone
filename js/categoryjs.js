@@ -8,21 +8,26 @@ document.addEventListener("DOMContentLoaded", function () {
         const icon = document.createElement("img");
         icon.src = "img/" + categoryData.icon;
 
-        const name = document.createElement("span");
-        name.textContent = categoryData.name;
+        const nameLink = document.createElement("a");
+        nameLink.href = categoryData.name + "-/"; //find index.html
+        nameLink.textContent = categoryData.name;
 
-        const nameWrapper = document.createElement("span");
-        nameWrapper.appendChild(document.createElement("br"));
-        nameWrapper.appendChild(name);
+        const name = document.createElement("span");
+        name.appendChild(document.createElement("br"));
+        name.appendChild(nameLink);
 
         categoryItem.appendChild(icon);
-        categoryItem.appendChild(nameWrapper);
+        categoryItem.appendChild(name);
 
         const subcategoriesList = document.createElement("div");
         subcategoriesList.classList.add('dropdownbox', `${categoryData.id}`);
 
         if (!categoryData.subcategories) {
             const singleItem = document.createElement("div");
+            const singleLink = document.createElement("a");
+            singleLink.href = categoryData.name + "-/";
+            singleLink.textContent = categoryData.name;
+            singleItem.appendChild(singleLink);
             subcategoriesList.appendChild(singleItem);
         } else {
             categoryData.subcategories.forEach(function (subcategoryData) {
@@ -39,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         categoryItem.appendChild(subcategoriesList);
 
+
         categoryItem.addEventListener('mouseenter', function (event) {
             document.querySelector('.categorylist-wrapper').appendChild(subcategoriesList);
             subcategoriesList.style.display = 'block';
@@ -50,13 +56,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.querySelectorAll(`.${event.target.id}`).forEach(elem => elem.remove());
                 subcategoriesList.style.display = 'none';
             }
+
         });
 
         if (subcategoriesList && subcategoriesList.childNodes.length) {
-            subcategoriesList.addEventListener('mouseenter', function (event) {
+            subcategoriesList.addEventListener('mouseenter', function(event){
                 subcategoriesList.style.display = 'block';
             });
-
+            
             subcategoriesList.addEventListener('mouseleave', function (event) {
                 subcategoriesList.style.display = 'none';
                 document.querySelectorAll(`.${categoryData.id}`).forEach(elem => elem.remove());
