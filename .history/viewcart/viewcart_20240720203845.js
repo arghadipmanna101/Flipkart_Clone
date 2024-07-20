@@ -1,5 +1,4 @@
-// Existing code...
-
+// Date and Time
 const today = new Date();
 const nextThreeDays = new Date(today);
 nextThreeDays.setDate(today.getDate() + 3);
@@ -40,7 +39,7 @@ function getQueryParameter(name) {
 // Function to display search results
 function searchFetch(products) {
     const searchList = document.getElementById("itemsInCart");
-    searchList.innerHTML = products.map((product, index) => fetchCartData(product, index)).join(""); // Added index parameter to the map function
+    searchList.innerHTML = products.map((product, index) => fetchCartData(product, index)).join(""); // Added index parameter
 
     // Add event listeners for remove buttons
     document.querySelectorAll('.cartItmSfLRmBtn.remove').forEach(button => {
@@ -54,63 +53,9 @@ function searchFetch(products) {
     updatePriceDetail(products);
 }
 
+
 let totalPrice = 0;
 let totalItems = 0;
-
-// Function to generate HTML for a cart item
-function fetchCartData(item, index) { // Added index parameter to the function
-    totalItems += 1;
-    totalPrice += item.price;
-
-    const discount = (Math.floor(item.rating * (parseInt((item.price.toString()).slice(0, 2))) / 10));
-    const afterDiscountPrice = Math.round((100 - discount) * item.price / 100);
-
-    function formatIndianRupee(number) {
-        const parts = number.toString().split(".");
-        const integerPart = parts[0].replace(/\B(?=(\d{3})+(?!d))/g, ",");
-        const formattedNumber = parts.length > 1 ? integerPart + "." + parts[1] : integerPart;
-        return formattedNumber;
-    }
-
-    return `
-  <div class="cartItmListInviewCart bg-white">
-    <div class="itemInCart d-flex p-3 m-1">
-      <div style="height: 60px; width: 112px;" class="m-3 d-flex justify-content-center">
-        <img src="https://raw.githubusercontent.com/csathnere/APIs/main/json-ec/product-img/${item.productImg}" style="width: auto; height: 80px; object-fit: contain;" alt="${item.name}">
-      </div>
-      <div class="itemDetail">
-        <div>
-          <p>${item.name}</p>
-          <p> Forest Green Strap, Regular</p>
-          <p> Seller: Ezig </p>
-        </div>
-        <div class=""><strong>₹${formatIndianRupee(afterDiscountPrice)}</strong> <del style="color:#878787">₹${formatIndianRupee(item.price)}</del> <span style="color:#388e3c"> ${discount}% off </span>
-        <span class="text-success">1 offer applied</span>
-        </div>
-      </div>
-      <div class="deliveryDate">
-        Delivery by ${dayOfWeek}, ${date} | <del>₹40</del> Free
-      </div>
-    </div>
-    <div class="cartItmRmPMdiv container-fluid pt-2 pb-2" style="border-top:1px solid #f1f3f6">
-      <div class="row">
-        <div class="plusMinItm col-sm-6">
-          <div class="d-flex justify-content-center align-items-center">
-            <button class="cartItmPMBtn" onclick="decreaseQuantity(${index})">–</button>&nbsp <!-- Added onclick event with index parameter -->
-            <div class="cartItmQty"><input type="text" class="text-center input" value="1" id="quantity-${index}" style="width:50px; border: 1px solid #f1f3f6"></div>&nbsp <!-- Added id with index parameter -->
-            <button class="cartItmPMBtn" onclick="increaseQuantity(${index})">+</button> <!-- Added onclick event with index parameter -->
-          </div>
-        </div>
-        <div class="cartItmSfLRm d-flex justify-content-around align-items-center col-sm-6">
-          <div class="cartItmSfLRmBtn">Save for later</div>
-          <div class="cartItmSfLRmBtn remove" data-name="${item.name}">Remove</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  `;
-}
-
 // Function to increase the quantity of a specific item
 function increaseQuantity(index) { // Added function to handle increasing quantity
     const input = document.getElementById(`quantity-${index}`); // Use index to target specific input
@@ -129,6 +74,67 @@ function decreaseQuantity(index) { // Added function to handle decreasing quanti
     }
 }
 
+// Function to generate HTML for a cart item
+function fetchCartData(item) {
+    totalItems += 1;
+    totalPrice += item.price;
+
+    const discont = (Math.floor(item.rating * (parseInt((item.price.toString()).slice(0, 2))) / 10))
+    const afterDiscontPrice = Math.round((100 - discont) * item.price / 100)
+
+    function fetchCartData(item, index) { // Added index parameter
+        totalItems += 1;
+        totalPrice += item.price;
+
+        const discount = (Math.floor(item.rating * (parseInt((item.price.toString()).slice(0, 2))) / 10))
+        const afterDiscountPrice = Math.round((100 - discount) * item.price / 100)
+
+        function formatIndianRupee(number) {
+            const parts = number.toString().split(".");
+            const integerPart = parts[0].replace(/\B(?=(\d{3})+(?!d))/g, ",");
+            const formattedNumber = parts.length > 1 ? integerPart + "." + parts[1] : integerPart;
+            return formattedNumber;
+        }
+
+        return `
+    <div class="cartItmListInviewCart bg-white">
+      <div class="itemInCart d-flex p-3 m-1">
+        <div style="height: 60px; width: 112px;" class="m-3 d-flex justify-content-center">
+          <img src="https://raw.githubusercontent.com/csathnere/APIs/main/json-ec/product-img/${item.productImg}" style="width: auto; height: 80px; object-fit: contain;" alt="${item.name}">
+        </div>
+        <div class="itemDetail">
+          <div>
+            <p>${item.name}</p>
+            <p> Forest Green Strap, Regular</p>
+            <p> Seller: Ezig </p>
+          </div>
+          <div class=""><strong>₹${formatIndianRupee(afterDiscountPrice)}</strong> <del style="color:#878787">₹${formatIndianRupee(item.price)}</del> <span style="color:#388e3c"> ${discount}% off </span>
+          <span class="text-success">1 offer applied</span>
+          </div>
+        </div>
+        <div class="deliveryDate">
+          Delivery by ${dayOfWeek}, ${date} | <del>₹40</del> Free
+        </div>
+      </div>
+      <div class="cartItmRmPMdiv container-fluid pt-2 pb-2" style="border-top:1px solid #f1f3f6">
+        <div class="row">
+          <div class="plusMinItm col-sm-6">
+            <div class="d-flex justify-content-center align-items-center">
+              <button class="cartItmPMBtn" onclick="decreaseQuantity(${index})">–</button>&nbsp <!-- Added onclick event with index -->
+              <div class="cartItmQty"><input type="text" class="text-center input" value="1" id="quantity-${index}" style="width:50px; border: 1px solid #f1f3f6"></div>&nbsp <!-- Added id with index -->
+              <button class="cartItmPMBtn" onclick="increaseQuantity(${index})">+</button> <!-- Added onclick event with index -->
+            </div>
+          </div>
+          <div class="cartItmSfLRm d-flex justify-content-around align-items-center col-sm-6">
+            <div class="cartItmSfLRmBtn">Save for later</div>
+            <div class="cartItmSfLRmBtn remove" data-name="${item.name}">Remove</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    `;
+    }
+}
 // Function to confirm and remove an item from the cart
 function confirmRemoveItem(name) {
     const confirmRemove = confirm(`Are you sure you want to remove "${name}" from the cart?`);
@@ -182,7 +188,7 @@ function updateCartDisplay(filteredProducts) {
 function updatePriceDetail(products) {
     function formatIndianRupee(number) {
         const parts = number.toString().split(".");
-        const integerPart = parts[0].replace(/\B(?=(\d{3})+(?!d))/g, ",");
+        const integerPart = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
         const formattedNumber = parts.length > 1 ? integerPart + "." + parts[1] : integerPart;
         return formattedNumber;
     }
@@ -206,15 +212,17 @@ function updatePriceDetail(products) {
         <div>Free</div>
       </div>
       <div class="d-flex justify-content-between">
-        <div><strong>Total Amount</strong></div>
-        <div>₹${formatIndianRupee(totalPrice)}</div>
+        <div><b>Total Amount </div>
+        <div>₹${formatIndianRupee(totalPrice)}</b></div>
       </div>
-    </div>`
+      <div>You will save ₹${formatIndianRupee(totalDiscount)} on this order</div>
+    </div>
+  `;
 
     document.getElementById("priceDetail").innerHTML = priceDetail;
 }
 
-// Fetch and display data
+// Fetch data from the JSON file and filter products based on the query
 fetch("https://raw.githubusercontent.com/csathnere/APIs/main/json-ec/product.json")
     .then(response => response.json())
     .then(data => {
@@ -231,3 +239,5 @@ fetch("https://raw.githubusercontent.com/csathnere/APIs/main/json-ec/product.jso
         searchFetch(savedFilteredProducts);
     })
     .catch(error => console.error("Error fetching data:", error));
+
+// end
