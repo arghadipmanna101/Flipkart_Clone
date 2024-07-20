@@ -55,6 +55,19 @@ document.addEventListener("DOMContentLoaded", function () {
             subcategoriesList.style.display = 'none';
         });
 
+        if (subcategoriesList && subcategoriesList.childNodes.length) {
+            subcategoriesList.addEventListener('mouseenter', function(event){
+                subcategoriesList.style.display = 'block';
+            });
+
+            subcategoriesList.addEventListener('mouseleave', function (event) {
+                subcategoriesList.style.display = 'none';
+                document.querySelectorAll(`.${categoryData.id}`).forEach(elem => elem.remove());
+            });
+        } else {
+            console.log("subcategoriesList is not defined or is empty.");
+        }
+
         return categoryItem;
     }
 
