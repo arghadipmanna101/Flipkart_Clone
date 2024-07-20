@@ -8,34 +8,26 @@ document.addEventListener("DOMContentLoaded", function () {
         const icon = document.createElement("img");
         icon.src = "img/" + categoryData.icon;
 
-        const nameLink = document.createElement("a");
-        nameLink.href = categoryData.name + "-/"; //find index.html
-        nameLink.textContent = categoryData.name;
-
         const name = document.createElement("span");
-        name.appendChild(document.createElement("br"));
-        name.appendChild(nameLink);
+        name.textContent = categoryData.name;
+
+        const nameWrapper = document.createElement("span");
+        nameWrapper.appendChild(document.createElement("br"));
+        nameWrapper.appendChild(name);
 
         categoryItem.appendChild(icon);
-        categoryItem.appendChild(name);
+        categoryItem.appendChild(nameWrapper);
 
         const subcategoriesList = document.createElement("div");
-        subcategoriesList.classList.add('dropdownbox', `${categoryData.id}`);
+        subcategoriesList.classList.add('dropdownbox', categoryData.id);
 
-        if (!categoryData.subcategories) {
-            const singleItem = document.createElement("div");
-            const singleLink = document.createElement("a");
-            singleLink.href = categoryData.name + "-/";
-            singleLink.textContent = categoryData.name;
-            singleItem.appendChild(singleLink);
-            subcategoriesList.appendChild(singleItem);
-        } else {
-            categoryData.subcategories.forEach(function (subcategoryData) {
-                if (subcategoryData && subcategoryData.name === undefined) {
+        if (categoryData.subcategories) {
+            categoryData.subcategories.forEach(subcategoryData => {
+                if (typeof subcategoryData === 'string') {
                     const singleItem = document.createElement("div");
                     singleItem.textContent = subcategoryData;
                     subcategoriesList.appendChild(singleItem);
-                } else if (subcategoryData) {
+                } else {
                     const subcategoryItem = createSubcategoryItem(subcategoryData);
                     subcategoriesList.appendChild(subcategoryItem);
                 }
@@ -44,48 +36,36 @@ document.addEventListener("DOMContentLoaded", function () {
 
         categoryItem.appendChild(subcategoriesList);
 
-
-        categoryItem.addEventListener('mouseenter', function (event) {
-            document.querySelector('.categorylist-wrapper').appendChild(subcategoriesList);
+        categoryItem.addEventListener('mouseenter', () => {
             subcategoriesList.style.display = 'block';
         });
 
-        categoryItem.addEventListener('mouseleave', function (event) {
+        categoryItem.addEventListener('mouseleave', event => {
             const relatedTarget = event.relatedTarget;
-            if (!relatedTarget || !relatedTarget.closest(`.${event.target.id}`)) {
-                document.querySelectorAll(`.${event.target.id}`).forEach(elem => elem.remove());
+            if (!relatedTarget || !relatedTarget.closest(`.${categoryData.id}`)) {
                 subcategoriesList.style.display = 'none';
             }
-
         });
 
-        if (subcategoriesList && subcategoriesList.childNodes.length) {
-            subcategoriesList.addEventListener('mouseenter', function(event){
-                subcategoriesList.style.display = 'block';
-            });
-            
-            subcategoriesList.addEventListener('mouseleave', function (event) {
-                subcategoriesList.style.display = 'none';
-                document.querySelectorAll(`.${categoryData.id}`).forEach(elem => elem.remove());
-            });
-        } else {
-            console.log("subcategoriesList is not defined or is empty.");
-        }
+        subcategoriesList.addEventListener('mouseenter', () => {
+            subcategoriesList.style.display = 'block';
+        });
+
+        subcategoriesList.addEventListener('mouseleave', () => {
+            subcategoriesList.style.display = 'none';
+        });
 
         return categoryItem;
     }
 
     function createSubcategoryItem(subcategoryData) {
-        // Create the main subcategory item div
         const subcategoryItem = document.createElement("div");
 
-        // Append the subcategory name
         const subcategoryName = document.createElement("div");
         subcategoryName.textContent = subcategoryData.name;
         subcategoryName.className = subcategoryData.id;
         subcategoryItem.appendChild(subcategoryName);
 
-        // If there are subcategories, create a subsubcategories list
         if (subcategoryData.subcategories) {
             const subsubcategoriesList = document.createElement("div");
             subsubcategoriesList.id = subcategoryData.id;
@@ -95,8 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
             moreInText.textContent = `More in ${subcategoryData.name}`;
             subsubcategoriesList.appendChild(moreInText);
 
-            // Iterate over subcategories and append each subsubcategory item
-            subcategoryData.subcategories.forEach(function (subsubcategoryData) {
+            subcategoryData.subcategories.forEach(subsubcategoryData => {
                 const subsubcategoryItem = document.createElement("div");
                 subsubcategoryItem.textContent = subsubcategoryData;
                 subsubcategoriesList.appendChild(subsubcategoryItem);
@@ -105,7 +84,6 @@ document.addEventListener("DOMContentLoaded", function () {
             subcategoryItem.appendChild(subsubcategoriesList);
         }
 
-        // Append the side arrow span
         const sideArrow = document.createElement("span");
         sideArrow.className = 'sidearrow';
         subcategoryItem.appendChild(sideArrow);
@@ -116,7 +94,8 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch('js/categoryData.json')
         .then(response => response.json())
         .then(data => {
-            data.forEach(function (categoryData) {
+            categoriesList.innerHTML = '';
+            data.forEach(categoryData => {
                 const categoryItem = createCategoryItem(categoryData);
                 categoriesList.appendChild(categoryItem);
             });
