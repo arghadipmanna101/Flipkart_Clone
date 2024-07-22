@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="plus.css" />
 </head>
 
-
 <body>
     <header id="header-plus" class="text-center text-secondary fs-4">
         This is Header
@@ -23,25 +22,17 @@
 
     <section>
         <style>
-            .banner {
-                background-image: url('../img/fpz.jpg');
-                background-size: cover;
-                background-position: center;
+            .carousel-inner {
                 height: 400px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: white;
-                font-size: 36px;
-                font-weight: bold;
-                box-shadow: inset 0 0 500px 0px black;
-                text-shadow: 0 0 14px black;
-                transition: background-size 0.5s ease-in-out;
-
             }
-
-            .banner:hover {
-                background-size: 120%; 
+            
+            .carousel-item {
+                height: 400px;
+            }
+            
+            .carousel-item img {
+                height: 100%;
+                object-fit: cover;
             }
 
             section .container {
@@ -57,7 +48,7 @@
             }
 
             .product-list:hover {
-                transform: translateX(-10px); 
+                transform: translateX(-10px);
             }
 
             .product {
@@ -70,7 +61,7 @@
             }
 
             .product:hover {
-                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             }
 
             .product img {
@@ -81,7 +72,7 @@
             }
 
             .product img:hover {
-                transform: scale(1.1); 
+                transform: scale(1.1);
             }
 
             .product .name {
@@ -92,23 +83,50 @@
             }
 
             .product .name:hover {
-                color: #97b3e0; 
+                color: #97b3e0;
             }
 
             .product .price {
                 color: #2874f0;
                 font-size: 16px;
                 font-weight: bold;
-                transition: color 0.3s ease-in-out; 
+                transition: color 0.3s ease-in-out;
             }
 
             .product .price:hover {
-                color: #007bff; 
+                color: #007bff;
             }
         </style>
         <h3 class="text-center">Welcome to Flipkart Plus Zone</h3>
-        <div class="banner">
+        
+        <!-- Bootstrap Carousel for Banner Images -->
+        <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://images.thequint.com/thequint/2018-08/05043882-7588-48ca-aaf8-13786bdcfb23/3e8a80bd_a21b_4f6e_aec3_b49fb417e1f5.jpg" class="d-block w-100" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i.gadgets360cdn.com/large/Flipkart-plus-screenshot_1539013276085.jpg" class="d-block w-100" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://storiesflistgv2.blob.core.windows.net/stories/2023/08/banner.jpg" class="d-block w-100" alt="Third slide">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
+        
         <div class="container">
             <div class="product-list">
                 <div class="product">
@@ -118,7 +136,7 @@
                 </div>
                 <div class="product">
                     <img src="../img/phone-2.webp" alt="Product Image" />
-                    <div class="name">Poco M6 </div>
+                    <div class="name">Poco M6</div>
                     <div class="price">₹11,999</div>
                 </div>
                 <div class="product">
@@ -149,7 +167,6 @@
     <footer id="footer-plus" style="background-color: #293649 !important"></footer>
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="plus.js"></script>
-
 </body>
 
 </html>
