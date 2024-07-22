@@ -13,11 +13,13 @@
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
+    "crypto": "^1.0.1",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.8.0",
     "mongoose": "^8.5.1",
+    "nodemailer": "^6.9.14",
     "nodemon": "^3.1.4"
   }
 }
