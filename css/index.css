@@ -392,7 +392,7 @@ Search Bar
 
 /* Become a Seller Icon */
 .navItem4 img {
-  transition: transform 0.3s ease-in-out;
+  transition: transform 2.3s ease-in-out;
 }
 
 .navItem4 img:hover {
@@ -407,7 +407,6 @@ Search Bar
 #moreLinksDropdow .nav-link img:hover {
   transform: scale(1.1);
 }
-
 
 #img-box {
   display: flex;
@@ -733,6 +732,9 @@ Search Bar
 ul{
   list-style-type: circle;
 }
+a{
+  color: black;
+}
 .brand-directory{
   background-color: white;
   padding: 20px 30px;
@@ -750,5 +752,5 @@ ul{
 .brand-directory-heading{
   font-weight: 24px;
   color:black ;
-
 }
+
