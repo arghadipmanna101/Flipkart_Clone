@@ -408,6 +408,44 @@ Search Bar
   transform: scale(1.1);
 }
 
+@media only screen and (max-width: 800px) {
+  #navbarNav_ {
+    max-width: 100vw !important;
+    height: 100px !important;
+    flex-direction: column-reverse;
+  }
+
+  #input_data.searchbar {
+    width: 100vw !important;
+  }
+
+  #searchbar span.flex-grow {
+    width: 90vw !important;
+    overflow-x: hidden;
+  }
+
+  ul.navbar-nav {
+    max-width: 100vw !important;
+    display: flex;
+    flex-direction: row !important;
+  }
+
+  .signupin {
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+    
+    padding: 20px 10px !important;
+  }
+
+  .signupin .leftpanal{
+    width: 40vw !important;
+  }
+
+  .categories {
+    width: max-content !important;
+  }
+}
+
 
 #img-box {
   display: flex;
