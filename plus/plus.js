@@ -51,6 +51,25 @@ let btmText = `
 
 document.getElementById("btmTxtP").innerHTML = btmText;
 
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("products.json")
+      .then(response => response.json())
+      .then(products => {
+          const productList = document.getElementById("productList");
+          products.forEach(product => {
+              const productDiv = document.createElement("div");
+              productDiv.className = "product";
+              productDiv.innerHTML = `
+                  <img src="${product.image}" alt="Product Image" />
+                  <div class="name">${product.name}</div>
+                  <div class="price">${product.price}</div>
+              `;
+              productList.appendChild(productDiv);
+          });
+      })
+      .catch(error => console.error("Error loading products:", error));
+});
+
 // fetch header footer
 
 document.addEventListener("DOMContentLoaded", () => {
