@@ -209,3 +209,12 @@ margin-left: 190px;
     margin-left:100px;
   
 }
+ /* margin for comment div */
+#comment{
+   margin-bottom:15px;
+    margin-left:155px;
+}
+
+.container #comment{
+    margin-left:10px;
+}
