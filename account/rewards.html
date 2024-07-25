@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="theme-color" content="#2874F0" id="themeColor" />
+    <title>
+        Flipkart | Online Shopping Site for Mobiles, Electronics, Furniture,
+        Grocery, Lifestyle, Books &amp; More. Best Offers!
+    </title>
+    <link rel="icon" type="image/x-icon" href="../img/flipkart_lite.png" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    
+</head>
+<body>
+<!--header-->
+    <header id="header-bluebg">
+        <nav class="container-fluid" style="background-color: #2874F0;">
+            <div class="container">
+                <nav class="navbar bg-body-tertiary">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="../">
+                            <img src="../img/flipcartlogo.PNG" width="80px">
+                        </a>
+                        <div class="searchBar_h">
+                            <input id="inputField_h" type="text" autocomplete="off"
+                                placeholder="Search for products, brands and more">
+                            <i id="fetchButton_h" class="bi bi-search btn"></i>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary"><a href="../account/login-signup.html">Login</a></button>
+                        </div>
+                        <div class="text-white b_a_s">
+                            <a href="../sell-online/">Become a Seller</a>
+                        </div>
+                        <div class="text-white" id="more_h">
+                            More <i class="bi bi-chevron-down"></i><i class="bi bi-chevron-up"></i>
+                        </div>
+                        <div class="text-white cartLogoandname">
+                            <a href="../viewcart/">
+                                <img src="../img/svg/cart_h.svg" alt=""><span class="cart_h">Cart </span><span
+                                    id="cartItems"></span>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </nav>
+    
+        <nav class="navbar navbar-expand-lg bg-body-tertiary secondNav container-fluid">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../search/?query=electronics">Electronics <i
+                                    class="bi bi-chevron-down"></i><i class="bi bi-chevron-up"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../search/?query=appliances">TVs & Appliances <i
+                                    class="bi bi-chevron-down"></i><i class="bi bi-chevron-up"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../search/?query=men">Men <i class="bi bi-chevron-down"></i><i
+                                    class="bi bi-chevron-up"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../search/?query=women">Women <i class="bi bi-chevron-down"></i><i
+                                    class="bi bi-chevron-up"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../search/?query=kids">Baby & Kids <i
+                                    class="bi bi-chevron-down"></i><i class="bi bi-chevron-up"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../search/?query=home">Home & Furniture <i
+                                    class="bi bi-chevron-down"></i><i class="bi bi-chevron-up"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../search/?query=books">Sports, Books & More <i
+                                    class="bi bi-chevron-down"></i><i class="bi bi-chevron-up"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../search/?query=flights">Flights <i class="bi bi-chevron-down"></i><i
+                                    class="bi bi-chevron-up"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../search/?query=offer">Offer Zone <i
+                                    class="bi bi-chevron-down"></i><i class="bi bi-chevron-up"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../search/?query=grocery">Grocery <i class="bi bi-chevron-down"></i><i
+                                    class="bi bi-chevron-up"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<!--header-->
+
+
+    <section>
+        <style>
+            .container-rewards {
+                display: flex;
+                /* min-height: 100vh; */
+                font-family: Arial, sans-serif;
+                margin: auto;
+                padding: 10px 25px;
+                /* background-color: #f9f9f9; */
+            }
+    
+            .left-column {
+                width: 25%;
+                background-color: #fff;
+                border-right: 1px solid #ddd;
+                padding: 16px;
+                box-sizing: border-box;
+                
+            }
+    
+            .profile {
+                text-align: left;
+                display:flex;
+                align-items: center;
+                margin-bottom: 30px;
+                margin-top: 10px;
+            }
+            .profile h4{
+                margin: 0;
+                color:#333333;
+                font-weight: 600;
+                font-size: 20px;
+                margin-left: 35px;
+            }
+            .img-head{
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                padding: 12px;
+            }
+            .navigation-orders{
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                margin-bottom: 20px;
+                border-bottom: 1px solid #ddd;
+            }
+            .navigation-orders a{
+                text-decoration: none;
+                }
+            .navigation-orders h3{
+                margin: 0;
+                color:#8b8b8b;
+                font-weight: 600;
+                margin-left: 30px;
+                font-size: 20px;
+            }
+            .navigation-account{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+                border-bottom: 1px solid #ddd;
+            }
+            
+            .navigation-account h3{
+                margin: 0;
+                color:#8b8b8b;
+                font-weight: 600;
+                font-size: 20px;
+            }
+            .navigation-account svg{
+                margin-right: 30px;
+                
+            }
+            .navigation-payments{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+                border-bottom: 1px solid #ddd;
+            }
+            
+            .navigation-payments h3{
+                margin: 0;
+                color:#8b8b8b;
+                font-weight: 600;
+                font-size: 20px;
+            }
+            .navigation-payments svg{
+                margin-right: 30px;
+                
+            }
+            .navigation-my-stuff{
+                display: flex;
+                flex-direction:column;
+                margin-bottom: 20px;
+                border-bottom: 1px solid #ddd;
+            }
+            
+            .navigation-my-stuff h3{
+                margin: 0;
+                color:#8b8b8b;
+                font-weight: 600;
+                font-size: 20px;
+            }
+            .navigation-my-stuff svg{
+                margin-right: 30px;
+                
+            }
+            .nav-list{
+                list-style:none;
+                padding-left:55px;
+                margin:0;
+            }
+            .nav-list ul {
+                list-style: none; 
+                padding: 0;
+                margin: 10px;
+}
+            .nav-list li{
+                margin:15px 0;
+            }
+            .nav-list ul li a {
+                text-decoration:none;
+                color: #000;
+                font-weight: 500;
+            }
+    
+            .nav-list ul li a:hover {
+                color: #0073e6;
+            }
+            .right-column {
+                width: 75%;
+                padding: 20px;
+                box-sizing: border-box;
+                background-color: #fff;
+            }
+    
+            .right-column h2 {
+                margin-top: 0;
+                color: #333;
+                margin-left: 10px;
+            }
+    
+            .reward {
+                background-color: #faf9f9;
+                border: 1px solid #ddd;
+                padding: 15px;
+                margin-bottom: 20px;
+                border-radius: 5px;
+            }
+            .row-reward{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+            }
+            .reward-name{
+                cursor:pointer;
+                color: #097809;
+            }
+            .reward-valid{
+                font-weight: bold;
+                color:#8b8b8b;
+                cursor:pointer;
+            }
+            .reward-details{
+                color:#000;
+                cursor:pointer;
+            }
+            .reward-tc{
+                font-size: large;
+                font-weight: bold;
+                color:#0073e6;
+                cursor:pointer;
+            }
+        </style>
+    
+        <div class="container-rewards">
+            <div class="left-column">
+                <div class="profile">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        width="28" height="22" viewBox="0 0 448 512">
+                        <path
+                            d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" />
+                    </svg>
+                    <h4>Hello User</h4>
+                </div>
+                <nav class="navigation">
+                    <div class="navigation-orders">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18">
+                            <g fill="none" fill-rule="evenodd" transform="translate(-8.694 -11)">
+                                <ellipse cx="20.557" cy="20" rx="20.557" ry="20" />
+                                <path fill="#2874F1"
+                                    d="M9 11v17.108c0 .493.41.892.918.892h4.93v-5.257h-3.033l4.912-4.77 4.972 4.83h-3.035V29h12.417c.507 0 .918-.4.918-.892V11H9z" />
+                            </g>
+                        </svg>
+                        <a href="orders.html"><h3>MY ORDERS</h3></a>
+                        
+                    </div>
+                    <div class="navigation-account">
+                        <div class="img-head">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21">
+                                <g fill="none" fill-rule="evenodd" transform="translate(-9.694 -10)">
+                                    <path fill="#2874F0"
+                                        d="M14.275 22.704c2.272-.412 4.347-.618 6.225-.618 1.878 0 3.953.206 6.225.618a5.15 5.15 0 0 1 4.23 5.068V31h-20.91v-3.228a5.15 5.15 0 0 1 4.23-5.068zm1.274-7.724c0-2.58 2.163-4.673 4.832-4.673 2.667 0 4.83 2.092 4.83 4.673 0 2.58-2.163 4.673-4.83 4.673-2.67 0-4.833-2.092-4.833-4.673z" />
+                                    <ellipse cx="20.557" cy="20" rx="20.557" ry="20" />
+                                </g>
+                            </svg>
+                            <h3>ACCOUNT SETTINGS</h3>
+                        </div>
+                        <div class="nav-list">
+                        <ul>
+                            <li><a href="#">Personal Information</a></li>
+                            <li><a href="#">Manage Address</a></li>
+                            <li><a href="#">PAN Card Information</a></li>
+                        </ul></div>
+                    </div>
+                    <div class="navigation-payments">
+                        <div class="img-head">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22">
+                                <g fill="none" fill-rule="evenodd" transform="translate(-9.694 -9)">
+                                    <ellipse cx="20.557" cy="20" rx="20.557" ry="20" />
+                                    <path d="M7 6h28v28H7z" />
+                                    <path fill="#2874F0" fill-rule="nonzero"
+                                        d="M31.5 27v1.167a2.34 2.34 0 0 1-2.333 2.333H12.833a2.333 2.333 0 0 1-2.333-2.333V11.833A2.333 2.333 0 0 1 12.833 9.5h16.334a2.34 2.34 0 0 1 2.333 2.333V13H21a2.333 2.333 0 0 0-2.333 2.333v9.334A2.333 2.333 0 0 0 21 27h10.5zM21 24.667h11.667v-9.334H21v9.334zm4.667-2.917c-.97 0-1.75-.782-1.75-1.75s.78-1.75 1.75-1.75c.968 0 1.75.782 1.75 1.75s-.782 1.75-1.75 1.75z" />
+                                </g>
+                            </svg>
+                            <h3>PAYMENTS</h3>
+                        </div>
+                        <div class="nav-list">
+                        <ul>
+                            <li><a href="#">Gift Cards</a></li>
+                            <li><a href="#">Saved UPI</a></li>
+                            <li><a href="#">Saved Cards</a></li>
+                        </ul></div>
+                    </div>
+                    <div class="navigation-my-stuff">
+                        <div class="img-head">  
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="19" viewBox="0 0 23 19">
+                                <g fill="none" fill-rule="evenodd">
+                                    <path fill="#2874F0" fill-rule="nonzero"
+                                        d="M20.5 2.75h-9L9.25.5H2.5A2.247 2.247 0 0 0 .26 2.75l-.01 13.5A2.257 2.257 0 0 0 2.5 18.5h18a2.257 2.257 0 0 0 2.25-2.25V5a2.257 2.257 0 0 0-2.25-2.25zm-5.625 3.375a2.257 2.257 0 0 1 2.25 2.25 2.257 2.257 0 0 1-2.25 2.25 2.257 2.257 0 0 1-2.25-2.25 2.257 2.257 0 0 1 2.25-2.25zm4.5 9h-9V14c0-1.496 3.004-2.25 4.5-2.25s4.5.754 4.5 2.25v1.125z" />
+                                    <path d="M-2-4h27v27H-2z" />
+                                </g>
+                            </svg>
+                            <h3>MY STUFF</h3>
+                        </div>
+                        <div class="nav-list">
+                        <ul>
+                            <li><a href="#">My Coupons</a></li>
+                            <li><a href="#">My Reviews & Ratings</a></li>
+                            <li><a href="#">All Notifications</a></li>
+                            <li><a href="#">My Wishlist</a></li>
+                        </ul></div>
+                    </div>
+                </nav>
+            </div>
+            <div class="right-column">
+                <h2>Available Coupons</h2>
+                <div class="reward">
+                    <div class="row-reward">
+                        <div class="reward-name"><h3>20% off on men's clothing</h3></div>
+                        <div class="reward-valid"><p>Validity: 31st Dec 2024</p></div>
+                    </div>
+                    <div class="row-reward">
+                        <div class="reward-details"><p>Get 20% off on clothing with this coupon or receive cashback!</p></div>
+                        <div class="reward-tc"><p>View T&C</p></div>
+                    </div>
+                </div>
+                <div class="reward">
+                    <div class="row-reward">
+                        <div class="reward-name">
+                            <h3>Extra 400/- off</h3>
+                        </div>
+                        <div class="reward-valid">
+                            <p>Validity: 28th Aug 2024</p>
+                        </div>
+                    </div>
+                    <div class="row-reward">
+                        <div class="reward-details">
+                            <p>Get 400 off on clothing with this coupon or receive cashback!</p>
+                        </div>
+                        <div class="reward-tc">
+                            <p>View T&C</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reward">
+                    <div class="row-reward">
+                        <div class="reward-name">
+                            <h3>25% off on children's clothing</h3>
+                        </div>
+                        <div class="reward-valid">
+                            <p>Validity: 31st Dec 2024</p>
+                        </div>
+                    </div>
+                    <div class="row-reward">
+                        <div class="reward-details">
+                            <p>Get 25% off on clothing with this coupon or receive cashback!</p>
+                        </div>
+                        <div class="reward-tc">
+                            <p>View T&C</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reward">
+                    <div class="row-reward">
+                        <div class="reward-name">
+                            <h3>Gift Voucher worth 2500</h3>
+                        </div>
+                        <div class="reward-valid">
+                            <p>Validity: 31st July 2024</p>
+                        </div>
+                    </div>
+                    <div class="row-reward">
+                        <div class="reward-details">
+                            <p>Get 2500 off on clothing with this coupon or receive cashback!</p>
+                        </div>
+                        <div class="reward-tc">
+                            <p>View T&C</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reward">
+                    <div class="row-reward">
+                        <div class="reward-name">
+                            <h3>Extra 599 off on grocery</h3>
+                        </div>
+                        <div class="reward-valid">
+                            <p>Validity: 31st Dec 2024</p>
+                        </div>
+                    </div>
+                    <div class="row-reward">
+                        <div class="reward-details">
+                            <p>Get 599 off on clothing with this coupon or receive cashback!</p>
+                        </div>
+                        <div class="reward-tc">
+                            <p>View T&C</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more rewards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer-rewards" style="background-color: #293649 !important"></footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/header_bluebg.js"></script>
+    <script src="../js/rewards.js"></script>
+</body>
+
+
+
+
+
+
+</html>

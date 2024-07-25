@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#2874F0" id="themeColor" />
+    <title>Flipkart Plus | Membership Benefits</title>
+    <link rel="icon" type="image/x-icon" href="../img/flipkart_lite.png" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="plus.css" />
+</head>
+<body>
+    <header id="header-plus" class="text-center text-secondary fs-4">
+        Flipkart Plus Membership
+    </header>
+
+    <section>
+        <style>
+            .carousel-inner {
+                height: 400px;
+            }
+            
+            .carousel-item {
+                height: 400px;
+            }
+            
+            .carousel-item img {
+                height: 100%;
+                object-fit: cover;
+            }
+
+            section .container {
+                padding: 20px;
+            }
+
+            .product-list {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+                transition: transform 0.5s ease-in-out;
+            }
+
+            .product-list:hover {
+                transform: translateX(-10px);
+            }
+
+            .product {
+                background-color: white;
+                padding: 20px;
+                border-radius: 4px;
+                width: calc(25% - 20px);
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                transition: box-shadow 0.3s ease-in-out;
+            }
+
+            .product:hover {
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            }
+
+            .product img {
+                width: 100%;
+                border-bottom: 1px solid #eee;
+                padding-bottom: 15px;
+                transition: transform 0.3s ease-in-out;
+            }
+
+            .product img:hover {
+                transform: scale(1.1);
+            }
+
+            .product .name {
+                font-size: 18px;
+                font-weight: bold;
+                margin: 10px 0;
+                transition: color 0.3s ease-in-out;
+            }
+
+            .product .name:hover {
+                color: #97b3e0;
+            }
+
+            .product .price {
+                color: #2874f0;
+                font-size: 16px;
+                font-weight: bold;
+                transition: color 0.3s ease-in-out;
+            }
+
+            .product .price:hover {
+                color: #007bff;
+            }
+        </style>
+        <h3 class="text-center">Welcome to Flipkart Plus Zone</h3>
+        
+        <!-- Bootstrap Carousel for Banner Images -->
+        <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://images.thequint.com/thequint/2018-08/05043882-7588-48ca-aaf8-13786bdcfb23/3e8a80bd_a21b_4f6e_aec3_b49fb417e1f5.jpg" class="d-block w-100" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i.gadgets360cdn.com/large/Flipkart-plus-screenshot_1539013276085.jpg" class="d-block w-100" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://storiesflistgv2.blob.core.windows.net/stories/2023/08/banner.jpg" class="d-block w-100" alt="Third slide">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        
+        <div class="container">
+            <div class="product-list" id="productList"></div>
+        </div>
+    </section>
+
+    <div id="btmTxtP" class="container-fluid" style="background: #f3eff3;"></div>
+    <footer id="footer-plus" style="background-color: #293649 !important"></footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="plus.js"></script>
+</body>
+</html>

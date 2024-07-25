@@ -1,0 +1,85 @@
+name: "🐞 Bug Report"
+description: "Create a report to help us improve"
+title: "BUG:"
+labels: ["Bug"]
+body:
+  - type: checkboxes
+    attributes:
+      label: "Is there an existing issue for this?"
+      description: "Please search to see if an issue already exists for the bug you encountered."
+      options:
+        - label: "I have searched the existing issues"
+          required: true
+
+  - type: textarea
+    attributes:
+      label: "Describe the bug"
+      description: "A clear and concise description of what the bug is."
+
+  - type: textarea
+    attributes:
+      label: "What happened?"
+      description: "A concise description of what you're experiencing."
+
+  - type: textarea
+    attributes:
+      label: "Expected behavior"
+      description: "A clear and concise description of what you expected to happen."
+
+  - type: textarea
+    attributes:
+      label: "Screenshots"
+      description: "If applicable, add screenshots to help explain your problem."
+
+ 
+  - type: checkboxes
+    attributes:
+      label: "Record"
+      options:
+        - label: "I agree to follow this project's Code of Conduct"
+          required: true
+        - label: "I'm a GSSOC'24 contributor"
+        - label: "I want to work on this issue"
+
+name: "🐞 Bug Report"
+description: "Create a report to help us improve"
+title: "BUG:"
+labels: ["Bug"]
+body:
+  - type: checkboxes
+    attributes:
+      label: "Is there an existing issue for this?"
+      description: "Please search to see if an issue already exists for the bug you encountered."
+      options:
+        - label: "I have searched the existing issues"
+          required: true
+
+  - type: textarea
+    attributes:
+      label: "Describe the bug"
+      description: "A clear and concise description of what the bug is."
+
+  - type: textarea
+    attributes:
+      label: "What happened?"
+      description: "A concise description of what you're experiencing."
+
+  - type: textarea
+    attributes:
+      label: "Expected behavior"
+      description: "A clear and concise description of what you expected to happen."
+
+  - type: textarea
+    attributes:
+      label: "Screenshots"
+      description: "If applicable, add screenshots to help explain your problem."
+
+ 
+  - type: checkboxes
+    attributes:
+      label: "Record"
+      options:
+        - label: "I agree to follow this project's Code of Conduct"
+          required: true
+        - label: "I'm a GSSOC'24 contributor"
+        - label: "I want to work on this issue"

@@ -1,0 +1,33 @@
+name: "📑 Documentation Update"
+description: "Improve Documentation"
+title: "DOC:"
+labels: ["DOC", "Needs Triage"]
+body:
+  - type: textarea
+    attributes:
+      label: "What's wrong with the existing documentation"
+      description: "Which things do we need to add or delete"
+  
+  - type: textarea
+    attributes:
+      label: "File to change"
+      description: "Specify which file needs the changes"
+
+  - type: textarea
+    attributes:
+      label: "Details of the change"
+      description: "Describe what needs to be changed"
+
+  - type: textarea
+    attributes:
+      label: "Type of change"
+      description: "For example: grammatical errors, adding new sections"
+
+  - type: checkboxes
+    attributes:
+      label: "Record"
+      options:
+        - label: "I agree to follow this project's Code of Conduct"
+          required: true
+        - label: "I'm a GSSOC'24 contributor"
+        - label: "I want to work on this issue"

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe and Secure Shopping</title>
+    <link rel="stylesheet" href="epr.css">
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="../../css/homeHeader.css">
+	<link rel="stylesheet" type="text/css" href="../../css/index.css">
+	<link rel="stylesheet" href="../../css/footer.css">
+		<!-- <link href="../../css/contactus.css" rel="stylesheet"> -->
+</head>
+<body>
+    <header id="homeHeader">
+		<nav class="navbar homeHeader navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="https://flipkart-clone-seven-azure.vercel.app/">
+				<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
+					width="160" height="40" title="Flipkart" alt="Flipkart" />
+			</a>
+			<div id="navbarNav_">
+				<ul class="navbar-nav">
+					<li class="nav-item navItem1">
+						<div id="searchbar" class="navtab" style="background-color: #F0F5FF; width:43vw; margin-left:-1vw">
+							<span id="searchButton" style="display: flex;align-items: center; justify-content:space-between;margin-left:15vw;">
+								<svg width="300" height="24" class="" viewBox="0 0 24 24" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<title>Search Icon</title>
+									<path
+										d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z"
+										stroke="#717478" stroke-width="1.4" stroke-linecap="round"
+										stroke-linejoin="round"></path>
+									<path d="M16 16L21 21" stroke="#717478" stroke-width="1.4" stroke-linecap="round"
+										stroke-linejoin="round"></path>
+								</svg>
+							</span>
+							<span class="flex-grow">
+								<input id="input_data" class="searchbar"   type="text" placeholder="Search for Products, Brands and More" />
+							</span>
+							<div id="autocompleteResults" class="autocom-box" style="display: none;
+							position: absolute;
+							top: 67px;
+							
+							background:#f0f5ff;
+							padding: 10px;
+							border: rgba(255, 51, 255, 0.2);">
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul  class="navbar-nav ml-auto"
+					style="flex-wrap: nowrap;flex-direction: row;width: 30vw; justify-content: space-between;margin-left: 20px;">
+					<li class="nav-item navItem2 dropdown" id="navbarDropdow">
+						<a class="nav-link nav-dd acnavdd" href="#" id="navbarDropdown" role="button" style="width: 10vw; margin-top:2vh;"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<img src="img/svg/profile-.svg" alt="Profile" />
+							<span class="navname navname_ac" style="width:50vw;"> Login <i class="bi bi-chevron-down"></i><i
+									class="bi bi-chevron-up"></i></span>
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="left: 0px;">
+							<a class="dropdown-item" href="account/home_account.html">
+								<img width="20" src="img/svg/profile-.svg" alt="flipKart">
+								My Profile </a>
+
+								<a class="dropdown-item" href="login/login.html">
+									<img width="20" src="img/svg/profile-.svg" alt="flipKart">
+									Log into account </a>
+
+							<a class="dropdown-item" href="account/login-signup.html">
+								<img width="20" src="img/svg/profile-.svg" alt="flipKart">
+								Sign In</a>
+							<a class="dropdown-item" href="plus/">
+								<img width="20" src="img/svg/fkplus-+.svg" alt="flipKart">
+								Flipkart Plus Zone</a>
+							<a class="dropdown-item" href="account/orders.html">
+								<img width="20" src="img/svg/orders.svg" alt="flipKart">
+								Orders</a>
+							<a class="dropdown-item" href="wishlist/">
+								<img width="20" src="img/svg/wishList.svg" alt="flipKart">
+								Wishlist</a>
+							<a class="dropdown-item" href="account/notifications.html">
+								<img width="20" src="img/svg/notifications.svg" alt="flipKart">
+								Notifications</a>
+							<a class="dropdown-item" href="account/rewards.html">
+								<img width="20" src="img/svg/rewards.svg" alt="flipKart">
+								Rewards</a>
+							<a class="dropdown-item" href="the-gift-card-store/">
+								<img width="20" src="img/svg/giftCard.svg" alt="flipKart">
+								Gift Cards</a>
+								<a class="dropdown-item" href="account/contact.html">
+									<img width="20" src="https://pngimg.com/uploads/phone/phone_PNG48988.png" alt="flipKart">
+									Contact Us </a>
+						</div>
+					</li>
+					<li class="nav-item navItem3">
+						<a class="nav-link cartLogoandname" style="width: 10vw; margin-top:2vh;" href="viewcart/">
+							<img
+								src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg" />
+							<span class="navname2">Cart</span><span id="cartItems"></span>
+						</a>
+					</li>
+					<li class="nav-item navItem4">
+						<a class="nav-link" href="sell-online/" style="width: 12vw;font-size:small; margin-top:2vh;">
+							<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg"
+								alt="Become a Seller" />
+							<span class="navname3">Become a Seller</span>
+						</a>
+					</li>
+					<li class="nav-item navItem5 dropdown " id="moreLinksDropdow" style="width: 10vw; margin-top:2vh;">
+						<a class="nav-link nav-dd" href="#" id="moreLinksDropdown" role="button" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">
+							<img class="nav-dd"
+								src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-ea7819.svg"
+								alt="More Links" />
+						</a>
+						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="moreLinksDropdown">
+							<a class="dropdown-item" href="notifications/"><img width="30" height="20"
+									src="img/svg/notificationPreferences.svg"
+									alt="appointment-reminders--v2" />Notification
+								Preferences</a>
+							<a class="dropdown-item" href="helpcentre/"><img width="30" height="20"
+									src="img/svg/helpcenter.svg" alt="imgcc">24x7 Customer Care</a>
+							<a class="dropdown-item"
+								href="https://advertising.flipkart.com/"><img
+									width="30" height="20" src="img/svg/advertise.svg" alt="Advertise">Advertise</a>
+							<a class="dropdown-item" href="mobile-apps/"><img width="30" height="20"
+									src="img/svg/downloadApp.svg" alt="img3">Download App</a>
+					</li>
+					
+				</ul>
+			</div>
+		</nav>
+	</header>
+<div class="container">
+  <p>FLIPKART INDIA PRIVATE LIMITED E-WASTE RECYCLING POLICY</p>
+  <p>The Information and Communication revolution has brought enormous changes in the way we organize our lives, our economies, industries and institutions. These spectacular developments in modern times have undoubtedly enhanced the quality of our lives, but at the same time, have led to manifold problems including the problem of massive amount of hazardous waste and other waste generated from electric products. Such waste poses a serious threat to human health and environment. The issue of proper management of such hazardous E-Waste is therefore critical to the protection of livelihood, health and environment.</p>
+  <p>To deal with this ever-rising problem of E-Waste, the government of India, through its Ministry of Environment and forest, formulated the E-Waste (Management and Handling) Rules in 2016.</p>
+  <p >FLIPKART INDIA PRIVATE LIMITED STANDS COMMITTED TO IMPLEMENT THE E-WASTE UNDER E-WASTE RULES.</p>
+  <p>The Basel Convention defines wastes as-</p>
+  <blockquote>
+    “Substances or objects, which are disposed off or are intended to be disposed off, or are required to be disposed off by the provisions of national laws”.
+  </blockquote>
+  <p>E waste has been defined as-</p>
+  <blockquote>
+    “Waste electrical and electronic equipment, whole or in part or rejects from their manufacturing and repair process, which are intended to be discarded.”
+  </blockquote>
+  <p>Whereas, Electrical and electronic equipment has been defined as:-</p>
+  <blockquote>
+    "Equipment which is dependent on electrical currents or electro-magnetic fields to fully functional".
+  </blockquote>
+  <p>Like hazardous waste, the problem of e-waste has become an immediate and long-term concern as its unregulated accumulation and recycling can lead to major environmental problems endangering human health. This calls for an urgent need for E-Waste Management so as to preserve the ecological balance and reduce landfills. Recycling end-of-life products is vital if we are to save resources and minimize waste. In this regard, we at Flipkart India private limited have tied up with Reteck Envirotech Pvt. Ltd, one of the world’s largest authorized E-Waste recycler, for facilitating our Organization and our customers to enable them to dispose E-Waste products after its end-of-life.</p>
+  <p>AS AN ENVIRONMENTALLY CONSCIOUS ORGANISATION, FLIPKART INDIA PRIVATE LIMITED HAS INITIATED VARIOUS ACTIVITIES TO PROMOTE E-WASTE RECYCLING.</p>
+  <ul>
+    <li>100% recycling and disposal through authorized recycler to avoid the adverse effects of E-Waste.</li>
+  </ul>
+  <p>ADVERSE EFFECTS OF EWASTE</p>
+  <ul>
+    <li>Toxic material present in e-waste get mixed with earth, air, water, etc and causes health issues.</li>
+    <li>Oil & Gases which is present in e-waste like compressor and CRT causes environment pollution.</li>
+    <li>Batteries contain highly hazardous elements.</li>
+    <li>Burning of rubber & Plastic in open area causes air pollution.</li>
+    <li>Bad impact on human being, animal, and other animates.</li>
+    <li>Wastage of natural resources.</li>
+  </ul>
+  <p>HOW CAN YOU CONTRIBUTE TO A GREENER ENVIRONMENT?</p>
+  <ul>
+    <li>All electrical and electronic products are required to be handed over only to the authorised recycler for recycling.</li>
+    <li>The E-Waste product should be handed over only to an authorised recycler for disposal.</li>
+    <li>Keep the e-waste in isolated area, after it becomes non-functional/un-repairable so as to prevent its accidental breakage.</li>
+    <li>Please call on toll free number 1800-123-8783 for collection of E-Waste.</li>
+  </ul>
+  <p>Why Recycle</p>
+  <p>Conserve Resources</p>
+  <p>Creation requires raw resources. But when we recycle, extant material is put to use. Recycling saves this extraction of the fresh raw resources, and revives the existing ones that are no longer of use. This way there is lesser exploitation and more conservation of natural resources.</p>
+  <p>Save Energy</p>
+  <p>Each time we recycle a product, it requires lesser energy than producing a new one from the scratch. The considerable difference in manufacturing time is a result of skipping the usual process of extraction of raw material, its transportation, refining etc., which is way more than having a market ready product that to have a raw material ready for production.</p>
+  <p>Prevent Pollution</p>
+  <p>Production and disposal of products require a great deal of extraction, refining, processing and dumping of material, which have larger impact on the environment. By recycling, we cut down the pollution of air, water and land, thus reducing the greenhouse gas emission and avoiding any contribution to global warming.</p>
+  <p>Don'ts for E- Waste</p>
+  <ul>
+    <li>The product should not be opened/dismantled by the User himself/herself, but only by authorized service personnel.</li>
+    <li>The product is not meant for re-sale to any unauthorized agencies/scrap dealer.</li>
+    <li>The product is not meant for mixing into household waste stream.</li>
+    <li>Do not keep any replaced spare part(s) from the product in exposed area.</li>
+  </ul>
+  <p>Terms and Conditions</p>
+  <ul>
+    <li>This initiative is a step towards our commitment for a cleaner and greener earth.</li>
+    <li>This move is one of the ways to show that we are concerned and thus we request all our customers to join this movement to make it successful by way of contributing their end-of-life product.</li>
+    <li>For more information about e-waste please visit: <a href="http://www.reteck.co">www.reteck.co</a></li>
+    <li>For any assistance/guidance for disposal of e-waste please call on toll free number: 1800-212-8783.</li>
+    <li>Products offered for recycling are not eligible for exchange offers.</li>
+    <li>The service is available as per conditions applicable in the respective area by recyclers.</li>
+    <li>You can also deposit your E-Waste directly at the collection points. For information of collection points please see below mentioned list.</li>
+  </ul>
+  <table>
+    <thead>
+      <tr>
+        <th>Sr. No.</th>
+        <th>Name of State/UT</th>
+        <th>Name of Town/City</th>
+        <th>Revised Address of collection points</th>
+        <th>Toll-Free Number/ Alternate No.</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>New Delhi</td>
+        <td>New Delhi</td>
+        <td>Plot No. 619, Block A, Near Tata Telco Service Station,Rangpuri, Mahipalpur,Delhi - 110037</td>
+        <td>1800-123-8783/ 9321743538</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Uttar Pradesh</td>
+        <td>Lucknow</td>
+        <td>S 317, Transport Nagar, Near RTO Office,Lucknow,UP- 226012</td>
+        <td>1800-123-8783/ 9321743538</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Maharashtra</td>
+        <td>Mumbai</td>
+        <td>Plot No. 92, Gali No. – 01, Sector 19C,Vashi,Navi Mumbai – 400705</td>
+        <td>1800-123-8783/ 9321743538</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Maharashtra</td>
+        <td>Pune</td>
+        <td>Plot No 24, Sector 4, Shikshak Colony,Near Spine City, Moshi Pradhikaran,Maharashtra- 412105</td>
+        <td>1800-123-8783/ 9321743538</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Tamil Nadu</td>
+        <td>Chennai</td>
+        <td>3/27 Sakthi Garden Phase II, Senneerkuppam,Poonamallee, Near Bisleri Water Plant,Tamil Nadu-600056</td>
+        <td>1800-123-8783/ 9321743538</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Haryana</td>
+        <td>Gurugram</td>
+        <td>J-171, New Palam Vihar Phase-1, Gurugram,Haryana 122017</td>
+        <td>1800-123-8783/ 9321743538</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Telangana</td>
+        <td>Hyderabad</td>
+        <td>Plot No.-111,JK Nagar Quthbullapur Rangaraddy Near Bharat Patrol Pump ,Near Bharat Patrol Pump ,Hyderabad-500055</td>
+        <td>1800-123-8783/ 9321743538</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Karnataka</td>
+        <td>Bangalore</td>
+        <td>No.43 1st floor 2nd Main D.D.U.T.T.L.,Yeshwantpur,Karnataka -560022</td>
+        <td>1800-123-8783/ 9321743538</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Assam</td>
+        <td>Guwahati</td>
+        <td>HN-34, Kundil Nagar Basistha Chariali,Near Parbhat Apartment,Guwahati-781029</td>
+        <td>1800-123-8783/ 9321743538</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>Gujarat</td>
+        <td>Ahmedabad</td>
+        <td>Shop No D-9, Pushp Tenament,Behind Mony Hotel, Isanpur,Gujarat - 382443</td>
+        <td>1800-123-8783/ 9321743538</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>Bihar</td>
+        <td>Patna</td>
+        <td>Dr. A K Pandey (IPS) Malyanil,Buddha Colony,Bihar-800001</td>
+        <td>1800-123-8783/ 9321743538</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>West Bengal</td>
+        <td>Kolkata</td>
+        <td>104 B T ROAD , SHED NO - 15/3, R I C I E , BLOCK -2,Near by locknath mandir<br>BONHOOGHLY<br>KOLKATA 700108,WB – 700108</td>
+        <td>1800-123-8783/ 9321743538</td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>Punjab</td>
+        <td>Chandigarh</td>
+        <td>Shop No: -15 & 16, Pabhat Road,Opp – Tennis Academy, Zirakpur,Punjab-140603</td>
+        <td>1800-123-8783/ 9321743538</td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>Rajasthan</td>
+        <td>Jaipur</td>
+        <td>81, 200 ft. By Pass,Near Ajmer, Road, Heerapura,Rajasthan - 302021</td>
+        <td>1800-123-8783/ 9321743538</td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>JAMMU</td>
+        <td>J&amp;K</td>
+        <td>SOAP NO 1 FIST FLOOR<br>NEAR SBI BANK BARIBRAMNA JAMMU-181133</td>
+        <td>1800-123-8783/ 9321743538</td>
+      </tr>
+      <tr>
+        <td>16</td>
+        <td>Kerala</td>
+        <td>Cochin</td>
+        <td>H.O -Building No-11/286A Kallarackal House Palliamkara H.M.T Colony P.O,Near HMT Post Office Ernakulam ,Cochin, Kerala -683504</td>
+        <td>1800-123-8783/ 9321743538</td>
+      </tr>
+      <tr>
+        <td>17</td>
+        <td>Madhya Pradesh</td>
+        <td>Bhopal</td>
+        <td>C-317, ShriRameshwaram, Baghmugaliya, Bhopal 462043</td>
+        <td>1800-123-8783/ 9321743538</td>
+      </tr>
+      <tr>
+        <td>18</td>
+        <td>Orissa</td>
+        <td>Bhubneswar</td>
+        <td>2946/7055 Saptasati Bihar,Near Isa Diagnostic, Rasulgarh Palasuni,Bhubneswar-751010</td>
+        <td>1800-123-8783/ 9321743538</td>
+      </tr>
+      <tr>
+        <td>19</td>
+        <td>Uttrakhand</td>
+        <td>Dehradun</td>
+        <td>Prem Nagar IMA,Dehradun Uttrakhand,Dehradun</td>
+        <td>1800-123-8783/ 9321743538</td>
+      </tr>
+      <tr>
+        <td>20</td>
+        <td>Jharkhand</td>
+        <td>Ranchi</td>
+        <td>Radha Complex Khel Gaon More,Deepa Toli Ranchi, Jharkhand</td>
+        <td>1800-123-8783/ 9321743538</td>
+      </tr>
+      <tr>
+        <td>21</td>
+        <td>Himachal</td>
+        <td>Himachal</td>
+        <td>Darnu, K.B Dharamshala dist Kangra,Himachal,Himachal-176215</td>
+        <td>1800-123-8783/ 9321743538</td>
+      </tr>
+      <tr>
+        <td>22</td>
+        <td>Goa</td>
+        <td>Goa</td>
+        <td>Shop No.40, Iind Floor Ponda Commerce Center,Near IDBI Bank Tisk Ponda,Goa-403401</td>
+        <td>1800-123-8783/ 9321743538</td>
+      </tr>
+      <tr>
+        <td>23</td>
+        <td>Andhra Pradesh</td>
+        <td>Visakhapatnam</td>
+        <td>Godown No-12-18/3 Near Mary Palam Bus Stop,Lankelapalem,Visakhapatnam-531021</td>
+        <td>1800-123-8783/ 9321743538</td>
+      </tr>
+      <tr>
+        <td>24</td>
+        <td>Arunnachal Pradesh</td>
+        <td>Itanagar</td>
+        <td>Mithun Gate Near Town Baptist ,Church Nyokum Lapang ,Itanagar-791111</td>
+        <td>1800-123-8783/ 9321743538</td>
+      </tr>
+      <tr>
+        <td>25</td>
+        <td>Chhattisgarh</td>
+        <td>Raipur</td>
+        <td>MIG 245 Kabir Nagar Near Commercial Complex,Raipur,Chhattisgarh-492099</td>
+        <td>1800-123-8783/ 9321743538</td>
+      </tr>
+      <tr>
+        <td>26</td>
+        <td>Goa</td>
+        <td>Chicalim</td>
+        <td>3rd Office No.304, Dr. Ozler Forum, Near St Andrew Chruch, Vasco da Gama, South Goa, Goa -403802</td>
+        <td>1800-123-8783/ 9321743538</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+    <footer id="footer" style="background-color: #292d33;"></footer>
+</body>
+</html>

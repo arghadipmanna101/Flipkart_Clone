@@ -1,0 +1,22 @@
+name: 'Greetings'
+
+on:
+  issues:
+    types: [opened]
+  pull_request_target:
+    types: [opened]
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  welcome:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: EddieHubCommunity/gh-action-community/src/welcome@main
+        with:
+      
+          issue-message: "Hi there! Thanks for opening this issue. We appreciate your contribution to this open-source project. We aim to respond or assign your issue as soon as possible."
+          pr-message: "Great job, @${{ github.actor }}! 🎉 Thank you for submitting your pull request. Your contribution is valuable and we appreciate your efforts to improve our project.We will promptly review your changes and offer feedback.  kindly remember to check our [contributing guidelines](https://github.com/arghadipmanna101/Flipkart_Clone/blob/main/CONTRIBUITING.md)"
+          github-token: ${{ secrets.GITHUB_TOKEN }}

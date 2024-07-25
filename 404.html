@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404:Page not found</title>
+    <link rel="icon" type="image/x-icon" href="img/flipkart_lite.png">
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+    }
+
+    .center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+    }
+
+    .pic {
+        width: 400px;
+        height: 300px;
+    }
+    a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .btn {
+        position: absolute;
+        padding: 10px 20px;
+        background-color: #0077ff;
+        border-radius: 5px;
+        font-size: 18px;
+        border: none;
+        top: 600px;
+    }
+
+    @media screen and (max-width: 600px) {
+        .pic {
+            width: 300px;
+            height: 300px;
+        }
+
+        .btn {
+            top: 750px;
+        }
+        h4{
+            font-size: 13px;
+        }
+    }
+    nav{
+        background: #0077ff;
+        display: flex;
+        justify-content: center;
+    }
+    .logo{
+        width: 200px;
+        padding: 20px;
+    }
+    
+</style>
+
+<body>
+    <nav>
+        <img src="http://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/fk-logo_9fddff.png" alt="logo" class="logo">
+    </nav>
+    <div class="center">
+        <img src="https://flipkart-clone-seven-azure.vercel.app/img/flipkarterror.png" alt="404 pic" class="pic">
+        <h4>Unfortunately the page you are looking for has been moved or deleted</h4>
+        <button class="btn"><a href="https://flipkart-clone-seven-azure.vercel.app/index.html">GOTO THE HOMEPAGE</a></button>
+    </div>
+</body>
+
+</html>

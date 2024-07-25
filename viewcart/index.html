@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#2874F0" id="themeColor" />
+    <title>Shopping Cart | Flipkart.com </title>
+    <link rel="icon" type="image/x-icon" href="../img/flipkart_lite.png" />
+    <script src="https://kit.fontawesome.com/c732ec9339.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./cart.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <a class="navbar-brand" href="https://flipkart-clone-seven-azure.vercel.app/">
+                <img src="../img/flipcartlogo.PNG" width=auto height="40" title="Flipkart" alt="Flipkart" />
+            </a>
+
+            <div class="search">
+                <input type="search" placeholder="Search for products, brands and more...">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+        </div>
+        <a href="../account/login-signup.html"><button>Login</button></a>
+
+    </nav>
+
+
+    <div class="cart-container" id="cardisEmpty">
+        <div class="empty-cart">
+            <img src="https://rukminim2.flixcart.com/www/800/800/promos/16/05/2019/d438a32e-765a-4d8b-b4a6-520b560971e8.png?q=90"
+                alt="" height="200px" width="200px">
+            <h4>Missing Cart items?</h4>
+            <small>
+                Login to see the items you added previously</small>
+            <a href="../account/login-signup.html"><button>Login</button></a>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-4" id="cardInProduct">
+        <div class="container-">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="deliver_c_pc d-flex justify-content-between align-items-center bg-white">
+                        <p class="p-3">Delever to: <strong>Bhopal-462022</strong></p>
+                        <button class="btn m-3">Change</button>
+                    </div>
+                    <div id="itemsInCart">
+                        <!-- <div id="cartItmListInviewCart" class="bg-white">
+                            <div class="itemInCart d-flex p-3 m-1">
+                              <div style="height: 112px; width: 112px;" class="m-3">
+                                <img src="../json-api/product-img/${item.productImg}" style="width: auto; height: 80px; object-fit: contain;"
+                                  alt="${item.name}">
+                              </div>
+                              <div class="itemDetail">
+                                <div>
+                                  <p>${item.name}</p>
+                                  <p> Forest Green Strap, Regular</p>
+                                  <p> Seller: Ezig </p>
+                                </div>
+                                <div>
+                                  <b>₹${item.price}</b> 1 offer applied
+                                </div>
+                              </div>
+                              <div class="deliveryDate">
+                                Delivery by ${dayOfWeek}, ${date} | <del>₹40</del> Free
+                              </div>
+                            </div>
+                            <div class="cartItmRmPMdiv container-fluid pt-2 pb-2" style="border-top:1px solid #f1f3f6">
+                              <div class="row">
+                                <div class="plusMinItm col-sm-6">
+                                  <div class="d-flex justify-content-center align-items-center">
+                                    <button class="cartItmPMBtn" disabled=""> – </button>
+                                    <div class="cartItmQty"><input type="text" class="text-center" value="1" style="width:50px"></div>
+                                    <button class="cartItmPMBtn"> + </button>
+                                  </div>
+                                </div>
+                                <div class="cartItmSfLRm d-flex justify-content-around align-items-center col-sm-6">
+                                  <div class="cartItmSfLRmBtn">Save for later</div>
+                                  <div class="cartItmSfLRmBtn">Remove</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div> -->
+                    </div>
+                    <div class="d-flex flex-row-reverse p-3 bg-white" style="border: 2px solid #efefef;">
+                        <button class="placeOrder text-white">PLACE ORDER</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <h5>PRICE DETAILS</h5>
+                        <div id="priceDetail">
+                            <!-- <pre>
+Price (2 items)                 ₹15,998
+Discount                        0
+Delivery Charges                ₹110 Free
+Total Amount                    <b>₹3,098</b> 
+You will save ₹110 on this order
+                            </pre> -->
+                        </div>
+                        <div>
+                            <!-- demo -->
+                            <button class="btn btn-danger" onclick="window.location.href='addtokart/checkout.html'">Buy Now</button>
+                        </body>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="popupCartItem" class="popup hidden"></div>
+
+    <footer>
+        <div class="footer-right">
+            Policies:Returns | Policy | Terms of use | Security | Privacy | Infringement | © 2007-2024 Flipkart.com
+        </div>
+        <div class="footer-left">
+            Need help? Visit the <span>Help Center</span> or <span>Contact Us</span>
+        </div>
+    </footer>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="viewcart.js"></script>
+</body>
+
+</html>
+
+
