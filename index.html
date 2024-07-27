@@ -69,7 +69,7 @@
             bottom: 45px;
             right: 50%;
             left: 50%;
-
+        }
             .inner {
                 height: 85%;
                 width: 85%;
@@ -79,7 +79,16 @@
                 align-items: center;
                 border-radius: 50%;
             }
-        }
+        .r4vIwl{
+            padding: 8px 10px 10px 0;
+    width: 100%;
+    color: #000;
+    font-size: inherit;
+    background: #fff;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+}
+        
     </style>
 
 
@@ -107,10 +116,10 @@
             <div class="rightSignuppanal">
                 <span class="close-btn" id="close-btn">&times;</span>
                 <form autocomplete="on">
-                    <div class="I-qZ4MvLRlQb">
+                    <div class="I-qZ4M vLRlQb">
                         <input autocomplete="off" id="inputsin" type="text" class="r4vIwl BV+Dqf" value=""
                             required="" />
-                        <label class="Gq-80aa label" id="inputsin"><span>Enter Email/Mobile </span></label>
+                        <label class="Gq-80a" id="inputsin"><span>Enter Email/Mobile </span></label>
                         <div class="underline"></div>
                     </div>
                     <div class="EpHS0A">By continuing, you agree to Flipkart's
@@ -121,7 +130,7 @@
                         <button class="QqFHMw twnTnD _7Pd1Fp">Request OTP</button>
                     </div>
                     <div class="ZJ3AS1 d-flex justify-content-center mt-4">
-                        <a class="azBkHf" href="#" id="buttonA">New to Flipkart? Create an account</a>
+                        <a class="azBkHf" href="account/login-signup.html" id="buttonA">New to Flipkart? Create an account</a>
                     </div>
                 </form>
             </div>
@@ -168,7 +177,7 @@
         }
 
         .signupin {
-            background: #f1f3f6;
+            /* background: #f1f3f6; */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -177,7 +186,7 @@
         }
 
         .signupin .leftpanal {
-            padding: 10px;
+            padding: 20px;
             background-color: #2874F0;
             color: #fff;
             background-image: url(../img/login_img_bg.png);
@@ -186,9 +195,11 @@
             height: 400px;
             width: 20vw;
         }
-
+        .signupin .leftpanal p{
+            color:rgb(220, 219, 219);
+        }
         .signupin .rightSignuppanal {
-            padding: 10px;
+            padding: 20px;
             background: #fff;
             height: 400px;
             width: 30vw;
@@ -212,13 +223,34 @@
             font-size: 11px;
         }
 
-        .I-qZ4MvLRlQb {
+        .I-qZ4M  {
             position: relative;
-            margin: 50px auto;
-            width: 200px;
+    margin-bottom: 34px;
+    font-size: 16px;
+        }
+        .Gq-80a {
+            color: #878787;
+            font-size: 16px;
+            font-weight: 400;
+            position: absolute;
+            pointer-events: none;
+            left: 0;
+            top: 0;
+            -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+            transition: -webkit-transform .2s ease;
+            transition: transform .2s ease;
+            transition: transform .2s ease, -webkit-transform .2s ease;
+            will-change: transform;
+           -webkit-transform-origin: left;
+            transform-origin: left;
         }
 
-        .I-qZ4MvLRlQb input[type="text"] {
+        .Gq-80a:focus{
+            border-bottom: 2px solid #2874F0;
+        }
+
+        .I-qZ4M .vLRlQb input[type="text"] {
             font-size: 20px;
             width: 100%;
             border: none;
@@ -228,7 +260,7 @@
             outline: none;
         }
 
-        .I-qZ4MvLRlQb .label {
+        .I-qZ4M .vLRlQb .label {
             position: absolute;
             top: 12px;
             left: 0;
@@ -237,14 +269,14 @@
             pointer-events: none;
         }
 
-        .I-qZ4MvLRlQb input[type="text"]:focus~.label,
-        .I-qZ4MvLRlQb input[type="text"]:valid~.label {
+        .I-qZ4M .vLRlQb input[type="text"]:focus~.label,
+        .I-qZ4M .vLRlQb input[type="text"]:valid~.label {
             top: -20px;
             font-size: 16px;
             color: #333;
         }
 
-        .I-qZ4MvLRlQb .underline {
+        .I-qZ4M .vLRlQb .underline {
             position: absolute;
             bottom: 0;
             left: 0;
@@ -255,9 +287,10 @@
             transition: all 0.3s ease;
         }
 
-        .I-qZ4MvLRlQb input[type="text"]:focus~.underline,
-        .I-qZ4MvLRlQb input[type="text"]:valid~.underline {
+        .I-qZ4M .vLRlQb input[type="text"]:focus~.underline,
+        .I-qZ4M .vLRlQb input[type="text"]:valid~.underline {
             transform: scaleX(1);
+            background-color: #2874F0;
         }
 
         @media screen and (max-width: 1200px) {
