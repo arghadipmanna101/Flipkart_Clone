@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.sell-online-form {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.sell-online-form h2 {
+    margin-top: 0;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2874F0;
+}
+
+.sell-online-form .form-group {
+    margin-bottom: 20px;
+}
+
+.sell-online-form .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.sell-online-form .form-group input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.sell-online-form .btn {
+    padding: 12px 20px;
+    border: none;
+    background-color: #2874F0;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.sell-online-form .btn:hover {
+    background-color: #1a5bbf;
+}
+
+.sell-online-form .btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.sell-online-form .form-step {
+    display: none;
+}
+
+.sell-online-form .form-step-active {
+    display: block;
+}
+
+.sell-online-form .form {
+    margin-top: 20px;
+}
+
+.sell-online-form .step-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+}
+
+.sell-online-form .btn-group {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sell-online-form .btn-group .btn {
+    margin: 5px;
+}

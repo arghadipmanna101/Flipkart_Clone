@@ -4,12 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#2874F0" id="themeColor" />
-    <title>
-        Sell Online - start Selling Online On Flipkart Seller Hub 
-    </title>
+    <title>Sell Online - start Selling Online On Flipkart Seller Hub</title>
     <link rel="icon" type="image/x-icon" href="../img/flipkart_lite.png" />
-    <!-- <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" /> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+
      <link rel="stylesheet" href="../css/orders.css" />
      <style>
          #progress-container {
@@ -33,11 +31,99 @@
      </style>
 </head>
 
-<header id="header-orders" class="text-center text-secondary fs-4">
-    This is Header
-</header>
 
-</body>
+        .sell-online-form {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        .sell-online-form h2 {
+            margin-top: 0;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #2874F0;
+        }
+
+        .sell-online-form .form-group {
+            margin-bottom: 20px;
+        }
+
+        .sell-online-form .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .sell-online-form .form-group input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .sell-online-form .btn {
+            padding: 12px 20px;
+            border: none;
+            background-color: #2874F0;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-right: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .sell-online-form .btn:hover {
+            background-color: #1a5bbf;
+        }
+
+        .sell-online-form .btn:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        .sell-online-form .form-step {
+            display: none;
+        }
+
+        .sell-online-form .form-step-active {
+            display: block;
+        }
+
+        .sell-online-form .form {
+            margin-top: 20px;
+        }
+
+        .sell-online-form .step-title {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #333;
+            text-align: center;
+        }
+
+        .sell-online-form .btn-group {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .sell-online-form .btn-group .btn {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header-orders" class="text-center text-secondary fs-4">
+        This is Header
+    </header>
 
 <div id="progress-container">
     <div id="progress-bar"></div>
@@ -91,11 +177,9 @@
                     <p><a href="https://www.gst.gov.in">Register / Login to www.gst.gov.in</a></p>
                 </div>
                 <div class="step">
-                
                     <p>Fill in the GST Enrolment Application Form</p>
                 </div>
                 <div class="step">
-                    
                     <p>Submit Enrolment Application</p>
                 </div>
             </div>
@@ -103,6 +187,7 @@
 
         <p>Flipkart offers a diverse range of over 3000+ categories where you can sell your products. These categories represent just a fraction of the wide variety available on Flipkart, providing ample opportunities for sellers to showcase their products to a large customer base. Here are some popular categories to consider for online selling:</p>
     </div>
+
     <div class="container">
         <h2>Grow Faster</h2>
         <p>
@@ -117,20 +202,107 @@
             <li>Shopping Festivals and more: Participate in exciting sales events and promotional campaigns.</li>
         </ul>
         <p><a href="#">Know more</a> on how to grow your business</p>
-        
-    </div>  
+    </div>
 
     <div class="help-support">
         <h2>Help & Support</h2>
         <p>What sets us apart is our exceptional Flipkart seller support assistance. We prioritize your needs and are committed to providing you with prompt assistance, whether you have questions, doubts, or require any kind of support for your business. Our dedicated team is here to help you every step of the way, ensuring that you have a smooth and successful selling experience on Flipkart. Feel free to reach out to us whenever you need assistance - we're always here to support you.</p>
         <p><a href="#">Know more</a> about the assistance we offer.</p>
         <p>A step-by-step guide to help with your Flipkart account creation can be <a href="#">downloaded from here</a>.</p>
-       
+    </div>
+
+    <div class="sell-online-form">
+        <h2>Sell Online Form</h2>
+        <div class="form-step form-step-active">
+            <div class="step-title">Step 1: Personal Information</div>
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" required />
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required />
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" required />
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-next">Next</button>
+            </div>
+        </div>
+        <div class="form-step">
+            <div class="step-title">Step 2: Business Information</div>
+            <div class="form-group">
+                <label for="business-name">Business Name</label>
+                <input type="text" id="business-name" required />
+            </div>
+            <div class="form-group">
+                <label for="business-address">Business Address</label>
+                <input type="text" id="business-address" required />
+            </div>
+            <div class="form-group">
+                <label for="gst-number">GST Number</label>
+                <input type="text" id="gst-number" required />
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-previous">Previous</button>
+                <button type="button" class="btn btn-next">Next</button>
+            </div>
+        </div>
+        <div class="form-step">
+            <div class="step-title">Step 3: Bank Information</div>
+            <div class="form-group">
+                <label for="bank-name">Bank Name</label>
+                <input type="text" id="bank-name" required />
+            </div>
+            <div class="form-group">
+                <label for="account-number">Account Number</label>
+                <input type="text" id="account-number" required />
+            </div>
+            <div class="form-group">
+                <label for="ifsc-code">IFSC Code</label>
+                <input type="text" id="ifsc-code" required />
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-previous">Previous</button>
+                <button type="button" class="btn btn-submit">Submit</button>
+            </div>
+        </div>
     </div>
 
     <footer id="footer-orders" style="background-color: #293649;"></footer>
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/orders.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const nextButtons = document.querySelectorAll('.btn-next');
+            const prevButtons = document.querySelectorAll('.btn-previous');
+            const submitButton = document.querySelector('.btn-submit');
+            const formSteps = document.querySelectorAll('.form-step');
+            let currentStep = 0;
+
+            nextButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    formSteps[currentStep].classList.remove('form-step-active');
+                    currentStep++;
+                    formSteps[currentStep].classList.add('form-step-active');
+                });
+            });
+
+            prevButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    formSteps[currentStep].classList.remove('form-step-active');
+                    currentStep--;
+                    formSteps[currentStep].classList.add('form-step-active');
+                });
+            });
+
+            submitButton.addEventListener('click', () => {
+                alert('Form submitted successfully!');
+            });
+        });
+    </script>
 </body>
 
 </html>
