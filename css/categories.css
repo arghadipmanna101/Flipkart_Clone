@@ -1,6 +1,6 @@
 .categorylist-wrapper {
   width: 100%;
-  overflow-x: scroll;
+  overflow-x:hidden;
   /* z-index: 500; */
 }
 
@@ -77,6 +77,7 @@
 #category-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  
   gap: 40px;
   margin-top: 20px;
   margin-bottom: 20px;
