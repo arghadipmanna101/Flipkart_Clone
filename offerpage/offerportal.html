@@ -172,14 +172,23 @@
     <br>
 
     <h1><center>Today's Top Deals</center></h1>
+	
 	<!--Header end -->
-    <div class="promo-wrapper">
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search...">
+    </div>
+		
+    <div class="promo-wrapper" id="promoWrapper">
         <a href="#" class="deal">
             <img src="../img/earphon1.webp" alt="Deal 1">
             <div class="info">
                 <h3>Product Title 1</h3>
                 <p class="price">$29.99</p>
                 <p class="discount">40% off</p>
+				<div class="deal-timer">
+					<p>Ends in: <span id="countdown">00:00:00</span></p>
+				</div>
+				
             </div>
         </a>
         <a href="#" class="deal">
@@ -196,6 +205,7 @@
                 <h3>Product Title 3</h3>
                 <p class="price">$49.99</p>
                 <p class="discount">60% off</p>
+				
             </div>
         </a>
         <a href="#" class="deal">
