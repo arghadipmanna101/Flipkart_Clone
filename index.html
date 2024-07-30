@@ -334,6 +334,16 @@
             font-size: 24px;
             cursor: pointer;
         }
+        .temporary-login-btn{
+            color:white;
+            text-decoration:none;
+            padding-right:20px;
+            padding-left:20px;
+            padding-bottom:5px;
+            background: #2a55e5;
+            margin-left:950px;
+            z-index:1000!important;
+       }
     </style>
 
 
@@ -475,7 +485,24 @@
         </nav>
     </header>
     <!--Header end -->
-
+    <button id="temporary-login-btn" class="btn btn-primary temporary-login-btn">Login</button>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const loginBtn = document.getElementById('temporary-login-btn');
+            loginBtn.style.display = 'block';
+            loginBtn.classList.add('shake'); 
+    
+            loginBtn.addEventListener('click', function() {
+                window.location.href = '../account/login-signup.html'; 
+            });
+    
+            setTimeout(function() {
+                loginBtn.style.display = 'none';
+            }, 30000);
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <!-- categorylist -->
     <div id="categorylist-wrapper" class="container-fluid categorylist-wrapper">
         <ul id="categories" class="categories"></ul>
