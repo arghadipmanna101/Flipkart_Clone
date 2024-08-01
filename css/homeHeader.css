@@ -184,11 +184,34 @@ a.navbar-brand {
   display: block;
   width: 100%;
   transition: background-color 0.2s ease, color 0.2s ease;
+  position: relative;
+  z-index: 200;
 }
 
 .homeHeader .dropdown-item:hover {
   background-color: #f8f9fa;
   color: #007bff;
+  display: block;
+}
+.navname{
+  position:relative;
+}
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  50% { transform: translateX(10px); }
+  75% { transform: translateX(-10px); }
+  100% { transform: translateX(0); }
+}
+
+.temporary-login-btn {
+  z-index: 1100 !important;
+  position: fixed;
+}
+
+.shake {
+  animation: shake 0.5s ease-in-out;
+  animation-iteration-count: 5;
 }
 
 @media screen and (max-width: 1184px) {
