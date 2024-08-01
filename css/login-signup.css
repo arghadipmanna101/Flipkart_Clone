@@ -14,12 +14,12 @@ body {
     padding: 30px;
 
 }
-.signupin .leftpanal .login-display{
-    margin: 40px 30px;
+.signupin .leftpanal .login-display, .signupdisplay{
+    margin: 10px 10px;
     font-weight: bold;
 }
 .signupin .leftpanal p{
-    margin: 0 30px;
+    margin: 0 10px;
     color: #ccc;
 }
 .signupin .leftpanal {
@@ -30,6 +30,7 @@ body {
     background-repeat: no-repeat;
     height: 400px;
     width: 20vw;
+    padding: 20px;
 }
 
 .signupin .rightSignuppanal {
@@ -63,8 +64,11 @@ body {
 
 .I-qZ4MvLRlQb {
     position: relative;
-    margin: 50px auto;
-    width: 300px;
+    margin: 0px auto;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    width: 100%;
+
 }
 
 .I-qZ4MvLRlQb input[type="text"] {
@@ -108,6 +112,7 @@ body {
 .I-qZ4MvLRlQb input[type="text"]:focus~.underline,
 .I-qZ4MvLRlQb input[type="text"]:valid~.underline {
     transform: scaleX(1);
+    background-color: #2874F0;
 }
 
 @media screen and (max-width: 1200px) {
