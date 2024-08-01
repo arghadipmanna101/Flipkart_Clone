@@ -1,0 +1,40 @@
+/* rating.css */
+
+/* Style for the rating container */
+.rating-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+/* Style for each star in the rating */
+.rating-star {
+    font-size: 24px;
+    color: #ffd700; /* Gold color for stars */
+    margin-right: 5px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+/* Style for filled star */
+.rating-star.filled {
+    color: #ffd700;
+}
+
+/* Style for unfilled star */
+.rating-star.unfilled {
+    color: #e0e0e0; /* Light grey for unfilled stars */
+}
+
+/* Hover effect for stars */
+.rating-star:hover,
+.rating-star:hover ~ .rating-star {
+    color: #ffcc00;
+}
+
+/* Disabled state for rating */
+.rating-container.disabled .rating-star {
+    cursor: not-allowed;
+    opacity: 0.6;
+}

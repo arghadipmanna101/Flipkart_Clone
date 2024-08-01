@@ -80,6 +80,26 @@
                 border-radius: 50%;
             }
         }
+
+    #progress-container {
+    position: fixed ;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    z-index: 99990;
+    /* background: #f3f3f3; */
+}
+
+#progress-bar {
+    height: 53%;
+    width: 0;
+    background: linear-gradient(90deg, rgb(0, 72, 255) 0%, rgb(153, 187, 255) 50%, rgb(0, 184, 250) 100%);
+    box-shadow: 0 0 4px rgba(0, 166, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.7);
+    transition: width 0.09s ease-in-out;
+    border-radius: 10px;
+}
+
     </style>
 
 
@@ -98,6 +118,21 @@
         </div>
     </div>
     <!-- loader end -->
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+      </div>
+
+      <script>
+            
+        window.addEventListener('scroll', function() {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progress-bar').style.width = scrolled + '%';
+        });
+        </script>
+      
+  
     <div id="divA" class="popup-container">
         <div class="signupin">
             <div class="leftpanal">
@@ -121,7 +156,7 @@
                         <button class="QqFHMw twnTnD _7Pd1Fp">Request OTP</button>
                     </div>
                     <div class="ZJ3AS1 d-flex justify-content-center mt-4">
-                        <a class="azBkHf" href="#" id="buttonA">New to Flipkart? Create an account</a>
+                        <a class="azBkHf" href="https://flipkart-clone-seven-azure.vercel.app/auth/index.html" id="buttonA">New to Flipkart? Create an account</a>
                     </div>
                 </form>
             </div>
@@ -299,6 +334,16 @@
             font-size: 24px;
             cursor: pointer;
         }
+        .temporary-login-btn{
+            color:white;
+            text-decoration:none;
+            padding-right:20px;
+            padding-left:20px;
+            padding-bottom:5px;
+            background: #2a55e5;
+            margin-left:950px;
+            z-index:1000!important;
+       }
     </style>
 
 
@@ -338,61 +383,63 @@
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown" id="navbarDropdown">
-                        <a class="nav-link acnavdd dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link acnavdd ml-3 mr-5" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             <img src="img/svg/profile-.svg" alt="Profile"
-                                style="width: 20px; height: 20px; margin-right: 5px;" />
+                                style="width: 20px; height: 20px; margin-right: 5px; margin-left: 10px;" />
                             <span class="navname" style="font-size: 14px;">Login <i
                                     class="bi bi-chevron-down"></i></span>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="left: 0;">
-                            <a class="dropdown-item" href="account/home_account.html"><img width="20"
+                            <a class="dropdown-item d-flex gap-2" href="account/home_account.html"><img width="20"
                                     src="img/svg/profile-.svg" alt="flipKart" style="margin-right: 5px;"> My Profile
                             </a>
-                            <a class="dropdown-item" href="login/login.html"><img width="20" src="img/svg/profile-.svg"
+                            <a class="dropdown-item d-flex gap-2" href="login/login.html"><img width="20" src="img/svg/profile-.svg"
                                     alt="flipKart" style="margin-right: 5px;"> Log into account </a>
-                            <a class="dropdown-item" href="account/login-signup.html"><img width="20"
+                            <a class="dropdown-item d-flex gap-2" href="account/login-signup.html"><img width="20"
                                     src="img/svg/profile-.svg" alt="flipKart" style="margin-right: 5px;"> Sign In</a>
-                            <a class="dropdown-item" href="plus/"><img width="20" src="img/svg/fkplus-+.svg"
+                            <a class="dropdown-item d-flex gap-2" href="plus/"><img width="20" src="img/svg/fkplus-+.svg"
                                     alt="flipKart" style="margin-right: 5px;"> Flipkart Plus Zone</a>
-                            <a class="dropdown-item" href="account/orders.html"><img width="20" src="img/svg/orders.svg"
+                            <a class="dropdown-item d-flex gap-2" href="account/orders.html"><img width="20" src="img/svg/orders.svg"
                                     alt="flipKart" style="margin-right: 5px;"> Orders</a>
-                            <a class="dropdown-item" href="wishlist/"><img width="20" src="img/svg/wishList.svg"
+                            <a class="dropdown-item d-flex gap-2" href="wishlist/"><img width="20" src="img/svg/wishList.svg"
                                     alt="flipKart" style="margin-right: 5px;"> Wishlist</a>
-                            <a class="dropdown-item" href="account/notifications.html"><img width="20"
+                            <a class="dropdown-item d-flex gap-2" href="account/notifications.html"><img width="20"
                                     src="img/svg/notifications.svg" alt="flipKart" style="margin-right: 5px;">
                                 Notifications</a>
-                            <a class="dropdown-item" href="account/rewards.html"><img width="20"
+                            <a class="dropdown-item d-flex gap-2" href="account/rewards.html"><img width="20"
                                     src="img/svg/rewards.svg" alt="flipKart" style="margin-right: 5px;"> Rewards</a>
-                            <a class="dropdown-item" href="the-gift-card-store/"><img width="20"
+                            <a class="dropdown-item d-flex gap-2" href="the-gift-card-store/"><img width="20"
                                     src="img/svg/giftCard.svg" alt="flipKart" style="margin-right: 5px;"> Gift Cards</a>
-                            <a class="dropdown-item" href="account/contact.html"><img width="20"
+                            <a class="dropdown-item d-flex gap-2" href="account/contact.html"><img width="20" height="10"
                                     src="https://pngimg.com/uploads/phone/phone_PNG48988.png" alt="flipKart"
                                     style="margin-right: 5px;"> Contact Us </a>
-                            <a class="dropdown-item" href="account/feedback.html"><i class="bi bi-chat-dots"></i> My
+                            <a class="dropdown-item d-flex gap-2" href="account/feedback.html"><i class="bi bi-chat-dots"></i> My
                                 Feedback </a>
                         </div>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="viewcart/" style="font-size: 14px;">
+                        <a class="nav-link mr-5" href="viewcart/" style="font-size: 14px; margin-left: 20px; font-weight: 500;">
                             <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg"
                                 style="width: 20px; height: 20px; margin-right: 5px;" /> Cart
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="sell-online/" style="font-size: 14px;">
-                            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg"
-                                style="width: 20px; height: 20px; margin-right: 5px;" /> Become a Seller
+                        <a class="nav-link mr-5" href="sell-online/" style="font-size: 14px; margin-left: 30px; font-weight: 500;">
+                            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg" style="width: 20px; height: 20px; margin-right: 5px;" /> Become a Seller
                         </a>
                     </li>
-                    <li class="nav-item dropdown" id="moreLinksDropdown">
+                    <li class="nav-item dropdown mr-5" style="margin-left: 50px;" id="moreLinksDropdown">
                         <a href="#"><i class="fas fa-ellipsis-v"></i></a>
                         <div class="dropdown-menu">
+
                             <a href="https://www.flipkart.com/communication-preferences/push?t=all"><i class="fa-regular fa-bell"></i> &nbsp; Notification Preferences</a>
                             <a href="https://www.flipkart.com/helpcentre"><i class="fa-solid fa-headset"></i>&nbsp; 24 X 7 customer service</a>
                             <a href="https://advertising.flipkart.com/login?returl=/?otracker=ch_vn_advertise_header"><i class="fas fa-arrow-up"></i>&nbsp; Advertise</a>
                             <a href="https://www.flipkart.com/mobile-apps?otracker=ch_vn_mobile_apps"><i class="fa-solid fa-download"></i> &nbsp; Download App</a>
+
+
                         </div>
                     </li>
                     <style>
@@ -410,7 +457,12 @@
                         .nav-item:hover .dropdown-menu {
                             display: block;
                         }
+
+                        .nav-item:hover{
+                            text-decoration: underline;
+                        }
                     </style>
+
                     <!-- <a class="nav-link nav-dd dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-ea7819.svg" style="width: 20px; height: 20px; margin-right: 5px;" /> More Links
     </a> -->
@@ -424,7 +476,24 @@
         </nav>
     </header>
     <!--Header end -->
-
+    <button id="temporary-login-btn" class="btn btn-primary temporary-login-btn">Login</button>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const loginBtn = document.getElementById('temporary-login-btn');
+            loginBtn.style.display = 'block';
+            loginBtn.classList.add('shake'); 
+    
+            loginBtn.addEventListener('click', function() {
+                window.location.href = '../account/login-signup.html'; 
+            });
+    
+            setTimeout(function() {
+                loginBtn.style.display = 'none';
+            }, 30000);
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <!-- categorylist -->
     <div id="categorylist-wrapper" class="container-fluid categorylist-wrapper">
         <ul id="categories" class="categories"></ul>
@@ -1237,15 +1306,15 @@
 
                         <!-- <label for="email">Email:</label> -->
                         <input type="email" id="email" name="email" required placeholder="Email:">
-
+                       
                         <!-- <label for="comment">Comment:</label> -->
-                        <textarea id="comment" name="feedback" required placeholder="Comment:"></textarea>
+                       <br> <textarea id="comment" name="feedback" required placeholder="Comment:"></textarea>
 
 
                         <p id="thank-you-message" style="color: white; display: none;">Thank you !!<br>We will connect
                             soon.</p>
-                    </form>
-                    <button onclick="handleSubmit()" id="button">Submit</button>
+                    </form>   <br>
+                    <button onclick="handleSubmit()" id="button" class="button1">Submit</button>
                 </div>
             </div>
         </div>
@@ -1329,6 +1398,7 @@
             <option value="4">4 Stars</option>
             <option value="5">5 Stars</option>
         </select>
+        
 </body>
 
 </html>
