@@ -46,6 +46,99 @@
     <link href="css/contactus.css" rel="stylesheet">
 
     <style>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .mb-20 {
+            margin-bottom: 5rem;
+        }
+        .title-font {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            color: #2d2d2d;
+        }
+        .leading-relaxed {
+            line-height: 1.5;
+        }
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .flex-col {
+            flex-direction: column;
+        }
+        .w-full {
+            width: 100%;
+        }
+        .mb-4 {
+            margin-bottom: 1rem;
+        }
+        .p-4 {
+            padding: 1rem;
+        }
+        .border-2 {
+            border-width: 2px;
+        }
+        .border-gray-200 {
+            border-color: #e5e5e5;
+        }
+        .px-4 {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        .py-6 {
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+        .rounded-lg {
+            border-radius: 0.5rem;
+        }
+        .inline-block {
+            display: inline-block;
+        }
+        .text-indigo-500 {
+            color: #6366f1;
+        }
+        .w-12 {
+            width: 3rem;
+        }
+        .h-12 {
+            height: 3rem;
+        }
+        .mb-3 {
+            margin-bottom: 0.75rem;
+        }
+        .title-font {
+            font-size: 1.875rem;
+            font-weight: 500;
+            color: #1f2937;
+        }
+        .text-3xl {
+            font-size: 1.875rem;
+        }
+        .text-gray-900 {
+            color: #1f2937;
+        }
+        .text-base {
+            font-size: 1rem;
+        }
+        .md-w-1-4 {
+            width: 25%;
+        }
+        .sm-w-1-2 {
+            width: 50%;
+        }
+        @media (max-width: 768px) {
+            .md-w-1-4 {
+                width: 100%;
+            }
+        }
         html {
             scroll-behavior: smooth;
         }
@@ -522,7 +615,6 @@
     <ul id="categories" class="categories"></ul>
 </div>
 
-    <button id="temporary-login-btn" class="btn btn-primary temporary-login-btn">Login</button>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const loginBtn = document.getElementById('temporary-login-btn');
@@ -630,6 +722,58 @@
         </button>
     </div>
    <!-- carousel end -->
+
+   <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Flipkart Plus Benefits</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Enjoy exclusive benefits, faster delivery, and more with Flipkart Plus. Join today to make the most of your shopping experience.</p>
+        </div>
+        <div class="flex flex-wrap -m-4 text-center">
+            <div class="p-4 md-w-1-4 sm-w-1-2 w-full">
+                <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-indigo-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+                        <path d="M8 17l4 4 4-4m-4-5v9"></path>
+                        <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
+                    </svg>
+                    <h2 class="title-font font-medium text-3xl text-gray-900">50M+</h2>
+                    <p class="leading-relaxed">Members</p>
+                </div>
+            </div>
+            <div class="p-4 md-w-1-4 sm-w-1-2 w-full">
+                <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-indigo-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+                        <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
+                    </svg>
+                    <h2 class="title-font font-medium text-3xl text-gray-900">30K+</h2>
+                    <p class="leading-relaxed">Products</p>
+                </div>
+            </div>
+            <div class="p-4 md-w-1-4 sm-w-1-2 w-full">
+                <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-indigo-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+                        <path d="M3 18v-6a9 9 0 0118 0v6"></path>
+                        <path d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z"></path>
+                    </svg>
+                    <h2 class="title-font font-medium text-3xl text-gray-900">10K+</h2>
+                    <p class="leading-relaxed">Brands</p>
+                </div>
+            </div>
+            <div class="p-4 md-w-1-4 sm-w-1-2 w-full">
+                <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-indigo-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    </svg>
+                    <h2 class="title-font font-medium text-3xl text-gray-900">500+</h2>
+                    <p class="leading-relaxed">Cities Served</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
     <!-- bank card -->
     <div class="container-fluid">
@@ -1251,6 +1395,7 @@
             </div>
         </div>
     </div>
+
     <!-- go to top button -->
     <!-- <button id="goToTopBtn" class="hidden"><i class="fas fa-chevron-up"></i></button> -->
     <div class="scrollToTop">
