@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <title>FAQ | Flipkart</title>
+    <link rel="icon" type="image/x-icon" href="img/flipkart_lite.png">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f3f6;
+        }
+
+        ::-webkit-scrollbar{
+            display: none;
+        }
+
+        header {
+            background-color: #2874f0;
+            padding: 10px 20px;
+        }
+
+        nav .logo {
+            color: #fff;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        #header-bluebg .secondNav a {
+    color: #fff !important;
+}
+
+header-bluebg a, #more_h {
+    text-decoration: none !important;
+    color: #f9fafb !important;
+    font-weight: 600 !important;
+}
+
+        .faq-section {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-section h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .faq-container {
+            margin-top: 20px;
+        }
+
+        .faq {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 15px 0;
+        }
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .faq-question h3 {
+            margin: 0;
+            font-size: 18px;
+            font-weight: bold;
+
+        }
+
+        .faq-toggle {
+            font-size: 24px;
+            color: #2874f0;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .faq-answer p {
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        .navbar-brand img {
+      width: 120px;
+    }
+
+    .searchBar_h {
+      display: flex;
+      align-items: center;
+      flex: 1;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    .searchBar_h input {
+      flex: 1;
+      padding: 5px 10px;
+      border-radius: 5px 0 0 5px;
+      border: 1px solid #ccc;
+    }
+
+    .searchBar_h i {
+      padding: 5px 10px;
+      border-radius: 0 5px 5px 0;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-left: 0;
+      cursor: pointer;
+    }
+
+    .btn-primary a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .b_a_s, #more_h, .cartLogoandname {
+      margin-left: 10px;
+    }
+
+    .cartLogoandname img {
+      width: 20px;
+    }
+
+    .secondNav .nav-link {
+      display: flex;
+      align-items: center;
+      padding: 5px 10px;
+      color: #000;
+    }
+
+    .secondNav .nav-link i {
+      margin-left: 5px;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28155,155,155,1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    #more_h {
+      cursor: pointer;
+      position: relative;
+      display: inline-block;
+      padding: 5px 10px;
+      color: #fff;
+    }
+
+    #more-options {
+      display: none;
+      background-color: white;
+      box-shadow: 0 2px 2px rgba(0,0,0,0.15);
+      padding: 10px;
+      position: absolute;
+      z-index: 1;
+      top: 100%;
+      left: 0;
+      min-width: 150px;
+      border: 1px solid #e0e0e0;
+      border-radius: 5px;
+      font-family:'Courier New', Courier, monospace;
+      font-weight: 700;
+    }
+
+    #more_h:hover #more-options {
+      display: block;
+    }
+
+    .option-item {
+      color: #f4c3c3;
+      padding: 5px 0;
+      text-decoration: none;
+      display: block;
+      font-size: 13px;
+      transition: all 0.78s;
+    }
+
+    .option-item:hover {
+      text-decoration: none;
+      background-color: #ccc;
+      transition: all 0.78s;
+    }
+
+    footer{
+            background-color: rgb(6, 23, 46);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="loader-container">
+        <div class="loader-wrapper">
+            <div class="loader"></div>
+            <div class="logo" style="background-image: url('img/flipkart_lite.png');"></div>
+        </div>
+    </div>
+    
+     <!-- Header -->
+  <header id="header-bluebg">
+    <nav class="container-fluid" style="background-color: #2874F0;">
+      <div class="container">
+        <nav class="navbar bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../">
+              <img src="../img/flipcartlogo.PNG" alt="Brand Logo">
+            </a>
+            <div class="searchBar_h">
+              <input id="inputField_h" type="text" autocomplete="off" placeholder="Search for products, brands and more">
+              <i id="fetchButton_h" class="bi bi-search btn"></i>
+            </div>
+            <div>
+              <button class="btn btn-primary"><a href="../account/login-signup.html">Login</a></button>
+            </div>
+            <div class="text-white b_a_s">
+              <a href="../sell-online/">Become a Seller</a>
+            </div>
+            <div class="text-white" id="more_h">
+              More <i class="bi bi-chevron-down"></i>
+              <div id="more-options">
+                <a class="option-item" href="../gift-cards/index.html">Gift-Cards</a>
+                <a class="option-item" href="../plus/index.html">Flipkart+</a>
+                <a class="option-item" href="../account/contact.html">Contact Us</a>
+              </div>
+            </div>
+            <div class="text-white cartLogoandname">
+              <a href="../viewcart/">
+                <img src="../img/svg/cart_h.svg" alt="Cart"><span class="cart_h" style="color:white">Cart</span><span id="cartItems"></span>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary secondNav container-fluid">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../search/?query=electronics">Electronics <i class="bi bi-chevron-down"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../search/?query=appliances">TVs & Appliances <i class="bi bi-chevron-down"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../search/?query=men">Men <i class="bi bi-chevron-down"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../search/?query=women">Women <i class="bi bi-chevron-down"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../search/?query=kids">Baby & Kids <i class="bi bi-chevron-down"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../search/?query=home">Home & Furniture <i class="bi bi-chevron-down"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../search/?query=books">Sports, Books & More <i class="bi bi-chevron-down"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../search/?query=flights">Flights <i class="bi bi-chevron-down"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../offerpage/offerportal.html">Offer Zone <i class="bi bi-chevron-down"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../search/?query=grocery">Grocery <i class="bi bi-chevron-down"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- JavaScript -->
+  <script src="../js/bootstrap.bundle.min.js"></script>
+    <main>
+        <section class="faq-section">
+            <h1>Frequently Asked Questions</h1>
+            <div class="faq-container">
+                <div class="faq">
+                    <div class="faq-question">
+                        <h3>What is Flipkart Clone?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Flipkart Clone is a replica of the popular e-commerce website Flipkart, created for educational and demonstration purposes.</p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <div class="faq-question">
+                        <h3>How can I place an order?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>To place an order, browse the product categories, select the items you want to purchase, add them to your cart, and proceed to checkout.</p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <div class="faq-question">
+                        <h3>What payment methods are accepted?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept various payment methods including credit/debit cards, net banking, UPI, and cash on delivery (COD).</p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <div class="faq-question">
+                        <h3>How can I track my order?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can track your order status in the 'My Orders' section of your account. You will also receive updates via email and SMS.</p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <div class="faq-question">
+                        <h3>What is the return policy?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our return policy allows you to return products within 30 days of delivery for a full refund or replacement. Some items may have different return periods and conditions.</p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <div class="faq-question">
+                        <h3>How do I cancel an order?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can cancel your order before it is shipped. Go to the 'My Orders' section, select the order you want to cancel, and click on 'Cancel'.</p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <div class="faq-question">
+                        <h3>What are the delivery charges?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Delivery charges vary depending on the product, seller, and location. You can see the applicable delivery charges at checkout.</p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <div class="faq-question">
+                        <h3>Can I change my delivery address after placing an order?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Unfortunately, you cannot change the delivery address once an order is placed. You can cancel the order and place a new one with the correct address.</p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <div class="faq-question">
+                        <h3>What is Flipkart Plus?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Flipkart Plus is a loyalty program that offers benefits such as free delivery, early access to sales, and more. Members earn SuperCoins on every purchase.</p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <div class="faq-question">
+                        <h3>How do I contact customer support?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can contact customer support through the 'Help Center' on our website or by calling our customer service number available on the 'Contact Us' page.</p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <div class="faq-question">
+                        <h3>How do I redeem a gift card?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>To redeem a gift card, enter the gift card code at checkout. The balance will be applied to your order total.</p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <div class="faq-question">
+                        <h3>Is it safe to shop on Flipkart Clone?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, it is safe to shop on Flipkart Clone. We use secure payment gateways and encryption to protect your personal and payment information.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer >
+        <div class="container-fluid footerTop">
+            <div class="row footer1">
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="footerI">
+                        <h5>ABOUT</h5>
+                        <ul>
+                            <li><a href="">Contact Us</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Careers</a></li>
+                            <li><a href="">Flipkart Stories</a></li>
+                            <li><a href="">Press</a></li>
+                            <li><a href="">Corporate Information</a></li>
+                            <li><i><a href="">Explore Plus</a></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="footerI">
+                        <h5>GROUP COMPANIES</h5>
+                        <ul>
+                            <li><a href="https://www.myntra.com/">Myntra</a></li>
+                            <li><a href="https://www.flipkartwholesale.com/">Flipkart Wholesale</a></li>
+                            <li><a href="https://www.cleartrip.com/">Cleartrip</a></li>
+                            <li><a href="https://www.shopsy.in/">Shopsy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="footerI">
+                        <h5>HELP</h5>
+                        <ul>
+                            <li><a href="">Payments</a></li>
+                            <li><a href="">Shipping</a></li>
+                            <li><a href="">Cancellation & Returns</a></li>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">Report Infringement</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="footerI">
+                        <h5>CONSUMER POLICY</h5>
+                        <ul>
+                            <li><a href="">Cancellation & Returns</a></li>
+                            <li><a href="">Terms Of Use</a></li>
+                            <li><a href="">Security</a></li>
+                            <li><a href="../pages/privacypolicy/index.html">Privacy</a></li>
+                            <li><a href="">Sitemap</a></li>
+                            <li><a href="">Grievance Redressal</a></li>
+                            <li><a href="">EPR Compilance</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mailSocial">
+                    <div class="footerI">
+                        <div class="mail">
+                            <h5>Mail Us:</h5>
+                            <p>
+                                Flipkart Internet Private Limited,
+                                Buildings Alyssa, Begonia & Clove Embassy Tech Village,
+                                Outer Ring Road, Devarabeesanahalli Village, Bengaluru, 560103, Karnataka, India
+                            </p>
+                        </div>
+                        <div class="social">
+                            <h5>Social</h5>
+                            <ul>
+                                <li><a href="https://www.facebook.com/flipkart/"><img
+                                            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNSAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyLjkzMzEgMjFDMTcuOTAzNyAyMSAyMS45MzMxIDE2Ljk3MDYgMjEuOTMzMSAxMkMyMS45MzMxIDcuMDI5NDQgMTcuOTAzNyAzIDEyLjkzMzEgM0M3Ljk2MjU0IDMgMy45MzMxMSA3LjAyOTQ0IDMuOTMzMTEgMTJDMy45MzMxMSAxNi45NzA2IDcuOTYyNTQgMjEgMTIuOTMzMSAyMVoiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggZD0iTTE2LjY4MzEgOC4yNUgxNS4xODMxQzE0LjU4NjQgOC4yNSAxNC4wMTQxIDguNDg3MDUgMTMuNTkyMSA4LjkwOTAxQzEzLjE3MDIgOS4zMzA5NyAxMi45MzMxIDkuOTAzMjYgMTIuOTMzMSAxMC41VjIxIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGQ9Ik05LjkzMzExIDEzLjVIMTUuOTMzMSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K"
+                                            alt=""></a></li>
+                                <li><a href="https://twitter.com/Flipkart"><img
+                                            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzE4M18yMCkiPgo8cGF0aCBkPSJNMTMuNTQzNiAxMC42MTc5TDIwLjA5NzEgM0gxOC41NDQxTDEyLjg1MzcgOS42MTQ0OEw4LjMwODg3IDNIMy4wNjY4OUw5LjkzOTY0IDEzLjAwMjNMMy4wNjY4OSAyMC45OTA4SDQuNjE5OTRMMTAuNjI5MSAxNC4wMDU2TDE1LjQyODggMjAuOTkwOEgyMC42NzA4TDEzLjU0MzIgMTAuNjE3OUgxMy41NDM2Wk0xMS40MTY1IDEzLjA5MDRMMTAuNzIwMiAxMi4wOTQ0TDUuMTc5NTMgNC4xNjkxMUg3LjU2NDkxTDEyLjAzNjMgMTAuNTY1MUwxMi43MzI2IDExLjU2MTFMMTguNTQ0OCAxOS44NzQ4SDE2LjE1OTVMMTEuNDE2NSAxMy4wOTA4VjEzLjA5MDRaIiBmaWxsPSJ3aGl0ZSIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzE4M18yMCI+CjxyZWN0IHg9IjMuMDY2ODkiIHk9IjMiIHdpZHRoPSIxNy42MDM5IiBoZWlnaHQ9IjE4IiByeD0iMC4yIiBmaWxsPSJ3aGl0ZSIvPgo8L2NsaXBQYXRoPgo8L2RlZnM+Cjwvc3ZnPgo="
+                                            alt=""></a></li>
+                                <li><a href="https://www.youtube.com/flipkart"><img
+                                            src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/YoutubeLogo-8425c4.svg"
+                                            alt=""></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="footerI">
+                        <h5>Registered Office Address:</h5>
+                        <p>Flipkart Internet Private Limited,
+                            Buildings Alyssa, Begonia & Clove Embassy Tech Village,
+                            Outer Ring Road, Devarabeesanahalli Village, Bengaluru, 560103, Karnataka, India</p>
+                        <p>CIN : U51109KA2012PTC066107</p>
+                        <P>Telephone: <a class="text-primary" href="tel:044-45614700"> 044-45614700 </a>
+                            / <a
+                            class="text-primary" href="tel:044-67415800"> 044-67415800
+                              </a>
+                        </P>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid footerEnd">
+            <div class="row align-items-center" style="display: flex; width: 100vw; flex-wrap: wrap;">
+                <div class="col-auto">
+                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/sell-image-9de8ef.svg"
+                        alt="Become a Seller" width="13" height="12">
+                    <a href="https://seller.flipkart.com/?utm_source=fkwebsite&amp;utm_medium=websitedirect"
+                        aria-label="Become a Seller"><span>Become a Seller</span></a>
+                </div>
+                <div class="col-auto">
+                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/advertise-image-866c0b.svg"
+                        alt="Advertise" width="14" height="14">
+                    <a href="https://brands.flipkart.com" aria-label="Advertise"><span>Advertise</span></a>
+                </div>
+                <div class="col-auto">
+                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/gift-cards-image-d7ff24.svg"
+                        alt="Gift Cards" width="13" height="13">
+                    <a href="https://www.flipkart.com/the-gift-card-store?otracker=${otracker}_footer_navlinks"
+                        aria-label="Gift Cards"><span>Gift Cards</span></a>
+                </div>
+                <div class="col-auto">
+                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/help-centre-image-c4ace8.svg"
+                        alt="Help Center" width="13" height="13">
+                    <a href="https://www.flipkart.com/helpcentre?otracker=${otracker}_footer_navlinks"
+                        aria-label="Help Center"><span>Help Center</span></a>
+                </div>
+                <div class="col-auto">
+                    <span>© 2007-2024 <span>Flipkart.com</span></span>
+                </div>
+                <div class="col-auto ">
+                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/payment-method-c454fb.svg"
+                        class="pCGSTEF" alt="Payment methods">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+      document.querySelectorAll('.faq-question').forEach(item => {
+    item.addEventListener('click', () => {
+        const faqAnswer = item.nextElementSibling;
+        const faqToggle = item.querySelector('.faq-toggle');
+        const isOpen = faqAnswer.style.maxHeight;
+
+        // Close all open FAQ answers
+        document.querySelectorAll('.faq-answer').forEach(answer => {
+            answer.style.maxHeight = null;
+            answer.previousElementSibling.querySelector('.faq-toggle').textContent = '+';
+        });
+
+        // Toggle the clicked FAQ answer
+        if (!isOpen) {
+            faqAnswer.style.maxHeight = faqAnswer.scrollHeight + 'px';
+            faqToggle.textContent = '-';
+        }
+    });
+});
+
+
+    </script>
+</body>
+
+</html>

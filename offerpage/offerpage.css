@@ -87,3 +87,63 @@
         width: 100%; 
     }
   }
+  /* Search Container */
+  .search-container {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  #searchInput {
+    width: 80%;
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  #searchInput:focus {
+    border-color: #007bff;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+  }
+  
+  /* Promo Wrapper */
+  .promo-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  /* Info */
+  .info {
+    margin-top: 10px;
+  }
+  
+  .info h3 {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .info .price {
+    font-size: 14px;
+    color: #007bff;
+  }
+  
+  .info .discount {
+    font-size: 12px;
+    color: #ff6f61;
+  }
+  
+  .item:not(.visible) {
+    display: none;
+  }
+  .deal-timer {
+    font-size: 14px;
+    color: #ff6f61;
+    margin-top: 10px;
+}
+

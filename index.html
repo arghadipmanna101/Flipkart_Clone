@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,18 +15,11 @@
     <link rel="stylesheet" href="css/homeHeader.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" href="css/footer.css">
-
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
-
-
     <link href="css/contactus.css" rel="stylesheet">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-
-
     <meta name="theme-color" content="#2874F0" id="themeColor">
     <title>Flipkart | Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books &amp; More.
         Best Offers!</title>
@@ -46,6 +38,117 @@
     <link href="css/contactus.css" rel="stylesheet">
 
     <style>
+           body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #4a4a4a;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .flex {
+            display: flex;
+        }
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+        .flex-col {
+            flex-direction: column;
+        }
+        .items-center {
+            align-items: center;
+        }
+        .justify-center {
+            justify-content: center;
+        }
+        .relative {
+            position: relative;
+        }
+        .w-6 {
+            width: 1.5rem;
+        }
+        .h-6 {
+            height: 1.5rem;
+        }
+        .h-full {
+            height: 100%;
+        }
+        .w-full {
+            width: 100%;
+        }
+        .mt-10 {
+            margin-top: 2.5rem;
+        }
+        .pt-10 {
+            padding-top: 2.5rem;
+        }
+        .pb-10 {
+            padding-bottom: 2.5rem;
+        }
+        .pb-20 {
+            padding-bottom: 5rem;
+        }
+        .rounded-full {
+            border-radius: 50%;
+        }
+        .bg-gray-200 {
+            background-color: #e5e5e5;
+        }
+        .bg-indigo-500 {
+            background-color: #6366f1;
+        }
+        .bg-indigo-100 {
+            background-color: #ebf4ff;
+        }
+        .text-white {
+            color: #ffffff;
+        }
+        .text-gray-600 {
+            color: #718096;
+        }
+        .text-gray-900 {
+            color: #1a202c;
+        }
+        .title-font {
+            font-weight: 600;
+        }
+        .text-sm {
+            font-size: 0.875rem;
+        }
+        .text-xl {
+            font-size: 1.25rem;
+        }
+        .leading-relaxed {
+            line-height: 1.625;
+        }
+        .mb-1 {
+            margin-bottom: 0.25rem;
+        }
+        .md-w-2-3 {
+            width: 66.666667%;
+        }
+        .md-pl-8 {
+            padding-left: 2rem;
+        }
+        .pl-6 {
+            padding-left: 1.5rem;
+        }
+        .sm-items-center {
+            align-items: center;
+        }
+        .sm-mt-0 {
+            margin-top: 0;
+        }
+        .sm-pl-6 {
+            padding-left: 1.5rem;
+        }
+        .pointer-events-none {
+            pointer-events: none;
+        }
         html {
             scroll-behavior: smooth;
         }
@@ -69,7 +172,7 @@
             bottom: 45px;
             right: 50%;
             left: 50%;
-
+        }
             .inner {
                 height: 85%;
                 width: 85%;
@@ -79,7 +182,40 @@
                 align-items: center;
                 border-radius: 50%;
             }
+
+        .r4vIwl{
+            padding: 8px 10px 10px 0;
+    width: 100%;
+    color: #000;
+    font-size: inherit;
+    background: #fff;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+}
+        
+
         }
+
+    #progress-container {
+    position: fixed ;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    z-index: 99990;
+    /* background: #f3f3f3; */
+}
+
+#progress-bar {
+    height: 53%;
+    width: 0;
+    background: linear-gradient(90deg, rgb(0, 72, 255) 0%, rgb(153, 187, 255) 50%, rgb(0, 184, 250) 100%);
+    box-shadow: 0 0 4px rgba(0, 166, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.7);
+    transition: width 0.09s ease-in-out;
+    border-radius: 10px;
+}
+
+>
     </style>
 
 
@@ -98,6 +234,21 @@
         </div>
     </div>
     <!-- loader end -->
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+      </div>
+
+      <script>
+            
+        window.addEventListener('scroll', function() {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progress-bar').style.width = scrolled + '%';
+        });
+        </script>
+      
+  
     <div id="divA" class="popup-container">
         <div class="signupin">
             <div class="leftpanal">
@@ -107,10 +258,10 @@
             <div class="rightSignuppanal">
                 <span class="close-btn" id="close-btn">&times;</span>
                 <form autocomplete="on">
-                    <div class="I-qZ4MvLRlQb">
+                    <div class="I-qZ4M vLRlQb">
                         <input autocomplete="off" id="inputsin" type="text" class="r4vIwl BV+Dqf" value=""
                             required="" />
-                        <label class="Gq-80aa label" id="inputsin"><span>Enter Email/Mobile </span></label>
+                        <label class="Gq-80a" id="inputsin"><span>Enter Email/Mobile </span></label>
                         <div class="underline"></div>
                     </div>
                     <div class="EpHS0A">By continuing, you agree to Flipkart's
@@ -121,7 +272,9 @@
                         <button class="QqFHMw twnTnD _7Pd1Fp">Request OTP</button>
                     </div>
                     <div class="ZJ3AS1 d-flex justify-content-center mt-4">
-                        <a class="azBkHf" href="#" id="buttonA">New to Flipkart? Create an account</a>
+
+                        <a class="azBkHf" href="account/login-signup.html" id="buttonA">New to Flipkart? Create an account</a>
+
                     </div>
                 </form>
             </div>
@@ -168,7 +321,7 @@
         }
 
         .signupin {
-            background: #f1f3f6;
+            /* background: #f1f3f6; */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -177,7 +330,7 @@
         }
 
         .signupin .leftpanal {
-            padding: 10px;
+            padding: 20px;
             background-color: #2874F0;
             color: #fff;
             background-image: url(../img/login_img_bg.png);
@@ -186,9 +339,11 @@
             height: 400px;
             width: 20vw;
         }
-
+        .signupin .leftpanal p{
+            color:rgb(220, 219, 219);
+        }
         .signupin .rightSignuppanal {
-            padding: 10px;
+            padding: 20px;
             background: #fff;
             height: 400px;
             width: 30vw;
@@ -212,13 +367,34 @@
             font-size: 11px;
         }
 
-        .I-qZ4MvLRlQb {
+        .I-qZ4M  {
             position: relative;
-            margin: 50px auto;
-            width: 200px;
+    margin-bottom: 34px;
+    font-size: 16px;
+        }
+        .Gq-80a {
+            color: #878787;
+            font-size: 16px;
+            font-weight: 400;
+            position: absolute;
+            pointer-events: none;
+            left: 0;
+            top: 0;
+            -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+            transition: -webkit-transform .2s ease;
+            transition: transform .2s ease;
+            transition: transform .2s ease, -webkit-transform .2s ease;
+            will-change: transform;
+           -webkit-transform-origin: left;
+            transform-origin: left;
         }
 
-        .I-qZ4MvLRlQb input[type="text"] {
+        .Gq-80a:focus{
+            border-bottom: 2px solid #2874F0;
+        }
+
+        .I-qZ4M .vLRlQb input[type="text"] {
             font-size: 20px;
             width: 100%;
             border: none;
@@ -228,7 +404,7 @@
             outline: none;
         }
 
-        .I-qZ4MvLRlQb .label {
+        .I-qZ4M .vLRlQb .label {
             position: absolute;
             top: 12px;
             left: 0;
@@ -237,14 +413,14 @@
             pointer-events: none;
         }
 
-        .I-qZ4MvLRlQb input[type="text"]:focus~.label,
-        .I-qZ4MvLRlQb input[type="text"]:valid~.label {
+        .I-qZ4M .vLRlQb input[type="text"]:focus~.label,
+        .I-qZ4M .vLRlQb input[type="text"]:valid~.label {
             top: -20px;
             font-size: 16px;
             color: #333;
         }
 
-        .I-qZ4MvLRlQb .underline {
+        .I-qZ4M .vLRlQb .underline {
             position: absolute;
             bottom: 0;
             left: 0;
@@ -255,9 +431,10 @@
             transition: all 0.3s ease;
         }
 
-        .I-qZ4MvLRlQb input[type="text"]:focus~.underline,
-        .I-qZ4MvLRlQb input[type="text"]:valid~.underline {
+        .I-qZ4M .vLRlQb input[type="text"]:focus~.underline,
+        .I-qZ4M .vLRlQb input[type="text"]:valid~.underline {
             transform: scaleX(1);
+            background-color: #2874F0;
         }
 
         @media screen and (max-width: 1200px) {
@@ -299,6 +476,16 @@
             font-size: 24px;
             cursor: pointer;
         }
+        .temporary-login-btn{
+            color:white;
+            text-decoration:none;
+            padding-right:20px;
+            padding-left:20px;
+            padding-bottom:5px;
+            background: #2a55e5;
+            margin-left:950px;
+            z-index:1000!important;
+       }
     </style>
 
 
@@ -338,44 +525,44 @@
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown" id="navbarDropdown">
-                        <a class="nav-link acnavdd dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link acnavdd ml-3 mr-5" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            <img src="img/svg/profile-.svg" alt="Profile"
-                                style="width: 20px; height: 20px; margin-right: 5px;" />
+                            <img src="img/svg/profile-.svg" alt="Profile" href="account/login-signup.html"
+                                style="width: 20px; height: 20px; margin-right: 5px; margin-left: 10px;" />
                             <span class="navname" style="font-size: 14px;">Login <i
                                     class="bi bi-chevron-down"></i></span>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="left: 0;">
-                            <a class="dropdown-item" href="account/home_account.html"><img width="20"
+                            <a class="dropdown-item d-flex gap-2" href="account/home_account.html"><img width="20"
                                     src="img/svg/profile-.svg" alt="flipKart" style="margin-right: 5px;"> My Profile
                             </a>
-                            <a class="dropdown-item" href="login/login.html"><img width="20" src="img/svg/profile-.svg"
+                            <a class="dropdown-item d-flex gap-2" href="login/login.html"><img width="20" src="img/svg/profile-.svg"
                                     alt="flipKart" style="margin-right: 5px;"> Log into account </a>
-                            <a class="dropdown-item" href="account/login-signup.html"><img width="20"
+                            <a class="dropdown-item d-flex gap-2" href="account/login-signup.html"><img width="20"
                                     src="img/svg/profile-.svg" alt="flipKart" style="margin-right: 5px;"> Sign In</a>
-                            <a class="dropdown-item" href="plus/"><img width="20" src="img/svg/fkplus-+.svg"
+                            <a class="dropdown-item d-flex gap-2" href="plus/"><img width="20" src="img/svg/fkplus-+.svg"
                                     alt="flipKart" style="margin-right: 5px;"> Flipkart Plus Zone</a>
-                            <a class="dropdown-item" href="account/orders.html"><img width="20" src="img/svg/orders.svg"
+                            <a class="dropdown-item d-flex gap-2" href="account/orders.html"><img width="20" src="img/svg/orders.svg"
                                     alt="flipKart" style="margin-right: 5px;"> Orders</a>
-                            <a class="dropdown-item" href="wishlist/"><img width="20" src="img/svg/wishList.svg"
+                            <a class="dropdown-item d-flex gap-2" href="wishlist/"><img width="20" src="img/svg/wishList.svg"
                                     alt="flipKart" style="margin-right: 5px;"> Wishlist</a>
-                            <a class="dropdown-item" href="account/notifications.html"><img width="20"
+                            <a class="dropdown-item d-flex gap-2" href="account/notifications.html"><img width="20"
                                     src="img/svg/notifications.svg" alt="flipKart" style="margin-right: 5px;">
                                 Notifications</a>
-                            <a class="dropdown-item" href="account/rewards.html"><img width="20"
+                            <a class="dropdown-item d-flex gap-2" href="account/rewards.html"><img width="20"
                                     src="img/svg/rewards.svg" alt="flipKart" style="margin-right: 5px;"> Rewards</a>
-                            <a class="dropdown-item" href="the-gift-card-store/"><img width="20"
+                            <a class="dropdown-item d-flex gap-2" href="./the-gift-card-store/index.html"><img width="20"
                                     src="img/svg/giftCard.svg" alt="flipKart" style="margin-right: 5px;"> Gift Cards</a>
-                            <a class="dropdown-item" href="account/contact.html"><img width="20"
+                            <a class="dropdown-item d-flex gap-2" href="account/contact.html"><img width="20" height="10"
                                     src="https://pngimg.com/uploads/phone/phone_PNG48988.png" alt="flipKart"
                                     style="margin-right: 5px;"> Contact Us </a>
-                            <a class="dropdown-item" href="account/feedback.html"><i class="bi bi-chat-dots"></i> My
+                            <a class="dropdown-item d-flex gap-2" href="account/feedback.html"><i class="bi bi-chat-dots"></i> My
                                 Feedback </a>
                         </div>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="viewcart/" style="font-size: 14px;">
+                        <a class="nav-link mr-5" href="viewcart/" style="font-size: 14px; margin-left: 20px; font-weight: 500;">
                             <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg"
                                 style="width: 20px; height: 20px; margin-right: 5px;" /> Cart
                         </a>
@@ -384,15 +571,20 @@
                         <a class="nav-link" href="./pages/Sell_Online/sell_online.html" style="font-size: 14px;">
                             <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg"
                                 style="width: 20px; height: 20px; margin-right: 5px;" /> Become a Seller
-                        </a>
+<!--                         <a class="nav-link mr-5" href="sell-online/" style="font-size: 14px; margin-left: 30px; font-weight: 500;">
+                            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg" style="width: 20px; height: 20px; margin-right: 5px;" /> Become a Seller
+                        </a> -->
                     </li>
-                    <li class="nav-item dropdown" id="moreLinksDropdown">
+                    <li class="nav-item dropdown mr-5" style="margin-left: 50px;" id="moreLinksDropdown">
                         <a href="#"><i class="fas fa-ellipsis-v"></i></a>
                         <div class="dropdown-menu">
-                            <a href="#"><i class="fa-regular fa-bell"></i> &nbsp; Notification Preferences</a>
-                            <a href="#"><i class="fa-solid fa-headset"></i>&nbsp; 24 X 7 customer service</a>
-                            <a href="#"><i class="fas fa-arrow-up"></i>&nbsp; Advertise</a>
-                            <a href="#"><i class="fa-solid fa-download"></i> &nbsp; Download App</a>
+
+                            <a href="https://www.flipkart.com/communication-preferences/push?t=all"><i class="fa-regular fa-bell"></i> &nbsp; Notification Preferences</a>
+                            <a href="https://www.flipkart.com/helpcentre"><i class="fa-solid fa-headset"></i>&nbsp; 24 X 7 customer service</a>
+                            <a href="https://advertising.flipkart.com/login?returl=/?otracker=ch_vn_advertise_header"><i class="fas fa-arrow-up"></i>&nbsp; Advertise</a>
+                            <a href="https://www.flipkart.com/mobile-apps?otracker=ch_vn_mobile_apps"><i class="fa-solid fa-download"></i> &nbsp; Download App</a>
+
+
                         </div>
                     </li>
                     <style>
@@ -410,25 +602,18 @@
                         .nav-item:hover .dropdown-menu {
                             display: block;
                         }
+
+                        .nav-item:hover{
+                            text-decoration: underline;
+                        }
                     </style>
+
                     <!-- <a class="nav-link nav-dd dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-ea7819.svg" style="width: 20px; height: 20px; margin-right: 5px;" /> More Links
     </a> -->
 
 
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="moreLinksDropdown"
-                        style="left: auto; right: 0;">
-                        <a class="dropdown-item" href="notifications/"><img width="20" height="20"
-                                src="img/svg/notificationPreferences.svg" alt="appointment-reminders--v2"
-                                style="margin-right: 5px;"> Notification Preferences</a>
-                        <a class="dropdown-item" href="helpcentre/"><img width="20" height="20"
-                                src="img/svg/helpcenter.svg" alt="imgcc" style="margin-right: 5px;"> 24x7 Customer
-                            Care</a>
-                        <a class="dropdown-item" href="https://advertising.flipkart.com/"><img width="20" height="20"
-                                src="img/svg/advertise.svg" alt="Advertise" style="margin-right: 5px;"> Advertise</a>
-                        <a class="dropdown-item" href="mobile-apps/"><img width="20" height="20"
-                                src="img/svg/downloadApp.svg" alt="img3" style="margin-right: 5px;"> Download App</a>
-                    </div>
+                    
                     </li>
 
                 </ul>
@@ -437,11 +622,110 @@
     </header>
     <!--Header end -->
 
-    <!-- categorylist -->
-    <div id="categorylist-wrapper" class="container-fluid categorylist-wrapper">
-        <ul id="categories" class="categories"></ul>
-    </div>
 
+ <!-- categorylist -->
+ <div id="categorylist-wrapper" class="container-fluid categorylist-wrapper">
+    <ul id="categories" class="categories"></ul>
+</div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const loginBtn = document.getElementById('temporary-login-btn');
+            loginBtn.style.display = 'block';
+            loginBtn.classList.add('shake'); 
+    
+            loginBtn.addEventListener('click', function() {
+                window.location.href = '../account/login-signup.html'; 
+            });
+    
+            setTimeout(function() {
+                loginBtn.style.display = 'none';
+            }, 30000);
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+ 
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-1 mx-auto flex flex-wrap">
+            <!-- Step 1 -->
+            <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
+                <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+                    <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                </div>
+                <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">1</div>
+                <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+                    <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                        <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Product Discovery</h2>
+                        <p class="leading-relaxed">Explore a wide range of products available on our platform. From electronics to fashion, find everything in one place.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Step 2 -->
+            <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+                <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+                    <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                </div>
+                <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">2</div>
+                <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+                    <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                        <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Add to Cart</h2>
+                        <p class="leading-relaxed">Easily add products to your cart and review your selections. Our intuitive interface makes shopping a breeze.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Step 3 -->
+            <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+                <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+                    <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                </div>
+                <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">3</div>
+                <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+                    <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                            <circle cx="12" cy="5" r="3"></circle>
+                            <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                        <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Secure Checkout</h2>
+                        <p class="leading-relaxed">Proceed to checkout with confidence. Our secure payment gateway ensures your information is safe.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Step 4 -->
+            <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
+                <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+                    <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                </div>
+                <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">4</div>
+                <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+                    <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                        <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Fast Delivery</h2>
+                        <p class="leading-relaxed">Enjoy fast and reliable delivery to your doorstep. Track your order and get updates in real-time.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
     <!-- carousel start -->
     <div id="default-carousel" class="relative w-full" data-carousel="slide">
         <!-- Carousel wrapper -->
@@ -1158,6 +1442,10 @@
             <i class="fa fa-arrow-up icon"></i>
         </div>
     </div>
+
+
+
+
     <!-- footer fetch to components : components/footer/footer.html -->
     <footer id="footer" style="background-color: #09090a;"></footer>
 
@@ -1178,7 +1466,7 @@
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/homeHeader.js"></script>
-    <script src="js/categoryjs.js"></script>
+    <!-- <script src="js/categoryjs.js"></script> -->
     <script src="js/searchIndexProducts.js"></script>
     <script src="js/fetchProductOfIndex.js"></script>
     <script src="js/index.js"></script>
@@ -1249,15 +1537,15 @@
 
                         <!-- <label for="email">Email:</label> -->
                         <input type="email" id="email" name="email" required placeholder="Email:">
-
+                       
                         <!-- <label for="comment">Comment:</label> -->
-                        <textarea id="comment" name="feedback" required placeholder="Comment:"></textarea>
+                       <br> <textarea id="comment" name="feedback" required placeholder="Comment:"></textarea>
 
 
                         <p id="thank-you-message" style="color: white; display: none;">Thank you !!<br>We will connect
                             soon.</p>
-                    </form>
-                    <button onclick="handleSubmit()" id="button">Submit</button>
+                    </form>   <br>
+                    <button onclick="handleSubmit()" id="button" class="button1">Submit</button>
                 </div>
             </div>
         </div>
@@ -1341,6 +1629,7 @@
             <option value="4">4 Stars</option>
             <option value="5">5 Stars</option>
         </select>
+        
 </body>
 
 </html>
