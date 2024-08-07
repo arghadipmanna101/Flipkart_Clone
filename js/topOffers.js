@@ -1,0 +1,1 @@
+let topOffers ='top offers' 
