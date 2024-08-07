@@ -38,6 +38,117 @@
     <link href="css/contactus.css" rel="stylesheet">
 
     <style>
+           body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #4a4a4a;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .flex {
+            display: flex;
+        }
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+        .flex-col {
+            flex-direction: column;
+        }
+        .items-center {
+            align-items: center;
+        }
+        .justify-center {
+            justify-content: center;
+        }
+        .relative {
+            position: relative;
+        }
+        .w-6 {
+            width: 1.5rem;
+        }
+        .h-6 {
+            height: 1.5rem;
+        }
+        .h-full {
+            height: 100%;
+        }
+        .w-full {
+            width: 100%;
+        }
+        .mt-10 {
+            margin-top: 2.5rem;
+        }
+        .pt-10 {
+            padding-top: 2.5rem;
+        }
+        .pb-10 {
+            padding-bottom: 2.5rem;
+        }
+        .pb-20 {
+            padding-bottom: 5rem;
+        }
+        .rounded-full {
+            border-radius: 50%;
+        }
+        .bg-gray-200 {
+            background-color: #e5e5e5;
+        }
+        .bg-indigo-500 {
+            background-color: #6366f1;
+        }
+        .bg-indigo-100 {
+            background-color: #ebf4ff;
+        }
+        .text-white {
+            color: #ffffff;
+        }
+        .text-gray-600 {
+            color: #718096;
+        }
+        .text-gray-900 {
+            color: #1a202c;
+        }
+        .title-font {
+            font-weight: 600;
+        }
+        .text-sm {
+            font-size: 0.875rem;
+        }
+        .text-xl {
+            font-size: 1.25rem;
+        }
+        .leading-relaxed {
+            line-height: 1.625;
+        }
+        .mb-1 {
+            margin-bottom: 0.25rem;
+        }
+        .md-w-2-3 {
+            width: 66.666667%;
+        }
+        .md-pl-8 {
+            padding-left: 2rem;
+        }
+        .pl-6 {
+            padding-left: 1.5rem;
+        }
+        .sm-items-center {
+            align-items: center;
+        }
+        .sm-mt-0 {
+            margin-top: 0;
+        }
+        .sm-pl-6 {
+            padding-left: 1.5rem;
+        }
+        .pointer-events-none {
+            pointer-events: none;
+        }
         html {
             scroll-behavior: smooth;
         }
@@ -513,6 +624,7 @@
  <div id="categorylist-wrapper" class="container-fluid categorylist-wrapper">
     <ul id="categories" class="categories"></ul>
 </div>
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const loginBtn = document.getElementById('temporary-login-btn');
@@ -531,7 +643,86 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
  
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-1 mx-auto flex flex-wrap">
+            <!-- Step 1 -->
+            <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
+                <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+                    <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                </div>
+                <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">1</div>
+                <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+                    <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                        <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Product Discovery</h2>
+                        <p class="leading-relaxed">Explore a wide range of products available on our platform. From electronics to fashion, find everything in one place.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Step 2 -->
+            <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+                <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+                    <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                </div>
+                <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">2</div>
+                <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+                    <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                        <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Add to Cart</h2>
+                        <p class="leading-relaxed">Easily add products to your cart and review your selections. Our intuitive interface makes shopping a breeze.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Step 3 -->
+            <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+                <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+                    <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                </div>
+                <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">3</div>
+                <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+                    <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                            <circle cx="12" cy="5" r="3"></circle>
+                            <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                        <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Secure Checkout</h2>
+                        <p class="leading-relaxed">Proceed to checkout with confidence. Our secure payment gateway ensures your information is safe.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Step 4 -->
+            <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
+                <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+                    <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                </div>
+                <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">4</div>
+                <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+                    <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                        <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Fast Delivery</h2>
+                        <p class="leading-relaxed">Enjoy fast and reliable delivery to your doorstep. Track your order and get updates in real-time.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    
     <!-- carousel start -->
     <div id="default-carousel" class="relative w-full" data-carousel="slide">
         <!-- Carousel wrapper -->
@@ -1249,6 +1440,10 @@
             <i class="fa fa-arrow-up icon"></i>
         </div>
     </div>
+
+
+
+
     <!-- footer fetch to components : components/footer/footer.html -->
     <footer id="footer" style="background-color: #09090a;"></footer>
 
