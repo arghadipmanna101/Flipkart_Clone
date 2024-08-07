@@ -18,6 +18,8 @@ nav {
     justify-content: space-between;
     padding: 8px 5%;
     background-color: #2874F0;
+    position: fixed;
+    top: 0rem;
 }
 
 .nav-left {
@@ -100,6 +102,7 @@ main
     flex-direction: column;
     justify-content: space-between;
     padding: 2rem 5%;
+    margin-top: 2rem;
 }
 
 main > div > a::after

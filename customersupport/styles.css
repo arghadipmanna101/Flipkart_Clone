@@ -1,125 +1,233 @@
-* {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
 }
 
-body {
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
+.text-center {
+    text-align: center;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+.text-secondary {
+    color: #6c757d;
 }
 
-header {
-    background: #0073e6;
-    color: #fff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #0073e6 3px solid;
-}
-
-header a {
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-}
-
-header ul {
-    padding: 0;
-    list-style: none;
-}
-
-header li {
-    float: left;
-    display: inline;
-    padding: 0 20px 0 20px;
-}
-
-header nav {
-    float: right;
-    margin-top: 10px;
-}
-
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.fs-4 {
+    font-size: 1.5rem;
 }
 
 .hero {
-    background: #0073e6;
-    color: #fff;
-    padding: 50px 0;
-    text-align: center;
+    background-color: #f3f4f6;
+    padding: 2rem 0;
+}
+
+.hero .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .hero h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
+    font-size: 2rem;
+    color: #333;
 }
 
 .hero p {
-    font-size: 18px;
-    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #666;
 }
 
 .services {
-    padding: 30px 0;
+    padding: 2rem 0;
 }
 
-.services .container h2 {
+.services .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.services h2 {
+    font-size: 2rem;
+    color: #333;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
 }
 
 .service-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
 }
 
 .service {
-    background: #fff;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
+    background-color: #fff;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    width: calc(25% - 1rem);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .service h3 {
-    margin-bottom: 10px;
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 0.5rem;
 }
 
 .service p {
-    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
 }
 
 .service button {
-    background: #0073e6;
+    background-color: #007bff;
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
     cursor: pointer;
-    border-radius: 5px;
-    text-transform: uppercase;
 }
 
 .service button:hover {
-    background: #005bb5;
+    background-color: #0056b3;
 }
 
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 30px;
+.text-gray-600 {
+    color: #4a5568;
+}
+
+.body-font {
+    font-family: "Nunito", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.mb-20 {
+    margin-bottom: 5rem;
+}
+
+.title-font {
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+}
+
+.leading-relaxed {
+    line-height: 1.75;
+}
+
+.text-base {
+    font-size: 1rem;
+}
+
+.md\\:w-1\\/4 {
+    width: 25%;
+}
+
+.md\\:w-2\\/5 {
+    width: 40%;
+}
+
+.md\\:w-3\\/5 {
+    width: 60%;
+}
+
+.md\\:pl-6 {
+    padding-left: 1.5rem;
+}
+
+.md\\:pl-6 {
+    padding-left: 1.5rem;
+}
+
+.border-2 {
+    border-width: 2px;
+}
+
+.border-gray-200 {
+    border-color: #edf2f7;
+}
+
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.sm\\:text-3xl {
+    font-size: 1.875rem;
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.text-gray-900 {
+    color: #1a202c;
+}
+
+.w-12 {
+    width: 3rem;
+}
+
+.h-12 {
+    height: 3rem;
+}
+
+.mb-3 {
+    margin-bottom: 0.75rem;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.m-4 {
+    margin: 1rem;
 }
