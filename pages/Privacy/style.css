@@ -99,34 +99,49 @@ i {
 main
 {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 5%;
     margin-top: 4rem;
 }
-main > *
+
+main > div > a::after
 {
-    width: 50%;
+    content: " | ";
 }
-main > div
+
+main > div > a:last-of-type::after
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* margin-left: 5rem; */
+    content: "";
 }
-h1
+
+p
+{
+    margin: 1rem 0rem;
+}
+
+p > strong
 {
     font-weight: 700;
-    margin-top: -10rem;
-    margin-bottom: 3rem;
-    border-left: 1rem solid #346f8d;
-    padding: 30px 10px;
 }
+
+ul
+{
+    padding: 1rem;
+}
+
 li
 {
-    list-style-type: none;
-    font-size: 1.5rem;
-    margin-left: 2rem;
-    margin-bottom: 1rem;
+    margin: 1rem 0rem;
 }
+
+.highlight
+{
+    color: #2874F0;
+    font-weight: 700;
+    font-style: italic;
+}
+
 a:visited, a:link
 {
     text-decoration: none;
@@ -136,6 +151,11 @@ a:hover, a:active
 {
     color: #2455f4;
     text-decoration: underline;
+}
+
+h2
+{
+    margin: 2rem 0rem;
 }
 
 @media screen and (max-width : 890px) {
