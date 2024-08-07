@@ -7,30 +7,25 @@
     <title>Sell Online - start Selling Online On Flipkart Seller Hub</title>
     <link rel="icon" type="image/x-icon" href="../img/flipkart_lite.png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+        #progress-container {
+            position: fixed;
+            top: 0px;
+            left: 0;
+            width: 100%;
+            height: 15px;
+            z-index: 99990;
+        }
 
-     <link rel="stylesheet" href="../css/orders.css" />
-     <style>
-         #progress-container {
-    position: fixed ;
-    top: 0px;
-    left: 0;
-    width: 100%;
-    height: 15px;
-    z-index: 99990;
-    /* background: #f3f3f3; */
-}
-
-#progress-bar {
-    height: 53%;
-    width: 0;
-    background: linear-gradient(90deg, rgb(0, 72, 255) 0%, rgb(153, 187, 255) 50%, rgb(0, 184, 250) 100%);
-    box-shadow: 0 0 4px rgba(0, 166, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.7);
-    transition: width 0.09s ease-in-out;
-    border-radius: 10px;
-}
-     </style>
-</head>
-
+        #progress-bar {
+            height: 53%;
+            width: 0;
+            background: linear-gradient(90deg, rgb(0, 72, 255) 0%, rgb(153, 187, 255) 50%, rgb(0, 184, 250) 100%);
+            box-shadow: 0 0 4px rgba(0, 166, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.7);
+            transition: width 0.09s ease-in-out;
+            border-radius: 10px;
+        }
 
         .sell-online-form {
             background-color: #ffffff;
@@ -119,27 +114,23 @@
         }
     </style>
 </head>
-
 <body>
     <header id="header-orders" class="text-center text-secondary fs-4">
         This is Header
     </header>
 
-<div id="progress-container">
-    <div id="progress-bar"></div>
-  </div>
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
 
-  <script>
-        
-    window.addEventListener('scroll', function() {
-        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        const scrolled = (winScroll / height) * 100;
-        document.getElementById('progress-bar').style.width = scrolled + '%';
-    });
+    <script>
+        window.addEventListener('scroll', function() {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progress-bar').style.width = scrolled + '%';
+        });
     </script>
-  
-
 
     <div class="container orders">
         <div class="text">
@@ -212,97 +203,94 @@
     </div>
 
     <div class="sell-online-form">
-        <h2>Sell Online Form</h2>
-        <div class="form-step form-step-active">
-            <div class="step-title">Step 1: Personal Information</div>
-            <div class="form-group">
-                <label for="fullname">Full Name</label>
-                <input type="text" id="fullname" required />
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" required />
-            </div>
-            <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="text" id="phone" required />
-            </div>
-            <div class="btn-group">
-                <button type="button" class="btn btn-next">Next</button>
-            </div>
+        <h2>Start Selling on Flipkart</h2>
+        <div id="step1" class="form-step form-step-active">
+            <div class="step-title">Step 1: Business Details</div>
+            <form>
+                <div class="form-group">
+                    <label for="business-name">Business Name</label>
+                    <input type="text" id="business-name" name="business-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="gstin">GSTIN</label>
+                    <input type="text" id="gstin" name="gstin" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn next-btn">Next</button>
+                </div>
+            </form>
         </div>
-        <div class="form-step">
-            <div class="step-title">Step 2: Business Information</div>
-            <div class="form-group">
-                <label for="business-name">Business Name</label>
-                <input type="text" id="business-name" required />
-            </div>
-            <div class="form-group">
-                <label for="business-address">Business Address</label>
-                <input type="text" id="business-address" required />
-            </div>
-            <div class="form-group">
-                <label for="gst-number">GST Number</label>
-                <input type="text" id="gst-number" required />
-            </div>
-            <div class="btn-group">
-                <button type="button" class="btn btn-previous">Previous</button>
-                <button type="button" class="btn btn-next">Next</button>
-            </div>
+
+        <div id="step2" class="form-step">
+            <div class="step-title">Step 2: Personal Details</div>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile</label>
+                    <input type="text" id="mobile" name="mobile" required>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn prev-btn">Previous</button>
+                    <button type="button" class="btn next-btn">Next</button>
+                </div>
+            </form>
         </div>
-        <div class="form-step">
-            <div class="step-title">Step 3: Bank Information</div>
-            <div class="form-group">
-                <label for="bank-name">Bank Name</label>
-                <input type="text" id="bank-name" required />
-            </div>
-            <div class="form-group">
-                <label for="account-number">Account Number</label>
-                <input type="text" id="account-number" required />
-            </div>
-            <div class="form-group">
-                <label for="ifsc-code">IFSC Code</label>
-                <input type="text" id="ifsc-code" required />
-            </div>
-            <div class="btn-group">
-                <button type="button" class="btn btn-previous">Previous</button>
-                <button type="button" class="btn btn-submit">Submit</button>
-            </div>
+
+        <div id="step3" class="form-step">
+            <div class="step-title">Step 3: Bank Details</div>
+            <form>
+                <div class="form-group">
+                    <label for="account-number">Account Number</label>
+                    <input type="text" id="account-number" name="account-number" required>
+                </div>
+                <div class="form-group">
+                    <label for="ifsc">IFSC Code</label>
+                    <input type="text" id="ifsc" name="ifsc" required>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn prev-btn">Previous</button>
+                    <button type="button" class="btn submit-btn">Submit</button>
+                </div>
+            </form>
         </div>
     </div>
 
-    <footer id="footer-orders" style="background-color: #293649;"></footer>
-    <script src="../js/bootstrap.bundle.min.js"></script>
-    <script src="../js/orders.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const nextButtons = document.querySelectorAll('.btn-next');
-            const prevButtons = document.querySelectorAll('.btn-previous');
-            const submitButton = document.querySelector('.btn-submit');
+        document.addEventListener('DOMContentLoaded', function() {
+            const nextBtns = document.querySelectorAll('.next-btn');
+            const prevBtns = document.querySelectorAll('.prev-btn');
             const formSteps = document.querySelectorAll('.form-step');
-            let currentStep = 0;
 
-            nextButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    formSteps[currentStep].classList.remove('form-step-active');
-                    currentStep++;
-                    formSteps[currentStep].classList.add('form-step-active');
+            let formStepsNum = 0;
+
+            nextBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    formStepsNum++;
+                    updateFormSteps();
                 });
             });
 
-            prevButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    formSteps[currentStep].classList.remove('form-step-active');
-                    currentStep--;
-                    formSteps[currentStep].classList.add('form-step-active');
+            prevBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    formStepsNum--;
+                    updateFormSteps();
                 });
             });
 
-            submitButton.addEventListener('click', () => {
-                alert('Form submitted successfully!');
-            });
+            function updateFormSteps() {
+                formSteps.forEach(formStep => {
+                    formStep.classList.contains('form-step-active') && formStep.classList.remove('form-step-active');
+                });
+                formSteps[formStepsNum].classList.add('form-step-active');
+            }
         });
     </script>
 </body>
-
 </html>
