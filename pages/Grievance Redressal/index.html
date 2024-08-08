@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grievance Redressal - Flipkart Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+
+        #progress-container {
+            position: fixed;
+            top: 0px;
+            left: 0;
+            width: 100%;
+            height: 15px;
+            z-index: 99990;
+            /* background: #f3f3f3; */
+        }
+
+        #progress-bar {
+            height: 53%;
+            width: 0;
+            background: linear-gradient(90deg, rgb(0, 72, 255) 0%, rgb(153, 187, 255) 50%, rgb(0, 184, 250) 100%);
+            box-shadow: 0 0 4px rgba(0, 166, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.7);
+            transition: width 0.09s ease-in-out;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+
+    <script>
+
+        window.addEventListener('scroll', function () {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progress-bar').style.width = scrolled + '%';
+        });
+    </script>
+
+    <header>
+        <h1>Grievance Redressal Mechanism</h1>
+    </header>
+
+    <main>
+        
+        <section>
+
+        <p>Flipkart is duty bound to provide fair treatment to our Consumer and Consumer grievances.</p>
+
+        <h4>What does "Grievance" mean?</h4>
+        <p>Grievance means any issue related to the product/service which has been availed by the consumer from the Flipkart
+        Platform and consumer is seeking resolution for the same.</p>
+
+        <h5>In case of any query or complaint the Consumer can approach us and reach out to us through ‘Contact us’ and ‘Help
+        Centre’ tab available on this page.</h5>
+
+        <p>Journey:</p>
+        <ul>
+            <li>Click on <a href="../pages/contact_us/contact_us.html">‘Contact Us’</a> or <a href="">‘Help Centre’</a> tab</li>
+            <li>It will open to Flipkart Help Center | 24x7 Customer Care Support</li>
+            <li>Choose from Type of Issue / Help Topics</li>
+            <li>Submit</li>
+        </ul>
+
+        <p>If your query / complaint not resolved needs to be escalated : As per the applicable laws, Flipkart has appointed a
+        “Grievance Officer” to address your grievances.</p>
+
+        <p>Here are the details for Grievance officer:</p>
+
+        <p style="font-weight: bold;">Mr. Shremanth M</p>
+        <p style="font-weight: bold;">Designation: Senior Manager</p>
+        <p style="font-weight: bold;">Flipkart Internet Pvt Ltd Block B (Begonia),</p>
+        <p style="font-weight: bold;">8th Floor Embassy Tech Village,</p>
+        <p style="font-weight: bold;">Outer Ring Road, Devarabeesanahalli Village,</p>
+        <p style="font-weight: bold;">Varthur Hobli, Bengaluru East Taluk,</p>
+        <p style="font-weight: bold;">Bengaluru District, Karnataka : 560103, India</p>
+        <p style="font-weight: bold;">Contact no. : 044-45614700</p>
+
+        <ul>
+            <li>Our ‘Grievance Redressal Mechanism’ is as follows:</li>
+
+            <ul>
+                <li>Upon the receipt of a Consumer Grievance on the channels specified above.</li>
+
+                <ul>
+                    <li>The Consumer shall receive an acknowledgment for its grievance within 48 (Forty-Eight) hours through email OR phone call
+                    or SMS, and</li>
+                    <li>The Consumer shall receive a system generated “Unique ID” to track the grievance status
+                        </li>
+                </ul>
+
+                <li>“Consumer Care” and “Grievance Officer” shall take all the best endeavors to resolve the grievance as expeditiously
+                within the timeline as prescribed in the applicable laws.</li>
+
+                <li>A Grievance will be considered as closed and disposed-off and in any of the following instances, namely:</li>
+
+                <ul>
+                    <li>When the consumer is communicated by Consumer Care / Grievance Officer / any other person associated with the website
+                    and offers solutions to its grievance</li>
+                </ul>
+            </ul>
+        </ul>
+
+        <p>For more details, please visit Terms of Use</p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Flipkart Clone. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
