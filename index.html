@@ -194,7 +194,7 @@
 }
         
 
-        }
+        /* } */
 
     #progress-container {
     position: fixed ;
@@ -215,7 +215,15 @@
     border-radius: 10px;
 }
 
->
+@media screen and (max-width: 600px) {
+    .form-container button#button {
+        margin-left: 0 !important;
+    }
+    .main {
+        margin-left: 0;
+        width: 100%;
+    }
+}
     </style>
 
 
@@ -590,7 +598,7 @@
                     <style>
                         .nav-item .dropdown-menu a {
                             color: black;
-                            padding: 12px 16px;
+                            padding: 6px 16px;
                             text-decoration: none;
                             display: block;
                         }
@@ -858,13 +866,17 @@
     </div>
 
 
-    <!-- fetch mobile under 15000-->
-    <div class="containter-fluid bg-white">
-        <div class="containter-fluid p-3 mt-1" style="border-bottom: 1px solid #e4e7eb;">
+    <!-- Mobile Phone Under 15000 Rs -->
+    <div class="container-fluid bg-white">
+        <div class="container-fluid p-3 mt-1" style="border-bottom: 1px solid #e4e7eb;">
             <h4>Mobile Phone Under 15000 Rs</h4>
         </div>
         <div id="mobileUnder15000-product" class="row m-1"></div>
+        <div id="viewMoreMobileUnder15000Container" class="d-flex justify-content-center">
+            <button id="viewMoreMobileUnder15000Btn" class="btn btn-primary">View More</button>
+        </div>
     </div>
+
 
     <!-- newsection for grid items  -->
     <section id="img-box">
@@ -882,22 +894,30 @@
         </a>
     </section>
 
-    <!-- fetch best deal products -->
-    <div class="containter-fluid bg-white">
-        <div class="containter-fluid p-3 mt-1" style="border-bottom: 1px solid #e4e7eb;">
+    <!-- Best Deal for You -->
+    <div class="container-fluid bg-white">
+        <div class="container-fluid p-3" style="border-bottom: 1px solid #e4e7eb;">
             <h4>Best Deal for You</h4>
         </div>
         <div id="best-deal-product" class="row m-1"></div>
+        <div id="viewMoreBestDealContainer" class="d-flex justify-content-center">
+            <button id="viewMoreBestDealBtn" class="btn btn-primary">View More</button>
+        </div>
     </div>
 
-    <!-- fetch data under 500-->
-    <div class="containter-fluid bg-white">
-        <div class="containter-fluid p-3 mt-1" style="border-bottom: 1px solid #e4e7eb;">
+
+    <!-- Shop Now Under 500 Rs -->
+    <div class="container-fluid bg-white">
+        <div class="container-fluid p-3" style="border-bottom: 1px solid #e4e7eb;">
             <h4>Shop Now Under 500 Rs</h4>
         </div>
         <div id="shopUnder500-product" class="row m-1"></div>
+        <div id="viewMoreShopUnder500Container" class="d-flex justify-content-center">
+            <button id="viewMoreShopUnder500Btn" class="btn btn-primary none">View More</button>
+        </div>
     </div>
 
+    
 
     <!-- fetch data-->
     <div class="containter-fluid bg-white">
@@ -922,10 +942,13 @@
 
     <!-- Top Selection -->
     <div class="containter-fluid bg-white">
-        <div class="containter-fluid p-3 mt-1" style="border-bottom: 1px solid #e4e7eb;">
+        <div class="containter-fluid p-3" style="border-bottom: 1px solid #e4e7eb;">
             <h4>Top Selection</h4>
         </div>
         <div id="top-selection-product" class="row m-1"></div>
+        <div id="viewMoreTopSelectionContainer" class="d-flex justify-content-center">
+            <button id="viewMoreTopSelectionBtn" class="btn btn-primary">View More</button>
+        </div>
     </div>
 
     <!--Other Top Deals-->
@@ -989,15 +1012,18 @@
         </div>
     </section>
 
-
-
     <!-- Product Selection -->
-    <div class="containter-fluid bg-white">
-        <div class="containter-fluid p-3 mt-1" style="border-bottom: 1px solid #e4e7eb;">
+    <div class="container-fluid bg-white">
+        <div class="container-fluid p-3 mt-1" style="border-bottom: 1px solid #e4e7eb;">
             <h4>Select Your Choice</h4>
         </div>
         <div id="seletcYourChoice-product" class="row m-1"></div>
+        <div id="viewMoreContainer" class="d-flex justify-content-center">
+            <button id="viewMoreBtn" class="btn btn-primary">View More</button>
+        </div>
     </div>
+
+    
     <!-- Adding brand directory -->
     <div class="brand-directory">
         <h5 class="brand-directory-heading">Top Stories : Brand Directory</h5>
@@ -1508,48 +1534,13 @@
         window.onload = calcScrollValue;
 
     </script>
-    <label for="rating-filter">Minimum Rating:</label>
-    <select id="rating-filter">
-        =======
-        </h2>
-        <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
-            data-bs-parent="#faqAccordion">
-            <div class="accordion-body">
-                Flipkart has a hassle-free return policy. If you're not satisfied with your purchase, you can initiate a
-                return within the specified return period. Simply go to the "My Orders" section, select the order you
-                want to return, and follow the prompts.
-            </div>
-        </div>
+    
         </div>
         </div>
         </div>
         </div>
         <!-- faq end -->
-        <!-- Contact Us -->
-        <div class="main" id="contactus">
 
-            <div class="container">
-                <img src="rateus.png" alt="rateus">
-                <div class="form-container">
-                    <h1>Contact Us</h1>
-                    <form id="contact-form">
-                        <!-- <label for="name">Name:</label> -->
-                        <input type="text" id="name" name="name" required placeholder="Name:">
-
-                        <!-- <label for="email">Email:</label> -->
-                        <input type="email" id="email" name="email" required placeholder="Email:">
-                       
-                        <!-- <label for="comment">Comment:</label> -->
-                       <br> <textarea id="comment" name="feedback" required placeholder="Comment:"></textarea>
-
-
-                        <p id="thank-you-message" style="color: white; display: none;">Thank you !!<br>We will connect
-                            soon.</p>
-                    </form>   <br>
-                    <button onclick="handleSubmit()" id="button" class="button1">Submit</button>
-                </div>
-            </div>
-        </div>
         <!-- go to top button -->
         <!-- <button id="goToTopBtn" class="hidden"><i class="fas fa-chevron-up"></i></button> -->
         <div class="scrollToTop">
@@ -1622,14 +1613,7 @@
             window.onload = calcScrollValue;
         </script>
 
-        <label for="rating-filter">Minimum Rating:</label>
-        <select id="rating-filter">
-            <option value="1">1 Star</option>
-            <option value="2">2 Stars</option>
-            <option value="3">3 Stars</option>
-            <option value="4">4 Stars</option>
-            <option value="5">5 Stars</option>
-        </select>
+     
         
 </body>
 
