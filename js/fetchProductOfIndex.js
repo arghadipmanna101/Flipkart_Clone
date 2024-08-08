@@ -37,28 +37,95 @@ function createProductCard(product) {
       .join("");
   }
   
-  // Function to best deal products
+  let currentBestDealIndex = 0;
+  const bestDealItemsPerPage = 6;
+  let allBestDealProducts = [];
+  
   function best_deal_products(products) {
-    const productList = document.getElementById("best-deal-product");
-    productList.innerHTML = products
-      .map((product) => createProductCard(product))
-      .join("");
-  }
-  // Function to best top-selection-product
-  function top_selection_products(products) {
-    const productList = document.getElementById("top-selection-product");
-    productList.innerHTML = products
-      .map((product) => createProductCard(product))
-      .join("");
+      allBestDealProducts = products;
+      currentBestDealIndex = 0;
+      loadMoreBestDealProducts();
   }
   
-  // Function to under 15000 rs mobile
-  function mobileUnder15000(products) {
-    const productList = document.getElementById("mobileUnder15000-product");
-    productList.innerHTML = products
-      .map((product) => createProductCard(product))
-      .join("");
+  function loadMoreBestDealProducts() {
+      const productList = document.getElementById("best-deal-product");
+      const newProducts = allBestDealProducts.slice(currentBestDealIndex, currentBestDealIndex + bestDealItemsPerPage);
+      productList.innerHTML += newProducts.map((product) => createProductCard(product)).join("");
+      currentBestDealIndex += bestDealItemsPerPage;
+      toggleViewMoreBestDealButton();
   }
+  
+  function toggleViewMoreBestDealButton() {
+      const viewMoreBtn = document.getElementById("viewMoreBestDealBtn");
+      if (currentBestDealIndex >= allBestDealProducts.length) {
+          viewMoreBtn.style.display = "none";
+      } else {
+          viewMoreBtn.style.display = "block";
+      }
+  }
+  
+  document.getElementById("viewMoreBestDealBtn").addEventListener("click", loadMoreBestDealProducts);
+
+
+
+  let currentTopSelectionIndex = 0;
+  const topSelectionItemsPerPage = 6;
+  let allTopSelectionProducts = [];
+  
+  function top_selection_products(products) {
+      allTopSelectionProducts = products;
+      currentTopSelectionIndex = 0;
+      loadMoreTopSelectionProducts();
+  }
+  
+  function loadMoreTopSelectionProducts() {
+      const productList = document.getElementById("top-selection-product");
+      const newProducts = allTopSelectionProducts.slice(currentTopSelectionIndex, currentTopSelectionIndex + topSelectionItemsPerPage);
+      productList.innerHTML += newProducts.map((product) => createProductCard(product)).join("");
+      currentTopSelectionIndex += topSelectionItemsPerPage;
+      toggleViewMoreTopSelectionButton();
+  }
+  
+  function toggleViewMoreTopSelectionButton() {
+      const viewMoreBtn = document.getElementById("viewMoreTopSelectionBtn");
+      if (currentTopSelectionIndex >= allTopSelectionProducts.length) {
+          viewMoreBtn.style.display = "none";
+      } else {
+          viewMoreBtn.style.display = "block";
+      }
+  }
+  
+  document.getElementById("viewMoreTopSelectionBtn").addEventListener("click", loadMoreTopSelectionProducts);
+  
+  
+  let currentMobileUnder15000Index = 0;
+  const mobileUnder15000ItemsPerPage = 6;
+  let allMobileUnder15000Products = [];
+  
+  function mobileUnder15000(products) {
+      allMobileUnder15000Products = products;
+      currentMobileUnder15000Index = 0;
+      loadMoreMobileUnder15000Products();
+  }
+  
+  function loadMoreMobileUnder15000Products() {
+      const productList = document.getElementById("mobileUnder15000-product");
+      const newProducts = allMobileUnder15000Products.slice(currentMobileUnder15000Index, currentMobileUnder15000Index + mobileUnder15000ItemsPerPage);
+      productList.innerHTML += newProducts.map((product) => createProductCard(product)).join("");
+      currentMobileUnder15000Index += mobileUnder15000ItemsPerPage;
+      toggleViewMoreMobileUnder15000Button();
+  }
+  
+  function toggleViewMoreMobileUnder15000Button() {
+      const viewMoreBtn = document.getElementById("viewMoreMobileUnder15000Btn");
+      if (currentMobileUnder15000Index >= allMobileUnder15000Products.length) {
+          viewMoreBtn.style.display = "none";
+      } else {
+          viewMoreBtn.style.display = "block";
+      }
+  }
+  
+  document.getElementById("viewMoreMobileUnder15000Btn").addEventListener("click", loadMoreMobileUnder15000Products);
   
   
   
@@ -70,13 +137,36 @@ function createProductCard(product) {
       .join("");
   }
   
-  // Function to under 500 Product
+  let currentShopUnder500Index = 0;
+  const shopUnder500ItemsPerPage = 6;
+  let allShopUnder500Products = [];
+  
   function shopUnder500(products) {
-    const productList = document.getElementById("shopUnder500-product");
-    productList.innerHTML = products
-      .map((product) => createProductCard(product))
-      .join("");
+      allShopUnder500Products = products;
+      currentShopUnder500Index = 0;
+      loadMoreShopUnder500Products();
   }
+  
+  function loadMoreShopUnder500Products() {
+      const productList = document.getElementById("shopUnder500-product");
+      const newProducts = allShopUnder500Products.slice(currentShopUnder500Index, currentShopUnder500Index + shopUnder500ItemsPerPage);
+      productList.innerHTML += newProducts.map((product) => createProductCard(product)).join("");
+      currentShopUnder500Index += shopUnder500ItemsPerPage;
+      toggleViewMoreShopUnder500Button();
+  }
+  
+  function toggleViewMoreShopUnder500Button() {
+      const viewMoreBtn = document.getElementById("viewMoreShopUnder500Btn");
+      if (currentShopUnder500Index >= allShopUnder500Products.length) {
+          viewMoreBtn.style.display = "none";
+      } else {
+          viewMoreBtn.style.display = "block";
+      }
+  }
+  
+  document.getElementById("viewMoreShopUnder500Btn").addEventListener("click", loadMoreShopUnder500Products);
+  
+  
   
   // best of Electronics 
   function bestOfEelecronics_products(products) {
@@ -85,34 +175,65 @@ function createProductCard(product) {
       .map((product) => createProductCard(product))
       .join("");
   }
-  
-  // seletcYourChoice-product
-  function seletcYourChoice_products(products) {
+
+let currentIndex = 0;
+const itemsPerPage = 6;
+let allProducts = [];
+
+function seletcYourChoice_products(products) {
+    allProducts = products;
+    currentIndex = 0;
+    loadMoreProducts();
+}
+
+function loadMoreProducts() {
     const productList = document.getElementById("seletcYourChoice-product");
-    productList.innerHTML = products
-      .map((product) => createProductCard(product))
-      .join("");
-  }
-  
-  // General function to fetch and shuffle data
-  function fetchAndShuffleData(url, callback, numberOfProducts) {
+    const newProducts = allProducts.slice(currentIndex, currentIndex + itemsPerPage);
+    productList.innerHTML += newProducts.map((product) => createProductCard(product)).join("");
+    currentIndex += itemsPerPage;
+    toggleViewMoreButton();
+}
+
+function toggleViewMoreButton() {
+    const viewMoreBtn = document.getElementById("viewMoreBtn");
+    if (currentIndex >= allProducts.length) {
+        viewMoreBtn.style.display = "none";
+    } else {
+        viewMoreBtn.style.display = "block";
+    }
+}
+
+document.getElementById("viewMoreBtn").addEventListener("click", loadMoreProducts);
+
+function shopUnder500(products) {
+    const productList = document.getElementById("shopUnder500-product");
+    productList.innerHTML = products.map((product) => createProductCard(product)).join("");
+}
+
+function bestOfEelecronics_products(products) {
+    const productList = document.getElementById("bestOfElectronics-product");
+    productList.innerHTML = products.map((product) => createProductCard(product)).join("");
+}
+
+// General function to fetch and shuffle data
+function fetchAndShuffleData(url, callback, numberOfProducts) {
     fetch(url)
-      .then((response) => response.json())
-      .then((data) => {
-        // Shuffle the array using the Fisher-Yates algorithm
-        for (let i = data.length - 1; i > 0; i--) {
-          const j = Math.floor(Math.random() * (i + 1));
-          [data[i], data[j]] = [data[j], data[i]];
-        }
-  
-        // Select the desired number of products from the shuffled array
-        const selectedProducts = data.slice(0, numberOfProducts);
-  
-        // Call the callback function with the selected products
-        callback(selectedProducts);
-      })
-      .catch((error) => console.error("Error fetching data:", error));
-  }
+        .then((response) => response.json())
+        .then((data) => {
+            // Shuffle the array using the Fisher-Yates algorithm
+            for (let i = data.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [data[i], data[j]] = [data[j], data[i]];
+            }
+
+            // Select the desired number of products from the shuffled array
+            const selectedProducts = data.slice(0, numberOfProducts);
+
+            // Call the callback function with the selected products
+            callback(selectedProducts);
+        })
+        .catch((error) => console.error("Error fetching data:", error));
+}
   
   
   // General function to fetch 15000 rs mobile data
