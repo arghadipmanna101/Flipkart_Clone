@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+</head>
+
+<body>
+    <header id="header" class="text-center text-secondary fs-4"></header>
+    <h1 style="text-align: center;">Comming Soon</h1>
+    <footer id="footer" style="background-color: #203a61 !important"></footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            [
+                { id: "footer", url: "../../components/footer.html" },
+                { id: "header", url: "../../components/header.html" },
+            ].forEach(({ id, url }) =>
+                fetch(url)
+                    .then((res) => res.text())
+                    .then((data) => (document.getElementById(id).innerHTML = data))
+                    .catch((err) => console.error(`Error loading ${url}:`, err))
+            );
+        });
+
+    </script>
+</body>
+
+</html>
