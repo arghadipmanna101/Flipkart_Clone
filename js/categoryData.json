@@ -254,6 +254,13 @@
                 }
         ]
 
+    },
+    {
+        "id": "twoWheeler",
+        "name": "Two Wheelers",
+        "icon": "twowheelers.png",
+        "subcategories":[]
     }
+    
    
 ]
