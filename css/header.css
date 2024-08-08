@@ -46,7 +46,7 @@ color: #000;
 
 #header-bluebg a ,#more_h{
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
   font-weight: 600;
 }
 

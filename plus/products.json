@@ -1,0 +1,80 @@
+[
+    {
+        "name": "Moto G",
+        "price": "₹9999",
+        "image": "../img/phone-6.webp",
+        "category": "Mobile"
+    },
+    {
+        "name": "Poco M6",
+        "price": "₹11,999",
+        "image": "../img/phone-2.webp",
+        "category": "Mobile"
+    },
+    {
+        "name": "Poco C65",
+        "price": "₹21,999",
+        "image": "../img/phone-3.webp",
+        "category": "Mobile"
+    },
+    {
+        "name": "Moto A14",
+        "price": "₹19,999",
+        "image": "../img/phone-5.webp",
+        "category": "Mobile"
+    },
+    {
+        "name": "Samsung Galaxy",
+        "price": "₹15,999",
+        "image": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s22-ultra-5g-2.jpg",
+        "category": "Mobile"
+    },
+    {
+        "name": "iPhone 12",
+        "price": "₹59,999",
+        "image": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-12-r1.jpg",
+        "category": "Mobile"
+    },
+    {
+        "name": "Dell Inspiron 15",
+        "price": "₹45,999",
+        "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/inspiron-notebooks/15-3530-intel/media-gallery/silver-plastic/notebook-inspiron-15-3530-nt-plastic-usbc-silver-gallery-4.psd?fmt=pjpg&pscan=auto&scl=1&wid=4582&hei=2810&qlt=100,1&resMode=sharp2&size=4582,2810&chrss=full&imwidth=5000",
+        "category": "Laptop"
+    },
+    {
+        "name": "HP Pavilion x360",
+        "price": "₹55,999",
+        "image": "https://m.media-amazon.com/images/I/71Njhmxnc5L.jpg",
+        "category": "Laptop"
+    },
+    {
+        "name": "Apple MacBook Air",
+        "price": "₹92,999",
+        "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mba13-midnight-select-202402?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1708367688034",
+        "category": "Laptop"
+    },
+    {
+        "name": "Logitech MX Master 3",
+        "price": "₹8,499",
+        "image": "https://m.media-amazon.com/images/I/613a-3jtieL.jpg",
+        "category": "Accessory"
+    },
+    {
+        "name": "Sony WH-1000XM4",
+        "price": "₹29,990",
+        "image": "https://www.sony.co.in/image/5d02da5df552836db894cead8a68f5f3?fmt=pjpeg&wid=330&bgcolor=FFFFFF&bgc=FFFFFF",
+        "category": "Accessory"
+    },
+    {
+        "name": "Philips Air Fryer",
+        "price": "₹12,999",
+        "image": "https://m.media-amazon.com/images/I/61uCr9G6hIL._AC_UF894,1000_QL80_.jpg",
+        "category": "Home Appliance"
+    },
+    {
+        "name": "Samsung 32' Smart TV",
+        "price": "₹22,999",
+        "image": "https://images.samsung.com/is/image/samsung/p6pim/in/ua32t4340akxxl/gallery/in-hd-tv-ua32t4340akxxl-front-black-537470101?$650_519_PNG$",
+        "category": "Home Appliance"
+    }
+]

@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#2874F0" id="themeColor">
+	<title>Flipkart | Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books &amp; More.
+		Best Offers!</title>
+		<link rel="stylesheet" href="mainflipkart.css">
+	<link rel="icon" type="image/x-icon" href="img/flipkart_lite.png">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="css/homeHeader.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" href="css/footer.css">
+		<link href="css/contactus.css" rel="stylesheet">
+</head>
+
+<body>
+	<!-- loader -->
+	<!-- <div id="loader">
+		<div class="loader-spinner"></div>
+		<img src="img/flipkardLoader.png" height="50px" alt="">
+	</div> -->
+	<div class="loader-container">
+		<div class="loader-wrapper">
+			<div class="loader"></div>
+			<div class="logo" style="background-image: url('img/flipkart_lite.png');"></div>
+		</div>
+	</div>
+	<!-- loader end -->
+
+
+	<!--Header start  -->
+	<header id="homeHeader">
+		<nav class="navbar homeHeader navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="https://flipkart-clone-seven-azure.vercel.app/">
+				<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
+					width="160" height="40" title="Flipkart" alt="Flipkart" />
+			</a>
+			<div id="navbarNav_">
+				<ul class="navbar-nav">
+					<li class="nav-item navItem1">
+						<div id="searchbar" class="navtab" style="background-color: #F0F5FF;">
+							<span id="searchButton" style="display: flex;align-items: center;">
+								<svg width="24" height="24" class="" viewBox="0 0 24 24" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<title>Search Icon</title>
+									<path
+										d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z"
+										stroke="#717478" stroke-width="1.4" stroke-linecap="round"
+										stroke-linejoin="round"></path>
+									<path d="M16 16L21 21" stroke="#717478" stroke-width="1.4" stroke-linecap="round"
+										stroke-linejoin="round"></path>
+								</svg>
+							</span>
+							<span class="flex-grow">
+								<input id="input_data" class="searchbar" type="text" placeholder="Search for Products, Brands and More" />
+							</span>
+							<div id="autocompleteResults" class="autocom-box" style="display: none;
+							position: absolute;
+							top: 67px;
+							background: rgb(255, 255, 255);
+							padding: 10px;
+							border: rgba(255, 51, 255, 0.2);">
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul  class="navbar-nav ml-auto"
+					style="flex-wrap: nowrap;flex-direction: row;width: 30vw; justify-content: space-between;margin-left: 20px;">
+					<li class="nav-item navItem2 dropdown" id="navbarDropdow">
+						<a class="nav-link nav-dd acnavdd" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<img src="img/svg/profile-.svg" alt="Profile" />
+							<span class="navname navname_ac"> Login <i class="bi bi-chevron-down"></i><i
+									class="bi bi-chevron-up"></i></span>
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="left: 0;">
+							<a class="dropdown-item" href="account/home_account.html">
+								<img width="20" src="img/svg/profile-.svg" alt="flipKart">
+								My Profile </a>
+
+							<a class="dropdown-item" href="account/login-signup.html">
+								<img width="20" src="img/svg/profile-.svg" alt="flipKart">
+								Sign In</a>
+							<a class="dropdown-item" href="plus/">
+								<img width="20" src="img/svg/fkplus-+.svg" alt="flipKart">
+								Flipkart Plus Zone</a>
+							<a class="dropdown-item" href="account/orders.html">
+								<img width="20" src="img/svg/orders.svg" alt="flipKart">
+								Orders</a>
+							<a class="dropdown-item" href="wishlist/">
+								<img width="20" src="img/svg/wishList.svg" alt="flipKart">
+								Wishlist</a>
+							<a class="dropdown-item" href="account/notifications.html">
+								<img width="20" src="img/svg/notifications.svg" alt="flipKart">
+								Notifications</a>
+							<a class="dropdown-item" href="account/rewards.html">
+								<img width="20" src="img/svg/rewards.svg" alt="flipKart">
+								Rewards</a>
+							<a class="dropdown-item" href="./the-gift-card-store/index.html">
+								<img width="20" src="img/svg/giftCard.svg" alt="flipKart">
+								Gift Cards</a>
+								<a class="dropdown-item" href="account/contact.html">
+									<img width="20" src="https://pngimg.com/uploads/phone/phone_PNG48988.png" alt="flipKart">
+									Contact Us </a>
+						</div>
+					</li>
+					<li class="nav-item navItem3">
+						<a class="nav-link cartLogoandname" href="viewcart/">
+							<img
+								src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg" />
+							<span class="navname2">Cart</span><span id="cartItems"></span>
+						</a>
+					</li>
+					<li class="nav-item navItem4">
+						<a class="nav-link" href="sell-online/">
+							<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg"
+								alt="Become a Seller" />
+							<span class="navname3">Become a Seller</span>
+						</a>
+					</li>
+					<li class="nav-item navItem5 dropdown " id="moreLinksDropdow">
+						<a class="nav-link nav-dd" href="#" id="moreLinksDropdown" role="button" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">
+							<img class="nav-dd"
+								src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-ea7819.svg"
+								alt="More Links" />
+						</a>
+						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="moreLinksDropdown">
+							<a class="dropdown-item" href="notifications/"><img width="30" height="20"
+									src="img/svg/notificationPreferences.svg"
+									alt="appointment-reminders--v2" />Notification
+								Preferences</a>
+							<a class="dropdown-item" href="./helpcenter.html"><img width="30" height="20"
+									src="img/svg/helpcenter.svg" alt="imgcc">24x7 Customer Care</a>
+							<a class="dropdown-item"
+								href="https://advertising.flipkart.com/"><img
+									width="30" height="20" src="img/svg/advertise.svg" alt="Advertise">Advertise</a>
+							<a class="dropdown-item" href="mobile-apps/"><img width="30" height="20"
+									src="img/svg/downloadApp.svg" alt="img3">Download App</a>
+					</li>
+					
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<!--Header end -->
+
+	<!-- categorylist -->
+	<div id="categorylist-wrapper" class="container-fluid categorylist-wrapper">
+		<ul id="categories" class="categories"></ul>
+	</div>
+
+	<!-- carousel start -->
+	<div class="container-fluid">
+		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+					aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+					aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+					aria-label="Slide 3"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+					aria-label="Slide 4"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+					aria-label="Slide 5"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+					aria-label="Slide 6"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+					aria-label="Slide 7"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="img/14691d790ec410a9.jpg" class="d-block w-100" alt="image">
+				</div>
+				<div class="carousel-item">
+					<img src="img/17a2c4ed00866b1a.jpg" class="d-block w-100" alt="image">
+				</div>
+				<div class="carousel-item">
+					<img src="img/1f25201ced5d720d.jpg" class="d-block w-100" alt="image">
+				</div>
+				<div class="carousel-item">
+					<img src="img/345037032e3daaaf.jpg" class="d-block w-100" alt="image">
+				</div>
+				<div class="carousel-item">
+					<img src="img/3dc8f265914a1426.jpeg" class="d-block w-100" alt="image">
+				</div>
+				<div class="carousel-item">
+					<img src="img/aa1b2bdcf519b468.jpg" class="d-block w-100" alt="image">
+				</div>
+				<div class="carousel-item">
+					<img src="img/f09f551230626a04.jpg" class="d-block w-100" alt="image">
+				</div>
+			</div>
+			<button class="carousel-control-prev " style="width: 35px; height: 45%;  margin-top: 60px;box-shadow: 2px 2px grey;background-color: white; border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;"
+				type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<i class="bi bi-caret-left" style="color: black; z-index: 50; margin-right: 10px;"></i>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" style="width: 35px; height: 45%;margin-top: 60px; background-color: white; box-shadow: -2px 2px grey;border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;"
+				type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<i class="bi bi-caret-right" style="color: black; z-index: 50; margin-right: 10px;"></i>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+	</div>
+	<!-- carousel end -->
+
+	<!-- bank card -->
+	 <div class="container-fluid">
+		<img src="/bank-banner/sbi.webp" class="banner"/>
+		
+	 </div>
+
+
+
+	<!-- search product show Showing results-->
+	<div class="containter-fluid bg-white">
+		<div class="containter-fluid p-3 mt-1" style="border-bottom: 1px solid #e4e7eb;">
+			<!-- <h4 id="showingrslt">Showing Results</h4> -->
+		</div>
+		<div class="container-fluid mt-4">
+			<div class="row mt-1" id="results"></div>
+		</div>
+	</div>
+
+<!-- best of Electronics -->
+<div class="containter-fluid bg-white">
+	<div class="containter-fluid p-3 mt-1" style="border-bottom: 1px solid #e4e7eb;">
+		<h4>Best of Electronics</h4>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-10">
+				<div id="bestOfElectronics-product" class="row m-1"></div>
+			</div>
+			<div class="col-md-2">
+				<img src="img/flytecafd87e5.webp" alt="image" style="width: 100%; height: 100%; object-fit: contain" class="mdHide">
+			</div>
+		</div>
+	</div>
+</div>
+
+	<!-- fetch random products -->
+	<div class="containter-fluid bg-white">
+		<div class="containter-fluid p-3 mt-1" style="border-bottom: 1px solid #e4e7eb;">
+			<h4>Suggested for You</h4>
+		</div>
+		<div id="rendom-product" class="row m-1"></div>
+	</div>
+
+
+	<!-- fetch mobile under 15000-->
+	<div class="containter-fluid bg-white">
+		<div class="containter-fluid p-3 mt-1" style="border-bottom: 1px solid #e4e7eb;">
+			<h4>Mobile Phone Under 15000 Rs</h4>
+		</div>
+		<div id="mobileUnder15000-product" class="row m-1"></div>
+	</div>
+
+	<!-- newsection for grid items  -->
+	<section id="img-box">
+		<a href="">
+			<div class="img"><img src="img/grid-1.webp" alt="image" /></div>
+		</a>
+		<a href="">
+			<div class="img"><img src="img/grid-2.jpg" alt="image" /></div>
+		</a>
+		<a href="">
+			<div class="img"><img src="img/grid-3.jpg" alt="image" /></div>
+		</a>
+		<a href="">
+			<div class="img"><img src="img/grid-1.webp" alt="image" /></div>
+		</a>
+	</section>
+
+	<!-- fetch best deal products -->
+	<div class="containter-fluid bg-white">
+		<div class="containter-fluid p-3 mt-1" style="border-bottom: 1px solid #e4e7eb;">
+			<h4>Best Deal for You</h4>
+		</div>
+		<div id="best-deal-product" class="row m-1"></div>
+	</div>
+
+	<!-- fetch data under 500-->
+	<div class="containter-fluid bg-white">
+		<div class="containter-fluid p-3 mt-1" style="border-bottom: 1px solid #e4e7eb;">
+			<h4>Shop Now Under 500 Rs</h4>
+		</div>
+		<div id="shopUnder500-product" class="row m-1"></div>
+	</div>
+
+
+	<!-- fetch data-->
+	<div class="containter-fluid bg-white">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="containter-fluid p-3 mt-1" style="border-bottom: 1px solid #e4e7eb;">
+					<h4>Best for You</h4>
+				</div>
+				<div id="s1-product" class="row m-1">
+					<a href="Fashion-/"><img  src=" img/fk-default-image-75ff340b.png " alt="image"></a>
+				</div>
+			</div>
+			<div class="col-md-9">
+				<div class="containter-fluid p-3 mt-1" style="border-bottom: 1px solid #e4e7eb;">
+					<h4> </h4>
+				</div>
+				<div id="s2-product" class="row m-1"></div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Top Selection -->
+	<div class="containter-fluid bg-white">
+		<div class="containter-fluid p-3 mt-1" style="border-bottom: 1px solid #e4e7eb;">
+			<h4>Top Selection</h4>
+		</div>
+		<div id="top-selection-product" class="row m-1"></div>
+	</div>
+
+	<!--Other Top Deals-->
+	<center><h3>Other Top Deals</h3></center>
+	<section id="category-grid">
+		<div class="category-container">
+		  <img class="category" src="img/deal5.png" alt="deal1">
+		  <a href="#" class="show-items-link">
+			<button class="show-items-btn">Show Items</button>
+		  </a>
+		</div>
+		<div class="category-container">
+		  <img class="category" src="img/deal6.png" alt="deal2">
+		  <a href="#" class="show-items-link">
+			<button class="show-items-btn">Show Items</button>
+		  </a>
+		</div>
+		<div class="category-container">
+		  <img class="category" src="img/deal1.png" alt="deal3">
+		  <a href="#" class="show-items-link">
+			<button class="show-items-btn">Show Items</button>
+		  </a>
+		</div>
+		<div class="category-container">
+		  <img class="category" src="img/deal7.png" alt="deal4">
+		  <a href="#" class="show-items-link">
+			<button class="show-items-btn">Show Items</button>
+		  </a>
+		</div>
+		<div class="category-container">
+		  <img class="category" src="img/deal8.png" alt="deal5">
+		  <a href="#" class="show-items-link">
+			<button class="show-items-btn">Show Items</button>
+		  </a>
+		</div>
+		<div class="category-container">
+		  <img class="category" src="img/deal9.png" alt="deal6">
+		  <a href="#" class="show-items-link">
+			<button class="show-items-btn">Show Items</button>
+		  </a>
+		</div>
+		<div class="category-container">
+		  <img class="category" src="img/deal10.png" alt="deal7">
+		  <a href="#" class="show-items-link">
+			<button class="show-items-btn">Show Items</button>
+		  </a>
+		</div>
+		<div class="category-container">
+		  <img class="category" src="img/deal11.png" alt="deal8">
+		  <a href="#" class="show-items-link">
+			<button class="show-items-btn">Show Items</button>
+		  </a>
+		</div>
+		<div class="category-container">
+		  <img class="category" src="img/deal12.png" alt="deal9">
+		  <a href="#" class="show-items-link">
+			<button class="show-items-btn">Show Items</button>
+		  </a>
+		</div>
+	  </section>
+
+	 
+
+<!-- Product Selection -->
+<div class="containter-fluid bg-white">
+	<div class="containter-fluid p-3 mt-1" style="border-bottom: 1px solid #e4e7eb;">
+		<h4>Select Your Choice</h4>
+	</div>
+	<div id="seletcYourChoice-product" class="row m-1"></div>
+</div>
+<!-- Adding brand directory -->
+	<div class="brand-directory">
+		<h5 class="brand-directory-heading">Top Stories : Brand Directory</h5>
+
+			<div class="most-searched-for-on-flipkart">
+				<p class="paragraph">
+					MOST SEARCHED FOR ON FLIPKART: iPhone 15 | iPhone 15 Plus | iPhone 15 Pro Blue | iPhone 15 Pro Black | iPhone 15 Pro Max Blue | iPhone 15 Pro Black|
+					Vivi x 100 | Spoyl Store | SAMSUNG Flip5 | SAMSUNG Fold5 | Flipkart Axis Bank Super Elite Credit card| 5G Mobile Phones | Primebook Laptops | Moto Edge 40 |
+					Grievance Redressal | OPPO Reno7 Pro 5G | iPhone 13 | Help Centre | Track Orders | Manage Orders | Retyurn Orders | Gift Cards Store | Flipkart Axis Bank Credit Card | Pay Later
+				</p>
+			</div>
+			<div class="mobile">
+				<p class="mobile-para">
+					MOBILES: Redmi 12 %G | Realme 12 + 5G | Motorola G84 | Realme C53 | Infinix Smart 8 | Samsung Galaxy S23 5G | Samsung Galaxy 21 FE 5G Qualcomm | Vivo V30 | Samsung Galaxy S24 5G |  Samsung S24+ 5G | iPhone 12 64GB |
+					iPhone 12 Pro 512GB | iPhone 12 128GB | Vivo Y15 | SAMSUNG Galaxy S21 FE 5G | Infinix HOT 30i | Realme 10 Pro 5G | MOTOROLA G62 5G | Nothing Phone | REDMI Note 12 Pro 5G | Infinix SMART 7 | Vivo Y12 | Oppo A12 | Motorola 5g Phone |
+					Realme 5g Smartphone | Apple 5g Phone | Iqoo 5g Phones | Oneplus 5g Plus | Vivo 5g Phones | Oppo 5g Smart Phones | Oppo F15 | Oppo A31 | Samsung A71 | Samsung A51 | Samsung A31 | iPhone 11 Pro | 4G Mobile | Nokia Mobile | Samsung Mobile | iPhone | Oppo Mobile | Vivo Mobile
+
+				</p>
+			</div>
+			<div class="camera">
+				<p class="camera-para">
+					CAMERA: GoPro Action Camera | Nikon Camera | Canon Camera | Sony Camera | canon DSLR | Nikon DSLR
+
+				</p>
+			</div>
+			<div class="laptops">
+				<p  class="laptop-para">
+					LAPTOPS: Asus ROG Ally | MacBook Pro M2 | Premium Laptop | ASUS ROG Strix SCAR 16 (2023) Core i9 13th Gen | ASUS ROG Zephyrus M16 (2023) Core i9 13th Gen | ASUS Zenbook 14 OLED (2022) | Realme Book Prime Core i5 11th Gen | Microsoft Surface Go Pentium 128GB | Apple Laptops | Acer Laptops | Lenovo Laptops | Dell Laptops | Asus Laptops |
+					HP Laptops | Gaming laptops | 2 in 1 Laptops | Laptops | Dell latest laptop 2022 | HP latest laptops 2022 | Infinix INBook Y1 Plus | SAMSUNG Galaxy Book3 | 12th gen Intel Core Laptops
+
+				</p>
+			</div>
+			<div class="tvs">
+				<p class="tvs-para">
+					TVS: Nokia TV | Panasonic TV | Thomson TV | Mi X Pro | Realme TV | Motorola TV | OnePlus TV | LG TV | TV | Sony TV | Samsung TV | Android Television | Iffalcon TV | Mi TV
+
+				</p>
+			</div>
+			<div class="large-appliances">
+				<p class="large-appliances-para">
+					LARGE APPLIANCES: Television | Washing Machine | Refrigerators | | Air Conditioners | Electric Cookers | Electric Jug(Heater) / Travel Kettles | Induction Cooktops | Inverters / stabilizer | Irons / Iron Box | Mixer Grinder Juicer | Wet
+					Grinders Chimneys Microwave Ovens Vacuum Cleaners Water Purifier Fan
+				</p>
+			</div>
+			<div class="clothing">
+				<p class="clothing-para">
+					CLOTHING Green bridal lehenga | Tops | Shoes | Sunglasses | Bridal Blouse | Half saree blouse designs | Designer blouses | Blouse designs | Shirts | Cotton saree blouse designs | Tshirts | Jeans | Sarees | Dresses | One pieces | Groom wedding sherwani | Designer Salwar Suits | Bra | Cotton simple blouse designs | Banarasi saree blouse designs | Stylish blouse astin design | Track Pant | Blouse neck designs | Kurtas | Party Dresses | Palazzo Suits | Anarkali | Gowns | Cut out dress | Salwar Suits | Kurtis | Designer Sarees | Leggings | Shorts | Georgette Sarees | Ethnic Wear | uppada pattu sarees | Blouse back design | Jodhpur pants
+				</p>
+			</div>
+			<div class="footwear">
+				<p class="footwear-para">
+					FOOTWEAR: Adidas Shoes | Reebok Shoes | Nike Shoes | Puma Shoes | Boots | Bata Shoes | Woodland Shoes | Skechers Shoes | Sneakers | Womens Boots | Sports Shoes | Loafers | Sandals | Lotto Sports Shoes | Casual Shoes | Womens
+					Skechers Shoes Asics Sports Shoes Formal Shoes School Shoes
+				</p>
+			</div>
+			<div class="groceries">
+				<p class="groceries-para">
+					GROCERIES PhonePe Grocery Voucher | Hand Wash | Soap | Cashew Nuts | Sunflower Oil | Eggs | Toilet Cleaner | Harpic Toilet Cleaner | Dettol Soap | Mustard Oil | Biscuits | Cheese | Patanjali Atta | Fortune Oil | Aashirvaad Atta | Tea
+				</p>
+			</div>
+			<div class="best-seller-on-flipkart">
+				<p class="best-seller-on-flipkart-para">
+					BEST SELLING ON FLIPKART Headphones | Best Gas Geyser | Kitchen Geyser | Nutri Blenders | Portable Air Cooler | Best Air Cooler | Bags | Hitachi Refrigerator 3 Door | Books | Toys | Candles | Helmets | Wall Clocks | Baby
+					Food | Chocolates | Cycles | Calculators | Lipsticks | Mask | Vertiv UPS | Fastrack Watches | Wallets | Earrings | Gold Coins | Realme Pad Mini | Handbags | conekt SW2 Smartwatch | Mivi DuoPods a350 | Speaker Cleaner
+				</p>
+			</div>
+			<div class="furniture">
+				<p class="furniture-para">
+					FURNITURE Furniture | Sofas | Beds | Dining sets | Wardrobes | Mattresses | TV Units | Tables | Chairs | Shelves | Bean Bags | Office Chairs | Computer Table | Office Tables | Red Sofa | Wakefit Beds | White Sofa | Wakefit Mattress | Green
+					Sofa Black Sofa Brown Sofa
+				</p>
+			</div>
+			<div class="bgmh">
+				<p class="bgmh-para">
+					BGMH: Whey Protein | Homeopathy | Cricket | Cycles | Footballs | Treadmills | Christmas Gifts | Fitness Accessories | Online Guitar | Books Store | Musical Instrument Store | Dabur Chyawanprash | Baidyanath Chyawanprash | Energy
+					Drinks | Toys | Milk Drink Mixes | Rakhi | Chyawanprash | Indian Flag | Protein Supplements
+				</p>
+			</div>
+			</p>
+
+	</div>
+<!-- text on the homepage -->
+<div class="text">
+	<p class="main1">Flipkart: The One-stop Shopping Destination</p>
+          E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store to another in search of the latest phone when you can find it on the Internet in a single click? Not only mobiles. Flipkart houses everything you can possibly imagine, from trending electronics like laptops, tablets, smartphones, and mobile accessories to in-vogue fashion staples like shoes, clothing and lifestyle accessories; from modern furniture like sofa sets, dining tables, and wardrobes to appliances that make your life easy like washing machines, TVs, ACs, mixer grinder juicers and other time-saving kitchen and small appliances; from home furnishings like cushion covers, mattresses and bedsheets to toys and musical instruments, we got them all covered. You name it, and you can stay assured about finding them all here. For those of you with erratic working hours, Flipkart is your best bet. Shop in your PJs, at night or in the wee hours of the morning. This e-commerce never shuts down. 
+          <br><br>
+          What's more, with our year-round shopping festivals and events, our prices are irresistible. We're sure you'll find yourself picking up more than what you had in mind. If you are wondering why you should shop from Flipkart when there are multiple options available to you, well, the below will answer your question. 
+          <br><br>
+          <p class="main1">Flipkart Plus</p>
+          A world of limitless possibilities awaits you - Flipkart Plus was kickstarted as a loyalty reward programme for all its regular customers at zero subscription fee. All you need is 500 supercoins to be a part of this service. For every 100 rupees spent on Flipkart order, Plus members earns 4 supercoins &amp; non-plus members earn 2 supercoins. Free delivery, early access during sales and shopping festivals, exchange offers and priority customer service are the top benefits to a Flipkart Plus member. In short, earn more when you shop more! 
+          <br><br>
+          What's more, you can even use the Flipkart supercoins for a number of exciting services, like:
+          <br>
+          An annual Zomato Gold membership
+          <br>
+          An annual Hotstar Premium membership
+          <br>
+          6 months Gaana plus subscription
+          <br>
+          Rupees 550 instant discount on flights on ixigo
+          <br>
+          Check out https://www.flipkart.com/plus/all-offers for the entire list. Terms and conditions apply.
+          <br><br>
+          <p class="heading1">No Cost EMI</p>
+          In an attempt to make high-end products accessible to all, our No Cost EMI plan enables you to shop with us under EMI, without shelling out any processing fee. Applicable on select mobiles, laptops, large and small appliances, furniture, electronics and watches, you can now shop without burning a hole in your pocket. If you've been eyeing a product for a long time, chances are it may be up for a no cost EMI. Take a look ASAP! Terms and conditions apply.
+          <br><br>
+          <p class="heading1">EMI on Debit Cards</p>
+          Did you know debit card holders account for 79.38 crore in the country, while there are only 3.14 crore credit card holders? After enabling EMI on Credit Cards, in another attempt to make online shopping accessible to everyone, Flipkart introduces EMI on Debit Cards, empowering you to shop confidently with us without having to worry about pauses in monthly cash flow. At present, we have partnered with Axis Bank, HDFC Bank, State Bank of India and ICICI Bank for this facility. More power to all our shoppers! Terms and conditions apply. 
+          <br><br>
+          <p class="heading1">Mobile Exchange Offers</p>
+          Get an instant discount on the phone that you have been eyeing on. Exchange your old mobile for a new one after the Flipkart experts calculate the value of your old phone, provided it is in a working condition without damage to the screen. If a phone is applicable for an exchange offer, you will see the 'Buy with Exchange' option on the product description of the phone. So, be smart, always opt for an exchange wherever possible. Terms and conditions apply. 
+          <br><br>
+          <p class="main1">What Can You Buy From Flipkart?</p>
+          <p class="heading1">Mobile Phones</p>
+          From budget phones to state-of-the-art smartphones, we have a mobile for everybody out there. Whether you're looking for larger, fuller screens, power-packed batteries, blazing-fast processors, beautification apps, high-tech selfie cameras or just large internal space, we take care of all the essentials. Shop from top brands in the country like Samsung, Apple, Oppo, Xiaomi, Realme, Vivo, and Honor to name a few. Rest assured, you're buying from only the most reliable names in the market. What's more, with Flipkart's Complete Mobile Protection Plan, you will never again find the need to run around service centres. This plan entails you to a number of post-purchase solutions, starting at as low as Rupees 99 only! Broken screens, liquid damage to phone, hardware and software glitches, and replacements - 
+          <b>the Flipkart Complete Mobile Protection</b>
+          covers a comprehensive range of post-purchase problems, with door-to-door services. 
+          <br><br>
+          <p class="heading1">Electronic Devices and Accessories</p>
+          When it comes to laptops, we are not far behind. Filter among dozens of super-fast operating systems, hard disk capacity, RAM, lifestyle, screen size and many other criterias for personalized results in a flash. All you students out there, confused about what laptop to get? Our 
+          <b>Back To College Store</b>
+          segregates laptops purpose wise (gaming, browsing and research, project work, entertainment, design, multitasking) with recommendations from top brands and industry experts, facilitating a shopping experience that is quicker and simpler.
+          <br><br>
+          Photography lovers, you couldn't land at a better page than ours. Cutting-edge DSLR cameras, ever reliable point-and-shoot cameras, millennial favourite instant cameras or action cameras for adventure junkies: our range of cameras is as much for beginners as it is for professionals. Canon, Nikon, GoPro, Sony, and Fujifilm are some big names you'll find in our store. Photography lovers, you couldn't land at a better page than ours. Cutting-edge DSLR cameras, ever reliable point-and-shoot cameras, millennial favourite instant cameras or action cameras for adventure junkies: our range of cameras is as much for beginners as it is for professionals. Canon, Nikon, GoPro, Sony, and Fujifilm are some big names you'll find in our store. 
+          <br><br>
+          Turn your home into a theatre with a stunning surround sound system. Choose from our elaborate range of Sony home theatres, JBL soundbars and Philips tower speakers for an experience to remember.
+          <br><br>
+          How about jazzing up your phone with our quirky designer cases and covers? Our wide-ranging mobile accessories starting from headphones, power banks, memory cards, mobile chargers, to selfie sticks can prove to be ideal travel companions for you and your phone; never again worry about running out of charge or memory on your next vacation.
+          <br><br>
+          <p class="heading1">Large Appliances</p>
+          Sleek TVs, power-saving refrigerators, rapid-cooling ACs, resourceful washing machines - discover everything you need to run a house under one roof. Our 
+          <b>Dependable TV and Appliance Store</b>
+          ensures zero transit damage, with a replacement guarantee if anything goes wrong; delivery and installation as per your convenience and a double warranty (Official Brand Warranty along with an extended Flipkart Warranty) - rest assured, value for money is what is promised and delivered. Shop from market leaders in the country like Samsung, LG, Whirlpool, Midea, Mi, Vu, Panasonic, Godrej, Sony, Daikin, and Hitachi among many others.
+          <br><br>
+          For certain product categories, Customers meeting the eligibility criteria will have the option to buy larger quantities. To know more on the eligibility criteria and terms and conditions, please reach out to 
+          <a href="mailto:Purchases.oni@flipkart.com">Purchases.oni@flipkart.com</a>. 
+          <br><br>
+          <p class="heading1">Small Home Appliances</p>
+          Find handy and practical home appliances designed to make your life simpler: electric kettles, OTGs, microwave ovens, sandwich makers, hand blenders, coffee makers, and many more other time-saving appliances that are truly crafted for a quicker lifestyle. Live life king size with these appliances at home.
+          <br><br>
+          <p class="main1">Lifestyle</p>
+          Flipkart, 
+          <b>'India ka Fashion Capital'</b>
+          , is your one-stop fashion destination for anything and everything you need to look good. Our exhaustive range of Western and Indian wear, summer and winter clothing, formal and casual footwear, bridal and artificial jewellery, long-lasting make-up, grooming tools and accessories are sure to sweep you off your feet. Shop from crowd favourites like Vero Moda, Forever 21, Only, Arrow, Woodland, Nike, Puma, Revlon, Mac, and Sephora among dozens of other top-of-the-ladder names. From summer staple maxi dresses, no-nonsense cigarette pants, traditional Bandhani kurtis to street-smart biker jackets, you can rely on us for a wardrobe that is up to date. Explore our in-house brands like Metronaut, Anmi, and Denizen, to name a few, for carefully curated designs that are the talk of the town. Get ready to be spoiled for choice.Festivals, office get-togethers, weddings, brunches, or nightwear - Flipkart will have your back each time.
+          <br><br>
+          <p class="heading1">Home and Furniture</p>
+          Moving to a new place is never easy, especially if you're buying new furniture. Beds, sofa sets, dining tables, wardrobes, and TV units - it's not easy to set up everything again. With the hundreds of options thrown at you, the ride could be overwhelming. What place is reliable, what furniture will stand the test of time? These are questions you must ask before you choose a store. Well, our 
+          <b>Durability Certified Furniture Store</b>
+          has not only curated a range of furniture keeping in mind the modern Indian consumer but furniture that comes with a lab certification, ensuring they last you for up to 10 years. Yes, all our furniture has gone through 35 stability and load tests so that you receive only the best-quality furniture. 
+          <b>Be FurniSure</b>
+          , always. Names to look out for are Nilkamal, Godrej Interio, Urban Ladder, HomeTown, Durian and Perfect Homes. 
+          <br><br>
+          You may have your furniture all set up, but they could end up looking flat and incomplete without complementary decor. Curtains, cushion covers, bed sheets, wall shelves, paintings, floor lamps - find everything that turns a house to an inviting home under one roof at Flipkart. 
+          <br><br>
+          <p class="heading1">Baby and Kids</p>
+          Your kids deserve only the best. From bodysuits, booties, diapers to strollers, if you're an expecting mother or a new mother, you will find everything you need to set sail on a smooth parenting journey with the help of our baby care collection. When it comes to safety, hygiene and comfort, you can rely on us without a second thought. Huggies, Pampers, MamyPoko, and Johnson &amp; Johnson: we host only the most-trusted names in the business for your baby.
+          <br><br>
+          <p class="heading1">Books, Sports and Games</p>
+          Work hard and no play? We don't believe in that. Get access to best-selling fiction and non-fiction books by your favourite authors, thrilling English and Indian blockbusters, most-wanted gaming consoles, and a tempting range of fitness and sports gadgets and equipment bound to inspire you to get moving. 
+          <br><br>
+          <p class="heading1">Grocery/Supermart</p>
+          Launching into the grocery vertical, Flipkart introduces 
+          <b>Supermart</b>
+          that is out to bring everyday essentials close to you. From pulses, spices, dairy, personal and sanitary care, breakfast essentials, health drinks, spreads, ready to cook, grooming to cleaning agents, we are happy to present everything you need to run a house. Now buy Grocery products for as low as 1 Rupee only - our 
+          <b>1 Rupee Store</b>
+          presents new products every day for a nominal price of 1 Rupee only. Terms and conditions apply.
+</div>
+
+
+
+	<!-- FAQ Section -->
+	<div class="container" id="faq">
+		<div class="container mt-5">
+			<h2 class="text-center mb-4 heading">Frequently Asked Questions</h2>
+			<div class="accordion" id="faqAccordion">
+				<div class="accordion-item">
+					<div class="accordion-item-header active">
+					  <h2 class="mb-0"  style="color: blue">
+						
+						 How do I create an account?
+						
+					  </h2>
+					  </div>
+					
+						<div class="accordion-item-body">
+							<div class="accordion-item-body-content">
+							To create an account on Flipkart, simply click on the "Sign Up" button located at the
+							top-right corner of the homepage. Follow the prompts to enter your details and create your
+							account.
+						    </div>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="headingTwo">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							2. How can I place an order?
+						</button>
+					</h2>
+					<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+						data-bs-parent="#faqAccordion">
+						<div class="accordion-body">
+							Placing an order on Flipkart is easy! Once you've found the product you want to buy, click
+							on it to view details and then click on the "Buy Now" or "Add to Cart" button. Follow the
+							steps to complete your order.
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="headingThree">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							3. What payment options are available?
+						</button>
+					</h2>
+					<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+						data-bs-parent="#faqAccordion">
+						<div class="accordion-body">
+							Flipkart offers various payment options including credit/debit cards, net banking, UPI, EMI,
+							and Cash on Delivery (COD) for eligible orders.
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="headingFour">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+							4. How can I track my order?
+						</button>
+					</h2>
+					<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+						data-bs-parent="#faqAccordion">
+						<div class="accordion-body">
+							You can track your order by clicking on the "Track Order" link in the "My Orders" section of
+							your Flipkart account. You will receive regular updates on your order status via email and
+							SMS.
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="heading5">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+							5. What is Flipkart's return policy?
+						</button>
+					</h2>
+					<div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+						data-bs-parent="#faqAccordion">
+						<div class="accordion-body">
+							Flipkart has a hassle-free return policy. If you're not satisfied with your purchase, you
+							can initiate a return within the specified return period. Simply go to the "My Orders"
+							section, select the order you want to return, and follow the prompts.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- faq end -->
+	<!-- Contact Us -->
+<div class="main">
+
+	<div class="container">
+		<img src="rateus.png" alt="rateus">
+		<div class="form-container">
+			<h1>Contact Us</h1>
+			<form id="contact-form">
+				<!-- <label for="name">Name:</label> -->
+				<input type="text" id="name" name="name" required placeholder="Name:">
+	
+				<!-- <label for="email">Email:</label> -->
+				<input type="email" id="email" name="email" required placeholder="Email:">
+	
+				<!-- <label for="comment">Comment:</label> -->
+				<textarea id="comment" name="feedback" required placeholder="Comment:"></textarea>
+	
+				
+				<p id="thank-you-message" style="color: white; display: none;">Thank you !!<br>We will connect soon.</p>
+			</form>
+			<button onclick="handleSubmit()" id="button">Submit</button>
+			</div>
+			</div>  
+</div>
+	<!-- go to top button -->
+	<button id="goToTopBtn" class="hidden"><i class="fas fa-chevron-up"></i></button>
+	<!-- footer fetch to components : components/footer/footer.html -->
+	<footer id="footer" style="background-color: #292d33;"></footer>
+
+	<!-- voiceflow.chat script -->
+	<script type="text/javascript">
+		(function (d, t) {
+			var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+			v.onload = function () {
+				window.voiceflow.chat.load({
+					verify: { projectID: '6647471456cab012ae016d07' },
+					url: 'https://general-runtime.voiceflow.com',
+					versionID: 'production'
+				});
+			}
+			v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+		})(document, 'script');
+	</script>
+
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/homeHeader.js"></script>
+	<script src="js/categoryjs.js"></script>
+	<script src="js/searchIndexProducts.js"></script>
+	<script src="js/fetchProductOfIndex.js"></script>
+	<script src="js/index.js"></script>
+	<script type="text/javascript"
+	src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+	<script src="js/contactus.js"></script>
+	
+</body>
+</html>

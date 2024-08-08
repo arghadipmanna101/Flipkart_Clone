@@ -6,11 +6,149 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flipkart Gift Card</title>
   <link rel="shortcut icon" href="../img/flipkart_favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="giftcard.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Progress Bar Styles */
+    #progress-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 15px;
+      z-index: 99990;
+    }
+
+    #progress-bar {
+      height: 53%;
+      width: 0;
+      background: linear-gradient(90deg, rgb(0, 72, 255) 0%, rgb(153, 187, 255) 50%, rgb(0, 184, 250) 100%);
+      box-shadow: 0 0 4px rgba(0, 166, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.7);
+      transition: width 0.09s ease-in-out;
+      border-radius: 10px;
+    }
+
+    /* Navbar Styles */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #f8f9fa;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .navbar .logo .title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #007bff;
+    }
+
+    .navbar .search-bar input {
+      padding: 5px 10px;
+      width: 300px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+    }
+
+    .navbar .links a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #007bff;
+      font-size: 16px;
+    }
+
+    .navbar .links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Info Section Styles */
+    .info {
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    .info .head {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .info .detail {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* Gift Card Section Styles */
+    .gift-card-section {
+      padding: 20px;
+      background-color: #fff;
+    }
+
+    .gift-card-section h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .gift-card-section form {
+      margin-bottom: 20px;
+    }
+
+    .gift-card-section label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .gift-card-section select {
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      margin-bottom: 10px;
+    }
+
+    .gift-card-section button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .gift-card-section button:hover {
+      background-color: #0056b3;
+    }
+
+    .gift-card-section .preview {
+      margin-top: 20px;
+    }
+
+    .gift-card-section .preview h2 {
+      font-size: 20px;
+    }
+
+    /* Footer Styles */
+    #footer-giftCard {
+      height: 100px;
+      background-color: #292d33;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 
 <body>
+  <div id="progress-container">
+    <div id="progress-bar"></div>
+  </div>
+
+  <script>
+    window.addEventListener('scroll', function() {
+      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      document.getElementById('progress-bar').style.width = scrolled + '%';
+    });
+  </script>
+
   <div class="navbar">
     <div class="logo">
       <div class="title">Flipkart Plus</div>
@@ -25,6 +163,7 @@
       <a href="../helpcentre/index.html">Support</a>
     </div>
   </div>
+
   <div class="info">
     <h1 class="head">Gift Card Store</h1>
     <div class="detail">
@@ -40,6 +179,7 @@
       special!. The information you are reading has been last updated on 17-May-24.
     </div>
   </div>
+
   <div class="gift-card-section">
     <h1>Flipkart Gift Card</h1>
     <form id="giftCardForm">
@@ -58,10 +198,7 @@
     </div>
   </div>
 
-
-
-  <div id="footer-giftCard" style="background-color: #292d33;"></div>
-  <script src="../js/giftCard.js"></script>
+  <div id="footer-giftCard"></div>
 </body>
 
 </html>

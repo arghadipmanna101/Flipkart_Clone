@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    /* border: 1px solid red; */
+}
+
+body {
+    background-color: #f1f3f6;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 5%;
+    background-color: #2874F0;
+    position: fixed;
+    top: 0rem;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+input {
+    width: 40vw;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    width: 150px;
+    color: rgb(75, 75, 255);
+    background-color: white;
+    font-weight: 600;
+    border: none;
+}
+
+.search {
+    position: relative;
+}
+
+i {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    color: rgb(75, 75, 255);
+    height: 100%;
+    width: 30px;
+
+}
+
+#footer-inner-container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(113, 113, 113);
+    font-size: 13px;
+    font-family: sans-serif;
+    padding: 1em 3em;
+    background-color: white;
+    height: 4rem;
+}
+#tnc-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#tnc-container > div
+{
+    margin-right: 0.5em;
+}
+#tnc-container > div a
+{
+    text-decoration: none;
+    color: rgb(113, 113, 113);
+}
+#bullet-point
+{
+    height: 4px;
+    width: 4px;
+    background-color: rgb(113, 113, 113);
+    border-radius: 50%;
+}
+
+#logo-footer
+{
+    height: 3.125rem;
+}
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 5%;
+    margin-top: 4rem;
+}
+
+main > div > a::after
+{
+    content: " | ";
+}
+
+main > div > a:last-of-type::after
+{
+    content: "";
+}
+
+p
+{
+    margin: 1rem 0rem;
+}
+
+p > strong
+{
+    font-weight: 700;
+}
+
+ul
+{
+    padding: 1rem;
+}
+
+li
+{
+    margin: 1rem 0rem;
+}
+
+.highlight
+{
+    color: #2874F0;
+    font-weight: 700;
+    font-style: italic;
+}
+
+a:visited, a:link
+{
+    text-decoration: none;
+    color: black;
+}
+a:hover, a:active
+{
+    color: #2455f4;
+    text-decoration: underline;
+}
+
+#order-cancellation-and-return-policy
+{
+    margin: 3rem auto;
+    text-decoration: underline;
+}
+
+h1
+{
+    margin: 2rem 0rem;
+}
+
+h2
+{
+    margin: 2rem 0rem;
+}
+
+table, tr, th, td 
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td, th 
+{
+    padding: 10px;
+}
+
+@media screen and (max-width : 890px) {
+
+    input {
+        width: 40vw;
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    nav button {
+        padding: 5px;
+        width: 100px;
+        font-size: 12px;
+    }
+
+    .nav-left {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width : 670px) {
+    nav img {
+        height: 20px;
+    }
+
+    input,
+    nav button {
+        font-size: 8px;
+    }
+
+}
