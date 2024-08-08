@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         icon.src = "img/" + categoryData.icon;
 
         const nameLink = document.createElement("a");
-        nameLink.href = categoryData.name + "-/"; // find index.html
+        nameLink.href = "src/"+ categoryData.name+"/" ; // find index.html
         nameLink.textContent = categoryData.name;
 
         const name = document.createElement("span");
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (!categoryData.subcategories) {
             const singleItem = document.createElement("div");
             const singleLink = document.createElement("a");
-            singleLink.href = categoryData.name + "-/";
+            singleLink.href = "src/"+ categoryData.name+"/";
             singleLink.textContent = categoryData.name;
             singleItem.appendChild(singleLink);
             subcategoriesList.appendChild(singleItem);
