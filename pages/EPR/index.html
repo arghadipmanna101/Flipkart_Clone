@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> EPR Compilance - Flipkart Clone</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        #progress-container {
+            position: fixed;
+            top: 0px;
+            left: 0;
+            width: 100%;
+            height: 15px;
+            z-index: 99990;
+            /* background: #f3f3f3; */
+        }
+
+        #progress-bar {
+            height: 53%;
+            width: 0;
+            background: linear-gradient(90deg, rgb(0, 72, 255) 0%, rgb(153, 187, 255) 50%, rgb(0, 184, 250) 100%);
+            box-shadow: 0 0 4px rgba(0, 166, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.7);
+            transition: width 0.09s ease-in-out;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+
+    <script>
+
+        window.addEventListener('scroll', function () {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progress-bar').style.width = scrolled + '%';
+        });
+    </script>
+
+    <header>
+        <h1>EPR Compilance</h1>
+    </header>
+
+    <main>
+
+        <section>
+            <br>
+
+            <div style="font-weight: 600;">FLIPKART INDIA PRIVATE LIMITED E-WASTE RECYCLING POLICY</div>
+
+            <br>
+
+            <div>The Information and Communication revolution has brought enormous changes in the way we organize our lives, our
+            economies, industries and institutions. These spectacular developments in modern times have undoubtedly enhanced the
+            quality of our lives, but at the same time, have led to manifold problems including the problem of massive amount of
+            hazardous waste and other waste generated from electric products. Such waste poses a serious threat to human health and
+            environment. The issue of proper management of such hazardous E-Waste is therefore critical to the protection of
+            livelihood, health and environment.</div>
+
+            <br>
+
+            <div>To deal with this ever-rising problem of E-Waste, the government of India, through its Ministry of Environment and
+            forest, formulated the E-Waste (Management and Handling) Rules in 2016.</div>
+            <br>
+
+            <div style="font-weight: 600; font-size: 13px;">FLIPKART INDIA PRIVATE LIMITED STANDS COMMITTED TO IMPLEMENT THE E-WASTE UNDER E-WASTE RULES.
+            </div>
+            <br>
+
+            <div style="font-weight: 600; font-size: 14px;">The Basel Convention defines wastes as-</div>
+            <br>
+
+            <div>“Substances or objects, which are disposed off or are intended to be disposed off, or are required to be disposed off by
+            the provisions of national laws”.</div>
+            <br>
+
+            <div style="font-weight: 600; font-size: 14px;">E waste has been defined as-</div>
+            <br>
+
+            <div>“Waste electrical and electronic equipment, whole or in part or rejects from their manufacturing and repair process,
+            which are intended to be discarded.”</div>
+            <br>
+
+            <div>Whereas, Electrical and electronic equipment has been defined as:-</div>
+            <br>
+
+            <i>"Equipment which is dependent on electrical currents or electro-magnetic fields to fully functional".</i>
+            <br>
+
+            <p>Like hazardous waste, the problem of e-waste has become an immediate and long-term concern as its unregulated
+            accumulation and recycling can lead to major environmental problems endangering human health. This calls for an urgent
+            need for E-Waste Management so as to preserve the ecological balance and reduce landfills. Recycling end-of-life
+            products is vital if we are to save resources and minimize waste. In this regard, we at Flipkart India private limited
+            have tied up with Reteck Envirotech Pvt. Ltd, one of the world’s largest authorized E-Waste recycler, for facilitating
+            our Organization and our customers to enable them to dispose E-Waste products after its end-of-life.</p>
+
+            <p style="font-weight: 600; font-size: 13px;">AS AN ENVIRONMENTALLY CONSCIOUS ORGANISATION, FLIPKART INDIA PRIVATE LIMITED HAS INITIATED VARIOUS ACTIVITIES TO PROMOTE
+            E-WASTE RECYCLING.</p>
+
+            <p>100% recycling and disposal through authorized recycler to avoid the adverse effects of E-Waste.</p>
+
+            <i style="font-weight: 600;">ADVERSE EFFECTS OF EWASTE</i>
+
+            <ul>
+                <li>Toxic material present in e-waste get mixed with earth, air, water, etc and causes health issues.</li>
+                <li>Oil & Gases which is present in e-waste like compressor and CRT causes environment pollution.</li>
+                <li>Batteries contains highly hazardous elements.</li>
+                <li>Burning of rubber & Plastic in open area causes air pollution.</li>
+                <li>Bad impact on human being, animal, and other animates.</li>
+                <li>Wastage of natural resources.</li>
+            </ul>
+
+            <br>
+
+            <i style="font-weight: 600;">HOW CAN YOU CONTRIBUTE TO A GREENER ENVIRONMENT?</i>
+
+            <ul>
+                <li>All electrical and electronic products are required to be handed over only to the authorised recycler for recycling.</li>
+                <li>The E-Waste product should be handed over only to an authorised recycler for disposal.
+                </li>
+                <li>Keep the e-waste in isolated area, after it becomes non-functional/un-repairable so as to prevent its accidental
+                breakage.
+</li>
+                <li>Please call on toll free number <strong>1800-123-8783</strong> for collection of E-Waste.
+</li>
+            </ul>
+
+            <br>
+
+            <h4>Why Recycle.</h4>
+            
+            <h4>Conserve Resources</h4>
+
+            <p>Creation requires raw resources. But when we recycle, extant material is put to use. Recycling saves this extraction of
+            the fresh raw resources, and revives the existing ones that are no longer of use. This way there is lesser exploitation
+            and more conservation of natural resources.</p>
+
+            <h4>Save Energy</h4>
+
+            <p>Each time we recycle a product, it requires lesser energy than producing a new one from the scratch. The considerable
+            difference in manufacturing time is a result of skipping the usual process of extraction of raw material, its
+            transportation, refining etc., which is way more than having a market ready product that to have a raw material ready
+            for production.</p>
+
+            <h4>Prevent Pollution </h4>
+
+            <p>Production and disposal of products require a great deal of extraction, refining, processing and dumping of material,
+            which have larger impact on the environment. By recycling, we cut down the pollution of air, water and land, thus
+            reducing the greenhouse gas emission and avoiding any contribution to global warming.</p>
+
+            <h4>Don'ts for E- Waste</h4>
+
+            <ul>
+                <li>The product should not be opened/dismantled by the User himself/herself, but only by authorized service personnel.</li>
+                <li>The product is not meant for re-sale to any unauthorized agencies/scrap dealer</li>
+                <li>The product is not meant for mixing into household waste stream.</li>
+                <li>Do not keep any replaced spare part(s) from the product in exposed area</li>
+            </ul>
+
+            <br>
+
+            <i style="font-weight: bold;">Terms and Conditions</i>
+            <br><br>
+
+            <ul>
+                <li>This initiative is a step towards our commitment for a cleaner and greener earth.</li>
+                <li>This move is one of the ways to show that we are concerned and thus we request all our customers to join this movement
+                to make it successful by way of contributing their end-of-life product.</li>
+                <li>For more information about e-waste please visit: [www.reteck.co][]</li>
+                <li>For any assistance/guidance for disposal of e-waste please call on toll free number: 1800-212-8783 . .</li>
+                <li>Products offered for recycling are not eligible for exchange offers.</li>
+                <li>The service is available as per conditions applicable in the respective area by recyclers.
+</li>
+                
+            </ul>
+
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Flipkart Clone. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
