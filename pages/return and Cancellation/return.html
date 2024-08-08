@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe and Secure Shopping</title>
+    <link rel="stylesheet" href="return.css">
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="../../css/homeHeader.css">
+	<link rel="stylesheet" type="text/css" href="../../css/index.css">
+	<link rel="stylesheet" href="../../css/footer.css">
+		<!-- <link href="../../css/contactus.css" rel="stylesheet"> -->
+</head>
+<body>
+    <header id="homeHeader">
+		<nav class="navbar homeHeader navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="https://flipkart-clone-seven-azure.vercel.app/">
+				<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
+					width="160" height="40" title="Flipkart" alt="Flipkart" />
+			</a>
+			<div id="navbarNav_">
+				<ul class="navbar-nav">
+					<li class="nav-item navItem1">
+						<div id="searchbar" class="navtab" style="background-color: #F0F5FF; width:43vw; margin-left:-1vw">
+							<span id="searchButton" style="display: flex;align-items: center; justify-content:space-between;margin-left:15vw;">
+								<svg width="300" height="24" class="" viewBox="0 0 24 24" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<title>Search Icon</title>
+									<path
+										d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z"
+										stroke="#717478" stroke-width="1.4" stroke-linecap="round"
+										stroke-linejoin="round"></path>
+									<path d="M16 16L21 21" stroke="#717478" stroke-width="1.4" stroke-linecap="round"
+										stroke-linejoin="round"></path>
+								</svg>
+							</span>
+							<span class="flex-grow">
+								<input id="input_data" class="searchbar"   type="text" placeholder="Search for Products, Brands and More" />
+							</span>
+							<div id="autocompleteResults" class="autocom-box" style="display: none;
+							position: absolute;
+							top: 67px;
+							
+							background:#f0f5ff;
+							padding: 10px;
+							border: rgba(255, 51, 255, 0.2);">
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul  class="navbar-nav ml-auto"
+					style="flex-wrap: nowrap;flex-direction: row;width: 30vw; justify-content: space-between;margin-left: 20px;">
+					<li class="nav-item navItem2 dropdown" id="navbarDropdow">
+						<a class="nav-link nav-dd acnavdd" href="#" id="navbarDropdown" role="button" style="width: 10vw; margin-top:2vh;"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<img src="img/svg/profile-.svg" alt="Profile" />
+							<span class="navname navname_ac" style="width:50vw;"> Login <i class="bi bi-chevron-down"></i><i
+									class="bi bi-chevron-up"></i></span>
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="left: 0px;">
+							<a class="dropdown-item" href="account/home_account.html">
+								<img width="20" src="img/svg/profile-.svg" alt="flipKart">
+								My Profile </a>
+
+								<a class="dropdown-item" href="login/login.html">
+									<img width="20" src="img/svg/profile-.svg" alt="flipKart">
+									Log into account </a>
+
+							<a class="dropdown-item" href="account/login-signup.html">
+								<img width="20" src="img/svg/profile-.svg" alt="flipKart">
+								Sign In</a>
+							<a class="dropdown-item" href="plus/">
+								<img width="20" src="img/svg/fkplus-+.svg" alt="flipKart">
+								Flipkart Plus Zone</a>
+							<a class="dropdown-item" href="account/orders.html">
+								<img width="20" src="img/svg/orders.svg" alt="flipKart">
+								Orders</a>
+							<a class="dropdown-item" href="wishlist/">
+								<img width="20" src="img/svg/wishList.svg" alt="flipKart">
+								Wishlist</a>
+							<a class="dropdown-item" href="account/notifications.html">
+								<img width="20" src="img/svg/notifications.svg" alt="flipKart">
+								Notifications</a>
+							<a class="dropdown-item" href="account/rewards.html">
+								<img width="20" src="img/svg/rewards.svg" alt="flipKart">
+								Rewards</a>
+							<a class="dropdown-item" href="the-gift-card-store/">
+								<img width="20" src="img/svg/giftCard.svg" alt="flipKart">
+								Gift Cards</a>
+								<a class="dropdown-item" href="account/contact.html">
+									<img width="20" src="https://pngimg.com/uploads/phone/phone_PNG48988.png" alt="flipKart">
+									Contact Us </a>
+						</div>
+					</li>
+					<li class="nav-item navItem3">
+						<a class="nav-link cartLogoandname" style="width: 10vw; margin-top:2vh;" href="viewcart/">
+							<img
+								src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg" />
+							<span class="navname2">Cart</span><span id="cartItems"></span>
+						</a>
+					</li>
+					<li class="nav-item navItem4">
+						<a class="nav-link" href="sell-online/" style="width: 12vw;font-size:small; margin-top:2vh;">
+							<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg"
+								alt="Become a Seller" />
+							<span class="navname3">Become a Seller</span>
+						</a>
+					</li>
+					<li class="nav-item navItem5 dropdown " id="moreLinksDropdow" style="width: 10vw; margin-top:2vh;">
+						<a class="nav-link nav-dd" href="#" id="moreLinksDropdown" role="button" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">
+							<img class="nav-dd"
+								src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-ea7819.svg"
+								alt="More Links" />
+						</a>
+						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="moreLinksDropdown">
+							<a class="dropdown-item" href="notifications/"><img width="30" height="20"
+									src="img/svg/notificationPreferences.svg"
+									alt="appointment-reminders--v2" />Notification
+								Preferences</a>
+							<a class="dropdown-item" href="helpcentre/"><img width="30" height="20"
+									src="img/svg/helpcenter.svg" alt="imgcc">24x7 Customer Care</a>
+							<a class="dropdown-item"
+								href="https://advertising.flipkart.com/"><img
+									width="30" height="20" src="img/svg/advertise.svg" alt="Advertise">Advertise</a>
+							<a class="dropdown-item" href="mobile-apps/"><img width="30" height="20"
+									src="img/svg/downloadApp.svg" alt="img3">Download App</a>
+					</li>
+					
+				</ul>
+			</div>
+		</nav>
+	</header>
+<div class="container">
+    <h2>Order Cancellation and Return Policy</h2>
+    <br/>
+    <h3>Cancellation Policy</h3>
+    <br/>
+    <p>
+        The customer can choose to cancel an order any time before it's dispatched. The order cannot be canceled once it’s out for delivery. However, the customer may choose to reject it at the doorstep.
+    </p>
+    <p>
+        The time window for cancellation varies based on different categories and the order cannot be canceled once the specified time has passed.
+    </p>
+    <p>
+        In some cases, the customer may not be allowed to cancel the order for free, post the specified time and a cancellation fee will be charged. The details about the time window mentioned on the product page or order confirmation page will be considered final.
+    </p>
+    <p>
+        In case of any cancellation from the seller due to unforeseen circumstances, a full refund will be initiated for prepaid orders.
+    </p>
+    <p>
+        Flipkart reserves the right to accept the cancellation of any order. Flipkart also reserves the right to waive off or modify the time window or cancellation fee from time to time.
+    </p>
+    <h3>Returns Policy</h3>
+    <br/>
+    <p>
+        Returns is a scheme provided by respective sellers directly under this policy in terms of which the option of exchange, replacement, and/or refund is offered by the respective sellers to you. All products listed under a particular category may not have the same returns policy. For all products, the returns/replacement policy provided on the product page shall prevail over the general returns policy. Do refer the respective item's applicable return/replacement policy on the product page for any exceptions to this returns policy and the table below.
+    </p>
+    <p>
+        The return policy is divided into three parts; Do read all sections carefully to understand the conditions and cases under which returns will be accepted.
+    </p>
+    <br/>
+    <h4>Part 1 – Category, Return Window and Actions possible</h4>
+    <br/>
+    <table>
+        <tr>
+            <th>Category</th>
+            <th>Returns Window, Actions Possible and Conditions (if any)</th>
+        </tr>
+        <tr>
+            <td>Furniture</td>
+            <td>
+                10 days<br>
+                Refund or Replacement<br>
+                For products requiring installation, returns shall be eligible only when such products are installed by the brand's authorized personnel.<br>
+                In order to help you resolve issues with your product, we may troubleshoot your product either through online tools, over the phone, and/or through an in-person technical visit.<br>
+                If a defect is determined within the Returns Window, a refund/replacement of the same product will be provided at no additional cost. If no defect is confirmed or the issue is not diagnosed within 10 days of delivery or Installation wherever applicable, you will be directed to a brand service centre to resolve any subsequent issues.<br>
+                In any case, only one replacement shall be provided.
+            </td>
+        </tr>
+        <tr>
+            <td>Lifestyle: Watch, T-Shirt, Footwear, etc.</td>
+            <td>10 days<br>Refund, Replacement or Exchange</td>
+        </tr>
+        <tr>
+            <td>Medicine (Allopathy & Homeopathy)</td>
+            <td>2 days<br>Refund</td>
+        </tr>
+        <tr>
+            <td>Home: Home Improvement Tools, Household Items, etc.</td>
+            <td>7 days<br>Refund or replacement</td>
+        </tr>
+        <tr>
+            <td>Books, Sports Equipments, etc.</td>
+            <td>
+                7 days Replacement only<br>
+                Free replacement will be provided within 7 days if the product is delivered in defective/damaged condition or different from the ordered item.<br>
+                Please keep the product intact, with original accessories, user manual and warranty cards in the original packaging at the time of returning the product.
+            </td>
+        </tr>
+        <tr>
+            <td>Non-Returnable - Wind Instruments</td>
+            <td>This item is non-returnable due to hygiene and personal wellness. In case these products are delivered in damaged/defective condition or different from the ordered item, we will provide a free replacement.</td>
+        </tr>
+    </table>
+    <br/>
+    <p>
+        <strong>Part 2 - Returns Pick-Up and Processing</strong><br>
+        In case of returns where you would like item(s) to be picked up from a different address, the address can only be changed if pick-up service is available at the new address. During pick-up, your product will be checked for the following conditions:
+    </p>
+    <table>
+        <tr>
+            <th>Category</th>
+            <th>Conditions</th>
+        </tr>
+        <tr>
+            <td>Correct Product</td>
+            <td>IMEI/ name/ image/ brand/ serial number/ article number/ bar code should match and MRP tag should be undetached and clearly visible.</td>
+        </tr>
+        <tr>
+            <td>Complete Product</td>
+            <td>All in-the-box accessories (like remote control, starter kits, instruction manuals, chargers, headphones, etc.), freebies and combos (if any) should be present.</td>
+        </tr>
+        <tr>
+            <td>Unused Product</td>
+            <td>The product should be unused, unwashed, unsoiled, without any stains and with non-tampered quality check seals/return tags/warranty seals (wherever applicable). Before returning a Mobile/ Laptop/ Tablet, the device should be formatted and Screen Lock (Pin, Pattern or Fingerprint) must be disabled. iCloud lock must be disabled for Apple devices.</td>
+        </tr>
+        <tr>
+            <td>Undamaged Product</td>
+            <td>The product (including SIM trays/ charging port/ headphone port, back-panel etc.) should be undamaged and without any scratches, dents, tears or holes.</td>
+        </tr>
+        <tr>
+            <td>Undamaged Packaging</td>
+            <td>The product’s original packaging/ box should be undamaged.</td>
+        </tr>
+    </table>
+    <br/>
+    <p>
+        The field executive will refuse to accept the return if any of the above conditions are not met. For any products for which a refund is to be given, the refund will be processed once the returned product has been received by the seller.
+    </p>
+    <!-- <br/> -->
+    
+    <h4>Part 3 - General Rules for a successful Return</h4>
+    <br/>
+    <p>
+        In certain cases where the seller is unable to process a replacement for any reason whatsoever, a refund will be given. In cases where a product accessory is found missing/damaged/defective, the seller may either process a replacement of the particular accessory or issue an eGV for an amount equivalent to the price of the accessory, at the seller’s discretion.
+    </p>
+    <br/>
+    <p>
+        During open box deliveries, while accepting your order, if you received a different or a damaged product, you will be given a refund (on the spot refunds for cash-on-delivery orders). Once you have accepted an open box delivery, no return request will be processed, except for manufacturing defects. In such cases, these category-specific replacement/return general conditions will be applicable. Click here to know more about Open Box Delivery.
+    </p>
+    <br/>
+    <p>
+        For products where installation is provided by Flipkart's service partners, do not open the product packaging by yourself. Flipkart authorized personnel shall help in unboxing and installation of the product.
+    </p>
+    <br/>
+    <p>
+        For Furniture, any product-related issues will be checked by authorized service personnel (free of cost) and attempted to be resolved by replacing the faulty/defective part of the product. Full replacement will be provided only in cases where the service personnel opines that replacing the faulty/defective part will not resolve the issue.
+    </p>
+    <br/>
+    <p>
+        Flipkart holds the right to restrict the number of returns created per order unit, post the evaluation of the product/order defect is undertaken by Flipkart’s authorized representative.
+    </p>
+</div>
+
+
+
+    <footer id="footer" style="background-color: #292d33;"></footer>
+</body>
+</html>
