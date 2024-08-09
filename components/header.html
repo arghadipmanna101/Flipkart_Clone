@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="#2874F0" id="themeColor">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Header</title>
+  <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../../css/header.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header id="header-bluebg">
+    <nav class="container-fluid" style="background-color: #2874F0;">
+      <div class="container">
+        <nav class="navbar bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../../">
+              <img src="../../img/flipcartlogo.PNG" width="80px">
+            </a>
+            <div class="searchBar_h">
+              <input id="inputField_h" type="text" autocomplete="off"
+                placeholder="Search for products, brands and more">
+              <i id="fetchButton_h" class="bi bi-search btn"></i>
+            </div>
+            <div>
+              <button class="btn btn-primary"><a href="../../account/login-signup.html">Login</a></button>
+            </div>
+            <div class="text-white b_a_s">
+              <a href="../../sell-online/">Become a Seller</a>
+            </div>
+            <div class="text-white" id="more_h">
+              More <i class="bi bi-chevron-down"></i><i class="bi bi-chevron-up"></i>
+            </div>
+            <div class="text-white cartLogoandname">
+              <a href="../../viewcart/">
+                <img src="../../img/svg/cart_h.svg" alt=""><span class="cart_h">Cart </span><span id="cartItems"></span>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </nav>
+
+  </header>
+  <!-- javaScript -->
+  <script src="../../js/bootstrap.bundle.min.js"></script>
+  <script src="../../js/header_bluebg.js"></script>
+</body>
+
+</html>
