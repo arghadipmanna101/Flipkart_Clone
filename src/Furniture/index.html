@@ -4,27 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flipkart</title>
+    <title id="pageTitle">Flipkart</title>
+    <link rel="shortcut icon" href="../../img/flipkart_lite.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
 </head>
 
 <body>
-    <header id="header" class="text-center text-secondary fs-4"></header>
-    <h1 style="text-align: center;">Comming Soon</h1>
+    <header id="header" style="height: 60px; background: #2604a1;;"></header>
+    <div id="component" class="row m-1"></div>
     <footer id="footer" style="background-color: #203a61 !important"></footer>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            [
-                { id: "footer", url: "../../components/footer.html" },
-                { id: "header", url: "../../components/header.html" },
-            ].forEach(({ id, url }) =>
-                fetch(url)
-                    .then((res) => res.text())
-                    .then((data) => (document.getElementById(id).innerHTML = data))
-                    .catch((err) => console.error(`Error loading ${url}:`, err))
-            );
-        });
-
-    </script>
+    <script src="thisComponet.js"></script>
+    <script src="../../js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
