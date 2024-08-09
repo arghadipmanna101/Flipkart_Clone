@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#2874F0" id="themeColor">
+    <title>Flipkart | Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books &amp; More.
+        Best Offers!</title>
+    <link rel="icon" type="image/x-icon" href="img/flipkart_lite.png">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/homeHeader.css">
+    <link rel="stylesheet" href="top-offer.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link href="css/contactus.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#2874F0" id="themeColor">
+    <title>Flipkart | Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books &amp; More.
+        Best Offers!</title>
+    <link rel="icon" type="image/x-icon" href="img/flipkart_lite.png">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/homeHeader.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+
+    <link href="css/contactus.css" rel="stylesheet">
+
+    <style>
+           body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #4a4a4a;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .flex {
+            display: flex;
+        }
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+        .flex-col {
+            flex-direction: column;
+        }
+        .items-center {
+            align-items: center;
+        }
+        .justify-center {
+            justify-content: center;
+        }
+        .relative {
+            position: relative;
+        }
+        .w-6 {
+            width: 1.5rem;
+        }
+        .h-6 {
+            height: 1.5rem;
+        }
+        .h-full {
+            height: 100%;
+        }
+        .w-full {
+            width: 100%;
+        }
+        .mt-10 {
+            margin-top: 2.5rem;
+        }
+        .pt-10 {
+            padding-top: 2.5rem;
+        }
+        .pb-10 {
+            padding-bottom: 2.5rem;
+        }
+        .pb-20 {
+            padding-bottom: 5rem;
+        }
+        .rounded-full {
+            border-radius: 50%;
+        }
+        .bg-gray-200 {
+            background-color: #e5e5e5;
+        }
+        .bg-indigo-500 {
+            background-color: #6366f1;
+        }
+        .bg-indigo-100 {
+            background-color: #ebf4ff;
+        }
+        .text-white {
+            color: #ffffff;
+        }
+        .text-gray-600 {
+            color: #718096;
+        }
+        .text-gray-900 {
+            color: #1a202c;
+        }
+        .title-font {
+            font-weight: 600;
+        }
+        .text-sm {
+            font-size: 0.875rem;
+        }
+        .text-xl {
+            font-size: 1.25rem;
+        }
+        .leading-relaxed {
+            line-height: 1.625;
+        }
+        .mb-1 {
+            margin-bottom: 0.25rem;
+        }
+        .md-w-2-3 {
+            width: 66.666667%;
+        }
+        .md-pl-8 {
+            padding-left: 2rem;
+        }
+        .pl-6 {
+            padding-left: 1.5rem;
+        }
+        .sm-items-center {
+            align-items: center;
+        }
+        .sm-mt-0 {
+            margin-top: 0;
+        }
+        .sm-pl-6 {
+            padding-left: 1.5rem;
+        }
+        .pointer-events-none {
+            pointer-events: none;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .scrollToTop {
+            height: 40px;
+            width: 40px;
+            background: hsl(217, 87%, 45%);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            color: white;
+            cursor: pointer;
+            position: fixed;
+            bottom: 45px;
+            right: 50%;
+            left: 50%;
+        }
+            .inner {
+                height: 85%;
+                width: 85%;
+                background: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+            }
+
+        .r4vIwl{
+            padding: 8px 10px 10px 0;
+    width: 100%;
+    color: #000;
+    font-size: inherit;
+    background: #fff;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+}
+        
+
+        /* } */
+
+    #progress-container {
+    position: fixed ;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    z-index: 99990;
+    /* background: #f3f3f3; */
+}
+
+#progress-bar {
+    height: 53%;
+    width: 0;
+    background: linear-gradient(90deg, rgb(0, 72, 255) 0%, rgb(153, 187, 255) 50%, rgb(0, 184, 250) 100%);
+    box-shadow: 0 0 4px rgba(0, 166, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.7);
+    transition: width 0.09s ease-in-out;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .form-container button#button {
+        margin-left: 0 !important;
+    }
+    .main {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+    </style>
+
+
+</head>
+<body>
+    <!-- header start -->
+    <header id="homeHeader">
+        <nav class="navbar homeHeader navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="https://flipkart-clone-seven-azure.vercel.app/">
+                <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
+                    width="160" height="40" title="Flipkart" alt="Flipkart" />
+            </a>
+            <div id="navbarNav_" style="display: flex; align-items: center;">
+                <ul class="navbar-nav">
+                    <li class="nav-item navItem1">
+                        <div id="searchbar" class="navtab">
+                            <span id="searchButton" class="search-icon">
+                                <svg width="30" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <title>Search Icon</title>
+                                    <path
+                                        d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z"
+                                        stroke="#717478" stroke-width="1.4" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path d="M16 16L21 21" stroke="#717478" stroke-width="1" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                </svg>
+                            </span>
+                            <span class="flex-grow">
+                                <input id="input_data" class="searchbar" type="text"
+                                    placeholder="Search for Products, Brands and More" />
+                            </span>
+                            <div id="autocompleteResults" class="autocom-box">
+                                <!-- Autocomplete results here -->
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown" id="navbarDropdown">
+                        <a class="nav-link acnavdd ml-3 mr-5" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="img/svg/profile-.svg" alt="Profile" href="account/login-signup.html"
+                                style="width: 20px; height: 20px; margin-right: 5px; margin-left: 10px;" />
+                            <span class="navname" style="font-size: 14px;">Login <i
+                                    class="bi bi-chevron-down"></i></span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="left: 0;">
+                            <a class="dropdown-item d-flex gap-2" href="account/home_account.html"><img width="20"
+                                    src="img/svg/profile-.svg" alt="flipKart" style="margin-right: 5px;"> My Profile
+                            </a>
+                            <a class="dropdown-item d-flex gap-2" href="login/login.html"><img width="20" src="img/svg/profile-.svg"
+                                    alt="flipKart" style="margin-right: 5px;"> Log into account </a>
+                            <a class="dropdown-item d-flex gap-2" href="account/login-signup.html"><img width="20"
+                                    src="img/svg/profile-.svg" alt="flipKart" style="margin-right: 5px;"> Sign In</a>
+                            <a class="dropdown-item d-flex gap-2" href="plus/"><img width="20" src="img/svg/fkplus-+.svg"
+                                    alt="flipKart" style="margin-right: 5px;"> Flipkart Plus Zone</a>
+                            <a class="dropdown-item d-flex gap-2" href="account/orders.html"><img width="20" src="img/svg/orders.svg"
+                                    alt="flipKart" style="margin-right: 5px;"> Orders</a>
+                            <a class="dropdown-item d-flex gap-2" href="wishlist/"><img width="20" src="img/svg/wishList.svg"
+                                    alt="flipKart" style="margin-right: 5px;"> Wishlist</a>
+                            <a class="dropdown-item d-flex gap-2" href="account/notifications.html"><img width="20"
+                                    src="img/svg/notifications.svg" alt="flipKart" style="margin-right: 5px;">
+                                Notifications</a>
+                            <a class="dropdown-item d-flex gap-2" href="account/rewards.html"><img width="20"
+                                    src="img/svg/rewards.svg" alt="flipKart" style="margin-right: 5px;"> Rewards</a>
+                            <a class="dropdown-item d-flex gap-2" href="./the-gift-card-store/index.html"><img width="20"
+                                    src="img/svg/giftCard.svg" alt="flipKart" style="margin-right: 5px;"> Gift Cards</a>
+                            <a class="dropdown-item d-flex gap-2" href="account/contact.html"><img width="20" height="10"
+                                    src="https://pngimg.com/uploads/phone/phone_PNG48988.png" alt="flipKart"
+                                    style="margin-right: 5px;"> Contact Us </a>
+                            <a class="dropdown-item d-flex gap-2" href="account/feedback.html"><i class="bi bi-chat-dots"></i> My
+                                Feedback </a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link mr-5" href="viewcart/" style="font-size: 14px; margin-left: 20px; font-weight: 500;">
+                            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg"
+                                style="width: 20px; height: 20px; margin-right: 5px;" /> Cart
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/Sell_Online/sell_online.html" style="font-size: 14px;">
+                            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg"
+                                style="width: 20px; height: 20px; margin-right: 5px;" /> Become a Seller
+<!--                         <a class="nav-link mr-5" href="sell-online/" style="font-size: 14px; margin-left: 30px; font-weight: 500;">
+                            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg" style="width: 20px; height: 20px; margin-right: 5px;" /> Become a Seller
+                        </a> -->
+                    </li>
+                    <li class="nav-item dropdown mr-5" style="margin-left: 50px;" id="moreLinksDropdown">
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                        <div class="dropdown-menu">
+
+                            <a href="https://www.flipkart.com/communication-preferences/push?t=all"><i class="fa-regular fa-bell"></i> &nbsp; Notification Preferences</a>
+                            <a href="https://www.flipkart.com/helpcentre"><i class="fa-solid fa-headset"></i>&nbsp; 24 X 7 customer service</a>
+                            <a href="https://advertising.flipkart.com/login?returl=/?otracker=ch_vn_advertise_header"><i class="fas fa-arrow-up"></i>&nbsp; Advertise</a>
+                            <a href="https://www.flipkart.com/mobile-apps?otracker=ch_vn_mobile_apps"><i class="fa-solid fa-download"></i> &nbsp; Download App</a>
+
+
+                        </div>
+                    </li>
+                    <style>
+                        .nav-item .dropdown-menu a {
+                            color: black;
+                            padding: 6px 16px;
+                            text-decoration: none;
+                            display: block;
+                        }
+
+                        .nav-item .dropdown-menu a:hover {
+                            background-color: #f1f1f1;
+                        }
+
+                        .nav-item:hover .dropdown-menu {
+                            display: block;
+                        }
+
+                        .nav-item:hover{
+                            text-decoration: underline;
+                        }
+                    </style>
+
+                    <!-- <a class="nav-link nav-dd dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+   <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-ea7819.svg" style="width: 20px; height: 20px; margin-right: 5px;" /> More Links
+    </a> -->
+
+
+                    
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="hero">
+    </div>
+    <div class="offer" id="one"></div>
+    <div class="offer" id="two"></div>
+    <div class="offer" id="three"></div>
+    <div class="offer" id="four"></div>
+    <div class="offer" id="five"></div>
+    <div class="offer" id="six"></div>
+    <div class="offer" id="seven"></div>
+    <div class="offer" id="eight"></div>
+    <footer id="footer" style="background-color: #09090a;"></footer>
+    <footer style="background-color: #09090a; margin-top: 3rem;">
+        <div class="container-fluid footerTop">
+            <div class="row footer1">
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="footerI">
+                        <h5>ABOUT</h5>
+                        <ul>
+                            <li><a href="../pages/contact_us/contact_us.html">Contact Us</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Careers</a></li>
+                            <li><a href="">Flipkart Stories</a></li>
+                            <li><a href="">Press</a></li>
+                            <li><a href="../pages/Corporate_Information/index.html">Corporate Information</a></li>
+                            <li><i><a href="">Explore Plus</a></i></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="footerI">
+                        <h5>GROUP COMPANIES</h5>
+                        <ul>
+                            <li><a href="https://www.myntra.com/">Myntra</a></li>
+                            <li><a href="https://www.flipkartwholesale.com/">Flipkart Wholesale</a></li>
+                            <li><a href="https://www.cleartrip.com/">Cleartrip</a></li>
+                            <li><a href="https://www.shopsy.in/">Shopsy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="footerI">
+                        <h5>HELP</h5>
+                        <ul>
+                            <li><a href="../pages/Payments/index.html">Payments</a></li>
+                            <li><a href="../pages/Shipping/index.html">Shipping</a></li>
+                            <li><a href="../pages/Cancellation_and_Returns/index.html">Cancellation & Returns</a></li>
+                            <li><a href="/FAQ.html">FAQ</a></li>
+                            <li><a href="">Report Infringement</a></li>
+                          
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="footerI">
+                        <h5>CONSUMER POLICY</h5>
+                        <ul>
+                            <li><a href="../pages/return and Cancellation/return.html">Cancellation & Returns</a></li>
+                            <li><a href="../pages/terms/index.html">Terms Of Use</a></li>
+                            <li><a href="../pages/Security/security.html">Security</a></li>
+                            <li><a href="../pages/privacypolicy/index.html">Privacy</a></li>
+                            <li><a href="">Sitemap</a></li>
+                            <li><a href="">Grievance Redressal</a></li>
+                            <li><a href="../pages/EPR_Page/epr.html">EPR Compilance</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mailSocial">
+                    <div class="footerI">
+                        <div class="mail">
+                            <h5>Mail Us:</h5>
+                            <p>
+                                Flipkart Internet Private Limited,
+                                Buildings Alyssa, Begonia & Clove Embassy Tech Village,
+                                Outer Ring Road, Devarabeesanahalli Village, Bengaluru, 560103, Karnataka, India
+                            </p>
+                        </div>
+                        <div class="social">
+                            <h5>Social</h5>
+                            <ul>
+                                <li><a href="https://www.facebook.com/flipkart/" aria-label="Facebook">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNSAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyLjkzMzEgMjFDMTcuOTAzNyAyMSAyMS45MzMxIDE2Ljk3MDYgMjEuOTMzMSAxMkMyMS45MzMxIDcuMDI5NDQgMTcuOTAzNyAzIDEyLjkzMzEgM0M3Ljk2MjU0IDMgMy45MzMxMSA3LjAyOTQ0IDMuOTMzMTEgMTJDMy45MzMxMSAxNi45NzA2IDcuOTYyNTQgMjEgMTIuOTMzMSAyMVoiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggZD0iTTE2LjY4MzEgOC4yNUgxNS4xODMxQzE0LjU4NjQgOC4yNSAxNC4wMTQxIDguNDg3MDUgMTMuNTkyMSA4LjkwOTAxQzEzLjE3MDIgOS4zMzA5NyAxMi45MzMxIDkuOTAzMjYgMTIuOTMzMSAxMC41VjIxIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGQ9Ik05LjkzMzExIDEzLjVIMTUuOTMzMSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K" alt="Flipkart Facebook Page"></a></li>
+                                <li><a href="https://twitter.com/Flipkart" aria-label="Twitter">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzE4M18yMCkiPgo8cGF0aCBkPSJNMTMuNTQzNiAxMC42MTc5TDIwLjA5NzEgM0gxOC41NDQxTDEyLjg1MzcgOS42MTQ0OEw4LjMwODg3IDNIMy4wNjY4OUw5LjkzOTY0IDEzLjAwMjNMMy4wNjY4OSAyMC45OTA4SDQuNjE5OTRMMTAuNjI5MSAxNC4wMDU2TDE1LjQyODggMjAuOTkwOEgyMC42NzA4TDEzLjU0MzIgMTAuNjE3OUgxMy41NDM2Wk0xMS40MTY1IDEzLjA5MDRMMTAuNzIwMiAxMi4wOTQ0TDUuMTc5NTMgNC4xNjkxMUg3LjU2NDkxTDEyLjAzNjMgMTAuNTY1MUwxMi43MzI2IDExLjU2MTFMMTguNTQ0OCAxOS44NzQ4SDE2LjE1OTVMMTEuNDE2NSAxMy4wOTA4VjEzLjA5MDRaIiBmaWxsPSJ3aGl0ZSIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzE4M18yMCI+CjxyZWN0IHg9IjMuMDY2ODkiIHk9IjMiIHdpZHRoPSIxNy42MDM5IiBoZWlnaHQ9IjE4IiByeD0iMC4yIiBmaWxsPSJ3aGl0ZSIvPgo8L2NsaXBQYXRoPgo8L2RlZnM+Cjwvc3ZnPgo=" alt="Flipkart Twitter Page"></a></li>
+                                <li><a href="https://www.youtube.com/flipkart" aria-label="YouTube">
+                                    <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/YoutubeLogo_958b78.svg" alt="Flipkart YouTube Channel"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="footerI">
+                        <h5>Registered Office Address:</h5>
+                        <p>Flipkart Internet Private Limited,
+                            Buildings Alyssa, Begonia & Clove Embassy Tech Village,
+                            Outer Ring Road, Devarabeesanahalli Village, Bengaluru, 560103, Karnataka, India</p>
+                        <p>CIN : U51109KA2012PTC066107</p>
+                        <p>Telephone: <a class="text-primary" href="tel:044-45614700">044-45614700</a>
+                            / <a class="text-primary" href="tel:044-67415800">044-67415800</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid footerEnd">
+            <div class="row align-items-center">
+                <div class="col-auto">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE2IDE1Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0yLTJoMjB2MjBILTJ6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTUuOTMgNS42MTRoLTIuOTQ4VjQuMTRjMC0uODE4LS42NTUtMS40NzMtMS40NzMtMS40NzNIOC41NmMtLjgxNyAwLTEuNDczLjY1NS0xLjQ3MyAxLjQ3M3YxLjQ3NEg0LjE0Yy0uODE4IDAtMS40NjYuNjU2LTEuNDY2IDEuNDc0bC0uMDA3IDguMTA1YzAgLjgxOC42NTUgMS40NzQgMS40NzMgMS40NzRoMTEuNzljLjgxOCAwIDEuNDc0LS42NTYgMS40NzQtMS40NzRWNy4wODhjMC0uODE4LS42NTYtMS40NzQtMS40NzQtMS40NzR6bS00LjQyMSAwSDguNTZWNC4xNGgyLjk0OHYxLjQ3NHoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yIC0yKSIvPgogICAgPC9nPgo8L3N2Zz4K"
+                        alt="Become a Seller" width="16" height="15">
+                    <a href="../pages/Sell_Online/sell_online.html"             
+                        aria-label="Become a Seller"><span>Become a Seller</span></a>
+                </div>
+                <div class="col-auto">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE1IDE1Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0zLTNoMjB2MjBILTN6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTAuNDkyIDNDNi4zNTMgMyAzIDYuMzYgMyAxMC41YzAgNC4xNCAzLjM1MyA3LjUgNy40OTIgNy41QzE0LjY0IDE4IDE4IDE0LjY0IDE4IDEwLjUgMTggNi4zNiAxNC42NCAzIDEwLjQ5MiAzem0zLjE4IDEyTDEwLjUgMTMuMDg4IDcuMzI3IDE1bC44NC0zLjYwN0w1LjM3IDguOTdsMy42OS0uMzE1TDEwLjUgNS4yNWwxLjQ0IDMuMzk4IDMuNjkuMzE1LTIuNzk4IDIuNDIyLjg0IDMuNjE1eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTMgLTMpIi8+CiAgICA8L2c+Cjwvc3ZnPgo="
+                        alt="Advertise" width="15" height="15">
+                    <a href="https://brands.flipkart.com" aria-label="Advertise"><span>Advertise</span></a>
+                </div>
+                <div class="col-auto">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxNyIgdmlld0JveD0iMCAwIDE4IDE3Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0xLTFoMjB2MjBILTF6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTYuNjY3IDVIMTQuODVjLjA5Mi0uMjU4LjE1LS41NDIuMTUtLjgzM2EyLjQ5NyAyLjQ5NyAwIDAgMC00LjU4My0xLjM3NUwxMCAzLjM1bC0uNDE3LS41NjdBMi41MSAyLjUxIDAgMCAwIDcuNSAxLjY2N2EyLjQ5NyAyLjQ5NyAwIDAgMC0yLjUgMi41YzAgLjI5MS4wNTguNTc1LjE1LjgzM0gzLjMzM2MtLjkyNSAwLTEuNjU4Ljc0Mi0xLjY1OCAxLjY2N2wtLjAwOCA5LjE2NkExLjY2IDEuNjYgMCAwIDAgMy4zMzMgMTcuNWgxMy4zMzRhMS42NiAxLjY2IDAgMCAwIDEuNjY2LTEuNjY3VjYuNjY3QTEuNjYgMS42NiAwIDAgMCAxNi42NjcgNXptMCA2LjY2N0gzLjMzM3YtNWg0LjIzNEw1LjgzMyA5LjAyNWwxLjM1Ljk3NSAxLjk4NC0yLjdMMTAgNi4xNjdsLjgzMyAxLjEzMyAxLjk4NCAyLjcgMS4zNS0uOTc1LTEuNzM0LTIuMzU4aDQuMjM0djV6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMSAtMSkiLz4KICAgIDwvZz4KPC9zdmc+Cg=="
+                        alt="Gift Cards" width="18" height="17">
+                    <a href="../the-gift-card-store/index.html"
+                        aria-label="Gift Cards"><span>Gift Cards</span></a>
+                </div>
+                <div class="col-auto">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE1IDE1Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0yLTNoMjB2MjBILTJ6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNOS41IDNDNS4zNiAzIDIgNi4zNiAyIDEwLjUgMiAxNC42NCA1LjM2IDE4IDkuNSAxOGM0LjE0IDAgNy41LTMuMzYgNy41LTcuNUMxNyA2LjM2IDEzLjY0IDMgOS41IDN6bS43NSAxMi43NWgtMS41di0xLjVoMS41djEuNXptMS41NTMtNS44MTNsLS42NzYuNjljLS41NC41NDgtLjg3Ny45OTgtLjg3NyAyLjEyM2gtMS41di0uMzc1YzAtLjgyNS4zMzgtMS41NzUuODc3LTIuMTIzbC45My0uOTQ1Yy4yNzgtLjI3LjQ0My0uNjQ1LjQ0My0xLjA1NyAwLS44MjUtLjY3NS0xLjUtMS41LTEuNVM4IDcuNDI1IDggOC4yNUg2LjVhMyAzIDAgMSAxIDYgMGMwIC42Ni0uMjcgMS4yNi0uNjk3IDEuNjg4eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIgLTMpIi8+CiAgICA8L2c+Cjwvc3ZnPgo="
+                        alt="Help Center" width="15" height="15">
+                    <a href="../pages/help center/index.html"
+                        aria-label="Help Center"><span>Help Center</span></a>
+                </div>
+                <div class="col-auto">
+                    <span>© 2007-2024 <span>Flipkart.com</span></span>
+                </div>
+                <div class="col-auto">
+                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/payment-method-c454fb.svg"
+                        class="pCGSTEF" alt="Payment methods">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
