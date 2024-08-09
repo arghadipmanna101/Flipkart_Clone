@@ -11,7 +11,12 @@ body {
   font-family: 'Poppins', sans-serif;
   background: #dcdcdc !important;
   overflow-x: hidden;
+  user-select: none;         /* Disable text selection in all browsers */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* Internet Explorer/Edge */
 }
+
 /* Scrollbar */
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
