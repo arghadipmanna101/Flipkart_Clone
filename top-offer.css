@@ -1,0 +1,39 @@
+.hero{
+    background-image: url(img/heo-top-offers.png);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.offer{
+    height: 80vh;
+    width: 98vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin: 1rem;
+}
+#one{
+    background-image: url(img/oone.png);
+}
+#two{
+    background-image: url(img/otwo.png);
+}
+#three{
+    background-image: url(img/othree.png);
+}
+#four{
+    background-image: url(img/ofour.png);
+}
+#five{
+    background-image: url(img/ofive.png);
+}
+#six{
+    background-image: url(img/osix.png);
+}
+#seven{
+    background-image: url(img/oseven.png);
+}
+#eight{
+    background-image: url(img/oeight.png);
+}

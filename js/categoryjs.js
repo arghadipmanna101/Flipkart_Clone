@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         icon.src = "img/" + categoryData.icon;
 
         const nameLink = document.createElement("a");
-        nameLink.href = "src/"+ categoryData.name+"/" ; // find index.html
+        nameLink.href = "#"; // Default href is "#"
         nameLink.textContent = categoryData.name;
 
         const name = document.createElement("span");
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (!categoryData.subcategories) {
             const singleItem = document.createElement("div");
             const singleLink = document.createElement("a");
-            singleLink.href = "src/"+ categoryData.name+"/";
+            singleLink.href = "#";
             singleLink.textContent = categoryData.name;
             singleItem.appendChild(singleLink);
             subcategoriesList.appendChild(singleItem);
@@ -74,6 +74,13 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             console.log("subcategoriesList is not defined or is empty.");
         }
+
+        // Add click event listener to redirect to top-offers.html if id is "top-offers"
+        categoryItem.addEventListener('click', function () {
+            if (categoryData.id === "top-offers") {
+                window.location.href = "top-offers.html";
+            }
+        });
 
         return categoryItem;
     }
