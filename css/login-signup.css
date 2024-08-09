@@ -1,5 +1,11 @@
 body {
     background: #f1f3f6;    
+  user-select: none;         /* Disable text selection in all browsers */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* Internet Explorer/Edge */
+
+
 }
 
 #divB {
