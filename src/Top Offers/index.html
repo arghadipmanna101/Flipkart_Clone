@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="#2874F0" id="themeColor">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="../../img/flipkart_favicon.ico">
+  <title>Flipkart | Top Offers</title>
+  <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+  <header id="header-TO"></header>
+  <div class="containter-fluid bg-white">
+    <div class="containter-fluid p-3 mt-1" style="border-bottom: 1px solid #e4e7eb; background: #196dd0;">
+      <h1 class="text-white">Top Offers</h1>
+    </div>
+    <div class="container-fluid">
+      <img src="xyz1.jpg" alt="topOffers" class="img-fluid" width="100%">
+      <img src="xyz2.jpg" alt="topOffers" class="img-fluid" width="100%">
+      <img src="xyz3.jpg" alt="topOffers" class="img-fluid" width="100%">
+      <img src="xyz4.jpg" alt="topOffers" class="img-fluid" width="100%">
+      <img src="../../img/fashion-.webp" alt="fashion" class="img-fluid" width="100%">
+      <img src="../../img/electronics.webp" alt="fashion" class="img-fluid" width="100%">
+      <img src="../../img/home.webp" alt="fashion" class="img-fluid" width="100%">
+      <img src="../../img/ferniture1.webp" alt="fashion" class="img-fluid" width="100%">
+      <img src="../../img/smartPhone.webp" alt="fashion" class="img-fluid" width="100%">
+      <img src="../../img/grooming.webp" alt="fashion" class="img-fluid" width="100%">
+    </div>
+  </div>
+  <footer id="footer-TO" style="background-color: #292d33;"> </footer>
+  <!-- javaScript -->
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script>
+// for header and footer
+document.addEventListener('DOMContentLoaded', () => {
+    const components = [
+        { id: 'footer-TO', url: '../../components/footer.html' },
+        { id: 'header-TO', url: '../../components/header.html' },
+    ];
+
+    components.forEach(component => {
+        fetch(component.url)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById(component.id).innerHTML = data;
+            })
+            .catch(error => console.error(`Error loading ${component.url}:`, error));
+    });
+});
+
+// header search bar search function 
+setTimeout(() => {  
+  const inputField_h = document.getElementById('inputField_h');
+  const fetchButton_h = document.getElementById('fetchButton_h');
+
+  function fetchValue_h() {
+      const value = inputField_h.value;
+      window.location.href = `../search/?query=${value}`;
+  }
+ 
+  fetchButton_h.addEventListener('click', fetchValue_h);
+
+  inputField_h.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter') {
+          fetchValue_h();
+      }
+  });
+
+
+}, 500);
+
+//end 
+
+  </script>
+</body>
+
+</html>
