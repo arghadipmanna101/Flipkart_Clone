@@ -485,6 +485,8 @@ Search Bar
 #s1-product .products {
   margin: 0 auto;
   padding: 5px;
+  transition: transform 0.3s ease-in-out;
+
 }
 
 #s2-product .products {
