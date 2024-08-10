@@ -485,6 +485,13 @@ Search Bar
 #s1-product .products {
   margin: 0 auto;
   padding: 5px;
+  transition: transform 0.3s ease-in-out;
+
+}
+
+#s1-product .products:hover {
+  transform: scale(1.1);
+  opacity: 0.82;
 }
 
 #s2-product .products {
@@ -738,4 +745,8 @@ ul{
   font-weight: 24px;
   color:black ;
 
+}
+
+#moreLinksDropdown:hover .dropdown-menu {
+  opacity: 1; 
 }
