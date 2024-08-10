@@ -489,6 +489,11 @@ Search Bar
 
 }
 
+#s1-product .products:hover {
+  transform: scale(1.1);
+  opacity: 0.82;
+}
+
 #s2-product .products {
   font-size: 14px;
 }
