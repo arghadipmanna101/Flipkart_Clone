@@ -739,3 +739,7 @@ ul{
   color:black ;
 
 }
+
+#moreLinksDropdown:hover .dropdown-menu {
+  opacity: 1; 
+}
