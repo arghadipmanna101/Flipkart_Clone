@@ -85,6 +85,11 @@
   margin-right: 20px;
 }
 
+#category-grid .category-container:hover {
+  transform: scale(1.05); /* Zoom in slightly */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+}
+
 .category {
   width: 100%;
   height: 100%;
