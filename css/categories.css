@@ -98,6 +98,12 @@
 
 }
 
+#category-grid .show-items-btn:hover {
+  background-color: #2874F0; /* Change button background color */
+  color: white; /* Change button text color */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Add smooth transitions */
+}
+
 .category:hover {
   transform: scale(1.1025);
 }
