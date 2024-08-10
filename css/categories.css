@@ -88,6 +88,7 @@
 #category-grid .category-container:hover {
   transform: scale(1.05); /* Zoom in slightly */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .category {
