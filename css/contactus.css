@@ -91,7 +91,7 @@ form label {
     align-items: center;
     width: 85vw;
     border-radius: 20px;
-    margin-bottom: 50px !important;
+    margin-block: 50px !important;
     background-image: linear-gradient(to right, red 1%, orange 99%) !important;
 }
 
