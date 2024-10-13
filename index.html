@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,117 +39,235 @@
     <link href="css/contactus.css" rel="stylesheet">
 
     <style>
-           body {
+        /* Input container */
+        .input-container {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        /* Input field */
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+        }
+
+        /* Floating label */
+        .input-label {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            font-size: 16px;
+            color: #999;
+            transition: all 0.2s ease;
+            pointer-events: none;
+        }
+
+        /* Move label up when input is focused or has value */
+        .input-field:focus+.input-label,
+        .input-field:not(:placeholder-shown)+.input-label {
+            top: -10px;
+            font-size: 12px;
+            color: #333;
+        }
+
+        /* Underline for input */
+        .underline {
+            height: 2px;
+            background: #f90;
+            margin-top: 5px;
+            transition: all 0.2s ease;
+        }
+
+        /* Focus effect on input */
+        .input-field:focus~.underline {
+            background: #ff5722;
+        }
+
+        /* Terms and link styles */
+        .terms {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .link {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+
+        /* Button styles */
+        .btn-container {
+            text-align: center;
+            background-color: #ff5722;
+            color: white;
+        }
+        
+        .btn {
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* .btn:hover {
+    background-color: #f90;
+} */
+
+        body {
             font-family: Arial, sans-serif;
             background-color: #f8f9fa;
             color: #4a4a4a;
             margin: 0;
             padding: 0;
         }
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 1rem;
         }
+
         .flex {
             display: flex;
         }
+
         .flex-wrap {
             flex-wrap: wrap;
         }
+
         .flex-col {
             flex-direction: column;
         }
+
         .items-center {
             align-items: center;
         }
+
         .justify-center {
             justify-content: center;
         }
+
         .relative {
             position: relative;
         }
+
         .w-6 {
             width: 1.5rem;
         }
+
         .h-6 {
             height: 1.5rem;
         }
+
         .h-full {
             height: 100%;
         }
+
         .w-full {
             width: 100%;
         }
+
         .mt-10 {
             margin-top: 2.5rem;
         }
+
         .pt-10 {
             padding-top: 2.5rem;
         }
+
         .pb-10 {
             padding-bottom: 2.5rem;
         }
+
         .pb-20 {
             padding-bottom: 5rem;
         }
+
         .rounded-full {
             border-radius: 50%;
         }
+
         .bg-gray-200 {
             background-color: #e5e5e5;
         }
+
         .bg-indigo-500 {
             background-color: #6366f1;
         }
+
         .bg-indigo-100 {
             background-color: #ebf4ff;
         }
+
         .text-white {
             color: #ffffff;
         }
+
         .text-gray-600 {
             color: #718096;
         }
+
         .text-gray-900 {
             color: #1a202c;
         }
+
         .title-font {
             font-weight: 600;
         }
+
         .text-sm {
             font-size: 0.875rem;
         }
+
         .text-xl {
             font-size: 1.25rem;
         }
+
         .leading-relaxed {
             line-height: 1.625;
         }
+
         .mb-1 {
             margin-bottom: 0.25rem;
         }
+
         .md-w-2-3 {
             width: 66.666667%;
         }
+
         .md-pl-8 {
             padding-left: 2rem;
         }
+
         .pl-6 {
             padding-left: 1.5rem;
         }
+
         .sm-items-center {
             align-items: center;
         }
+
         .sm-mt-0 {
             margin-top: 0;
         }
+
         .sm-pl-6 {
             padding-left: 1.5rem;
         }
+
         .pointer-events-none {
             pointer-events: none;
         }
+
         html {
             scroll-behavior: smooth;
         }
@@ -173,57 +292,59 @@
             right: 50%;
             left: 50%;
         }
-            .inner {
-                height: 85%;
-                width: 85%;
-                background: black;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 50%;
-            }
 
-        .r4vIwl{
+        .inner {
+            height: 85%;
+            width: 85%;
+            background: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+
+        .r4vIwl {
             padding: 8px 10px 10px 0;
-    width: 100%;
-    color: #000;
-    font-size: inherit;
-    background: #fff;
-    border: none;
-    border-bottom: 1px solid #e0e0e0;
-}
-        
+            width: 100%;
+            color: #000;
+            font-size: inherit;
+            background: #fff;
+            border: none;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
 
         /* } */
 
-    #progress-container {
-    position: fixed ;
-    top: 0px;
-    left: 0;
-    width: 100%;
-    height: 15px;
-    z-index: 99990;
-    /* background: #f3f3f3; */
-}
+        #progress-container {
+            position: fixed;
+            top: 0px;
+            left: 0;
+            width: 100%;
+            height: 15px;
+            z-index: 99990;
+            /* background: #f3f3f3; */
+        }
 
-#progress-bar {
-    height: 53%;
-    width: 0;
-    background: linear-gradient(90deg, rgb(0, 72, 255) 0%, rgb(153, 187, 255) 50%, rgb(0, 184, 250) 100%);
-    box-shadow: 0 0 4px rgba(0, 166, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.7);
-    transition: width 0.09s ease-in-out;
-    border-radius: 10px;
-}
+        #progress-bar {
+            height: 53%;
+            width: 0;
+            background: linear-gradient(90deg, rgb(0, 72, 255) 0%, rgb(153, 187, 255) 50%, rgb(0, 184, 250) 100%);
+            box-shadow: 0 0 4px rgba(0, 166, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.7);
+            transition: width 0.09s ease-in-out;
+            border-radius: 10px;
+        }
 
-@media screen and (max-width: 600px) {
-    .form-container button#button {
-        margin-left: 0 !important;
-    }
-    .main {
-        margin-left: 0;
-        width: 100%;
-    }
-}
+        @media screen and (max-width: 600px) {
+            .form-container button#button {
+                margin-left: 0 !important;
+            }
+
+            .main {
+                margin-left: 0;
+                width: 100%;
+            }
+        }
     </style>
 
 
@@ -244,19 +365,19 @@
     <!-- loader end -->
     <div id="progress-container">
         <div id="progress-bar"></div>
-      </div>
+    </div>
 
-      <script>
-            
-        window.addEventListener('scroll', function() {
+    <script>
+
+        window.addEventListener('scroll', function () {
             const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
             const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
             const scrolled = (winScroll / height) * 100;
             document.getElementById('progress-bar').style.width = scrolled + '%';
         });
-        </script>
-      
-  
+    </script>
+
+
     <div id="divA" class="popup-container">
         <div class="signupin">
             <div class="leftpanal">
@@ -266,28 +387,27 @@
             <div class="rightSignuppanal">
                 <span class="close-btn" id="close-btn">&times;</span>
                 <form autocomplete="on">
-                    <div class="I-qZ4M vLRlQb">
-                        <input autocomplete="off" id="inputsin" type="text" class="r4vIwl BV+Dqf" value=""
-                            required="" />
-                        <label class="Gq-80a" id="inputsin"><span>Enter Email/Mobile </span></label>
+                    <div class="input-container">
+                        <input autocomplete="off" id="inputsin" type="text" class="input-field" required="" />
+                        <label class="input-label" for="inputsin">Enter Email/Mobile</label>
                         <div class="underline"></div>
                     </div>
-                    <div class="EpHS0A">By continuing, you agree to Flipkart's
-                        <a class="c9RDXR" target="_blank" href="../pages/terms/">Terms of Use</a> and
-                        <a class="c9RDXR" target="_blank" href="../pages/privacypolicy/index.html">Privacy Policy</a>.
+                    <div class="terms">
+                        By continuing, you agree to Flipkart's
+                        <a class="link" target="_blank" href="../pages/terms/">Terms of Use</a> and
+                        <a class="link" target="_blank" href="../pages/privacypolicy/index.html">Privacy Policy</a>.
                     </div>
-                    <div class="LSOAQH mt-2">
-                        <button class="QqFHMw twnTnD _7Pd1Fp">Request OTP</button>
+                    <div class="btn-container mt-2">
+                        <button class="btn" style="color: white;">Request OTP</button>
                     </div>
-                    <div class="ZJ3AS1 d-flex justify-content-center mt-4">
-
-                        <a class="azBkHf" href="account/login-signup.html" id="buttonA">New to Flipkart? Create an account</a>
-
+                    <div class="new-account d-flex justify-content-center mt-4">
+                        <a class="link" href="account/login-signup.html">New to Flipkart? Create an account</a>
                     </div>
                 </form>
             </div>
         </div>
     </div>
+
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -347,9 +467,11 @@
             height: 400px;
             width: 20vw;
         }
-        .signupin .leftpanal p{
-            color:rgb(220, 219, 219);
+
+        .signupin .leftpanal p {
+            color: rgb(220, 219, 219);
         }
+
         .signupin .rightSignuppanal {
             padding: 20px;
             background: #fff;
@@ -375,11 +497,12 @@
             font-size: 11px;
         }
 
-        .I-qZ4M  {
+        .I-qZ4M {
             position: relative;
-    margin-bottom: 34px;
-    font-size: 16px;
+            margin-bottom: 34px;
+            font-size: 16px;
         }
+
         .Gq-80a {
             color: #878787;
             font-size: 16px;
@@ -394,11 +517,11 @@
             transition: transform .2s ease;
             transition: transform .2s ease, -webkit-transform .2s ease;
             will-change: transform;
-           -webkit-transform-origin: left;
+            -webkit-transform-origin: left;
             transform-origin: left;
         }
 
-        .Gq-80a:focus{
+        .Gq-80a:focus {
             border-bottom: 2px solid #2874F0;
         }
 
@@ -457,221 +580,222 @@
         }
 
         /* Hover effect for "Best Deal for You" section */
-#best-deal-product .products {
-    margin: 0 auto;
-    padding: 5px;
-    transition: transform 0.3s ease-in-out;
-}
+        #best-deal-product .products {
+            margin: 0 auto;
+            padding: 5px;
+            transition: transform 0.3s ease-in-out;
+        }
 
-#best-deal-product .products:hover {
-    transform: scale(1.1);
-    opacity: 0.82;
-}
+        #best-deal-product .products:hover {
+            transform: scale(1.1);
+            opacity: 0.82;
+        }
 
-/* Hover effect for "Shop Now Under 500 Rs" section */
-#shopUnder500-product .products {
-    margin: 0 auto;
-    padding: 5px;
-    transition: transform 0.3s ease-in-out;
-}
+        /* Hover effect for "Shop Now Under 500 Rs" section */
+        #shopUnder500-product .products {
+            margin: 0 auto;
+            padding: 5px;
+            transition: transform 0.3s ease-in-out;
+        }
 
-#shopUnder500-product .products:hover {
-    transform: scale(1.1);
-    opacity: 0.82;
-}
+        #shopUnder500-product .products:hover {
+            transform: scale(1.1);
+            opacity: 0.82;
+        }
 
-/* Hover effect for "Top Selection" section */
-#top-selection-product .products {
-    margin: 0 auto;
-    padding: 5px;
-    transition: transform 0.3s ease-in-out;
-}
+        /* Hover effect for "Top Selection" section */
+        #top-selection-product .products {
+            margin: 0 auto;
+            padding: 5px;
+            transition: transform 0.3s ease-in-out;
+        }
 
-#top-selection-product .products:hover {
-    transform: scale(1.1);
-    opacity: 0.82;
-}
+        #top-selection-product .products:hover {
+            transform: scale(1.1);
+            opacity: 0.82;
+        }
 
-/* Hover effect for "Mobile Phone Under 15000 Rs" section */
-#mobileUnder15000-product .products {
-    margin: 0 auto;
-    padding: 5px;
-    transition: transform 0.3s ease-in-out;
-}
+        /* Hover effect for "Mobile Phone Under 15000 Rs" section */
+        #mobileUnder15000-product .products {
+            margin: 0 auto;
+            padding: 5px;
+            transition: transform 0.3s ease-in-out;
+        }
 
-#mobileUnder15000-product .products:hover {
-    transform: scale(1.1);
-    opacity: 0.82;
-}
+        #mobileUnder15000-product .products:hover {
+            transform: scale(1.1);
+            opacity: 0.82;
+        }
 
-/* Hover effect for "Suggested for You" section */
-#rendom-product .products {
-    margin: 0 auto;
-    padding: 5px;
-    transition: transform 0.3s ease-in-out;
-}
+        /* Hover effect for "Suggested for You" section */
+        #rendom-product .products {
+            margin: 0 auto;
+            padding: 5px;
+            transition: transform 0.3s ease-in-out;
+        }
 
-#rendom-product .products:hover {
-    transform: scale(1.1);
-    opacity: 0.82;
-}
+        #rendom-product .products:hover {
+            transform: scale(1.1);
+            opacity: 0.82;
+        }
 
-/* Hover effect for "Best of Electronics" section */
-#bestOfElectronics-product .products {
-    margin: 0 auto;
-    padding: 5px;
-    transition: transform 0.3s ease-in-out;
-}
+        /* Hover effect for "Best of Electronics" section */
+        #bestOfElectronics-product .products {
+            margin: 0 auto;
+            padding: 5px;
+            transition: transform 0.3s ease-in-out;
+        }
 
-#bestOfElectronics-product .products:hover {
-    transform: scale(1.1);
-    opacity: 0.82;
-}
+        #bestOfElectronics-product .products:hover {
+            transform: scale(1.1);
+            opacity: 0.82;
+        }
 
-/* Hover effect for "Best Deal for You" section */
-#best-deal-product .products {
-    margin: 0 auto;
-    padding: 5px;
-    transition: transform 0.3s ease-in-out;
-}
+        /* Hover effect for "Best Deal for You" section */
+        #best-deal-product .products {
+            margin: 0 auto;
+            padding: 5px;
+            transition: transform 0.3s ease-in-out;
+        }
 
-#best-deal-product .products:hover {
-    transform: scale(1.1);
-    opacity: 0.82;
-}
+        #best-deal-product .products:hover {
+            transform: scale(1.1);
+            opacity: 0.82;
+        }
 
-/* Hover effect for "Shop Now Under 500 Rs" section */
-#shopUnder500-product .products {
-    margin: 0 auto;
-    padding: 5px;
-    transition: transform 0.3s ease-in-out;
-}
+        /* Hover effect for "Shop Now Under 500 Rs" section */
+        #shopUnder500-product .products {
+            margin: 0 auto;
+            padding: 5px;
+            transition: transform 0.3s ease-in-out;
+        }
 
-#shopUnder500-product .products:hover {
-    transform: scale(1.1);
-    opacity: 0.82;
-}
+        #shopUnder500-product .products:hover {
+            transform: scale(1.1);
+            opacity: 0.82;
+        }
 
-/* Hover effect for "Top Selection" section */
-#top-selection-product .products {
-    margin: 0 auto;
-    padding: 5px;
-    transition: transform 0.3s ease-in-out;
-}
+        /* Hover effect for "Top Selection" section */
+        #top-selection-product .products {
+            margin: 0 auto;
+            padding: 5px;
+            transition: transform 0.3s ease-in-out;
+        }
 
-#top-selection-product .products:hover {
-    transform: scale(1.1);
-    opacity: 0.82;
-}
+        #top-selection-product .products:hover {
+            transform: scale(1.1);
+            opacity: 0.82;
+        }
 
-/* Hover effect for "Select Your Choice" section */
-#seletcYourChoice-product .products {
-    margin: 0 auto;
-    padding: 5px;
-    transition: transform 0.3s ease-in-out;
-}
+        /* Hover effect for "Select Your Choice" section */
+        #seletcYourChoice-product .products {
+            margin: 0 auto;
+            padding: 5px;
+            transition: transform 0.3s ease-in-out;
+        }
 
-#seletcYourChoice-product .products:hover {
-    transform: scale(1.1);
-    opacity: 0.82;
-}
+        #seletcYourChoice-product .products:hover {
+            transform: scale(1.1);
+            opacity: 0.82;
+        }
 
-/* Hover effect for "Mobile Phone Under 15000 Rs" section */
-#mobileUnder15000-product .products {
-    margin: 0 auto;
-    padding: 5px;
-    transition: transform 0.3s ease-in-out;
-}
+        /* Hover effect for "Mobile Phone Under 15000 Rs" section */
+        #mobileUnder15000-product .products {
+            margin: 0 auto;
+            padding: 5px;
+            transition: transform 0.3s ease-in-out;
+        }
 
-#mobileUnder15000-product .products:hover {
-    transform: scale(1.1);
-    opacity: 0.82;
-}
+        #mobileUnder15000-product .products:hover {
+            transform: scale(1.1);
+            opacity: 0.82;
+        }
 
-/* Hover effect for "Suggested for You" section */
-#rendom-product .products {
-    margin: 0 auto;
-    padding: 5px;
-    transition: transform 0.3s ease-in-out;
-}
+        /* Hover effect for "Suggested for You" section */
+        #rendom-product .products {
+            margin: 0 auto;
+            padding: 5px;
+            transition: transform 0.3s ease-in-out;
+        }
 
-#rendom-product .products:hover {
-    transform: scale(1.1);
-    opacity: 0.82;
-}
+        #rendom-product .products:hover {
+            transform: scale(1.1);
+            opacity: 0.82;
+        }
 
-/* Hover effect for "Best of Electronics" section */
-#bestOfElectronics-product .products {
-    margin: 0 auto;
-    padding: 5px;
-    transition: transform 0.3s ease-in-out;
-}
+        /* Hover effect for "Best of Electronics" section */
+        #bestOfElectronics-product .products {
+            margin: 0 auto;
+            padding: 5px;
+            transition: transform 0.3s ease-in-out;
+        }
 
-#bestOfElectronics-product .products:hover {
-    transform: scale(1.1);
-    opacity: 0.82;
-}
+        #bestOfElectronics-product .products:hover {
+            transform: scale(1.1);
+            opacity: 0.82;
+        }
 
-/* Hover effect for FAQ section */
-.faq-card {
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 10px;
-  text-align: left;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+        /* Hover effect for FAQ section */
+        .faq-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
 
-.faq-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
-}
+        .faq-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+        }
 
 
-/* Hover effect for "Search Bar"  */
-#searchbar input {
-    transition: border-color 0.3s ease-in-out;
-}
+        /* Hover effect for "Search Bar"  */
+        #searchbar input {
+            transition: border-color 0.3s ease-in-out;
+        }
 
-#searchbar input:focus {
-    border-color: #2874F0; /* Change the border color on focus */
-}
+        #searchbar input:focus {
+            border-color: #2874F0;
+            /* Change the border color on focus */
+        }
 
-/* Hover effect for "Account Dropdown"  */
-#navbarDropdown .nav-link img {
-    transition: transform 0.3s ease-in-out;
-}
+        /* Hover effect for "Account Dropdown"  */
+        #navbarDropdown .nav-link img {
+            transition: transform 0.3s ease-in-out;
+        }
 
-#navbarDropdown .nav-link img:hover {
-    transform: scale(1.1);
-}
+        #navbarDropdown .nav-link img:hover {
+            transform: scale(1.1);
+        }
 
-/* Hover effect for "Cart Icon"  */
-.cartLogoandname img {
-    transition: transform 0.3s ease-in-out;
-}
+        /* Hover effect for "Cart Icon"  */
+        .cartLogoandname img {
+            transition: transform 0.3s ease-in-out;
+        }
 
-.cartLogoandname img:hover {
-    transform: scale(1.1);
-}
+        .cartLogoandname img:hover {
+            transform: scale(1.1);
+        }
 
-/* Hover effect for "Become a Seller Icon"  */
-.navItem4 img {
-    transition: transform 0.3s ease-in-out;
-}
+        /* Hover effect for "Become a Seller Icon"  */
+        .navItem4 img {
+            transition: transform 0.3s ease-in-out;
+        }
 
-.navItem4 img:hover {
-    transform: scale(1.1);
-}
+        .navItem4 img:hover {
+            transform: scale(1.1);
+        }
 
-/* Hover effect for "More Links Dropdown"  */
-#moreLinksDropdown .nav-link img {
-    transition: transform 0.3s ease-in-out;
-}
+        /* Hover effect for "More Links Dropdown"  */
+        #moreLinksDropdown .nav-link img {
+            transition: transform 0.3s ease-in-out;
+        }
 
-#moreLinksDropdown .nav-link img:hover {
-    transform: scale(1.1);
-}
+        #moreLinksDropdown .nav-link img:hover {
+            transform: scale(1.1);
+        }
 
         @media screen and (max-width: 1200px) {
             .signupin .leftpanal {
@@ -712,16 +836,17 @@
             font-size: 24px;
             cursor: pointer;
         }
-        .temporary-login-btn{
-            color:white;
-            text-decoration:none;
-            padding-right:20px;
-            padding-left:20px;
-            padding-bottom:5px;
+
+        .temporary-login-btn {
+            color: white;
+            text-decoration: none;
+            padding-right: 20px;
+            padding-left: 20px;
+            padding-bottom: 5px;
             background: #2a55e5;
-            margin-left:950px;
-            z-index:1000!important;
-       }
+            margin-left: 950px;
+            z-index: 1000 !important;
+        }
     </style>
 
 
@@ -772,33 +897,38 @@
                             <a class="dropdown-item d-flex gap-2" href="account/home_account.html"><img width="20"
                                     src="img/svg/profile-.svg" alt="flipKart" style="margin-right: 5px;"> My Profile
                             </a>
-                            <a class="dropdown-item d-flex gap-2" href="login/login.html"><img width="20" src="img/svg/profile-.svg"
-                                    alt="flipKart" style="margin-right: 5px;"> Log into account </a>
+                            <a class="dropdown-item d-flex gap-2" href="login/login.html"><img width="20"
+                                    src="img/svg/profile-.svg" alt="flipKart" style="margin-right: 5px;"> Log into
+                                account </a>
                             <a class="dropdown-item d-flex gap-2" href="account/login-signup.html"><img width="20"
                                     src="img/svg/profile-.svg" alt="flipKart" style="margin-right: 5px;"> Sign In</a>
-                            <a class="dropdown-item d-flex gap-2" href="plus/"><img width="20" src="img/svg/fkplus-+.svg"
-                                    alt="flipKart" style="margin-right: 5px;"> Flipkart Plus Zone</a>
-                            <a class="dropdown-item d-flex gap-2" href="account/orders.html"><img width="20" src="img/svg/orders.svg"
-                                    alt="flipKart" style="margin-right: 5px;"> Orders</a>
-                            <a class="dropdown-item d-flex gap-2" href="wishlist/"><img width="20" src="img/svg/wishList.svg"
-                                    alt="flipKart" style="margin-right: 5px;"> Wishlist</a>
+                            <a class="dropdown-item d-flex gap-2" href="plus/"><img width="20"
+                                    src="img/svg/fkplus-+.svg" alt="flipKart" style="margin-right: 5px;"> Flipkart Plus
+                                Zone</a>
+                            <a class="dropdown-item d-flex gap-2" href="account/orders.html"><img width="20"
+                                    src="img/svg/orders.svg" alt="flipKart" style="margin-right: 5px;"> Orders</a>
+                            <a class="dropdown-item d-flex gap-2" href="wishlist/"><img width="20"
+                                    src="img/svg/wishList.svg" alt="flipKart" style="margin-right: 5px;"> Wishlist</a>
                             <a class="dropdown-item d-flex gap-2" href="account/notifications.html"><img width="20"
                                     src="img/svg/notifications.svg" alt="flipKart" style="margin-right: 5px;">
                                 Notifications</a>
                             <a class="dropdown-item d-flex gap-2" href="account/rewards.html"><img width="20"
                                     src="img/svg/rewards.svg" alt="flipKart" style="margin-right: 5px;"> Rewards</a>
-                            <a class="dropdown-item d-flex gap-2" href="./the-gift-card-store/index.html"><img width="20"
-                                    src="img/svg/giftCard.svg" alt="flipKart" style="margin-right: 5px;"> Gift Cards</a>
-                            <a class="dropdown-item d-flex gap-2" href="account/contact.html"><img width="20" height="10"
-                                    src="https://pngimg.com/uploads/phone/phone_PNG48988.png" alt="flipKart"
+                            <a class="dropdown-item d-flex gap-2" href="./the-gift-card-store/index.html"><img
+                                    width="20" src="img/svg/giftCard.svg" alt="flipKart" style="margin-right: 5px;">
+                                Gift Cards</a>
+                            <a class="dropdown-item d-flex gap-2" href="account/contact.html"><img width="20"
+                                    height="10" src="https://pngimg.com/uploads/phone/phone_PNG48988.png" alt="flipKart"
                                     style="margin-right: 5px;"> Contact Us </a>
-                            <a class="dropdown-item d-flex gap-2" href="account/feedback.html"><i class="bi bi-chat-dots"></i> My
+                            <a class="dropdown-item d-flex gap-2" href="account/feedback.html"><i
+                                    class="bi bi-chat-dots"></i> My
                                 Feedback </a>
                         </div>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link mr-5" href="viewcart/" style="font-size: 14px; margin-left: 20px; font-weight: 500;">
+                        <a class="nav-link mr-5" href="viewcart/"
+                            style="font-size: 14px; margin-left: 20px; font-weight: 500;">
                             <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg"
                                 style="width: 20px; height: 20px; margin-right: 5px;" /> Cart
                         </a>
@@ -807,7 +937,7 @@
                         <a class="nav-link" href="./pages/Sell_Online/sell_online.html" style="font-size: 14px;">
                             <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg"
                                 style="width: 20px; height: 20px; margin-right: 5px;" /> Become a Seller
-<!--                         <a class="nav-link mr-5" href="sell-online/" style="font-size: 14px; margin-left: 30px; font-weight: 500;">
+                            <!--                         <a class="nav-link mr-5" href="sell-online/" style="font-size: 14px; margin-left: 30px; font-weight: 500;">
                             <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg" style="width: 20px; height: 20px; margin-right: 5px;" /> Become a Seller
                         </a> -->
                     </li>
@@ -815,10 +945,14 @@
                         <a href="#"><i class="fas fa-ellipsis-v"></i></a>
                         <div class="dropdown-menu">
 
-                            <a href="https://www.flipkart.com/communication-preferences/push?t=all"><i class="fa-regular fa-bell"></i> &nbsp; Notification Preferences</a>
-                            <a href="https://www.flipkart.com/helpcentre"><i class="fa-solid fa-headset"></i>&nbsp; 24 X 7 customer service</a>
-                            <a href="https://advertising.flipkart.com/login?returl=/?otracker=ch_vn_advertise_header"><i class="fas fa-arrow-up"></i>&nbsp; Advertise</a>
-                            <a href="https://www.flipkart.com/mobile-apps?otracker=ch_vn_mobile_apps"><i class="fa-solid fa-download"></i> &nbsp; Download App</a>
+                            <a href="https://www.flipkart.com/communication-preferences/push?t=all"><i
+                                    class="fa-regular fa-bell"></i> &nbsp; Notification Preferences</a>
+                            <a href="https://www.flipkart.com/helpcentre"><i class="fa-solid fa-headset"></i>&nbsp; 24 X
+                                7 customer service</a>
+                            <a href="https://advertising.flipkart.com/login?returl=/?otracker=ch_vn_advertise_header"><i
+                                    class="fas fa-arrow-up"></i>&nbsp; Advertise</a>
+                            <a href="https://www.flipkart.com/mobile-apps?otracker=ch_vn_mobile_apps"><i
+                                    class="fa-solid fa-download"></i> &nbsp; Download App</a>
 
 
                         </div>
@@ -839,7 +973,7 @@
                             display: block;
                         }
 
-                        .nav-item:hover{
+                        .nav-item:hover {
                             text-decoration: underline;
                         }
                     </style>
@@ -849,7 +983,7 @@
     </a> -->
 
 
-                    
+
                     </li>
 
                 </ul>
@@ -859,31 +993,31 @@
     <!--Header end -->
 
 
- <!-- categorylist -->
- <div id="categorylist-wrapper" class="container-fluid categorylist-wrapper">
-    <ul id="categories" class="categories"></ul>
-</div>
+    <!-- categorylist -->
+    <div id="categorylist-wrapper" class="container-fluid categorylist-wrapper">
+        <ul id="categories" class="categories"></ul>
+    </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const loginBtn = document.getElementById('temporary-login-btn');
             loginBtn.style.display = 'block';
-            loginBtn.classList.add('shake'); 
-    
-            loginBtn.addEventListener('click', function() {
-                window.location.href = '../account/login-signup.html'; 
+            loginBtn.classList.add('shake');
+
+            loginBtn.addEventListener('click', function () {
+                window.location.href = '../account/login-signup.html';
             });
-    
-            setTimeout(function() {
+
+            setTimeout(function () {
                 loginBtn.style.display = 'none';
             }, 30000);
         });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
- 
-   
-    
+
+
+
     <!-- carousel start -->
     <div id="default-carousel" class="relative w-full" data-carousel="slide">
         <!-- Carousel wrapper -->
@@ -971,13 +1105,13 @@
             </span>
         </button>
     </div>
-   <!-- carousel end -->
+    <!-- carousel end -->
 
     <!-- bank card -->
     <div class="container-fluid">
         <img src="img/sbi.webp" class="banner" />
     </div>
-	
+
     <!-- offers -->
     <img src="img/1a (1).png" alt="" class="img-fluid" width="100%">
     <img src="img/1a (2).png" alt="" class="img-fluid" width="100%">
@@ -990,16 +1124,21 @@
                 <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
                     <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
                 </div>
-                <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">1</div>
+                <div
+                    class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">
+                    1</div>
                 <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-                    <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                    <div
+                        class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
                             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                         </svg>
                     </div>
                     <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
                         <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Product Discovery</h2>
-                        <p class="leading-relaxed">Explore a wide range of products available on our platform. From electronics to fashion, find everything in one place.</p>
+                        <p class="leading-relaxed">Explore a wide range of products available on our platform. From
+                            electronics to fashion, find everything in one place.</p>
                     </div>
                 </div>
             </div>
@@ -1008,16 +1147,21 @@
                 <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
                     <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
                 </div>
-                <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">2</div>
+                <div
+                    class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">
+                    2</div>
                 <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-                    <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                    <div
+                        class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
                             <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                         </svg>
                     </div>
                     <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
                         <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Add to Cart</h2>
-                        <p class="leading-relaxed">Easily add products to your cart and review your selections. Our intuitive interface makes shopping a breeze.</p>
+                        <p class="leading-relaxed">Easily add products to your cart and review your selections. Our
+                            intuitive interface makes shopping a breeze.</p>
                     </div>
                 </div>
             </div>
@@ -1026,17 +1170,22 @@
                 <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
                     <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
                 </div>
-                <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">3</div>
+                <div
+                    class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">
+                    3</div>
                 <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-                    <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                    <div
+                        class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
                             <circle cx="12" cy="5" r="3"></circle>
                             <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
                         </svg>
                     </div>
                     <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
                         <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Secure Checkout</h2>
-                        <p class="leading-relaxed">Proceed to checkout with confidence. Our secure payment gateway ensures your information is safe.</p>
+                        <p class="leading-relaxed">Proceed to checkout with confidence. Our secure payment gateway
+                            ensures your information is safe.</p>
                     </div>
                 </div>
             </div>
@@ -1045,17 +1194,22 @@
                 <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
                     <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
                 </div>
-                <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">4</div>
+                <div
+                    class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">
+                    4</div>
                 <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-                    <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                    <div
+                        class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
                             <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
                             <circle cx="12" cy="7" r="4"></circle>
                         </svg>
                     </div>
                     <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
                         <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Fast Delivery</h2>
-                        <p class="leading-relaxed">Enjoy fast and reliable delivery to your doorstep. Track your order and get updates in real-time.</p>
+                        <p class="leading-relaxed">Enjoy fast and reliable delivery to your doorstep. Track your order
+                            and get updates in real-time.</p>
                     </div>
                 </div>
             </div>
@@ -1087,72 +1241,85 @@
     </div>
     <section class="bg-light py-5">
         <div class="container">
-          <div class="text-center mb-5">
-            <h1 class="display-4">Exclusive Online Deals</h1>
-            <p class="lead text-muted">Grab the latest electronics, fashion, and home essentials at unbeatable prices. Limited-time offers, hurry up!</p>
-            <div class="d-flex justify-content-center mt-3">
-              <div class="bg-primary rounded-circle" style="width: 4rem; height: 4px;"></div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4 mb-4">
-              <div class="text-center">
-                <div class="bg-light text-primary rounded-circle mb-4 d-flex align-items-center justify-content-center" style="width: 5rem; height: 5rem;">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-50 h-50" viewBox="0 0 24 24">
-                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                  </svg>
+            <div class="text-center mb-5">
+                <h1 class="display-4">Exclusive Online Deals</h1>
+                <p class="lead text-muted">Grab the latest electronics, fashion, and home essentials at unbeatable
+                    prices. Limited-time offers, hurry up!</p>
+                <div class="d-flex justify-content-center mt-3">
+                    <div class="bg-primary rounded-circle" style="width: 4rem; height: 4px;"></div>
                 </div>
-                <h2 class="h5 text-dark">Top Electronics</h2>
-                <p class="text-muted">Find the best deals on smartphones, laptops, and more. Get the latest gadgets at unbeatable prices.</p>
-                <a href="#" class="text-primary">Shop Now
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="ml-2" style="width: 1rem; height: 1rem;" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
             </div>
-            <div class="col-md-4 mb-4">
-              <div class="text-center">
-                <div class="bg-light text-primary rounded-circle mb-4 d-flex align-items-center justify-content-center" style="width: 5rem; height: 5rem;">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-50 h-50" viewBox="0 0 24 24">
-                    <circle cx="6" cy="6" r="3"></circle>
-                    <circle cx="6" cy="18" r="3"></circle>
-                    <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
-                  </svg>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="text-center">
+                        <div class="bg-light text-primary rounded-circle mb-4 d-flex align-items-center justify-content-center"
+                            style="width: 5rem; height: 5rem;">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-50 h-50" viewBox="0 0 24 24">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                        </div>
+                        <h2 class="h5 text-dark">Top Electronics</h2>
+                        <p class="text-muted">Find the best deals on smartphones, laptops, and more. Get the latest
+                            gadgets at unbeatable prices.</p>
+                        <a href="#" class="text-primary">Shop Now
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="ml-2" style="width: 1rem; height: 1rem;" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-                <h2 class="h5 text-dark">Fashion Trends</h2>
-                <p class="text-muted">Upgrade your wardrobe with the latest fashion styles. Explore our exclusive collections at amazing prices.</p>
-                <a href="#" class="text-primary">Discover More
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="ml-2" style="width: 1rem; height: 1rem;" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-4 mb-4">
-              <div class="text-center">
-                <div class="bg-light text-primary rounded-circle mb-4 d-flex align-items-center justify-content-center" style="width: 5rem; height: 5rem;">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-50 h-50" viewBox="0 0 24 24">
-                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                    <circle cx="12" cy="7" r="4"></circle>
-                  </svg>
+                <div class="col-md-4 mb-4">
+                    <div class="text-center">
+                        <div class="bg-light text-primary rounded-circle mb-4 d-flex align-items-center justify-content-center"
+                            style="width: 5rem; height: 5rem;">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-50 h-50" viewBox="0 0 24 24">
+                                <circle cx="6" cy="6" r="3"></circle>
+                                <circle cx="6" cy="18" r="3"></circle>
+                                <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                            </svg>
+                        </div>
+                        <h2 class="h5 text-dark">Fashion Trends</h2>
+                        <p class="text-muted">Upgrade your wardrobe with the latest fashion styles. Explore our
+                            exclusive collections at amazing prices.</p>
+                        <a href="#" class="text-primary">Discover More
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="ml-2" style="width: 1rem; height: 1rem;" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-                <h2 class="h5 text-dark">Home Essentials</h2>
-                <p class="text-muted">From kitchen appliances to home decor, find everything you need to make your home a better place.</p>
-                <a href="#" class="text-primary">Shop Now
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="ml-2" style="width: 1rem; height: 1rem;" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
+                <div class="col-md-4 mb-4">
+                    <div class="text-center">
+                        <div class="bg-light text-primary rounded-circle mb-4 d-flex align-items-center justify-content-center"
+                            style="width: 5rem; height: 5rem;">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-50 h-50" viewBox="0 0 24 24">
+                                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <h2 class="h5 text-dark">Home Essentials</h2>
+                        <p class="text-muted">From kitchen appliances to home decor, find everything you need to make
+                            your home a better place.</p>
+                        <a href="#" class="text-primary">Shop Now
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="ml-2" style="width: 1rem; height: 1rem;" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <button class="btn btn-primary btn-lg d-block mx-auto mt-5">Explore All Deals</button>
+            <button class="btn btn-primary btn-lg d-block mx-auto mt-5">Explore All Deals</button>
         </div>
-      </section>
-      
-      
-      
+    </section>
+
+
+
 
     <!-- fetch random products -->
     <div class="containter-fluid bg-white">
@@ -1214,7 +1381,7 @@
         </div>
     </div>
 
-    
+
 
     <!-- fetch data-->
     <div class="containter-fluid bg-white">
@@ -1320,7 +1487,7 @@
         </div>
     </div>
 
-    
+
     <!-- Adding brand directory -->
     <div class="brand-directory">
         <h5 class="brand-directory-heading">Top Stories : Brand Directory</h5>
@@ -1636,104 +1803,115 @@
 
 
 
-   <!-- FAQ Section -->
-   <div class="faq-container" id="faq">
-   <div> <h2 class="faq-heading text-center mb-4">Frequently Asked Questions</h2></div>
-   
-    <div class="row">
-        <div class="col-md-6 col-lg-4 mb-4">
-            <div class="faq-card">
-                <div class="faq-icon">
-                    <img src="https://img.icons8.com/ios-filled/50/000000/question-mark.png" alt="Question Icon">
-                </div>
-                <h5 class="faq-question">How do I create an account?</h5>
-                <p class="faq-answer">To create an account on Flipkart, simply click on the "Sign Up" button located
-                    at the top-right corner of the homepage. Follow the prompts to enter your details and create
-                    your account.</p>
-            </div>
+    <!-- FAQ Section -->
+    <div class="faq-container" id="faq">
+        <div>
+            <h2 class="faq-heading text-center mb-4">Frequently Asked Questions</h2>
         </div>
-        <div class="col-md-6 col-lg-4 mb-4">
-            <div class="faq-card">
-                <div class="faq-icon">
-                    <img src="https://img.icons8.com/ios-filled/50/000000/question-mark.png" alt="Question Icon">
+
+        <div class="row">
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="faq-card">
+                    <div class="faq-icon">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/question-mark.png" alt="Question Icon">
+                    </div>
+                    <h5 class="faq-question">How do I create an account?</h5>
+                    <p class="faq-answer">To create an account on Flipkart, simply click on the "Sign Up" button located
+                        at the top-right corner of the homepage. Follow the prompts to enter your details and create
+                        your account.</p>
                 </div>
-                <h5 class="faq-question">How can I place an order?</h5>
-                <p class="faq-answer">Placing an order on Flipkart is easy! Once you've found the product you want
-                    to buy, click on it to view details and then click on the "Buy Now" or "Add to Cart" button.
-                   </p>
             </div>
-        </div>
-        <div class="col-md-6 col-lg-4 mb-4">
-            <div class="faq-card">
-                <div class="faq-icon">
-                    <img src="https://img.icons8.com/ios-filled/50/000000/question-mark.png" alt="Question Icon">
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="faq-card">
+                    <div class="faq-icon">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/question-mark.png" alt="Question Icon">
+                    </div>
+                    <h5 class="faq-question">How can I place an order?</h5>
+                    <p class="faq-answer">Placing an order on Flipkart is easy! Once you've found the product you want
+                        to buy, click on it to view details and then click on the "Buy Now" or "Add to Cart" button.
+                    </p>
                 </div>
-                <h5 class="faq-question">What payment options are available?</h5>
-                <p class="faq-answer">Flipkart offers various payment options including credit/debit cards, net
-                    banking, UPI, EMI, and Cash on Delivery (COD) for eligible orders.</p>
             </div>
-        </div>
-        <div class="col-md-6 col-lg-4 mb-4">
-            <div class="faq-card">
-                <div class="faq-icon">
-                    <img src="https://img.icons8.com/ios-filled/50/000000/question-mark.png" alt="Question Icon">
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="faq-card">
+                    <div class="faq-icon">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/question-mark.png" alt="Question Icon">
+                    </div>
+                    <h5 class="faq-question">What payment options are available?</h5>
+                    <p class="faq-answer">Flipkart offers various payment options including credit/debit cards, net
+                        banking, UPI, EMI, and Cash on Delivery (COD) for eligible orders.</p>
                 </div>
-                <h5 class="faq-question">How can I track my order?</h5>
-                <p class="faq-answer">You can track your order by clicking on the "Track Order" link in the "My
-                    Orders" section of your Flipkart account. You will receive regular updates on your order status
-                    via email and SMS.</p>
             </div>
-        </div>
-        <div class="col-md-6 col-lg-4 mb-4">
-            <div class="faq-card">
-                <div class="faq-icon">
-                    <img src="https://img.icons8.com/ios-filled/50/000000/question-mark.png" alt="Question Icon">
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="faq-card">
+                    <div class="faq-icon">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/question-mark.png" alt="Question Icon">
+                    </div>
+                    <h5 class="faq-question">How can I track my order?</h5>
+                    <p class="faq-answer">You can track your order by clicking on the "Track Order" link in the "My
+                        Orders" section of your Flipkart account. You will receive regular updates on your order status
+                        via email and SMS.</p>
                 </div>
-                <h5 class="faq-question">What is Flipkart's return policy?</h5>
-                <p class="faq-answer">Flipkart has a hassle-free return policy. If you're not satisfied with your
-                    purchase, you can initiate a return within the specified return period. Simply go to the "My
-                    Orders" section, select the order you want to return, and follow the prompts.</p>
             </div>
-        </div>
-        <div class="col-md-6 col-lg-4 mb-4">
-            <div class="faq-card">
-                <div class="faq-icon">
-                    <img src="https://img.icons8.com/ios-filled/50/000000/question-mark.png" alt="Question Icon">
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="faq-card">
+                    <div class="faq-icon">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/question-mark.png" alt="Question Icon">
+                    </div>
+                    <h5 class="faq-question">What is Flipkart's return policy?</h5>
+                    <p class="faq-answer">Flipkart has a hassle-free return policy. If you're not satisfied with your
+                        purchase, you can initiate a return within the specified return period. Simply go to the "My
+                        Orders" section, select the order you want to return, and follow the prompts.</p>
                 </div>
-                <h5 class="faq-question">Is the cost of the appointment covered by private health insurance?</h5>
-                <p class="faq-answer">Many private health insurance plans cover the cost of our appointments. We recommend checking with your insurance provider to confirm the extent of your coverage. If you need documentation for your insurance claim, please let us know.</p>
             </div>
-        </div>
-        <div class="col-md-6 col-lg-4 mb-4">
-            <div class="faq-card">
-                <div class="faq-icon">
-                    <img src="https://img.icons8.com/ios-filled/50/000000/question-mark.png" alt="Question Icon">
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="faq-card">
+                    <div class="faq-icon">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/question-mark.png" alt="Question Icon">
+                    </div>
+                    <h5 class="faq-question">Is the cost of the appointment covered by private health insurance?</h5>
+                    <p class="faq-answer">Many private health insurance plans cover the cost of our appointments. We
+                        recommend checking with your insurance provider to confirm the extent of your coverage. If you
+                        need documentation for your insurance claim, please let us know.</p>
                 </div>
-                <h5 class="faq-question">What is your cancellation policy?</h5>
-                <p class="faq-answer">Our cancellation policy requires that you notify us at least 24 hours in advance if you need to cancel or reschedule your appointment. Failure to do so may result in a cancellation fee. We understand that emergencies happen, so please contact us as soon as possible.</p>
             </div>
-        </div>
-        <div class="col-md-6 col-lg-4 mb-4">
-            <div class="faq-card">
-                <div class="faq-icon">
-                    <img src="https://img.icons8.com/ios-filled/50/000000/question-mark.png" alt="Question Icon">
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="faq-card">
+                    <div class="faq-icon">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/question-mark.png" alt="Question Icon">
+                    </div>
+                    <h5 class="faq-question">What is your cancellation policy?</h5>
+                    <p class="faq-answer">Our cancellation policy requires that you notify us at least 24 hours in
+                        advance if you need to cancel or reschedule your appointment. Failure to do so may result in a
+                        cancellation fee. We understand that emergencies happen, so please contact us as soon as
+                        possible.</p>
                 </div>
-                <h5 class="faq-question">Do I need a referral?</h5>
-                <p class="faq-answer">Referrals are not necessary to book an appointment with us. However, if you have a referral from a healthcare provider, please bring it along to your appointment. It can provide useful background information for our consultants.</p>
             </div>
-        </div>
-        <div class="col-md-6 col-lg-4 mb-4">
-            <div class="faq-card">
-                <div class="faq-icon">
-                    <img src="https://img.icons8.com/ios-filled/50/000000/question-mark.png" alt="Question Icon">
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="faq-card">
+                    <div class="faq-icon">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/question-mark.png" alt="Question Icon">
+                    </div>
+                    <h5 class="faq-question">Do I need a referral?</h5>
+                    <p class="faq-answer">Referrals are not necessary to book an appointment with us. However, if you
+                        have a referral from a healthcare provider, please bring it along to your appointment. It can
+                        provide useful background information for our consultants.</p>
                 </div>
-                <h5 class="faq-question">What are the parking and public transport options?</h5>
-                <p class="faq-answer">We offer complimentary parking for all our clients. Our office is also easily accessible by public transport. The nearest bus stop is a 5-minute walk, and the train station is about 10 minutes away. Detailed directions can be found on our website.</p>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="faq-card">
+                    <div class="faq-icon">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/question-mark.png" alt="Question Icon">
+                    </div>
+                    <h5 class="faq-question">What are the parking and public transport options?</h5>
+                    <p class="faq-answer">We offer complimentary parking for all our clients. Our office is also easily
+                        accessible by public transport. The nearest bus stop is a 5-minute walk, and the train station
+                        is about 10 minutes away. Detailed directions can be found on our website.</p>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- faq end -->
+    <!-- faq end -->
     <!-- Contact Us -->
     <div class="main">
 
@@ -1831,87 +2009,87 @@
         window.onload = calcScrollValue;
 
     </script>
-    
+
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- faq end -->
+
+    <!-- go to top button -->
+    <!-- <button id="goToTopBtn" class="hidden"><i class="fas fa-chevron-up"></i></button> -->
+    <div class="scrollToTop">
+        <div class="inner">
+            <i class="fa fa-arrow-up icon"></i>
         </div>
-        </div>
-        </div>
-        </div>
-        <!-- faq end -->
+    </div>
+    <!-- footer fetch to components : components/footer/footer.html -->
+    <footer id="footer" style="background-color: #292d33;"></footer>
 
-        <!-- go to top button -->
-        <!-- <button id="goToTopBtn" class="hidden"><i class="fas fa-chevron-up"></i></button> -->
-        <div class="scrollToTop">
-            <div class="inner">
-                <i class="fa fa-arrow-up icon"></i>
-            </div>
-        </div>
-        <!-- footer fetch to components : components/footer/footer.html -->
-        <footer id="footer" style="background-color: #292d33;"></footer>
+    <!-- voiceflow.chat script -->
+    <script type="text/javascript">
+        (function (d, t) {
+            var v = d.createElement(t),
+                s = d.getElementsByTagName(t)[0];
+            v.onload = function () {
+                window.voiceflow.chat.load({
+                    verify: {
+                        projectID: '6647471456cab012ae016d07'
+                    },
+                    url: 'https://general-runtime.voiceflow.com',
+                    versionID: 'production'
+                });
+            }
+            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
+            v.type = "text/javascript";
+            s.parentNode.insertBefore(v, s);
+        })(document, 'script');
+    </script>
 
-        <!-- voiceflow.chat script -->
-        <script type="text/javascript">
-            (function (d, t) {
-                var v = d.createElement(t),
-                    s = d.getElementsByTagName(t)[0];
-                v.onload = function () {
-                    window.voiceflow.chat.load({
-                        verify: {
-                            projectID: '6647471456cab012ae016d07'
-                        },
-                        url: 'https://general-runtime.voiceflow.com',
-                        versionID: 'production'
-                    });
-                }
-                v.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
-                v.type = "text/javascript";
-                s.parentNode.insertBefore(v, s);
-            })(document, 'script');
-        </script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/homeHeader.js"></script>
+    <script src="js/categoryjs.js"></script>
+    <script src="js/index.js"></script>
 
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/homeHeader.js"></script>
-        <script src="js/categoryjs.js"></script>
-        <script src="js/index.js"></script>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 
 
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-        </script>
-        <script src="js/contactus.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script src="js/contactus.js"></script>
 
-        <script>
-            // Select the scrollToTop element
-            var scrollToTop = document.querySelector(".scrollToTop");
+    <script>
+        // Select the scrollToTop element
+        var scrollToTop = document.querySelector(".scrollToTop");
 
-            // Function to calculate the scroll value and update the scrollToTop button
-            function calcScrollValue() {
-                let pos = document.body.scrollTop || document.documentElement.scrollTop;
-                let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-                let percentval = Math.round((pos * 100) / calcHeight);
+        // Function to calculate the scroll value and update the scrollToTop button
+        function calcScrollValue() {
+            let pos = document.body.scrollTop || document.documentElement.scrollTop;
+            let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let percentval = Math.round((pos * 100) / calcHeight);
 
-                if (pos > 100) {
-                    scrollToTop.style.display = "flex";
-                } else {
-                    scrollToTop.style.display = "none";
-                }
-
-                scrollToTop.style.background = `conic-gradient(#28CEF7 ${percentval}%, white ${percentval}%)`;
+            if (pos > 100) {
+                scrollToTop.style.display = "flex";
+            } else {
+                scrollToTop.style.display = "none";
             }
 
-            // Add click event listener to scrollToTop button
-            scrollToTop.addEventListener("click", function () {
-                document.body.scrollTop = 0; // For Safari
-                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
-            });
+            scrollToTop.style.background = `conic-gradient(#28CEF7 ${percentval}%, white ${percentval}%)`;
+        }
 
-            // Call calcScrollValue on scroll and on load
-            window.onscroll = calcScrollValue;
-            window.onload = calcScrollValue;
-        </script>
+        // Add click event listener to scrollToTop button
+        scrollToTop.addEventListener("click", function () {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+        });
 
-     
-        
+        // Call calcScrollValue on scroll and on load
+        window.onscroll = calcScrollValue;
+        window.onload = calcScrollValue;
+    </script>
+
+
+
 </body>
 
 </html>
