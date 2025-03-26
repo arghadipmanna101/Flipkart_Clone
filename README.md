@@ -1,4 +1,4 @@
-
+<!-- Here is the detailed description of the project. -->
 <div align="center">
   <h1 style="font-size: 36px; font-weight: bold;">Flipkart_Clone</h1>
   
@@ -192,7 +192,7 @@
 If you find this project helpful, please consider giving it a star on GitHub! Your support helps to grow the project and reach more contributors.
 
 
- <!-- screenshots -->
+ <!-- Screenshots -->
   <div>
     <h2>Screenshot <img src ="Screenshot 1.png"> <img src="Screenshot (425).png"></h2>
   </div>
@@ -203,7 +203,7 @@ If you find this project helpful, please consider giving it a star on GitHub! Yo
 
 
 
-<!-- Code of conduct -->
+<!-- Code of Conduct -->
 <div>
 <h2><img src = "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Handshake.png" width="35" height="35"> Code of Conduct</h2>
 </div>
